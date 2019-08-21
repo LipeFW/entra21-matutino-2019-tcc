@@ -64,6 +64,23 @@ FOREIGN KEY (id_cliente) REFERENCES clientes(id_cliente),
 FOREIGN KEY (id_produto) REFERENCES produtos(id_produto)
 );
 
+CREATE TABLE rotas(
+id_rota INT PRIMARY KEY IDENTITY(1,1),
+nome VARCHAR(45),
+istancia DECIMAL(5,2),
+id_vendedor int,
+FOREIGN KEY (id_vendedor) REFERENCES vendedores(id_vendedor)
+);
+
+CREATE TABLE notas_fiscais(
+id_notafiscal INT PRIMARY KEY IDENTITY(1,1),
+valorfinal DECIMAL(7,2),
+id_vendas INT,
+FOREIGN KEY (id_vendas) REFERENCES vendas(id_venda)
+);
+
+
+
 
 
 
