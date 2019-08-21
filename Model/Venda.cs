@@ -11,6 +11,8 @@ namespace Model
     [Table("vendas")]
     public class Venda
     {
+        public bool RegistroAtivo;
+
         [Key, Column("id")]
         public int Id { get; set; }
 

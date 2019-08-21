@@ -22,5 +22,8 @@ namespace Model
 
         [ForeignKey("IdModelo")]
         public Modelo Modelo { get; set; }
+
+        public bool RegistroAtivo;
+        
     }
 }
