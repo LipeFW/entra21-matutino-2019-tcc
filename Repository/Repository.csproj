@@ -62,7 +62,7 @@
     <Compile Include="Repositories\NotaFiscalRepository.cs" />
     <Compile Include="Repositories\ProdutoRepository.cs" />
     <Compile Include="Repositories\RotaRepository.cs" />
-    <Compile Include="Repositories\UsuarioReposotory.cs" />
+    <Compile Include="Repositories\UsuarioRepository.cs" />
     <Compile Include="Repositories\VeiculoRepository.cs" />
     <Compile Include="Repositories\VendaRepository.cs" />
     <Compile Include="Repositories\VendedorRepository.cs" />
