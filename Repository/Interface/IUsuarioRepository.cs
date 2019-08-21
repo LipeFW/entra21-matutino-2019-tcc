@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Repository.Interface
 {
-    class IUsuarioRepository
+    public interface IUsuarioRepository
     {
     }
 }
