@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Usuários";
+}
+
+<h2>Usuários</h2>
+
+<button data-toggle="modal" data-target="#modal-usuario" class="btn btn-primary float-right mb-2">
+    Novo Usuário
+</button>
+
+@RenderPage("CadastroModal.cshtml")
+
+@section js{
+    <script src="~/Scripts/Usuario/usuario.js">
+    </script>
+}
+
