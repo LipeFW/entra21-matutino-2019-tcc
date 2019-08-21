@@ -43,7 +43,9 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Estrutura.sql" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Database\bd.mwb" />
   </ItemGroup>
