@@ -41,21 +41,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interface\ICategoriaRepository.cs" />
     <Compile Include="Interface\IClienteRepository.cs" />
     <Compile Include="Interface\ILoginRepository.cs" />
+    <Compile Include="Interface\IMarcaRepository.cs" />
+    <Compile Include="Interface\IModeloRepository.cs" />
+    <Compile Include="Interface\INotaFiscalRepository.cs" />
     <Compile Include="Interface\IProdutoRepository.cs" />
     <Compile Include="Interface\IRotaRepository.cs" />
+    <Compile Include="Interface\IUsuarioRepository.cs" />
     <Compile Include="Interface\IVeiculoRepository.cs" />
     <Compile Include="Interface\IVendaRepository.cs" />
+    <Compile Include="Interface\IVendedorRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\CategoriaRepository.cs" />
     <Compile Include="Repositories\ClienteRepository.cs" />
     <Compile Include="Repositories\LoginRepository.cs" />
     <Compile Include="Repositories\MarcaRepository.cs" />
+    <Compile Include="Repositories\ModeloRepository.cs" />
+    <Compile Include="Repositories\NotaFiscalRepository.cs" />
     <Compile Include="Repositories\ProdutoRepository.cs" />
     <Compile Include="Repositories\RotaRepository.cs" />
+    <Compile Include="Repositories\UsuarioReposotory.cs" />
     <Compile Include="Repositories\VeiculoRepository.cs" />
     <Compile Include="Repositories\VendaRepository.cs" />
+    <Compile Include="Repositories\VendedorRepository.cs" />
     <Compile Include="SystemContext.cs" />
   </ItemGroup>
   <ItemGroup />
