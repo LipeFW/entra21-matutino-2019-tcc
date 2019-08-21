@@ -1,88 +1,110 @@
-﻿CREATE TABLE usuarios( 
-id_usuario INT PRIMARY KEY IDENTITY(1,1),
+﻿DROP TABLE IF EXISTS notas_fiscais, rotas, vendas, produtos, vendedores, veiculos, modelos, clientes, categorias, marcas, usuarios;
+
+CREATE TABLE usuarios( 
+id INT PRIMARY KEY IDENTITY(1,1),
 nome VARCHAR(45),
 senha VARCHAR(45)
 );
 
+INSERT INTO usuarios (nome,senha)
+VALUES ('Josefino','jsf1520');
+
 CREATE TABLE marcas (
-id_marca INT PRIMARY KEY IDENTITY(1,1),
+id INT PRIMARY KEY IDENTITY(1,1),
 nome VARCHAR(45)
 );
 
+INSERT INTO marcas(nome)
+VALUES ('Ford');
+
 CREATE TABLE categorias( 
-id_categoria INT PRIMARY KEY IDENTITY(1,1),
+id INT PRIMARY KEY IDENTITY(1,1),
 nome VARCHAR(45));
 
+INSERT INTO categorias(nome)
+VALUES ('Bebidas');
+
 CREATE TABLE clientes(
-id_cliente INT PRIMARY KEY IDENTITY(1,1),
+id INT PRIMARY KEY IDENTITY(1,1),
 nome  VARCHAR(45),
 telefone VARCHAR(20),
 cnpj VARCHAR (18),
 cep  VARCHAR(9)
 );
 
-CREATE TABLE vendedores(
-id_vendedor INT PRIMARY KEY IDENTITY(1,1),
-id_usuario VARCHAR(1),
-id_veiculo VARCHAR(1),
-FOREIGN KEY(id_veiculo) REFERENCES veiculos(id_veiculo),
-FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario)
-);
-
-CREATE TABLE veiculos(
-id_veiculo INT PRIMARY KEY IDENTITY(1,1),
-placa VARCHAR(10),
-descrição VARCHAR(100),
-id_modelo VARCHAR(1),
-FOREIGN KEY (id_modelo) REFERENCES modelos(id_modelo)
-);
+INSERT INTO clientes(nome, telefone, cnpj, cep)
+VALUES ('Pedro','47991581254','8888-88','89085-57');
 
 CREATE TABLE modelos(
-id_modelo INT PRIMARY KEY IDENTITY(1,1),
+id INT PRIMARY KEY IDENTITY(1,1),
 nome VARCHAR(45),
-id_marca VARCHAR(1),
-FOREIGN KEY (id_marca) REFERENCES marcas(id_marca)
+id_marca INT,
+FOREIGN KEY (id_marca) REFERENCES marcas(id)
 );
+
+INSERT INTO modelos(nome,id_marca)
+VALUES ('Cargo',1);
+
+CREATE TABLE veiculos(
+id INT PRIMARY KEY IDENTITY(1,1),
+placa VARCHAR(10),
+id_modelo iNT,
+FOREIGN KEY (id_modelo) REFERENCES modelos(id)
+);
+
+INSERT INTO veiculos(placa,id_modelo)
+VALUES ('MJX-0585',1);
+
+CREATE TABLE vendedores(
+id INT PRIMARY KEY IDENTITY(1,1),
+id_usuario INT,
+id_veiculo INT,
+FOREIGN KEY(id_veiculo) REFERENCES veiculos(id),
+FOREIGN KEY (id_usuario) REFERENCES usuarios(id));
+
+INSERT INTO vendedores (id_usuario, id_veiculo)
+VALUES (1,1);
 
 CREATE TABLE produtos(
-id_produto INT PRIMARY KEY IDENTITY(1,1),
-id_categorias VARCHAR(1),
+id INT PRIMARY KEY IDENTITY(1,1),
+id_categoria INT,
 codigo_barra VARCHAR(12),
-quantidade_produtos INT,
+quantidade_produto INT,
 valor_unitario DECIMAL(8,2),
-FOREIGN KEY (id_categoria) REFERENCES categorias(id_categoria)
-);
+FOREIGN KEY (id_categoria) REFERENCES categorias(id));
+
+INSERT INTO produtos (id_categoria, codigo_barra, quantidade_produto, valor_unitario)
+VALUES (1, 'xxxxxxxxxxxx', 1, 1);
 
 CREATE TABLE vendas(
-id_venda INT PRIMARY KEY IDENTITY(1,1),
-quantidade int,
-id_vendedor int,
-id_cliente int,
-id_produto int,
-FOREIGN KEY (id_vendedor) REFERENCES vendedores(id_vendedor),
-FOREIGN KEY (id_cliente) REFERENCES clientes(id_cliente),
-FOREIGN KEY (id_produto) REFERENCES produtos(id_produto)
-);
+id INT PRIMARY KEY IDENTITY(1,1),
+quantidade INT,
+id_vendedor INT,
+id_cliente INT,
+id_produto INT,
+FOREIGN KEY (id_vendedor) REFERENCES vendedores(id),
+FOREIGN KEY (id_cliente) REFERENCES clientes(id),
+FOREIGN KEY (id_produto) REFERENCES produtos(id));
+
+INSERT INTO vendas (quantidade,id_vendedor,id_cliente,id_produto)
+VALUES (1,1,1,1);
 
 CREATE TABLE rotas(
-id_rota INT PRIMARY KEY IDENTITY(1,1),
+id INT PRIMARY KEY IDENTITY(1,1),
 nome VARCHAR(45),
-istancia DECIMAL(5,2),
-id_vendedor int,
-FOREIGN KEY (id_vendedor) REFERENCES vendedores(id_vendedor)
+id_vendedor INT,
+FOREIGN KEY (id_vendedor) REFERENCES vendedores(id)
 );
+
+INSERT INTO rotas(nome,id_vendedor)
+VALUES ('Gaspar',1);
 
 CREATE TABLE notas_fiscais(
-id_notafiscal INT PRIMARY KEY IDENTITY(1,1),
-valorfinal DECIMAL(7,2),
+id INT PRIMARY KEY IDENTITY(1,1),
+valor_final DECIMAL(7,2),
 id_vendas INT,
-FOREIGN KEY (id_vendas) REFERENCES vendas(id_venda)
+FOREIGN KEY (id_vendas) REFERENCES vendas(id)
 );
 
-
-
-
-
-
-
-
+INSERT INTO notas_fiscais(valor_final,id_vendas)
+VALUES (100,1);
