@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Repository.Interface
 {
-    class IProdutoRepository
+   public class IProdutoRepository
     {
+        int inserir();
+        bool alterar();
+        bool apagar();
     }
 }

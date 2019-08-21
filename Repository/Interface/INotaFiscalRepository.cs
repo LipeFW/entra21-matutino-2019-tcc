@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Repository.Interface
 {
-    class INotaFiscalRepository
+   public class INotaFiscalRepository
     {
+        int inserir();
+        bool alterar();
+        bool apagar();
     }
 }

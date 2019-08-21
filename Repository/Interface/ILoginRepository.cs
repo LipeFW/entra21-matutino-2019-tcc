@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Repository.Interface
 {
-    class ILoginRepository
+   public class ILoginRepository
     {
+        int inserir();
+        bool alterar();
+        bool apagar();
     }
 }

@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Repository.Interface
 {
-    class IMarcaRepository
+   public class IMarcaRepository
     {
+        int inserir();
+        bool alterar();
+        bool apagar();
     }
 }
