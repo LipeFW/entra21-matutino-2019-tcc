@@ -1,4 +1,5 @@
-﻿using Repository.Repositories;
+﻿using Model;
+using Repository.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,7 +25,30 @@ namespace View.Controllers
             var resultado = new { data = categorias };
             return Json(resultado, JsonRequestBehavior.AllowGet);
         }
-            
+
+        [HttpPost, Route("cadastro")]
+        public ActionResult Cadastro(Categoria categoria)
+        {
+            int id = repository.Inserir(categoria);
+            return RedirectToAction("Editar", new { id = id });
+        }
+
+        [HttpPost, Route("editar")]
+        public JsonResult Editar(Categoria categoria)
+        {
+            var alterou = repository.Alterar(categoria);
+            var resultado = new { status = alterou };
+            return Json(resultado, JsonRequestBehavior.AllowGet);
+        }
+
+        [HttpGet, Route("apagar")]
+        public JsonResult Apagar(int id)
+        {
+            var apagou = repository.Apagar(id);
+            var resultado = new { status = apagou };
+            return Json(resultado, JsonRequestBehavior.AllowGet);
+        }
+
         public ActionResult Index()
         {
             return View();
