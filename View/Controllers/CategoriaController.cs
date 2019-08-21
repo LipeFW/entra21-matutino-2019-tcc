@@ -49,8 +49,25 @@ namespace View.Controllers
             return Json(resultado, JsonRequestBehavior.AllowGet);
         }
 
+
         public ActionResult Index()
         {
+            return View();
+        }
+
+        public ActionResult Cadastro()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult Editar(int id)
+        {
+            var categoria = repository.ObterPeloId(id);
+            if (categoria == null)
+                return RedirectToAction("index");
+
+            ViewBag.Categoria = categoria;
             return View();
         }
     }
