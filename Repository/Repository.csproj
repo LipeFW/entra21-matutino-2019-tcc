@@ -68,7 +68,9 @@
     <Compile Include="Repositories\VendedorRepository.cs" />
     <Compile Include="SystemContext.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Database\Estrutura.sql" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Database\bd.mwb" />
   </ItemGroup>
