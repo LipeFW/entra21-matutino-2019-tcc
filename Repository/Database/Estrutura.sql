@@ -1,4 +1,5 @@
-﻿CREATE TABLE usuarios( 
+﻿DROP TABLE IF EXISTS notas_fiscais, rotas, vendas, produtos, vendedores, veiculos, modelos, clientes, categorias, marcas, usuarios;
+CREATE TABLE usuarios( 
 id_usuario INT PRIMARY KEY IDENTITY(1,1),
 nome VARCHAR(45),
 senha VARCHAR(45)
@@ -21,44 +22,43 @@ cnpj VARCHAR (18),
 cep  VARCHAR(9)
 );
 
-CREATE TABLE vendedores(
-id_vendedor INT PRIMARY KEY IDENTITY(1,1),
-id_usuario VARCHAR(1),
-id_veiculo VARCHAR(1),
-FOREIGN KEY(id_veiculo) REFERENCES veiculos(id_veiculo),
-FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario)
+CREATE TABLE modelos(
+id_modelo INT PRIMARY KEY IDENTITY(1,1),
+nome VARCHAR(45),
+id_marca INT,
+FOREIGN KEY (id_marca) REFERENCES marcas(id_marca)
 );
 
 CREATE TABLE veiculos(
 id_veiculo INT PRIMARY KEY IDENTITY(1,1),
 placa VARCHAR(10),
 descrição VARCHAR(100),
-id_modelo VARCHAR(1),
+id_modelo iNT,
 FOREIGN KEY (id_modelo) REFERENCES modelos(id_modelo)
 );
 
-CREATE TABLE modelos(
-id_modelo INT PRIMARY KEY IDENTITY(1,1),
-nome VARCHAR(45),
-id_marca VARCHAR(1),
-FOREIGN KEY (id_marca) REFERENCES marcas(id_marca)
-);
+CREATE TABLE vendedores(
+id_vendedor INT PRIMARY KEY IDENTITY(1,1),
+id_usuario INT,
+id_veiculo INT,
+FOREIGN KEY(id_veiculo) REFERENCES veiculos(id_veiculo),
+FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario));
 
 CREATE TABLE produtos(
 id_produto INT PRIMARY KEY IDENTITY(1,1),
-id_categorias VARCHAR(1),
+id_categoria INT,
 codigo_barra VARCHAR(12),
-quantidade_produtos INT,
+quantidade_produto INT,
 valor_unitario DECIMAL(8,2),
 FOREIGN KEY (id_categoria) REFERENCES categorias(id_categoria)
 );
 
 CREATE TABLE vendas(
 id_venda INT PRIMARY KEY IDENTITY(1,1),
-quantidade int,
-id_vendedor int,
-id_cliente int,
-id_produto int,
+quantidade INT,
+id_vendedor INT,
+id_cliente INT,
+id_produto INT,
 FOREIGN KEY (id_vendedor) REFERENCES vendedores(id_vendedor),
 FOREIGN KEY (id_cliente) REFERENCES clientes(id_cliente),
 FOREIGN KEY (id_produto) REFERENCES produtos(id_produto)
@@ -68,7 +68,7 @@ CREATE TABLE rotas(
 id_rota INT PRIMARY KEY IDENTITY(1,1),
 nome VARCHAR(45),
 istancia DECIMAL(5,2),
-id_vendedor int,
+id_vendedor INT,
 FOREIGN KEY (id_vendedor) REFERENCES vendedores(id_vendedor)
 );
 
