@@ -59,7 +59,7 @@
     <Compile Include="SystemContext.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Estrutura.sql" />
+    <Content Include="Database\Estrutura.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Database\bd.mwb" />
