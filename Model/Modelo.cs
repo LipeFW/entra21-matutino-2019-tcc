@@ -19,5 +19,8 @@ namespace Model
 
         [Column("id_marca")]
         public int IdMarca { get; set; }
+
+        [Column("registro_ativo")]
+        public bool RegistroAtivo { get; set; }
     }
 }

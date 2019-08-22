@@ -9,8 +9,10 @@ namespace Repository.Interface
 {
     public interface IModeloRepository
     {
-        int Inserir(Marca marca);
-        bool Alterar(Marca marca);
+        int Inserir(Modelo modelo);
+        bool Alterar(Modelo modelo);
         bool Apagar(int id);
+        List<Modelo> ObterTodos();
+        Modelo ObterPeloId(int id);
     }
 }

@@ -67,7 +67,7 @@ namespace View.Controllers
                 return RedirectToAction("Index");
 
             ViewBag.Rota = rota;
-            return View():
+            return View();
         }
     }
 }
