@@ -233,6 +233,7 @@
     <Compile Include="Controllers\ClienteController.cs" />
     <Compile Include="Controllers\ModeloController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
+    <Compile Include="Controllers\VeiculoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -259,6 +260,7 @@
     <Folder Include="Views\Categoria\" />
     <Folder Include="Views\Cliente\" />
     <Folder Include="Views\Modelo\" />
+    <Folder Include="Views\Veiculo\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />
