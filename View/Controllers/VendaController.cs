@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Model;
+using Repository.Repositories;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -6,6 +8,7 @@ using System.Web.Mvc;
 
 namespace View.Controllers
 {
+    [Route("venda/")]
     public class VendaController : Controller
     {
         VendaRepository repository;

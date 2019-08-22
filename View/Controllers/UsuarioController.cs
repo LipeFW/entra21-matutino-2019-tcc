@@ -23,5 +23,14 @@ namespace View.Controllers
         {
             return View();
         }
+
+        [HttpGet]
+        public JsonResult ObterTodos()
+        {
+            var usuarios = repository.ObterTodos();
+            var resultado = new { data = usuarios };
+            return Json(resultado, JsonRequestBehavior.AllowGet);
+        }
+
     }
 }
