@@ -20,7 +20,7 @@ namespace Repository.Repositories
 
         public bool Alterar(Marca marca)
         {
-            var modeloOriginal = context.Modelos.FirstOrDefault(x => x.Id == modelos)
+            var modeloOriginal = context.Modelos.FirstOrDefault(x => x.Id == modelos);
         }
 
         public bool Apagar(int id)
