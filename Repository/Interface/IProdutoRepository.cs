@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,8 +11,14 @@ namespace Repository.Interface
     public interface IProdutoRepository
 
     {
-        int inserir();
-        bool alterar();
-        bool apagar();
+        int Inserir(Produto produto);
+
+        bool Alterar(Produto produto);
+
+        List<Produto> ObterTodos();
+
+        bool Apagar(int id);
+
+        Produto ObterPeloId(int id);
     }
 }

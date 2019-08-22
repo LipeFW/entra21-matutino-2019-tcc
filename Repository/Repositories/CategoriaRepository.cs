@@ -1,4 +1,5 @@
 ﻿using Model;
+using Repository.Interface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Repository.Repositories
 {
-    public class CategoriaRepository
+    public class CategoriaRepository: ICategoriaRepository
     {
        
             private SystemContext context;
