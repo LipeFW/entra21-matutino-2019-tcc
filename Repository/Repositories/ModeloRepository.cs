@@ -18,20 +18,9 @@ namespace Repository.Repositories
             context = new SystemContext();
         }
 
-        public bool Alterar(Modelo modelo)
+        public bool Alterar(Marca marca)
         {
-            var modeloOriginal = context.Modelos.FirstOrDefault(x => x.Id == modelo.Id);
-
-            if (modeloOriginal == null)
-                return false;
-
-            modeloOriginal.Nome = modelo.Nome;
-            modeloOriginal.IdMarca = modelo.IdMarca;
-
-            int quantidadeAfetada = context.SaveChanges();
-            return quantidadeAfetada == 1;
-
-            
+            var modeloOriginal = context.Modelos.FirstOrDefault(x => x.Id == modelos);
         }
 
         public bool Apagar(int id)
@@ -39,22 +28,11 @@ namespace Repository.Repositories
             throw new NotImplementedException();
         }
 
-        public int Inserir(Modelo modelo)
+        public int Inserir(Marca marca)
         {
-            context.Modelos.Add(modelo);
+            context.Marcas.Add(marca);
             context.SaveChanges();
-            return modelo.Id;
-        }
-
-        public List<Modelo> ObterTodos()
-        {
-            return context.Modelos.Where(x => x.RegistroAtivo == true).ToList();
-        }
-
-        public Modelo ObterPeloId(int id)
-        {
-            var modelo = context.Modelos.FirstOrDefault(x => x.Id == id);
-            return modelo;
+            return marca.Id;
         }
     }
 }

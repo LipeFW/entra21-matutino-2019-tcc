@@ -233,6 +233,7 @@
     <Compile Include="Controllers\ClienteController.cs" />
     <Compile Include="Controllers\MarcaController.cs" />
     <Compile Include="Controllers\ModeloController.cs" />
+    <Compile Include="Controllers\NotaFiscalController.cs" />
     <Compile Include="Controllers\ProdutoController.cs" />
     <Compile Include="Controllers\RotaController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
@@ -253,6 +254,9 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Usuario\Index.cshtml" />
     <Content Include="Views\Usuario\CadastroModal.cshtml" />
+    <Content Include="Views\Categoria\Index.cshtml" />
+    <Content Include="Views\Categoria\CategoriaModal.cshtml" />
+    <Content Include="Views\Marca\MarcaModal.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -262,10 +266,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
-    <Folder Include="Views\Categoria\" />
     <Folder Include="Views\Cliente\" />
-    <Folder Include="Views\Marca\" />
     <Folder Include="Views\Modelo\" />
+    <Folder Include="Views\NotaFiscal\" />
     <Folder Include="Views\Produto\" />
     <Folder Include="Views\Rota\" />
     <Folder Include="Views\Veiculo\" />
