@@ -231,8 +231,14 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CategoriaController.cs" />
     <Compile Include="Controllers\ClienteController.cs" />
+    <Compile Include="Controllers\MarcaController.cs" />
     <Compile Include="Controllers\ModeloController.cs" />
+    <Compile Include="Controllers\ProdutoController.cs" />
+    <Compile Include="Controllers\RotaController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
+    <Compile Include="Controllers\VeiculoController.cs" />
+    <Compile Include="Controllers\VendaController.cs" />
+    <Compile Include="Controllers\VendedorController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -258,7 +264,13 @@
     <Folder Include="Models\" />
     <Folder Include="Views\Categoria\" />
     <Folder Include="Views\Cliente\" />
+    <Folder Include="Views\Marca\" />
     <Folder Include="Views\Modelo\" />
+    <Folder Include="Views\Produto\" />
+    <Folder Include="Views\Rota\" />
+    <Folder Include="Views\Veiculo\" />
+    <Folder Include="Views\Venda\" />
+    <Folder Include="Views\Vendedor\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />

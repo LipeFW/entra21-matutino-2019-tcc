@@ -7,6 +7,7 @@ using System.Web.Mvc;
 
 namespace View.Controllers
 {
+    [Route("usuario/")]
     public class UsuarioController : Controller
     {
 

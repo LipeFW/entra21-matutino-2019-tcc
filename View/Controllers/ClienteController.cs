@@ -62,7 +62,7 @@ namespace View.Controllers
         [HttpGet]
         public ActionResult Editar(int id)
         {
-            var cliente = repository.Alterar(id);
+            var cliente = repository.ObterPeloId(id);
             if (cliente == null)
                 return RedirectToAction("Index");
 
