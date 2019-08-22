@@ -8,35 +8,35 @@ using System.Web.Mvc;
 
 namespace View.Controllers
 {
-    [Route("veiculo/")]
-    public class VeiculoController : Controller
+    [Route("rota/")]
+    public class RotaController : Controller
     {
-        private VeiculoRepository repository;
+        private RotaRepository repository;
 
-        public VeiculoController()
+        public RotaController()
         {
-            repository = new VeiculoRepository();
+            repository = new RotaRepository();
         }
-        
+
         [HttpGet, Route("obtertodos")]
         public JsonResult ObterTodos()
         {
-            var veiculos = repository.ObterTodos();
-            var resultado = new { dara = veiculos };
+            var rotas = repository.ObterTodos();
+            var resultado = new { data = rotas };
             return Json(resultado, JsonRequestBehavior.AllowGet);
         }
 
         [HttpPost, Route("cadastro")]
-        public ActionResult Cadastro(Veiculo veiculo)
+        public ActionResult Cadastro(Rota rota)
         {
-            int id = repository.Inserir(veiculo);
+            int id = repository.Inserir(rota);
             return RedirectToAction("Editar", new { id = id });
         }
 
         [HttpPost, Route("editar")]
-        public JsonResult Editar(Veiculo veiculo)
+        public JsonResult Editar(Rota rota)
         {
-            var alterou = repository.Alterar(veiculo);
+            var alterou = repository.Alterar(rota);
             var resultado = new { status = alterou };
             return Json(resultado, JsonRequestBehavior.AllowGet);
         }
@@ -59,14 +59,15 @@ namespace View.Controllers
             return View();
         }
 
+        [HttpGet]
         public ActionResult Editar(int id)
         {
-            var veiculo = repository.ObterPeloId();
-            if (veiculo == null)
+            var rota = repository.ObterPeloId(id);
+            if (rota == null)
                 return RedirectToAction("Index");
 
-            ViewBag.Veiculo = veiculo;
-            return View();
+            ViewBag.Rota = rota;
+            return View():
         }
     }
 }

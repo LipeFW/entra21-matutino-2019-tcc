@@ -233,6 +233,7 @@
     <Compile Include="Controllers\ClienteController.cs" />
     <Compile Include="Controllers\MarcaController.cs" />
     <Compile Include="Controllers\ModeloController.cs" />
+    <Compile Include="Controllers\RotaController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Controllers\VeiculoController.cs" />
     <Compile Include="Global.asax.cs">
@@ -262,6 +263,7 @@
     <Folder Include="Views\Cliente\" />
     <Folder Include="Views\Marca\" />
     <Folder Include="Views\Modelo\" />
+    <Folder Include="Views\Rota\" />
     <Folder Include="Views\Veiculo\" />
   </ItemGroup>
   <ItemGroup>
