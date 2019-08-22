@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Repository.Repositories
 {
-    class VendedorRepository
+    public class VendedorRepository
     {
     }
 }
