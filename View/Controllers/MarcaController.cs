@@ -55,6 +55,7 @@ namespace View.Controllers
             return View();
         }
 
+        [HttpGet]
         public ActionResult Editar(int id)
         {
             var marca = repository.ObterPeloId(id);
