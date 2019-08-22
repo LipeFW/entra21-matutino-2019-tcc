@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,14 +7,19 @@ using System.Threading.Tasks;
 
 namespace Repository.Interface
 {
-<<<<<<< HEAD
+
+
     public interface IRotaRepository
-=======
-   public class IRotaRepository
->>>>>>> 95eae6f8ca8e806746d641e3e0f898a42ce42606
+
     {
-        int inserir();
-        bool alterar();
-        bool apagar();
+        int Inserir(Rota rota);
+
+        bool Alterar(Rota rota);
+
+        List<Rota> ObterTodos();
+
+        Rota ObterPeloId(int id);
+
+        bool Apagar(int id);
     }
 }

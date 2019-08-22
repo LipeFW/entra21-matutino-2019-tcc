@@ -16,5 +16,8 @@ namespace Model
 
         [Column("nome")]
         public string Nome { get; set; }
+
+        [Column("regitro_rota")]
+        public bool RegistroRota { get; set; }
     }
 }

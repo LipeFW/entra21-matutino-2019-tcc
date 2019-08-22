@@ -40,5 +40,8 @@ namespace Model
 
         [Column("desconto")]
         public decimal Desconto { get; set; }
+
+        [Column("regitro_ativo")]
+        public bool RegistroAtivo { get; set; }
     }
 }

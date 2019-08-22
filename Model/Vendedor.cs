@@ -25,5 +25,8 @@ namespace Model
 
         [ForeignKey("IdVeiculo")]
         public Veiculo Veiculo { get; set; }
+
+        [Column("registro_ativo")]
+        public bool RegistroAtivo { get; set; }
     }
 }
