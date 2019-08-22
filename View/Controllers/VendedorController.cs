@@ -8,36 +8,35 @@ using System.Web.Mvc;
 
 namespace View.Controllers
 {
-    [Route("modelo/")]
-    public class ModeloController : Controller
+    [Route("vendedor/")]
+    public class VendedorController : Controller
     {
-        private ModeloRepository repository;
+        private VendedorRepository repository;
 
-        public ModeloController()
+        public VendedorController()
         {
-            repository = new ModeloRepository();
+            repository = new VendedorRepository();
         }
 
         [HttpGet, Route("obtertodos")]
         public JsonResult ObterTodos()
         {
-            var modelos = repository.ObterTodos();
-            var resultado = new { data = modelos };
+            var vendedores = repository.ObterTodos();
+            var resultado = new { data = vendedores };
             return Json(resultado, JsonRequestBehavior.AllowGet);
-
         }
 
         [HttpPost, Route("cadastro")]
-        public ActionResult Cadastro(Modelo modelo)
+        public ActionResult Cadastro(Vendedor vendedor)
         {
-            int id = repository.Inserir(modelo);
+            int id = repository.Inserir(vendedor);
             return RedirectToAction("Editar", new { id = id });
         }
 
         [HttpPost, Route("editar")]
-        public JsonResult Editar(Modelo modelo)
+        public JsonResult Editar(Vendedor vendedor)
         {
-            var alterou = repository.Alterar(modelo);
+            var alterou = repository.Alterar(vendedor);
             var resultado = new { status = alterou };
             return Json(resultado, JsonRequestBehavior.AllowGet);
         }
@@ -63,11 +62,11 @@ namespace View.Controllers
         [HttpGet]
         public ActionResult Editar(int id)
         {
-            var modelo = repository.ObterPeloId(id);
-            if (modelo == null)
+            var vendedor = repository.ObterPeloId(id);
+            if (vendedor == null)
                 return RedirectToAction("Index");
 
-            ViewBag.Modelo = modelo;
+            ViewBag.Vendedor = vendedor;
             return View();
         }
     }

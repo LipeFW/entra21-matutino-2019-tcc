@@ -8,36 +8,35 @@ using System.Web.Mvc;
 
 namespace View.Controllers
 {
-    [Route("modelo/")]
-    public class ModeloController : Controller
+    [Route("veiculo/")]
+    public class VeiculoController : Controller
     {
-        private ModeloRepository repository;
+        private VeiculoRepository repository;
 
-        public ModeloController()
+        public VeiculoController()
         {
-            repository = new ModeloRepository();
+            repository = new VeiculoRepository();
         }
-
+        
         [HttpGet, Route("obtertodos")]
         public JsonResult ObterTodos()
         {
-            var modelos = repository.ObterTodos();
-            var resultado = new { data = modelos };
+            var veiculos = repository.ObterTodos();
+            var resultado = new { dara = veiculos };
             return Json(resultado, JsonRequestBehavior.AllowGet);
-
         }
 
         [HttpPost, Route("cadastro")]
-        public ActionResult Cadastro(Modelo modelo)
+        public ActionResult Cadastro(Veiculo veiculo)
         {
-            int id = repository.Inserir(modelo);
+            int id = repository.Inserir(veiculo);
             return RedirectToAction("Editar", new { id = id });
         }
 
         [HttpPost, Route("editar")]
-        public JsonResult Editar(Modelo modelo)
+        public JsonResult Editar(Veiculo veiculo)
         {
-            var alterou = repository.Alterar(modelo);
+            var alterou = repository.Alterar(veiculo);
             var resultado = new { status = alterou };
             return Json(resultado, JsonRequestBehavior.AllowGet);
         }
@@ -60,14 +59,13 @@ namespace View.Controllers
             return View();
         }
 
-        [HttpGet]
         public ActionResult Editar(int id)
         {
-            var modelo = repository.ObterPeloId(id);
-            if (modelo == null)
+            var veiculo = repository.ObterPeloId();
+            if (veiculo == null)
                 return RedirectToAction("Index");
 
-            ViewBag.Modelo = modelo;
+            ViewBag.Veiculo = veiculo;
             return View();
         }
     }

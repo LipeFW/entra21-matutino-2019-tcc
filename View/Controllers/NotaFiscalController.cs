@@ -8,44 +8,43 @@ using System.Web.Mvc;
 
 namespace View.Controllers
 {
-    [Route("modelo/")]
-    public class ModeloController : Controller
+    [Route("notafiscal/")]
+    public class NotaFiscalController : Controller
     {
-        private ModeloRepository repository;
+        private NotaFiscalRepository repository;
 
-        public ModeloController()
+        public NotaFiscalController()
         {
-            repository = new ModeloRepository();
+            repository = new NotaFiscalRepository();
         }
 
         [HttpGet, Route("obtertodos")]
         public JsonResult ObterTodos()
         {
-            var modelos = repository.ObterTodos();
-            var resultado = new { data = modelos };
+            var notasFiscais = repository.ObterTodos();
+            var resultado = new { data = notasFiscais };
             return Json(resultado, JsonRequestBehavior.AllowGet);
-
         }
 
         [HttpPost, Route("cadastro")]
-        public ActionResult Cadastro(Modelo modelo)
+        public ActionResult Cadastro(NotaFiscal notaFiscal)
         {
-            int id = repository.Inserir(modelo);
+            int id = repository.Inserir(notaFiscal);
             return RedirectToAction("Editar", new { id = id });
         }
 
         [HttpPost, Route("editar")]
-        public JsonResult Editar(Modelo modelo)
+        public JsonResult Editar(NotaFiscal notaFiscal)
         {
-            var alterou = repository.Alterar(modelo);
+            var alterou = repository.Alterar(notaFiscal);
             var resultado = new { status = alterou };
             return Json(resultado, JsonRequestBehavior.AllowGet);
         }
 
         [HttpGet, Route("apagar")]
-        public JsonResult Apagar(int id)
+        public JsonResult Aoagar(int id)
         {
-            var apagou = repository.Apagar(id);
+            var apagou = repository.ObterPeloId(id);
             var resultado = new { status = apagou };
             return Json(resultado, JsonRequestBehavior.AllowGet);
         }
@@ -58,16 +57,17 @@ namespace View.Controllers
         public ActionResult Cadastro()
         {
             return View();
+
         }
 
         [HttpGet]
         public ActionResult Editar(int id)
         {
-            var modelo = repository.ObterPeloId(id);
-            if (modelo == null)
+            var notaFiscal = repository.ObterPeloId(id);
+            if (notaFiscal == null)
                 return RedirectToAction("Index");
 
-            ViewBag.Modelo = modelo;
+            ViewBag.NotaFiscal = notaFiscal;
             return View();
         }
     }

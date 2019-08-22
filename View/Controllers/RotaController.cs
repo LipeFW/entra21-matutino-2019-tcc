@@ -8,36 +8,35 @@ using System.Web.Mvc;
 
 namespace View.Controllers
 {
-    [Route("modelo/")]
-    public class ModeloController : Controller
+    [Route("rota/")]
+    public class RotaController : Controller
     {
-        private ModeloRepository repository;
+        private RotaRepository repository;
 
-        public ModeloController()
+        public RotaController()
         {
-            repository = new ModeloRepository();
+            repository = new RotaRepository();
         }
 
         [HttpGet, Route("obtertodos")]
         public JsonResult ObterTodos()
         {
-            var modelos = repository.ObterTodos();
-            var resultado = new { data = modelos };
+            var rotas = repository.ObterTodos();
+            var resultado = new { data = rotas };
             return Json(resultado, JsonRequestBehavior.AllowGet);
-
         }
 
         [HttpPost, Route("cadastro")]
-        public ActionResult Cadastro(Modelo modelo)
+        public ActionResult Cadastro(Rota rota)
         {
-            int id = repository.Inserir(modelo);
+            int id = repository.Inserir(rota);
             return RedirectToAction("Editar", new { id = id });
         }
 
         [HttpPost, Route("editar")]
-        public JsonResult Editar(Modelo modelo)
+        public JsonResult Editar(Rota rota)
         {
-            var alterou = repository.Alterar(modelo);
+            var alterou = repository.Alterar(rota);
             var resultado = new { status = alterou };
             return Json(resultado, JsonRequestBehavior.AllowGet);
         }
@@ -63,11 +62,11 @@ namespace View.Controllers
         [HttpGet]
         public ActionResult Editar(int id)
         {
-            var modelo = repository.ObterPeloId(id);
-            if (modelo == null)
+            var rota = repository.ObterPeloId(id);
+            if (rota == null)
                 return RedirectToAction("Index");
 
-            ViewBag.Modelo = modelo;
+            ViewBag.Rota = rota;
             return View();
         }
     }

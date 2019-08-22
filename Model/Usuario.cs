@@ -22,5 +22,8 @@ namespace Model
 
         [Column("admin")]
         public bool Admin { get; set; }
+
+        [Column("registro_ativo")]
+        public bool RegistroAtivo { get; set; }
     }
 }
