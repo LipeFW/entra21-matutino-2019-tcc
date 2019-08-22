@@ -8,7 +8,7 @@ using System.Web.Mvc;
 
 namespace View.Controllers
 {
-    [Route("produto")]
+    [Route("produto/")]
     public class ProdutoController : Controller
     {
         ProdutoRepository repository;
