@@ -257,6 +257,7 @@
     <Content Include="Views\Categoria\Index.cshtml" />
     <Content Include="Views\Categoria\CategoriaModal.cshtml" />
     <Content Include="Views\Marca\MarcaModal.cshtml" />
+    <Content Include="Views\Modelo\ModeloModal.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -267,7 +268,6 @@
   <ItemGroup>
     <Folder Include="Models\" />
     <Folder Include="Views\Cliente\" />
-    <Folder Include="Views\Modelo\" />
     <Folder Include="Views\NotaFiscal\" />
     <Folder Include="Views\Produto\" />
     <Folder Include="Views\Rota\" />
