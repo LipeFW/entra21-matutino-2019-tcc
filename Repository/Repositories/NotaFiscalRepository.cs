@@ -10,29 +10,54 @@ namespace Repository.Repositories
 {
     public class NotaFiscalRepository : INotaFiscalRepository
     {
+        private SystemContext context;
+
         public bool Alterar(NotaFiscal notaFiscal)
         {
-            throw new NotImplementedException();
+            var notaFiscalOriginal = context.NotasFiscais.Where(x => x.Id == notaFiscal.Id).FirstOrDefault();
+
+            if (notaFiscalOriginal == null)
+                return false;
+
+            notaFiscalOriginal.Id = notaFiscal.Id;
+            notaFiscalOriginal.IdVenda = notaFiscal.IdVenda;
+            notaFiscalOriginal.Venda = notaFiscal.Venda;
+            notaFiscalOriginal.ValorFinal = notaFiscal.ValorFinal;
+            int quantidadeAfetada = context.SaveChanges();
+
+            return quantidadeAfetada == 1;
         }
 
         public bool Apagar(int id)
         {
-            throw new NotImplementedException();
+            var notaFiscal = context.NotasFiscais.FirstOrDefault(x => x.Id == id);
+            if (notaFiscal == null)
+                return false;
+
+            NotaFiscal.RegistroAtivo = false;
+
+            int quantidadeAfetada = context.SaveChanges();
+
+            return quantidadeAfetada == 1;
         }
 
         public int Inserir(NotaFiscal notaFiscal)
         {
-            throw new NotImplementedException();
+            context.NotasFiscais.Add(notaFiscal);
+            context.SaveChanges();
+
+            return notaFiscal.Id;
         }
 
         public NotaFiscal ObterPeloId(int id)
         {
-            throw new NotImplementedException();
+            var notaFiscal = context.NotasFiscais.FirstOrDefault(x => x.Id == id);
+            return notaFiscal;
         }
 
         public List<NotaFiscal> ObterTodos()
         {
-            throw new NotImplementedException();
+            return context.Notas.Where(x => x.RegistroAtivo == true).ToList();
         }
     }
 }
