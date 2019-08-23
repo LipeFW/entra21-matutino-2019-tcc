@@ -11,8 +11,6 @@ namespace Model
     [Table("vendas")]
     public class Venda
     {
-        public bool RegistroAtivo;
-
         [Key, Column("id")]
         public int Id { get; set; }
 
@@ -42,5 +40,8 @@ namespace Model
 
         [Column("desconto")]
         public decimal Desconto { get; set; }
+
+        [Column("regitro_ativo")]
+        public bool RegistroAtivo { get; set; }
     }
 }

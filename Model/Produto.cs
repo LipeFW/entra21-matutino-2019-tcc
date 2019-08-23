@@ -25,5 +25,8 @@ namespace Model
 
         [Column("valor_unitario")]
         public decimal ValorUnitario { get; set; }
+
+        [Column("registro_ativo")]
+        public bool RegistroAtivo { get; set; }
     }
 }

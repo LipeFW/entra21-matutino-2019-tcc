@@ -1,19 +1,24 @@
-﻿using System;
+﻿using Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Model;
 
 namespace Repository.Interface
 {
-   public class IVeiculoRepository
+
+    public interface IVeiculoRepository
+
     {
         int Inserir(Veiculo veiculo);
-         bool Alterar(Veiculo veiculo);
-        bool Apagar();
-       Veiculo ObterPeloId(int id);
-        public List<Veiculo> ObterProdutosPeloIdVenda;
+
+        bool Alterar(Veiculo veiculo);
+
         
+
+        Veiculo ObterPeloId(int id);
+
+        bool Apagar(int id);
     }
 }

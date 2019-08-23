@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,10 +7,18 @@ using System.Threading.Tasks;
 
 namespace Repository.Interface
 {
-   public class INotaFiscalRepository
+
+    public interface INotaFiscalRepository
+
     {
-        int inserir();
-        bool alterar();
-        bool apagar();
+        int Inserir(NotaFiscal notaFiscal);
+
+        bool Alterar(NotaFiscal notaFiscal);
+
+        List<NotaFiscal> ObterTodos();
+
+        bool Apagar(int id);
+
+        NotaFiscal ObterPeloId(int id);
     }
 }

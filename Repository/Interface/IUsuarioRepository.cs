@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,10 +7,18 @@ using System.Threading.Tasks;
 
 namespace Repository.Interface
 {
-   public class IUsuarioRepository
+
+    public interface IUsuarioRepository
+
     {
-        int inserir();
-        bool alterar();
-        bool apagar();
+        int Inserir(Usuario usuario);
+
+        bool Alterar(Usuario usuario);
+
+        List<Usuario> ObterTodos();
+
+        bool Apagar(int id);
+
+        Usuario ObterPeloId(int id);
     }
 }

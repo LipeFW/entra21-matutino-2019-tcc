@@ -23,7 +23,7 @@ namespace Model
         [ForeignKey("IdModelo")]
         public Modelo Modelo { get; set; }
 
-        public bool RegistroAtivo;
-        
+        [Column("registro_ativo")]
+        public bool RegistroAtivo { get; set; }
     }
 }

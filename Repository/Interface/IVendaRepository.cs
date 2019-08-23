@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,10 +7,18 @@ using System.Threading.Tasks;
 
 namespace Repository.Interface
 {
-   public class IVendaRepository
+
+    public interface IVendaRepository
+
     {
-        int inserir();
-        bool alterar();
-        bool apagar();
+        int Inserir(Venda venda);
+
+        bool Alterar(Venda venda);
+
+        List<Venda> ObterTodos();
+
+        Venda ObterPeloId(int id);
+
+        bool Apagar(int id);
     }
 }
