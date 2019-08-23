@@ -1,4 +1,4 @@
-﻿DROP TABLE IF EXISTS notas_fiscais, rotas, vendas, produtos, vendedores, veiculos, modelos, clientes, categorias, marcas, usuarios;
+﻿DROP TABLE IF EXISTS notas_fiscais,  rotas, vendas,vendedores, clientes, rotas, produtos, veiculos, modelos, categorias, marcas, usuarios;
 
 CREATE TABLE usuarios( 
 id INT PRIMARY KEY IDENTITY(1,1),
@@ -7,9 +7,9 @@ senha VARCHAR(45),
 registro_ativo BIT
 );
 
-INSERT INTO usuarios (nome,senha)
-VALUES ('Josefino','jsf1520'),
-	   ('Illan', 'dknlan123');
+INSERT INTO usuarios (nome,senha,registro_ativo)
+VALUES ('LipeFW','tatofazmano',1),
+	   ('Illan', 'dknlan123',1);
 
 CREATE TABLE marcas (
 id INT PRIMARY KEY IDENTITY(1,1),
@@ -17,16 +17,16 @@ nome VARCHAR(45),
 registro_ativo BIT
 );
 
-INSERT INTO marcas(nome)
-VALUES ('Ford');
+INSERT INTO marcas(nome,registro_ativo)
+VALUES ('Ford',1);
 
 CREATE TABLE categorias( 
 id INT PRIMARY KEY IDENTITY(1,1),
 nome VARCHAR(45),
 registro_ativo BIT);
 
-INSERT INTO categorias(nome)
-VALUES ('Bebidas');
+INSERT INTO categorias(nome,registro_ativo)
+VALUES ('Bebidas',1);
 
 CREATE TABLE clientes(
 id INT PRIMARY KEY IDENTITY(1,1),
@@ -37,8 +37,8 @@ cep  VARCHAR(9),
 registro_ativo BIT
 );
 
-INSERT INTO clientes(nome, telefone, cnpj, cep)
-VALUES ('Pedro','47991581254','8888-88','89085-57');
+INSERT INTO clientes(nome, telefone, cnpj, cep, registro_ativo)
+VALUES ('Pedro','47991581254','8888-88','89085-57',1);
 
 CREATE TABLE modelos(
 id INT PRIMARY KEY IDENTITY(1,1),
@@ -48,8 +48,8 @@ FOREIGN KEY (id_marca) REFERENCES marcas(id),
 registro_ativo BIT
 );
 
-INSERT INTO modelos(nome,id_marca)
-VALUES ('Cargo',1);
+INSERT INTO modelos(nome,id_marca,registro_ativo)
+VALUES ('Cargo',1,1);
 
 CREATE TABLE veiculos(
 id INT PRIMARY KEY IDENTITY(1,1),
@@ -59,8 +59,8 @@ FOREIGN KEY (id_modelo) REFERENCES modelos(id),
 registro_ativo BIT
 );
 
-INSERT INTO veiculos(placa,id_modelo)
-VALUES ('MJX-0585',1);
+INSERT INTO veiculos(placa,id_modelo,registro_ativo)
+VALUES ('MJX-0585',1,1);
 
 CREATE TABLE vendedores(
 id INT PRIMARY KEY IDENTITY(1,1),
@@ -70,8 +70,8 @@ FOREIGN KEY(id_veiculo) REFERENCES veiculos(id),
 FOREIGN KEY (id_usuario) REFERENCES usuarios(id),
 registro_ativo BIT);
 
-INSERT INTO vendedores (id_usuario, id_veiculo)
-VALUES (1,1);
+INSERT INTO vendedores (id_usuario, id_veiculo, registro_ativo)
+VALUES (1,1,1);
 
 CREATE TABLE produtos(
 id INT PRIMARY KEY IDENTITY(1,1),
@@ -82,8 +82,8 @@ valor_unitario DECIMAL(8,2),
 FOREIGN KEY (id_categoria) REFERENCES categorias(id),
 registro_ativo BIT);
 
-INSERT INTO produtos (id_categoria, codigo_barra, quantidade_produto, valor_unitario)
-VALUES (1, 'xxxxxxxxxxxx', 1, 1);
+INSERT INTO produtos (id_categoria, codigo_barra, quantidade_produto, valor_unitario, registro_ativo)
+VALUES (1, 'xxxxxxxxxxxx', 1, 1,1);
 
 CREATE TABLE vendas(
 id INT PRIMARY KEY IDENTITY(1,1),
@@ -96,8 +96,8 @@ FOREIGN KEY (id_cliente) REFERENCES clientes(id),
 FOREIGN KEY (id_produto) REFERENCES produtos(id),
 registro_ativo BIT);
 
-INSERT INTO vendas (quantidade,id_vendedor,id_cliente,id_produto)
-VALUES (1,1,1,1);
+INSERT INTO vendas (quantidade,id_vendedor,id_cliente,id_produto, registro_ativo)
+VALUES (1,1,1,1,1);
 
 CREATE TABLE rotas(
 id INT PRIMARY KEY IDENTITY(1,1),
@@ -107,8 +107,8 @@ FOREIGN KEY (id_vendedor) REFERENCES vendedores(id),
 registro_ativo BIT
 );
 
-INSERT INTO rotas(nome,id_vendedor)
-VALUES ('Gaspar',1);
+INSERT INTO rotas(nome,id_vendedor, registro_ativo)
+VALUES ('Gaspar',1,1);
 
 CREATE TABLE notas_fiscais(
 id INT PRIMARY KEY IDENTITY(1,1),
@@ -118,5 +118,5 @@ FOREIGN KEY (id_vendas) REFERENCES vendas(id),
 registro_ativo BIT
 );
 
-INSERT INTO notas_fiscais(valor_final,id_vendas)
-VALUES (100,1);
+INSERT INTO notas_fiscais(valor_final,id_vendas, registro_ativo)
+VALUES (100,1,1);
