@@ -9,30 +9,53 @@ using System.Threading.Tasks;
 namespace Repository.Repositories
 {
     public class VeiculoRepository : IVeiculoRepository
+
+    private SystemContext context;
+
+    public VeiculoRepository()
     {
-        public bool Alterar(Veiculo veiculo)
-        {
-            throw new NotImplementedException();
-        }
+        context = new SystemContext();
+    }
 
-        public bool Apagar(int id)
-        {
-            throw new NotImplementedException();
-        }
 
-        public int Inserir(Veiculo veiculo)
-        {
-            throw new NotImplementedException();
-        }
 
-        public Veiculo ObterPeloId(int id)
-        {
-            throw new NotImplementedException();
-        }
 
-        public List<Veiculo> ObterTodos()
-        {
-            throw new NotImplementedException();
-        }
+
+    public bool Alterar(Veiculo veiculo)
+    {
+        throw new NotImplementedException();
+    }
+
+    public bool Apagar(int id)
+    {
+
+        var veiculo = context.Veiculos
+            .FirstOrDefault(x => x.Id == id);
+
+        if (veiculo == null)
+            return false;
+
+        veiculo.RegistroAtivo = false;
+        int quantidadeAfetada = context.SaveChanges();
+        return quantidadeAfetada == 1;
+    }
+
+    public int Inserir(Veiculo veiculo)
+    {
+        veiculo.RegistroAtivo = true;
+        context.Produtos.Add(veiculo);
+        context.SaveChanges();
+        return veiculo.Id;
+    }
+
+    public Veiculo ObterPeloId(int id)
+    {
+        return context.Veiculos
+      .FirstOrDefault(x => x.Id == id);
     }
 }
+}
+
+    
+
+ 
