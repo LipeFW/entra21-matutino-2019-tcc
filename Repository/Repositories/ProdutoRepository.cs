@@ -1,4 +1,5 @@
 ﻿using Model;
+using Repository.Interface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Repository.Repositories
 {
-    public class ProdutoRepository
+    public class ProdutoRepository : IProdutoRepository
     {
         private SystemContext context;
 
@@ -43,9 +44,9 @@ namespace Repository.Repositories
         .FirstOrDefault(x => x.Id == id);
         }
 
-        public List<Produto> ObterProdutosPeloIdVenda(int idVenda)
+        public List<Produto> ObterTodos()
         {
-            return context.Produtos.Where(x => x.Id == idVenda && x.RegistroAtivo).ToList();
+            return context.Produtos.Where(x => x.RegistroAtivo == true).ToList();
         }
 
         public bool Alterar(Produto produto)
@@ -61,7 +62,7 @@ namespace Repository.Repositories
             produtoOriginal.CodigoBarra = produto.CodigoBarra;
             produtoOriginal.IdCategoria = produto.IdCategoria;
             produtoOriginal.ValorUnitario = produto.ValorUnitario;
-           
+
             int quantidadeAfetada = context.SaveChanges();
             return quantidadeAfetada == 1;
         }
