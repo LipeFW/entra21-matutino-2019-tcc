@@ -82,8 +82,6 @@ namespace View.Controllers
             }
             var resultado = new { results = usuariosSelect2 };
             return Json(resultado, JsonRequestBehavior.AllowGet);
-
-
         }
     }
 }
