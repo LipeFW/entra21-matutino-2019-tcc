@@ -75,4 +75,33 @@
         });
     }
 
+    $('.table').on('click', '.botao-apagar', function () {
+        $idApagar = $(this).data('id');
+
+        $ajax({
+            url: 'http://localhost:51242/Categoria/apagar?=' + $idApagar,
+            method: 'get',
+            success: function (data) {
+                $tabelaCliente.ajax.reload();
+            }
+        })
+    });
+
+    $('.table').on('click', '.botao-apagar', function () {
+        $idApagar = $(this).data('id');
+
+        $ajax({
+            url: 'http://localhost:51242/Categoria/apagar?=' + $idApagar,
+            method: 'get',
+            success: function (data) {
+                $tabelaCliente.ajax.reload();
+            },
+            error: function (err) {
+                alert('Não foi possivel apagar');
+            }
+        })
+    });
+
+
+
 })
