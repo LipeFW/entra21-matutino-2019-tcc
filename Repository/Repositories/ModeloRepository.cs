@@ -35,7 +35,14 @@ namespace Repository.Repositories
 
         public bool Apagar(int id)
         {
-            throw new NotImplementedException();
+            var modelo = context.Modelos.FirstOrDefault(x => x.Id == id);
+
+            if (modelo == null)
+                return false;
+
+            modelo.RegistroAtivo = false;
+            int quantidadeAfetada = context.SaveChanges();
+            return quantidadeAfetada == 1;
         }
 
         public int Inserir(Modelo modelo)
@@ -47,8 +54,8 @@ namespace Repository.Repositories
 
         public Modelo ObterPeloId(int id)
         {
-            var pessoa = context.Modelos.FirstOrDefault(x => x.Id == id);
-            return pessoa;
+            var modelo = context.Modelos.FirstOrDefault(x => x.Id == id);
+            return modelo;
         }
 
         public List<Modelo> ObterTodos()

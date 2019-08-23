@@ -39,8 +39,7 @@ namespace Repository.Repositories
 
         public Produto ObterPeloId(int id)
         {
-            return context.Produtos
-        .FirstOrDefault(x => x.Id == id);
+            return context.Produtos.FirstOrDefault(x => x.Id == id);
         }
 
         public List<Produto> ObterProdutosPeloIdVenda(int idVenda)
@@ -50,9 +49,9 @@ namespace Repository.Repositories
 
         public bool Alterar(Produto produto)
         {
-            var produtoOriginal = context
-                .Produtos.FirstOrDefault(
-                x => x.Id == produto.Id);
+            var produtoOriginal = context.Produtos
+                .FirstOrDefault(x => x.Id == produto.Id);
+
             if (produtoOriginal == null)
                 return false;
 
