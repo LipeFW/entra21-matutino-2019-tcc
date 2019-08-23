@@ -8,6 +8,7 @@ using System.Web.Mvc;
 
 namespace View.Controllers
 {
+   
     [Route("veiculo/")]
     public class VeiculoController : Controller
     {
@@ -56,6 +57,10 @@ namespace View.Controllers
 
         public ActionResult Cadastro()
         {
+            VeiculoRepository veiculoRepository = new VeiculoRepository();
+            List<Veiculo> veiculos = veiculoRepository.ObterTodos();
+            ViewBag.Veiculos = veiculos;
+
             return View();
         }
 

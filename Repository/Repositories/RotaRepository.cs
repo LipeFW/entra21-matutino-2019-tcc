@@ -42,7 +42,7 @@ namespace Repository.Repositories
                 return false;
             }
 
-            rota.RegistroRota = false;
+            rota.RegistroAtivo = false;
             int quantidadeAfetada = context.SaveChanges();
 
             return quantidadeAfetada == 1;
@@ -64,7 +64,7 @@ namespace Repository.Repositories
 
         public List<Rota> ObterTodos()
         {
-            return context.Rotas.Where(x => x.RegistroRota == true).OrderBy(x => x.Id).ToList();
+            return context.Rotas.Where(x => x.RegistroAtivo == true).OrderBy(x => x.Id).ToList();
         }
     }
 

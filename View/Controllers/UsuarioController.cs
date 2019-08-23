@@ -33,7 +33,7 @@ namespace View.Controllers
             return Json(resultado, JsonRequestBehavior.AllowGet);
         }
 
-        [HttpGet]
+        [HttpPost]
         public JsonResult Inserir(Usuario usuario)
         {
             usuario.RegistroAtivo = true;

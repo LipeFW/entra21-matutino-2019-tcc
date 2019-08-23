@@ -20,7 +20,7 @@ namespace Model
         [Column("id_categoria")]
         public int IdCategoria { get; set; }
 
-        [ForeignKey("categoria")]
+        [ForeignKey("IdCategoria")]
         public Categoria Categoria { get; set; }
 
         [Column("codigo_barra")]
