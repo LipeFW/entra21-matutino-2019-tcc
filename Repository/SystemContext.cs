@@ -11,7 +11,7 @@ namespace Repository
 {
    public class SystemContext:DbContext
     {
-        public SystemContext() : base ("SqlSystemConnection")
+        public SystemContext() : base ("SqlServerConnection")
         {
 
         }

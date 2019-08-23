@@ -3,7 +3,7 @@
     ViewBag.Title = "Index";
 }
 
-<h3>Lista de Categorias</h3>
+<h3 class="text-center mb-3 mt-3 text-info">Lista de Categorias</h3>
 <title>Lista de Categoria</title>
 
 <button data-toggle="modal" data-target="#modal-categoria" class="btn btn-primary mb-3 mt-3 float-right">Nova Categoria</button>
@@ -17,3 +17,7 @@
     </tr>
     </thead>
 </table>
+@RenderPage("CategoriaModal.cshtml")
+@section js{
+<script src="~/Scripts/Categoria/categoria.js"></script>
+    }
