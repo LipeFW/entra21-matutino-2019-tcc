@@ -17,14 +17,11 @@ namespace Model
         [Column("nome")]
         public string Nome { get; set; }
 
-       
-
         [Column("id_vendedor")]
         public int IdVendedor { get; set; }
 
         [ForeignKey("IdVendedor")]
         public Vendedor vendedor { get; set; }
-
 
         [Column("registro_ativo")]
         public bool RegistroAtivo { get; set; }
