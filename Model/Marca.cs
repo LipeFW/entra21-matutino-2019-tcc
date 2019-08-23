@@ -17,8 +17,7 @@ namespace Model
         [Column("nome")]
         public string Nome { get; set; }
 
-
-      [Column("registro_ativo")]
+        [Column("registro_ativo")]
         public bool RegistroAtivo { get; set; }
     }
 }
