@@ -15,7 +15,7 @@ namespace Repository.Interface
 
         bool Alterar(Veiculo veiculo);
 
-        List<Veiculo> ObterTodos();
+        
 
         Veiculo ObterPeloId(int id);
 

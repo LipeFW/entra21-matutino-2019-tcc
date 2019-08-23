@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Index";
 }
 
@@ -10,14 +9,14 @@
 
 <table class="table table-hover table-striped table-bordered" id="categorias-index">
     <thead>
-    <tr>
-        <th>Código</th>
-        <th>Nome</th>
-        <th>Ação</th>
-    </tr>
+        <tr>
+            <th>Código</th>
+            <th>Nome</th>
+            <th>Ação</th>
+        </tr>
     </thead>
 </table>
 @RenderPage("CategoriaModal.cshtml")
 @section js{
-<script src="~/Scripts/Categoria/categoria.js"></script>
-    }
+    <script src="~/Scripts/Categoria/categoria.js"></script>
+}

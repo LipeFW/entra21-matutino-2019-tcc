@@ -31,5 +31,8 @@ namespace Model
 
         [ForeignKey("IdVendedor")]
         public Vendedor Vendedor { get; set; }
+
+        [Column("registro_ativo")]
+        public bool RegistroAtivo { get; set; }
     }
 }
