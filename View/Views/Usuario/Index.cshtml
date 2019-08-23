@@ -4,28 +4,31 @@
 }
 
 <body class="background-usuarios-img">
-    <h2>Usuários</h2>
 
-    <button data-toggle="modal" data-target="#modal-usuario" class="btn btn-primary float-right mb-2">
-        Novo Usuário
-    </button>
+    <div class="jumbotron text-center mt-4">
+        <h2>Usuários</h2>
 
-    <table id="usuario-tabela" class="table table-hover table-bordered table-striped">
-        <thead>
-            <tr>
-                <th>Código</th>
-                <th>Nome</th>
-                <th>Senha</th>
-                <th>Ação</th>
-            </tr>
-        </thead>
-    </table>
-    </body>
+        <button data-toggle="modal" data-target="#modal-usuario" class="btn btn-primary float-right mb-2">
+            Novo Usuário
+        </button>
 
-    @RenderPage("CadastroModal.cshtml")
+        <table id="usuario-tabela" class="table table-hover table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Nome</th>
+                    <th>Senha</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</body>
 
-    @section js{
-        <script src="~/Scripts/Usuario/usuario.js">
-        </script>
-    }
+@RenderPage("CadastroModal.cshtml")
+
+@section js{
+    <script src="~/Scripts/Usuario/usuario.js">
+    </script>
+}
 

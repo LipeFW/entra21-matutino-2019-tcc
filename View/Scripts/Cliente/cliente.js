@@ -84,24 +84,27 @@
             success: function (data) {
                 $tabelaCliente.ajax.reload();
             }
-        })
+        });
     });
 
-    $('.table').on('click', '.botao-apagar', function () {
-        $idApagar = $(this).data('id');
+    $('.table').on('click', '.botao-editar', function () {
+        $idAlterar = $(this).data('id');
 
-        $ajax({
-            url: 'http://localhost:51242/Categoria/apagar?=' + $idApagar,
+        $.ajax({
+            url: 'http://localhost:51242/Categoria/obterpeloid?=' + $idAlterar,
             method: 'get',
+
             success: function (data) {
-                $tabelaCliente.ajax.reload();
+                $('#cliente-campo-nome').val(data.Nome);
+                $('#cliente-campo-telefone').val(data.Telefone);
+                $('#cliente-campo-cnpj').val(data.Cnpj);
+                $('#cliente-campo-cep').val(data.Cep);
+                $('#modal-cliente').modal('show');
             },
             error: function (err) {
-                alert('Não foi possivel apagar');
+                alert('Não foi possivel carregar');
             }
-        })
+        });
     });
 
-
-
-})
+});
