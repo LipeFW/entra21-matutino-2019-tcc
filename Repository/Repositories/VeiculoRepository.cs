@@ -56,6 +56,6 @@ namespace Repository.Repositories
         {
             return context.Veiculos.Where(x => x.RegistroAtivo == true).ToList();
         }
-
+        
     }
 }
