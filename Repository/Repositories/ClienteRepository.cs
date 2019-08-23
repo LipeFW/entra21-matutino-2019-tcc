@@ -14,13 +14,16 @@ namespace Repository.Repositories
 
         public bool Alterar(Cliente cliente)
         {
-            var usuarioOriginal = context.Usuarios.Where(x => x.Id == usuario.Id).FirstOrDefault();
+            var clienteOriginal = context.Clientes.Where(x => x.Id == cliente.Id).FirstOrDefault();
 
-            if (usuarioOriginal == null)
+            if (clienteOriginal == null)
                 return false;
 
-            usuarioOriginal.Login = usuario.Login;
-            usuarioOriginal.Senha = usuario.Senha;
+            clienteOriginal.CNPJ = cliente.CNPJ;
+            clienteOriginal.CPF = cliente.CPF;
+            clienteOriginal.IdVendedor = cliente.IdVendedor;
+            clienteOriginal.Telefone = cliente.Telefone;
+            clienteOriginal.Nome = cliente.Nome;
             int quantidadeAfetada = context.SaveChanges();
 
             return quantidadeAfetada == 1;
@@ -28,11 +31,11 @@ namespace Repository.Repositories
 
         public bool Apagar(int id)
         {
-            var usuario = context.Usuarios.FirstOrDefault(x => x.Id == id);
-            if (usuario == null)
+            var cliente = context.Clientes.FirstOrDefault(x => x.Id == id);
+            if (cliente == null)
                 return false;
 
-            usuario.RegistroAtivo = false;
+            cliente.RegistroAtivo = false;
 
             int quantidadeAfetada = context.SaveChanges();
 
@@ -41,21 +44,21 @@ namespace Repository.Repositories
 
         public int Inserir(Cliente cliente)
         {
-            context.Usuarios.Add(usuario);
+            context.Usuarios.Add(cliente);
             context.SaveChanges();
 
-            return usuario.Id;
+            return cliente.Id;
         }
 
         public Cliente ObterPeloId(int id)
         {
-            var usuario = context.Usuarios.FirstOrDefault(x => x.Id == id);
-            return usuario;
+            var cliente = context.Clientes.FirstOrDefault(x => x.Id == id);
+            return cliente;
         }
 
         public List<Cliente> ObterTodos()
         {
-            return context.Usuarios.Where(x => x.RegistroAtivo == true).ToList();
+            return context.Clientes.Where(x => x.RegistroAtivo == true).ToList();
         }
     }
 }
