@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h3 class="text-center mb-3 mt-3 text-info">Lista de Categorias</h3>
+<title>Lista de Categoria</title>
+
+<button data-toggle="modal" data-target="#modal-categoria" class="btn btn-primary mb-3 mt-3 float-right">Nova Categoria</button>
+
+<table class="table table-hover table-striped table-bordered" id="categorias-index">
+    <thead>
+        <tr>
+            <th>Código</th>
+            <th>Nome</th>
+            <th>Ação</th>
+        </tr>
+    </thead>
+</table>
+@RenderPage("CategoriaModal.cshtml")
+@section js{
+    <script src="~/Scripts/Categoria/categoria.js"></script>
+}
