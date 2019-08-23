@@ -34,7 +34,7 @@ namespace Repository.Repositories
             if (notaFiscal == null)
                 return false;
 
-            NotaFiscal.RegistroAtivo = false;
+            notaFiscal.RegistroAtivo = false;
 
             int quantidadeAfetada = context.SaveChanges();
 
@@ -57,7 +57,7 @@ namespace Repository.Repositories
 
         public List<NotaFiscal> ObterTodos()
         {
-            return context.Notas.Where(x => x.RegistroAtivo == true).ToList();
+            return context.NotasFiscais.Where(x => x.RegistroAtivo == true).ToList();
         }
     }
 }

@@ -40,21 +40,21 @@ namespace Repository.Repositories
 
         public int Inserir(Marca marca)
         {
-            context.Usuarios.Add(usuario);
+            context.Marcas.Add(marca);
             context.SaveChanges();
 
-            return usuario.Id;
+            return marca.Id;
         }
 
         public Marca ObterPeloId(int id)
         {
-            var usuario = context.Usuarios.FirstOrDefault(x => x.Id == id);
-            return usuario;
+            var marca = context.Marcas.FirstOrDefault(x => x.Id == id);
+            return marca;
         }
 
         public List<Marca> ObterTodos()
         {
-            return context.Usuarios.Where(x => x.RegistroAtivo == true).ToList();
+            return context.Marcas.Where(x => x.RegistroAtivo == true).ToList();
         }
     }
 }
