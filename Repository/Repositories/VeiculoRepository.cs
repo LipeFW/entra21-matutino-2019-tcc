@@ -14,6 +14,8 @@ namespace Repository.Repositories
 
         private SystemContext context;
 
+     
+
         public VeiculoRepository()
         {
             context = new SystemContext();
@@ -25,7 +27,16 @@ namespace Repository.Repositories
 
         public bool Alterar(Veiculo veiculo)
         {
-            throw new NotImplementedException();
+            var veiculoOriginal = context
+               .Veiculos.FirstOrDefault(
+               x => x.Id ==veiculo.Id);
+            if (veiculoOriginal == null)
+                return false;
+
+            veiculoOriginal.Placa = veiculo.Placa;
+            veiculoOriginal.Modelo = veiculo.Modelo;
+            int quantidadeAfetada = context.SaveChanges();
+            return quantidadeAfetada == 1;
         }
 
         public bool Apagar(int id)
@@ -54,6 +65,11 @@ namespace Repository.Repositories
         {
             return context.Veiculos
           .FirstOrDefault(x => x.Id == id);
+        }
+
+        public List<Veiculo> ObterTodos()
+        {
+            return context.Veiculos.Where(x => x.RegistroAtivo).ToList();
         }
     }
 }

@@ -12,6 +12,11 @@ namespace Repository.Repositories
     {
         private SystemContext context;
 
+        public MarcaRepository()
+        {
+            context = new SystemContext();
+        }
+
         public bool Alterar(Marca marca)
         {
             var marcaOriginal = context.Marcas.Where(x => x.Id == marca.Id).FirstOrDefault();
