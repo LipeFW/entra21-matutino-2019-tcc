@@ -222,8 +222,15 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CategoriaController.cs" />
     <Compile Include="Controllers\ClienteController.cs" />
+    <Compile Include="Controllers\MarcaController.cs" />
     <Compile Include="Controllers\ModeloController.cs" />
+    <Compile Include="Controllers\NotaFiscalController.cs" />
+    <Compile Include="Controllers\ProdutoController.cs" />
+    <Compile Include="Controllers\RotaController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
+    <Compile Include="Controllers\VeiculoController.cs" />
+    <Compile Include="Controllers\VendaController.cs" />
+    <Compile Include="Controllers\VendedorController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -247,6 +254,11 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\Marca\MarcaModal.cshtml" />
+    <Content Include="Views\Categoria\CategoriaModal.cshtml" />
+    <Content Include="Views\Categoria\Index.cshtml" />
+    <Content Include="Views\Modelo\ModeloModal.cshtml" />
+    <Content Include="Views\NotaFiscal\NotaFiscalModal.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -256,9 +268,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
-    <Folder Include="Views\Categoria\" />
     <Folder Include="Views\Cliente\" />
-    <Folder Include="Views\Modelo\" />
+    <Folder Include="Views\Produto\" />
+    <Folder Include="Views\Rota\" />
+    <Folder Include="Views\Veiculo\" />
+    <Folder Include="Views\Venda\" />
+    <Folder Include="Views\Vendedor\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
