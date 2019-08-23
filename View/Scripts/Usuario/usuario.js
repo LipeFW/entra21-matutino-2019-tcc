@@ -2,7 +2,7 @@
 
     $idAlterar = -1;
 
-    $tabelaPessoa = $("#usuario-tabela").DataTable({
+    $tabelaUsuario = $("#usuario-tabela").DataTable({
         ajax: "http://localhost:51242/usuario/obtertodos",
         serverSide: true,
         columns: [
