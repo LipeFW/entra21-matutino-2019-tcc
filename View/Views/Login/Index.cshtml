@@ -1,0 +1,32 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>MCSS Login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="Login.css" />
+</head>
+<body class="background-img">
+    <div class="login-tabela">
+        <form action="/examples/actions/confirmation.php" method="post">
+            <h2 class="titulo text-center">mcss</h2>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Usuário" required="required">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="Senha" required="required">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
