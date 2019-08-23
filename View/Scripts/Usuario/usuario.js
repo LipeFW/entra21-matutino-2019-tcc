@@ -2,7 +2,7 @@
 
     $idAlterar = -1;
 
-    $tabelaUsuario = $("#usuario-tabela").DataTable({
+    $tabelaUsuario = $('#usuario-tabela').DataTable({
         ajax: "http://localhost:51242/usuario/obtertodos",
         serverSide: true,
         columns: [
@@ -20,7 +20,7 @@
 
     $("#usuario-botao-salvar").on("click", function () {
         $nome = $("#usuario-campo-nome").val();
-        $cpf = $("#usuario-campo-senha").val();
+        $senha = $("#usuario-campo-senha").val();
 
         if (($nome.trim() == "") || ($senha.trim() == "")) {
             alert("Preencha corretamente os campos");
