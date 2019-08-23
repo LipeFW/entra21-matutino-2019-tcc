@@ -1,18 +1,7 @@
 ﻿@{
-    Layout = null;
+    ViewBag.Title = "Login";
 }
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>MCSS Login</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="~/Scripts/bootstrap.min.js"></script>
-    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
-    <link rel="stylesheet" href="Login.css" />
-</head>
 <body class="background-img">
     <div class="login-tabela">
         <form action="/examples/actions/confirmation.php" method="post">
@@ -29,4 +18,7 @@
         </form>
     </div>
 </body>
-</html>
+
+@section css{
+ <link rel="stylesheet" href="~/Views/Login/css/Login.css" />    
+}
