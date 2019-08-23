@@ -117,6 +117,7 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\Categoria\categoria.js" />
+    <Content Include="Scripts\Cliente\JavaScript.js" />
     <Content Include="Scripts\esm\popper-utils.js" />
     <Content Include="Scripts\esm\popper-utils.min.js" />
     <Content Include="Scripts\esm\popper.js" />
@@ -212,8 +213,6 @@
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
     <Content Include="Scripts\Usuario\usuario.js" />
-    <Content Include="Views\Login\background\background2.jpg" />
-    <Content Include="Views\Login\css\Login.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -257,7 +256,6 @@
     <Content Include="Views\Modelo\ModeloModal.cshtml" />
     <Content Include="Views\NotaFiscal\NotaFiscalModal.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
-    <Content Include="Views\Login\font\DreamMMA.ttf" />
     <Content Include="Views\Cliente\ClienteModal.cshtml" />
     <Content Include="Views\Cliente\Index.cshtml" />
     <None Include="Web.Debug.config">
