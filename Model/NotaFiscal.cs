@@ -22,5 +22,8 @@ namespace Model
 
         [Column("valor_final")]
         public decimal ValorFinal { get; set; }
+
+        [Column("registro_ativo")]
+        public bool RegistroAtivo { get; set; }
     }
 }
