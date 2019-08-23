@@ -28,5 +28,6 @@ namespace Model
 
         [Column("registro_ativo")]
         public bool RegistroAtivo { get; set; }
+        public bool RegistroRota { get; set; }
     }
 }
