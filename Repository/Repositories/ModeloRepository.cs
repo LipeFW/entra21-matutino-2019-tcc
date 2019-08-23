@@ -35,7 +35,15 @@ namespace Repository.Repositories
 
         public bool Apagar(int id)
         {
-            throw new NotImplementedException();
+            var modelo = context.Produtos
+        .FirstOrDefault(x => x.Id == id);
+
+            if (modelo == null)
+                return false;
+
+            modelo.RegistroAtivo = false;
+            int quantidadeAfetada = context.SaveChanges();
+            return quantidadeAfetada == 1;
         }
 
         public int Inserir(Modelo modelo)
