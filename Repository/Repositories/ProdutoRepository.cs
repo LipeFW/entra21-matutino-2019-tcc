@@ -45,7 +45,7 @@ namespace Repository.Repositories
 
         public List<Produto> ObterProdutosPeloIdVenda(int idVenda)
         {
-            return context.Produtos.Where(x => x.IdVenda == idVenda && x.RegistroAtivo).ToList();
+            return context.Produtos.Where(x => x.Id == idVenda && x.RegistroAtivo).ToList();
         }
 
         public bool Alterar(Produto produto)
@@ -56,7 +56,6 @@ namespace Repository.Repositories
             if (produtoOriginal == null)
                 return false;
 
-            produtoOriginal.Nome = produto.Nome;
             produtoOriginal.Id = produto.Id;
             produtoOriginal.Categoria = produto.Categoria;
             produtoOriginal.CodigoBarra = produto.CodigoBarra;
