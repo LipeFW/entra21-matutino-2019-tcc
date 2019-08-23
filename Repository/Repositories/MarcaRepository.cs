@@ -14,13 +14,12 @@ namespace Repository.Repositories
 
         public bool Alterar(Marca marca)
         {
-            var usuarioOriginal = context.Usuarios.Where(x => x.Id == usuario.Id).FirstOrDefault();
+            var marcaOriginal = context.Marcas.Where(x => x.Id == marca.Id).FirstOrDefault();
 
-            if (usuarioOriginal == null)
+            if (marcaOriginal == null)
                 return false;
 
-            usuarioOriginal.Login = usuario.Login;
-            usuarioOriginal.Senha = usuario.Senha;
+            marcaOriginal.Nome = marca.Nome;
             int quantidadeAfetada = context.SaveChanges();
 
             return quantidadeAfetada == 1;
@@ -28,11 +27,11 @@ namespace Repository.Repositories
 
         public bool Apagar(int id)
         {
-            var usuario = context.Usuarios.FirstOrDefault(x => x.Id == id);
-            if (usuario == null)
+            var marca = context.Marcas.FirstOrDefault(x => x.Id == id);
+            if (marca == null)
                 return false;
 
-            usuario.RegistroAtivo = false;
+            marca.RegistroAtivo = false;
 
             int quantidadeAfetada = context.SaveChanges();
 
@@ -41,21 +40,21 @@ namespace Repository.Repositories
 
         public int Inserir(Marca marca)
         {
-            context.Usuarios.Add(usuario);
+            context.Marcas.Add(marca);
             context.SaveChanges();
 
-            return usuario.Id;
+            return marca.Id;
         }
 
         public Marca ObterPeloId(int id)
         {
-            var usuario = context.Usuarios.FirstOrDefault(x => x.Id == id);
-            return usuario;
+            var marca = context.Marcas.FirstOrDefault(x => x.Id == id);
+            return marca;
         }
 
         public List<Marca> ObterTodos()
         {
-            return context.Usuarios.Where(x => x.RegistroAtivo == true).ToList();
+            return context.Marcas.Where(x => x.RegistroAtivo == true).ToList();
         }
     }
 }
