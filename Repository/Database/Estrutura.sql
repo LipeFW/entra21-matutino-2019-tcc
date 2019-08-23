@@ -8,7 +8,8 @@ registro_ativo BIT
 );
 
 INSERT INTO usuarios (nome,senha)
-VALUES ('Josefino','jsf1520');
+VALUES ('Josefino','jsf1520'),
+	   ('Illan', 'dknlan123');
 
 CREATE TABLE marcas (
 id INT PRIMARY KEY IDENTITY(1,1),
