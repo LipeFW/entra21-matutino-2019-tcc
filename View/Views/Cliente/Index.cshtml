@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h3>Lista de Clientes</h3>
+<title>Lista de Clientes</title>
+<button data-toggle="modal" data-target="#modal-cliente" class="btn btn-primary">Novo Cliente</button>
+<table id="clientes-tabela" class="table table-bordered table-hover table-striped">
+    <thead>
+        <tr>
+            <th>Código</th>
+            <th>Nome</th>
+            <th>telefone</th>
+            <th>CNPJ</th>
+            <th>CEP</th>
+            <th>Vendedor</th>
+        </tr>
+    </thead>
+</table>
+@RenderPage("ClienteModal.cshtml")
+@section js{
+    <script src="~/Scripts/cliente/cliente.js"></script>
+}
+

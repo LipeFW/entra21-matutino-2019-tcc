@@ -249,8 +249,11 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
-    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
-    <Content Include="Scripts\jquery-3.4.1.min.map" />
+    <Content Include="Views\Marca\MarcaModal.cshtml" />
+    <Content Include="Views\Categoria\CategoriaModal.cshtml" />
+    <Content Include="Views\Categoria\Index.cshtml" />
+    <Content Include="Views\Modelo\ModeloModal.cshtml" />
+    <Content Include="Views\NotaFiscal\NotaFiscalModal.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -260,7 +263,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
-    <Folder Include="Views\Cliente\" />
     <Folder Include="Views\Produto\" />
     <Folder Include="Views\Rota\" />
     <Folder Include="Views\Veiculo\" />
