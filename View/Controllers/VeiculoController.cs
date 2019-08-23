@@ -61,7 +61,7 @@ namespace View.Controllers
 
         public ActionResult Editar(int id)
         {
-            var veiculo = repository.ObterPeloId();
+            var veiculo = repository.ObterPeloId(id);
             if (veiculo == null)
                 return RedirectToAction("Index");
 
