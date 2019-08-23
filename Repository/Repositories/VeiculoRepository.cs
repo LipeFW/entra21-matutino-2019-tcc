@@ -55,5 +55,11 @@ namespace Repository.Repositories
             return context.Veiculos
           .FirstOrDefault(x => x.Id == id);
         }
+
+        public List<Veiculo> ObterTodos()
+        {
+            return context.Veiculos.Where(x => x.RegistroAtivo == true).ToList();
+        }
+
     }
 }

@@ -35,14 +35,7 @@ namespace Repository.Repositories
 
         public bool Apagar(int id)
         {
-            var modelo = context.Modelos.FirstOrDefault(x => x.Id == id);
-
-            if (modelo == null)
-                return false;
-
-            modelo.RegistroAtivo = false;
-            int quantidadeAfetada = context.SaveChanges();
-            return quantidadeAfetada == 1;
+            throw new NotImplementedException();
         }
 
         public int Inserir(Modelo modelo)

@@ -117,7 +117,7 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\Categoria\categoria.js" />
-    <Content Include="Scripts\Cliente\JavaScript.js" />
+    <Content Include="Scripts\Cliente\cliente.js" />
     <Content Include="Scripts\esm\popper-utils.js" />
     <Content Include="Scripts\esm\popper-utils.min.js" />
     <Content Include="Scripts\esm\popper.js" />
@@ -258,6 +258,7 @@
     <Content Include="Views\Marca\MarcaModal.cshtml" />
     <Content Include="Views\Modelo\ModeloModal.cshtml" />
     <Content Include="Views\NotaFiscal\NotaFiscalModal.cshtml" />
+    <Content Include="Views\Login\Home.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

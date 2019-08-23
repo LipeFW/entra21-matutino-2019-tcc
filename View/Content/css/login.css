@@ -6,6 +6,13 @@
     background-size: 1366px 768px;
 }
 
+.background-usuarios-img {
+    background-image: url("../images/stripe1.png");
+    background-position: center center;
+    background-attachment: fixed;
+    background-position: center;
+}
+
 .login-tabela {
     width: 400px;
     margin: 50px auto;
