@@ -255,7 +255,6 @@
     <Content Include="Views\Modelo\ModeloModal.cshtml" />
     <Content Include="Views\NotaFiscal\NotaFiscalModal.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
-    <Content Include="Views\Login\font\DreamMMA.ttf" />
     <Content Include="Views\Cliente\ClienteModal.cshtml" />
     <Content Include="Views\Cliente\Index.cshtml" />
     <None Include="Web.Debug.config">
