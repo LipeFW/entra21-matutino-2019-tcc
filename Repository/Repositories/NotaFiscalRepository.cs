@@ -12,6 +12,11 @@ namespace Repository.Repositories
     {
         private SystemContext context;
 
+        public NotaFiscalRepository()
+        {
+            context = new SystemContext();
+        }
+
         public bool Alterar(NotaFiscal notaFiscal)
         {
             var notaFiscalOriginal = context.NotasFiscais.Where(x => x.Id == notaFiscal.Id).FirstOrDefault();

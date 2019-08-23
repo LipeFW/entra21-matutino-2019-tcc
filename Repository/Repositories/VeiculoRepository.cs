@@ -19,13 +19,17 @@ namespace Repository.Repositories
             context = new SystemContext();
         }
 
-
-
-
-
         public bool Alterar(Veiculo veiculo)
         {
-            throw new NotImplementedException();
+            var veiculoOriginal = context.Veiculos.FirstOrDefault(x => x.Id == veiculo.Id);
+
+            if (veiculoOriginal == null)
+                return false;
+
+           veiculoOriginal.Placa = veiculo.Placa;
+            veiculoOriginal.Modelo = veiculo.Modelo;
+            int quantidadeAfetada = context.SaveChanges();
+            return quantidadeAfetada == 1;
         }
 
         public bool Apagar(int id)
@@ -60,6 +64,5 @@ namespace Repository.Repositories
         {
             return context.Veiculos.Where(x => x.RegistroAtivo == true).ToList();
         }
-
     }
 }
