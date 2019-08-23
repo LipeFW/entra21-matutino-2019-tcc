@@ -19,10 +19,6 @@ namespace Repository.Repositories
             context = new SystemContext();
         }
 
-
-
-
-
         public bool Alterar(Veiculo veiculo)
         {
             throw new NotImplementedException();
