@@ -62,5 +62,34 @@
         });
     }
 
+    $('.table').on('click', '.botao-apagar', function () {
+        $idApagar = $(this).data('id');
 
+        $.ajax({
+            url: 'http://localhost:51242/Categoria/apagar?id=' + $idApagar,
+            method: 'get',
+            success: function (data) {
+                $tabelaCategoria.ajax.reload();
+            },
+            error: function (err) {
+                alert('Não foi possivel apagar');
+            }
+        });
+    });
+
+    $('.table').on('click', '.botao-editar', function () {
+        $idAlterar = $(this).data('id');
+
+        $.ajax({
+            url: 'http://localhost:51242/Categoria/editar?id=' + $idAlterar,
+            method: 'get',
+            success: function (data) {
+                $('#categoria-campo-nome').val(data.Nome);
+                $('#modal-categoria').modal('show');
+            },
+            error: function (err) {
+                alert('Não foi possivel carregar');
+            }
+        });
+    });
 });
