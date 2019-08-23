@@ -1,10 +1,13 @@
 ﻿@{
-    ViewBag.Title = "Login";
+    Layout = null;
+    <link href="~/Content/css/login.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <title>Login - MCSS</title>
 }
 
 <body class="background-img">
     <div class="login-tabela">
-        <form action="/examples/actions/confirmation.php" method="post">
+        <form action="/login/home" method="post">
             <h2 class="titulo text-center">mcss</h2>
             <div class="form-group">
                 <input type="text" class="form-control" placeholder="Usuário" required="required">
@@ -13,12 +16,12 @@
                 <input type="password" class="form-control" placeholder="Senha" required="required">
             </div>
             <div class="form-group">
-                <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+                <button type="submit" class="btn btn-success btn-block">Entrar</button>
             </div>
         </form>
     </div>
 </body>
 
 @section css{
- <link rel="stylesheet" href="~/Views/Login/css/Login.css" />    
+    <link rel="stylesheet" href="~/Views/Login/css/Login.css" />
 }

@@ -6,6 +6,13 @@
     background-size: 1366px 768px;
 }
 
+.background-usuarios-img {
+    background-image: url("../images/stripe1.png");
+    background-position: center center;
+    background-attachment: fixed;
+    background-position: center;
+}
+
 .login-tabela {
     width: 400px;
     margin: 50px auto;
@@ -49,5 +56,12 @@
     text-decoration: underline;
     color: #474747;
     font-size: 46px;
+    font-weight: bolder;
+}
+
+.titulo2 {
+    font-family: "DreamMMA";
+    color: #474747;
+    font-size: 26px;
     font-weight: bolder;
 }
