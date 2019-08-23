@@ -10,7 +10,12 @@ namespace Repository.Repositories
 {
     public class ClienteRepository : IClienteRepository
     {
-        private SystemContext context;
+        public SystemContext context;
+
+        public ClienteRepository()
+        {
+            context = new SystemContext();
+        }
 
         public bool Alterar(Cliente cliente)
         {
