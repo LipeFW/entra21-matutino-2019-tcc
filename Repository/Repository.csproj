@@ -96,18 +96,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Database\Estrutura.sql" />
-    <Content Include="Scripts\jquery-3.4.1.intellisense.js" />
-    <Content Include="Scripts\jquery-3.4.1.js" />
-    <Content Include="Scripts\jquery-3.4.1.min.js" />
-    <Content Include="Scripts\jquery-3.4.1.slim.js" />
-    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="Database\bd.mwb" />
     <None Include="packages.config" />
-    <None Include="Scripts\jquery-3.4.1.min.map" />
-    <None Include="Scripts\jquery-3.4.1.slim.min.map" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Model\Model.csproj">

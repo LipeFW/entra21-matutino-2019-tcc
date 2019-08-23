@@ -63,6 +63,27 @@ namespace View.Controllers
         {
             return Json(repository.ObterPeloId(id), JsonRequestBehavior.AllowGet);
         }
+        [HttpGet, Route("usuario/obtertodosselect2")]
+        public JsonResult ObterTodosSelect2(string term)
+        {
+            var usuarios = repository.ObterTodos();
 
+            List<object> usuariosSelect2 = new List<object>();
+            foreach (Usuario usuario in usuarios)
+            {
+                usuariosSelect2.Add(new
+                {
+                    id = usuario.Id,
+                    login = usuario.Login,
+                    senha = usuario.Senha,
+                    registro = usuario.RegistroAtivo
+
+                });
+            }
+            var resultado = new { results = usuariosSelect2 };
+            return Json(resultado, JsonRequestBehavior.AllowGet);
+
+
+        }
     }
 }
