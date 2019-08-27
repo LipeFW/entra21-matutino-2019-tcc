@@ -201,8 +201,6 @@
     <Content Include="Scripts\jquery-3.4.1.min.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
-    <Content Include="Scripts\jquery.mask.js" />
-    <Content Include="Scripts\jquery.mask.min.js" />
     <Content Include="Scripts\Login\login.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\popper-utils.js" />
@@ -262,6 +260,8 @@
     <Content Include="Views\Modelo\ModeloModal.cshtml" />
     <Content Include="Views\NotaFiscal\NotaFiscalModal.cshtml" />
     <Content Include="Views\Login\Home.cshtml" />
+    <Content Include="Views\Veiculo\Index.cshtml" />
+    <Content Include="Views\Veiculo\veiculocadastro.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -273,7 +273,6 @@
     <Folder Include="Models\" />
     <Folder Include="Views\Produto\" />
     <Folder Include="Views\Rota\" />
-    <Folder Include="Views\Veiculo\" />
     <Folder Include="Views\Venda\" />
     <Folder Include="Views\Vendedor\" />
   </ItemGroup>
