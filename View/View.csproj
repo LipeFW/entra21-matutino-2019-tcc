@@ -55,6 +55,9 @@
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -91,11 +94,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.Web.Infrastructure">
-      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="App_Data\Database.mdf" />
     <Content Include="App_Data\Database_log.ldf">
       <DependentUpon>Database.mdf</DependentUpon>
@@ -107,8 +105,6 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\css\login.css" />
-    <Content Include="Content\css\select2.css" />
-    <Content Include="Content\css\select2.min.css" />
     <Content Include="Content\images\background2.jpg" />
     <Content Include="Content\Site.css" />
     <Content Include="Global.asax" />
@@ -118,6 +114,18 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\Categoria\categoria.js" />
     <Content Include="Scripts\Cliente\cliente.js" />
+    <Content Include="Content\fonts\DreamMMA.ttf" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <None Include="packages.config" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
     <Content Include="Scripts\esm\popper-utils.js" />
     <Content Include="Scripts\esm\popper-utils.min.js" />
     <Content Include="Scripts\esm\popper.js" />
@@ -126,77 +134,7 @@
     <Content Include="Scripts\esm\popper.js.map" />
     <Content Include="Scripts\esm\popper-utils.min.js.map" />
     <Content Include="Scripts\esm\popper-utils.js.map" />
-    <Content Include="Scripts\bootstrap.min.js.map" />
-    <Content Include="Scripts\bootstrap.js.map" />
-    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
-    <Content Include="Scripts\bootstrap.bundle.js.map" />
-    <Content Include="Content\bootstrap.min.css.map" />
-    <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Content\bootstrap-reboot.min.css.map" />
-    <Content Include="Content\bootstrap-reboot.css.map" />
-    <Content Include="Content\bootstrap-grid.min.css.map" />
-    <Content Include="Content\bootstrap-grid.css.map" />
-    <Content Include="Content\fonts\DreamMMA.ttf" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
-    <Content Include="Scripts\i18n\af.js" />
-    <Content Include="Scripts\i18n\ar.js" />
-    <Content Include="Scripts\i18n\az.js" />
-    <Content Include="Scripts\i18n\bg.js" />
-    <Content Include="Scripts\i18n\bn.js" />
-    <Content Include="Scripts\i18n\bs.js" />
-    <Content Include="Scripts\i18n\ca.js" />
-    <Content Include="Scripts\i18n\cs.js" />
-    <Content Include="Scripts\i18n\da.js" />
-    <Content Include="Scripts\i18n\de.js" />
-    <Content Include="Scripts\i18n\dsb.js" />
-    <Content Include="Scripts\i18n\el.js" />
-    <Content Include="Scripts\i18n\en.js" />
-    <Content Include="Scripts\i18n\es.js" />
-    <Content Include="Scripts\i18n\et.js" />
-    <Content Include="Scripts\i18n\eu.js" />
-    <Content Include="Scripts\i18n\fa.js" />
-    <Content Include="Scripts\i18n\fi.js" />
-    <Content Include="Scripts\i18n\fr.js" />
-    <Content Include="Scripts\i18n\gl.js" />
-    <Content Include="Scripts\i18n\he.js" />
-    <Content Include="Scripts\i18n\hi.js" />
-    <Content Include="Scripts\i18n\hr.js" />
-    <Content Include="Scripts\i18n\hsb.js" />
-    <Content Include="Scripts\i18n\hu.js" />
-    <Content Include="Scripts\i18n\hy.js" />
-    <Content Include="Scripts\i18n\id.js" />
-    <Content Include="Scripts\i18n\is.js" />
-    <Content Include="Scripts\i18n\it.js" />
-    <Content Include="Scripts\i18n\ja.js" />
-    <Content Include="Scripts\i18n\ka.js" />
-    <Content Include="Scripts\i18n\km.js" />
-    <Content Include="Scripts\i18n\ko.js" />
-    <Content Include="Scripts\i18n\lt.js" />
-    <Content Include="Scripts\i18n\lv.js" />
-    <Content Include="Scripts\i18n\mk.js" />
-    <Content Include="Scripts\i18n\ms.js" />
-    <Content Include="Scripts\i18n\nb.js" />
-    <Content Include="Scripts\i18n\ne.js" />
-    <Content Include="Scripts\i18n\nl.js" />
-    <Content Include="Scripts\i18n\pl.js" />
-    <Content Include="Scripts\i18n\ps.js" />
-    <Content Include="Scripts\i18n\pt-BR.js" />
-    <Content Include="Scripts\i18n\pt.js" />
-    <Content Include="Scripts\i18n\ro.js" />
-    <Content Include="Scripts\i18n\ru.js" />
-    <Content Include="Scripts\i18n\sk.js" />
-    <Content Include="Scripts\i18n\sl.js" />
-    <Content Include="Scripts\i18n\sq.js" />
-    <Content Include="Scripts\i18n\sr-Cyrl.js" />
-    <Content Include="Scripts\i18n\sr.js" />
-    <Content Include="Scripts\i18n\sv.js" />
-    <Content Include="Scripts\i18n\th.js" />
-    <Content Include="Scripts\i18n\tk.js" />
-    <Content Include="Scripts\i18n\tr.js" />
-    <Content Include="Scripts\i18n\uk.js" />
-    <Content Include="Scripts\i18n\vi.js" />
-    <Content Include="Scripts\i18n\zh-CN.js" />
-    <Content Include="Scripts\i18n\zh-TW.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.js" />
@@ -209,8 +147,6 @@
     <Content Include="Scripts\popper-utils.min.js" />
     <Content Include="Scripts\popper.js" />
     <Content Include="Scripts\popper.min.js" />
-    <Content Include="Scripts\select2.js" />
-    <Content Include="Scripts\select2.min.js" />
     <Content Include="Scripts\umd\popper-utils.js" />
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
@@ -239,20 +175,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
-    <None Include="packages.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Usuario\Index.cshtml" />
     <Content Include="Views\Usuario\CadastroModal.cshtml" />
-    <Content Include="Scripts\umd\popper.min.js.map" />
-    <Content Include="Scripts\umd\popper.js.map" />
-    <Content Include="Scripts\umd\popper-utils.min.js.map" />
-    <Content Include="Scripts\umd\popper-utils.js.map" />
-    <Content Include="Scripts\README.md" />
-    <Content Include="Scripts\popper.min.js.map" />
-    <Content Include="Scripts\popper.js.map" />
-    <Content Include="Scripts\popper-utils.min.js.map" />
-    <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\Cliente\ClienteModal.cshtml" />
     <Content Include="Views\Cliente\Index.cshtml" />
@@ -262,6 +188,15 @@
     <Content Include="Views\Modelo\ModeloModal.cshtml" />
     <Content Include="Views\NotaFiscal\NotaFiscalModal.cshtml" />
     <Content Include="Views\Login\Home.cshtml" />
+    <Content Include="Scripts\umd\popper.min.js.map" />
+    <Content Include="Scripts\umd\popper.js.map" />
+    <Content Include="Scripts\umd\popper-utils.min.js.map" />
+    <Content Include="Scripts\umd\popper-utils.js.map" />
+    <Content Include="Scripts\README.md" />
+    <Content Include="Scripts\popper.min.js.map" />
+    <Content Include="Scripts\popper.js.map" />
+    <Content Include="Scripts\popper-utils.min.js.map" />
+    <Content Include="Scripts\popper-utils.js.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
