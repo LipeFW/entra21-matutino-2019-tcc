@@ -29,8 +29,10 @@ namespace View.Controllers
         [HttpPost, Route("cadastro")]
         public ActionResult Cadastro(Categoria categoria)
         {
-            int id = repository.Inserir(categoria);
-            return RedirectToAction("Editar", new { id = id });
+            var id = repository.Inserir(categoria);
+            var resultado = new { };
+            return Json(resultado,
+              JsonRequestBehavior.AllowGet);
         }
 
         [HttpPost, Route("editar")]
@@ -52,11 +54,16 @@ namespace View.Controllers
 
         public ActionResult Index()
         {
+            List<Categoria> categorias = repository.ObterTodos();
+            ViewBag.Categorias = categorias;
             return View();
         }
 
         public ActionResult Cadastro()
         {
+            CategoriaRepository categoriaRepository = new CategoriaRepository();
+            List<Categoria> categorias = categoriaRepository.ObterTodos();
+            ViewBag.Categorias = categorias;
             return View();
         }
 
