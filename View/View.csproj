@@ -248,7 +248,6 @@
     <Content Include="Scripts\umd\popper.js.map" />
     <Content Include="Scripts\umd\popper-utils.min.js.map" />
     <Content Include="Scripts\umd\popper-utils.js.map" />
-    <Content Include="Scripts\README.md" />
     <Content Include="Scripts\popper.min.js.map" />
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
@@ -262,6 +261,10 @@
     <Content Include="Views\Modelo\ModeloModal.cshtml" />
     <Content Include="Views\NotaFiscal\NotaFiscalModal.cshtml" />
     <Content Include="Views\Login\Home.cshtml" />
+    <Content Include="Views\Produto\Produto.cshtml" />
+    <Content Include="Views\Rota\Rota.cshtml" />
+    <Content Include="Views\Rota\Index.cshtml" />
+    <Content Include="Scripts\README.md" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -271,8 +274,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
-    <Folder Include="Views\Produto\" />
-    <Folder Include="Views\Rota\" />
     <Folder Include="Views\Veiculo\" />
     <Folder Include="Views\Venda\" />
     <Folder Include="Views\Vendedor\" />
