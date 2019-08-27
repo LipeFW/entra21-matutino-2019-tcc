@@ -14,14 +14,11 @@ namespace Model
         [Key, Column("id")]
         public int Id { get; set; }
 
-        [Column("login")]
+        [Column("nome")]
         public string Login { get; set; }
 
         [Column("senha")]
         public string Senha { get; set; }
-
-        [Column("admin")]
-        public bool Admin { get; set; }
 
         [Column("registro_ativo")]
         public bool RegistroAtivo { get; set; }
