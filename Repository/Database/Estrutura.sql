@@ -1,4 +1,4 @@
-﻿ DROP TABLE IF EXISTS notas_fiscais, rotas, vendas,vendedores, clientes, rotas, produtos, veiculos, modelos, categorias, marcas, usuarios;
+﻿ DROP TABLE IF EXISTS notas_fiscais, rotas, vendas,clientes, vendedores, rotas, produtos, veiculos, modelos, categorias, marcas, usuarios;
  
  CREATE TABLE usuarios( 
  id INT PRIMARY KEY IDENTITY(1,1),
@@ -27,19 +27,6 @@
   
  INSERT INTO categorias(nome,registro_ativo)
  VALUES ('Bebidas', 1);
- 
- CREATE TABLE clientes(
- id INT PRIMARY KEY IDENTITY(1,1),
- nome  VARCHAR(100),
- telefone VARCHAR(15),
- cnpj VARCHAR (18),
- cpf VARCHAR (14),
- cep  VARCHAR(9),
- registro_ativo BIT
- );
- 
- INSERT INTO clientes(nome, telefone, cnpj, cpf, cep, registro_ativo)
- VALUES ('Pedro', '(47) 99158-1254', '08.371.556/0001-04', '241.586.758-63', '89085-578', 1);
  
  CREATE TABLE modelos(
  id INT PRIMARY KEY IDENTITY(1,1),
@@ -72,9 +59,24 @@
  FOREIGN KEY(id_veiculo) REFERENCES veiculos(id),
  FOREIGN KEY (id_usuario) REFERENCES usuarios(id),
  registro_ativo BIT);
- 
+
  INSERT INTO vendedores (id_usuario, id_veiculo, registro_ativo)
  VALUES (1, 1, 1);
+ 
+ CREATE TABLE clientes(
+ id INT PRIMARY KEY IDENTITY(1,1),
+ nome  VARCHAR(100),
+ telefone VARCHAR(15),
+ cnpj VARCHAR (18),
+ cpf VARCHAR (14),
+ cep  VARCHAR(9),
+ id_vendedor INT,
+ FOREIGN KEY (id_vendedor) REFERENCES vendedores(id),
+ registro_ativo BIT
+ );
+
+ INSERT INTO clientes(nome, telefone, cnpj, cpf, cep,id_vendedor, registro_ativo)
+ VALUES ('Pedro', '(47) 99158-1254', '08.371.556/0001-04', '241.586.758-63', '89085-578',1, 1);
  
  CREATE TABLE produtos(
  id INT PRIMARY KEY IDENTITY(1,1),
