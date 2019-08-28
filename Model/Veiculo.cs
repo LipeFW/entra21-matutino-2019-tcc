@@ -20,11 +20,7 @@
           [Column("placa")]
           public string Placa { get; set; }
   
-          [Column("id_modelo")]
-          public int IdModelo { get; set; }
-  
-          [ForeignKey("IdModelo")]
-          public Modelo Modelo { get; set; }
+      
   
           [Column("registro_ativo")]
           public bool RegistroAtivo { get; set; }
