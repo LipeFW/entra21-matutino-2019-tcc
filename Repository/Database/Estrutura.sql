@@ -32,7 +32,7 @@
  INSERT INTO clientes(nome, telefone, cnpj, cpf, cep, registro_ativo)
  VALUES ('Pedro', '(47) 99158-1254', '08.371.556/0001-04', '241.586.758-63', '89085-578', 1);
  
- CREATE TABLE modelos(
+ CREATE TABLE veiculos(
  id INT PRIMARY KEY IDENTITY(1,1),
  marca VARCHAR(100),
  modelo VARCHAR(100),
@@ -42,7 +42,7 @@
  registro_ativo BIT
  );
  
- INSERT INTO modelos(marca, modelo, ano_fabricacao, numero_caminhao, placa, registro_ativo)
+ INSERT INTO veiculos(marca, modelo, ano_fabricacao, numero_caminhao, placa, registro_ativo)
  VALUES ('Ford', 'Cargo', '2005', 002, 'MJX-0585', 1 );
  
  CREATE TABLE vendedores(
