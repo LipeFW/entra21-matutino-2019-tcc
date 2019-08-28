@@ -89,8 +89,6 @@
   <ItemGroup>
     <Compile Include="Categoria.cs" />
     <Compile Include="Cliente.cs" />
-    <Compile Include="Marca.cs" />
-    <Compile Include="Modelo.cs" />
     <Compile Include="NotaFiscal.cs" />
     <Compile Include="Produto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
