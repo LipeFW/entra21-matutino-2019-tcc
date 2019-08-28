@@ -61,5 +61,35 @@
         });
     }
 
+    $('.table').on('click', '.botao-apagar', function () {
+        $idApagar = $(this).data('id');
 
+        $.ajax({
+            url: 'http://localhost:51242/Cliente/apagar?id=' + $idApagar,
+            method: 'get',
+            success: function (data) {
+                $tabelaRota.ajax.reload();
+            },
+            error: function (err) {
+                alert('Não foi possivel apagar');
+            }
+        });
+    });
+
+    $('.table').on('click', '.botao-editar', function () {
+        $idAlterar = $(this).data('id');
+
+        $.ajax({
+            url: 'http://localhost:51242/Cliente/obterpeloid?id=' + $idAlterar,
+            method: 'get',
+
+            success: function (data) {
+                $('#rota-campo-nome').val(data.Nome);
+                $('#modal-rota').modal('show');
+            },
+            error: function (err) {
+                alert('Não foi possivel carregar')
+            }
+        })
+    })
 });
