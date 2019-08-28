@@ -206,6 +206,8 @@
     <Content Include="Views\Produto\ProdutoModal.cshtml" />
     <Content Include="Views\Venda\ModalVenda.cshtml" />
     <Content Include="Views\Veiculo\ModalVeiculo.cshtml" />
+    <Content Include="Views\Veiculo\Index.cshtml" />
+    <Content Include="Views\Veiculo\veiculocadastro.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

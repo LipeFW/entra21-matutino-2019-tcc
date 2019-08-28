@@ -42,7 +42,7 @@
  
  CREATE TABLE veiculos(
  id INT PRIMARY KEY IDENTITY(1,1),
- numero_caminhao VARCHAR(5),
+ numero_caminhao INT ,
  placa VARCHAR(8),
  id_modelo iNT,
  FOREIGN KEY (id_modelo) REFERENCES modelos(id),
@@ -50,7 +50,7 @@
  );
  
  INSERT INTO veiculos(numero_caminhao, placa, id_modelo, registro_ativo)
- VALUES ('002', 'MJX-0585',1 ,1);
+ VALUES (002, 'MJX-0585',1 ,1);
  
  CREATE TABLE vendedores(
  id INT PRIMARY KEY IDENTITY(1,1),
