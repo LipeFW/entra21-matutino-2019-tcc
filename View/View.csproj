@@ -199,8 +199,6 @@
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Rota\RotaModal.cshtml" />
-    <Content Include="Views\Vendedor\Vendedor.cshtml" />
-    <Content Include="Views\Vendedor\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
