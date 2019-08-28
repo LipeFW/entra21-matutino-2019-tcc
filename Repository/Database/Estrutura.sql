@@ -32,7 +32,7 @@
  INSERT INTO clientes(nome, telefone, cnpj, cpf, cep, registro_ativo)
  VALUES ('Pedro', '(47) 99158-1254', '08.371.556/0001-04', '241.586.758-63', '89085-578', 1);
  
- CREATE TABLE modelos(
+ CREATE TABLE veiculos(
  id INT PRIMARY KEY IDENTITY(1,1),
  marca VARCHAR(100),
  modelo VARCHAR(100),
@@ -42,19 +42,17 @@
  registro_ativo BIT
  );
  
- INSERT INTO modelos(marca, modelo, ano_fab, numero_caminhao, placa, registro_ativo)
- VALUES ('Ford', 'Cargo', '2005', 002, 'MJX-0585', 1, 1 );
+ INSERT INTO veiculos(marca, modelo, ano_fabricacao, numero_caminhao, placa, registro_ativo)
+ VALUES ('Ford', 'Cargo', '2005', 002, 'MJX-0585', 1 );
  
  CREATE TABLE vendedores(
  id INT PRIMARY KEY IDENTITY(1,1),
  id_usuario INT,
- id_veiculo INT,
- FOREIGN KEY(id_veiculo) REFERENCES veiculos(id),
  FOREIGN KEY (id_usuario) REFERENCES usuarios(id),
  registro_ativo BIT);
  
- INSERT INTO vendedores (id_usuario, id_veiculo, registro_ativo)
- VALUES (1, 1, 1);
+ INSERT INTO vendedores (id_usuario, registro_ativo)
+ VALUES (1, 1);
  
  CREATE TABLE produtos(
  id INT PRIMARY KEY IDENTITY(1,1),
@@ -103,5 +101,5 @@
  registro_ativo BIT
  );
  
- INSERT INTO notas_fiscais(valor_final,id_vendas, registro_ativo)
+ INSERT INTO notas_fiscais(valor_final ,id_venda, registro_ativo)
  VALUES (100, 1, 1);
