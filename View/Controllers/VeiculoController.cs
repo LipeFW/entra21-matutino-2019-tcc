@@ -52,6 +52,9 @@ namespace View.Controllers
 
         public ActionResult Index()
         {
+            List<Veiculo> veiculos = repository.ObterTodos();
+            ViewBag.Veiculos = veiculos;
+
             return View();
         }
 
