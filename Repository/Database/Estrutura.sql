@@ -50,7 +50,7 @@
  registro_ativo BIT
  );
  
- INSERT INTO modelos(nome, ano_fab, id_marca, registro_ativo)
+ INSERT INTO modelos(nome, ano_fabricacao, id_marca, registro_ativo)
  VALUES ('Cargo', '2005', 1, 1 );
  
  CREATE TABLE veiculos(
@@ -69,7 +69,6 @@
  id INT PRIMARY KEY IDENTITY(1,1),
  id_usuario INT,
  id_veiculo INT,
- FOREIGN KEY (id_venda) REFERENCES vendas(id),
  FOREIGN KEY(id_veiculo) REFERENCES veiculos(id),
  FOREIGN KEY (id_usuario) REFERENCES usuarios(id),
  registro_ativo BIT);
@@ -124,5 +123,5 @@
  registro_ativo BIT
  );
  
- INSERT INTO notas_fiscais(valor_final,id_vendas, registro_ativo)
+ INSERT INTO notas_fiscais(valor_final, id_venda, registro_ativo)
  VALUES (100, 1, 1);
