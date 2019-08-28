@@ -55,11 +55,16 @@ namespace View.Controllers
 
         public ActionResult Index()
         {
+            List<Venda> vendas = repository.ObterTodos();
+            ViewBag.Venda = vendas;
             return View();
         }
 
         public ActionResult Cadastro()
         {
+            VendaRepository vendaRepository = new VendaRepository();
+            List<Venda> vendas = repository.ObterTodos();
+            ViewBag.Venda = vendas;
             return View();
         }
 
