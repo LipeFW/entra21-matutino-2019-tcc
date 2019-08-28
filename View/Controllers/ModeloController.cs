@@ -53,7 +53,7 @@ namespace View.Controllers
         public ActionResult Index()
         {
             List<Modelo> modelos = repository.ObterTodos();
-            Viewbag.Modelos = modelos;
+            ViewBag.Modelos = modelos;
             return View();
         }
 

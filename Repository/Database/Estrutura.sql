@@ -69,6 +69,7 @@
  id INT PRIMARY KEY IDENTITY(1,1),
  id_usuario INT,
  id_veiculo INT,
+ FOREIGN KEY (id_venda) REFERENCES vendas(id),
  FOREIGN KEY(id_veiculo) REFERENCES veiculos(id),
  FOREIGN KEY (id_usuario) REFERENCES usuarios(id),
  registro_ativo BIT);
@@ -118,8 +119,8 @@
  CREATE TABLE notas_fiscais(
  id INT PRIMARY KEY IDENTITY(1,1),
  valor_final DECIMAL(7,2),
- id_vendas INT,
- FOREIGN KEY (id_vendas) REFERENCES vendas(id),
+ id_venda INT,
+ FOREIGN KEY (id_venda) REFERENCES vendas(id),
  registro_ativo BIT
  );
  
