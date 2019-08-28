@@ -51,6 +51,9 @@ namespace View.Controllers
 
         public ActionResult Cadastro()
         {
+            ProdutoRepository produtoRepository = new ProdutoRepository();
+            List<Produto> produtos = produtoRepository.ObterTodos();
+            ViewBag.Produtos = produtos;
             return View();
         }
 
@@ -67,6 +70,8 @@ namespace View.Controllers
         
         public ActionResult Index()
         {
+            List<Produto> produtos = repository.ObterTodos();
+            ViewBag.Produto = produtos;
             return View();
         }
     }
