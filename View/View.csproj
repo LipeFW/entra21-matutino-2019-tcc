@@ -200,7 +200,6 @@
     <Content Include="Views\Rota\RotaModal.cshtml" />
     <Content Include="Views\Vendedor\VendedorModal.cshtml" />
     <Content Include="Views\Vendedor\Index.cshtml" />
-    <Content Include="Views\Marca\Index.cshtml" />
     <Content Include="Views\Rota\Index.cshtml" />
     <Content Include="Views\Rota\Rota.cshtml" />
     <Content Include="Views\Produto\ProdutoModal.cshtml" />
