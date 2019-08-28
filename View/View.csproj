@@ -198,6 +198,8 @@
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Rota\RotaModal.cshtml" />
+    <Content Include="Views\Veiculo\Index.cshtml" />
+    <Content Include="Views\Veiculo\veiculocadastro.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -208,7 +210,6 @@
   <ItemGroup>
     <Folder Include="Models\" />
     <Folder Include="Views\Produto\" />
-    <Folder Include="Views\Veiculo\" />
     <Folder Include="Views\Venda\" />
     <Folder Include="Views\Vendedor\" />
   </ItemGroup>
