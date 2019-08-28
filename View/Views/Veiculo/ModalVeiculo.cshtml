@@ -1,8 +1,8 @@
-﻿<div class="modal" tabindex="-1" role="dialog" id="modal-nota-fiscal">
+﻿<div class="modal" tabindex="-1" role="dialog" id="modal-veiculo">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Cadastro Nota Fiscal</h5>
+                <h5 class="modal-title">Cadastro Veiculo</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -10,19 +10,21 @@
             <div class="modal-body">
 
                 <div class="form-group">
-                    <label for="nota-fiscal-campo-venda">Marca</label>
-                    <select class="form-control" id="nota-fiscal-campo-venda" name="idVenda"></select>
+                    <label for="veiculo-campo-placa">Placa</label>
+                    <select class="form-control" id="veiculo-campo-placa"></select>
                 </div>
                 <div class="form-group">
-                    <label for="nota-fiscal-campo-nome">Valor Final</label>
-                    <input type="number" id="nota-fiscal-campo-nome" class="form-control" />
+                    <label for="veiculo-campo-modelo">Categoria</label>
+                    <select class="form-control" id="veiculo-campo-modelo" name="idModelo"></select>
                 </div>
 
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-primary" id="nota-fiscal-botao-salvar">Salvar</button>
+                <button type="button" class="btn btn-primary" id="veiculo-botao-salvar">Salvar</button>
             </div>
         </div>
     </div>
 </div>
+
+

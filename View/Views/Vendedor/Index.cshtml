@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "vendedorModal";
+}
+
+<h2>Vendedor Modal</h2>
+<h3 class="text-center mb-3 mt-3 text-info">Vendedor</h3>
+<title>Lista de Categoria</title>
+
+<button data-toggle="modal" data-target="#modal-vendedor" class="btn btn-primary mb-3 mt-3 float-right">Novo vendedor</button>
+
+<table id="vendedor-tabela" class="table table-hover table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>id Vendedor</th>
+            <th>Nome</th>
+            <th>Veiculo</th>
+        </tr>
+    </thead>
+</table>
+@RenderPage("Vendedor.cshtml")
+@section js{
+    <script src="~/Scripts/Vendedor/Vendedor.js"></script>
+}
+

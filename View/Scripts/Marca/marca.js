@@ -1,22 +1,22 @@
 ﻿$(function () {
     $idAlterar = -1;
 
-    $tabelaRota = $('#rota-tabela').DataTable({
-        ajax: 'http://localhost:51242/Cliente/obtertodos',
+    $tabelaMarca = $('marca-tabela').DataTable({
+        ajax: 'http://localhost:51242/Marca/obtertodos',
         serverSide: true,
         columns: [
             { 'data': 'Id' },
             { 'data': 'Nome' },
             {
                 render: function (data, type, row) {
-                    return '<butto class="btn btn-primary botao-editar" data-id="' + row.id + '">Editar</button>\<button class="btn btn-danger botao-apagar"data-id="' + row.Id + '">Apagar</button>'
+                    return '<button class="btn btn-primary botao-editar" data-id="' + row.Id + '">Editar</button>\<button class="btn btn-danger botao-apagar" data-id="' + row.Id + '">Apagar</button>'
                 }
             }
         ]
     });
 
-    $('#rota-botao-salvar').on('click', function () {
-        $nome = $('rota-campo-nome').val();
+    $('#marca-botao-salvar').on('click', function () {
+        $nome = $('#marca-campo-nome').val();
 
         if ($idAlterar == -1) {
             inserir($nome);
@@ -27,33 +27,34 @@
 
     function alterar($nome) {
         $.ajax({
-            url: 'http://localhost:51242/Cliente/update',
+            url: 'http://localhost:51242/Marca/update',
             method: 'post',
             data: {
-                id: $idalterar,
-                nome: $nome,
+                id = $idAlterar,
+                nome = $nome
             },
             success: function (data) {
-                $("#modal-rota").modal("hide");
+                $('#modal-marca').modal('hide');
                 $idAlterar = -1;
-                $tabelaRota.ajax.reload();
+                $tabelaMarca.ajax.reload();
             },
             error: function (err) {
-                alert('Não foi´possivel alterar');
+                alert('Não foi possivel alterar');
             }
         });
     }
 
     function inserir($nome) {
         $.ajax({
-            url: 'http://localhost:51242/Cliente/inserir',
+            url: 'http://localhost:51242/Marca/inserir',
             method: 'post',
             data: {
-                nome: $nome
+                nome = $nome
             },
             success: function (data) {
-                $("#modal-rota").modal('hide');
-                $tabelaRota.ajax.reload();
+                $('#modal-marca').modal('hide');
+                $tabelaMarca.ajax.reload();
+
             },
             error: function (err) {
                 alert('Não foi possivel inserir');
@@ -65,10 +66,10 @@
         $idApagar = $(this).data('id');
 
         $.ajax({
-            url: 'http://localhost:51242/Cliente/apagar?id=' + $idApagar,
+            url: 'http://localhost:51242/Marca/apagar?id=' + $idApagar,
             method: 'get',
             success: function (data) {
-                $tabelaRota.ajax.reload();
+                $tabelaMarca.ajax.reload();
             },
             error: function (err) {
                 alert('Não foi possivel apagar');
@@ -80,16 +81,15 @@
         $idAlterar = $(this).data('id');
 
         $.ajax({
-            url: 'http://localhost:51242/Cliente/obterpeloid?id=' + $idAlterar,
+            url: 'http://localhost:51242/Marca/editar?id=' + $idAlterar,
             method: 'get',
-
             success: function (data) {
-                $('#rota-campo-nome').val(data.Nome);
-                $('#modal-rota').modal('show');
+                $('#marca-campo-nome').val(data.Nome);
+                $('#modal-marca').modal('show');
             },
             error: function (err) {
-                alert('Não foi possivel carregar')
+                alert('Não foi possivel carregar');
             }
-        })
-    })
+        });
+    });
 });
