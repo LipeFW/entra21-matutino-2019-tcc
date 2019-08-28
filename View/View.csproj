@@ -184,7 +184,6 @@
     <Content Include="Views\Cliente\Index.cshtml" />
     <Content Include="Views\Categoria\CategoriaModal.cshtml" />
     <Content Include="Views\Categoria\Index.cshtml" />
-    <Content Include="Views\Marca\MarcaModal.cshtml" />
     <Content Include="Views\Modelo\ModeloModal.cshtml" />
     <Content Include="Views\NotaFiscal\NotaFiscalModal.cshtml" />
     <Content Include="Views\Login\Home.cshtml" />
@@ -200,7 +199,6 @@
     <Content Include="Views\Rota\RotaModal.cshtml" />
     <Content Include="Views\Vendedor\VendedorModal.cshtml" />
     <Content Include="Views\Vendedor\Index.cshtml" />
-    <Content Include="Views\Marca\Index.cshtml" />
     <Content Include="Views\Rota\Index.cshtml" />
     <Content Include="Views\Rota\Rota.cshtml" />
     <Content Include="Views\Produto\ProdutoModal.cshtml" />
