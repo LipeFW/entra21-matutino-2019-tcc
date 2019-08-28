@@ -59,6 +59,9 @@ namespace View.Controllers
 
         public ActionResult Cadastro()
         {
+            ModeloRepository modeloRepository = new ModeloRepository();
+            List<Modelo> modelos = modeloRepository.ObterTodos();
+            ViewBag.Modelos = modelos;
             return View();
         }
 
