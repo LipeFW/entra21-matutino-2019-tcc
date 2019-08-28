@@ -67,13 +67,11 @@
   <ItemGroup>
     <Compile Include="Interface\ICategoriaRepository.cs" />
     <Compile Include="Interface\IClienteRepository.cs" />
-    <Compile Include="Interface\IMarcaRepository.cs" />
     <Compile Include="Interface\IModeloRepository.cs" />
     <Compile Include="Interface\INotaFiscalRepository.cs" />
     <Compile Include="Interface\IProdutoRepository.cs" />
     <Compile Include="Interface\IRotaRepository.cs" />
     <Compile Include="Interface\IUsuarioRepository.cs" />
-    <Compile Include="Interface\IVeiculoRepository.cs" />
     <Compile Include="Interface\IVendaRepository.cs" />
     <Compile Include="Interface\IVendedorRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -83,7 +81,6 @@
     <Compile Include="Repositories\ProdutoRepository.cs" />
     <Compile Include="Repositories\RotaRepository.cs" />
     <Compile Include="Repositories\UsuarioRepository.cs" />
-    <Compile Include="Repositories\VeiculoRepository.cs" />
     <Compile Include="Repositories\VendaRepository.cs" />
     <Compile Include="Repositories\VendedorRepository.cs" />
     <Compile Include="SystemContext.cs" />
