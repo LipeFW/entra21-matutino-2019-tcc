@@ -27,7 +27,7 @@
 
     function alterar($nome) {
         $.ajax({
-            url: '',
+            url: 'http://localhost:51242/Cliente/update',
             method: 'post',
             data: {
                 id: $idalterar,
@@ -40,6 +40,23 @@
             },
             error: function (err) {
                 alert('Não foi´possivel alterar');
+            }
+        });
+    }
+
+    function inserir($nome) {
+        $.ajax({
+            url: 'http://localhost:51242/Cliente/inserir',
+            method: 'post',
+            data: {
+                nome: $nome
+            },
+            success: function (data) {
+                $("#modal-rota").modal('hide');
+                $tabelaRota.ajax.reload();
+            },
+            error: function (err) {
+                alert('Não foi possivel inserir');
             }
         });
     }
