@@ -159,6 +159,8 @@
     <Compile Include="Controllers\CategoriaController.cs" />
     <Compile Include="Controllers\ClienteController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\MarcaController.cs" />
+    <Compile Include="Controllers\ModeloController.cs" />
     <Compile Include="Controllers\NotaFiscalController.cs" />
     <Compile Include="Controllers\ProdutoController.cs" />
     <Compile Include="Controllers\RotaController.cs" />
@@ -182,6 +184,8 @@
     <Content Include="Views\Cliente\Index.cshtml" />
     <Content Include="Views\Categoria\CategoriaModal.cshtml" />
     <Content Include="Views\Categoria\Index.cshtml" />
+    <Content Include="Views\Marca\MarcaModal.cshtml" />
+    <Content Include="Views\Modelo\ModeloModal.cshtml" />
     <Content Include="Views\NotaFiscal\NotaFiscalModal.cshtml" />
     <Content Include="Views\Login\Home.cshtml" />
     <Content Include="Scripts\umd\popper.min.js.map" />
@@ -194,8 +198,14 @@
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Rota\RotaModal.cshtml" />
-    <Content Include="Views\Veiculo\Index.cshtml" />
-    <Content Include="Views\Veiculo\VeiculoCadastro.cshtml" />
+    <Content Include="Views\Vendedor\VendedorModal.cshtml" />
+    <Content Include="Views\Vendedor\Index.cshtml" />
+    <Content Include="Views\Marca\Index.cshtml" />
+    <Content Include="Views\Rota\Index.cshtml" />
+    <Content Include="Views\Rota\Rota.cshtml" />
+    <Content Include="Views\Produto\ProdutoModal.cshtml" />
+    <Content Include="Views\Venda\ModalVenda.cshtml" />
+    <Content Include="Views\Veiculo\ModalVeiculo.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
