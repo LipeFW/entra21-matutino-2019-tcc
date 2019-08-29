@@ -159,6 +159,7 @@
     <Content Include="Scripts\popper-utils.min.js" />
     <Content Include="Scripts\popper.js" />
     <Content Include="Scripts\popper.min.js" />
+    <Content Include="Scripts\Produto\produto.js" />
     <Content Include="Scripts\Rota\rota.js" />
     <Content Include="Scripts\umd\popper-utils.js" />
     <Content Include="Scripts\umd\popper-utils.min.js" />
@@ -213,6 +214,8 @@
     <Content Include="Views\Rota\Index.cshtml" />
     <Content Include="Views\Produto\ProdutoModal.cshtml" />
     <Content Include="Views\Venda\ModalVenda.cshtml" />
+    <Content Include="Views\Veiculo\ModalVeiculo.cshtml" />
+    <Content Include="Views\Veiculo\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
