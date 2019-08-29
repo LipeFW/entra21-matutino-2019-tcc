@@ -72,7 +72,7 @@
     <Compile Include="Interface\IProdutoRepository.cs" />
     <Compile Include="Interface\IRotaRepository.cs" />
     <Compile Include="Interface\IUsuarioRepository.cs" />
-    <Compile Include="Interface\IveiculoRepository.cs" />
+    <Compile Include="Interface\IVeiculoRepository.cs" />
     <Compile Include="Interface\IVendaRepository.cs" />
     <Compile Include="Interface\IVendedorRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
