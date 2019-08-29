@@ -9,15 +9,28 @@ namespace Repository.Repositories
 {
     public class VeiculoRepository : IVeiculoRepository
     {
-        public bool Alterar(Veiculo veiculo)
-        {
-            
+        private SystemContext context;
+
+        public VeiculoRepository()
+            {
+            context = new SystemContext();
+
         }
+
 
         public bool Apagar(int id)
         {
-           
+            var veiculo
+
         }
+
+
+        public bool Alterar(Veiculo veiculo)
+        {
+             
+        }
+
+     
 
         public int Inserir(Veiculo veiculo)
         {

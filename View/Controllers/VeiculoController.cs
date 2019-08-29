@@ -51,16 +51,12 @@ namespace View.Controllers
         }
 
         public ActionResult Index()
-        {
-            
-
+        { 
             return View();
         }
 
         public ActionResult Cadastro()
         {
-         
-
             return View();
         }
 
