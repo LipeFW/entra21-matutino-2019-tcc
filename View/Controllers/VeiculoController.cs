@@ -23,7 +23,7 @@ namespace View.Controllers
         public JsonResult ObterTodos()
         {
             var veiculos = repository.ObterTodos();
-            var resultado = new { dara = veiculos };
+            var resultado = new { data = veiculos };
             return Json(resultado, JsonRequestBehavior.AllowGet);
         }
 
@@ -52,17 +52,14 @@ namespace View.Controllers
 
         public ActionResult Index()
         {
-            List<Veiculo> veiculos = repository.ObterTodos();
-            ViewBag.Veiculos = veiculos;
+            
 
             return View();
         }
 
         public ActionResult Cadastro()
         {
-            VeiculoRepository veiculoRepository = new VeiculoRepository();
-            List<Veiculo> veiculos = veiculoRepository.ObterTodos();
-            ViewBag.Veiculos = veiculos;
+         
 
             return View();
         }

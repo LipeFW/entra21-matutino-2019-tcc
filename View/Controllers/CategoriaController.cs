@@ -54,16 +54,13 @@ namespace View.Controllers
 
         public ActionResult Index()
         {
-            List<Categoria> categorias = repository.ObterTodos();
-            ViewBag.Categorias = categorias;
+             
             return View();
         }
 
         public ActionResult Cadastro()
         {
-            CategoriaRepository categoriaRepository = new CategoriaRepository();
-            List<Categoria> categorias = categoriaRepository.ObterTodos();
-            ViewBag.Categorias = categorias;
+        
             return View();
         }
 

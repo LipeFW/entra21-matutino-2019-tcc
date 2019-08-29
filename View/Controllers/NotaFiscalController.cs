@@ -42,7 +42,7 @@ namespace View.Controllers
         }
 
         [HttpGet, Route("apagar")]
-        public JsonResult Aoagar(int id)
+        public JsonResult Apagar(int id)
         {
             var apagou = repository.ObterPeloId(id);
             var resultado = new { status = apagou };
