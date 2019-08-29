@@ -94,6 +94,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rota.cs" />
     <Compile Include="Usuario.cs" />
+    <Compile Include="Veiculo.cs" />
     <Compile Include="Venda.cs" />
     <Compile Include="Vendedor.cs" />
   </ItemGroup>
