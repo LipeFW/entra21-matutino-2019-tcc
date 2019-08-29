@@ -51,16 +51,13 @@ namespace View.Controllers
 
         public ActionResult Index()
         {
-            List<Cliente> clientes=repository.ObterTodos();
-            ViewBag.Clientes = clientes;
+           
             return View();
         }
 
         public ActionResult Cadastro()
         {
-            ClienteRepository clienterepository = new ClienteRepository();
-            List<Cliente> clientes = clienterepository.ObterTodos();
-            ViewBag.Clientes = clientes;
+          
            return View();
         }
 
