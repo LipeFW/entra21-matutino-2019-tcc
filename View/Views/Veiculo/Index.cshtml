@@ -6,7 +6,7 @@
 <h3>Lista de Veiculos</h3>
 <title>MCCS-Veiculos</title>
 
-<button class="btn btn-primary mb-3 mt-3 float-right"
+<button class="btn btn-primary mb-3 mt-3 float-right" data-target="#modal-veiculo" data-toggle="modal"
         href="/veiculo/cadastro">Novo</button>
 
 <table class="table table-bordered table-hover table-striped" id="veiculos-index">
@@ -23,4 +23,7 @@
     </thead>
 </table>
 
-
+@RenderPage("VeiculoModal.cshtml")
+@section js{
+    <script src="~/Scripts/Veiculo/veiculo.js"></script>
+    }
