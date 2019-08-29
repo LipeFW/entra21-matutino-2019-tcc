@@ -28,9 +28,32 @@
         $placa = $('#veiculo-campo-placa').val();
 
         if ($idAlterar == -1) {
-        inserir($marca, $mdodelo, $ano_fabricacao, $numero_caminhao, $placa);
+            inserir($marca, $modelo, $ano_fabricacao, $numero_caminhao, $placa);
         } else {
-            alterar($marca, $mdodelo, $ano_fabricacao, $numero_caminhao, $placa);
+            alterar($marca, $modelo, $ano_fabricacao, $numero_caminhao, $placa);
         }
-    });     
+    });
+
+    function alterar($marca, $modelo, $ano_fabricacao, $numero_caminhao, $placa) {
+        $.ajax({
+            url: 'http://localhost:51242/veiculo/update',
+            method: 'post',
+            data: {
+                id: $isAlterar,
+                marca: $marca,
+                modelo: $modelo,
+                ano_fabricacao: $ano_fabricacao,
+                numero_caminhao: $numero_caminhao,
+                placa: $placa
+            },
+            success: function (data) {
+                $('modal-veiculo').modal('hide');
+                $idAlterar = -1;
+                $tabelaVeiculo.ajax.reload();
+            },
+            error: function (err) {
+                alert('Não foi possivel alterar');
+            }
+        });
+    }
 });
