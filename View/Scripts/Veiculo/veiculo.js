@@ -82,13 +82,34 @@
         $idApagar = $(this).data('id');
 
         $.ajax({
-            url: 'http://localhost:51242/veiculo/apagar' + $idApagar,
+            url: 'http://localhost:51242/veiculo/apagar?id=' + $idApagar,
             method: 'get',
             success: function (data) {
                 $tabelaVeiculo.ajax.reload();
             },
             error: function (err) {
                 alert('Não foi possivel apagar');
+            }
+        });
+    });
+
+    $('.table').on('click', '.botao-editar', function () {
+        $idAlterar = $(this).data('id');
+
+        $.ajax({
+            url: 'http://localhost:51242/veiculo/editar?id=' + $idAlterar,,
+            method: 'get',
+            success: function (data) {
+                $('#veiculo-campo-marca').val(data.Marca);
+                $('#veiculo-campo-modelo').val(data.Modelo);
+                $('#veiculo-campo-ano-fabricacao').val(data.Ano_Fabricacao);
+                $('#veiculo-campo-numero-caminhao').val(data.Numero_caminhao);
+                $('#veiculo-campo-placa').val(data.Placa);
+                $('#modal-veiculo').modal('show');
+
+            },
+            error: function (err) {
+                alert('Não foi possivel carregar');
             }
         });
     });
