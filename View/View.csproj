@@ -216,7 +216,7 @@
     <Content Include="Views\Rota\Rota.cshtml" />
     <Content Include="Views\Produto\ProdutoModal.cshtml" />
     <Content Include="Views\Venda\ModalVenda.cshtml" />
-    <Content Include="Views\Veiculo\ModalVeiculo.cshtml" />
+    <Content Include="Views\Veiculo\VeiculoModal.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
