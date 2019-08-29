@@ -77,4 +77,19 @@
             }
         });
     }
+
+    $('.table').on('click', '.botao-apagar', function () {
+        $idApagar = $(this).data('id');
+
+        $.ajax({
+            url: 'http://localhost:51242/veiculo/apagar' + $idApagar,
+            method: 'get',
+            success: function (data) {
+                $tabelaVeiculo.ajax.reload();
+            },
+            error: function (err) {
+                alert('Não foi possivel apagar');
+            }
+        });
+    });
 });
