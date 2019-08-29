@@ -1,7 +1,7 @@
 ﻿$(function () {
     $idAlterar = -1;
 
-    $tabelaCliente = $('#cliente-tabela').DataTable({
+    $tabelaCliente = $('#clientes-tabela').DataTable({
         ajax: 'http://localhost:51242/Cliente/obtertodos',
         serverSide: true,
         columns: [

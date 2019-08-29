@@ -67,7 +67,6 @@
   <ItemGroup>
     <Compile Include="Interface\ICategoriaRepository.cs" />
     <Compile Include="Interface\IClienteRepository.cs" />
-    <Compile Include="Interface\IModeloRepository.cs" />
     <Compile Include="Interface\INotaFiscalRepository.cs" />
     <Compile Include="Interface\IProdutoRepository.cs" />
     <Compile Include="Interface\IRotaRepository.cs" />
