@@ -68,7 +68,6 @@ namespace View.Controllers
         
         public ActionResult Index()
         {
-         
             return View();
         }
     }
