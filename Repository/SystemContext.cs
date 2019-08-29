@@ -17,8 +17,7 @@ namespace Repository
         }
         public DbSet<Categoria> Categorias  { get; set; }
         public DbSet<Cliente> Clientes  { get; set; }
-        public DbSet<Marca> Marcas  { get; set; }
-        public DbSet<Modelo> Modelos { get; set; }
+        
         public DbSet<NotaFiscal> NotasFiscais  { get; set; }
         public DbSet<Produto> Produtos { get; set; }
         public DbSet<Rota> Rotas { get; set; }
