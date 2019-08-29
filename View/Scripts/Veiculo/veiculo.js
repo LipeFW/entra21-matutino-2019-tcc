@@ -56,4 +56,25 @@
             }
         });
     }
+
+    function inserir($marca, $modelo, $ano_fabricacao, $numero_caminhao, $placa) {
+        $.ajax({
+            url: 'http://localhost:51242/veiculo/inserir',
+            method: 'post',
+            data: {
+                marca: $marca,
+                modelo: $modelo,
+                ano_fabricacao: $ano_fabricacao,
+                numero_caminhao: $numero_caminhao,
+                placa: $placa
+            },
+            success: function (data) {
+                $('#modal-veiculo').modal('hide');
+                $tabelaVeiculo.ajax.reload();
+            },
+            error(err) {
+                alert('Não foi possivel inserir');
+            }
+        });
+    }
 });
