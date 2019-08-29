@@ -44,7 +44,7 @@
                 success: function (data) {
                     $('#modal-produto').modal('hide');
                     $idAlterar = -1;
-                    $tabelaproduto.ajax.reload();
+                    $tabelaProduto.ajax.reload();
                 },
                 error: function (err) {
                     alert('Não foi possivel alterar o Produto');
@@ -73,5 +73,37 @@
         }
     });
 
+    $('.table').on('click', '.botao-apagar', function () {
+        $idApagar = $(this).data('id');
 
+        $ajax({
+            url: 'http://localhost:51242/Produto/apagar?=' + $idAlterar,
+            method: 'get',
+            success: function (data) {
+                $tabelaProduto.ajax.reload();
+            },
+            error: function (err) {
+                alert("Não foi possivel apagar");
+            }
+        });
+    });
+
+    $('.table').on('click', 'botao-editar', function () {
+        $idAlterar = $(this).data('id');
+
+        $.ajax({
+            url: 'http://localhost:51242/Produto/obterpeloid?=' + idAlterar,
+            methd: 'get',
+            success: function (data) {
+                $('#produto-campo-categoria').val(data.Categoria);
+                $('#produto-campo-codigo-barra').val(data.CodigoBarra);
+                $('#produto-campo-quantidade-produtos').val(data.QuantidadeProdutos);
+                $('#produto-campo-valor-unitatio').val(data.ValorUnitario);
+                $('#modal-produto').modal('show');
+            },
+            error: function (err) {
+                alert("Não foi possivel carregar");
+            }
+        });
+    });
 });
