@@ -97,7 +97,7 @@
         $idAlterar = $(this).data('id');
 
         $.ajax({
-            url: 'http://localhost:51242/veiculo/editar?id=' + $idAlterar,,
+            url: 'http://localhost:51242/veiculo/editar?id=' + $idAlterar,
             method: 'get',
             success: function (data) {
                 $('#veiculo-campo-marca').val(data.Marca);
