@@ -46,7 +46,7 @@
     }
 
     function inserir($nome) {
-        S.ajax({
+       $.ajax({
             url: 'http://localhost:51242/Categoria/inserir',
             method: 'post',
             data: {

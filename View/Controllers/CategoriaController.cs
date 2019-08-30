@@ -51,7 +51,6 @@ namespace View.Controllers
             return Json(resultado, JsonRequestBehavior.AllowGet);
         }
 
-
         public ActionResult Index()
         {
              
@@ -59,8 +58,7 @@ namespace View.Controllers
         }
 
         public ActionResult Cadastro()
-        {
-        
+        {        
             return View();
         }
 

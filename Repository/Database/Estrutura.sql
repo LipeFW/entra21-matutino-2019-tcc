@@ -7,7 +7,7 @@
  registro_ativo BIT
  );
  
- INSERT INTO usuarios (nome,senha,registro_ativo)
+ INSERT INTO usuarios(nome,senha,registro_ativo)
  VALUES ('LipeFW', 'tatofazmano', 1),
  	    ('Illan', 'dknlan123', 1);
  
@@ -51,7 +51,7 @@
  FOREIGN KEY (id_usuario) REFERENCES usuarios(id),
  registro_ativo BIT);
  
- INSERT INTO vendedores (id_usuario, registro_ativo)
+ INSERT INTO vendedores(id_usuario, registro_ativo)
  VALUES (1, 1);
  
  CREATE TABLE produtos(
@@ -63,7 +63,7 @@
  FOREIGN KEY (id_categoria) REFERENCES categorias(id),
  registro_ativo BIT);
  
- INSERT INTO produtos (id_categoria, codigo_barra, quantidade_produto, valor_unitario, registro_ativo)
+ INSERT INTO produtos(id_categoria, codigo_barra, quantidade_produto, valor_unitario, registro_ativo)
  VALUES (1, '173937229417429475205792634916', 1, 1, 1);
  
  CREATE TABLE vendas(
@@ -79,7 +79,7 @@
  desconto DECIMAL(8,2),
  registro_ativo BIT);
  
- INSERT INTO vendas (quantidade,id_vendedor,id_cliente,id_produto, registro_ativo)
+ INSERT INTO vendas(quantidade,id_vendedor,id_cliente,id_produto, registro_ativo)
  VALUES (1, 1, 1, 1, 1);
  
  CREATE TABLE rotas(
