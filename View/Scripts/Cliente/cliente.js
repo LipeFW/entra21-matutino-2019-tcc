@@ -31,49 +31,49 @@
         else {
             alterar($nome, $telefone, $cnpj, $cep);
         }
+        function alterar($nome, $telefone, $cnpj, $cep) {
+            $.ajax({
+                url: 'http://localhost:51242/Cliente/update',
+                method: 'post',
+                data: {
+                    id: $idAlterar,
+                    nome: $nome,
+                    telefone: $telefone,
+                    cnpj: $cnpj,
+                    cep: $cep
+                },
+                success: function (data) {
+                    $('#modal-cliente').modal('hide');
+                    $idAlterar = -1;
+                    $tabelaCliente.ajax.reload();
+                },
+                error: function (err) {
+                    alert('Não foi possivel alterar');
+                }
+            })
+        }
+
+        function inserir($nome, $telefone, $cnpj, $cep) {
+            $.ajax({
+                url: 'http://localhost:51242/Cliente/inserir',
+                method = 'post',
+                data: {
+                    nome: $nome,
+                    telefone: $telefone,
+                    cnpj: $cnpj,
+                    cep: $cep
+                },
+                success: function (data) {
+                    $('#modal-cliente').modal('hide');
+                    $tabelaCliente.ajax.reload();
+                },
+                error: function (err) {
+                    alert('Não foi possivel cadastrar o cliente');
+                }
+            });
+        }
     });
 
-    function alterar($nome, $telefone, $cnpj, $cep) {
-        $.ajax({
-            url: 'http://localhost:51242/Cliente/update',
-            method: 'post',
-            data: {
-                id: $idAlterar,
-                nome: $nome,
-                telefone: $telefone,
-                cnpj: $cnpj,
-                cep: $cep
-            },
-            success: function (data) {
-                $('#modal-cliente').modal('hide');
-                $idAlterar = -1;
-                $tabelaCliente.ajax.reload();
-            },
-            error: function (err) {
-                alert('Não foi possivel alterar');
-            }
-        })
-    }
-
-    function inserir($nome, $telefone, $cnpj, $cep) {
-        $.ajax({
-            url: 'http://localhost:51242/Cliente/inserir',
-            method = 'post',
-            data: {
-                nome: $nome,
-                telefone: $telefone,
-                cnpj: $cnpj,
-                cep: $cep
-            },
-            success: function (data) {
-                $('#modal-cliente').modal('hide');
-                $tabelaCliente.ajax.reload();
-            },
-            error: function (err) {
-                alert('Não foi possivel cadastrar o cliente');
-            }
-        });
-    }
 
     $('.table').on('click', '.botao-apagar', function () {
         $idApagar = $(this).data('id');

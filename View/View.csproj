@@ -166,7 +166,6 @@
     <Content Include="Scripts\umd\popper.min.js" />
     <Content Include="Scripts\Usuario\usuario.js" />
     <Content Include="Scripts\Veiculo\veiculo.js" />
-    <Content Include="Scripts\Venda\venda.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -218,6 +217,8 @@
     <Content Include="Views\Veiculo\VeiculoModal.cshtml" />
     <Content Include="Views\Produto\Index.cshtml" />
     <Content Include="Views\Produto\Produto.cshtml" />
+    <Content Include="Views\Venda\Index.cshtml" />
+    <Content Include="Views\NotaFiscal\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
