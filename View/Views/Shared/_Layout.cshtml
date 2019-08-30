@@ -1,65 +1,309 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - MCSS</title>
-    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="~/Content/css/login.css" rel="stylesheet" type="text/css" />
-    <script src="~/Scripts/modernizr-2.8.3.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+    <!-- Global stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet"
+          type="text/css">
+    <link href="~/content/tema/global_assets/css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
+    <link href="~/content/tema/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="~/content/tema/assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
+    <link href="~/content/tema/assets/css/layout.min.css" rel="stylesheet" type="text/css">
+    <link href="~/content/tema/assets/css/components.min.css" rel="stylesheet" type="text/css">
+    <link href="~/content/tema/assets/css/colors.min.css" rel="stylesheet" type="text/css">
+    <!-- /global stylesheets -->
+    <!-- Core JS files -->
+    <script src="~/content/tema/global_assets/js/main/jquery.min.js"></script>
+    <script src="~/content/tema/global_assets/js/main/bootstrap.bundle.min.js"></script>
+    <script src="~/content/tema/global_assets/js/plugins/loaders/blockui.min.js"></script>
+    <!-- /core JS files -->
+    <!-- Theme JS files -->
+    <script src="~/content/tema/global_assets/js/plugins/visualization/d3/d3.min.js"></script>
+    <script src="~/content/tema/global_assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
+    <script src="~/content/tema/global_assets/js/plugins/forms/styling/switchery.min.js"></script>
+    <script src="~/content/tema/global_assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+    <script src="~/content/tema/global_assets/js/plugins/ui/moment/moment.min.js"></script>
+    <script src="~/content/tema/global_assets/js/plugins/pickers/daterangepicker.js"></script>
+
+    <script src="~/content/tema/assets/js/app.js"></script>
+    <script src="~/content/tema/global_assets/js/demo_pages/dashboard.js"></script>
+    <!-- /theme JS files -->
     @RenderSection("css", false)
-    <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet" />
-    <link rel="shortcut icon" href="http://www.pngmart.com/files/7/Box-PNG-Free-Download.png" />
-
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="titulo2 navbar-brand" href="#">mcss</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-            <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="~/Login/Home">Inicio <span class="sr-only">(página atual)<span></a>
-                </li>
+<body>
+
+    <!-- Main navbar -->
+    <div class="navbar navbar-expand-md navbar-light">
+
+        <!-- Header with logos -->
+        <div class="navbar-header navbar-dark d-none d-md-flex align-items-md-center">
+            <div class="navbar-brand navbar-brand-md">
+                <a href="index.html" class="d-inline-block">
+                    <img src="~/content/tema/global_assets/images/logo_light.png" alt="">
+                </a>
+            </div>
+
+            <div class="navbar-brand navbar-brand-xs">
+                <a href="index.html" class="d-inline-block">
+                    <img src="~/content/tema/global_assets/images/logo_icon_light.png" alt="">
+                </a>
+            </div>
+        </div>
+        <!-- /header with logos -->
+        <!-- Mobile controls -->
+        <div class="d-flex flex-1 d-md-none">
+            <div class="navbar-brand mr-auto">
+                <a href="index.html" class="d-inline-block">
+                    <img src="~/content/tema/global_assets/images/logo_dark.png" alt="">
+                </a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
+                <i class="icon-tree5"></i>
+            </button>
+
+            <button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
+                <i class="icon-paragraph-justify3"></i>
+            </button>
+        </div>
+        <!-- /mobile controls -->
+        <!-- Navbar content -->
+        <div class="collapse navbar-collapse" id="navbar-mobile">
+            <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contato</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Opções
+                    <a href="#" class="navbar-nav-link sidebar-control sidebar-main-toggle d-none d-md-block">
+                        <i class="icon-paragraph-justify3"></i>
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Produto</a>
-                        <a class="dropdown-item" href="#">Veiculos</a>
-                        <a class="dropdown-item" href="#">Clientes</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="~/Usuario/Index">Usuários</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Desativado</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
-            </form>
-        </div>
-    </nav>
-    <div class="container body-content">
-        @RenderBody()
-    </div>
 
-    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
-    <script src="~/Scripts/bootstrap.min.js"></script>
-    <script src="~/Scripts/jquery.mask.js"></script>
-    <script src="~/Scripts/jquery.mask.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+            <span class="badge bg-pink-400 badge-pill ml-md-3 mr-md-auto">16 orders</span>
+
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown">
+                        <img src="~/content/tema/global_assets/images/lang/gb.png" class="img-flag mr-2" alt="">
+                        English
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a href="#" class="dropdown-item english active">
+                            <img src="~/content/tema/global_assets/images/lang/gb.png" class="img-flag" alt="">
+                            English
+                        </a>
+                        <a href="#" class="dropdown-item portuguese">
+                            <img src="~/content/tema/global_assets/images/lang/br.png" class="img-flag" alt="">
+                            Português
+                        </a>
+                        <a href="#" class="dropdown-item deutsch">
+                            <img src="~/content/tema/global_assets/images/lang/de.png" class="img-flag" alt="">
+                            Deutsch
+                        </a>
+                        <a href="#" class="dropdown-item espana">
+                            <img src="~/content/tema/global_assets/images/lang/es.png" class="img-flag" alt="">
+                            España
+                        </a>
+                        <a href="#" class="dropdown-item russian">
+                            <img src="~/content/tema/global_assets/images/lang/ru.png" class="img-flag" alt="">
+                            Русский
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown dropdown-user">
+                    <a href="#" class="navbar-nav-link d-flex align-items-center dropdown-toggle"
+                       data-toggle="dropdown">
+                        <img src="~/content/tema/global_assets/images/placeholders/placeholder.jpg"
+                             class="rounded-circle mr-2" height="34" alt="">
+                        <span>Victoria</span>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a href="#" class="dropdown-item"><i class="icon-user-plus"></i> My profile</a>
+                        <a href="#" class="dropdown-item"><i class="icon-coins"></i> My balance</a>
+                        <a href="#" class="dropdown-item">
+                            <i class="icon-comment-discussion"></i> Messages <span class="badge badge-pill bg-indigo-400 ml-auto">58</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item"><i class="icon-cog5"></i> Account settings</a>
+                        <a href="#" class="dropdown-item"><i class="icon-switch2"></i> Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- /navbar content -->
+
+    </div>
+    <!-- /main navbar -->
+    <!-- Page content -->
+    <div class="page-content">
+
+        <!-- Main sidebar -->
+        <div class="sidebar sidebar-dark sidebar-main sidebar-expand-md">
+
+            <!-- Sidebar mobile toggler -->
+            <div class="sidebar-mobile-toggler text-center">
+                <a href="#" class="sidebar-mobile-main-toggle">
+                    <i class="icon-arrow-left8"></i>
+                </a>
+                Navigation
+                <a href="#" class="sidebar-mobile-expand">
+                    <i class="icon-screen-full"></i>
+                    <i class="icon-screen-normal"></i>
+                </a>
+            </div>
+            <!-- /sidebar mobile toggler -->
+            <!-- Sidebar content -->
+            <div class="sidebar-content">
+
+                <!-- User menu -->
+                <div class="sidebar-user">
+                    <div class="card-body">
+                        <div class="media">
+                            <div class="mr-3">
+                                <a href="#">
+                                    <img src="~/content/tema/global_assets/images/placeholders/placeholder.jpg"
+                                         width="38" height="38" class="rounded-circle" alt="">
+                                </a>
+                            </div>
+
+                            <div class="media-body">
+                                <div class="media-title font-weight-semibold">Victoria Baker</div>
+                                <div class="font-size-xs opacity-50">
+                                    <i class="icon-pin font-size-sm"></i> &nbsp;Santa Ana, CA
+                                </div>
+                            </div>
+
+                            <div class="ml-3 align-self-center">
+                                <a href="#" class="text-white"><i class="icon-cog3"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /user menu -->
+                <!-- Main navigation -->
+                <div class="card card-sidebar-mobile">
+                    <ul class="nav nav-sidebar" data-nav-type="accordion">
+
+                        <!-- Main -->
+                        <li class="nav-item-header">
+                            <div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu"
+                                                                                                  title="Main"></i>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/" class="nav-link active">
+                                <i class="icon-home4"></i>
+                                <span>
+                                    Home
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item nav-item-submenu">
+                            <a href="#" class="nav-link"><i class="icon-copy"></i> <span>Categoria</span></a>
+
+                            <ul class="nav nav-group-sub" data-submenu-title="categorias">
+                                <li class="nav-item"><a href="/categoria/index" class="nav-link">Lista</a></li>
+                                <li class="nav-item"><a href="/categoria/cadastro" class="nav-link">Cadastro</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item nav-item-submenu">
+                            <a href="#" class="nav-link"><i class="icon-copy"></i> <span>Produtos</span></a>
+
+                            <ul class="nav nav-group-sub" data-submenu-title="produtos">
+                                <li class="nav-item"><a href="/produto/index" class="nav-link">Lista</a></li>
+                                <li class="nav-item"><a href="/produto/cadastro" class="nav-link">Cadastro</a></li>
+
+                            </ul>
+                        </li>
+                        <!-- /main -->
+
+                    </ul>
+                </div>
+                <!-- /main navigation -->
+
+            </div>
+            <!-- /sidebar content -->
+
+        </div>
+        <!-- /main sidebar -->
+        <!-- Main content -->
+        <div class="content-wrapper">
+
+            <!-- Page header -->
+            <div class="page-header">
+                <div class="page-header-content header-elements-md-inline">
+                    <div class="page-title d-flex">
+                        <h4>
+                            <i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Home</span> -
+                            Dashboard
+                        </h4>
+                        <a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+                    </div>
+
+                </div>
+            </div>
+            <!-- /page header -->
+            <!-- Content area -->
+            <div class="content pt-0">
+
+                <!-- Main charts -->
+                <div class="row">
+                    @RenderBody()
+                </div>
+                <!-- /main charts -->
+
+
+
+            </div>
+
+            <div class="col-xl-4">
+
+                <!-- Progress counters -->
+                <div class="row">
+                    <div class="col-sm-6">
+
+
+                    </div>
+                </div>
+                <!-- /progress counters -->
+
+
+            </div>
+        </div>
+        <!-- /dashboard content -->
+
+    </div>
+    <!-- /content area -->
+    <!-- Footer -->
+    <div class="navbar navbar-expand-lg navbar-light">
+        <div class="text-center d-lg-none w-100">
+            <button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse"
+                    data-target="#navbar-footer">
+                <i class="icon-unfold mr-2"></i>
+                Footer
+            </button>
+        </div>
+
+        <div class="navbar-collapse collapse" id="navbar-footer">
+            <span class="navbar-text">
+                &copy; 2019. <a href="#">MCSS</a> by <a href="http://themeforest.net/user/dark" target="_blank">
+                    Pablo,
+                    Fellipe, Nathan, Illam, Eduardo e Henrrique
+                </a>
+            </span>
+
+
+        </div>
+    </div>
+    <!-- /footer -->
 
     @RenderSection("js", false)
-
 </body>
+
 </html>
