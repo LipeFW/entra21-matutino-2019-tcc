@@ -27,5 +27,72 @@
         $produto = $('#venda-campo-produto').val();
         $total = $('#venda-campo-total').val();
         $desconto = $('#venda-campo-desconto').val();
+
+        if ($idAlterar == -1) {
+            inserir($quantidade, $vendedor, $cliente, $produto, $total, $desconto);
+        } else {
+            alterar($quantidade, $vendedor, $cliente, $produto, $total, $desconto);
+        }
+    });
+
+    function alterar($quantidade, $vendedor, $cliente, $produto, $total, $desconto) {
+        $.ajax({
+            url: 'http://localhost:51242/Venda/update',
+            method = 'post',
+            data: {
+                id: $idAlterar,
+                quantidade: $quantidade,
+                vendedor: $vendedor,
+                cliente: $cliente,
+                produto: $produto,
+                total: $total,
+                desconto: $desconto
+            },
+            success: function (data) {
+                $("#modal-venda").mdal("hide");
+                $idAlterar = -1;
+                $tabelaVenda.ajax.reload();
+            },
+            error: function (err) {
+                alert("Não foi possivel alterar");
+            }
+        })
+    }
+
+    function inserir($quantidade, $vendedor, $cliente, $total, $desconto) {
+        $.ajax({
+            url: 'http://localhost:51242/Venda/update',
+            method: 'post',
+            data: {
+                quantidade: $quantidade,
+                vendedor: $vendedor,
+                cliente: $cliente,
+                produto: $produto,
+                total: $total,
+                desconto: $desconto
+            },
+            success: function (data) {
+                $("#modal-venda").modal("hide");
+                $tabelaVenda.ajax.reload();
+            },
+            error: function (err) {
+                alert("Não foi possivel inserir");
+            }
+        });
+    }
+
+    $.('.table').on('click', '.botao-apagar', function () {
+        $idApagar = $(this).data('id');
+
+        $.ajax({
+            url: 'http://localhost:51242/Venda/apagar?id=' + $idApagar,
+            method: 'get',
+            success: function (data) {
+                $tabelaVenda.ajax.reload();
+            },
+            error: function (err) {
+                alert("Não foi possivel apagar")
+            }
+        })
     })
 })
