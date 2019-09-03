@@ -89,7 +89,7 @@
         $idAlterar = $(this).data('id');
 
         $.ajax({
-            url: 'http://localhost:51242/vendedor/editar?id=' + $idAlterar,,
+            url: 'http://localhost:51242/vendedor/editar?id=' + $idAlterar,
             method: 'get',
             success: function (data) {
                 $('#vendedor-campo-usuario').val(data.Usuario);
