@@ -38,7 +38,7 @@
     function alterar($quantidade, $vendedor, $cliente, $produto, $total, $desconto) {
         $.ajax({
             url: 'http://localhost:51242/Venda/update',
-            method = 'post',
+            method: 'post',
             data: {
                 id: $idAlterar,
                 quantidade: $quantidade,
@@ -81,7 +81,7 @@
         });
     }
 
-    $.('.table').on('click', '.botao-apagar', function () {
+    $('.table').on('click', '.botao-apagar', function () {
         $idApagar = $(this).data('id');
 
         $.ajax({
