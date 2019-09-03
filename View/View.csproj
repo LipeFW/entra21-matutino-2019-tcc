@@ -107,6 +107,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Database.mdf" />
+    <Content Include="App_Data\Database_log.ldf">
+      <DependentUpon>Database.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\fontawesome\font-awesome.css" />
     <Content Include="Content\fontawesome\font-awesome.min.css" />
     <Content Include="Content\login\background\background-login.jpg" />
@@ -2724,7 +2728,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Content\fonts\" />
     <Folder Include="Models\" />
     <Folder Include="Scripts\Login\" />
