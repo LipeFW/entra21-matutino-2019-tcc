@@ -107,6 +107,12 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\css\outros.css" />
+    <Content Include="Content\image\fundinho.jpg" />
+    <Content Include="Content\image\fundinho3.png" />
+    <Content Include="Content\image\fundinho4.png" />
+    <Content Include="Content\image\fundinho_1.jpg" />
+    <Content Include="Content\image\fundinho_2.jpg" />
     <Content Include="Content\login\background\background-login.jpg" />
     <Content Include="Content\login\background\background.jpg" />
     <Content Include="Content\login\background\background2.jpg" />
@@ -216,6 +222,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CategoriaController.cs" />
     <Compile Include="Controllers\ClienteController.cs" />
+    <Compile Include="Controllers\ContatoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\NotaFiscalController.cs" />
@@ -255,6 +262,7 @@
     <Content Include="Views\Produto\Produto.cshtml" />
     <Content Include="Views\Venda\Index.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Contato\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
