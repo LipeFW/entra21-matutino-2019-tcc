@@ -1,7 +1,7 @@
 ﻿$(function () {
     $idAlterar = -1;
 
-    $tabelaCliente = $('#cliente-tabela').DataTable({
+    $tabelaCliente = $('#clientes-tabela').DataTable({
         ajax: 'http://localhost:51242/cliente/obtertodos',
         serverSide: true,
         columns: [
@@ -10,6 +10,7 @@
             { 'data': 'Telefone' },
             { 'data': 'Cnpj' },
             { 'data': 'Cep' },
+            { 'data': 'Vendedor'},
             {
                 render: function (data, type, row) {
                     return '<button class="btn btn-primary botao-editar"data-id"' + row.Id + '">Editar</button>\<button class="btn btn-danger botao-apagar"data-id="' + row.Id + '">Apagar</button>'
@@ -23,15 +24,16 @@
         $telefone = $('#cliente-campo-telefone').val();
         $cnpj = $('#cliente-campo-cnpj').val();
         $cep = $('#cliente-campo-cep').val();
+        $vendedor = $('#cliente-campo-vendedor').val();
 
         if ($idAlterar == -1) {
-            inserir($nome, $telefone, $cnpj, $cep);
+            inserir($nome, $telefone, $cnpj, $cep, $vendedor);
         }
 
         else {
-            alterar($nome, $telefone, $cnpj, $cep);
+            alterar($nome, $telefone, $cnpj, $cep, $vendedor);
         }
-        function alterar($nome, $telefone, $cnpj, $cep) {
+        function alterar($nome, $telefone, $cnpj, $cep, $vendedor) {
             $.ajax({
                 url: 'http://localhost:51242/cliente/update',
                 method: 'post',
@@ -40,7 +42,8 @@
                     nome: $nome,
                     telefone: $telefone,
                     cnpj: $cnpj,
-                    cep: $cep
+                    cep: $cep,
+                    vendedor: $vendedor
                 },
                 success: function (data) {
                     $('#modal-cliente').modal('hide');
@@ -53,15 +56,16 @@
             })
         }
 
-        function inserir($nome, $telefone, $cnpj, $cep) {
+        function inserir($nome, $telefone, $cnpj, $cep, $vendedor) {
             $.ajax({
                 url: 'http://localhost:51242/cliente/inserir',
-                method = 'post',
+                method: 'post',
                 data: {
                     nome: $nome,
                     telefone: $telefone,
                     cnpj: $cnpj,
-                    cep: $cep
+                    cep: $cep,
+                    vendedor: $vendedor
                 },
                 success: function (data) {
                     $('#modal-cliente').modal('hide');
@@ -99,6 +103,7 @@
                 $('#cliente-campo-telefone').val(data.Telefone);
                 $('#cliente-campo-cnpj').val(data.Cnpj);
                 $('#cliente-campo-cep').val(data.Cep);
+                $('#cliente-campo-vendedor').val(data.Vendedor)
                 $('#modal-cliente').modal('show');
             },
             error: function (err) {
