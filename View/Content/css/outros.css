@@ -1,0 +1,1163 @@
+﻿/*Inicio Style Nathalie*/
+* {
+    margin: 0px;
+}
+
+body {
+    background-image: url(/Content/image/fundinho_2.jpg);
+    background-attachment: fixed;
+}
+
+#sobre {
+    position: relative;
+    font-size: 20px;
+    width: 600px;
+    height: 330px;
+    border: 3px solid #92CD89;
+    background-color: #f1f1f1;
+    margin: 40px;
+    margin: 0px auto;
+    text-align: center;
+    padding: 10px;
+}
+
+#titulosobre {
+    position: relative;
+    width: 100px;
+    height: 45px;
+    background-color: #032639;
+    margin: 10px auto;
+    font-size: 34px;
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    color: #f1f1f1;
+    padding: 10px
+}
+
+#fotosobre {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    border: 3px solid #92CD89;
+    margin: 40px;
+    margin: 0px auto;
+    margin-top: 20px;
+}
+
+
+header {
+    position: fixed;
+    z-index: 1;
+    width: 300px;
+    height: 100%;
+    left: -200px;
+    background-color: #263844;
+    transition: 1s;
+    margin: 0px;
+    top: -3px;
+}
+
+    header:hover {
+        left: 0px;
+    }
+
+
+#pesquisa {
+    float: left;
+    position: relative;
+    width: 265px;
+    height: 25px;
+    background-color: #f1f1f1;
+    border: 2px solid #92CD89;
+    padding: 3px;
+}
+
+    #pesquisa input[type="text"] {
+        position: relative;
+        width: 240px;
+        height: 25px;
+        background: none;
+        border: none;
+        float: left;
+    }
+
+    #pesquisa input[type="text"] {
+        position: relative;
+        width: 25px;
+        height: 25px;
+        float: left;
+    }
+
+#logo {
+    position: relative;
+    width: 200px;
+    height: 67px;
+    float: left;
+    font-family: 'Righteous', cursive;
+    font-size: 35px;
+    color: #E8E3D3;
+    position: relative;
+    padding-top: 10px;
+}
+
+#logo2 {
+    position: relative;
+    width: 100px;
+    height: 77px;
+    float: left;
+}
+
+.linkMenuLateral {
+    position: relative;
+    float: left;
+    width: 190px;
+    height: 40px;
+    padding-left: 10px;
+    border-bottom: 1px solid #92CD89;
+    padding-top: 10px;
+}
+
+    .linkMenuLateral a {
+        font-size: 20px;
+        color: #E8E3D3;
+        position: relative;
+        margin: 0px auto;
+        text-align: center;
+        margin-top: 10px;
+        text-decoration: none;
+        font-family: 'Righteous', cursive;
+    }
+
+.imagemMenuLateral {
+    position: relative;
+    float: left;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    border-bottom: 1px solid #92CD89;
+    padding-top: 10px;
+}
+
+.menu {
+    position: relative;
+    width: 300px;
+    height: 760px;
+    background-color: #052639;
+    padding: 10px;
+}
+
+.linkMenuLateral :hover {
+    color: #92CD89;
+}
+
+#rodape {
+    font-size: 20px;
+    height: 800px;
+    width: 100%;
+    margin: 0px auto;
+    position: relative;
+    margin-top: 15px;
+    background: #f1f1f1;
+    text-align: center;
+    font-family: 'Righteous', cursive;
+}
+
+#todosobre {
+    height: 800px;
+    font-family: 'Righteous', cursive;
+    font-size: 10px;
+}
+
+#facebook {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    margin: 0px auto;
+}
+
+#instagram {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    margin: 0px auto;
+}
+
+#twitter {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    margin: 0px auto;
+}
+/*Fim Style Nathalie*/
+
+
+
+
+/*Página Contato*/
+
+
+form#formularioCont {
+    position: relative;
+    width: 700px;
+    height: 670px;
+    float: left;
+    background-color: #ffffff;
+    margin: 15px;
+    border: 2px solid black;
+}
+
+    form#formularioCont fieldset {
+        border: none;
+    }
+
+.grupo:before, .grupo:after {
+    display: table;
+}
+
+.grupo:after {
+    clear: both;
+}
+
+.campo {
+    margin-bottom: 16px;
+}
+
+    .campo label {
+        margin-bottom: 3px;
+        color: black;
+        display: block;
+        font-family: 'Righteous', cursive;
+    }
+
+.campo {
+    float: left;
+    margin-right: 16px;
+}
+
+    .campo input[type="text"],
+    .campo input[type="email"], .campo select,
+    .campo textarea {
+        padding: 3px;
+        border: 1px solid black;
+        display: block;
+    }
+
+        .campo input:focus, .campo select:focus,
+        .campo textarea:focus {
+            background-color: #css;
+        }
+
+.botao {
+    font-family: 'Righteous', cursive;
+    font-size: 24px;
+    background-color: deepskyblue;
+    border: 0;
+    margin-bottom: 16px;
+    color: #f1f1f1;
+    padding: 3px 9px;
+}
+
+    .botao:hover {
+        background: #E8E3D3;
+    }
+
+.botao, select, label.checkbox {
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: DreamMMA;
+    src: url('/Content/login/font/DreamMMA.ttf');
+}
+
+#contato {
+    position: relative;
+    width: 180px;
+    height: 50px;
+    margin: 10px auto;
+    font-size: 34px;
+    /*background-color: #032639;*/
+    font-family: "DreamMMA";
+    text-align: center;
+    color: black;
+    padding-top: 5px;
+}
+
+#paginaContato {
+    position: relative;
+    /*margin: 50px auto;*/
+    margin-left: 25%;
+    height: auto;
+    width: auto;
+}
+
+#mapa {
+    position: relative;
+    float: left;
+    margin: 15px;
+}
+/*fim pagina contato*/
+/*pagina trabalhe conosco*/
+
+#trabalheConosco {
+    position: relative;
+    width: 300px;
+    height: 50px;
+    margin: 10px auto;
+    font-size: 34px;
+    background-color: #032639;
+    color: #f1f1f1;
+    padding: 10px;
+    font-family: 'Righteous', cursive;
+    text-align: center;
+}
+
+#textoMotivacional {
+    position: relative;
+    width: 1000px;
+    height: 65px;
+    margin: 10px auto;
+    font-size: 20px;
+    background-color: #f1f1f1;
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #92CD89;
+}
+
+#paginaTrabalheConosco {
+    position: relative;
+    margin: 10px auto;
+}
+
+form#formularioTra fieldset {
+    border: none;
+}
+
+.grupo2:before, .grupo2:after {
+    display: table;
+}
+
+.grupo2:after {
+    clear: both;
+}
+
+.campo2 {
+    margin-bottom: 16px;
+    color: black;
+    display: block;
+    font-family: 'Righteous', cursive;
+}
+
+    .campo2 label {
+        margin-bottom: 3px;
+        color: black;
+        display: block;
+        font-family: 'Righteous', cursive;
+    }
+
+.campo2 {
+    float: left;
+    margin-right: 16px;
+}
+
+    .campo2 input[type="text"],
+    .campo2 input[type="email"], .campo2 select, .campo2 textArea {
+        padding: 3px;
+        border: 1px solid #92CD89;
+        display: block;
+    }
+
+    .campo2 input:focus, .campo select:focus {
+        background-color: #css;
+    }
+
+.botao {
+    font-family: 'Righteous', cursive;
+    font-size: 24px;
+    background-color: #92CD89;
+    border: 0;
+    margin-bottom: 16px;
+    color: black;
+    padding: 3px 9px;
+    margin: 10px auto;
+}
+
+    .botao:hover {
+        background: black;
+        color: #92CD89;
+    }
+
+.botao, select {
+    cursor: pointer;
+}
+
+form#formularioTra {
+    position: relative;
+    width: 740px;
+    height: 1080px;
+    background-color: #f1f1f1;
+    margin: 15px auto;
+    border: 2px solid #92CD89;
+}
+/*fim pagina trabalhe conosco*/
+
+/*Inicio Pagina Lucas*/
+
+#sustentabilidade {
+    position: relative;
+    width: 270px;
+    height: 45px;
+    margin: 10px auto;
+    font-size: 34px;
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    background-color: #032639;
+    color: #f1f1f1;
+    padding: 10px;
+}
+
+#descarte {
+    position: relative;
+    font-size: 20px;
+    width: 600px;
+    height: 120px;
+    border: 3px solid #92CD89;
+    background-color: #f1f1f1;
+    margin: 40px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 8px;
+    font-family: 'Righteous', cursive;
+}
+
+#imagens1 {
+    position: relative;
+    width: 450px;
+    height: 181px;
+    border: 3px solid #92CD89;
+    background-color: #E8E3D3;
+    margin: 20px auto;
+    font-family: 'Righteous', cursive;
+    text-align: center;
+}
+
+#imagens {
+    position: relative;
+    font-size: 20px;
+    width: 600px;
+    height: 80px;
+    border: 3px solid #92CD89;
+    background-color: #f1f1f1;
+    margin: 40px;
+    margin: 20px auto;
+    text-align: center;
+    font-family: 'Righteous', cursive;
+}
+
+#video {
+    position: relative;
+    font-size: 20px;
+    width: 600px;
+    height: 400px;
+    border: 3px solid #92CD89;
+    background-color: #f1f1f1;
+    margin: 40px;
+    margin: 20px auto;
+    text-align: center;
+    font-family: 'Righteous', cursive;
+}
+/*Fim página Lucas*/
+
+/*Início Páginas Vivian*/
+
+* {
+    margin: 0px;
+}
+
+body {
+    background-image: url(Imagens/fundinho_1.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+/*style index*/
+
+#slider {
+    position: relative;
+    width: 92.3%;
+    height: 350px;
+    margin: 0px auto;
+    margin-top: 25px;
+}
+
+#propagandaApp {
+    position: relative;
+    width: 300px;
+    height: 500px;
+    margin: 0px auto;
+    margin-top: 50px;
+}
+
+#chamadas {
+    position: relative;
+    width: 1000px;
+    height: 250px;
+    margin: 0px auto;
+    margin-top: 50px;
+}
+
+#chamada1 {
+    position: relative;
+    width: 200px;
+    height: 120px;
+    float: left;
+    margin: 0px auto;
+}
+
+#texto1 {
+    position: relative;
+    width: 200px;
+    height: 60px;
+    float: left;
+    margin: 0px auto;
+    font-family: 'Righteous', cursive;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+
+    #texto1 a {
+        text-decoration: none;
+        color: black;
+    }
+
+#chamada2 {
+    position: relative;
+    width: 200px;
+    height: 120px;
+    float: left;
+    margin: 0px auto;
+}
+
+#texto2 {
+    position: relative;
+    width: 200px;
+    height: 60px;
+    float: left;
+    margin: 0px auto;
+    font-family: 'Righteous', cursive;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+
+    #texto2 a {
+        text-decoration: none;
+        color: black;
+    }
+
+#chamada3 {
+    position: relative;
+    width: 200px;
+    height: 120px;
+    float: left;
+    margin: 0px auto;
+}
+
+#texto3 {
+    position: relative;
+    width: 200px;
+    height: 60px;
+    float: left;
+    margin: 0px auto;
+    font-family: 'Righteous', cursive;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+
+    #texto3 a {
+        text-decoration: none;
+        color: black;
+    }
+
+#chamada4 {
+    position: relative;
+    width: 200px;
+    height: 120px;
+    float: left;
+    margin: 0px auto;
+}
+
+#texto4 {
+    position: relative;
+    width: 200px;
+    height: 60px;
+    float: left;
+    margin: 0px auto;
+    font-family: 'Righteous', cursive;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+
+    #texto4 a {
+        text-decoration: none;
+        color: black;
+    }
+
+#chamada5 {
+    position: relative;
+    width: 200px;
+    height: 120px;
+    float: left;
+    margin: 0px auto;
+}
+
+#texto5 {
+    position: relative;
+    width: 200px;
+    height: 70px;
+    float: left;
+    margin: 0px auto;
+    font-family: 'Righteous', cursive;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+
+    #texto5 a {
+        text-decoration: none;
+        color: black;
+    }
+
+#propaganda {
+    position: relative;
+    width: 1000px;
+    height: 250px;
+    background-color: crimson;
+    margin: 0px auto;
+    margin-top: 25px;
+}
+
+/*fim style index*/
+
+/*inicio style menu produtos*/
+
+#configuracoes {
+    position: relative;
+    width: 1220px;
+    height: 660px;
+    margin: 15px auto;
+    margin-left: 140px;
+}
+
+#confBasica {
+    position: relative;
+    width: 300px;
+    height: 650px;
+    float: left;
+}
+
+#confIntermediaria {
+    position: relative;
+    width: 300px;
+    height: 650px;
+    float: left;
+    margin-left: 5px;
+}
+
+#confAvancada {
+    position: relative;
+    width: 300px;
+    height: 650px;
+    float: left;
+    margin-left: 5px;
+}
+
+#confExtrema {
+    position: relative;
+    width: 300px;
+    height: 650px;
+    float: left;
+    margin-left: 5px;
+}
+
+/*fim style menu produtos*/
+
+/*início style configuração básica*/
+
+#basica {
+    position: relative;
+    width: 1100px;
+    height: 700px;
+    margin: 10px auto;
+}
+
+#imgPreco {
+    position: relative;
+    width: 460px;
+    height: 540px;
+    float: left;
+    margin-top: 40px;
+}
+
+#encomendar {
+    position: relative;
+    width: 350px;
+    height: 50px;
+    background-color: deepskyblue;
+    float: left;
+    margin-top: 20px;
+    margin-left: 50px;
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 18px;
+    border: 3px solid #92CD89;
+    background-color: #f1f1f1;
+    padding-top: 10px;
+}
+
+    #encomendar a {
+        text-decoration: none;
+        color: black;
+        font-size: 40px;
+    }
+
+#imagemBasica {
+    position: relative;
+    width: 450px;
+    height: 450px;
+    background-color: aqua;
+    float: left;
+}
+
+#precoBasica {
+    position: relative;
+    width: 350px;
+    height: 60px;
+    background-color: deepskyblue;
+    float: left;
+    margin-top: 20px;
+    margin-left: 50px;
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 0px;
+    font-size: 18px;
+    border: 3px solid #92CD89;
+    background-color: #f1f1f1;
+    padding-bottom: 15px;
+}
+
+#descricaoBasica {
+    position: relative;
+    width: 460px;
+    height: 560px;
+    float: right;
+    margin-top: 65px;
+    background-color: #f1f1f1;
+    border: 3px solid #92CD89;
+    padding: 10px;
+}
+
+#titulo {
+    position: relative;
+    width: 460px;
+    height: 45px;
+    text-align: center;
+    font-family: 'Righteous', cursive;
+}
+
+#retangulo1 {
+    position: relative;
+    width: 230px;
+    height: 555px;
+    float: left;
+    font-family: 'Righteous', cursive;
+    font-size: 14px;
+}
+
+#retangulo2 {
+    position: relative;
+    width: 230px;
+    height: 555px;
+    float: left;
+    font-family: 'Righteous', cursive;
+    font-size: 14px;
+}
+
+/*fim style configuração básica*/
+
+/*início style configuração Intermediária*/
+
+#intermediaria {
+    position: relative;
+    width: 1100px;
+    height: 700px;
+    margin: 10px auto;
+}
+
+#imgPreco1 {
+    position: relative;
+    width: 460px;
+    height: 540px;
+    float: left;
+    margin-top: 40px;
+}
+
+#imagemIntermediaria {
+    position: relative;
+    width: 450px;
+    height: 450px;
+    background-color: aqua;
+    float: left;
+}
+
+#precoIntermediaria {
+    position: relative;
+    width: 350px;
+    height: 60px;
+    background-color: deepskyblue;
+    float: left;
+    margin-top: 20px;
+    margin-left: 50px;
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    font-size: 18px;
+    border: 3px solid #92CD89;
+    background-color: #f1f1f1;
+    padding-bottom: 15px;
+}
+
+#encomendar2 {
+    position: relative;
+    width: 350px;
+    height: 50px;
+    background-color: deepskyblue;
+    float: left;
+    margin-top: 20px;
+    margin-left: 50px;
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 18px;
+    border: 3px solid #92CD89;
+    background-color: #f1f1f1;
+    padding-top: 10px;
+}
+
+    #encomendar2 a {
+        text-decoration: none;
+        color: black;
+        font-size: 40px;
+    }
+
+#descricaoIntermediaria {
+    position: relative;
+    width: 460px;
+    height: 580px;
+    float: right;
+    margin-top: 60px;
+    background-color: #f1f1f1;
+    border: 3px solid #92CD89;
+    padding: 10px;
+}
+
+#titulo1 {
+    position: relative;
+    width: 460px;
+    height: 45px;
+    text-align: center;
+    font-family: 'Righteous', cursive;
+}
+
+#retangulo3 {
+    position: relative;
+    width: 230px;
+    height: 555px;
+    float: left;
+    font-family: 'Righteous', cursive;
+    font-size: 14px;
+}
+
+#retangulo4 {
+    position: relative;
+    width: 230px;
+    height: 555px;
+    float: left;
+    font-family: 'Righteous', cursive;
+    font-size: 14px;
+}
+
+/*fim style configuração Intermediária*/
+
+/*início style configuração Avançada*/
+
+#avancada {
+    position: relative;
+    width: 1100px;
+    height: 700px;
+    margin: 10px auto;
+}
+
+#imgPreco2 {
+    position: relative;
+    width: 460px;
+    height: 540px;
+    float: left;
+    margin-top: 40px;
+}
+
+#imagemAvancada {
+    position: relative;
+    width: 450px;
+    height: 450px;
+    background-color: aqua;
+    float: left;
+}
+
+#precoAvancada {
+    position: relative;
+    width: 350px;
+    height: 60px;
+    background-color: deepskyblue;
+    float: left;
+    margin-top: 20px;
+    margin-left: 50px;
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    font-size: 18px;
+    border: 3px solid #92CD89;
+    background-color: #f1f1f1;
+    padding-bottom: 15px;
+}
+
+#encomendar3 {
+    position: relative;
+    width: 350px;
+    height: 50px;
+    background-color: deepskyblue;
+    float: left;
+    margin-top: 20px;
+    margin-left: 50px;
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 18px;
+    border: 3px solid #92CD89;
+    background-color: #f1f1f1;
+    padding-top: 10px;
+}
+
+    #encomendar3 a {
+        text-decoration: none;
+        color: black;
+        font-size: 40px;
+    }
+
+#descricaoAvancada {
+    position: relative;
+    width: 460px;
+    height: 585px;
+    float: right;
+    margin-top: 60px;
+    background-color: #f1f1f1;
+    border: 3px solid #92CD89;
+    padding: 10px;
+}
+
+#titulo2 {
+    position: relative;
+    width: 460px;
+    height: 45px;
+    text-align: center;
+    font-family: 'Righteous', cursive;
+}
+
+#retangulo5 {
+    position: relative;
+    width: 230px;
+    height: 555px;
+    float: left;
+    font-family: 'Righteous', cursive;
+    font-size: 14px;
+}
+
+#retangulo6 {
+    position: relative;
+    width: 230px;
+    height: 555px;
+    float: left;
+    font-family: 'Righteous', cursive;
+    font-size: 14px;
+}
+
+/*fim style configuração Avançada*/
+
+/*início style configuração Avançada*/
+
+#extrema {
+    position: relative;
+    width: 1100px;
+    height: 700px;
+    margin: 10px auto;
+}
+
+#imgPreco3 {
+    position: relative;
+    width: 460px;
+    height: 540px;
+    float: left;
+    margin-top: 40px;
+}
+
+#imagemExtrema {
+    position: relative;
+    width: 450px;
+    height: 450px;
+    background-color: aqua;
+    float: left;
+}
+
+#precoExtrema {
+    position: relative;
+    width: 350px;
+    height: 60px;
+    background-color: deepskyblue;
+    float: left;
+    margin-top: 20px;
+    margin-left: 50px;
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    font-size: 18px;
+    border: 3px solid #92CD89;
+    background-color: #f1f1f1;
+    padding-bottom: 15px;
+}
+
+#encomendar4 {
+    position: relative;
+    width: 350px;
+    height: 50px;
+    background-color: deepskyblue;
+    float: left;
+    margin-top: 20px;
+    margin-left: 50px;
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 18px;
+    border: 3px solid #92CD89;
+    background-color: #f1f1f1;
+    padding-top: 10px;
+}
+
+    #encomendar4 a {
+        text-decoration: none;
+        color: black;
+        font-size: 40px;
+    }
+
+#descricaoExtrema {
+    position: relative;
+    width: 460px;
+    height: 585px;
+    float: right;
+    margin-top: 55px;
+    background-color: #f1f1f1;
+    border: 3px solid #92CD89;
+    padding: 10px;
+}
+
+#titulo3 {
+    position: relative;
+    width: 460px;
+    height: 45px;
+    text-align: center;
+    font-family: 'Righteous', cursive;
+}
+
+#retangulo7 {
+    position: relative;
+    width: 230px;
+    height: 555px;
+    float: left;
+    font-family: 'Righteous', cursive;
+    font-size: 14px;
+}
+
+#retangulo8 {
+    position: relative;
+    width: 230px;
+    height: 555px;
+    float: left;
+    font-family: 'Righteous', cursive;
+    font-size: 14px;
+}
+
+/*fim style configuração Extrema*/
+
+/*teste slider*/
+
+#slider {
+    width: 845px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    background: #434343;
+}
+
+    #slider [id^='image']:target img {
+        top: 0;
+    }
+
+    #slider [id^="image"] img {
+        position: absolute;
+        top: -200px;
+        border: 0;
+        -moz-transition: top 0.5s ease-in;
+        -ms-transition: top 0.5s ease-in;
+        -webkit-transition: top 0.5s ease-in;
+        -o-transition: top 0.5s ease-in;
+    }
+
+
+
+    #slider [id^='image']:target a {
+        background: #fff;
+        border: 3px solid #333;
+        width: 10px;
+        height: 10px;
+    }
+
+.slider-nav {
+    background: #333;
+    width: 16px;
+    z-index: 9999;
+    height: 16px;
+    box-shadow: inset 0px 2px 10px rgba(0,0,0,0.3), 0px 0px 20px rgba(255,255,255,0.4);
+    border-radius: 32px;
+    position: absolute;
+    bottom: 15px;
+}
+
+#image-1 .slider-nav {
+    right: 80px;
+}
+
+#image-2 .slider-nav {
+    right: 60px;
+}
+
+#image-3 .slider-nav {
+    right: 40px;
+}
+
+#image-4 .slider-nav {
+    right: 20px;
+}
+
+/*Fim Páginas Vivian*/
