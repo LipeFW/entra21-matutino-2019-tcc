@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>MCSS - Company</title>
 
+    <link href="~/Content/login/css/login.css" rel="stylesheet" type="text/css">
+
     <!-- Global stylesheets -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
     <link href="~/Content/theme/global_assets/css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
-    <link href="~/Content/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="~/Content/theme/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="~/Content/fontawesome/font-awesome.min.css">
+    <link href="~/Content/theme/global_assets/css/icons/fontawesome/styles.min.css" rel="stylesheet" type="text/css" />
     <link href="~/Content/theme/assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
     <link href="~/Content/theme/assets/css/layout.min.css" rel="stylesheet" type="text/css">
     <link href="~/Content/theme/assets/css/components.min.css" rel="stylesheet" type="text/css">
@@ -30,6 +33,7 @@
     <script src="~/Content/theme/global_assets/js/plugins/pickers/daterangepicker.js"></script>
 
     <script src="~/Content/theme/assets/js/app.js"></script>
+    <script src="~/Scripts/js/language.js"></script>
     <script src="~/Content/theme/global_assets/js/demo_pages/dashboard.js"></script>
     <!-- /theme JS files -->
     @RenderSection("css", false)
@@ -43,9 +47,9 @@
         <!-- Header with logos -->
         <div class="navbar-header navbar-dark d-none d-md-flex align-items-md-center">
             <div class="navbar-brand navbar-brand-md">
-                <a href="index.html" class="d-inline-block">
-                    <img src="~/Content/theme/global_assets/images/logo_light.png" alt="">
-                </a>
+                <div href="index.html">
+                    <h2 class="titulonav text-center p-0 m-0">mcss</h2>
+                </div>
             </div>
 
             <div class="navbar-brand navbar-brand-xs">
@@ -87,26 +91,25 @@
             <ul class="navbar-nav">
                 <li class="nav-item dropdown">
                     <a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown">
-                        <img src="~/Content/theme/global_assets/images/lang/br.png" class="img-flag mr-2" alt="">Português
+                        <img id="imgLANG" src="~/Content/theme/global_assets/images/lang/br.png" class="img-flag mr-2" alt=""><span id="nomeLANG">Português</span>
                     </a>
 
                     <div class="dropdown-menu dropdown-menu-right">
-                        <a href="#" class="dropdown-item portuguese"><img src="~/Content/theme/global_assets/images/lang/br.png" class="img-flag" alt=""> Português</a>
-                        <a href="#" class="dropdown-item english active"><img src="~/Content/theme/global_assets/images/lang/gb.png" class="img-flag" alt=""> Inglês</a>
-                        <a href="#" class="dropdown-item espana"><img src="~/Content/theme/global_assets/images/lang/es.png" class="img-flag" alt=""> Espanhol</a>
+                        <a id="btnPT" href="#" class="dropdown-item portuguese active"><img src="~/Content/theme/global_assets/images/lang/br.png" class="img-flag" alt=""> Português</a>
+                        <a id="btnEN" href="#" class="dropdown-item english"><img src="~/Content/theme/global_assets/images/lang/gb.png" class="img-flag" alt=""> Inglês</a>
                     </div>
                 </li>
 
                 <li class="nav-item dropdown dropdown-user">
                     <a href="#" class="navbar-nav-link d-flex align-items-center dropdown-toggle" data-toggle="dropdown">
                         <img src="~/Content/theme/global_assets/images/placeholders/user.png" class="rounded-circle mr-2" height="34" alt="">
-                        <span>João</span>
+                        <span>Felipe</span>
                     </a>
 
                     <div class="dropdown-menu dropdown-menu-right">
-                        <a href="#" class="dropdown-item"><i class="icon-user-plus"></i> Meu Perfil</a>
+                        <a href="conta/perfil" class="dropdown-item"><i class="icon-user-plus"></i> Meu Perfil</a>
                         <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item"><i class="icon-cog5"></i> Configurações da Conta</a>
+                        <a href="conta/config" class="dropdown-item"><i class="icon-cog5"></i> Configurações da Conta</a>
                         <a href="#" class="dropdown-item"><i class="icon-switch2"></i> Sair</a>
                     </div>
                 </li>
@@ -146,7 +149,7 @@
                             </div>
 
                             <div class="media-body">
-                                <div class="media-title font-weight-semibold">João Pedro</div>
+                                <div class="media-title font-weight-semibold">Felipe Weber</div>
                                 <div class="font-size-xs opacity-50">
                                     <i class="icon-pin font-size-sm"></i> &nbsp;Blumenau - SC, Brasil
                                 </div>
@@ -165,7 +168,7 @@
                         <!-- Main -->
                         <li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Menu</div> <i class="icon-menu" title="Main"></i></li>
                         <li class="nav-item">
-                            <a href="/" class="nav-link active"><i class="fas fa-suitcase"></i><span>Home</span></a>
+                            <a href="/" class="nav-link active"><i class="fas fa-suitcase"></i><span>Início</span></a>
                         </li>
                         <!-- Usuário -->
                         <li class="nav-item nav-item-submenu">
@@ -301,4 +304,4 @@
     </div>
 </body>
 </html>
-    @RenderSection("js", false)
+@RenderSection("js", false)

@@ -51,4 +51,11 @@
     color: #474747;
     font-size: 46px;
     font-weight: bolder;
+
+}.titulonav{
+    font-family: "DreamMMA";
+    text-decoration: underline;
+    color: #f0f0f0;
+    font-size: 28px;
+    font-weight: bolder;
 }
