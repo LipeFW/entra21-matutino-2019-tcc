@@ -1,8 +1,8 @@
 ﻿$(function () {
     $idAlterar = -1;
 
-    $tabelaCliente = $('#clientes-tabela').DataTable({
-        ajax: 'http://localhost:51242/Cliente/obtertodos',
+    $tabelaCliente = $('#cliente-tabela').DataTable({
+        ajax: 'http://localhost:51242/cliente/obtertodos',
         serverSide: true,
         columns: [
             { 'data': 'Id' },
@@ -12,7 +12,7 @@
             { 'data': 'Cep' },
             {
                 render: function (data, type, row) {
-                    return '<button class="btn btn-primary botao-editar"data-id"' + row.Id + '">Editar</button>\<button> class="btn btn-danger botao-apagar"data-id="' + row.Id + '">Apagar</button>'
+                    return '<button class="btn btn-primary botao-editar"data-id"' + row.Id + '">Editar</button>\<button class="btn btn-danger botao-apagar"data-id="' + row.Id + '">Apagar</button>'
                 }
             }
         ]
@@ -33,7 +33,7 @@
         }
         function alterar($nome, $telefone, $cnpj, $cep) {
             $.ajax({
-                url: 'http://localhost:51242/Cliente/update',
+                url: 'http://localhost:51242/cliente/update',
                 method: 'post',
                 data: {
                     id: $idAlterar,
@@ -55,7 +55,7 @@
 
         function inserir($nome, $telefone, $cnpj, $cep) {
             $.ajax({
-                url: 'http://localhost:51242/Cliente/inserir',
+                url: 'http://localhost:51242/cliente/inserir',
                 method = 'post',
                 data: {
                     nome: $nome,
@@ -79,7 +79,7 @@
         $idApagar = $(this).data('id');
 
         $ajax({
-            url: 'http://localhost:51242/Categoria/apagar?=' + $idApagar,
+            url: 'http://localhost:51242/cliente/apagar?=' + $idApagar,
             method: 'get',
             success: function (data) {
                 $tabelaCliente.ajax.reload();
@@ -91,7 +91,7 @@
         $idAlterar = $(this).data('id');
 
         $.ajax({
-            url: 'http://localhost:51242/Categoria/obterpeloid?=' + $idAlterar,
+            url: 'http://localhost:51242/cliente/obterpeloid?=' + $idAlterar,
             method: 'get',
 
             success: function (data) {
