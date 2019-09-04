@@ -1,12 +1,11 @@
 ﻿
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Produto";
 }
 
 <h3>Lista de Produtos</h3>
 <title>MCC-Produtos</title>
 
-<button class="btn btn-primary mb-3 mt-3 float-right" href="/produto/cadastro">Novo</button>
 
 <table class="table table-striped table-bordered table-hover" id="produtos-index">
     <thead>
@@ -19,7 +18,7 @@
         </tr>
     </thead>
 </table>
-@RenderPage("ProdutoModal.cshtml")
+
 @section js{
     <script src="~/Scripts/Produto/"></script>
     }

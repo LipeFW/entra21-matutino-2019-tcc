@@ -1,29 +1,26 @@
 ﻿@{
-    ViewBag.Rota = "Exibição de Rotas";
-    <link href="~/Content/css/Rota.css" rel="stylesheet" type="text/css" />
-    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <title>Rota - MCSS</title>
+    ViewBag.Title = "Rota";
 }
 
-    <body class="background-img" style="grid-column-end">
-  
-        <div id="Rota">
-            <div class="rota-tabela">
-                <form action="/nome/rota" method="post">
-                    <h2 class="titulo text-center">Rotas</h2>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Nome" required="required">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Vendedor" required="required">
-                    </div>
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-success btn-block">Confirmar</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </body>
-@section css{
-    <link rel="stylesheet" href="~/Views/Rota/Rota.cshtml" />
+
+<h2>Rotas</h2>
+
+
+<table id="rota-tabela" class="table table-hover table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Código</th>
+            <th>Origem</th>
+            <th>Destino</th>
+            <th>Ação</th>
+        </tr>
+    </thead>
+</table>
+
+
+
+
+@section js{
+    <script src="~/Scripts/Rota/rota.js">
+    </script>
 }
