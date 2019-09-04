@@ -40,7 +40,8 @@ namespace Repository.Repositories
 
         public Produto ObterPeloId(int id)
         {
-            return context.Produtos.FirstOrDefault(x => x.Id == id);
+            var produto = context.Produtos.FirstOrDefault(x => x.Id == id);
+            return produto;
         }
 
         public List<Produto> ObterTodos()

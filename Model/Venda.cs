@@ -41,7 +41,7 @@
          [Column("desconto")]
          public decimal Desconto { get; set; }
  
-         [Column("regitro_ativo")]
+         [Column("registro_ativo")]
          public bool RegistroAtivo { get; set; }
      }
  }

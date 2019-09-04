@@ -1,13 +1,14 @@
 ﻿$(function () {
+
     $idAlterar = -1;
 
-    $tabelaProduto = $('#produtos-index').DataTable({
+    $tabelaProduto = $('#produto-tabela').DataTable({
         ajax: 'http://localhost:51242/Produto/obtertodos',
         serverSide: true,
         columns: [
             { 'data': 'Id' },
             { 'data': 'Categoria' },
-            { 'data': 'Codigo Barra' },
+            { 'data': 'Código Barra' },
             { 'data': 'Quantidade Produtos' },
             { 'data': 'Valor Unitario'},
             {
