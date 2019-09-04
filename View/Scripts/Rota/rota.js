@@ -7,7 +7,7 @@
         columns: [
             { 'data': 'Id' },
             { 'data': 'Nome' },
-            { 'data': 'IdVendedor.Nome' },
+            { 'data': 'Vendedor.Nome' },
             {
                 render: function (data, type, row) {
                     return '<button class="btn btn-primary botao-editar" data-id="' + row.id + '">Editar</button>\<button class="btn btn-danger botao-apagar"data-id="' + row.Id + '">Apagar</button>'
