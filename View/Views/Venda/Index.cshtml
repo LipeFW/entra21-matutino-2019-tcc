@@ -1,12 +1,11 @@
 ﻿
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Venda";
 }
 
 <h3 class="text-centet text-info mb-3 mt-3">Lista de Vendas</h3>
 <title>Lista Venda</title>
 
-<button class="btn btn-primary mb-3 mt-3 float-right" data-target="#modal-venda" data-toggle="modal">Nova</button>
 
 <table id="vendas-index" class="table table-striped table-bordered table-hover">
     <thead>
@@ -23,7 +22,6 @@
     </thead>
 </table>
 
-@RenderPage("ModalVenda.cshtml")
 @section js{
     <script src="~/Scripts/Venda/venda.js"></script>
 }

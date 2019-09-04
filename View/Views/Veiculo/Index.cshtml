@@ -1,15 +1,13 @@
 ﻿
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Veículo";
 }
 
-<h3>Lista de Veiculos</h3>
-<title>MCCS-Veiculos</title>
 
-<button class="btn btn-primary mb-3 mt-3 float-right" data-target="#modal-veiculo" data-toggle="modal"
-        href="/veiculo/cadastro">Novo</button>
+<h2>Veículos</h2>
 
-<table class="table table-bordered table-hover table-striped" id="veiculos-index">
+
+<table class="table table-bordered table-hover table-striped" id="veiculo-tabela">
     <thead>
         <tr>
             <th>Código</th>
@@ -23,7 +21,8 @@
     </thead>
 </table>
 
-@RenderPage("VeiculoModal.cshtml")
+
+
 @section js{
     <script src="~/Scripts/Veiculo/veiculo.js"></script>
-    }
+}

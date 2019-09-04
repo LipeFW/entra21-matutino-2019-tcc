@@ -4,10 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>MCSS - Company</title>
+    <title>MCSS - @ViewBag.Title</title>
 
     <link href="~/Content/theme/global_assets/images/logo_icon_dark.png" rel="shortcut icon" />
     <link href="~/Content/login/css/login.css" rel="stylesheet" type="text/css">
+
+    <link href="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" type="text/javascript" />
 
     <!-- Global stylesheets -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
@@ -35,6 +37,8 @@
     <script src="~/Content/theme/assets/js/app.js"></script>
     <script src="~/Content/js/lang.js"></script>
     <script src="~/Content/theme/global_assets/js/demo_pages/dashboard.js"></script>
+
+    <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet" />
     <!-- /theme JS files -->
     @RenderSection("css", false)
 </head>
@@ -251,16 +255,10 @@
 
         <!-- Main content -->
         <div class="content-wrapper">
-            <!-- Page header -->
-            <div class="page-header">
-                <div class="page-header-content header-elements-md-inline">
-                    <div class="page-title d-flex">
-                        <h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Home</span></h4>
-                        <a href="index.html" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
-                    </div>
-                </div>
-            </div>
-            <!-- /Page header-->
+            <!--Espaço-->
+            <br />
+            <br />
+            <!--/Espaço-->
             <!-- Content area -->
             <div class="content pt-0">
 
@@ -300,6 +298,9 @@
             </span>
         </div>
     </div>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    @RenderSection("js", false)
+
 </body>
 </html>
-@RenderSection("js", false)
+

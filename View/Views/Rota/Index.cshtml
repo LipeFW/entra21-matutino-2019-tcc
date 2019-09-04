@@ -1,30 +1,24 @@
 ﻿@{
-    ViewBag.Title = "Exibição de Rotas";
+    ViewBag.Title = "Rota";
 }
 
-<div class="background-usuarios-img">
 
-    <div class="jumbotron text-center mt-4">
-        <h2>Rotas</h2>
+<h2>Rotas</h2>
 
-        <button data-toggle="modal" data-target="#modal-rota" class="btn btn-primary float-right mb-2">
-            Nova Rota
-        </button>
 
-        <table id="rota-tabela" class="table table-hover table-bordered table-striped">
-            <thead>
-                <tr>
-                    <th>Código</th>
-                    <th>Origem</th>
-                    <th>Destino</th>
-                    <th>Ação</th>
-                </tr>
-            </thead>
-        </table>
-    </div>
-</div>
+<table id="rota-tabela" class="table table-hover table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Código</th>
+            <th>Origem</th>
+            <th>Destino</th>
+            <th>Ação</th>
+        </tr>
+    </thead>
+</table>
 
-@*@RenderPage("CadastroModal.cshtml")*@
+
+
 
 @section js{
     <script src="~/Scripts/Rota/rota.js">

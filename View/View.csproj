@@ -2601,6 +2601,7 @@
     <Content Include="Scripts\umd\popper.min.js" />
     <Content Include="Scripts\Usuario\usuario.js" />
     <Content Include="Scripts\Veiculo\veiculo.js" />
+    <Content Include="Scripts\Venda\venda.js" />
     <Content Include="Scripts\Vendedor\Vendedor.js" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -2627,29 +2628,27 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Usuario\Index.cshtml" />
-    <Content Include="Views\Usuario\CadastroModal.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
-    <Content Include="Views\Cliente\ClienteModal.cshtml" />
     <Content Include="Views\Cliente\Index.cshtml" />
-    <Content Include="Views\Categoria\CategoriaModal.cshtml" />
     <Content Include="Views\Categoria\Index.cshtml" />
-    <Content Include="Views\NotaFiscal\NotaFiscalModal.cshtml" />
-    <Content Include="Views\Rota\RotaModal.cshtml" />
-    <Content Include="Views\Vendedor\VendedorModal.cshtml" />
     <Content Include="Views\Vendedor\Index.cshtml" />
     <Content Include="Views\Rota\Index.cshtml" />
-    <Content Include="Views\Produto\ProdutoModal.cshtml" />
-    <Content Include="Views\Venda\ModalVenda.cshtml" />
     <Content Include="Views\Veiculo\Index.cshtml" />
-    <Content Include="Views\Veiculo\VeiculoModal.cshtml" />
     <Content Include="Views\Produto\Index.cshtml" />
-    <Content Include="Views\Produto\Produto.cshtml" />
     <Content Include="Views\Venda\Index.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\umd\popper.min.js.map" />
     <Content Include="Scripts\umd\popper.js.map" />
     <Content Include="Scripts\umd\popper-utils.min.js.map" />
     <Content Include="Scripts\umd\popper-utils.js.map" />
+    <Content Include="Views\Venda\Cadastro.cshtml" />
+    <Content Include="Views\Cliente\Cadastro.cshtml" />
+    <Content Include="Views\Categoria\Cadastro.cshtml" />
+    <Content Include="Views\Produto\Cadastro.cshtml" />
+    <Content Include="Views\Rota\Cadastro.cshtml" />
+    <Content Include="Views\Usuario\Cadastro.cshtml" />
+    <Content Include="Views\Veiculo\Cadastro.cshtml" />
+    <Content Include="Views\Vendedor\Cadastro.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -2661,6 +2660,7 @@
     <Folder Include="Content\fonts\" />
     <Folder Include="Models\" />
     <Folder Include="Scripts\Login\" />
+    <Folder Include="Views\NotaFiscal\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
