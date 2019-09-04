@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>MCSS - Company</title>
 
+    <link href="~/Content/theme/global_assets/images/logo_icon_dark.png" rel="shortcut icon" />
     <link href="~/Content/login/css/login.css" rel="stylesheet" type="text/css">
 
     <!-- Global stylesheets -->
@@ -47,7 +48,7 @@
         <div class="navbar-header navbar-dark d-none d-md-flex align-items-md-center">
             <div class="navbar-brand navbar-brand-md">
                 <div href="index.html">
-                    <h2 class="titulonav text-center p-0 m-0">mcss</h2>
+                    <img src="~/Content/theme/global_assets/images/logo_light.png" alt="" />
                 </div>
             </div>
 
@@ -102,7 +103,7 @@
                 <li class="nav-item dropdown dropdown-user">
                     <a href="#" class="navbar-nav-link d-flex align-items-center dropdown-toggle" data-toggle="dropdown">
                         <img src="~/Content/theme/global_assets/images/placeholders/user.png" class="rounded-circle mr-2" height="34" alt="">
-                        <span>Felipe</span>
+                        <span>Rodrigo</span>
                     </a>
 
                     <div class="dropdown-menu dropdown-menu-right">
@@ -144,18 +145,18 @@
                     <div class="card-body">
                         <div class="media">
                             <div class="mr-3">
-                                <a href="#"><img src="~/Content/theme/global_assets/images/placeholders/user.png" width="38" height="38" class="rounded-circle" alt=""></a>
+                                <a href="conta/perfil"><img src="~/Content/theme/global_assets/images/placeholders/user.png" width="38" height="38" class="rounded-circle" alt=""></a>
                             </div>
 
                             <div class="media-body">
-                                <div class="media-title font-weight-semibold">Felipe Weber</div>
+                                <div class="media-title font-weight-semibold">Rodrigo Sousa Cunha</div>
                                 <div class="font-size-xs opacity-50">
                                     <i class="icon-pin font-size-sm"></i> &nbsp;Blumenau - SC, Brasil
                                 </div>
                             </div>
 
                             <div class="ml-3 align-self-center">
-                                <a href="#" class="text-white"><i class="icon-cog3"></i></a>
+                                <a href="/conta/config" class="text-white"><i class="icon-cog3"></i></a>
                             </div>
                         </div>
                     </div>
@@ -172,7 +173,7 @@
                         <!-- Usuário -->
                         <li class="nav-item nav-item-submenu">
                             <a href="#" class="nav-link"><i class="fas fa-user"></i> <span id="usuarioText">Usuário</span></a>
-                            <ul class="nav nav-group-sub" data-submenu-title="Themes">
+                            <ul class="nav nav-group-sub" data-submenu-title="Usuário">
                                 <li class="nav-item"><a href="/usuario/index" class="nav-link active">Lista</a></li>
                                 <li class="nav-item"><a href="/usuario/cadastro" class="nav-link active">Cadastro</a></li>
                             </ul>
@@ -181,7 +182,7 @@
                         <!-- Categoria -->
                         <li class="nav-item nav-item-submenu">
                             <a href="#" class="nav-link"><i class="icon-clipboard"></i><span id="categoriaText">Categoria</span></a>
-                            <ul class="nav nav-group-sub" data-submenu-title="Themes">
+                            <ul class="nav nav-group-sub" data-submenu-title="Categoria">
                                 <li class="nav-item"><a href="/categoria/index" class="nav-link active">Lista</a></li>
                                 <li class="nav-item"><a href="/usuario/cadastro" class="nav-link active">Cadastro</a></li>
                             </ul>
@@ -190,7 +191,7 @@
                         <!-- Cliente -->
                         <li class="nav-item nav-item-submenu">
                             <a href="#" class="nav-link"><i class="fas fa-user-tie"></i><span>Cliente</span></a>
-                            <ul class="nav nav-group-sub" data-submenu-title="Themes">
+                            <ul class="nav nav-group-sub" data-submenu-title="Cliente">
                                 <li class="nav-item"><a href="/cliente/index" class="nav-link active">Lista</a></li>
                                 <li class="nav-item"><a href="/cliente/cadastro" class="nav-link active">Cadastro</a></li>
                             </ul>
@@ -199,7 +200,7 @@
                         <!-- Veículo -->
                         <li class="nav-item nav-item-submenu">
                             <a href="#" class="nav-link"><i class="icon-truck"></i><span id="veiculoText">Veículos</span></a>
-                            <ul class="nav nav-group-sub" data-submenu-title="Layouts">
+                            <ul class="nav nav-group-sub" data-submenu-title="Veículo">
                                 <li class="nav-item"><a href="/veiculo/index" class="nav-link">Lista</a></li>
                                 <li class="nav-item"><a href="/veiculo/cadastro" class="nav-link active">Cadastro</a></li>
                             </ul>
@@ -208,7 +209,7 @@
                         <!-- Rota -->
                         <li class="nav-item nav-item-submenu">
                             <a href="#" class="nav-link"><i class="fas fa-road"></i><span>Rota</span></a>
-                            <ul class="nav nav-group-sub" data-submenu-title="Layouts">
+                            <ul class="nav nav-group-sub" data-submenu-title="Rota">
                                 <li class="nav-item"><a href="/rota/index" class="nav-link">Lista</a></li>
                                 <li class="nav-item"><a href="/rota/cadastro" class="nav-link">Cadastro</a></li>
                             </ul>
@@ -217,7 +218,7 @@
                         <!-- Produto-->
                         <li class="nav-item nav-item-submenu">
                             <a href="#" class="nav-link"><i class="fas fa-box-open"></i><span id="produtoText">Produto</span></a>
-                            <ul class="nav nav-group-sub" data-submenu-title="Layouts">
+                            <ul class="nav nav-group-sub" data-submenu-title="Produto">
                                 <li class="nav-item"><a href="/produto/index" class="nav-link">Lista</a></li>
                                 <li class="nav-item"><a href="/produto/cadastro" class="nav-link">Cadastro</a></li>
                             </ul>
@@ -226,7 +227,7 @@
                         <!-- Vendedor -->
                         <li class="nav-item nav-item-submenu">
                             <a href="#" class="nav-link"><i class="far fa-address-card"></i><span>Vendedor</span></a>
-                            <ul class="nav nav-group-sub" data-submenu-title="Layouts">
+                            <ul class="nav nav-group-sub" data-submenu-title="Vendedor">
                                 <li class="nav-item"><a href="/vendedor/index" class="nav-link">Lista</a></li>
                                 <li class="nav-item"><a href="/venderor/cadastro" class="nav-link">Cadastro</a></li>
                             </ul>
@@ -235,7 +236,7 @@
                         <!-- Venda -->
                         <li class="nav-item nav-item-submenu">
                             <a href="#" class="nav-link"><i class="fas fa-suitcase"></i><span>Venda</span></a>
-                            <ul class="nav nav-group-sub" data-submenu-title="Layouts">
+                            <ul class="nav nav-group-sub" data-submenu-title="Venda">
                                 <li class="nav-item"><a href="/venda/index" class="nav-link">Lista</a></li>
                                 <li class="nav-item"><a href="/venda/cadastro" class="nav-link">Cadastro</a></li>
                                 <li class="nav-item"><a href="/notafiscal/index" class="nav-link">Nota Fiscal</a></li>
