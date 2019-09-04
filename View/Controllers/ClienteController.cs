@@ -11,11 +11,18 @@ namespace View.Controllers
     [Route("cliente/")]
     public class ClienteController : Controller
     {
-        ClienteRepository repository;
+
+        private ClienteRepository repository;
 
         public ClienteController()
         {
             repository = new ClienteRepository();
+        }
+
+        [HttpGet]
+        public ActionResult Index()
+        {
+            return View();
         }
 
         [HttpGet, Route("obtertodos")]
@@ -26,22 +33,16 @@ namespace View.Controllers
             return Json(resultado, JsonRequestBehavior.AllowGet);
         }
 
-        [HttpPost, Route("cadastro")]
-        public ActionResult Cadastro(Cliente cliente)
+        [HttpPost]
+        public JsonResult Inserir(Cliente cliente)
         {
-            int id = repository.Inserir(cliente);
-            return RedirectToAction("Editar", new { id = id });
+            cliente.RegistroAtivo = true;
+            var id = repository.Inserir(cliente);
+            var resultado = new { id = id };
+            return Json(resultado);
         }
 
-        [HttpPost, Route("editar")]
-        public JsonResult Editar(Cliente cliente)
-        {
-            var alterou = repository.Alterar(cliente);
-            var resultado = new { status = alterou };
-            return Json(resultado, JsonRequestBehavior.AllowGet);
-        }
-
-        [HttpGet, Route("apagar")]
+        [HttpGet]
         public JsonResult Apagar(int id)
         {
             var apagou = repository.Apagar(id);
@@ -49,27 +50,42 @@ namespace View.Controllers
             return Json(resultado, JsonRequestBehavior.AllowGet);
         }
 
-        public ActionResult Index()
+        [HttpPost]
+        public JsonResult Update(Cliente cliente)
         {
-           
-            return View();
+            var alterou = repository.Alterar(cliente);
+            var resultado = new { status = alterou };
+            return Json(resultado);
         }
 
-        public ActionResult Cadastro()
+        [HttpGet, Route("obterpeloid")]
+        public JsonResult ObterPeloId(int id)
         {
-          
-           return View();
+            return Json(repository.ObterPeloId(id), JsonRequestBehavior.AllowGet);
         }
 
-        [HttpGet]
-        public ActionResult Editar(int id)
+        [HttpGet, Route("obtertodosselect2")]
+        public JsonResult ObterTodosSelect2(string term)
         {
-            var cliente = repository.ObterPeloId(id);
-            if (cliente == null)
-                return RedirectToAction("Index");
+            var clientes = repository.ObterTodos();
 
-            ViewBag.Cliente = cliente;
-            return View();
+            List<object> clientesSelect2 = new List<object>();
+            foreach (Cliente cliente in clientes)
+            {
+                clientesSelect2.Add(new
+                {
+                    id = cliente.Id,
+                    vendedor = cliente.Vendedor.n,
+                    cnpj = cliente.CNPJ,
+                    cpf = cliente.CPF,
+                    nome = cliente.Nome,
+                    telefone = cliente.Telefone,
+                    registro = cliente.RegistroAtivo
+
+                });
+            }
+            var resultado = new { results = clientesSelect2 };
+            return Json(resultado, JsonRequestBehavior.AllowGet);
         }
     }
 }

@@ -26,11 +26,12 @@
  cnpj VARCHAR (18),
  cpf VARCHAR (14),
  cep  VARCHAR(9),
- registro_ativo BIT
+ registro_ativo BIT,
+ id_vendedor INT
  );
  
- INSERT INTO clientes(nome, telefone, cnpj, cpf, cep, registro_ativo)
- VALUES ('Pedro', '(47) 99158-1254', '08.371.556/0001-04', '241.586.758-63', '89085-578', 1);
+ INSERT INTO clientes(nome, telefone, cnpj, cpf, cep, registro_ativo, id_vendedor)
+ VALUES ('Pedro', '(47) 99158-1254', '08.371.556/0001-04', '241.586.758-63', '89085-578', 1, 1);
  
  CREATE TABLE veiculos(
  id INT PRIMARY KEY IDENTITY(1,1),
@@ -47,12 +48,15 @@
  
  CREATE TABLE vendedores(
  id INT PRIMARY KEY IDENTITY(1,1),
+ nome VARCHAR(45),
+ id_veiculo INT,
  id_usuario INT,
  FOREIGN KEY (id_usuario) REFERENCES usuarios(id),
+ FOREIGN KEY (id_veiculo) REFERENCES veiculos(id),
  registro_ativo BIT);
  
- INSERT INTO vendedores(id_usuario, registro_ativo)
- VALUES (1, 1);
+ INSERT INTO vendedores(nome, id_usuario, registro_ativo)
+ VALUES ('Jucas' , 1, 1);
  
  CREATE TABLE produtos(
  id INT PRIMARY KEY IDENTITY(1,1),
@@ -79,8 +83,8 @@
  desconto DECIMAL(8,2),
  registro_ativo BIT);
  
- INSERT INTO vendas(quantidade,id_vendedor,id_cliente,id_produto, registro_ativo)
- VALUES (1, 1, 1, 1, 1);
+ INSERT INTO vendas(quantidade,id_vendedor,id_cliente,id_produto, registro_ativo, total, desconto)
+ VALUES (1, 1, 1, 1, 1, 100, 10);
  
  CREATE TABLE rotas(
  id INT PRIMARY KEY IDENTITY(1,1),
