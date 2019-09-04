@@ -108,8 +108,8 @@
                     <div class="dropdown-menu dropdown-menu-right">
                         <a href="conta/perfil" class="dropdown-item"><i class="icon-user-plus"></i> Meu Perfil</a>
                         <div class="dropdown-divider"></div>
-                        <a href="conta/config" class="dropdown-item"><i class="icon-cog5"></i> Configurações da Conta</a>
-                        <a href="#" class="dropdown-item"><i class="icon-switch2"></i> Sair</a>
+                        <a href="conta/config" class="dropdown-item"><i class="icon-cog5"></i> <span id="configText">Configurações da Conta</span> </a>
+                        <a href="#" class="dropdown-item"><i class="icon-switch2"></i> <span id="sairText">Sair</span></a>
                     </div>
                 </li>
             </ul>
@@ -167,11 +167,11 @@
                         <!-- Main -->
                         <li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Menu</div> <i class="icon-menu" title="Main"></i></li>
                         <li class="nav-item">
-                            <a href="/" class="nav-link active"><i class="fas fa-suitcase"></i><span>Início</span></a>
+                            <a href="/" class="nav-link active"><i class="fas fa-suitcase"></i><span id="inicioText">Início</span></a>
                         </li>
                         <!-- Usuário -->
                         <li class="nav-item nav-item-submenu">
-                            <a href="#" class="nav-link"><i class="fas fa-user"></i><i class="icon-people"></i> <span>Usuário</span></a>
+                            <a href="#" class="nav-link"><i class="fas fa-user"></i> <span id="usuarioText">Usuário</span></a>
                             <ul class="nav nav-group-sub" data-submenu-title="Themes">
                                 <li class="nav-item"><a href="/usuario/index" class="nav-link active">Lista</a></li>
                                 <li class="nav-item"><a href="/usuario/cadastro" class="nav-link active">Cadastro</a></li>
@@ -180,7 +180,7 @@
                         <!-- /Usuário -->
                         <!-- Categoria -->
                         <li class="nav-item nav-item-submenu">
-                            <a href="#" class="nav-link"><i class="icon-clipboard"></i><span>Categoria</span></a>
+                            <a href="#" class="nav-link"><i class="icon-clipboard"></i><span id="categoriaText">Categoria</span></a>
                             <ul class="nav nav-group-sub" data-submenu-title="Themes">
                                 <li class="nav-item"><a href="/categoria/index" class="nav-link active">Lista</a></li>
                                 <li class="nav-item"><a href="/usuario/cadastro" class="nav-link active">Cadastro</a></li>
@@ -198,7 +198,7 @@
                         <!-- /Cliente -->
                         <!-- Veículo -->
                         <li class="nav-item nav-item-submenu">
-                            <a href="#" class="nav-link"><i class="icon-truck"></i><span>Veículos</span></a>
+                            <a href="#" class="nav-link"><i class="icon-truck"></i><span id="veiculoText">Veículos</span></a>
                             <ul class="nav nav-group-sub" data-submenu-title="Layouts">
                                 <li class="nav-item"><a href="/veiculo/index" class="nav-link">Lista</a></li>
                                 <li class="nav-item"><a href="/veiculo/cadastro" class="nav-link active">Cadastro</a></li>
@@ -216,7 +216,7 @@
                         <!-- /Rota-->
                         <!-- Produto-->
                         <li class="nav-item nav-item-submenu">
-                            <a href="#" class="nav-link"><i class="fas fa-box-open"></i><span>Produto</span></a>
+                            <a href="#" class="nav-link"><i class="fas fa-box-open"></i><span id="produtoText">Produto</span></a>
                             <ul class="nav nav-group-sub" data-submenu-title="Layouts">
                                 <li class="nav-item"><a href="/produto/index" class="nav-link">Lista</a></li>
                                 <li class="nav-item"><a href="/produto/cadastro" class="nav-link">Cadastro</a></li>
