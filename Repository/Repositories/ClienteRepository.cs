@@ -2,6 +2,7 @@
 using Repository.Interface;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -63,7 +64,9 @@ namespace Repository.Repositories
 
         public List<Cliente> ObterTodos()
         {
-            return context.Clientes.Where(x => x.RegistroAtivo == true).ToList();
+            return context.Clientes.Where(x => x.RegistroAtivo == true)
+                .Include("Vendedor")
+                .ToList();
         }
     }
 }
