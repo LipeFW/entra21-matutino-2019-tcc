@@ -25,7 +25,7 @@ namespace View.Controllers
             return View();
         }
 
-        [HttpGet]
+        [HttpGet, Route("obtertodos")]
         public JsonResult ObterTodos()
         {
             var usuarios = repository.ObterTodos();
@@ -58,12 +58,13 @@ namespace View.Controllers
             return Json(resultado);
         }
 
-        [HttpGet, Route("usuario/obterpeloid")]
+        [HttpGet, Route("obterpeloid")]
         public JsonResult ObterPeloId(int id)
         {
             return Json(repository.ObterPeloId(id), JsonRequestBehavior.AllowGet);
         }
-        [HttpGet, Route("usuario/obtertodosselect2")]
+
+        [HttpGet, Route("obtertodosselect2")]
         public JsonResult ObterTodosSelect2(string term)
         {
             var usuarios = repository.ObterTodos();

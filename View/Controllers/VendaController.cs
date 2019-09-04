@@ -11,11 +11,18 @@ namespace View.Controllers
     [Route("venda/")]
     public class VendaController : Controller
     {
-        VendaRepository repository;
+
+        private VendaRepository repository;
 
         public VendaController()
         {
             repository = new VendaRepository();
+        }
+
+        [HttpGet]
+        public ActionResult Index()
+        {
+            return View();
         }
 
         [HttpGet, Route("obtertodos")]
@@ -23,56 +30,57 @@ namespace View.Controllers
         {
             var vendas = repository.ObterTodos();
             var resultado = new { data = vendas };
-            return Json(resultado,
-                JsonRequestBehavior.AllowGet);
+            return Json(resultado, JsonRequestBehavior.AllowGet);
         }
 
-        [HttpPost, Route("cadastro")]
-        public ActionResult Cadastro(Venda venda)
+        [HttpPost]
+        public JsonResult Inserir(Venda venda)
         {
-            int id = repository.Inserir(venda);
-            return RedirectToAction("Editar",
-                new { id = id });
+            venda.RegistroAtivo = true;
+            var id = repository.Inserir(venda);
+            var resultado = new { id = id };
+            return Json(resultado);
         }
 
-        [HttpPost, Route("editar")]
-        public JsonResult Editar(Venda venda)
-        {
-            var alterou = repository.Alterar(venda);
-            var resultado = new { status = alterou };
-            return Json(resultado,
-                JsonRequestBehavior.AllowGet);
-        }
-
-        [HttpGet, Route("apagar")]
+        [HttpGet]
         public JsonResult Apagar(int id)
         {
             var apagou = repository.Apagar(id);
             var resultado = new { status = apagou };
-            return Json(resultado,
-                JsonRequestBehavior.AllowGet);
+            return Json(resultado, JsonRequestBehavior.AllowGet);
         }
 
-        public ActionResult Index()
-        {          
-            return View();
-        }
-
-        public ActionResult Cadastro()
+        [HttpPost]
+        public JsonResult Update(Venda venda)
         {
-            
-            return View();
+            var alterou = repository.Alterar(venda);
+            var resultado = new { status = alterou };
+            return Json(resultado);
         }
 
-        [HttpGet]
-        public ActionResult Editar(int id)
+        [HttpGet, Route("obterpeloid")]
+        public JsonResult ObterPeloId(int id)
         {
-            var venda = repository.ObterPeloId(id);
-            if (venda == null)
-                return RedirectToAction("Index");
+            return Json(repository.ObterPeloId(id), JsonRequestBehavior.AllowGet);
+        }
+        [HttpGet, Route("obtertodosselect2")]
+        public JsonResult ObterTodosSelect2(string term)
+        {
+            var vendas = repository.ObterTodos();
 
-            ViewBag.Venda = venda;
-            return View();
+            List<object> vendasSelect2 = new List<object>();
+            foreach (Venda venda in vendas)
+            {
+                vendasSelect2.Add(new
+                {
+                    id = venda.Id,
+                    registro = venda.RegistroAtivo,
+                    total = venda.Total
+
+                });
+            }
+            var resultado = new { results = vendasSelect2 };
+            return Json(resultado, JsonRequestBehavior.AllowGet);
         }
     }
 }
