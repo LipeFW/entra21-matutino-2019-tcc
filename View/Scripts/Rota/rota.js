@@ -2,14 +2,15 @@
     $idAlterar = -1;
 
     $tabelaRota = $('#rota-tabela').DataTable({
-        ajax: 'http://localhost:51242/Cliente/obtertodos',
+        ajax: 'http://localhost:51242/Rota/obtertodos',
         serverSide: true,
         columns: [
             { 'data': 'Id' },
             { 'data': 'Nome' },
+            { 'data': 'IdVendedor.Nome' },
             {
                 render: function (data, type, row) {
-                    return '<butto class="btn btn-primary botao-editar" data-id="' + row.id + '">Editar</button>\<button class="btn btn-danger botao-apagar"data-id="' + row.Id + '">Apagar</button>'
+                    return '<button class="btn btn-primary botao-editar" data-id="' + row.id + '">Editar</button>\<button class="btn btn-danger botao-apagar"data-id="' + row.Id + '">Apagar</button>'
                 }
             }
         ]

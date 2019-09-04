@@ -27,6 +27,7 @@ namespace Repository.Repositories
                 return false;
 
             rotaOriginal.Nome = rota.Nome;
+            rotaOriginal.Vendedor.Nome = rota.Vendedor.Nome;
             rotaOriginal.Id = rota.Id;
             int quantidadeAfetada = context.SaveChanges();
             return quantidadeAfetada == 1;

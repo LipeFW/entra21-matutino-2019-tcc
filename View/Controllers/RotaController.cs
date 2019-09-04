@@ -56,6 +56,10 @@ namespace View.Controllers
 
         public ActionResult Cadastro()
         {
+            VendedorRepository vendedorRepository= new VendedorRepository();
+            List<Vendedor> vendedores = vendedorRepository.ObterTodos();
+            ViewBag.Vendedores = vendedores;
+
             return View();
         }
 
@@ -68,6 +72,27 @@ namespace View.Controllers
 
             ViewBag.Rota = rota;
             return View();
+        }
+
+        [HttpGet, Route("obtertodosselect2")]
+        public JsonResult ObterTodosSelect2(string term)
+        {
+            var rotas = repository.ObterTodos();
+
+            List<object> rotasSelect2 = new List<object>();
+            foreach (Rota rota in rotas)
+            {
+                rotasSelect2.Add(new
+                {
+                    id = rota.Id,
+                    vendedor = rota.Vendedor.Nome,
+                    nome = rota.Nome,
+                    registro = rota.RegistroAtivo
+
+                });
+            }
+            var resultado = new { results = rotasSelect2 };
+            return Json(resultado, JsonRequestBehavior.AllowGet);
         }
     }
 }

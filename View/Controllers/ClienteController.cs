@@ -75,7 +75,7 @@ namespace View.Controllers
                 clientesSelect2.Add(new
                 {
                     id = cliente.Id,
-                    vendedor = cliente.Vendedor.n,
+                    vendedor = cliente.Vendedor.Nome,
                     cnpj = cliente.CNPJ,
                     cpf = cliente.CPF,
                     nome = cliente.Nome,

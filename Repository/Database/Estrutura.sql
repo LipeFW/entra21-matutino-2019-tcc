@@ -55,8 +55,8 @@
  FOREIGN KEY (id_veiculo) REFERENCES veiculos(id),
  registro_ativo BIT);
  
- INSERT INTO vendedores(nome, id_usuario, registro_ativo)
- VALUES ('Jucas' , 1, 1);
+ INSERT INTO vendedores(nome, id_veiculo, id_usuario, registro_ativo)
+ VALUES ('Jucas' , 1, 1, 1);
  
  CREATE TABLE produtos(
  id INT PRIMARY KEY IDENTITY(1,1),

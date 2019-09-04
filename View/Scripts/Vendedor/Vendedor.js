@@ -6,9 +6,9 @@
         serverSide: true,
         columns: [
             { 'data': 'Id' },
-            { 'data': 'usuario' },
-            { 'data': 'Veiculo' },
-            { 'data': 'Nome'},
+            { 'data': 'Nome' },
+            { 'data': 'IdUsuario' },
+            { 'data': 'IdVeiculo'},
             {
                 render: function (data, type, row) {
                     return "<button class='btn btn-primary botao-editar' data-id='" + row.Id + "'>Editar</button>\

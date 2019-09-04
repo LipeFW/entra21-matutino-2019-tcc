@@ -8,9 +8,9 @@
             { 'data': 'Id' },
             { 'data': 'Nome' },
             { 'data': 'Telefone' },
-            { 'data': 'Cnpj' },
-            { 'data': 'Cep' },
-            { 'data': 'Vendedor'},
+            { 'data': 'CNPJ' },
+            { 'data': 'CEP' },
+            { 'data': 'IdVendedor'},
             {
                 render: function (data, type, row) {
                     return '<button class="btn btn-primary botao-editar"data-id"' + row.Id + '">Editar</button>\<button class="btn btn-danger botao-apagar"data-id="' + row.Id + '">Apagar</button>'
