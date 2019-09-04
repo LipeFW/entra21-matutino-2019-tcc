@@ -108,11 +108,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\css\outros.css" />
+    <Content Include="Content\js\lang.js" />
     <Content Include="Content\login\background\background-login.jpg" />
     <Content Include="Content\login\background\background.jpg" />
     <Content Include="Content\login\background\background2.jpg" />
-    <Content Include="Content\css\select2.css" />
-    <Content Include="Content\css\select2.min.css" />
     <Content Include="Content\login\css\login.css" />
     <Content Include="Content\theme\assets\css\bootstrap.css" />
     <Content Include="Content\theme\assets\css\bootstrap.min.css" />
@@ -538,7 +537,7 @@
     <Content Include="Content\theme\global_assets\js\demo_pages\widgets_content.js" />
     <Content Include="Content\theme\global_assets\js\demo_pages\widgets_stats.js" />
     <Content Include="Content\theme\global_assets\js\main\bootstrap.bundle.min.js" />
-    <Content Include="Content\theme\global_assets\js\main\jquery.min.js" />
+    <Content Include="Content\theme\global_assets\js\main\jquerytheme.min.js" />
     <Content Include="Content\theme\global_assets\js\plugins\buttons\hover_dropdown.min.js" />
     <Content Include="Content\theme\global_assets\js\plugins\buttons\ladda.min.js" />
     <Content Include="Content\theme\global_assets\js\plugins\buttons\spin.min.js" />
@@ -2572,10 +2571,30 @@
     <Content Include="Content\theme\global_assets\scss\_bootstrap\_variables.scss" />
     <Content Include="Content\theme\global_assets\scss\_config.scss" />
     <None Include="packages.config" />
-    <Content Include="Scripts\js\language.js" />
+    <Content Include="Scripts\esm\popper-utils.js" />
+    <Content Include="Scripts\esm\popper-utils.min.js" />
+    <Content Include="Scripts\esm\popper.js" />
+    <Content Include="Scripts\esm\popper.min.js" />
+    <Content Include="Scripts\esm\popper.min.js.map" />
+    <Content Include="Scripts\esm\popper.js.map" />
+    <Content Include="Scripts\esm\popper-utils.min.js.map" />
+    <Content Include="Scripts\esm\popper-utils.js.map" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
     <Content Include="Scripts\Marca\marca.js" />
+    <Content Include="Scripts\popper-utils.js" />
+    <Content Include="Scripts\popper-utils.min.js" />
+    <Content Include="Scripts\popper.js" />
+    <Content Include="Scripts\popper.min.js" />
     <Content Include="Scripts\Produto\produto.js" />
     <Content Include="Scripts\Rota\rota.js" />
+    <Content Include="Scripts\umd\popper-utils.js" />
+    <Content Include="Scripts\umd\popper-utils.min.js" />
+    <Content Include="Scripts\umd\popper.js" />
+    <Content Include="Scripts\umd\popper.min.js" />
     <Content Include="Scripts\Usuario\usuario.js" />
     <Content Include="Scripts\Veiculo\veiculo.js" />
     <Content Include="Scripts\Vendedor\Vendedor.js" />
@@ -2623,6 +2642,17 @@
     <Content Include="Views\Produto\Produto.cshtml" />
     <Content Include="Views\Venda\Index.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
+    <Content Include="Scripts\umd\popper.min.js.map" />
+    <Content Include="Scripts\umd\popper.js.map" />
+    <Content Include="Scripts\umd\popper-utils.min.js.map" />
+    <Content Include="Scripts\umd\popper-utils.js.map" />
+    <Content Include="Scripts\README.md" />
+    <Content Include="Scripts\popper.min.js.map" />
+    <Content Include="Scripts\popper.js.map" />
+    <Content Include="Scripts\popper-utils.min.js.map" />
+    <Content Include="Scripts\popper-utils.js.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -2648,6 +2678,9 @@
       <Project>{f28a614e-0e2e-4ae3-8231-d9fcde94f8a5}</Project>
       <Name>Repository</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Scripts\index.d.ts" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

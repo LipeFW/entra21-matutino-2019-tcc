@@ -12,7 +12,6 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
     <link href="~/Content/theme/global_assets/css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
     <link href="~/Content/theme/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="~/Content/fontawesome/font-awesome.min.css">
     <link href="~/Content/theme/global_assets/css/icons/fontawesome/styles.min.css" rel="stylesheet" type="text/css" />
     <link href="~/Content/theme/assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
     <link href="~/Content/theme/assets/css/layout.min.css" rel="stylesheet" type="text/css">
@@ -20,7 +19,7 @@
     <link href="~/Content/theme/assets/css/colors.min.css" rel="stylesheet" type="text/css">
     <!-- /global stylesheets -->
     <!-- Core JS files -->
-    <script src="~/Content/theme/global_assets/js/main/jquery.min.js"></script>
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
     <script src="~/Content/theme/global_assets/js/main/bootstrap.bundle.min.js"></script>
     <script src="~/Content/theme/global_assets/js/plugins/loaders/blockui.min.js"></script>
     <!-- /core JS files -->
@@ -33,7 +32,7 @@
     <script src="~/Content/theme/global_assets/js/plugins/pickers/daterangepicker.js"></script>
 
     <script src="~/Content/theme/assets/js/app.js"></script>
-    <script src="~/Scripts/js/language.js"></script>
+    <script src="~/Content/js/lang.js"></script>
     <script src="~/Content/theme/global_assets/js/demo_pages/dashboard.js"></script>
     <!-- /theme JS files -->
     @RenderSection("css", false)
@@ -91,12 +90,12 @@
             <ul class="navbar-nav">
                 <li class="nav-item dropdown">
                     <a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown">
-                        <img id="imgLANG" src="~/Content/theme/global_assets/images/lang/br.png" class="img-flag mr-2" alt=""><span id="nomeLANG">Português</span>
+                        <img id="imgLANG" src="~/Content/theme/global_assets/images/lang/br.png" class="img-flag mr-2" alt=""><span id="langAtual">Português</span>
                     </a>
 
                     <div class="dropdown-menu dropdown-menu-right">
-                        <a id="btnPT" href="#" class="dropdown-item portuguese active"><img src="~/Content/theme/global_assets/images/lang/br.png" class="img-flag" alt=""> Português</a>
-                        <a id="btnEN" href="#" class="dropdown-item english"><img src="~/Content/theme/global_assets/images/lang/gb.png" class="img-flag" alt=""> Inglês</a>
+                        <a id="btnPT" href="#" class="dropdown-item portuguese active"><img src="~/Content/theme/global_assets/images/lang/br.png" class="img-flag" alt=""><span id="ptLang">Português</span> </a>
+                        <a id="btnEN" href="#" class="dropdown-item english"><img src="~/Content/theme/global_assets/images/lang/gb.png" class="img-flag" alt=""><span id="enLang">Inglês</span> </a>
                     </div>
                 </li>
 
@@ -172,7 +171,7 @@
                         </li>
                         <!-- Usuário -->
                         <li class="nav-item nav-item-submenu">
-                            <a href="#" class="nav-link"<i class="fas fa-user"></i><i class="icon-people"></i> <span>Usuário</span></a>
+                            <a href="#" class="nav-link"><i class="fas fa-user"></i><i class="icon-people"></i> <span>Usuário</span></a>
                             <ul class="nav nav-group-sub" data-submenu-title="Themes">
                                 <li class="nav-item"><a href="/usuario/index" class="nav-link active">Lista</a></li>
                                 <li class="nav-item"><a href="/usuario/cadastro" class="nav-link active">Cadastro</a></li>
@@ -190,7 +189,7 @@
                         <!-- /Categoria -->
                         <!-- Cliente -->
                         <li class="nav-item nav-item-submenu">
-                            <a href="#" class="nav-link"><i class="fas fa-user-tie"></i></i><span>Cliente</span></a>
+                            <a href="#" class="nav-link"><i class="fas fa-user-tie"></i><span>Cliente</span></a>
                             <ul class="nav nav-group-sub" data-submenu-title="Themes">
                                 <li class="nav-item"><a href="/cliente/index" class="nav-link active">Lista</a></li>
                                 <li class="nav-item"><a href="/cliente/cadastro" class="nav-link active">Cadastro</a></li>
@@ -299,8 +298,6 @@
                 &copy; 2019 - MCSS Company
             </span>
         </div>
-    </div>
-    </div>
     </div>
 </body>
 </html>
