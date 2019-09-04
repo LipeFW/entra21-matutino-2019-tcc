@@ -60,7 +60,10 @@ namespace View.Controllers
 
         public ActionResult Cadastro()
         {
-            
+            VendedorRepository vendedorRepository = new VendedorRepository();
+            List<Vendedor> vendedores = vendedorRepository.ObterTodos();
+            ViewBag.Vendedores = vendedores;
+
             return View();
         }
 

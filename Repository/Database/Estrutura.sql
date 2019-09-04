@@ -47,12 +47,15 @@
  
  CREATE TABLE vendedores(
  id INT PRIMARY KEY IDENTITY(1,1),
+ nome VARCHAR(45),
+ id_veiculo INT,
  id_usuario INT,
  FOREIGN KEY (id_usuario) REFERENCES usuarios(id),
+ FOREIGN KEY (id_veiculo) REFERENCES veiculos(id),
  registro_ativo BIT);
  
- INSERT INTO vendedores(id_usuario, registro_ativo)
- VALUES (1, 1);
+ INSERT INTO vendedores(nome, id_usuario, registro_ativo)
+ VALUES ('Jucas' , 1, 1);
  
  CREATE TABLE produtos(
  id INT PRIMARY KEY IDENTITY(1,1),

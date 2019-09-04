@@ -3,14 +3,31 @@
     ViewBag.Title = "Cadastro";
 }
 
-<h3>Cadastro de Venda</h3>
+<h3 class="text-center">Cadastro de Vendas</h3>
 
 <form action="/venda/cadastro" method="post">
 
     <div class="row">
         <div class="col-12">
             <div class="form-group">
-
+                <label for="venda-quantidade">Quantidade</label>
+                <input type="number" id="venda-campo-quantidade" class="form-control" name="quantidade" />
+            </div>
+            <div class="col-12">
+                <div class="form-group">
+                    <label for="venda-id-vendedor">Vendedor</label>
+                    <select class="form-control" id="venda-id-vendedor" name="idVendedor">
+                        <option disabled="disabled" selected="selected">Selecione um Vendedor</option>
+                        @foreach(Model.Vendedor vendedor in ViewBag.Vendedores)
+                        {
+                            <option value="@vendedor.Id">@vendedor.Nome</option>
+                        }
+                    </select>
+                </div>
+            </div>
+            <div>
+                <label for="venda-id-cliente">Cliente</label>
+                <select class="form-control" id="venda-id-cliente" name="idCliente"></select>
             </div>
         </div>
     </div>
