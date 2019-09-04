@@ -1,31 +1,24 @@
 ﻿
 @{
-    ViewBag.Title = "Exibição de Usuários";
+    ViewBag.Title = "Usuário";
 }
 
-<div class="background-usuarios-img">
+<div>
 
-    <div class="jumbotron text-center mt-4">
-        <h2>Usuários</h2>
+<h2>Usuários</h2>
 
-        <button data-toggle="modal" data-target="#modal-usuario" class="btn btn-primary float-right mb-2">
-            Novo Usuário
-        </button>
-
-        <table id="usuario-tabela" class="table table-hover table-bordered table-striped">
-            <thead>
-                <tr>
-                    <th>Código</th>
-                    <th>Nome</th>
-                    <th>Senha</th>
-                    <th>Ação</th>
-                </tr>
-            </thead>
-        </table>
-    </div>
+<table id="usuario-tabela" class="table table-hover table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Código</th>
+            <th>Nome</th>
+            <th>Senha</th>
+            <th>Ação</th>
+        </tr>
+    </thead>
+</table>
 </div>
 
-@RenderPage("CadastroModal.cshtml")
 
 @section js{
     <script src="~/Scripts/Usuario/usuario.js">

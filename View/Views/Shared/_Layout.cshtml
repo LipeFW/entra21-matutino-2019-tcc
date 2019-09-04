@@ -4,10 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>MCSS - Company</title>
+    <title>MCSS - @ViewBag.Title</title>
 
     <link href="~/Content/theme/global_assets/images/logo_icon_dark.png" rel="shortcut icon" />
     <link href="~/Content/login/css/login.css" rel="stylesheet" type="text/css">
+
+    <link href="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" type="text/javascript" />
 
     <!-- Global stylesheets -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
@@ -35,6 +37,8 @@
     <script src="~/Content/theme/assets/js/app.js"></script>
     <script src="~/Content/js/lang.js"></script>
     <script src="~/Content/theme/global_assets/js/demo_pages/dashboard.js"></script>
+
+    <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet" />
     <!-- /theme JS files -->
     @RenderSection("css", false)
 </head>
@@ -300,6 +304,9 @@
             </span>
         </div>
     </div>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    @RenderSection("js", false)
+
 </body>
 </html>
-@RenderSection("js", false)
+
