@@ -7,6 +7,7 @@
         serverSide: true,
         columns: [
             { 'data': 'Id' },
+            { 'data': 'Nome' },
             { 'data': 'Categoria' },
             { 'data': 'Código Barra' },
             { 'data': 'Quantidade Produtos' },
@@ -20,23 +21,27 @@
     });
 
     $('#produto-botao-salvar').on('#click', function () {
+        $nome = $('#produto-campo-nome').val();
         $categoria = $('#produto-campo-Categoria').val();
-        $codigoBarra = $('#produto-campo-codigo-barra').val();
-        $quantidadeProdutos = $('#produto-campo-quantidade-produtos').val();
-        $valorUnitario = $('#produto-campo-valor-unitario').val();
+        $codigoBarra = $('#produto-campo-codigo_barra').val();
+        $quantidadeProdutos = $('#produto-campo-quantidade').val();
+        $valorUnitario = $('#produto-campo-valor_unitario').val();
 
         if ($idAlterar == -1) {
-            inserir($categoria, $cofigoBarra, $quantidadeProdutos, $valorUnitario);
+            inserir($nome, $categoria, $cofigoBarra, $quantidadeProdutos, $valorUnitario);
         } else {
-            alterar($categoria, $codigoBarra, $quantidadeProdutos, $valorUnitario);
+            alterar($nome, $categoria, $codigoBarra, $quantidadeProdutos, $valorUnitario);
         }
 
-        function alterar($categoria, $codigoBarra, $quantidadeProdutos, $valorUnitario) {
+    });
+
+        function alterar($nome, $categoria, $codigoBarra, $quantidadeProdutos, $valorUnitario) {
             $.ajax({
                 url: 'http://localhost:51242/Produto/update',
                 method: "post",
                 data: {
                     id: $idAlterar,
+                    nome = $nome,
                     categoria: $categoria,
                     codigoBarra: $codigoBarra,
                     quantidadeProdutos: $quantidadeProdutos,
@@ -53,11 +58,12 @@
             })
         }
 
-        function inserir($categoria, $codigoBarra, $quantidadeProdutos, $valorUnitario) {
+        function inserir($nome, $categoria, $codigoBarra, $quantidadeProdutos, $valorUnitario) {
             $.ajax({
                 url: 'http://localhost:51242/Produto/inserir',
                 method: "post",
                 data: {
+                    nome = $nome,
                     categoria: $categoria,
                     codigoBarra: $codigoBarra,
                     quantidadeProdutos: $quantidadeProdutos,
@@ -72,7 +78,6 @@
                 }
             });
         }
-    });
 
     $('.table').on('click', '.botao-apagar', function () {
         $idApagar = $(this).data('id');
@@ -96,6 +101,7 @@
             url: 'http://localhost:51242/Produto/obterpeloid?=' + idAlterar,
             methd: 'get',
             success: function (data) {
+                $('#produto-campo-nome').val(data.Nome);
                 $('#produto-campo-categoria').val(data.Categoria);
                 $('#produto-campo-codigo-barra').val(data.CodigoBarra);
                 $('#produto-campo-quantidade-produtos').val(data.QuantidadeProdutos);

@@ -60,6 +60,7 @@
  
  CREATE TABLE produtos(
  id INT PRIMARY KEY IDENTITY(1,1),
+ nome VARCHAR(50),
  id_categoria INT,
  codigo_barra VARCHAR(30),
  quantidade_produto INT,
