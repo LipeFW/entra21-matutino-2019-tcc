@@ -114,7 +114,6 @@
     <Content Include="App_Data\Database_log.ldf">
       <DependentUpon>Database.mdf</DependentUpon>
     </Content>
-    <Content Include="Content\css\tabela\util.css" />
     <Content Include="Content\css\outros.css" />
     <Content Include="Content\js\lang.js" />
     <Content Include="Content\js\login.js" />
@@ -2604,7 +2603,6 @@
     <Content Include="Scripts\Veiculo\veiculo.js" />
     <Content Include="Scripts\Venda\venda.js" />
     <Content Include="Scripts\Vendedor\Vendedor.js" />
-    <Content Include="Views\Veiculo\Textbox.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -2643,7 +2641,6 @@
     <Content Include="Scripts\umd\popper.js.map" />
     <Content Include="Scripts\umd\popper-utils.min.js.map" />
     <Content Include="Scripts\umd\popper-utils.js.map" />
-    <Content Include="Views\Venda\Cadastro.cshtml" />
     <Content Include="Views\Cliente\Cadastro.cshtml" />
     <Content Include="Views\Categoria\Cadastro.cshtml" />
     <Content Include="Views\Produto\Cadastro.cshtml" />
@@ -2651,6 +2648,7 @@
     <Content Include="Views\Usuario\Cadastro.cshtml" />
     <Content Include="Views\Veiculo\Cadastro.cshtml" />
     <Content Include="Views\Vendedor\Cadastro.cshtml" />
+    <Content Include="Views\Venda\Cadastro.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

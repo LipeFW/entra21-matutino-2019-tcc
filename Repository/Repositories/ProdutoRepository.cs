@@ -40,13 +40,12 @@ namespace Repository.Repositories
 
         public Produto ObterPeloId(int id)
         {
-            var produto = context.Produtos.FirstOrDefault(x => x.Id == id);
-            return produto;
+            return context.Produtos.Include("Categoria").FirstOrDefault(x => x.Id == id);
         }
 
         public List<Produto> ObterTodos()
         {
-            return context.Produtos.Where(x => x.RegistroAtivo == true).ToList();
+            return context.Produtos.Where(x => x.RegistroAtivo).ToList();
         }
 
         public bool Alterar(Produto produto)
@@ -58,6 +57,7 @@ namespace Repository.Repositories
                 return false;
 
             produtoOriginal.Id = produto.Id;
+            produtoOriginal.Nome = produto.Nome;
             produtoOriginal.Categoria = produto.Categoria;
             produtoOriginal.CodigoBarra = produto.CodigoBarra;
             produtoOriginal.IdCategoria = produto.IdCategoria;
