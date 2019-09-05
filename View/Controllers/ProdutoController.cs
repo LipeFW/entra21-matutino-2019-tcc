@@ -34,6 +34,7 @@ namespace View.Controllers
                 produtosSelect2.Add(new
                 {
                     id = produto.Id,
+                    nome = produto.Nome,
                     categoria = produto.IdCategoria,
                     quantidade = produto.QuantidadeProdutos,
                     valor = produto.ValorUnitario,
