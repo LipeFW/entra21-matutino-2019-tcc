@@ -1,15 +1,15 @@
 ﻿$(function () {
     $idAlterar = -1;
 
-    $tabelaVeiculo = $('#veiculos-index').DataTable({
+    $tabelaVeiculo = $('#veiculo-tabela').DataTable({
         ajax: 'http://localhost:51242/veiculo/obtertodos',
         serverSide: true,
         columns: [
             { 'data': 'Id' },
             { 'data': 'Marca' },
             { 'data': 'Modelo' },
-            { 'data': 'Ano Fabricacao' },
-            { 'data': 'Numero Caminhao' },
+            { 'data': 'AnoFabricacao' },
+            { 'data': 'NumeroCaminhao' },
             { 'data': 'Placa' },
             {
                 render: function (data, type, row) {
