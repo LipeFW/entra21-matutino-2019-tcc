@@ -86,9 +86,28 @@ namespace View.Controllers
             return Json(resultado);
         }
 
-        [HttpGet]
         public ActionResult Index()
         {
+            return View();
+        }
+
+        public ActionResult Cadastro()
+        {
+            CategoriaRepository categoriaRepository = new CategoriaRepository();
+            List<Categoria> categorias = categoriaRepository.ObterTodos();
+            ViewBag.Categorias = categorias;
+
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult Editar(int id)
+        {
+            var produto = repository.ObterPeloId(id);
+            if (produto == null)
+                return RedirectToAction("index");
+
+            ViewBag.Produto = produto;
             return View();
         }
     }
