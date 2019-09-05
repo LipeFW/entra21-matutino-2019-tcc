@@ -29,7 +29,7 @@ namespace Model
         [Column("numero_caminhao")]
         public int NumeroCaminhao { get; set; }
 
-        [Column("regitro_ativo")]
+        [Column("registro_ativo")]
         public bool RegistroAtivo { get; set; }
 
         [Column("placa")]

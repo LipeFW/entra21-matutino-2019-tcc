@@ -3,5 +3,48 @@
     ViewBag.Title = "Cadastro";
 }
 
-<h2>Cadastro</h2>
 
+<form action="/produto/cadastro" method="post">
+<h3 class="text-info text-center mt-3 mb-3">Cadastro Produto</h3>
+<div class="row">
+    <div class="col-12">
+        <div class="form-group">
+            <label for="produto-campo-nome">Nome</label>
+            <input type="text" name="nome" id="produto-campo-nome" class="form-control" style="width:300px" />
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="form-group">
+            <label for="produto-campo-categoria">Categoria</label>
+            <select class="form-control" name="categoria">
+                <option disabled="disabled" selected="selected">Selecione uma Categoria</option>
+                @foreach (Model.Categoria categoria in ViewBag.Categorias)
+                {
+                    <option value="@categoria.Id">@categoria.Nome</option>
+                }
+            </select>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="form-group">
+            <label for="produto-campo-codigo_barra">Codigo Barra</label>
+            <input type="text" name="codigo_barra" id="produto-campo-codigo_barra" class="form-control" />
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="form-group">
+            <label for="produto-campo-quantidade">Quantidade</label>
+            <input type="number" name="quantidade" id="produto-campo-quantidade" class="form-control" />
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="form-group">
+            <label for="produto-campo-valor_unitario">Valor Unitario</label>
+            <input type="text" name="valor_unitario" id="produto-campo-valor_unitario" class="form-control" />
+        </div>
+    </div>
+    <div class="col-12">
+        <button type="d" class="btn btn-success mb-3 mt-3 float-right"><i class="fas fa-save"></i> Salvar</button>
+    </div>
+</div>
+</form>

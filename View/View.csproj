@@ -114,6 +114,7 @@
     <Content Include="App_Data\Database_log.ldf">
       <DependentUpon>Database.mdf</DependentUpon>
     </Content>
+    <Content Include="Content\css\tabela\util.css" />
     <Content Include="Content\css\outros.css" />
     <Content Include="Content\js\lang.js" />
     <Content Include="Content\js\login.js" />

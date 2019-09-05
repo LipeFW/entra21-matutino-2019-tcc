@@ -2,15 +2,16 @@
 @{
     ViewBag.Title = "Produto";
 }
-
+<link rel="stylesheet" type="text/css" href="~/Content/css/tabela/util.css" />
 <h3>Lista de Produtos</h3>
 <title>MCC-Produtos</title>
 
 
-<table class="table table-striped table-bordered table-hover" id="produto-tabela">
+<table id="produto-tabela" class="table table-striped table-bordered table-hover" >
     <thead>
         <tr>
             <th>Código</th>
+            <th>Nome</th>
             <th>Categoria</th>
             <th>Código Barra</th>
             <th>Quantidade Produtos</th>
@@ -20,5 +21,5 @@
 </table>
 
 @section js{
-    <script src="~/Scripts/Produto/"></script>
+    <script src="~/Scripts/Produto/produto.js"></script>
     }

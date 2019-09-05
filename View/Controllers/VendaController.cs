@@ -64,6 +64,14 @@ namespace View.Controllers
             List<Vendedor> vendedores = vendedorRepository.ObterTodos();
             ViewBag.Vendedores = vendedores;
 
+            ClienteRepository clienteRepository = new ClienteRepository();
+            List<Cliente> clientes = clienteRepository.ObterTodos();
+            ViewBag.Clientes = clientes;
+
+            ProdutoRepository produtoRepository = new ProdutoRepository();
+            List<Produto> produtos = produtoRepository.ObterTodos();
+            ViewBag.Produtos = produtos;
+
             return View();
         }
 
