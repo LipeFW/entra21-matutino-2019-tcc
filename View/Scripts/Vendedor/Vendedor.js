@@ -7,8 +7,8 @@
         columns: [
             { 'data': 'Id' },
             { 'data': 'Nome' },
-            { 'data': 'IdUsuario' },
-            { 'data': 'IdVeiculo'},
+            { 'data': 'Usuario.Login' },
+            { 'data': 'Veiculo.Modelo'},
             {
                 render: function (data, type, row) {
                     return "<button class='btn btn-primary botao-editar' data-id='" + row.Id + "'>Editar</button>\
