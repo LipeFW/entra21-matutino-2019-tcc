@@ -3,9 +3,10 @@
     ViewBag.Title = "Cadastro";
 }
 
-<h3 class="text-center">Cadastro de Vendas</h3>
 
 <form action="/venda/cadastro" method="post">
+
+    <h2 class="text-primary text-center">Cadastro de Vendas</h2>
 
     <div class="row">
         <div class="col-12">
@@ -15,19 +16,39 @@
             </div>
             <div class="col-12">
                 <div class="form-group">
-                    <label for="venda-id-vendedor">Vendedor</label>
+                    <label for="venda-id-vendedor" class="text-center">Vendedor</label>
                     <select class="form-control" id="venda-id-vendedor" name="idVendedor">
                         <option disabled="disabled" selected="selected">Selecione um Vendedor</option>
-                        @foreach(Model.Vendedor vendedor in ViewBag.Vendedores)
+                        @foreach (Model.Vendedor vendedor in ViewBag.Vendedores)
                         {
                             <option value="@vendedor.Id">@vendedor.Nome</option>
                         }
                     </select>
                 </div>
             </div>
-            <div>
-                <label for="venda-id-cliente">Cliente</label>
-                <select class="form-control" id="venda-id-cliente" name="idCliente"></select>
+            <div class="col-12">
+                <div class="form-group">
+                    <label for="venda-id-cliente">Cliente</label>
+                    <select class="form-control" id="venda-id-cliente" name="idCliente">
+                        <option disabled="disabled" selected="selected">Selecione um Cliente</option>
+                        @foreach (Model.Cliente cliente in ViewBag.Clientes)
+                        {
+                            <option value="@cliente.Id">@cliente.Nome</option>
+                        }
+                    </select>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form-group">
+                    <label for="venda-id-produto">Produto</label>
+                    <select class="form-control" id="venda-id-produto" name="idProduto">
+                        <option disabled="disabled" selected="selected">Selecione um Produto</option>
+                        @foreach (Model.Produto produto in ViewBag.Produtos)
+                        {
+                            <option value="@produto.Id">@produto.Nome</option>
+                        }
+                    </select>
+                </div>
             </div>
         </div>
     </div>

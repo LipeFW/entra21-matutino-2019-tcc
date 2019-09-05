@@ -69,7 +69,7 @@
  registro_ativo BIT);
  
  INSERT INTO produtos(nome, id_categoria, codigo_barra, quantidade_produto, valor_unitario, registro_ativo)
- VALUES ('Todinho',1, '173937229417429475205792634916', 1, 1, 1);
+ VALUES ('Barrinha de Chocolate', 1, '173937229417429475205792634916', 1, 1, 1);
  
  CREATE TABLE vendas(
  id INT PRIMARY KEY IDENTITY(1,1),
