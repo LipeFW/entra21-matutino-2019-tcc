@@ -3,24 +3,25 @@
     ViewBag.Title = "Cadastro";
 }
 
-<h2>Cadastro de Veiculos</h2>
 <body>
 
 
-<div class="form-group">
-    <div class="col-6">
+    <div class="form-group">
+        <div class="col-6">
 
-        <form action="/veiculo/cadastro" method="post">
-            <div class="form-group">
-                
+            <form action="/veiculo/cadastro" method="post">
+                <div class="form-group">
+                    <h2>Cadastro de Veiculos</h2>
+                    <label for="veiculo-marca">Marca</label>
+                    <input marca="veiculo-marca" id="campo-veiculo-marca" placeholder="Marca" type="text" required="required" style="width:300px" />
                     <label for="veiculo-modelo">Modelo</label>
-                    <input nome="veiculo-modelo" id="campo-veiculo-modelo" placeholder="Modelo" type="text" class="form-control" required="required" style="width:300px">
-                    <label for="veiculo-anofabricacao">Modelo</label>
-                    <input nome="veiculo-anofabricacao" id="campo-veiculo-anofabricacao" placeholder="Ano de Fabricação" type="number" class="form-control" required="required" style="width:300px">
+                    <input modelo="veiculo-modelo" id="campo-veiculo-modelo" placeholder="Modelo" type="text" class="form-control" required="required" style="width:300px">
+                    <label for="veiculo-anofabricacao">Ano fabricação</label>
+                    <input anofabricacao="veiculo-anofabricacao" id="campo-veiculo-anofabricacao" placeholder="Ano de Fabricação" type="number" min="1945" max="2025" class="mytextbox" required="required" style="width:300px">
 
                 </div>
-</form>
+            </form>
+        </div>
     </div>
-</div>
 </body>
 
