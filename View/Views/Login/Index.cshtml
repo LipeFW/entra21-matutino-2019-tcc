@@ -4,21 +4,23 @@
     <link href="~/Content/theme/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="~/Content/theme/global_assets/images/logo_icon_dark.png" rel="shortcut icon" />
     <title>Login - MCSS</title>
+
+    <script src="~/Content/js/login.js"></script>
 }
 
 <body class="background-img">
     <div id="login">
         <div class="login-tabela">
-            <form action="/home/index" method="post">
+            <form id="login" method="post">
                 <h2 class="titulo text-center">mcss</h2>
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Usuário" required="required">
+                    <input id="usuario" name="usuario" type="text" class="form-control" placeholder="Usuário" required="required">
                 </div>
                 <div class="form-group">
-                    <input type="password" class="form-control" placeholder="Senha" required="required">
+                    <input id="senha" name="senha" type="password" class="form-control" placeholder="Senha" required="required">
                 </div>
                 <div class="form-group">
-                    <button id="entrar" type="submit" class="btn btn-outline-info btn-block">Entrar</button>
+                    <button value="Login" onclick="Login()" id="entrar" type="submit" class="btn btn-outline-info btn-block">Entrar</button>
                 </div>
             </form>
         </div>
