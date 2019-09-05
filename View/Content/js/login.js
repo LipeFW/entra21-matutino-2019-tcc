@@ -4,7 +4,7 @@
     usuario = usuario.toLowerCase();
     var senha = document.getElementsByName('senha')[0].value;
     seha = senha.toLowerCase();
-    if (usuario == "admin" && senha == "admin") {
+    if (usuario == "user" && senha == "pass") {
         done = 1;
     }
     if (done == 0) { alert("Usuário ou senha inválidos"); }
