@@ -13,7 +13,7 @@
     height: auto;
 }
 
-.login-tabela form {
+.login-tabela div#form {
     margin-top: 168px;
     margin-bottom: 15px;
     background: #f0f0f0;
