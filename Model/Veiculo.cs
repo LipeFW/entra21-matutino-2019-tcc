@@ -14,11 +14,9 @@ namespace Model
         [Key, Column("id")]
         public int Id { get; set; }
 
-        [ForeignKey("IdMarca")]
-        public Marca Marca { get; set; }
 
-        [Column("id_marca")]
-        public int IdMarca { get; set; }
+        [Column("marca")]
+        public string Marca{ get; set; }
 
         [Column("modelo")]
         public string Modelo { get; set; }
