@@ -14,11 +14,9 @@ namespace Model
         [Key, Column("id")]
         public int Id { get; set; }
 
-        [ForeignKey("IdMarca")]
-        public Marca Marca { get; set; }
 
-        [Column("id_marca")]
-        public int IdMarca { get; set; }
+        [Column("marca")]
+        public string Marca{ get; set; }
 
         [Column("modelo")]
         public string Modelo { get; set; }
@@ -29,7 +27,7 @@ namespace Model
         [Column("numero_caminhao")]
         public int NumeroCaminhao { get; set; }
 
-        [Column("regitro_ativo")]
+        [Column("registro_ativo")]
         public bool RegistroAtivo { get; set; }
 
         [Column("placa")]

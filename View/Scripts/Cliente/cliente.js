@@ -9,6 +9,7 @@
             { 'data': 'Nome' },
             { 'data': 'Telefone' },
             { 'data': 'CNPJ' },
+            { 'data': 'CPF'},
             { 'data': 'CEP' },
             { 'data': 'Vendedor.Nome'},
             {
@@ -23,17 +24,18 @@
         $nome = $('#cliente-campo-nome').val();
         $telefone = $('#cliente-campo-telefone').val();
         $cnpj = $('#cliente-campo-cnpj').val();
+        $cpf = $('#cliente-campo-cpf').val();
         $cep = $('#cliente-campo-cep').val();
         $vendedor = $('#cliente-campo-vendedor').val();
 
         if ($idAlterar == -1) {
-            inserir($nome, $telefone, $cnpj, $cep, $vendedor);
+            inserir($nome, $telefone, $cnpj, $cpf, $cep, $vendedor);
         }
 
         else {
-            alterar($nome, $telefone, $cnpj, $cep, $vendedor);
+            alterar($nome, $telefone, $cnpj, $cpf, $cep, $vendedor);
         }
-        function alterar($nome, $telefone, $cnpj, $cep, $vendedor) {
+        function alterar($nome, $telefone, $cnpj, $cpf, $cep, $vendedor) {
             $.ajax({
                 url: 'http://localhost:51242/cliente/update',
                 method: 'post',
@@ -42,6 +44,7 @@
                     nome: $nome,
                     telefone: $telefone,
                     cnpj: $cnpj,
+                    cpf: $cpf,
                     cep: $cep,
                     vendedor: $vendedor
                 },
@@ -64,6 +67,7 @@
                     nome: $nome,
                     telefone: $telefone,
                     cnpj: $cnpj,
+                    cpf: $cpf,
                     cep: $cep,
                     vendedor: $vendedor
                 },

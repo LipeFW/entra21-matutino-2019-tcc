@@ -78,6 +78,7 @@ namespace View.Controllers
                     vendedor = cliente.Vendedor.Nome,
                     cnpj = cliente.CNPJ,
                     cpf = cliente.CPF,
+                    cep = cliente.CEP,
                     nome = cliente.Nome,
                     telefone = cliente.Telefone,
                     registro = cliente.RegistroAtivo

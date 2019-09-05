@@ -18,11 +18,51 @@ namespace View.Controllers
             repository = new ProdutoRepository();
         }
 
+        public ActionResult Index()
+        {
+            return View();
+        }
+
+        [HttpGet, Route("obtertodos")]
+        public JsonResult ObterTodos()
+        {
+            var produtos = repository.ObterTodos();
+            var resultado = new { data = produtos };
+            return Json(resultado, JsonRequestBehavior.AllowGet);
+        }
+
+
+        [HttpPost]
+        public JsonResult Inserir(Produto produto)
+        {
+            produto.RegistroAtivo = true;
+            var id = repository.Inserir(produto);
+            var resultado = new { id = id };
+            return Json(resultado);
+        }
+
+        [HttpGet, Route("apagar")]
+        public JsonResult Apagar(int id)
+        {
+            var apagou = repository.Apagar(id);
+            var resultado = new { status = apagou };
+            return Json(resultado, JsonRequestBehavior.AllowGet);
+        }
+
+        [HttpPost, Route("update")]
+        public JsonResult Update(Produto produto)
+        {
+            var alterou = repository.Alterar(produto);
+            var resultado = new { status = alterou };
+            return Json(resultado, JsonRequestBehavior.AllowGet);
+        }
+
         [HttpGet, Route("obterpeloid")]
         public JsonResult ObterPeloId(int id)
         {
             return Json(repository.ObterPeloId(id), JsonRequestBehavior.AllowGet);
         }
+
         [HttpGet, Route("obtertodosselect2")]
         public JsonResult ObterTodosSelect2(string term)
         {
@@ -54,43 +94,9 @@ namespace View.Controllers
             return RedirectToAction("Editar", new { id = id });
         }
 
-        [HttpGet, Route("obtertodos")]
-        public JsonResult ObterTodos()
-        {
-            var produtos = repository.ObterTodos();
-            var resultado = new { data = produtos };
-            return Json(resultado, JsonRequestBehavior.AllowGet);
-        }
 
-        [HttpGet, Route("apagar")]
-        public JsonResult Apagar(int id)
-        {
-            var apagou = repository.Apagar(id);
-            var resultado = new { status = apagou };
-            return Json(resultado, JsonRequestBehavior.AllowGet);
-        }
 
-        [HttpPost, Route("update")]
-        public JsonResult Update(Produto produto)
-        {
-            var alterou = repository.Alterar(produto);
-            var resultado = new { status = alterou };
-            return Json(resultado, JsonRequestBehavior.AllowGet);
-        }
 
-        [HttpPost]
-        public JsonResult Inserir(Produto produto)
-        {
-            produto.RegistroAtivo = true;
-            var id = repository.Inserir(produto);
-            var resultado = new { id = id };
-            return Json(resultado);
-        }
-
-        public ActionResult Index()
-        {
-            return View();
-        }
 
         public ActionResult Cadastro()
         {
