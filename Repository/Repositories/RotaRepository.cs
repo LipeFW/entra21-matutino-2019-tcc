@@ -2,6 +2,7 @@
 using Repository.Interface;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -65,7 +66,7 @@ namespace Repository.Repositories
 
         public List<Rota> ObterTodos()
         {
-            return context.Rotas.Where(x => x.RegistroAtivo == true).OrderBy(x => x.Id).ToList();
+            return context.Rotas.Where(x => x.RegistroAtivo == true).OrderBy(x => x.Id).Include("Vendedor"). ToList();
         }
     }
 

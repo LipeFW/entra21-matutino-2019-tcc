@@ -1,4 +1,5 @@
 ﻿$(function () {
+
     $("#btnPT").on("click", function () {
         $("#btnPT").addClass("active");
         $("#btnEN").removeClass("active");

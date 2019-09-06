@@ -3,25 +3,28 @@
     ViewBag.Title = "Veículo";
 }
 <link rel="stylesheet" type="text/css" href="~/Content/css/tabela/util.css" />
-<h3 class="text-center  mb-3 mt-3 text-info">Lista de Veiculos</h3>
+
+<div>
+
+    <h2 class="text-center">Veículos</h2>
+    <a class="btn btn-primary mb-3 float-right" href="/venda/cadastro">Novo Veículo</a>
+
+    <table class="table table-bordered table-hover table-striped" id="veiculo-tabela">
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Ano Fabricação</th>
+                <th>Número Caminhão</th>
+                <th>Placa</th>
+                <th>Ação</th>
+            </tr>
+        </thead>
+    </table>
+</div>
 
 
-<table class="table table-bordered table-hover table-striped" id="veiculo-tabela">
-    <thead>
-        <tr>
-            <th>Código</th>
-            <th>Marca</th>
-            <th>Modelo</th>
-            <th>Ano Fabricação</th>
-            <th>Número Caminhão</th>
-            <th>Placa</th>
-            <th>Ação</th>
-        </tr>
-    </thead>
-</table>
-
-
-
-@section js{
-    <script src="~/Scripts/Veiculo/veiculo.js"></script>
-}
+    @section js{
+        <script src="~/Scripts/Veiculo/veiculo.js"></script>
+    }

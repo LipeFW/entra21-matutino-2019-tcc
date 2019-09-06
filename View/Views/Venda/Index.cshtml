@@ -2,26 +2,29 @@
 @{
     ViewBag.Title = "Venda";
 }
+
 <link rel="stylesheet" type="text/css" href="~/Content/css/tabela/util.css" />
-<h3 class="text-centet text-info mb-3 mt-3">Lista de Vendas</h3>
-<title>Lista Venda</title>
 
 
-<table id="vendas-index" class="table table-striped table-bordered table-hover">
-    <thead>
-        <tr>
-            <th>Código</th>
-            <th>Quantidade</th>
-            <th>Vendedor</th>
-            <th>Cliente</th>
-            <th>Produto</th>
-            <th>Total</th>
-            <th>Desconto</th>
-            <th>Ação</th>
-        </tr>
-    </thead>
-</table>
+<div>
 
+    <h2 class="text-center">Vendas</h2>
+<a class="btn btn-primary mb-3 float-right" href="/venda/cadastro">Nova Venda</a>
+    <table id="vendas-index" class="table table-striped table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Quantidade</th>
+                <th>Vendedor</th>
+                <th>Cliente</th>
+                <th>Produto</th>
+                <th>Total</th>
+                <th>Desconto</th>
+                <th>Ação</th>
+            </tr>
+        </thead>
+    </table>
+</div>
 @section js{
     <script src="~/Scripts/Venda/venda.js"></script>
 }

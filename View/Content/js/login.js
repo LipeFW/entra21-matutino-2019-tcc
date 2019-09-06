@@ -3,7 +3,8 @@
     var usuario = document.getElementsByName('usuario')[0].value;
     usuario = usuario.toLowerCase();
     var senha = document.getElementsByName('senha')[0].value;
-    seha = senha.toLowerCase();
+    senha = senha.toLowerCase();
+
 
     //#region Usuarios
     // User: Illan
