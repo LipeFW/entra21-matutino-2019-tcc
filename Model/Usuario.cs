@@ -15,7 +15,7 @@
          public int Id { get; set; }
  
          [Column("nome")]
-         public string Login { get; set; }
+         public string Nome { get; set; }
  
          [Column("senha")]
          public string Senha { get; set; }

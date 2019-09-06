@@ -75,7 +75,7 @@ namespace View.Controllers
                 usuariosSelect2.Add(new
                 {
                     id = usuario.Id,
-                    login = usuario.Login,
+                    nome = usuario.Nome,
                     senha = usuario.Senha,
                     registro = usuario.RegistroAtivo
 

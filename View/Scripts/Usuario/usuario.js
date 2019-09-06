@@ -7,7 +7,7 @@
         serverSide: true,
         columns: [
             { "data": "Id" },
-            { "data": "Login" },
+            { "data": "Nome" },
             { "data": "Senha" },
             {
                 render: function (data, type, row) {
