@@ -1,7 +1,7 @@
 ﻿$(function () {
     $idAlterar = -1;
 
-    $tabelaVenda = $('#vendas-index').DataTable({
+    $tabelaVenda = $('#venda-tabela').DataTable({
         ajax: 'http://localhost:51242/Venda/obtertodos',
         serverSide: true,
         Columns: [
@@ -61,7 +61,7 @@
 
     function inserir($quantidade, $vendedor, $cliente, $total, $desconto) {
         $.ajax({
-            url: 'http://localhost:51242/Venda/update',
+            url: 'http://localhost:51242/Venda/inserir',
             method: 'post',
             data: {
                 quantidade: $quantidade,

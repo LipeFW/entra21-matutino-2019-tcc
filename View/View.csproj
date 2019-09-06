@@ -2717,6 +2717,9 @@
     <Content Include="Views\Usuario\UsuarioModal.cshtml" />
     <Content Include="Views\Categoria\CategoriaModal.cshtml" />
     <Content Include="Views\Cliente\ClienteModal.cshtml" />
+    <Content Include="Views\Veiculo\VeiculoModal.cshtml" />
+    <Content Include="Views\Produto\ProdutoModal.cshtml" />
+    <Content Include="Views\Venda\VendaModal.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

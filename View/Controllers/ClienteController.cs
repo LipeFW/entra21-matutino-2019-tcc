@@ -33,7 +33,7 @@ namespace View.Controllers
             return Json(resultado, JsonRequestBehavior.AllowGet);
         }
 
-        [HttpPost]
+        [HttpPost,Route("inserir")]
         public JsonResult Inserir(Cliente cliente)
         {
             cliente.RegistroAtivo = true;
@@ -42,7 +42,7 @@ namespace View.Controllers
             return Json(resultado);
         }
 
-        [HttpGet]
+        [HttpGet, Route("apagar")]
         public JsonResult Apagar(int id)
         {
             var apagou = repository.Apagar(id);
@@ -50,7 +50,7 @@ namespace View.Controllers
             return Json(resultado, JsonRequestBehavior.AllowGet);
         }
 
-        [HttpPost]
+        [HttpPost, Route("update")]
         public JsonResult Update(Cliente cliente)
         {
             var alterou = repository.Alterar(cliente);
@@ -75,12 +75,12 @@ namespace View.Controllers
                 clientesSelect2.Add(new
                 {
                     id = cliente.Id,
-                    vendedor = cliente.Vendedor.Nome,
-                    cnpj = cliente.CNPJ,
-                    cpf = cliente.CPF,
-                    cep = cliente.CEP,
                     nome = cliente.Nome,
                     telefone = cliente.Telefone,
+                    cpf = cliente.CPF,
+                    cep = cliente.CEP,
+                    cnpj = cliente.CNPJ,
+                    id_vendedor = cliente.IdVendedor,
                     registro = cliente.RegistroAtivo
 
                 });

@@ -2,6 +2,7 @@
 using Repository.Interface;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -45,7 +46,7 @@ namespace Repository.Repositories
 
         public List<Produto> ObterTodos()
         {
-            return context.Produtos.Where(x => x.RegistroAtivo).ToList();
+            return context.Produtos.Where(x => x.RegistroAtivo).Include("Categoria").ToList();
         }
 
         public bool Alterar(Produto produto)

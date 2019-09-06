@@ -7,7 +7,10 @@
 <div>
 
     <h2 class="text-center">Veículos</h2>
-    <a class="btn btn-primary mb-3 float-right" href="/venda/cadastro">Novo Veículo</a>
+    <button data-toggle="modal" data-target="#modal-veiculo"
+            class="btn btn-primary float-right mb-2">
+        Novo Veículo
+    </button>
 
     <table class="table table-bordered table-hover table-striped" id="veiculo-tabela">
         <thead>
@@ -23,8 +26,8 @@
         </thead>
     </table>
 </div>
+@RenderPage("VeiculoModal.cshtml")
 
-
-    @section js{
-        <script src="~/Scripts/Veiculo/veiculo.js"></script>
-    }
+@section js{
+    <script src="~/Scripts/Veiculo/veiculo.js"></script>
+}

@@ -32,7 +32,7 @@ namespace View.Controllers
         }
 
 
-        [HttpPost]
+        [HttpPost, Route("inserir")]
         public JsonResult Inserir(Produto produto)
         {
             produto.RegistroAtivo = true;
@@ -78,7 +78,7 @@ namespace View.Controllers
                     categoria = produto.IdCategoria,
                     quantidade = produto.QuantidadeProdutos,
                     valor = produto.ValorUnitario,
-                    codigo_barra = produto.CodigoBarra,
+                    codigobarra = produto.CodigoBarra,
                     registro = produto.RegistroAtivo
 
                 });
@@ -87,27 +87,7 @@ namespace View.Controllers
             return Json(resultado, JsonRequestBehavior.AllowGet);
         }
 
-        [HttpPost, Route("cadastrar")]
-        public ActionResult Cadastro(Produto produto)
-        {
-            int id = repository.Inserir(produto);
-            return RedirectToAction("Editar", new { id = id });
-        }
-
-
-
-
-
-        public ActionResult Cadastro()
-        {
-            CategoriaRepository categoriaRepository = new CategoriaRepository();
-            List<Categoria> categorias = categoriaRepository.ObterTodos();
-            ViewBag.Categorias = categorias;
-
-            return View();
-        }
-
-        [HttpGet]
+        [HttpGet, Route("editar")]
         public ActionResult Editar(int id)
         {
             var produto = repository.ObterPeloId(id);

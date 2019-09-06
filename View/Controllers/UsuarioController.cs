@@ -42,7 +42,7 @@ namespace View.Controllers
             return Json(resultado,JsonRequestBehavior.AllowGet);
         }
 
-        [HttpGet]
+        [HttpGet, Route("apagar")]
         public JsonResult Apagar(int id)
         {
             var apagou = repository.Apagar(id);
@@ -50,7 +50,7 @@ namespace View.Controllers
             return Json(resultado, JsonRequestBehavior.AllowGet);
         }
 
-        [HttpPost]
+        [HttpPost, Route("update")]
         public JsonResult Update(Usuario usuario)
         {
             var alterou = repository.Alterar(usuario);

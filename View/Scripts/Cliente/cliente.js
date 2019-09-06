@@ -1,4 +1,5 @@
 ﻿$(function () {
+
     $idAlterar = -1;
 
     $tabelaCliente = $('#cliente-tabela').DataTable({
@@ -59,7 +60,7 @@
             })
         }
 
-        function inserir($nome, $telefone, $cnpj, $cep, $vendedor) {
+        function inserir($nome, $telefone, $cnpj, $cpf, $cep, $vendedor) {
             $.ajax({
                 url: 'http://localhost:51242/cliente/inserir',
                 method: 'post',
@@ -106,6 +107,7 @@
                 $('#cliente-campo-nome').val(data.Nome);
                 $('#cliente-campo-telefone').val(data.Telefone);
                 $('#cliente-campo-cnpj').val(data.Cnpj);
+                $('#cliente-campo-cpf').val(data.Cpf);
                 $('#cliente-campo-cep').val(data.Cep);
                 $('#cliente-campo-vendedor').val(data.Vendedor)
                 $('#modal-cliente').modal('show');
