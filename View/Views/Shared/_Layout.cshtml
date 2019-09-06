@@ -174,14 +174,14 @@
                         <!-- Main -->
                         <li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Menu</div> <i class="icon-menu" title="Main"></i></li>
                         <li class="nav-item">
-                            <a href="/home/index" class="nav-link active"><i class="fas fa-suitcase"></i><span id="inicioText">Início</span></a>
+                            <a href="/home/index" class="nav-link active"><i class="fas fa-home"></i><span id="inicioText">Início</span></a>
                         </li>
                         <!-- Usuário -->
                         <li class="nav-item nav-item-submenu">
                             <a href="#" class="nav-link"><i class="fas fa-user"></i> <span id="usuarioText">Usuário</span></a>
                             <ul class="nav nav-group-sub" data-submenu-title="Usuário">
-                                <li class="nav-item"><a href="/usuario/index" class="nav-link active">Lista</a></li>
-                                <li class="nav-item"><a href="/usuario/cadastro" class="nav-link active">Cadastro</a></li>
+                                <li class="nav-item"><a href="/usuario/index" class="nav-link ">Lista</a></li>
+                                <li class="nav-item"><a href="/usuario/cadastro" class="nav-link ">Cadastro</a></li>
                             </ul>
                         </li>
                         <!-- /Usuário -->
@@ -189,8 +189,7 @@
                         <li class="nav-item nav-item-submenu">
                             <a href="#" class="nav-link"><i class="icon-clipboard"></i><span id="categoriaText">Categoria</span></a>
                             <ul class="nav nav-group-sub" data-submenu-title="Categoria">
-                                <li class="nav-item"><a href="/categoria/index" class="nav-link active">Lista</a></li>
-                                <li class="nav-item"><a href="/categoria/cadastro" class="nav-link active">Cadastro</a></li>
+                                <li class="nav-item"><a href="/categoria/index" class="nav-link ">Lista</a></li>
                             </ul>
                         </li>
                         <!-- /Categoria -->
@@ -198,17 +197,17 @@
                         <li class="nav-item nav-item-submenu">
                             <a href="#" class="nav-link"><i class="fas fa-user-tie"></i><span>Cliente</span></a>
                             <ul class="nav nav-group-sub" data-submenu-title="Cliente">
-                                <li class="nav-item"><a href="/cliente/index" class="nav-link active">Lista</a></li>
-                                <li class="nav-item"><a href="/cliente/cadastro" class="nav-link active">Cadastro</a></li>
+                                <li class="nav-item"><a href="/cliente/index" class="nav-link ">Lista</a></li>
                             </ul>
                         </li>
                         <!-- /Cliente -->
                         <!-- Veículo -->
                         <li class="nav-item nav-item-submenu">
-                            <a href="#" class="nav-link"><i class="icon-truck"></i><span id="veiculoText">Veículos</span></a>
+                            <a href="#" class="nav-link"><i class="icon-truck"></i><span id="veiculoText">Frota</span></a>
                             <ul class="nav nav-group-sub" data-submenu-title="Veículo">
-                                <li class="nav-item"><a href="/veiculo/index" class="nav-link">Lista</a></li>
-                                <li class="nav-item"><a href="/veiculo/cadastro" class="nav-link active">Cadastro</a></li>
+                                <li class="nav-item"><a href="/veiculo/index" class="nav-link">Veículos</a></li>
+                                <li class="nav-item"><a href="/veiculo/cadastro" class="nav-link">Marcas</a></li>
+                                <li class="nav-item"><a href="/veiculo/cadastro" class="nav-link">Modelos</a></li>
                             </ul>
                         </li>
                         <!-- /Veículo -->
@@ -217,7 +216,6 @@
                             <a href="#" class="nav-link"><i class="fas fa-road"></i><span>Rota</span></a>
                             <ul class="nav nav-group-sub" data-submenu-title="Rota">
                                 <li class="nav-item"><a href="/rota/index" class="nav-link">Lista</a></li>
-                                <li class="nav-item"><a href="/rota/cadastro" class="nav-link">Cadastro</a></li>
                             </ul>
                         </li>
                         <!-- /Rota-->
@@ -226,7 +224,6 @@
                             <a href="#" class="nav-link"><i class="fas fa-box-open"></i><span id="produtoText">Produto</span></a>
                             <ul class="nav nav-group-sub" data-submenu-title="Produto">
                                 <li class="nav-item"><a href="/produto/index" class="nav-link">Lista</a></li>
-                                <li class="nav-item"><a href="/produto/cadastro" class="nav-link">Cadastro</a></li>
                             </ul>
                         </li>
                         <!-- /Produto-->
@@ -235,7 +232,6 @@
                             <a href="#" class="nav-link"><i class="far fa-address-card"></i><span>Vendedor</span></a>
                             <ul class="nav nav-group-sub" data-submenu-title="Vendedor">
                                 <li class="nav-item"><a href="/vendedor/index" class="nav-link">Lista</a></li>
-                                <li class="nav-item"><a href="/venderor/cadastro" class="nav-link">Cadastro</a></li>
                             </ul>
                         </li>
                         <!-- /Vendedor-->
@@ -244,7 +240,6 @@
                             <a href="#" class="nav-link"><i class="fas fa-suitcase"></i><span>Venda</span></a>
                             <ul class="nav nav-group-sub" data-submenu-title="Venda">
                                 <li class="nav-item"><a href="/venda/index" class="nav-link">Lista</a></li>
-                                <li class="nav-item"><a href="/venda/cadastro" class="nav-link">Cadastro</a></li>
                                 <li class="nav-item"><a href="/notafiscal/index" class="nav-link">Nota Fiscal</a></li>
                             </ul>
                         </li>
@@ -265,7 +260,7 @@
             <div class="content pt-0">
 
                 <!-- Main charts -->
-                <div class="row">
+                <div class="row ml-5 mr-0">
                     @RenderBody()
                 </div>
                 <!-- /main charts -->
