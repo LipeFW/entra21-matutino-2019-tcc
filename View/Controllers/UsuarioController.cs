@@ -33,13 +33,13 @@ namespace View.Controllers
             return Json(resultado, JsonRequestBehavior.AllowGet);
         }
 
-        [HttpPost]
+        [HttpPost, Route("inserir")]
         public JsonResult Inserir(Usuario usuario)
         {
             usuario.RegistroAtivo = true;
             var id = repository.Inserir(usuario);
             var resultado = new { id = id };
-            return Json(resultado);
+            return Json(resultado,JsonRequestBehavior.AllowGet);
         }
 
         [HttpGet]

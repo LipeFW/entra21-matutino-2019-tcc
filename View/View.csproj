@@ -2715,6 +2715,7 @@
     <Content Include="Views\Conta\Config.cshtml" />
     <Content Include="Views\Conta\Perfil.cshtml" />
     <Content Include="Views\Usuario\UsuarioModal.cshtml" />
+    <Content Include="Views\Categoria\CategoriaModal.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

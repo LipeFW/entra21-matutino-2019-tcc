@@ -26,11 +26,12 @@ namespace View.Controllers
             return Json(resultado, JsonRequestBehavior.AllowGet);
         }
 
-        [HttpPost, Route("cadastro")]
-        public ActionResult Cadastro(Categoria categoria)
+        [HttpPost, Route("inserir")]
+        public ActionResult Inserir(Categoria categoria)
         {
+            categoria.RegistroAtivo = true;
             var id = repository.Inserir(categoria);
-            var resultado = new { };
+            var resultado = new {id = id };
             return Json(resultado,
               JsonRequestBehavior.AllowGet);
         }

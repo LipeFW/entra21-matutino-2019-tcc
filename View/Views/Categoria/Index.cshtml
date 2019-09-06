@@ -5,7 +5,10 @@
 <div>
 
     <h2 class="text-center">Categorias</h2>
-    <a class="btn btn-primary mb-3 float-right" href="/venda/cadastro">Nova Categoria</a>
+    <button data-toggle="modal" data-target="#modal-categoria"
+            class="btn btn-primary float-right mb-2">
+        Nova Categoria
+    </button>
 
     <table id="categoria-tabela" class="table table-hover table-striped table-bordered">
         <thead>
@@ -17,6 +20,8 @@
         </thead>
     </table>
 </div>
-    @section js{
-        <script src="~/Scripts/Categoria/categoria.js"></script>
-    }
+
+@RenderPage("CategoriaModal.cshtml")
+@section js{
+    <script src="~/Scripts/Categoria/categoria.js"></script>
+}
