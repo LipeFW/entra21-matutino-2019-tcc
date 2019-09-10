@@ -8,7 +8,7 @@
         columns: [
             { "data": "Id" },
             { "data": "Nome" },
-            { "data": "Categoria" },
+            { "data": "Categoria.Nome" },
             { "data": "CodigoBarra" },
             { "data": "QuantidadeProdutos" },
             { "data": "ValorUnitario"},

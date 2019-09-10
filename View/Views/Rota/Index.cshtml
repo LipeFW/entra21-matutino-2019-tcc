@@ -6,7 +6,10 @@
 <div>
 
     <h2 class="text-center">Rotas</h2>
-    <a class="btn btn-primary mb-3 float-right" href="/venda/cadastro">Nova Rota</a>
+    <button data-toggle="modal" data-target="#modal-rota"
+            class="btn btn-primary float-right mb-2">
+        Nova Rota
+    </button>
 
     <table id="rota-tabela" class="table table-hover table-bordered table-striped">
         <thead>
@@ -21,7 +24,7 @@
 </div>
 
 
-
+@RenderPage("RotaModal.cshtml")
 
 @section js{
     <script src="~/Scripts/Rota/rota.js">

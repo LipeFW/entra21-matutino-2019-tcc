@@ -19,11 +19,6 @@ namespace View.Controllers
             repository = new ClienteRepository();
         }
 
-        [HttpGet]
-        public ActionResult Index()
-        {
-            return View();
-        }
 
         public ActionResult Cadastro()
         {
@@ -81,29 +76,19 @@ namespace View.Controllers
             return Json(repository.ObterPeloId(id), JsonRequestBehavior.AllowGet);
         }
 
-        [HttpGet, Route("obtertodosselect2")]
-        public JsonResult ObterTodosSelect2(string term)
+        [HttpGet]
+        public ActionResult Index()
         {
-            var clientes = repository.ObterTodos();
+            return View();
+        }
 
-            List<object> clientesSelect2 = new List<object>();
-            foreach (Cliente cliente in clientes)
-            {
-                clientesSelect2.Add(new
-                {
-                    id = cliente.Id,
-                    nome = cliente.Nome,
-                    telefone = cliente.Telefone,
-                    cpf = cliente.CPF,
-                    cep = cliente.CEP,
-                    cnpj = cliente.CNPJ,
-                    id_vendedor = cliente.IdVendedor,
-                    registro = cliente.RegistroAtivo
+        public ActionResult Cadastrar()
+        {
+            VendedorRepository vendedorRepository = new VendedorRepository();
+            List<Vendedor> vendedores = vendedorRepository.ObterTodos();
+            ViewBag.Vendedores = vendedores;
 
-                });
-            }
-            var resultado = new { results = clientesSelect2 };
-            return Json(resultado, JsonRequestBehavior.AllowGet);
+            return View();
         }
     }
 }
