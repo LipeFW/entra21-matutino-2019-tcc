@@ -1,13 +1,13 @@
 ﻿$(function () {
     $idAlterar = -1;
 
-    $tabelaVeiculo = $('#vendedor-index').DataTable({
+    $tabelaVendedor = $('#vendedor-tabela').DataTable({
         ajax: 'http://localhost:51242/vendedor/obtertodos',
         serverSide: true,
         columns: [
             { 'data': 'Id' },
             { 'data': 'Nome' },
-            { 'data': 'Usuario.Login' },
+            { 'data': 'Usuario.Nome' },
             { 'data': 'Veiculo.Modelo'},
             {
                 render: function (data, type, row) {
@@ -19,9 +19,9 @@
     });
 
     $('#vendedor-botao-salvar').on('click', function () {
+        $nome = $('#vendedor-campo-nome')
         $usuario = $('#vendedor-campo-usuario').val();
         $mdodelo = $('#vendedor-campo-veiculo').val();
-        $nome = $('#vendedor-campo-nome')
 
         if ($idAlterar == -1) {
             inserir($usuario, $veiculo);

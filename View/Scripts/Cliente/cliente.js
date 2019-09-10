@@ -77,7 +77,7 @@
                     cnpj: $cnpj,
                     cpf: $cpf,
                     cep: $cep,
-                    vendedor: $vendedor
+                    vendedor: $vendedor.nome
                 },
                 success: function (data) {
                     $('#modal-cliente').modal('hide');
