@@ -1,5 +1,7 @@
 ﻿ DROP TABLE IF EXISTS notas_fiscais, rotas, vendas, clientes,vendedores, rotas, produtos, veiculos, modelos, categorias, marcas, usuarios;
  
+
+
  CREATE TABLE usuarios( 
  id INT PRIMARY KEY IDENTITY(1,1),
  nome VARCHAR(100),
@@ -18,6 +20,14 @@
   
  INSERT INTO categorias(nome,registro_ativo)
  VALUES ('Bebidas', 1);
+
+ CREATE TABLE marcas( 
+ id INT PRIMARY KEY IDENTITY(1,1),
+ nome VARCHAR(100),
+ registro_ativo BIT);
+  
+ INSERT INTO marcas(nome,registro_ativo)
+ VALUES ('Ford', 1);
 
   CREATE TABLE veiculos(
  id INT PRIMARY KEY IDENTITY(1,1),
