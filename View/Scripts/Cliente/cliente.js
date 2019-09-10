@@ -29,6 +29,11 @@
         $cep = $('#cliente-campo-cep').val();
         $vendedor = $('#cliente-campo-vendedor').val();
 
+        if (($nome.trim() == "") || ($telefone.trim == "") || ($cnpj == "") || ($cpf == "") || ($cep = "") || ($vendedor.trim == "")){
+            alert("Preencha corretamente os campos!");
+            return null;
+        }
+
         if ($idAlterar == -1) {
             inserir($nome, $telefone, $cnpj, $cpf, $cep, $vendedor);
         }
@@ -36,6 +41,8 @@
         else {
             alterar($nome, $telefone, $cnpj, $cpf, $cep, $vendedor);
         }
+    });
+
         function alterar($nome, $telefone, $cnpj, $cpf, $cep, $vendedor) {
             $.ajax({
                 url: 'http://localhost:51242/cliente/update',
@@ -81,7 +88,6 @@
                 }
             });
         }
-    });
 
 
     $('.table').on('click', '.botao-apagar', function () {
