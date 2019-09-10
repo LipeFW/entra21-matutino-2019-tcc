@@ -20,6 +20,23 @@ namespace View.Controllers
         }
 
 
+        public ActionResult Cadastro()
+        {
+            return View();
+        }
+
+        public ActionResult Editar( int id)
+        {
+            var cliente = repository.ObterPeloId(id);
+            if(cliente == null)
+            {
+                return RedirectToAction("Index");
+            }
+
+            ViewBag.Cliente = cliente;
+            return View();
+        }
+
         [HttpGet, Route("obtertodos")]
         public JsonResult ObterTodos()
         {

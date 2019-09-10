@@ -19,6 +19,11 @@
     $('#categoria-botao-salvar').on('click', function () {
         $nome = $('#categoria-campo-nome').val();
 
+        if ($nome.trim() == "") {
+            alert("Preencha corretamente o campo!");
+            return null;
+        }
+
         if ($idAlterar == -1) {
             inserir($nome);
         } else {
