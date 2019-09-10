@@ -9,8 +9,30 @@
             </div>
             <div class="modal-body">
                 <div class="form-group">
+                    <label for="veiculo-campo-marca">Marca</label>
+                    <select class="form-control" id="veiculo-campo-marca" name="campo-marca">
+                        <option disabled="disabled" selected="selected">Selecione uma marca</option>
+                        @*@foreach(Model.Marca marca in ViewBag.Marcas)
+                        {
+                            <option value="@marca.Id">@marca.Nome</option>
+                        }*@
+                    </select>
+                </div>
+                <div class="form-group">
                     <label for="veiculo-campo-modelo">Modelo</label>
-                    <input id="veiculo-campo-modelo" class="form-control" />
+                    <input class="form-control" name="campo-modelo" id="veiculo-campo-modelo" type="text" required="required">
+                </div>
+                <div class="form-group">
+                    <label for="veiculo-campo-anofabricacao">Ano de fabricação</label>
+                    <input class="form-control" name="campo-anofabricacao" id="veiculo-campo-anofabricacao" type="number" min="1945" max="2020" required="required">
+                </div>
+                <div class="form-group">
+                    <label for="veiculo-campo-numerocaminhao">Numero Do Caminhão</label>
+                    <input class="form-control" name="campo-numerocaminhao" id="veiculo-campo-numerocaminhao" type="text" required="required" />
+                </div>
+                <div class="form-group">
+                    <label for="veiculo-campo-placa">Placa</label>
+                    <input class="form-control" name="campo-placa" id="veiculo-campo-placa" type="text" required="required" />
                 </div>
             </div>
             <div class="modal-footer">

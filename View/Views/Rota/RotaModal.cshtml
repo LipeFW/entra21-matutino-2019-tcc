@@ -9,29 +9,27 @@
             </div>
             <div class="modal-body">
                 <div class="form-group">
-                    <label for="categoria-campo-nome">Nome</label>
-                    <input id="categoria-campo-nome" class="form-control" />
+                    <label for="rota-campo-nome">Nome</label>
+                    <input id="rota-campo-nome" class="form-control" />
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12">
+                <div class="modal-body">
                     <div class="form-group">
-                        <label for="campo-categoria">Vendedor</label>
+                        <label for="rota-vendedor">Vendedor</label>
                         <select class="form-control"
-                                name="vendedor">
+                                name="rota-vendedor">
                             <option disabled="disabled"
                                     selected="selected">
                                 Selecione um vendedor
                             </option>
-                            @foreach (Model.Vendedor vendedor in ViewBag.Vendedores)
+                            @*@foreach (Model.Vendedor vendedor in ViewBag.Vendedores)
                             {
                                 <option value="@vendedor.Id">@vendedor.Nome</option>
-                            }
+                            }*@
 
                         </select>
                     </div>
                 </div>
-            </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Fechar</button>
                 <button type="button" class="btn btn-success" id="categoria-botao-salvar">Salvar</button>

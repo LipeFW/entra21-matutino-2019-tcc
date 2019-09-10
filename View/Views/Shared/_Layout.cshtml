@@ -13,9 +13,6 @@
     <link rel="stylesheet" type="text/css" href="~/Content/css/tabela/util.css" />
     <link href="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" type="text/javascript" />
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.min.js"></script>
-
     <!-- Global stylesheets -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
     <link href="~/Content/theme/global_assets/css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
@@ -44,6 +41,7 @@
     <script src="~/Content/theme/global_assets/js/demo_pages/dashboard.js"></script>
 
     <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet" />
+
     <!-- /theme JS files -->
     @RenderSection("css", false)
 </head>
@@ -113,7 +111,7 @@
                 <li class="nav-item dropdown dropdown-user">
                     <a href="#" class="navbar-nav-link d-flex align-items-center dropdown-toggle" data-toggle="dropdown">
                         <img src="~/Content/theme/global_assets/images/placeholders/user.png" class="rounded-circle mr-2" height="34" alt="">
-                        <span name="usuarioNome" id="usuarioNome">Usuário</span>
+                        <span name="usuarioNome" id="usuarioNome"></span>
                     </a>
 
                     <div class="dropdown-menu dropdown-menu-right">
@@ -159,7 +157,7 @@
                             </div>
 
                             <div class="media-body">
-                                <div class="media-title font-weight-semibold"><span id="nomeText">Rodrigo Sousa Cunha</span></div>
+                                <div class="media-title font-weight-semibold"><span id="nomeText"></span></div>
                                 <div class="font-size-xs opacity-50">
                                     <i class="icon-pin font-size-sm"></i> &nbsp;Blumenau - SC, Brasil
                                 </div>
@@ -206,11 +204,9 @@
                         <!-- /Cliente -->
                         <!-- Veículo -->
                         <li class="nav-item nav-item-submenu">
-                            <a href="#" class="nav-link"><i class="icon-truck"></i><span id="veiculoText">Frota</span></a>
+                            <a href="#" class="nav-link"><i class="icon-truck"></i><span id="veiculoText">VEÍCULOOOOOOOOO</span></a>
                             <ul class="nav nav-group-sub" data-submenu-title="Veículo">
                                 <li class="nav-item"><a href="/veiculo/index" class="nav-link">Veículos</a></li>
-                                <li class="nav-item"><a href="/marca/index" class="nav-link">Marcas</a></li>
-                                <li class="nav-item"><a href="/modelo/index" class="nav-link">Modelos</a></li>
                             </ul>
                         </li>
                         <!-- /Veículo -->
@@ -301,6 +297,10 @@
     <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
     @RenderSection("js", false)
 
+    <script type="text/javascript">
+        document.getElementById("usuarioNome").innerHTML = localStorage.getItem("username");
+        document.getElementById("nomeText").innerHTML = localStorage.getItem("username");
+    </script>
 </body>
 </html>
 
