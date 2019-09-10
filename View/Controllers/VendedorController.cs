@@ -12,10 +12,14 @@ namespace View.Controllers
     public class VendedorController : Controller
     {
         private VendedorRepository repository;
+        private VeiculoRepository repositoryVeiculo;
+        private UsuarioRepository repositoryUsuario;
 
         public VendedorController()
         {
             repository = new VendedorRepository();
+            repositoryUsuario = new UsuarioRepository();
+            repositoryVeiculo = new VeiculoRepository();
         }
 
         [HttpGet, Route("obtertodos")]
@@ -51,6 +55,10 @@ namespace View.Controllers
 
         public ActionResult Index()
         {
+            List<Veiculo> veiculos = repositoryVeiculo.ObterTodos();
+            ViewBag.Veiculos = veiculos;
+            List<Usuario> usuarios = repositoryUsuario.ObterTodos();
+            ViewBag.Usuarios = usuarios;
             return View();
         }
 
