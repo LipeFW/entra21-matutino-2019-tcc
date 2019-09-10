@@ -36,7 +36,7 @@ namespace View.Controllers
               JsonRequestBehavior.AllowGet);
         }
 
-        [HttpPost, Route("update")]
+        [HttpPost, Route("editar")]
         public JsonResult Editar(Categoria categoria)
         {
             var alterou = repository.Alterar(categoria);
