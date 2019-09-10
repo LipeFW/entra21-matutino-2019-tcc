@@ -18,88 +18,42 @@
         ]
     });
 
-    $('#vendedor-botao-salvar').on('click', function () {
-        $nome = $('#vendedor-campo-nome')
+    $('vendedor-botao-salvar').on("click", function () {
+        $nome = $('#vendedor-campo-nome').val();
         $usuario = $('#vendedor-campo-usuario').val();
-        $mdodelo = $('#vendedor-campo-veiculo').val();
+        $veiculo = $('#vendedor-campo-veiculo').val();
+
+        if (($nome.trim() == "") || ($usuario == -1) || ($veiculo == -1)) {
+            alert("Preencha corretamente todos os campos")
+            return null;
+        }
 
         if ($idAlterar == -1) {
-            inserir($usuario, $veiculo);
-        } else {
-            alterar($usuario, $veiculo);
+            inserir($nome, $usuario, $veiculo);
         }
+        else {
+            alterar($ome, $usuario, $veiculo);
+        }
+
     });
 
-    function alterar($usuario, $veiculo) {
+    function alterar($nome, $usuario, $veiculo) {
         $.ajax({
             url: 'http://localhost:51242/vendedor/update',
             method: 'post',
             data: {
-                id: $isAlterar,
+                id: $idAlterar,
+                nome: $nome,
                 usuario: $usuario,
-                veiculo: $veiculo,
-
+                veiculo: $veiculo
             },
             success: function (data) {
-                $('modal-vendedor').modal('hide');
+                $('#modal-vendedor').modal('hide');
                 $idAlterar = -1;
-                $tabelaVeiculo.ajax.reload();
+                $tabelaVendedor.ajax.reload();
             },
             error: function (err) {
-                alert('Não foi possivel alterar');
+                alert("Não foi possivel alterar");
             }
-        });
+        })
     }
-
-    function inserir($usuario, $veiculo) {
-        $.ajax({
-            url: 'http://localhost:51242/vendedor/inserir',
-            method: 'post',
-            data: {
-                id: $isInserir,
-                usuario: $usuario,
-                veiculo: $veiculo,
-
-            },
-            success: function (data) {
-                $('modal-vendedor').modal('hide');
-                $tabelaVeiculo.ajax.reload();
-            },
-            error: function (err) {
-                alert('Não foi possivel inserir');
-            }
-        });
-    }
-
-    $('.table').on('click', '.botao-apagar', function () {
-        $idApagar = $(this).data('id');
-
-        $.ajax({
-            url: 'http://localhost:51242/vendedor/apagar?id=' + $idApagar,
-            method: 'get',
-            success: function (data) {
-                $tabelaVeiculo.ajax.reload();
-            },
-            error: function (err) {
-                alert('Não foi possivel apagar');
-            }
-        });
-    });
-
-    $('.table').on('click', '.botao-editar', function () {
-        $idAlterar = $(this).data('id');
-
-        $.ajax({
-            url: 'http://localhost:51242/vendedor/editar?id=' + $idAlterar,
-            method: 'get',
-            success: function (data) {
-                $('#vendedor-campo-usuario').val(data.Usuario);
-                $('#vendedor-campo-veiculo').val(data.Veiculo);
-
-            },
-            error: function (err) {
-                alert('Não foi possivel carregar');
-            }
-        });
-    });
-});
