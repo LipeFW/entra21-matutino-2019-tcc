@@ -6,6 +6,8 @@
     senha = senha.toLowerCase();
 
 
+    localStorage.setItem("username", usuario);
+
     //#region Usuarios
     // User: Illan
     if (usuario == "illan" && senha == "illanzoka") {
@@ -43,6 +45,6 @@
 
     if (done == 1) {
         window.location.href = "/home/index";
-
     }
+
 }

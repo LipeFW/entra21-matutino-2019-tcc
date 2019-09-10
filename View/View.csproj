@@ -115,6 +115,8 @@
       <DependentUpon>Database.mdf</DependentUpon>
     </Content>
     <Content Include="Content\css\outros.css" />
+    <Content Include="Content\css\select2.css" />
+    <Content Include="Content\css\select2.min.css" />
     <Content Include="Content\js\lang.js" />
     <Content Include="Content\js\login.js" />
     <Content Include="Content\login\background\background-login.jpg" />
@@ -2653,7 +2655,10 @@
     <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
     <Content Include="Scripts\Marca\marca.js" />
     <Content Include="Scripts\Produto\produto.js" />
+    <Content Include="Scripts\Rota\rota-cadastro.js" />
     <Content Include="Scripts\Rota\rota.js" />
+    <Content Include="Scripts\select2.js" />
+    <Content Include="Scripts\select2.min.js" />
     <Content Include="Scripts\umd\popper-utils.js" />
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
@@ -2671,6 +2676,8 @@
     <Compile Include="Controllers\ContaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\MarcaController.cs" />
+    <Compile Include="Controllers\ModeloController.cs" />
     <Compile Include="Controllers\NotaFiscalController.cs" />
     <Compile Include="Controllers\ProdutoController.cs" />
     <Compile Include="Controllers\RotaController.cs" />
@@ -2718,6 +2725,8 @@
     <Content Include="Views\Produto\ProdutoModal.cshtml" />
     <Content Include="Views\Venda\VendaModal.cshtml" />
     <Content Include="Views\Rota\RotaModal.cshtml" />
+    <Content Include="Views\Modelo\Index.cshtml" />
+    <Content Include="Views\Marca\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

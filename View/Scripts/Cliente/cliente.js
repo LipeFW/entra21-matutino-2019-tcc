@@ -29,7 +29,7 @@
         $cep = $('#cliente-campo-cep').val();
         $vendedor = $('#cliente-campo-vendedor').val();
 
-        if (($nome.trim() == "") || ($telefone.trim == "") || ($cnpj == "") || ($cpf == "") || ($cep = "") || ($vendedor.trim == "")){
+        if (($nome.trim() == "") || ($telefone.trim == "") || ($cnpj == "") || ($cpf == "") || ($cep = "")){
             alert("Preencha corretamente os campos!");
             return null;
         }

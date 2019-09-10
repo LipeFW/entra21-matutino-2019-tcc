@@ -69,5 +69,28 @@ namespace View.Controllers
             ViewBag.Vendedor = vendedor;
             return View();
         }
+
+        [HttpGet, Route("obtertodosselect2")]
+        public JsonResult ObterTodosSelect2(string term)
+        {
+            var vendedores = repository.ObterTodos();
+
+            List<object> vendedoresSelect2 =
+                new List<object>();
+            foreach (Vendedor vendedor in vendedores)
+            {
+                vendedoresSelect2.Add(new
+                {
+                    id = vendedor.Id,
+                    text = vendedor.Nome
+                });
+            }
+            var resultado = new
+            {
+                results = vendedoresSelect2
+            };
+            return Json(resultado,
+                JsonRequestBehavior.AllowGet);
+        }
     }
 }
