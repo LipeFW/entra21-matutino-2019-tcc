@@ -94,5 +94,10 @@ namespace View.Controllers
 
             return View();
         }
+
+        public ActionResult Editar()
+        {
+            return View();
+        }
     }
 }
