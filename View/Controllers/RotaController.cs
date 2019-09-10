@@ -12,10 +12,12 @@ namespace View.Controllers
     public class RotaController : Controller
     {
         private RotaRepository repository;
+        private VendedorRepository repositoryVendedor;
 
         public RotaController()
         {
             repository = new RotaRepository();
+            repositoryVendedor = new VendedorRepository();
         }
 
         [HttpGet, Route("obtertodos")]
@@ -54,8 +56,8 @@ namespace View.Controllers
 
         public ActionResult Index()
         {
-            List<Rota> rotas = repository.ObterTodos();
-            ViewBag.Rotas = rotas;
+            List<Vendedor> vendedores = repositoryVendedor.ObterTodos();
+            ViewBag.Vendedores = vendedores;
             return View();
         }
 

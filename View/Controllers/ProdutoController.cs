@@ -12,14 +12,19 @@ namespace View.Controllers
     public class ProdutoController : Controller
     {
         private ProdutoRepository repository;
+        private CategoriaRepository repositoryCategoria;
 
         public ProdutoController()
         {
             repository = new ProdutoRepository();
+            repositoryCategoria = new CategoriaRepository();
         }
 
         public ActionResult Index()
         {
+            List<Categoria> categorias = repositoryCategoria.ObterTodos();
+
+            ViewBag.Categorias = categorias;
             return View();
         }
 
