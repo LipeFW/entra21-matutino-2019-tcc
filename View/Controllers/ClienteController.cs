@@ -81,5 +81,14 @@ namespace View.Controllers
         {
             return View();
         }
+
+        public ActionResult Cadastrar()
+        {
+            VendedorRepository vendedorRepository = new VendedorRepository();
+            List<Vendedor> vendedores = vendedorRepository.ObterTodos();
+            ViewBag.Vendedores = vendedores;
+
+            return View();
+        }
     }
 }
