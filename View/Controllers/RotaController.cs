@@ -27,18 +27,21 @@ namespace View.Controllers
         }
 
         [HttpPost, Route("cadastro")]
-        public ActionResult Cadastro(Rota rota)
+        public JsonResult Cadastro(Rota rota)
         {
-            int id = repository.Inserir(rota);
-            return RedirectToAction("Editar", new { id = id });
+            var id = repository.Inserir(rota);
+            var resultado = new { id = id };
+            return Json(resultado,
+                 JsonRequestBehavior.AllowGet);
         }
 
-        [HttpPost, Route("editar")]
-        public JsonResult Editar(Rota rota)
+        [HttpPost, Route("alterar")]
+        public JsonResult Alterar(Rota rota)
         {
             var alterou = repository.Alterar(rota);
             var resultado = new { status = alterou };
-            return Json(resultado, JsonRequestBehavior.AllowGet);
+            return Json(resultado,
+              JsonRequestBehavior.AllowGet);
         }
 
         [HttpGet, Route("apagar")]
@@ -51,16 +54,20 @@ namespace View.Controllers
 
         public ActionResult Index()
         {
+            List<Rota> rotas = repository.ObterTodos();
+            ViewBag.Rotas = rotas;
             return View();
         }
 
-        public ActionResult Cadastro()
+        [HttpGet, Route("obterpeloid")]
+        public ActionResult ObterPeloId(int id)
         {
-            VendedorRepository vendedorRepository= new VendedorRepository();
-            List<Vendedor> vendedores = vendedorRepository.ObterTodos();
-            ViewBag.Vendedores = vendedores;
+            var rota = repository.ObterPeloId(id);
+            if (rota == null)
+                return HttpNotFound();
 
-            return View();
+            return Json(rota,
+                JsonRequestBehavior.AllowGet);
         }
 
         [HttpGet]

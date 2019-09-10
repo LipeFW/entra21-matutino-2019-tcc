@@ -74,7 +74,7 @@ namespace View.Controllers
         {
             var categoria = repository.ObterPeloId(id);
             if (categoria == null)
-                return RedirectToAction("index");
+                return RedirectToAction("Index");
 
             ViewBag.Categoria = categoria;
             return View();
