@@ -74,6 +74,7 @@
                 data: {
                     nome: $nome,
                     telefone: $telefone,
+
                     cnpj: $cnpj,
                     cpf: $cpf,
                     cep: $cep,
