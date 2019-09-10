@@ -11,22 +11,31 @@
                 <div class="form-group">
                     <label for="vendedor-campo-nome">Nome</label>
                     <input id="vendedor-campo-nome" class="form-control" />
+                    <div>
+                        <label for="vendedor-campo-usuario">Usuário</label>
+                        <select class="form-control" id="vendedor-campo-usuario" name="campo-usuario">
+                            <option disabled="disabled" selected="selected">Selecione um usuário</option>
+                            @foreach (Model.Usuario usuario in ViewBag.Usuarios)
+                            {
+                                <option value="@usuario.Id">@usuario.Nome</option>
+                            }
+                        </select>
+                    </div>
+                    <div>
+                        <label for="vendedor-campo-veiculo">Veículo</label>
+                        <select class="form-control" id="vendedor-campo-veiculo" name="campo-veiculo">
+                            <option disabled="disabled" selected="selected">Selecione um veículo</option>
+                            @foreach (Model.Veiculo veiculo in ViewBag.Veiculos)
+                            {
+                                <option value="@veiculo.Id">@veiculo.Modelo</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-success" id="vendedor-botao-salvar">Salvar</button>
+                    </div>
                 </div>
-                <div>
-                    <label for="vendedor-campo-usuario">Usuário</label>
-                    <select class="form-control" id="vededor-campo-usuario" name="campo-usuario">
-                        <option disabled="disabled" selected="selected">Selecione um usuário</option>
-                        @foreach(Model.Usuario usuario in ViewBag.Usuarios)
-                        {
-                            <option value="@usuario.Id">@usuario.Nome</option>
-                        }
-                    </select>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Fechar</button>
-                <button type="button" class="btn btn-success" id="usuario-botao-salvar">Salvar</button>
             </div>
         </div>
     </div>
-</div>

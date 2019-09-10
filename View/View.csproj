@@ -2666,7 +2666,7 @@
     <Content Include="Scripts\Usuario\usuario.js" />
     <Content Include="Scripts\Veiculo\veiculo.js" />
     <Content Include="Scripts\Venda\venda.js" />
-    <Content Include="Scripts\Vendedor\Vendedor.js" />
+    <Content Include="Scripts\Vendedor\vendedor.js" />
     <Content Include="Views\Veiculo\Textbox.css" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -2726,6 +2726,7 @@
     <Content Include="Views\Produto\ProdutoModal.cshtml" />
     <Content Include="Views\Venda\VendaModal.cshtml" />
     <Content Include="Views\Rota\RotaModal.cshtml" />
+    <Content Include="Views\Vendedor\VendedorModal.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
