@@ -204,9 +204,9 @@
                         <!-- /Cliente -->
                         <!-- Veículo -->
                         <li class="nav-item nav-item-submenu">
-                            <a href="#" class="nav-link"><i class="icon-truck"></i><span id="veiculoText">VEÍCULOOOOOOOOO</span></a>
+                            <a href="#" class="nav-link"><i class="icon-truck"></i><span id="veiculoText">Veículos</span></a>
                             <ul class="nav nav-group-sub" data-submenu-title="Veículo">
-                                <li class="nav-item"><a href="/veiculo/index" class="nav-link">Veículos</a></li>
+                                <li class="nav-item"><a href="/veiculo/index" class="nav-link">Lista</a></li>
                             </ul>
                         </li>
                         <!-- /Veículo -->
@@ -298,7 +298,7 @@
     @RenderSection("js", false)
 
     <script type="text/javascript">
-        document.getElementById("usuarioNome").innerHTML = localStorage.getItem("username");
+        document.getElementById("usuarioNome").innerHTML = localStorage.getItem("firstName");
         document.getElementById("nomeText").innerHTML = localStorage.getItem("username");
     </script>
 </body>
