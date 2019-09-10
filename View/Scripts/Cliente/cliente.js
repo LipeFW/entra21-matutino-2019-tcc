@@ -36,6 +36,8 @@
         else {
             alterar($nome, $telefone, $cnpj, $cpf, $cep, $vendedor);
         }
+    });
+
         function alterar($nome, $telefone, $cnpj, $cpf, $cep, $vendedor) {
             $.ajax({
                 url: 'http://localhost:51242/cliente/update',
@@ -81,7 +83,6 @@
                 }
             });
         }
-    });
 
 
     $('.table').on('click', '.botao-apagar', function () {
