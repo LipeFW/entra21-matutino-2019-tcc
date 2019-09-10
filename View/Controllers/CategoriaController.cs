@@ -36,7 +36,7 @@ namespace View.Controllers
               JsonRequestBehavior.AllowGet);
         }
 
-        [HttpPost, Route("editar")]
+        [HttpPost, Route("update")]
         public JsonResult Editar(Categoria categoria)
         {
             var alterou = repository.Alterar(categoria);
@@ -50,6 +50,12 @@ namespace View.Controllers
             var apagou = repository.Apagar(id);
             var resultado = new { status = apagou };
             return Json(resultado, JsonRequestBehavior.AllowGet);
+        }
+
+        [HttpGet, Route("obterpeloid")]
+        public JsonResult ObterPeloId(int id)
+        {
+            return Json(repository.ObterPeloId(id), JsonRequestBehavior.AllowGet);
         }
 
         public ActionResult Index()
