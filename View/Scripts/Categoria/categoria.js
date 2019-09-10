@@ -81,7 +81,7 @@
         $idAlterar = $(this).data('id');
 
         $.ajax({
-            url: 'http://localhost:51242/Categoria/editar?id=' + $idAlterar,
+            url: 'http://localhost:51242/Categoria/obterpeloid?id=' + $idAlterar,
             method: 'get',
             success: function (data) {
                 $('#categoria-campo-nome').val(data.Nome);
