@@ -13,8 +13,7 @@
                     <input id="categoria-campo-nome" class="form-control" />
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12">
+                <div class="modal-body">
                     <div class="form-group">
                         <label for="campo-categoria">Vendedor</label>
                         <select class="form-control"
@@ -23,15 +22,14 @@
                                     selected="selected">
                                 Selecione um vendedor
                             </option>
-                            @foreach (Model.Vendedor vendedor in ViewBag.Vendedores)
+                            @*@foreach (Model.Vendedor vendedor in ViewBag.Vendedores)
                             {
                                 <option value="@vendedor.Id">@vendedor.Nome</option>
-                            }
+                            }*@
 
                         </select>
                     </div>
                 </div>
-            </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Fechar</button>
                 <button type="button" class="btn btn-success" id="categoria-botao-salvar">Salvar</button>

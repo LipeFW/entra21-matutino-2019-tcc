@@ -62,7 +62,7 @@ namespace Repository.Repositories
 
         public List<Venda> ObterTodos()
         {
-            return context.Vendas.Where(x => x.RegistroAtivo).ToList();
+            return context.Vendas.Where(x => x.RegistroAtivo == true).OrderBy(x => x.Id).ToList();
         }
     }
 }

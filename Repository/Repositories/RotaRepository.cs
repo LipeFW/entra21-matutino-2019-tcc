@@ -66,7 +66,7 @@ namespace Repository.Repositories
 
         public List<Rota> ObterTodos()
         {
-            return context.Rotas.Where(x => x.RegistroAtivo == true).OrderBy(x => x.Id).Include("Vendedor"). ToList();
+            return context.Rotas.Where(x => x.RegistroAtivo == true).OrderBy(x => x.Id).Include("Vendedor").ToList();
         }
     }
 
