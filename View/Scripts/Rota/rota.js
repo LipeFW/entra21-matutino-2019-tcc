@@ -17,22 +17,24 @@
     });
 
     $('#rota-botao-salvar').on('click', function () {
-        $nome = $('rota-campo-nome').val();
+        $nome = $('#rota-campo-nome').val();
+        $vendedor = $('#rota-campo-vendedor').val();
 
         if ($idAlterar == -1) {
-            inserir($nome);
+            inserir($nome, $vendedor);
         } else {
-            alterar($nome);
+            alterar($nome, $vendedor);
         }
     });
 
-    function alterar($nome) {
+    function alterar($nome, $vendedor) {
         $.ajax({
-            url: 'http://localhost:51242/Cliente/update',
+            url: 'http://localhost:51242/Rota/alterar',
             method: 'post',
             data: {
                 id: $idalterar,
                 nome: $nome,
+                vendedor: $vendedor
             },
             success: function (data) {
                 $("#modal-rota").modal("hide");
@@ -45,15 +47,17 @@
         });
     }
 
-    function inserir($nome) {
+    function inserir($nome, $vendedor) {
         $.ajax({
-            url: 'http://localhost:51242/Cliente/inserir',
+            url: 'http://localhost:51242/Rota/inserir',
             method: 'post',
             data: {
-                nome: $nome
+                nome: $nome,
+                vendedor: $vendedor
             },
             success: function (data) {
                 $("#modal-rota").modal('hide');
+                alert('Registro inserido com Sucesso');
                 $tabelaRota.ajax.reload();
             },
             error: function (err) {
@@ -66,7 +70,7 @@
         $idApagar = $(this).data('id');
 
         $.ajax({
-            url: 'http://localhost:51242/Cliente/apagar?id=' + $idApagar,
+            url: 'http://localhost:51242/Rota/apagar?id=' + $idApagar,
             method: 'get',
             success: function (data) {
                 $tabelaRota.ajax.reload();
@@ -81,11 +85,12 @@
         $idAlterar = $(this).data('id');
 
         $.ajax({
-            url: 'http://localhost:51242/Cliente/obterpeloid?id=' + $idAlterar,
+            url: 'http://localhost:51242/Rota/obterpeloid?id=' + $idAlterar,
             method: 'get',
-
             success: function (data) {
                 $('#rota-campo-nome').val(data.Nome);
+                $('#rota-campo-vendedor').val(data.Vendedor);
+                alert('Carregando Informações');
                 $('#modal-rota').modal('show');
             },
             error: function (err) {

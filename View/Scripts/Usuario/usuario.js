@@ -64,7 +64,7 @@
                 success: function (data) {
                     $("#modal-usuario").modal('hide');
                     $tabelaUsuario.ajax.reload();
-                    alert("Registro Inserido Com Sucesso")
+                    alert("Registro Inserido Com Sucesso");
                 },
                 error: function (err) {
                     alert("Não Foi Possível Inserir")
@@ -98,6 +98,7 @@
             success: function (data) {
                 $("#usuario-campo-nome").val(data.Nome);
                 $("#usuario-campo-senha").val(data.Senha);
+                alert('Carregando Informações');
                 $("#modal-usuario").modal("show");
 
             },

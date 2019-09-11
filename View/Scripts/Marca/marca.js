@@ -54,6 +54,7 @@
             success: function (data) {
                 $('#modal-marca').modal('hide');
                 $tabelaMarca.ajax.reload();
+                alert('Registro inserido com Sucesso');
 
             },
             error: function (err) {
@@ -85,6 +86,7 @@
             method: 'get',
             success: function (data) {
                 $('#marca-campo-nome').val(data.Nome);
+                alert('Carregando Informações');
                 $('#modal-marca').modal('show');
             },
             error: function (err) {

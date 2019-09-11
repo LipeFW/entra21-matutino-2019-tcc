@@ -74,6 +74,7 @@
             success: function (data) {
                 $("#modal-venda").modal("hide");
                 $tabelaVenda.ajax.reload();
+                alert('Registro inserido com Sucesso');
             },
             error: function (err) {
                 alert("Não foi possivel inserir");
@@ -110,7 +111,9 @@
                 $('venda-campo-produto').val(data.Produto);
                 $('venda-campo-total').val(data.Total);
                 $('venda-campo-desconto').val(data.Desconto);
+                alert('Carregando Informações');
                 $('modal-venda').modal('show');
+
             },
             error: function (err) {
                 alert("Mão foi possivel editar");

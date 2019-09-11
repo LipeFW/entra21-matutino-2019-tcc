@@ -69,6 +69,7 @@
             },
             success: function (data) {
                 $('#modal-vendedor').modal('hide');
+                alert("Registro inserido com sucesso");
                 $tabelaVendedor.ajax.reload();
             },
             error: function (err) {
@@ -103,9 +104,10 @@
                 $('#vendedor-campo-nome').val(data.Nome);
                 $('#vendedor-campo-usuario').val(data.Usuario);
                 $('#vendedor-campo-veiculo').val(data.Veiculo);
+                $('#modal-vendedor').modal('show');
             },
             error: function (err) {
-                alert("Não foi possivel editar");
+                alert("Não foi possivel carregar");
             }
         });
     });

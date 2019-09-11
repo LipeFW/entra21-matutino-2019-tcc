@@ -83,6 +83,7 @@
                 success: function (data) {
                     $('#modal-cliente').modal('hide');
                     $tabelaCliente.ajax.reload();
+                    alert('Registro inserido com Sucesso');
                 },
                 error: function (err) {
                     alert('Não foi possivel cadastrar o cliente');
@@ -117,6 +118,7 @@
                 $('#cliente-campo-cpf').val(data.Cpf);
                 $('#cliente-campo-cep').val(data.Cep);
                 $('#cliente-campo-vendedor').val(data.Vendedor)
+                alert('Carregando Informações');
                 $('#modal-cliente').modal('show');
             },
             error: function (err) {
