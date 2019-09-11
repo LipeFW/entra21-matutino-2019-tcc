@@ -70,7 +70,7 @@
             success: function (data) {
                 $('#modal-vendedor').modal('hide');
                 $tabelaVendedor.ajax.reload();
-                alert('Registro inserido com Sucesso');
+                alert("Registro inserido com sucesso");
             },
             error: function (err) {
                 alert("Não foi possivel inserir");
@@ -104,10 +104,10 @@
                 $('#vendedor-campo-nome').val(data.Nome);
                 $('#vendedor-campo-usuario').val(data.Usuario);
                 $('#vendedor-campo-veiculo').val(data.Veiculo);
-                alert('Carregando Informações');
+                $('#modal-vendedor').modal('show');
             },
             error: function (err) {
-                alert("Não foi possivel editar");
+                alert("Não foi possivel carregar");
             }
         });
     });

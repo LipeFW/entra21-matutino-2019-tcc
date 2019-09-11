@@ -5,3 +5,51 @@
 
 <h2>Configurações</h2>
 
+<div class="modal" tabindex="-1" role="dialog" id="modal-cliente">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Cadastro de Colaborador</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="vendedor-campo-nome">Nome</label>
+                    <input id="vendedor-campo-nome" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="vendedor-campo-telefone">Telefone</label>
+                    <input id="vendedor-campo-telefone" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="vendedor-campo-Habilitacao">Habilitação</label>
+                    <input id="vendedor-campo-habilitacao" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="vendedor-campo-cpf">CPF</label>
+                    <input id="vendedor-campo-cpf" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="vendedor-campo-cep">CEP</label>
+                    <input id="vendedor-campo-cep" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="vendedor-campo-veiculo">Veículo</label>
+                    <select id="vendedor-campo-veiculo" class="form-control" name="campo-veiculo">
+                        <option disabled="disabled" selected="selected">Selecione um veiculo</option>
+                        @foreach (Model.Veiculo veiculo in ViewBag.Veiculos)
+                        {
+                            <option value="@veiculo.Id">@veiculo.Placa</option>
+                        }
+                    </select>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-danger" data-dismiss="modal"><i class="fas fa-times"></i> Cancelar</button>
+                <button type="button" class="btn btn-success"><i class="fas fa-save"></i>  Salvar</button>
+            </div>
+        </div>
+    </div>
+</div>
