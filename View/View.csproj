@@ -2655,7 +2655,6 @@
     <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
     <Content Include="Scripts\Marca\marca.js" />
     <Content Include="Scripts\Produto\produto.js" />
-    <Content Include="Scripts\Rota\rota-cadastro.js" />
     <Content Include="Scripts\Rota\rota.js" />
     <Content Include="Scripts\select2.js" />
     <Content Include="Scripts\select2.min.js" />
