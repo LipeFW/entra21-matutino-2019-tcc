@@ -103,6 +103,9 @@
                 $('#vendedor-campo-nome').val(data.Nome);
                 $('#vendedor-campo-usuario').val(data.Usuario);
                 $('#vendedor-campo-veiculo').val(data.Veiculo);
+            },
+            error: function (err) {
+                alert("Não foi possivel editar");
             }
         });
     });
