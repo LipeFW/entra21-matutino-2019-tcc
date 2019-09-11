@@ -98,6 +98,7 @@
             success: function (data) {
                 $("#usuario-campo-nome").val(data.Nome);
                 $("#usuario-campo-senha").val(data.Senha);
+                alert('Carregando Informações');
                 $("#modal-usuario").modal("show");
 
             },

@@ -1,4 +1,5 @@
-﻿$(function () {
+﻿
+$(function () {
 
     $idAlterar = -1;
 
@@ -72,6 +73,7 @@
                 success: function (data) {
                     $("modal-produto").modal("hide");
                     $tabelaProduto.ajax.reload();
+                    alert('Registro inserido com Sucesso');
                 },
                 error: function (err) {
                     alert('Não foi possivel Inserir o Produto');
@@ -106,6 +108,7 @@
                 $("#produto-campo-codigo-barra").val(data.CodigoBarra);
                 $("#produto-campo-quantidade-produtos").val(data.QuantidadeProdutos);
                 $("#produto-campo-valor-unitatio").val(data.ValorUnitario);
+                alert('Carregando Informações');
                 $("#modal-produto").modal("show");
             },
             error: function (err) {

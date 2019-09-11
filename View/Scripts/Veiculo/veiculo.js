@@ -71,6 +71,7 @@
             success: function (data) {
                 $('#modal-veiculo').modal('hide');
                 $tabelaVeiculo.ajax.reload();
+                alert('Registro inserido com Sucesso');
             },
             error(err) {
                 alert('Não foi possivel inserir');
@@ -105,6 +106,7 @@
                 $('#veiculo-campo-ano-fabricacao').val(data.Ano_Fabricacao);
                 $('#veiculo-campo-numero-caminhao').val(data.Numero_caminhao);
                 $('#veiculo-campo-placa').val(data.Placa);
+                alert('Carregando Informações');
                 $('#modal-veiculo').modal('show');
 
             },

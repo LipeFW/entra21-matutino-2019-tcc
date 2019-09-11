@@ -70,6 +70,7 @@
             success: function (data) {
                 $('#modal-vendedor').modal('hide');
                 $tabelaVendedor.ajax.reload();
+                alert('Registro inserido com Sucesso');
             },
             error: function (err) {
                 alert("Não foi possivel inserir");
@@ -103,6 +104,7 @@
                 $('#vendedor-campo-nome').val(data.Nome);
                 $('#vendedor-campo-usuario').val(data.Usuario);
                 $('#vendedor-campo-veiculo').val(data.Veiculo);
+                alert('Carregando Informações');
             },
             error: function (err) {
                 alert("Não foi possivel editar");
