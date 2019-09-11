@@ -2,7 +2,7 @@
     $idAlterar = -1;
 
     $tabelaVenda = $('#venda-tabela').DataTable({
-        ajax: '/Venda/obtertodos',
+        ajax: 'http://localhost:51242/Venda/obtertodos',
         serverSide: true,
         columns: [
             { 'data': 'Id' },
