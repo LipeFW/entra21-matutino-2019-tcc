@@ -11,7 +11,7 @@
             { "data": "Categoria.Nome" },
             { "data": "CodigoBarra" },
             { "data": "QuantidadeProdutos" },
-            { "data": "ValorUnitario"},
+            { "data": "ValorUnitario" },
             {
                 render: function (data, type, row) {
                     return '<button class="btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button><button class="btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>'
@@ -20,32 +20,30 @@
         ]
     });
 
-    $("#produto-botao-salvar").on("#click", function () {
+    $("#produto-botao-salvar").on("click", function () {
         $nome = $("#produto-campo-nome").val();
-        $categoria = $("#produto-campo-Categoria").val();
-        $codigoBarra = $("#produto-campo-codigo_barra").val();
-        $quantidadeProdutos = $("#produto-campo-quantidade").val();
-        $valorUnitario = $("#produto-campo-valor_unitario").val();
+        $categoria = $("#produto-campo-categoria").val();
+        $codigo = $("#produto-campo-codigo").val();
+        $quantidade = $("#produto-campo-quantidade").val();
+        $valor = $("#produto-campo-valor").val();
 
         if ($idAlterar == -1) {
-            inserir($nome, $categoria, $codigoBarra, $quantidadeProdutos, $valorUnitario);
+            inserir($nome, $categoria, $codigo, $quantidade, $valor);
         } else {
-            alterar($nome, $categoria, $codigoBarra, $quantidadeProdutos, $valorUnitario);
+            alterar($nome, $categoria, $codigo, $quantidade, $valor);
         }
 
-    });
-
-        function alterar($nome, $categoria, $codigoBarra, $quantidadeProdutos, $valorUnitario) {
+        function alterar($nome, $categoria, $codigo, $quantidade, $valor) {
             $.ajax({
                 url: "http://localhost:51242/Produto/update",
                 method: 'post',
                 data: {
                     id: $idAlterar,
-                    nome : $nome,
+                    nome: $nome,
                     categoria: $categoria,
-                    codigoBarra: $codigoBarra,
-                    quantidadeProdutos: $quantidadeProdutos,
-                    valorUnitario: $valorUnitario
+                    codigo: $codigoBarra,
+                    quantidade: $quantidadeProdutos,
+                    valor: $valorUnitario
                 },
                 success: function (data) {
                     $("#modal-produto").modal("hide");
@@ -58,32 +56,34 @@
             })
         }
 
-        function inserir($nome, $categoria, $codigoBarra, $quantidadeProdutos, $valorUnitario) {
+        function inserir($nome, $categoria, $codigo, $quantidade, $valor) {
             $.ajax({
-                url: "http://localhost:51242/Produto/inserir",
-                method: 'post',
+                url: "http://localhost:51242/Produto/Inserir",
+                method: "post",
                 data: {
-                    nome : $nome,
+                    nome: $nome,
                     categoria: $categoria,
-                    codigoBarra: $codigoBarra,
-                    quantidadeProdutos: $quantidadeProdutos,
-                    valorUnitario: $valorUnitario
+                    codigo: $codigo,
+                    quantidade: $quantidade,
+                    valor: $valor
                 },
                 success: function (data) {
-                    $("modal-produto").modal("hide");
+                    $("#modal-produto").modal('hide');
                     $tabelaProduto.ajax.reload();
+                    alert("Registro Inserido Com Sucesso")
                 },
                 error: function (err) {
-                    alert('Não foi possivel Inserir o Produto');
+                    alert('Não foi possivel inserir');
                 }
-            });
+            })
         }
+    })
 
     $(".table").on("click", ".botao-apagar", function () {
         $idApagar = $(this).data("id");
 
         $ajax({
-            url: "http://localhost:51242/Produto/apagar?=" + $idAlterar,
+            url: "http://localhost:51242/Produto/apagar?id=" + $idAlterar,
             method: "get",
             success: function (data) {
                 $tabelaProduto.ajax.reload();
@@ -98,7 +98,7 @@
         $idAlterar = $(this).data("id");
 
         $.ajax({
-            url: "http://localhost:51242/Produto/obterpeloid?=" + idAlterar,
+            url: "http://localhost:51242/Produto/obterpeloid?id=" + idAlterar,
             methd: "get",
             success: function (data) {
                 $("#produto-campo-nome").val(data.Nome);
@@ -111,6 +111,6 @@
             error: function (err) {
                 alert('Não foi possivel carregar');
             }
-        });
+        })
     });
 });

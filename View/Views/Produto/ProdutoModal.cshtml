@@ -1,4 +1,6 @@
-﻿<div class="modal" tabindex="-1" role="dialog" id="modal-produto">
+﻿<link href="~/Content/theme/global_assets/css/icons/fontawesome/styles.min.css" rel="stylesheet" type="text/css" />
+
+<div class="modal" tabindex="-1" role="dialog" id="modal-produto">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -17,7 +19,7 @@
                         <div class="form-group">
                             <label for="produto-campo-categoria">Categoria</label>
                             <select class="form-control"
-                                    name="produto-campo-categoria">
+                                    id="produto-campo-categoria">
                                 <option disabled="disabled"
                                         selected="selected">
                                     Selecione uma categoria
@@ -33,8 +35,8 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="produto-campo-codigobarra">Código de Barra</label>
-                    <input id="produto-campo-codigobarra" class="form-control" />
+                    <label for="produto-campo-codigo">Código de Barra</label>
+                    <input id="produto-campo-codigo" class="form-control" />
                 </div>
                 <div class="form-group">
                     <label for="produto-campo-quantidade">Quantidade</label>
@@ -47,7 +49,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-outline-danger" data-dismiss="modal"><i class="fas fa-times"></i> Cancelar</button>
-                <button type="button" class="btn btn-success"><i class="fas fa-save"></i>  Salvar</button>
+                <button id="produto-botao-salvar" type="button" class="btn btn-success"><i class="fas fa-save"></i>  Salvar</button>
             </div>
         </div>
     </div>

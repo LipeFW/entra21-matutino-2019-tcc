@@ -20,11 +20,12 @@
         ]
     });
 
+
     $('#veiculo-botao-salvar').on('click', function () {
         $marca = $('#veiculo-campo-marca').val();
-        $mdodelo = $('#veiculo-campo-modelo').val();
-        $ano_fabricacao = $('#veiculo-campo-ano-fabricacao').val();
-        $numero_caminhao = $('#veiculo-campo-numero-caminhao').val();
+        $modelo = $('#veiculo-campo-modelo').val();
+        $ano_fabricacao = $('#veiculo-campo-anofabricacao').val();
+        $numero_caminhao = $('#veiculo-campo-numerocaminhao').val();
         $placa = $('#veiculo-campo-placa').val();
 
         if ($idAlterar == -1) {
@@ -32,14 +33,14 @@
         } else {
             alterar($marca, $modelo, $ano_fabricacao, $numero_caminhao, $placa);
         }
-    });
 
-    function alterar($marca, $modelo, $ano_fabricacao, $numero_caminhao, $placa) {
+
+        function alterar($marca, $modelo, $ano_fabricacao, $numero_caminhao, $placa) {
         $.ajax({
             url: 'http://localhost:51242/veiculo/update',
             method: 'post',
             data: {
-                id: $isAlterar,
+                id: $idAlterar,
                 marca: $marca,
                 modelo: $modelo,
                 ano_fabricacao: $ano_fabricacao,
@@ -53,11 +54,12 @@
             },
             error: function (err) {
                 alert('Não foi possivel alterar');
-            }
-        });
-    }
+                }
+            })
+        }
 
-    function inserir($marca, $modelo, $ano_fabricacao, $numero_caminhao, $placa) {
+
+        function inserir($marca, $modelo, $numero_caminhao, $ano_fabricacao, $placa) {
         $.ajax({
             url: 'http://localhost:51242/veiculo/inserir',
             method: 'post',
@@ -74,10 +76,10 @@
             },
             error(err) {
                 alert('Não foi possivel inserir');
-            }
-        });
-    }
-
+                }
+            })
+        }
+    })
     $('.table').on('click', '.botao-apagar', function () {
         $idApagar = $(this).data('id');
 
@@ -86,6 +88,7 @@
             method: 'get',
             success: function (data) {
                 $tabelaVeiculo.ajax.reload();
+                alert("Registro Apagado Com Sucesso")
             },
             error: function (err) {
                 alert('Não foi possivel apagar');
@@ -97,7 +100,7 @@
         $idAlterar = $(this).data('id');
 
         $.ajax({
-            url: 'http://localhost:51242/veiculo/editar?id=' + $idAlterar,
+            url: "http://localhost:51242/Veiculo/obterpeloid?id=" + $idAlterar,
             method: 'get',
             success: function (data) {
                 $('#veiculo-campo-marca').val(data.Marca);
@@ -111,6 +114,6 @@
             error: function (err) {
                 alert('Não foi possivel carregar');
             }
-        });
+        })
     });
 });
