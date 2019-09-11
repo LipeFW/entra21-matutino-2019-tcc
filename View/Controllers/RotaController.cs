@@ -28,17 +28,18 @@ namespace View.Controllers
             return Json(resultado, JsonRequestBehavior.AllowGet);
         }
 
-        [HttpPost, Route("cadastro")]
-        public JsonResult Cadastro(Rota rota)
+        [HttpPost, Route("inserir")]
+        public ActionResult Inserir(Rota rota)
         {
+            rota.RegistroAtivo = true;
             var id = repository.Inserir(rota);
             var resultado = new { id = id };
             return Json(resultado,
                  JsonRequestBehavior.AllowGet);
         }
 
-        [HttpPost, Route("alterar")]
-        public JsonResult Alterar(Rota rota)
+        [HttpPost, Route("editar")]
+        public JsonResult Editar(Rota rota)
         {
             var alterou = repository.Alterar(rota);
             var resultado = new { status = alterou };
@@ -62,14 +63,9 @@ namespace View.Controllers
         }
 
         [HttpGet, Route("obterpeloid")]
-        public ActionResult ObterPeloId(int id)
-        {
-            var rota = repository.ObterPeloId(id);
-            if (rota == null)
-                return HttpNotFound();
-
-            return Json(rota,
-                JsonRequestBehavior.AllowGet);
+        public JsonResult ObterPeloId(int id)
+        { 
+            return Json(repository.ObterPeloId(id) ,JsonRequestBehavior.AllowGet);
         }
 
         [HttpGet]
