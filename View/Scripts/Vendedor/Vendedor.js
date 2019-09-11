@@ -8,7 +8,7 @@
             { 'data': 'Id' },
             { 'data': 'Nome' },
             { 'data': 'Usuario.Nome' },
-            { 'data': 'Veiculo.Modelo'},
+            { 'data': 'Veiculo.Modelo' },
             {
                 render: function (data, type, row) {
                     return '<button class="btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button>\<button class="btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>'
@@ -57,3 +57,56 @@
             }
         })
     }
+
+    function inserir($nome, $usuario, $veiculo) {
+        $.ajax({
+            url: 'http://localhost:51242/vendedor/inserir',
+            method: 'post',
+            data: {
+                nome: $nome,
+                usuario: $usuario,
+                veiculo: $veiculo
+            },
+            success: function (data) {
+                $('#modal-vendedor').modal('hide');
+                $tabelaVendedor.ajax.reload();
+            },
+            error: function (err) {
+                alert("Não foi possivel inserir");
+            }
+        })
+    }
+
+    $('.table').on('click', '.botao-apagar', function () {
+        $idApagar = $(this).data('id');
+
+        $.ajax({
+            url: 'http://localhost:51242/vendedor/apagar?id=' + $idApagar,
+            method: 'get',
+            success: function (data) {
+                $tabelaVendedor.ajax.reload();
+            },
+            error: function (err) {
+                alert("Não foi possivel apagar");
+            }
+        });
+    });
+
+    $('.table').on('click', '.botao-editar', function () {
+        $idAlterar = $(this).data('id');
+
+        $.ajax({
+            url: 'http://localhost:51242/vendedor/obterpeloid?id=' + $idAlterar,
+            method: 'get',
+
+            success: function (data) {
+                $('#vendedor-campo-nome').val(data.Nome);
+                $('#vendedor-campo-usuario').val(data.Usuario);
+                $('#vendedor-campo-veiculo').val(data.Veiculo);
+            },
+            error: function (err) {
+                alert("Não foi possivel editar");
+            }
+        });
+    });
+});
