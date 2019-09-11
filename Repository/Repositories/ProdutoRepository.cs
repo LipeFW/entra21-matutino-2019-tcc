@@ -33,9 +33,11 @@ namespace Repository.Repositories
 
         public int Inserir(Produto produto)
         {
+            produto.RegistroAtivo = true;
             context.Produtos.Add(produto);
             context.SaveChanges();
             return produto.Id;
+
         }
 
         public Produto ObterPeloId(int id)
@@ -60,8 +62,8 @@ namespace Repository.Repositories
             produtoOriginal.Nome = produto.Nome;
             produtoOriginal.Categoria = produto.Categoria;
             produtoOriginal.CodigoBarra = produto.CodigoBarra;
-            produtoOriginal.IdCategoria = produto.IdCategoria;
             produtoOriginal.ValorUnitario = produto.ValorUnitario;
+            produtoOriginal.QuantidadeProdutos = produto.QuantidadeProdutos;
 
             int quantidadeAfetada = context.SaveChanges();
             return quantidadeAfetada == 1;

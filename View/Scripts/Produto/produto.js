@@ -24,26 +24,26 @@
         $nome = $("#produto-campo-nome").val();
         $categoria = $("#produto-campo-categoria").val();
         $codigo = $("#produto-campo-codigo").val();
-        $quantidade = $("#produto-campo-quantidade").val();
-        $valor = $("#produto-campo-valor").val();
+        $quantidadeProdutos = $("#produto-campo-quantidade").val();
+        $valorUnitario = $("#produto-campo-valor").val();
 
         if ($idAlterar == -1) {
-            inserir($nome, $categoria, $codigo, $quantidade, $valor);
+            inserir($nome, $categoria, $codigo, $quantidadeProdutos, $valorUnitario);
         } else {
-            alterar($nome, $categoria, $codigo, $quantidade, $valor);
+            alterar($nome, $categoria, $codigo, $quantidadeProdutos, $valorUnitario);
         }
 
-        function alterar($nome, $categoria, $codigo, $quantidade, $valor) {
+        function alterar($nome, $categoria, $codigoBarra, $quantidadeProdutos, $valorUnitario) {
             $.ajax({
                 url: "http://localhost:51242/Produto/update",
                 method: 'post',
                 data: {
                     id: $idAlterar,
                     nome: $nome,
-                    categoria: $categoria,
-                    codigo: $codigoBarra,
-                    quantidade: $quantidadeProdutos,
-                    valor: $valorUnitario
+                    idCategoria: $categoria,
+                    codigoBarra: $codigoBarra,
+                    quantidadeProdutos: $quantidadeProdutos,
+                    valorUnitario: $valorUnitario
                 },
                 success: function (data) {
                     $("#modal-produto").modal("hide");
@@ -56,16 +56,16 @@
             })
         }
 
-        function inserir($nome, $categoria, $codigo, $quantidade, $valor) {
+        function inserir($nome, $categoria, $codigoBarra, $quantidadeProdutos, $valorUnitario) {
             $.ajax({
                 url: "http://localhost:51242/Produto/Inserir",
                 method: "post",
                 data: {
                     nome: $nome,
-                    categoria: $categoria,
-                    codigo: $codigo,
-                    quantidade: $quantidade,
-                    valor: $valor
+                    idCategoria: $categoria,
+                    codigo: $codigoBarra,
+                    quantidadeProdutos: $quantidadeProdutos,
+                    valorUnitario: $valorUnitario
                 },
                 success: function (data) {
                     $("#modal-produto").modal('hide');

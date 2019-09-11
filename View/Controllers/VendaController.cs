@@ -11,20 +11,20 @@ namespace View.Controllers
     [Route("venda/")]
     public class VendaController : Controller
     {
-        VendaRepository repository;
+        private VendaRepository repository;
+        //private VendaRepository repository;
+        //private VendaRepository repository;
 
         public VendaController()
         {
             repository = new VendaRepository();
         }
-
         [HttpGet, Route("obtertodos")]
         public JsonResult ObterTodos()
         {
             var vendas = repository.ObterTodos();
             var resultado = new { data = vendas };
-            return Json(resultado,
-                JsonRequestBehavior.AllowGet);
+            return Json(resultado, JsonRequestBehavior.AllowGet);
         }
 
         [HttpPost, Route("cadastro")]
@@ -54,7 +54,13 @@ namespace View.Controllers
         }
 
         public ActionResult Index()
-        {          
+        {
+            //List<Vendedor> vendedores = repositoryMarca.ObterTodos();
+            //ViewBag.Vendedores = vendedores;
+            //List<Cliente> clientes = repositoryMarca.ObterTodos();
+            //ViewBag.Clientes = clientes;
+            //List<Produto> produtos = repositoryMarca.ObterTodos();
+            //ViewBag.Produtos = produtos;
             return View();
         }
 
