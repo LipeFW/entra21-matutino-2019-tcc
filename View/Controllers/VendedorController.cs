@@ -34,15 +34,15 @@ namespace View.Controllers
             return Json(resultado, JsonRequestBehavior.AllowGet);
         }
 
-        [HttpPost, Route("cadastro")]
-        public ActionResult Cadastro(Vendedor vendedor)
+        [HttpPost, Route("inserir")]
+        public ActionResult Inserir(Vendedor vendedor)
         {
             int id = repository.Inserir(vendedor);
             return RedirectToAction("Editar", new { id = id });
         }
 
-        [HttpPost, Route("editar")]
-        public JsonResult Editar(Vendedor vendedor)
+        [HttpPost, Route("update")]
+        public JsonResult Update(Vendedor vendedor)
         {
             var alterou = repository.Alterar(vendedor);
             var resultado = new { status = alterou };
@@ -65,6 +65,7 @@ namespace View.Controllers
 
             List<Usuario> usuarios = repositoryUsuario.ObterTodos();
             ViewBag.Usuarios = usuarios;
+
             return View();
         }
 

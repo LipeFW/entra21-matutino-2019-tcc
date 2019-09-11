@@ -69,8 +69,8 @@
             },
             success: function (data) {
                 $('#modal-vendedor').modal('hide');
-                $tabelaVendedor.ajax.reload();
                 alert("Registro inserido com sucesso");
+                $tabelaVendedor.ajax.reload();
             },
             error: function (err) {
                 alert("Não foi possivel inserir");

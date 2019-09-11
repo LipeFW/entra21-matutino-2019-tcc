@@ -47,13 +47,14 @@ namespace View.Controllers
             return Json(resultado, JsonRequestBehavior.AllowGet);
         }
 
-        [HttpPost,Route("inserir")]
-        public JsonResult Inserir(Cliente cliente)
+        [HttpPost, Route("inserir")]
+        public ActionResult Inserir(Cliente cliente)
         {
             cliente.RegistroAtivo = true;
             var id = repository.Inserir(cliente);
             var resultado = new { id = id };
-            return Json(resultado);
+            return Json(resultado,
+              JsonRequestBehavior.AllowGet);
         }
 
         [HttpGet, Route("apagar")]

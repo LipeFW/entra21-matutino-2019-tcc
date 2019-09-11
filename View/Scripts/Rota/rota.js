@@ -57,6 +57,7 @@
             },
             success: function (data) {
                 $("#modal-rota").modal('hide');
+                alert('Registro inserido com Sucesso');
                 $tabelaRota.ajax.reload();
             },
             error: function (err) {
@@ -88,7 +89,8 @@
             method: 'get',
             success: function (data) {
                 $('#rota-campo-nome').val(data.Nome);
-                $('#rota-campo-vendedor').val(data.Nome);
+                $('#rota-campo-vendedor').val(data.Vendedor);
+                alert('Carregando Informações');
                 $('#modal-rota').modal('show');
             },
             error: function (err) {

@@ -33,7 +33,6 @@ namespace Repository.Repositories
 
         public int Inserir(Produto produto)
         {
-            produto.RegistroAtivo = true;
             context.Produtos.Add(produto);
             context.SaveChanges();
             return produto.Id;

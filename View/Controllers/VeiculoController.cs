@@ -29,11 +29,14 @@ namespace View.Controllers
             return Json(resultado, JsonRequestBehavior.AllowGet);
         }
 
-        [HttpPost, Route("cadastro")]
-        public ActionResult Cadastro(Veiculo veiculo)
+        [HttpPost, Route("inserir")]
+        public ActionResult Inserir(Veiculo veiculo)
         {
-            int id = repository.Inserir(veiculo);
-            return RedirectToAction("Editar", new { id = id });
+            veiculo.RegistroAtivo = true;
+            var id = repository.Inserir(veiculo);
+            var resultado = new { id = id };
+            return Json(resultado,
+              JsonRequestBehavior.AllowGet);
         }
 
         [HttpPost, Route("editar")]

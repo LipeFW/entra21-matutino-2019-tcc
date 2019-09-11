@@ -38,13 +38,15 @@ namespace View.Controllers
 
 
         [HttpPost, Route("inserir")]
-        public JsonResult Inserir(Produto produto)
+        public ActionResult Inserir(Produto produto)
         {
             produto.RegistroAtivo = true;
             var id = repository.Inserir(produto);
             var resultado = new { id = id };
-            return Json(resultado);
+            return Json(resultado,
+              JsonRequestBehavior.AllowGet);
         }
+
 
         [HttpGet, Route("apagar")]
         public JsonResult Apagar(int id)
