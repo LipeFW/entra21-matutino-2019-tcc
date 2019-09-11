@@ -1,5 +1,6 @@
 ﻿
 @{
+
     ViewBag.Title = "Vendedor";
 }
 <link rel="stylesheet" type="text/css" href="~/Content/css/tabela/util.css" />
@@ -8,7 +9,7 @@
     <h2 class="text-center">Vendedor</h2>
     <button data-toggle="modal" data-target="#modal-vendedor"
             class="btn btn-primary float-right mb-2">
-        Novo Vendedor
+        <i class="fas fa-plus"></i> Novo Vendedor
     </button>
 
     <table id="vendedor-tabela" class="table table-hover table-striped table-bordered">
@@ -23,8 +24,8 @@
         </thead>
     </table>
 </div>
-    @RenderPage("VendedorModal.cshtml")
-    @section js{
-        <script src="~/Scripts/Vendedor/Vendedor.js"></script>
-    }
+@RenderPage("VendedorModal.cshtml")
+@section js{
+    <script src="~/Scripts/Vendedor/Vendedor.js"></script>
+}
 

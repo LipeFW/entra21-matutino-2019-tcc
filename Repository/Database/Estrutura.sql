@@ -10,8 +10,10 @@
  );
  
  INSERT INTO usuarios(nome,senha,registro_ativo)
- VALUES ('LipeFW', 'tatofazmano', 1),
- 	    ('Illan', 'dknlan123', 1);
+ VALUES ('lipefw', 'anaumsei', 1),
+ 	    ('illan', 'illanzoka', 1),
+ 	    ('eduardo', '123456', 1),
+ 	    ('henrique', 'pimbinha6000', 1);
  
  CREATE TABLE categorias( 
  id INT PRIMARY KEY IDENTITY(1,1),
@@ -19,7 +21,9 @@
  registro_ativo BIT);
   
  INSERT INTO categorias(nome,registro_ativo)
- VALUES ('Bebidas', 1);
+ VALUES	 ('Bebidas', 1),
+		 ('Doces', 1),
+		 ('Salgados', 1);
 
  CREATE TABLE marcas( 
  id INT PRIMARY KEY IDENTITY(1,1),
@@ -52,7 +56,7 @@
  registro_ativo BIT);
  
  INSERT INTO vendedores(nome, id_veiculo, id_usuario, registro_ativo)
- VALUES ('Jucas' , 1, 1, 1);
+ VALUES ('Felipe' , 1, 1, 1);
  
  CREATE TABLE clientes(
  id INT PRIMARY KEY IDENTITY(1,1),
