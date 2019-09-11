@@ -2666,7 +2666,7 @@
     <Content Include="Scripts\Usuario\usuario.js" />
     <Content Include="Scripts\Veiculo\veiculo.js" />
     <Content Include="Scripts\Venda\venda.js" />
-    <Content Include="Scripts\Vendedor\Vendedor.js" />
+    <Content Include="Scripts\Vendedor\vendedor.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
