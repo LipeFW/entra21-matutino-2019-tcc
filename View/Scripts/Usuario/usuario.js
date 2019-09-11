@@ -64,7 +64,7 @@
                 success: function (data) {
                     $("#modal-usuario").modal('hide');
                     $tabelaUsuario.ajax.reload();
-                    alert("Registro Inserido Com Sucesso")
+                    alert("Registro Inserido Com Sucesso");
                 },
                 error: function (err) {
                     alert("Não Foi Possível Inserir")
