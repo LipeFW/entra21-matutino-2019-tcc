@@ -117,7 +117,181 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="PessoaFiscia" xml:space="preserve">
-    <value />
+  <data name="Acao" xml:space="preserve">
+    <value>Ação</value>
+  </data>
+  <data name="Anodefabricacao" xml:space="preserve">
+    <value>Ano de fabricação</value>
+  </data>
+  <data name="AnoFabricacao" xml:space="preserve">
+    <value>Ano Fabricação</value>
+  </data>
+  <data name="CadastrodeCategoria" xml:space="preserve">
+    <value>Cadastro de Categoria</value>
+  </data>
+  <data name="CadastrodeCliente" xml:space="preserve">
+    <value>Cadastro de Cliente</value>
+  </data>
+  <data name="CadastrodeProduto" xml:space="preserve">
+    <value>Cadastro de Produto</value>
+  </data>
+  <data name="CadastrodeRotas" xml:space="preserve">
+    <value>Cadastro de Rotas</value>
+  </data>
+  <data name="CadastrodeUsuario" xml:space="preserve">
+    <value>Cadastro de Usuário</value>
+  </data>
+  <data name="CadastrodeVeiculo" xml:space="preserve">
+    <value>Cadastro de Veículo</value>
+  </data>
+  <data name="CadastrodeVendedor" xml:space="preserve">
+    <value>Cadastro de Vendedor</value>
+  </data>
+  <data name="Cancelar" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="Categoria" xml:space="preserve">
+    <value>Categoria</value>
+  </data>
+  <data name="Categorias" xml:space="preserve">
+    <value>Categorias</value>
+  </data>
+  <data name="CEP" xml:space="preserve">
+    <value>CEP</value>
+  </data>
+  <data name="Cliente" xml:space="preserve">
+    <value>Cliente</value>
+  </data>
+  <data name="Clientes" xml:space="preserve">
+    <value>Clientes</value>
+  </data>
+  <data name="CNPJ" xml:space="preserve">
+    <value>CNPLJ</value>
+  </data>
+  <data name="Codigo" xml:space="preserve">
+    <value>Código</value>
+  </data>
+  <data name="CodigoBarra" xml:space="preserve">
+    <value>Código Barra</value>
+  </data>
+  <data name="CodigodeBarra" xml:space="preserve">
+    <value>Código de barras</value>
+  </data>
+  <data name="CPF" xml:space="preserve">
+    <value>CPF</value>
+  </data>
+  <data name="Lista" xml:space="preserve">
+    <value>Lista</value>
+  </data>
+  <data name="ListaNotasFiscais" xml:space="preserve">
+    <value>Lista notas Fiscais</value>
+  </data>
+  <data name="Marca" xml:space="preserve">
+    <value>Marca</value>
+  </data>
+  <data name="Modelo" xml:space="preserve">
+    <value>Modelo</value>
+  </data>
+  <data name="Nome" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="NotaFiscal" xml:space="preserve">
+    <value>Nota Fiscal</value>
+  </data>
+  <data name="NovaCategoria" xml:space="preserve">
+    <value>Nova Categoria</value>
+  </data>
+  <data name="NovaRota" xml:space="preserve">
+    <value>Nova Rota</value>
+  </data>
+  <data name="NovoCliente" xml:space="preserve">
+    <value>Novo Cliente</value>
+  </data>
+  <data name="NovoProduto" xml:space="preserve">
+    <value>Novo Produto</value>
+  </data>
+  <data name="NovoUsuario" xml:space="preserve">
+    <value>Novo Usuário</value>
+  </data>
+  <data name="NovoVeiculo" xml:space="preserve">
+    <value>Novo Veículos</value>
+  </data>
+  <data name="NovoVendedor" xml:space="preserve">
+    <value>Novo Vendedor</value>
+  </data>
+  <data name="NumeroCaminhao" xml:space="preserve">
+    <value>Número Caminhão</value>
+  </data>
+  <data name="Numerodocaminhao" xml:space="preserve">
+    <value>Numero do Caminhão</value>
+  </data>
+  <data name="Placa" xml:space="preserve">
+    <value>Placa</value>
+  </data>
+  <data name="Prdutos" xml:space="preserve">
+    <value>Produtos</value>
+  </data>
+  <data name="Produto" xml:space="preserve">
+    <value>Produto</value>
+  </data>
+  <data name="Quantidade" xml:space="preserve">
+    <value>Quantidade</value>
+  </data>
+  <data name="QuantidadeProdutos" xml:space="preserve">
+    <value>Quantidade Produtos</value>
+  </data>
+  <data name="Rota" xml:space="preserve">
+    <value>Rota</value>
+  </data>
+  <data name="Rotas" xml:space="preserve">
+    <value>Rotas</value>
+  </data>
+  <data name="Salvar" xml:space="preserve">
+    <value>Salvar</value>
+  </data>
+  <data name="Selecioneumacategoria" xml:space="preserve">
+    <value>Selecione uma Categoria</value>
+  </data>
+  <data name="Selecioneumamarca" xml:space="preserve">
+    <value>Selecione uma Marca</value>
+  </data>
+  <data name="Selecioneumusuario" xml:space="preserve">
+    <value>Selecione um usuário</value>
+  </data>
+  <data name="SelecioneumVeiculo" xml:space="preserve">
+    <value>Selecione um Veículo</value>
+  </data>
+  <data name="SelecioneumVendedor" xml:space="preserve">
+    <value>Selecione um Vendedor</value>
+  </data>
+  <data name="Senha" xml:space="preserve">
+    <value>Senha</value>
+  </data>
+  <data name="Telefone" xml:space="preserve">
+    <value>Telefone</value>
+  </data>
+  <data name="Usuario" xml:space="preserve">
+    <value>Usuário</value>
+  </data>
+  <data name="Usuarios" xml:space="preserve">
+    <value>Usuários</value>
+  </data>
+  <data name="Valor" xml:space="preserve">
+    <value>Valor</value>
+  </data>
+  <data name="ValorFinal" xml:space="preserve">
+    <value>Valor Final</value>
+  </data>
+  <data name="Valorunitario" xml:space="preserve">
+    <value>Valor unitário</value>
+  </data>
+  <data name="Veiculos" xml:space="preserve">
+    <value>Veículos</value>
+  </data>
+  <data name="Venda" xml:space="preserve">
+    <value>Venda</value>
+  </data>
+  <data name="Vendedor" xml:space="preserve">
+    <value>Vendedor</value>
   </data>
 </root>
