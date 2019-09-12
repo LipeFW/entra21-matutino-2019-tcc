@@ -13,15 +13,16 @@ namespace View.Controllers
     {
         private VendaRepository repository;
         private VendedorRepository repositoryVendedor;
-        private ProdutoRepository repositoryProduto;
         private ClienteRepository repositoryCliente;
+        private ProdutoRepository repositoryProduto;
+
 
         public VendaController()
         {
             repository = new VendaRepository();
-            repositoryProduto = new ProdutoRepository();
             repositoryVendedor = new VendedorRepository();
             repositoryCliente = new ClienteRepository();
+            repositoryProduto = new ProdutoRepository();
         }
         [HttpGet, Route("obtertodos")]
         public JsonResult ObterTodos()
@@ -59,6 +60,7 @@ namespace View.Controllers
 
         public ActionResult Index()
         {
+
             List<Vendedor> vendedores = repositoryVendedor.ObterTodos();
             ViewBag.Vendedores = vendedores;
             List<Cliente> clientes = repositoryCliente.ObterTodos();

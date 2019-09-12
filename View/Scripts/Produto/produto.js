@@ -82,11 +82,12 @@
     $(".table").on("click", ".botao-apagar", function () {
         $idApagar = $(this).data("id");
 
-        $ajax({
-            url: "http://localhost:51242/Produto/apagar?id=" + $idAlterar,
+        $.ajax({
+            url: "http://localhost:51242/Produto/apagar?id=" + $idApagar,
             method: "get",
             success: function (data) {
                 $tabelaProduto.ajax.reload();
+                alert('Apagado com Sucesso');
             },
             error: function (err) {
                 alert('Não foi possivel apagar');
