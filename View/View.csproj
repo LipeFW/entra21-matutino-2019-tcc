@@ -2771,6 +2771,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resource.en-US.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resouces\Resource.es-ES.resx" />
     <EmbeddedResource Include="Resouces\Resource.pt-BR.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resource.pt-BR.Designer.cs</LastGenOutput>
