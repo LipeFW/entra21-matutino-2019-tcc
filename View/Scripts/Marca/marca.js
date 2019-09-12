@@ -86,7 +86,7 @@
             method: 'get',
             success: function (data) {
                 $('#marca-campo-nome').val(data.Nome);
-                alert('Carregando Informações');
+
                 $('#modal-marca').modal('show');
             },
             error: function (err) {

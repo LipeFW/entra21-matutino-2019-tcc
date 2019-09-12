@@ -21,6 +21,7 @@ namespace Repository.Repositories
         }
 
         public bool Alterar(Rota rota)
+
         {
             var rotaOriginal = context.Rotas.FirstOrDefault(x => x.Id == rota.Id);
 

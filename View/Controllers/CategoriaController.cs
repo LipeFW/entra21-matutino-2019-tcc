@@ -11,7 +11,7 @@ namespace View.Controllers
     [Route("categoria/")]
     public class CategoriaController : Controller
     {
-        CategoriaRepository repository;
+        private CategoriaRepository repository;
 
         public CategoriaController()
         {

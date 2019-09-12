@@ -2669,6 +2669,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CategoriaController.cs" />
+    <Compile Include="Controllers\CidadeController.cs" />
     <Compile Include="Controllers\ClienteController.cs" />
     <Compile Include="Controllers\ContaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -2749,6 +2750,7 @@
     <Folder Include="Content\fonts\" />
     <Folder Include="Models\" />
     <Folder Include="Scripts\Login\" />
+    <Folder Include="Views\Cidade\" />
     <Folder Include="Views\NotaFiscal\" />
   </ItemGroup>
   <ItemGroup>
@@ -2769,6 +2771,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resource.en-US.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resouces\Resource.es-ES.resx" />
     <EmbeddedResource Include="Resouces\Resource.pt-BR.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resource.pt-BR.Designer.cs</LastGenOutput>
