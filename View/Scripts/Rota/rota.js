@@ -32,9 +32,9 @@
             url: 'http://localhost:51242/Rota/alterar',
             method: 'post',
             data: {
-                id: $idalterar,
+                id: $idAlterar,
                 nome: $nome,
-                vendedor: $vendedor
+                idVendedor: $vendedor
             },
             success: function (data) {
                 $("#modal-rota").modal("hide");
@@ -53,7 +53,7 @@
             method: 'post',
             data: {
                 nome: $nome,
-                vendedor: $vendedor
+                idVendedor: $vendedor
             },
             success: function (data) {
                 $("#modal-rota").modal('hide');
