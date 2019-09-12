@@ -89,7 +89,7 @@
             method: 'get',
             success: function (data) {
                 $('#rota-campo-nome').val(data.Nome);
-                $('#rota-campo-vendedor').val(data.Vendedor);
+                $('#rota-campo-vendedor').val(data.Vendedor.Nome);
 
                 $('#modal-rota').modal('show');
             },
