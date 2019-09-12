@@ -95,7 +95,6 @@
         $idApagar = $(this).data('id');
 
         $.ajax({
-            url: 'http://localhost:51242/cliente/apagar?id=' + $idApagar,
             method: 'get',
             success: function (data) {
                 $tabelaCliente.ajax.reload();
@@ -120,7 +119,6 @@
                 $('#cliente-campo-cpf').val(data.CPF);
                 $('#cliente-campo-cep').val(data.CEP);
                 $('#cliente-campo-vendedor').val(data.Vendedor)
-
                 $('#modal-cliente').modal('show');
             },
             error: function (err) {
