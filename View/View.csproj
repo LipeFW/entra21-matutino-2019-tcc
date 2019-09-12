@@ -2656,8 +2656,6 @@
     <Content Include="Scripts\Marca\marca.js" />
     <Content Include="Scripts\Produto\produto.js" />
     <Content Include="Scripts\Rota\rota.js" />
-    <Content Include="Scripts\select2.js" />
-    <Content Include="Scripts\select2.min.js" />
     <Content Include="Scripts\umd\popper-utils.js" />
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
