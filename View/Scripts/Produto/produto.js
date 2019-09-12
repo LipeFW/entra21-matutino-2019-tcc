@@ -99,7 +99,7 @@
 
         $.ajax({
             url: "http://localhost:51242/Produto/obterpeloid?id=" + $idAlterar,
-            methd: "get",
+            method: "get",
             success: function (data) {
                 $("#produto-campo-nome").val(data.Nome);
                 $("#produto-campo-categoria").val(data.Categoria.Nome);

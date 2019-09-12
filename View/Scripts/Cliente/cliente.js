@@ -29,7 +29,7 @@
         $cep = $('#cliente-campo-cep').val();
         $vendedor = $('#cliente-campo-vendedor').val();
 
-        if (($nome.trim() == "") || ($telefone.trim == "") || ($cnpj == "") || ($cpf == "") || ($cep = "")){
+        if (($nome.trim() == "") || ($telefone.trim == "") || ($cnpj == "") || ($cpf == "") || ($cep == "")){
             alert("Preencha corretamente os campos!");
             return null;
         }
@@ -91,14 +91,18 @@
         }
 
 
-    $('.table').on('click', '.botao-apagar', function () {
-        $idApagar = $(this).data('id');
-
-        $ajax({
-            url: 'http://localhost:51242/cliente/apagar?=' + $idApagar,
-            method: 'get',
+    $(".table").on("click", ".botao-apagar", function () {
+        $idApagar = $(this).data("id");
+        $.ajax({
+            url: "http://localhost:51242/Cliente/Apagar?id=" + $idApagar,
+            method: "get",
             success: function (data) {
                 $tabelaCliente.ajax.reload();
+                alert("Registro Apagado Com Sucesso")
+
+            },
+            error: function (err) {
+                alert('Não Foi Possível Apagar');
             }
         });
     });
