@@ -99,5 +99,10 @@ namespace View.Controllers
             var resultado = new { results = rotasSelect2 };
             return Json(resultado, JsonRequestBehavior.AllowGet);
         }
+
+        public ActionResult Cadastro()
+        {
+            return View();
+        }
     }
 }

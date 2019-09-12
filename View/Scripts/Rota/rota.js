@@ -49,7 +49,7 @@
 
     function inserir($nome, $vendedor) {
         $.ajax({
-            url: 'http://localhost:51242/Rota/inserir',
+            url: 'http://localhost:51242/Rota/cadastro',
             method: 'post',
             data: {
                 nome: $nome,

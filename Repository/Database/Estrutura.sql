@@ -111,7 +111,8 @@
  );
  
  INSERT INTO rotas(nome,id_vendedor, registro_ativo)
- VALUES ('Gaspar', 1, 1);
+ VALUES ('Gaspar', 1, 1),
+		('Bluemanu', 1 ,1);
  
  CREATE TABLE notas_fiscais(
  id INT PRIMARY KEY IDENTITY(1,1),
