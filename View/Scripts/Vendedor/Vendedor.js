@@ -2,7 +2,7 @@
     $idAlterar = -1;
 
     $tabelaVendedor = $('#vendedor-tabela').DataTable({
-        ajax: 'http://localhost:51242/vendedor/obtertodos',
+        ajax: 'http://localhost:51242/Vendedor/obtertodos',
         serverSide: true,
         columns: [
             { 'data': 'Id' },
@@ -11,22 +11,17 @@
             { 'data': 'Veiculo.Modelo' },
             {
                 render: function (data, type, row) {
-                    return '<button class="btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button>\<button class="btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>'
+                    return '<button class="btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button><button class="btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>'
 
                 }
             }
         ]
     });
 
-    $('vendedor-botao-salvar').on("click", function () {
+    $('#vendedor-botao-salvar').on("click", function () {
         $nome = $('#vendedor-campo-nome').val();
         $usuario = $('#vendedor-campo-usuario').val();
         $veiculo = $('#vendedor-campo-veiculo').val();
-
-        if (($nome.trim() == "") || ($usuario == -1) || ($veiculo == -1)) {
-            alert("Preencha corretamente todos os campos")
-            return null;
-        }
 
         if ($idAlterar == -1) {
             inserir($nome, $usuario, $veiculo);
@@ -39,7 +34,7 @@
 
     function alterar($nome, $usuario, $veiculo) {
         $.ajax({
-            url: 'http://localhost:51242/vendedor/update',
+            url: 'http://localhost:51242/Vendedor/editar',
             method: 'post',
             data: {
                 id: $idAlterar,
@@ -60,7 +55,7 @@
 
     function inserir($nome, $usuario, $veiculo) {
         $.ajax({
-            url: 'http://localhost:51242/vendedor/inserir',
+            url: 'http://localhost:51242/Vendedor/cadastro',
             method: 'post',
             data: {
                 nome: $nome,
@@ -69,8 +64,8 @@
             },
             success: function (data) {
                 $('#modal-vendedor').modal('hide');
-                alert("Registro inserido com sucesso");
                 $tabelaVendedor.ajax.reload();
+                alert("Registro inserido com sucesso");
             },
             error: function (err) {
                 alert("Não foi possivel inserir");
@@ -97,7 +92,7 @@
         $idAlterar = $(this).data('id');
 
         $.ajax({
-            url: 'http://localhost:51242/vendedor/obterpeloid?id=' + $idAlterar,
+            url: 'http://localhost:51242/Vendedor/obterpeloid?id=' + $idAlterar,
             method: 'get',
 
             success: function (data) {

@@ -94,18 +94,18 @@
         });
     });
 
-    $(".table").on("click", "botao-editar", function () {
+    $(".table").on("click", ".botao-editar", function () {
         $idAlterar = $(this).data("id");
 
         $.ajax({
-            url: "http://localhost:51242/Produto/obterpeloid?id=" + idAlterar,
+            url: "http://localhost:51242/Produto/obterpeloid?id=" + $idAlterar,
             methd: "get",
             success: function (data) {
                 $("#produto-campo-nome").val(data.Nome);
-                $("#produto-campo-categoria").val(data.Categoria);
-                $("#produto-campo-codigo-barra").val(data.CodigoBarra);
-                $("#produto-campo-quantidade-produtos").val(data.QuantidadeProdutos);
-                $("#produto-campo-valor-unitatio").val(data.ValorUnitario);
+                $("#produto-campo-categoria").val(data.Categoria.Nome);
+                $("#produto-campo-codigo").val(data.CodigoBarra);
+                $("#produto-campo-quantidade").val(data.QuantidadeProdutos);
+                $("#produto-campo-valor").val(data.ValorUnitario);
                 $("#modal-produto").modal("show");
             },
             error: function (err) {

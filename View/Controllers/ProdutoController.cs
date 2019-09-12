@@ -61,7 +61,7 @@ namespace View.Controllers
         {
             var alterou = repository.Alterar(produto);
             var resultado = new { status = alterou };
-            return Json(resultado, JsonRequestBehavior.AllowGet);
+            return Json(resultado);
         }
 
         [HttpGet, Route("obterpeloid")]
@@ -92,17 +92,6 @@ namespace View.Controllers
             }
             var resultado = new { results = produtosSelect2 };
             return Json(resultado, JsonRequestBehavior.AllowGet);
-        }
-
-        [HttpGet, Route("editar")]
-        public ActionResult Editar(int id)
-        {
-            var produto = repository.ObterPeloId(id);
-            if (produto == null)
-                return RedirectToAction("index");
-
-            ViewBag.Produto = produto;
-            return View();
         }
     }
 }

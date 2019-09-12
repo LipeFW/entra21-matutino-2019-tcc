@@ -6,13 +6,14 @@
 <link rel="stylesheet" type="text/css" href="~/Content/css/tabela/util.css" />
 <div>
 
-    <h2 class="text-center">Vendedor</h2>
+    <h2 class="text-center">Vendedores</h2>
+
+
     <button data-toggle="modal" data-target="#modal-vendedor"
             class="btn btn-primary float-right mb-2">
-        <i class="fas fa-plus"></i> Novo Vendedor
+        <i class="fas fa-plus"></i>  Novo Vendedor
     </button>
-
-    <table id="vendedor-tabela" class="table table-hover table-striped table-bordered">
+    <table id="vendedor-tabela" class="table table-hover table-bordered table-striped">
         <thead>
             <tr>
                 <th>Id</th>
@@ -24,8 +25,12 @@
         </thead>
     </table>
 </div>
+
+
 @RenderPage("VendedorModal.cshtml")
+
 @section js{
-    <script src="~/Scripts/Vendedor/Vendedor.js"></script>
+    <script src="~/Scripts/Vendedor/Vendedor.js">
+    </script>
 }
 
