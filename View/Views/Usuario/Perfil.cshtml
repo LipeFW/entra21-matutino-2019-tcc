@@ -1,0 +1,87 @@
+﻿
+@{
+    ViewBag.Title = "Perfil";
+}
+<legend>
+    <span class="h2">Perfil</span>
+</legend>
+<div class="modal-body">
+    <legend>
+        <span class="h3">Dados Pessoais</span>
+    </legend>
+    <div class="form-group">
+        <label style="font-weight:bold" for="perfil-campo-nome">Nome <span class="text-danger">*</span></label>
+        <input id="perfil-campo-nome" class="form-control border-dark" />
+    </div>
+    <div class="form-group">
+        <label style="font-weight:bold" for="perfil-campo-telefone">Telefone <span class="text-danger">*</span></label>
+        <input id="perfil-campo-telefone" class="form-control border-dark" />
+    </div>
+    <div class="form-group">
+        <label style="font-weight:bold" for="perfil-campo-cpf">CPF <span class="text-danger">*</span></label>
+        <input id="perfil-campo-cpf" class="form-control border-dark" />
+    </div>
+    <div class="form-group">
+        <label style="font-weight:bold" for="perfil-campo-cnh">CNH <span class="text-danger">*</span></label>
+        <input id="perfil-campo-cnh" class="form-control border-dark" />
+    </div>
+    <div class="form-group">
+        <label style="font-weight:bold" for="perfil-campo-cep">CEP <span class="text-danger">*</span></label>
+        <input id="perfil-campo-cep" class="form-control border-dark" />
+    </div>
+    <div class="form-group">
+        <label style="font-weight:bold" for="perfil-campo-pais">País <span class="text-danger">*</span></label>
+        <select class="form-control border-dark" id="perfil-campo-pais">
+            <option disabled="disabled" selected="selected"> Selecione um país</option>
+            @foreach (Model.Pais pais in ViewBag.Paises)
+                {
+                    <option value="pais.Id">@pais.Nome</option>
+                }
+        </select>
+    </div>
+    <div class="form-group">
+        <label style="font-weight:bold" for="perfil-campo-estado">Estado <span class="text-danger">*</span></label>
+        <select class="form-control border-dark" id="perfil-campo-estado">
+            <option disabled="disabled" selected="selected"> Selecione um estado</option>
+            @foreach (Model.Estado estado in ViewBag.Estados)
+                {
+                    <option value="estado.Id">@estado.Nome</option>
+                }
+        </select>
+    </div>
+    <div class="form-group">
+        <label style="font-weight:bold" for="perfil-campo-cidade">Cidade <span class="text-danger">*</span></label>
+        <select class="form-control border-dark" id="perfil-campo-cidade">
+            <option disabled="disabled" selected="selected"> Selecione uma cidade</option>
+            @foreach (Model.Cidade cidade in ViewBag.Cidades)
+                {
+                    <option value="cidade.Id">@cidade.Nome</option>
+                }
+        </select>
+    </div>
+    <div class="form-group">
+        <label style="font-weight:bold" for="perfil-campo-cep">Logradouro <span class="text-danger">*</span></label>
+        <input id="perfil-campo-cep" class="form-control border-dark" />
+    </div>
+    <div>
+        <button class="btn btn-primary float-right"><i class="fas fa-pencil-alt"></i> Alterar Dados</button>
+    </div>
+</div>
+<legend>
+    <span class="h3">Alterar Senha</span>
+</legend>
+<div class="modal-body">
+    <div class="form-group">
+        <label style="font-weight:bold" for="perfil-campo-senha">Senha <span class="text-danger">*</span></label>
+        <input id="perfil-campo-senha" class="form-control border-dark" />
+    </div>
+    <div class="form-group">
+        <label style="font-weight:bold" for="perfil-campo-senha2">Confirmar Senha <span class="text-danger">*</span></label>
+        <input id="perfil-campo-senha2" class="form-control border-dark" />
+    </div>
+    <div>
+        <button class="btn btn-primary float-right"><i class="fas fa-pencil-alt"></i> Alterar Dados</button>
+    </div>
+</div>
+<legend></legend>
+

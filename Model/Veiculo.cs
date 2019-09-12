@@ -14,7 +14,6 @@ namespace Model
         [Key, Column("id")]
         public int Id { get; set; }
 
-
         [Column("marca")]
         public string Marca{ get; set; }
 

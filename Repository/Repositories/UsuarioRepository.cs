@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -64,7 +65,7 @@ namespace Repository.Repositories
 
         public List<Usuario> ObterTodos()
         {
-            return context.Usuarios.Where(x => x.RegistroAtivo == true).ToList();
+            return context.Usuarios.Where(x => x.RegistroAtivo == true).Include("Pais").Include("Estado").Include("Cidade").ToList();
         }
 
     }

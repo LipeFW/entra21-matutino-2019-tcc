@@ -13,10 +13,42 @@ namespace View.Controllers
     {
 
         private UsuarioRepository repository;
+        private PaisRepository repositoryPais;
+        private EstadoRepository repositoryEstado;
+        private CidadeRepository repositoryCidade;
 
         public UsuarioController()
         {
             repository = new UsuarioRepository();
+            repositoryPais = new PaisRepository();
+            repositoryEstado = new EstadoRepository();
+            repositoryCidade = new CidadeRepository();
+        }
+
+        [HttpGet]
+        public ActionResult Perfil()
+        {
+            List<Pais> paises = repositoryPais.ObterTodos();
+            List<Estado> estados = repositoryEstado.ObterTodos();
+            List<Cidade> cidades = repositoryCidade.ObterTodos();
+
+            ViewBag.Paises = paises;
+            ViewBag.Estados = estados;
+            ViewBag.Cidades = cidades;
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult Config()
+        {
+            List<Pais> paises = repositoryPais.ObterTodos();
+            List<Estado> estados = repositoryEstado.ObterTodos();
+            List<Cidade> cidades = repositoryCidade.ObterTodos();
+
+            ViewBag.Paises = paises;
+            ViewBag.Estados = estados;
+            ViewBag.Cidades = cidades;
+            return View();
         }
 
         [HttpGet]

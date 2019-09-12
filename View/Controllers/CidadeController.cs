@@ -8,37 +8,37 @@ using System.Web.Mvc;
 
 namespace View.Controllers
 {
-    [Route("categoria/")]
-    public class CategoriaController : Controller
+    [Route("cidade/")]
+    public class CidadeController : Controller
     {
-        CategoriaRepository repository;
+        CidadeRepository repository;
 
-        public CategoriaController()
+        public CidadeController()
         {
-            repository = new CategoriaRepository();
+            repository = new CidadeRepository();
         }
 
         [HttpGet, Route("obtertodos")]
         public JsonResult ObterTodos()
         {
-            var categorias = repository.ObterTodos();
-            var resultado = new { data = categorias };
+            var cidades = repository.ObterTodos();
+            var resultado = new { data = cidades };
             return Json(resultado, JsonRequestBehavior.AllowGet);
         }
 
         [HttpPost, Route("inserir")]
-        public ActionResult Inserir(Categoria categoria)
+        public ActionResult Inserir(Cidade cidade)
         {
-            categoria.RegistroAtivo = true;
-            var id = repository.Inserir(categoria);
-            var resultado = new {id = id };
+            cidade.RegistroAtivo = true;
+            var id = repository.Inserir(cidade);
+            var resultado = new { id = id };
             return Json(resultado, JsonRequestBehavior.AllowGet);
         }
 
         [HttpPost, Route("editar")]
-        public JsonResult Editar(Categoria categoria)
+        public JsonResult Editar(Cidade cidade)
         {
-            var alterou = repository.Alterar(categoria);
+            var alterou = repository.Alterar(cidade);
             var resultado = new { status = alterou };
             return Json(resultado, JsonRequestBehavior.AllowGet);
         }
@@ -58,25 +58,25 @@ namespace View.Controllers
         }
 
         public ActionResult Index()
-        { 
+        {
             return View();
         }
 
         public ActionResult Cadastro()
-        {        
+        {
             return View();
         }
 
         [HttpGet]
         public ActionResult Editar(int id)
         {
-            var categoria = repository.ObterPeloId(id);
-            if (categoria == null)
+            var cidade = repository.ObterPeloId(id);
+            if (cidade == null)
             {
                 return RedirectToAction("Index");
             }
 
-            ViewBag.Categoria = categoria;
+            ViewBag.Cidade = cidade;
             return View();
         }
     }
