@@ -37,8 +37,11 @@ namespace View.Controllers
         [HttpPost, Route("inserir")]
         public ActionResult Inserir(Vendedor vendedor)
         {
-            int id = repository.Inserir(vendedor);
-            return RedirectToAction("Editar", new { id = id });
+            vendedor.RegistroAtivo = true;
+            var id = repository.Inserir(vendedor);
+            var resultado = new { id = id };
+            return Json(resultado,
+              JsonRequestBehavior.AllowGet);
         }
 
         [HttpPost, Route("update")]
@@ -69,20 +72,10 @@ namespace View.Controllers
             return View();
         }
 
-        public ActionResult Cadastro()
+        [HttpGet, Route("obterpeloid")]
+        public JsonResult ObterPeloId(int id)
         {
-            return View();
-        }
-
-        [HttpGet]
-        public ActionResult Editar(int id)
-        {
-            var vendedor = repository.ObterPeloId(id);
-            if (vendedor == null)
-                return RedirectToAction("Index");
-
-            ViewBag.Vendedor = vendedor;
-            return View();
+            return Json(repository.ObterPeloId(id), JsonRequestBehavior.AllowGet);
         }
 
         [HttpGet, Route("obtertodosselect2")]

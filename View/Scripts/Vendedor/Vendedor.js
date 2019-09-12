@@ -23,29 +23,35 @@
         $usuario = $('#vendedor-campo-usuario').val();
         $veiculo = $('#vendedor-campo-veiculo').val();
 
+        if (($nome.trim() == "")) {
+            alert("Preencha corretamente os campos");
+            return null;
+        }
+
         if ($idAlterar == -1) {
             inserir($nome, $usuario, $veiculo);
         }
         else {
-            alterar($ome, $usuario, $veiculo);
+            alterar($nome, $usuario, $veiculo);
         }
 
     });
 
     function alterar($nome, $usuario, $veiculo) {
         $.ajax({
-            url: 'http://localhost:51242/Vendedor/editar',
+            url: 'http://localhost:51242/Vendedor/update',
             method: 'post',
             data: {
                 id: $idAlterar,
                 nome: $nome,
-                usuario: $usuario,
-                veiculo: $veiculo
+                idUsuario: $usuario,
+                idVeiculo: $veiculo
             },
             success: function (data) {
                 $('#modal-vendedor').modal('hide');
                 $idAlterar = -1;
                 $tabelaVendedor.ajax.reload();
+                alert("Registro alterado com sucesso");
             },
             error: function (err) {
                 alert("Não foi possivel alterar");
@@ -55,12 +61,12 @@
 
     function inserir($nome, $usuario, $veiculo) {
         $.ajax({
-            url: 'http://localhost:51242/Vendedor/cadastro',
+            url: 'http://localhost:51242/Vendedor/inserir',
             method: 'post',
             data: {
                 nome: $nome,
-                usuario: $usuario,
-                veiculo: $veiculo
+                idUsuario: $usuario,
+                idVeiculo: $veiculo
             },
             success: function (data) {
                 $('#modal-vendedor').modal('hide');
@@ -97,13 +103,13 @@
 
             success: function (data) {
                 $('#vendedor-campo-nome').val(data.Nome);
-                $('#vendedor-campo-usuario').val(data.Usuario);
-                $('#vendedor-campo-veiculo').val(data.Veiculo);
+                $('#vendedor-campo-usuario').val(data.Usuario.Nome);
+                $('#vendedor-campo-veiculo').val(data.Veiculo.Nome);
                 $('#modal-vendedor').modal('show');
             },
             error: function (err) {
                 alert("Não foi possivel carregar");
             }
-        });
+        })
     });
 });

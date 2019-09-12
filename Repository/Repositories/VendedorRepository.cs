@@ -23,9 +23,7 @@ namespace Repository.Repositories
                 return false;
 
             vendedorOriginal.Id = vendedor.Id;
-            vendedorOriginal.Usuario = vendedor.Usuario;
             vendedorOriginal.IdUsuario = vendedor.IdUsuario;
-            vendedorOriginal.Veiculo = vendedor.Veiculo;
             vendedorOriginal.IdVeiculo = vendedor.IdVeiculo;
             
             int quantidadeAfetada = context.SaveChanges();
@@ -40,7 +38,7 @@ namespace Repository.Repositories
         }
         public Vendedor ObterPeloId( int id)
         {
-            return context.Vendedores.Include("Venda").FirstOrDefault(x => x.Id == id);
+            return context.Vendedores.Include("Usuario").Include("Veiculo").FirstOrDefault(x => x.Id == id);
         }
         public bool Apagar(int id)
         {

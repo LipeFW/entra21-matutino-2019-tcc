@@ -2654,7 +2654,10 @@
     <Content Include="Scripts\jquery-3.4.1.min.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <Content Include="Scripts\jquery.mask.js" />
+    <Content Include="Scripts\jquery.mask.min.js" />
     <Content Include="Scripts\Marca\marca.js" />
+    <Content Include="Scripts\Mascaras\Mask.js" />
     <Content Include="Scripts\Produto\produto.js" />
     <Content Include="Scripts\Rota\rota.js" />
     <Content Include="Scripts\select2.js" />
@@ -2739,6 +2742,7 @@
     <Content Include="Views\Venda\VendaModal.cshtml" />
     <Content Include="Views\Rota\RotaModal.cshtml" />
     <Content Include="Views\Vendedor\VendedorModal.cshtml" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
