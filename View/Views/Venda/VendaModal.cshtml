@@ -10,15 +10,30 @@
             <div class="modal-body">
                 <div class="form-group">
                     <label for="venda-campo-quantidade">Quantidade</label>
-                    <input  type="number" id="venda-campo-quantidade" class="form-control" />
+                    <input type="number" id="venda-campo-quantidade" class="form-control" />
                 </div>
                 <div class="form-group">
                     <label for="venda-campo-vendedor">Vendedor</label>
-                    <select>
-                        <option value="value">text</option>
+                    <select id="venda-campo-vendedor" class="form-control" name="campo-vendedor">
+                        <option disabled="disabled" selected="selected">Selecione um vendedor</option>
+                        @foreach (Model.Vendedor vendedor in ViewBag.Vendedores)
+                        {
+                            <option value="@vendedor.Id">@vendedor.Nome</option>
+                        }
+                    </select>
+
+                </div>
+                <div class="modal-body">
+                <div class="form-group">
+                    <label for="venda-campo-cliente">Cliente</label>
+                   <select  class="form-control" id="venda-campo-cliente" name="campo-cliente">
+                        <option disabled ="disabled" selected="selected">Selecione Um cliente</option>
+                        @foreach (Model.Cliente cliente in ViewBag.Clientes)
+                        {
+                            <option value="@cliente.Id">@cliente.Nome</option>
+                        }
                     </select>
                 </div>
-                
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-outline-danger" data-dismiss="modal"><i class="fas fa-times"></i> Cancelar</button>
@@ -26,4 +41,5 @@
             </div>
         </div>
     </div>
+</div>
 </div>
