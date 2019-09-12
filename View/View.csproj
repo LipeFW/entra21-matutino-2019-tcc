@@ -2663,6 +2663,7 @@
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="Scripts\Usuario\perfil.js" />
     <Content Include="Scripts\Usuario\usuario.js" />
     <Content Include="Scripts\Veiculo\veiculo.js" />
     <Content Include="Scripts\Venda\venda.js" />
@@ -2751,6 +2752,7 @@
     <Folder Include="Scripts\Login\" />
     <Folder Include="Views\Cidade\" />
     <Folder Include="Views\Estado\" />
+    <Folder Include="Views\Filtro\" />
     <Folder Include="Views\NotaFiscal\" />
     <Folder Include="Views\Pais\" />
   </ItemGroup>

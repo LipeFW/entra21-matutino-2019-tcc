@@ -11,10 +11,12 @@ namespace Repository.Repositories
     public class EstadoRepository : IEstadoRepository
     {
         private SystemContext context;
+
         public EstadoRepository()
         {
             context = new SystemContext();
         }
+
         public bool Alterar(Estado estado)
         {
             var estadoOriginal = context.Estados.FirstOrDefault(x => x.Id == estado.Id);
@@ -58,9 +60,12 @@ namespace Repository.Repositories
             return estado;
         }
 
-        public List<Estado> ObterTodos()
+        public List<Estado> ObterTodosPeloIdPais(int idPais)
         {
-            return context.Estados.Where(x => x.RegistroAtivo == true).OrderBy(x => x.Id).ToList();
+            return context.Estados
+                .Where(x => x.RegistroAtivo == true && x.IdPais == idPais)
+                .OrderBy(x => x.Nome)
+                .ToList();
         }
     }
 }

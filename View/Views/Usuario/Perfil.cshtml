@@ -33,30 +33,19 @@
         <label style="font-weight:bold" for="perfil-campo-pais">País <span class="text-danger">*</span></label>
         <select class="form-control border-dark" id="perfil-campo-pais">
             <option disabled="disabled" selected="selected"> Selecione um país</option>
-            @foreach (Model.Pais pais in ViewBag.Paises)
-                {
-                    <option value="pais.Id">@pais.Nome</option>
-                }
         </select>
     </div>
     <div class="form-group">
         <label style="font-weight:bold" for="perfil-campo-estado">Estado <span class="text-danger">*</span></label>
         <select class="form-control border-dark" id="perfil-campo-estado">
             <option disabled="disabled" selected="selected"> Selecione um estado</option>
-            @foreach (Model.Estado estado in ViewBag.Estados)
-                {
-                    <option value="estado.Id">@estado.Nome</option>
-                }
+
         </select>
     </div>
     <div class="form-group">
         <label style="font-weight:bold" for="perfil-campo-cidade">Cidade <span class="text-danger">*</span></label>
         <select class="form-control border-dark" id="perfil-campo-cidade">
             <option disabled="disabled" selected="selected"> Selecione uma cidade</option>
-            @foreach (Model.Cidade cidade in ViewBag.Cidades)
-                {
-                    <option value="cidade.Id">@cidade.Nome</option>
-                }
         </select>
     </div>
     <div class="form-group">
@@ -85,3 +74,6 @@
 </div>
 <legend></legend>
 
+@section js {
+    <script src="~/Scripts/Usuario/perfil.js"></script>
+}

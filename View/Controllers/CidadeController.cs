@@ -18,14 +18,20 @@ namespace View.Controllers
             repository = new CidadeRepository();
         }
 
-        [HttpGet, Route("obtertodos")]
-        public JsonResult ObterTodos()
+        [HttpGet, Route("obtertodosselect2peloiddoestado")]
+        public JsonResult ObterTodosSelect2PeloIdDoEstado(int idEstado)
         {
-            var cidades = repository.ObterTodos();
-            var resultado = new { data = cidades };
+            var cidades = repository.ObterTodosPeloIdEstado(idEstado);
+            var listaCidades = new List<object>();
+            foreach (var cidade in cidades)
+            {
+                listaCidades.Add(new { id = cidade.Id, text = cidade.Nome });
+            }
+
+            var resultado = new { results = listaCidades };
             return Json(resultado, JsonRequestBehavior.AllowGet);
         }
-
+        
         [HttpPost, Route("inserir")]
         public ActionResult Inserir(Cidade cidade)
         {

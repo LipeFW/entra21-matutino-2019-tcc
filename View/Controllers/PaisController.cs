@@ -18,6 +18,20 @@ namespace View.Controllers
             repository = new PaisRepository();
         }
 
+        [HttpGet, Route("obtertodosselect2")]
+        public JsonResult ObterTodosSelect2()
+        {
+            var paises = repository.ObterTodos();
+            var listaPaises = new List<object>();
+            foreach (var pais in paises)
+            {
+                listaPaises.Add(new { id = pais.Id, text = pais.Nome });
+            }
+
+            var resultado = new { results =  listaPaises };
+            return Json(resultado, JsonRequestBehavior.AllowGet);
+        }
+
         [HttpGet, Route("obtertodos")]
         public JsonResult ObterTodos()
         {

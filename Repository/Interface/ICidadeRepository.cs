@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace Repository.Interface
 {
-    interface ICidadeRepository
+    public interface ICidadeRepository
     {
         int Inserir(Cidade cidade);
 
         bool Alterar(Cidade cidade);
 
-        List<Cidade> ObterTodos();
+        List<Cidade> ObterTodosPeloIdEstado(int idEstado);
 
         bool Apagar(int id);
 

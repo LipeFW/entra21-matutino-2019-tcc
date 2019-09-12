@@ -58,9 +58,12 @@ namespace Repository.Repositories
             return cidade;
         }
 
-        public List<Cidade> ObterTodos()
+        public List<Cidade> ObterTodosPeloIdEstado(int idEstado)
         {
-            return context.Cidades.Where(x => x.RegistroAtivo == true).OrderBy(x => x.Id).ToList();
+            return context.Cidades
+                .Where(x => x.RegistroAtivo == true && x.IdEstado == idEstado)
+                .OrderBy(x => x.Nome)
+                .ToList();
         }
     }
 }

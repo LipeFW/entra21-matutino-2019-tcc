@@ -11,17 +11,23 @@ namespace View.Controllers
     [Route("estado/")]
     public class EstadoController : Controller
     {
-        EstadoRepository repository;
+        private EstadoRepository repository;
         public EstadoController()
         {
             repository = new EstadoRepository();
         }
 
-        [HttpGet, Route("obtertodos")]
-        public JsonResult ObterTodos()
+        [HttpGet, Route("obtertodosselect2peloiddopais")]
+        public JsonResult ObterTodosSelect2PeloIdDoPais(int idPais)
         {
-            var estados = repository.ObterTodos();
-            var resultado = new { data = estados };
+            var estados = repository.ObterTodosPeloIdPais(idPais);
+            var listaEstados = new List<object>();
+            foreach (var estado in estados)
+            {
+                listaEstados.Add(new { id = estado.Id, text = estado.Nome });
+            }
+
+            var resultado = new { results = listaEstados };
             return Json(resultado, JsonRequestBehavior.AllowGet);
         }
 

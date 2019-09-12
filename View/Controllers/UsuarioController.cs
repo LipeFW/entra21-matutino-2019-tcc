@@ -28,26 +28,12 @@ namespace View.Controllers
         [HttpGet]
         public ActionResult Perfil()
         {
-            List<Pais> paises = repositoryPais.ObterTodos();
-            List<Estado> estados = repositoryEstado.ObterTodos();
-            List<Cidade> cidades = repositoryCidade.ObterTodos();
-
-            ViewBag.Paises = paises;
-            ViewBag.Estados = estados;
-            ViewBag.Cidades = cidades;
             return View();
         }
 
         [HttpGet]
         public ActionResult Config()
         {
-            List<Pais> paises = repositoryPais.ObterTodos();
-            List<Estado> estados = repositoryEstado.ObterTodos();
-            List<Cidade> cidades = repositoryCidade.ObterTodos();
-
-            ViewBag.Paises = paises;
-            ViewBag.Estados = estados;
-            ViewBag.Cidades = cidades;
             return View();
         }
 
