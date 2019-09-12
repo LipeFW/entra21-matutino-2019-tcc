@@ -94,11 +94,14 @@
     $('.table').on('click', '.botao-apagar', function () {
         $idApagar = $(this).data('id');
 
-        $ajax({
-            url: 'http://localhost:51242/cliente/apagar?=' + $idApagar,
+        $.ajax({
+            url: 'http://localhost:51242/cliente/apagar?id=' + $idApagar,
             method: 'get',
             success: function (data) {
                 $tabelaCliente.ajax.reload();
+            },
+            error: function (err) {
+                alert("Não foi possivel apagar");
             }
         });
     });
