@@ -90,7 +90,7 @@
             success: function (data) {
                 $('#rota-campo-nome').val(data.Nome);
                 $('#rota-campo-vendedor').val(data.Vendedor);
-                alert('Carregando Informações');
+
                 $('#modal-rota').modal('show');
             },
             error: function (err) {

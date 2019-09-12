@@ -92,7 +92,7 @@
             method: 'get',
             success: function (data) {
                 $('#categoria-campo-nome').val(data.Nome);
-                alert('Carregando Informações');
+
                 $('#modal-categoria').modal('show');
             },
             error: function (err) {
