@@ -8,37 +8,42 @@ using System.Web.Mvc;
 
 namespace View.Controllers
 {
-    [Route("categoria/")]
-    public class CategoriaController : Controller
+    [Route("estado/")]
+    public class EstadoController : Controller
     {
-        private CategoriaRepository repository;
-
-        public CategoriaController()
+        private EstadoRepository repository;
+        public EstadoController()
         {
-            repository = new CategoriaRepository();
+            repository = new EstadoRepository();
         }
 
-        [HttpGet, Route("obtertodos")]
-        public JsonResult ObterTodos()
+        [HttpGet, Route("obtertodosselect2peloiddopais")]
+        public JsonResult ObterTodosSelect2PeloIdDoPais(int idPais)
         {
-            var categorias = repository.ObterTodos();
-            var resultado = new { data = categorias };
+            var estados = repository.ObterTodosPeloIdPais(idPais);
+            var listaEstados = new List<object>();
+            foreach (var estado in estados)
+            {
+                listaEstados.Add(new { id = estado.Id, text = estado.Nome });
+            }
+
+            var resultado = new { results = listaEstados };
             return Json(resultado, JsonRequestBehavior.AllowGet);
         }
 
         [HttpPost, Route("inserir")]
-        public ActionResult Inserir(Categoria categoria)
+        public ActionResult Inserir(Estado estado)
         {
-            categoria.RegistroAtivo = true;
-            var id = repository.Inserir(categoria);
-            var resultado = new {id = id };
+            estado.RegistroAtivo = true;
+            var id = repository.Inserir(estado);
+            var resultado = new { id = id };
             return Json(resultado, JsonRequestBehavior.AllowGet);
         }
 
         [HttpPost, Route("editar")]
-        public JsonResult Editar(Categoria categoria)
+        public JsonResult Editar(Estado estado)
         {
-            var alterou = repository.Alterar(categoria);
+            var alterou = repository.Alterar(estado);
             var resultado = new { status = alterou };
             return Json(resultado, JsonRequestBehavior.AllowGet);
         }
@@ -58,25 +63,25 @@ namespace View.Controllers
         }
 
         public ActionResult Index()
-        { 
+        {
             return View();
         }
 
         public ActionResult Cadastro()
-        {        
+        {
             return View();
         }
 
         [HttpGet]
         public ActionResult Editar(int id)
         {
-            var categoria = repository.ObterPeloId(id);
-            if (categoria == null)
+            var estado = repository.ObterPeloId(id);
+            if (estado == null)
             {
                 return RedirectToAction("Index");
             }
 
-            ViewBag.Categoria = categoria;
+            ViewBag.Estado = estado;
             return View();
         }
     }

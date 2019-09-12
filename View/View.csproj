@@ -114,6 +114,7 @@
     <Content Include="App_Data\Database_log.ldf">
       <DependentUpon>Database.mdf</DependentUpon>
     </Content>
+    <Content Include="Content\css\conta\conta.css" />
     <Content Include="Content\css\outros.css" />
     <Content Include="Content\css\select2.css" />
     <Content Include="Content\css\select2.min.css" />
@@ -2659,10 +2660,13 @@
     <Content Include="Scripts\Mascaras\Mask.js" />
     <Content Include="Scripts\Produto\produto.js" />
     <Content Include="Scripts\Rota\rota.js" />
+    <Content Include="Scripts\select2.js" />
+    <Content Include="Scripts\select2.min.js" />
     <Content Include="Scripts\umd\popper-utils.js" />
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="Scripts\Usuario\perfil.js" />
     <Content Include="Scripts\Usuario\usuario.js" />
     <Content Include="Scripts\Veiculo\veiculo.js" />
     <Content Include="Scripts\Venda\venda.js" />
@@ -2674,12 +2678,13 @@
     <Compile Include="Controllers\CategoriaController.cs" />
     <Compile Include="Controllers\CidadeController.cs" />
     <Compile Include="Controllers\ClienteController.cs" />
-    <Compile Include="Controllers\ContaController.cs" />
+    <Compile Include="Controllers\EstadoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\MarcaController.cs" />
     <Compile Include="Controllers\ModeloController.cs" />
     <Compile Include="Controllers\NotaFiscalController.cs" />
+    <Compile Include="Controllers\PaisController.cs" />
     <Compile Include="Controllers\ProdutoController.cs" />
     <Compile Include="Controllers\RotaController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
@@ -2700,11 +2705,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resource.en-US.resx</DependentUpon>
     </Compile>
-    <Compile Include="Resouces\Resource.pt-BR.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resource.pt-BR.resx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -2724,8 +2724,16 @@
     <Content Include="Scripts\umd\popper.js.map" />
     <Content Include="Scripts\umd\popper-utils.min.js.map" />
     <Content Include="Scripts\umd\popper-utils.js.map" />
-    <Content Include="Views\Conta\Config.cshtml" />
-    <Content Include="Views\Conta\Perfil.cshtml" />
+    <Content Include="Views\Cliente\Cadastro.cshtml" />
+    <Content Include="Views\Categoria\Cadastro.cshtml" />
+    <Content Include="Views\Produto\Cadastro.cshtml" />
+    <Content Include="Views\Rota\Cadastro.cshtml" />
+    <Content Include="Views\Usuario\Cadastro.cshtml" />
+    <Content Include="Views\Veiculo\Cadastro.cshtml" />
+    <Content Include="Views\Vendedor\Cadastro.cshtml" />
+    <Content Include="Views\Venda\Cadastro.cshtml" />
+    <Content Include="Views\Usuario\Config.cshtml" />
+    <Content Include="Views\Usuario\Perfil.cshtml" />
     <Content Include="Views\Usuario\UsuarioModal.cshtml" />
     <Content Include="Views\Categoria\CategoriaModal.cshtml" />
     <Content Include="Views\Cliente\ClienteModal.cshtml" />
@@ -2746,7 +2754,11 @@
     <Folder Include="Content\fonts\" />
     <Folder Include="Models\" />
     <Folder Include="Scripts\Login\" />
+    <Folder Include="Views\Cidade\" />
+    <Folder Include="Views\Estado\" />
+    <Folder Include="Views\Filtro\" />
     <Folder Include="Views\NotaFiscal\" />
+    <Folder Include="Views\Pais\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
@@ -2766,11 +2778,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resource.en-US.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resouces\Resource.es-ES.resx" />
-    <EmbeddedResource Include="Resouces\Resource.pt-BR.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resource.pt-BR.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Resouces\Resource.pt-BR.resx" />
     <EmbeddedResource Include="Resouces\Resource.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resource.Designer.cs</LastGenOutput>

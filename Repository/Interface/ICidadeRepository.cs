@@ -7,17 +7,16 @@ using System.Threading.Tasks;
 
 namespace Repository.Interface
 {
-    public interface ICategoriaRepository
+    public interface ICidadeRepository
     {
-        int Inserir(Categoria categoria);
+        int Inserir(Cidade cidade);
 
-        bool Alterar(Categoria categoria);
+        bool Alterar(Cidade cidade);
 
-        List<Categoria> ObterTodos();
+        List<Cidade> ObterTodosPeloIdEstado(int idEstado);
 
         bool Apagar(int id);
 
-        Categoria ObterPeloId(int id);
-
+        Cidade ObterPeloId(int id);
     }
 }

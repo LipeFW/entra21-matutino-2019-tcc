@@ -22,6 +22,7 @@
     <link href="~/Content/theme/assets/css/layout.min.css" rel="stylesheet" type="text/css">
     <link href="~/Content/theme/assets/css/components.min.css" rel="stylesheet" type="text/css">
     <link href="~/Content/theme/assets/css/colors.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/css/select2.min.css" rel="stylesheet" type="text/css">
     <!-- /global stylesheets -->
     <!-- Core JS files -->
     <script src="~/Scripts/jquery-3.4.1.min.js"></script>
@@ -115,9 +116,9 @@
                     </a>
 
                     <div class="dropdown-menu dropdown-menu-right">
-                        <a href="/conta/perfil" class="dropdown-item"><i class="icon-user-plus"></i> Meu Perfil</a>
+                        <a href="/usuario/perfil" class="dropdown-item"><i class="icon-user-plus"></i> Meu Perfil</a>
                         <div class="/dropdown-divider"></div>
-                        <a href="/conta/config" class="dropdown-item"><i class="icon-cog5"></i> <span id="configText">Configurações da Conta</span> </a>
+                        <a href="/usuario/config" class="dropdown-item"><i class="icon-cog5"></i> <span id="configText">Configurações da Conta</span> </a>
                         <a href="/login/index" class="dropdown-item"><i class="icon-switch2"></i> <span id="sairText">Sair</span></a>
                     </div>
                 </li>
@@ -295,6 +296,7 @@
         </div>
     </div>
     <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="~/Scripts/select2.min.js"></script>
     @RenderSection("js", false)
 
     <script type="text/javascript">

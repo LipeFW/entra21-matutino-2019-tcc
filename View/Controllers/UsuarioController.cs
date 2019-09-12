@@ -13,10 +13,28 @@ namespace View.Controllers
     {
 
         private UsuarioRepository repository;
+        private PaisRepository repositoryPais;
+        private EstadoRepository repositoryEstado;
+        private CidadeRepository repositoryCidade;
 
         public UsuarioController()
         {
             repository = new UsuarioRepository();
+            repositoryPais = new PaisRepository();
+            repositoryEstado = new EstadoRepository();
+            repositoryCidade = new CidadeRepository();
+        }
+
+        [HttpGet]
+        public ActionResult Perfil()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult Config()
+        {
+            return View();
         }
 
         [HttpGet]
