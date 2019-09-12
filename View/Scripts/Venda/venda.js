@@ -52,6 +52,8 @@
                 $("#modal-venda").mdal("hide");
                 $idAlterar = -1;
                 $tabelaVenda.ajax.reload();
+                alert("Registro alterado com sucesso");
+
             },
             error: function (err) {
                 alert("Não foi possivel alterar");
@@ -74,7 +76,7 @@
             success: function (data) {
                 $("#modal-venda").modal("hide");
                 $tabelaVenda.ajax.reload();
-                alert('Registro inserido com Sucesso');
+                alert('Registro inserido com sucesso');
             },
             error: function (err) {
                 alert("Não foi possivel inserir");

@@ -51,6 +51,7 @@
                 $('#modal-vendedor').modal('hide');
                 $idAlterar = -1;
                 $tabelaVendedor.ajax.reload();
+                alert("Registro alterado com sucesso");
             },
             error: function (err) {
                 alert("Não foi possivel alterar");

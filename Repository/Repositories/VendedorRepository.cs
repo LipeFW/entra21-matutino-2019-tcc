@@ -23,9 +23,7 @@ namespace Repository.Repositories
                 return false;
 
             vendedorOriginal.Id = vendedor.Id;
-            vendedorOriginal.Usuario = vendedor.Usuario;
             vendedorOriginal.IdUsuario = vendedor.IdUsuario;
-            vendedorOriginal.Veiculo = vendedor.Veiculo;
             vendedorOriginal.IdVeiculo = vendedor.IdVeiculo;
             
             int quantidadeAfetada = context.SaveChanges();

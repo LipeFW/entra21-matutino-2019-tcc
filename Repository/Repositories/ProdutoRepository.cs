@@ -60,7 +60,7 @@ namespace Repository.Repositories
 
             produtoOriginal.Id = produto.Id;
             produtoOriginal.Nome = produto.Nome;
-            produtoOriginal.Categoria = produto.Categoria;
+            produtoOriginal.IdCategoria = produto.IdCategoria;
             produtoOriginal.CodigoBarra = produto.CodigoBarra;
             produtoOriginal.ValorUnitario = produto.ValorUnitario;
             produtoOriginal.QuantidadeProdutos = produto.QuantidadeProdutos;
