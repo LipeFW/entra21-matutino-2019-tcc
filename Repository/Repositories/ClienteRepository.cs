@@ -51,9 +51,9 @@ namespace Repository.Repositories
 
         public int Inserir(Cliente cliente)
         {
+            cliente.RegistroAtivo = true;
             context.Clientes.Add(cliente);
             context.SaveChanges();
-
             return cliente.Id;
         }
 

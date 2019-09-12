@@ -40,7 +40,7 @@ namespace Repository.Repositories
         }
         public Vendedor ObterPeloId( int id)
         {
-            return context.Vendedores.Include("Venda").FirstOrDefault(x => x.Id == id);
+            return context.Vendedores.Include("Usuario").Include("Veiculo").FirstOrDefault(x => x.Id == id);
         }
         public bool Apagar(int id)
         {
