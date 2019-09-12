@@ -54,7 +54,7 @@
                     cnpj: $cnpj,
                     cpf: $cpf,
                     cep: $cep,
-                    vendedor: $vendedor
+                    idVendedor: $vendedor
                 },
                 success: function (data) {
                     $('#modal-cliente').modal('hide');
@@ -74,11 +74,10 @@
                 data: {
                     nome: $nome,
                     telefone: $telefone,
-
                     cnpj: $cnpj,
                     cpf: $cpf,
                     cep: $cep,
-                    vendedor: $vendedor.nome
+                    idVendedor: $vendedor
                 },
                 success: function (data) {
                     $('#modal-cliente').modal('hide');
@@ -108,17 +107,17 @@
         $idAlterar = $(this).data('id');
 
         $.ajax({
-            url: 'http://localhost:51242/cliente/obterpeloid?=' + $idAlterar,
+            url: 'http://localhost:51242/cliente/obterpeloid?id=' + $idAlterar,
             method: 'get',
 
             success: function (data) {
                 $('#cliente-campo-nome').val(data.Nome);
                 $('#cliente-campo-telefone').val(data.Telefone);
-                $('#cliente-campo-cnpj').val(data.Cnpj);
-                $('#cliente-campo-cpf').val(data.Cpf);
-                $('#cliente-campo-cep').val(data.Cep);
+                $('#cliente-campo-cnpj').val(data.CNPJ);
+                $('#cliente-campo-cpf').val(data.CPF);
+                $('#cliente-campo-cep').val(data.CEP);
                 $('#cliente-campo-vendedor').val(data.Vendedor)
-                alert('Carregando Informações');
+
                 $('#modal-cliente').modal('show');
             },
             error: function (err) {

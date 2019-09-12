@@ -21,16 +21,16 @@
         $nome = $("#usuario-campo-nome").val();
         $senha = $("#usuario-campo-senha").val();
 
-        if (($nome.trim() == "") || ($senha.trim() == "")) {
+        if (($nome.trim() == "") || ($senha == "")) {
             alert("Preencha corretamente os campos");
             return null;
         }
 
         if ($idAlterar == -1) {
-            inserir($nome.trim(), $senha.trim());
+            inserir($nome.trim(), $senha);
 
         } else {
-            alterar($nome.trim(), $senha.trim());
+            alterar($nome.trim(), $senha);
         }
 
         function alterar($nome, $senha) {
@@ -98,7 +98,6 @@
             success: function (data) {
                 $("#usuario-campo-nome").val(data.Nome);
                 $("#usuario-campo-senha").val(data.Senha);
-                alert('Carregando Informações');
                 $("#modal-usuario").modal("show");
 
             },

@@ -12,12 +12,17 @@ namespace View.Controllers
     public class VendaController : Controller
     {
         private VendaRepository repository;
-        //private VendaRepository repository;
-        //private VendaRepository repository;
+        private VendedorRepository repositoryVendedor;
+        private ClienteRepository repositoryCliente;
+        private ProdutoRepository repositoryProduto;
+
 
         public VendaController()
         {
             repository = new VendaRepository();
+            repositoryVendedor = new VendedorRepository();
+            repositoryCliente = new ClienteRepository();
+            repositoryProduto = new ProdutoRepository();
         }
         [HttpGet, Route("obtertodos")]
         public JsonResult ObterTodos()
@@ -55,12 +60,13 @@ namespace View.Controllers
 
         public ActionResult Index()
         {
-            //List<Vendedor> vendedores = repositoryMarca.ObterTodos();
-            //ViewBag.Vendedores = vendedores;
-            //List<Cliente> clientes = repositoryMarca.ObterTodos();
-            //ViewBag.Clientes = clientes;
-            //List<Produto> produtos = repositoryMarca.ObterTodos();
-            //ViewBag.Produtos = produtos;
+
+            List<Vendedor> vendedores = repositoryVendedor.ObterTodos();
+            ViewBag.Vendedores = vendedores;
+            List<Cliente> clientes = repositoryCliente.ObterTodos();
+            ViewBag.Clientes = clientes;
+            List<Produto> produtos = repositoryProduto.ObterTodos();
+            ViewBag.Produtos = produtos;
             return View();
         }
 

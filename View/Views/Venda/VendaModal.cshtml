@@ -10,36 +10,60 @@
             <div class="modal-body">
                 <div class="form-group">
                     <label for="venda-campo-quantidade">Quantidade</label>
-                    <input type="number" id="venda-campo-quantidade" class="form-control" />
+                    <input type="number" id="venda-campo-quantidade" class="form-control" min="0" max="10.000" />
                 </div>
-                <div class="form-group">
-                    <label for="venda-campo-vendedor">Vendedor</label>
-                    <select id="venda-campo-vendedor" class="form-control" name="campo-vendedor">
-                        <option disabled="disabled" selected="selected">Selecione um vendedor</option>
-                        @foreach (Model.Vendedor vendedor in ViewBag.Vendedores)
-                        {
-                            <option value="@vendedor.Id">@vendedor.Nome</option>
-                        }
-                    </select>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="venda-campo-vendedor">Vendedor</label>
+                        <select class="form-control"
+                                id="venda-campo-vendedor">
+                            <option disabled="disabled"
+                                    selected="selected">
+                                Selecione O Vendedor
+                            </option>
+                            @foreach (Model.Vendedor vendedor in ViewBag.Vendedores)
+                            {
+                                <option value="@vendedor.Id">@vendedor.Nome</option>
+                            }
+                        </select>
+                    </div>
 
                 </div>
                 <div class="modal-body">
-                <div class="form-group">
-                    <label for="venda-campo-cliente">Cliente</label>
-                   <select  class="form-control" id="venda-campo-cliente" name="campo-cliente">
-                        <option disabled ="disabled" selected="selected">Selecione Um cliente</option>
-                        @foreach (Model.Cliente cliente in ViewBag.Clientes)
-                        {
-                            <option value="@cliente.Id">@cliente.Nome</option>
-                        }
-                    </select>
+                    <div class="form-group">
+                        <label for="venda-campo-cliente">Cliente</label>
+                        <select class="form-control" id="venda-campo-cliente" name="campo-cliente">
+                            <option disabled="disabled" selected="selected">Selecione Um Cliente</option>
+                            @foreach (Model.Cliente cliente in ViewBag.Clientes)
+                            {
+                                <option value="@cliente.Id">@cliente.Nome</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="venda-campo-produto">Produto</label>
+                        <select class="form-control" id="venda-campo-produto" name="campo-produto">
+                            <option disabled="disabled" selected="selected">Selecione Um Produto</option>
+                            @foreach (Model.Produto produto in ViewBag.Produtos)
+                            {
+                                <option value="@produto.Id">@produto.Nome</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="venda-campo-desconto">Desconto</label>
+                    <input type= "number" id="campo-venda-desconto" class="form-control" />
+                    </div>
+                    </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-danger" data-dismiss="modal"><i class="fas fa-times"></i> Cancelar</button>
+                    <button type="button" class="btn btn-success"><i class="fas fa-save"></i>  Salvar</button>
+                </div>
+                    </div>
                 </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-outline-danger" data-dismiss="modal"><i class="fas fa-times"></i> Cancelar</button>
-                <button type="button" class="btn btn-success"><i class="fas fa-save"></i>  Salvar</button>
-            </div>
-        </div>
-    </div>
-</div>
 </div>

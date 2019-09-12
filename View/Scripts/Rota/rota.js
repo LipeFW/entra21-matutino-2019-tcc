@@ -49,7 +49,7 @@
 
     function inserir($nome, $vendedor) {
         $.ajax({
-            url: 'http://localhost:51242/Rota/inserir',
+            url: 'http://localhost:51242/Rota/cadastro',
             method: 'post',
             data: {
                 nome: $nome,
@@ -90,7 +90,7 @@
             success: function (data) {
                 $('#rota-campo-nome').val(data.Nome);
                 $('#rota-campo-vendedor').val(data.Vendedor);
-                alert('Carregando Informações');
+
                 $('#modal-rota').modal('show');
             },
             error: function (err) {
