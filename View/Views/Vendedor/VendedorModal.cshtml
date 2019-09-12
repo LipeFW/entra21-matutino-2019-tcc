@@ -13,7 +13,7 @@
                     <input id="vendedor-campo-nome" class="form-control" />
                     <div>
                         <label for="vendedor-campo-usuario">Usuário</label>
-                        <select class="form-control" id="vendedor-campo-usuario" name="campo-usuario">
+                        <select class="form-control " id="vendedor-campo-usuario" name="campo-usuario">
                             <option disabled="disabled" selected="selected">Selecione um usuário</option>
                             @foreach (Model.Usuario usuario in ViewBag.Usuarios)
                             {
@@ -33,7 +33,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-outline-danger" data-dismiss="modal"><i class="fas fa-times"></i> Cancelar</button>
-                        <button type="button" class="btn btn-success"><i class="fas fa-save"></i>  Salvar</button>
+                        <button type="button" class="btn btn-success" id="vendedor-botao-salvar"><i class="fas fa-save"></i>  Salvar</button>
                     </div>
                 </div>
             </div>

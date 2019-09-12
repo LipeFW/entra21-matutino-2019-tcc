@@ -30,6 +30,7 @@
         } else {
             alterar($nome.trim());
         }
+    });
 
         function alterar($nome) {
             $.ajax({
@@ -65,9 +66,8 @@
                 error: function (err) {
                     alert('Não foi possivel inserir');
                 }
-            })
+            });
         }
-    })
 
     $('.table').on('click', '.botao-apagar', function () {
         $idApagar = $(this).data('id');
@@ -92,7 +92,7 @@
             method: 'get',
             success: function (data) {
                 $('#categoria-campo-nome').val(data.Nome);
-                alert('Carregando Informações');
+
                 $('#modal-categoria').modal('show');
             },
             error: function (err) {

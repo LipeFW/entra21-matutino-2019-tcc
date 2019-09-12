@@ -7,14 +7,14 @@
         columns: [
             { 'data': 'Id' },
             { 'data': 'Quantidade' },
-            { 'data': 'Vendedor' },
-            { 'data': 'Cliente' },
-            { 'data': 'Produto' },
+            { 'data': 'Vendedor.Nome' },
+            { 'data': 'Cliente.Nome' },
+            { 'data': 'Produto.Nome' },
             { 'data': 'Total' },
             { 'data': 'Desconto' },
             {
                 render: function (data, type, row) {
-                    return '<button class="btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button>\<button class="btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>'
+                    return '<button class="btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button><button class="btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>'
                 }
             }
         ]
@@ -111,7 +111,7 @@
                 $('venda-campo-produto').val(data.Produto);
                 $('venda-campo-total').val(data.Total);
                 $('venda-campo-desconto').val(data.Desconto);
-                alert('Carregando Informações');
+
                 $('modal-venda').modal('show');
 
             },
