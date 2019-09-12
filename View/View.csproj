@@ -2721,14 +2721,6 @@
     <Content Include="Scripts\umd\popper.js.map" />
     <Content Include="Scripts\umd\popper-utils.min.js.map" />
     <Content Include="Scripts\umd\popper-utils.js.map" />
-    <Content Include="Views\Cliente\Cadastro.cshtml" />
-    <Content Include="Views\Categoria\Cadastro.cshtml" />
-    <Content Include="Views\Produto\Cadastro.cshtml" />
-    <Content Include="Views\Rota\Cadastro.cshtml" />
-    <Content Include="Views\Usuario\Cadastro.cshtml" />
-    <Content Include="Views\Veiculo\Cadastro.cshtml" />
-    <Content Include="Views\Vendedor\Cadastro.cshtml" />
-    <Content Include="Views\Venda\Cadastro.cshtml" />
     <Content Include="Views\Conta\Config.cshtml" />
     <Content Include="Views\Conta\Perfil.cshtml" />
     <Content Include="Views\Usuario\UsuarioModal.cshtml" />
@@ -2750,7 +2742,6 @@
     <Folder Include="Content\fonts\" />
     <Folder Include="Models\" />
     <Folder Include="Scripts\Login\" />
-    <Folder Include="Views\Cidade\" />
     <Folder Include="Views\NotaFiscal\" />
   </ItemGroup>
   <ItemGroup>
