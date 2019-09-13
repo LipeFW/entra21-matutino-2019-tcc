@@ -2787,6 +2787,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resource.es_ES.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resouces\Resource.pt-BR.error.resx" />
     <EmbeddedResource Include="Resouces\Resource.pt-BR.resx" />
     <EmbeddedResource Include="Resouces\Resource.resx">
       <Generator>ResXFileCodeGenerator</Generator>
