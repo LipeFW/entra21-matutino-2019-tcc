@@ -38,7 +38,7 @@ namespace View.Controllers
                  JsonRequestBehavior.AllowGet);
         }
 
-        [HttpPost, Route("editar")]
+        [HttpPost, Route("update")]
         public JsonResult Editar(Rota rota)
         {
             var alterou = repository.Alterar(rota);

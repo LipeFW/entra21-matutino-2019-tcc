@@ -29,7 +29,7 @@
 
     function alterar($nome, $vendedor) {
         $.ajax({
-            url: 'http://localhost:51242/Rota/alterar',
+            url: 'http://localhost:51242/Rota/update',
             method: 'post',
             data: {
                 id: $idAlterar,
@@ -42,14 +42,14 @@
                 $tabelaRota.ajax.reload();
             },
             error: function (err) {
-                alert('Não foi´possivel alterar');
+                alert('Não foi possivel alterar');
             }
         });
     }
 
     function inserir($nome, $vendedor) {
         $.ajax({
-            url: 'http://localhost:51242/Rota/cadastro',
+            url: 'http://localhost:51242/Rota/inserir',
             method: 'post',
             data: {
                 nome: $nome,
@@ -89,7 +89,7 @@
             method: 'get',
             success: function (data) {
                 $('#rota-campo-nome').val(data.Nome);
-                $('#rota-campo-vendedor').val(data.Vendedor.Nome);
+                $('#rota-campo-vendedor').val(data.Vendedor);
 
                 $('#modal-rota').modal('show');
             },

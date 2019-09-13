@@ -2654,10 +2654,7 @@
     <Content Include="Scripts\jquery-3.4.1.min.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
-    <Content Include="Scripts\jquery.mask.js" />
-    <Content Include="Scripts\jquery.mask.min.js" />
     <Content Include="Scripts\Marca\marca.js" />
-    <Content Include="Scripts\Mascaras\Mask.js" />
     <Content Include="Scripts\Produto\produto.js" />
     <Content Include="Scripts\Rota\rota.js" />
     <Content Include="Scripts\select2.js" />
@@ -2754,6 +2751,7 @@
     <Folder Include="Content\fonts\" />
     <Folder Include="Models\" />
     <Folder Include="Scripts\Login\" />
+    <Folder Include="Scripts\Mascaras\" />
     <Folder Include="Views\Cidade\" />
     <Folder Include="Views\Estado\" />
     <Folder Include="Views\Filtro\" />
