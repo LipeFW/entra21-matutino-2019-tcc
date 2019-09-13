@@ -2710,6 +2710,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resource.es_ES.resx</DependentUpon>
     </Compile>
+    <Compile Include="Resouces\Resource.pt-BR1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.pt-BR.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -2787,10 +2792,13 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resource.es_ES.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resouces\Resource.pt-BR.resx" />
     <EmbeddedResource Include="Resouces\Resource.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resouces\Resource.pt-BR.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.pt-BR1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

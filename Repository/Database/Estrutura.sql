@@ -141,7 +141,8 @@ registro_ativo BIT
 );
 
 INSERT INTO rotas(nome,id_vendedor, registro_ativo)
-VALUES ('Gaspar', 1, 1);
+VALUES ('Gaspar', 1, 1),
+	   ('Blumenau',1,1);
 
 CREATE TABLE notas_fiscais(
 id INT PRIMARY KEY IDENTITY(1,1),
