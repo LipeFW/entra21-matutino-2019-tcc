@@ -3,53 +3,76 @@
     ViewBag.Title = "Config";
 }
 
-<h2>Configurações</h2>
+<legend>
+    <span class="h2">Configurações da Conta</span>
+</legend>
+<div class="modal-body">
+    <legend>
+        <span class="h3">Dados Pessoais</span>
+    </legend>
+    <div class="form-group">
+        <label style="font-weight:bold" for="perfil-campo-nome">Nome <span class="text-danger">*</span></label>
+        <input id="perfil-campo-nome" class="form-control border-dark" />
+    </div>
+    <div class="form-group">
+        <label style="font-weight:bold" for="perfil-campo-telefone">Telefone <span class="text-danger">*</span></label>
+        <input id="perfil-campo-telefone" class="form-control border-dark" />
+    </div>
+    <div class="form-group">
+        <label style="font-weight:bold" for="perfil-campo-cpf">CPF <span class="text-danger">*</span></label>
+        <input id="perfil-campo-cpf" class="form-control border-dark" />
+    </div>
+    <div class="form-group">
+        <label style="font-weight:bold" for="perfil-campo-cnh">CNH <span class="text-danger">*</span></label>
+        <input id="perfil-campo-cnh" class="form-control border-dark" />
+    </div>
+    <div class="form-group">
+        <label style="font-weight:bold" for="perfil-campo-cep">CEP <span class="text-danger">*</span></label>
+        <input id="perfil-campo-cep" class="form-control border-dark" />
+    </div>
+    <div class="form-group">
+        <label style="font-weight:bold" for="perfil-campo-pais">País <span class="text-danger">*</span></label>
+        <select class="form-control border-dark" id="perfil-campo-pais">
+            <option disabled="disabled" selected="selected"> Selecione um país</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label style="font-weight:bold" for="perfil-campo-estado">Estado <span class="text-danger">*</span></label>
+        <select class="form-control border-dark" id="perfil-campo-estado">
+            <option disabled="disabled" selected="selected"> Selecione um estado</option>
 
-<div class="modal" tabindex="-1" role="dialog" id="modal-cliente">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Cadastro de Colaborador</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="form-group">
-                    <label for="vendedor-campo-nome">Nome</label>
-                    <input id="vendedor-campo-nome" class="form-control" />
-                </div>
-                <div class="form-group">
-                    <label for="vendedor-campo-telefone">Telefone</label>
-                    <input id="vendedor-campo-telefone" class="form-control" />
-                </div>
-                <div class="form-group">
-                    <label for="vendedor-campo-Habilitacao">Habilitação</label>
-                    <input id="vendedor-campo-habilitacao" class="form-control" />
-                </div>
-                <div class="form-group">
-                    <label for="vendedor-campo-cpf">CPF</label>
-                    <input id="vendedor-campo-cpf" class="form-control" />
-                </div>
-                <div class="form-group">
-                    <label for="vendedor-campo-cep">CEP</label>
-                    <input id="vendedor-campo-cep" class="form-control" />
-                </div>
-                <div class="form-group">
-                    <label for="vendedor-campo-veiculo">Veículo</label>
-                    <select id="vendedor-campo-veiculo" class="form-control" name="campo-veiculo">
-                        <option disabled="disabled" selected="selected">Selecione um veiculo</option>
-                        @foreach (Model.Veiculo veiculo in ViewBag.Veiculos)
-                        {
-                            <option value="@veiculo.Id">@veiculo.Placa</option>
-                        }
-                    </select>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-outline-danger" data-dismiss="modal"><i class="fas fa-times"></i> Cancelar</button>
-                <button type="button" class="btn btn-success"><i class="fas fa-save"></i>  Salvar</button>
-            </div>
-        </div>
+        </select>
+    </div>
+    <div class="form-group">
+        <label style="font-weight:bold" for="perfil-campo-cidade">Cidade <span class="text-danger">*</span></label>
+        <select class="form-control border-dark" id="perfil-campo-cidade">
+            <option disabled="disabled" selected="selected"> Selecione uma cidade</option>
+        </select>
+    </div>
+   
+    <div>
+        <button class="btn btn-primary float-right"><i class="fas fa-pencil-alt"></i> Alterar Dados</button>
     </div>
 </div>
+<div class="modal-body">
+<legend>
+    <span class="h3">Alterar Senha</span>
+</legend>
+    <div class="form-group">
+        <label style="font-weight:bold" for="perfil-campo-senha">Senha</label>
+        <input type="password" id="perfil-campo-senha" class="form-control border-dark" />
+    </div>
+    <div class="form-group">
+        <label style="font-weight:bold" for="perfil-campo-senha2">Confirmar Senha</label>
+        <input type="password" id="perfil-campo-senha2" class="form-control border-dark" />
+    </div>
+    <div>
+        <button class="btn btn-primary float-right"><i class="fas fa-lock"></i> Alterar Senha</button>
+    </div>
+</div>
+<legend></legend>
+
+@section js {
+    <script src="~/Scripts/Usuario/perfil.js"></script>
+    <script src="~/Scripts/Mascaras/Mask.js"></script>
+}

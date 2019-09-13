@@ -9,6 +9,12 @@ senha VARCHAR(100),
 registro_ativo BIT
 );
 
+INSERT INTO usuarios(nome,senha,registro_ativo)
+VALUES ('lipefw', 'anaumsei', 1),
+	    ('illan', 'illanzoka', 1),
+	    ('eduardo', '123456', 1),
+	    ('henrique', 'pimbinha6000', 1);
+
 CREATE TABLE paises(
 id INT PRIMARY KEY IDENTITY(1,1),
 nome VARCHAR(100),
@@ -39,12 +45,6 @@ FOREIGN KEY(id_estado) REFERENCES estados (id)
 
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES (1, 'Blumenau', 1);
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES (2, 'Miami', 1);
-
-INSERT INTO usuarios(nome,senha,registro_ativo)
-VALUES ('lipefw', 'anaumsei', 1),
-	    ('illan', 'illanzoka', 1),
-	    ('eduardo', '123456', 1),
-	    ('henrique', 'pimbinha6000', 1);
 
 CREATE TABLE categorias( 
 id INT PRIMARY KEY IDENTITY(1,1),
@@ -141,7 +141,8 @@ registro_ativo BIT
 );
 
 INSERT INTO rotas(nome,id_vendedor, registro_ativo)
-VALUES ('Gaspar', 1, 1);
+VALUES ('Gaspar', 1, 1),
+	   ('Blumenau',1,1);
 
 CREATE TABLE notas_fiscais(
 id INT PRIMARY KEY IDENTITY(1,1),
