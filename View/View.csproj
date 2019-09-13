@@ -119,6 +119,7 @@
     <Content Include="Content\css\select2.min.css" />
     <Content Include="Content\js\lang.js" />
     <Content Include="Content\js\login.js" />
+    <Content Include="Content\js\mostrarSenha.js" />
     <Content Include="Content\login\background\background-login.jpg" />
     <Content Include="Content\login\background\background.jpg" />
     <Content Include="Content\login\background\background2.jpg" />

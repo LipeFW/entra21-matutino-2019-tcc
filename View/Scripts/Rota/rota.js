@@ -18,23 +18,23 @@
 
     $('#rota-botao-salvar').on('click', function () {
         $nome = $('#rota-campo-nome').val();
-        $vendedor = $('#rota-campo-vendedor').val();
+        $idVendedor = $('#rota-campo-vendedor').val();
 
         if ($idAlterar == -1) {
-            inserir($nome, $vendedor);
+            inserir($nome, $idVendedor);
         } else {
-            alterar($nome, $vendedor);
+            alterar($nome, $idVendedor);
         }
     });
 
-    function alterar($nome, $vendedor) {
+    function alterar($nome, $idVendedor) {
         $.ajax({
             url: 'http://localhost:51242/Rota/update',
             method: 'post',
             data: {
                 id: $idAlterar,
                 nome: $nome,
-                idVendedor: $vendedor
+                idVendedor: $idVendedor
             },
             success: function (data) {
                 $("#modal-rota").modal("hide");
@@ -47,13 +47,13 @@
         });
     }
 
-    function inserir($nome, $vendedor) {
+    function inserir($nome, $idVendedor) {
         $.ajax({
             url: 'http://localhost:51242/Rota/inserir',
             method: 'post',
             data: {
                 nome: $nome,
-                idVendedor: $vendedor
+                idVendedor: $idVendedor
             },
             success: function (data) {
                 $("#modal-rota").modal('hide');
