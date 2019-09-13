@@ -118,180 +118,180 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Acao" xml:space="preserve">
-    <value>Action</value>
+    <value>Ación</value>
   </data>
   <data name="Anodefabricacao" xml:space="preserve">
-    <value>Fabrication year</value>
+    <value>Año del fabricación</value>
   </data>
   <data name="AnoFabricacao" xml:space="preserve">
-    <value>Year Fabrication</value>
+    <value>Año fabricación</value>
   </data>
   <data name="CadastrodeCategoria" xml:space="preserve">
-    <value>Register of the Category</value>
+    <value>Registro del Categoría</value>
   </data>
   <data name="CadastrodeCliente" xml:space="preserve">
-    <value>Register of the Client</value>
+    <value>Registro del Cliente</value>
   </data>
   <data name="CadastrodeProduto" xml:space="preserve">
-    <value>Register of the Product</value>
+    <value>Registro del Producto</value>
   </data>
   <data name="CadastrodeRotas" xml:space="preserve">
-    <value>Register of the Routes</value>
+    <value>Registro del Rutas</value>
   </data>
   <data name="CadastrodeUsuario" xml:space="preserve">
-    <value>Register of the Users</value>
+    <value>Registro del Usuario</value>
   </data>
   <data name="CadastrodeVeiculo" xml:space="preserve">
-    <value>Register of the Vehícle</value>
+    <value>Registro del Vehiculo</value>
   </data>
   <data name="CadastrodeVendedor" xml:space="preserve">
-    <value>Register of the saleman</value>
+    <value>Registro del Vendedor</value>
   </data>
   <data name="Cancelar" xml:space="preserve">
-    <value>Cancel</value>
+    <value>Cancelar</value>
   </data>
   <data name="Categoria" xml:space="preserve">
-    <value>Category</value>
+    <value>Categoría</value>
   </data>
   <data name="Categorias" xml:space="preserve">
-    <value>Categories</value>
+    <value>Categorías</value>
   </data>
   <data name="CEP" xml:space="preserve">
-    <value>ZIpcode</value>
+    <value>CEP</value>
   </data>
   <data name="Cliente" xml:space="preserve">
-    <value>Client</value>
+    <value>Cliente</value>
   </data>
   <data name="Clientes" xml:space="preserve">
-    <value>Clients</value>
+    <value>Clientes</value>
   </data>
   <data name="CNPJ" xml:space="preserve">
-    <value>EIN</value>
+    <value>CNPLJ</value>
   </data>
   <data name="Codigo" xml:space="preserve">
-    <value>Code</value>
+    <value>Código</value>
   </data>
   <data name="CodigoBarra" xml:space="preserve">
-    <value>Bar Code</value>
+    <value>Codigo Barra</value>
   </data>
   <data name="CodigodeBarra" xml:space="preserve">
-    <value>Bars Code</value>
+    <value>Codigo del barras</value>
   </data>
   <data name="CPF" xml:space="preserve">
-    <value>SSA</value>
+    <value>CPF</value>
   </data>
   <data name="Lista" xml:space="preserve">
-    <value>List</value>
+    <value>Lista</value>
   </data>
   <data name="ListaNotasFiscais" xml:space="preserve">
-    <value>List  tax invoice</value>
+    <value>Lista del Facturas</value>
   </data>
   <data name="Marca" xml:space="preserve">
-    <value>Brand</value>
+    <value>Marca</value>
   </data>
   <data name="Modelo" xml:space="preserve">
-    <value>Model</value>
+    <value>Modelo</value>
   </data>
   <data name="Nome" xml:space="preserve">
-    <value>Name</value>
+    <value>Nombre</value>
   </data>
   <data name="NotaFiscal" xml:space="preserve">
-    <value>Tax Invoice</value>
+    <value>Factura</value>
   </data>
   <data name="NovaCategoria" xml:space="preserve">
-    <value>New Category</value>
+    <value>Nueva Categoría</value>
   </data>
   <data name="NovaRota" xml:space="preserve">
-    <value>New Route</value>
+    <value>Nueva Ruta</value>
   </data>
   <data name="NovoCliente" xml:space="preserve">
-    <value>New Client</value>
+    <value>Nuevo Cliente</value>
   </data>
   <data name="NovoProduto" xml:space="preserve">
-    <value>New Product</value>
+    <value>Nuevo Producto</value>
   </data>
   <data name="NovoUsuario" xml:space="preserve">
-    <value>Novo Usuário</value>
+    <value>Nuevo Usuario</value>
   </data>
   <data name="NovoVeiculo" xml:space="preserve">
-    <value>New Vehicles</value>
+    <value>Nuevo Vehiculos</value>
   </data>
   <data name="NovoVendedor" xml:space="preserve">
-    <value>New Saleman</value>
+    <value>Nuevo Vendedor</value>
   </data>
   <data name="NumeroCaminhao" xml:space="preserve">
-    <value>Number truck</value>
+    <value>Numero Camión</value>
   </data>
   <data name="Numerodocaminhao" xml:space="preserve">
-    <value>Number of truck</value>
+    <value>Numero de lo Camión</value>
   </data>
   <data name="Placa" xml:space="preserve">
-    <value>Plate</value>
+    <value>Tarjeta</value>
   </data>
   <data name="Prdutos" xml:space="preserve">
-    <value>Products</value>
+    <value>Productos</value>
   </data>
   <data name="Produto" xml:space="preserve">
-    <value>Product</value>
+    <value>Producto</value>
   </data>
   <data name="Quantidade" xml:space="preserve">
-    <value>Amount</value>
+    <value>Cantidad</value>
   </data>
   <data name="QuantidadeProdutos" xml:space="preserve">
-    <value>Product Amount</value>
+    <value>Cantidad Productos</value>
   </data>
   <data name="Rota" xml:space="preserve">
-    <value>Route</value>
+    <value>Ruta</value>
   </data>
   <data name="Rotas" xml:space="preserve">
-    <value>Routes</value>
+    <value>Rutas</value>
   </data>
   <data name="Salvar" xml:space="preserve">
-    <value>Save</value>
+    <value>Guardar</value>
   </data>
   <data name="Selecioneumacategoria" xml:space="preserve">
-    <value>Select an Category</value>
+    <value>Seleccione una Categoría</value>
   </data>
   <data name="Selecioneumamarca" xml:space="preserve">
-    <value>Select an Brand</value>
+    <value>Seleccione una Marca</value>
   </data>
   <data name="Selecioneumusuario" xml:space="preserve">
-    <value>Select one user</value>
+    <value>Seleccione un usuario</value>
   </data>
   <data name="SelecioneumVeiculo" xml:space="preserve">
-    <value>Select one Vehicle</value>
+    <value>Seleccione un Vehiculo</value>
   </data>
   <data name="SelecioneumVendedor" xml:space="preserve">
-    <value>Select one Saleman</value>
+    <value>Seleccione un Vendedor</value>
   </data>
   <data name="Senha" xml:space="preserve">
-    <value>Password</value>
+    <value>Contraseña</value>
   </data>
   <data name="Telefone" xml:space="preserve">
-    <value>Phone</value>
+    <value>Telefono</value>
   </data>
   <data name="Usuario" xml:space="preserve">
-    <value>User</value>
+    <value>Usuario</value>
   </data>
   <data name="Usuarios" xml:space="preserve">
-    <value>Users</value>
+    <value>Usuarios</value>
   </data>
   <data name="Valor" xml:space="preserve">
     <value>Valor</value>
   </data>
   <data name="ValorFinal" xml:space="preserve">
-    <value>Final Value</value>
+    <value>Valor Final</value>
   </data>
   <data name="Valorunitario" xml:space="preserve">
-    <value>Unty Value</value>
+    <value>Valor unitario</value>
   </data>
   <data name="Veiculos" xml:space="preserve">
-    <value>Vehicles</value>
+    <value>Vehiculos</value>
   </data>
   <data name="Venda" xml:space="preserve">
-    <value>Sale</value>
+    <value>Venda</value>
   </data>
   <data name="Vendedor" xml:space="preserve">
-    <value>Saleman</value>
+    <value>Vendedor</value>
   </data>
 </root>
