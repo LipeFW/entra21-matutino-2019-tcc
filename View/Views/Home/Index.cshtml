@@ -1,12 +1,14 @@
 ﻿
 @{
-    ViewBag.Title = "Index";
+                /**/
+
+                ViewBag.Title = "Index";
 }
 <link rel="stylesheet" type="text/css" href="~/Content/css/tabela/util.css" />
 <body class="background-usuarios-img">
 
     <div class="jumbotron text-center mt-4">
-        <h1 id="bemvindoText" class="display-4">Bem Vindo</h1>
+        <h1 id="bemvindoText" class="display-4"></h1>
         <br>
         <font size="3"><p class="lead"><span id="cabecalhoResumo"> Nosso software foi desenvolvido para atuar facilitando o trabalho de entrada e saída de mercadorias de uma transportadora ou estoque em geral.</span></p></font>
         <hr class="my-3">
@@ -16,10 +18,12 @@
                 <span id="resumoText">
 
                     O modo de utilizar baseia-se na facilidade de cadastro na hora de receber mercadorias incluindo através da leitura do codigo de barras, incluido-o assim em um banco de dados que fará a contagem da mercadoria e exibindo-a em telas, a quantidade disponivel em estoque sendo atualizado a cada movimentação, também no momento da retirada da mercadoria o próprio sistema atuará para atualizar o banco de dados. A leitura poderá ser feita a partir de um aparelho celular por um AppMobile que irá enviar informações através da nuvem para o sistema, assim, facilitando a inclusão de dados através da camera do dispositivo que registrará o codigo de barras. O sistema busca empregar rapidez aos processos citados com a facilidade de um smartphone em suas mãos.
-
                 </span>
             </font>
         </p>
     </div>
+
+    <p>@View.Resources.Resource.Usuario</p>
+
 </body>
 

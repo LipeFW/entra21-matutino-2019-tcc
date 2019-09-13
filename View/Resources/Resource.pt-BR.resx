@@ -294,4 +294,43 @@
   <data name="Vendedor" xml:space="preserve">
     <value>Vendedor</value>
   </data>
+  <data name="AlterarDados" xml:space="preserve">
+    <value>Alterar Dados</value>
+  </data>
+  <data name="AlterarSenha" xml:space="preserve">
+    <value>Alterar Senha</value>
+  </data>
+  <data name="Cidade" xml:space="preserve">
+    <value>Cidade</value>
+  </data>
+  <data name="CNH" xml:space="preserve">
+    <value>CNH</value>
+  </data>
+  <data name="ConfirmarSenha" xml:space="preserve">
+    <value>Confirmar Senha</value>
+  </data>
+  <data name="DadosPessoais" xml:space="preserve">
+    <value>Dados Pessoais</value>
+  </data>
+  <data name="Endereco" xml:space="preserve">
+    <value>Endereço 2</value>
+  </data>
+  <data name="Estado" xml:space="preserve">
+    <value>Estado</value>
+  </data>
+  <data name="Logradouro" xml:space="preserve">
+    <value>Logradouro</value>
+  </data>
+  <data name="País" xml:space="preserve">
+    <value>País</value>
+  </data>
+  <data name="Selecioneumacidade" xml:space="preserve">
+    <value>Selecione uma Cidade</value>
+  </data>
+  <data name="Selecioneumestado" xml:space="preserve">
+    <value>selecione um Estado</value>
+  </data>
+  <data name="Selecioneumpaís" xml:space="preserve">
+    <value>Selecione um País</value>
+  </data>
 </root>

@@ -85,8 +85,7 @@
     });
 
     $('.table').on('click', '.botao-editar', function () {
-        $idAlterar = $(this).data('id');
-
+        $idAlterar = $(this).data('id')
         $.ajax({
             url: 'http://localhost:51242/Categoria/obterpeloid?id=' + $idAlterar,
             method: 'get',

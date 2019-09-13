@@ -117,181 +117,29 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Acao" xml:space="preserve">
-    <value>Action</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Resource" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Resource.resx;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
-  <data name="Anodefabricacao" xml:space="preserve">
-    <value>Fabrication year</value>
+  <data name="Resource_Designer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Resource.Designer.cs;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
-  <data name="AnoFabricacao" xml:space="preserve">
-    <value>Year Fabrication</value>
+  <data name="Resource_en_US" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Resource.en-US.resx;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
-  <data name="CadastrodeCategoria" xml:space="preserve">
-    <value>Register of the Category</value>
+  <data name="Resource_en_US_Designer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Resource.en-US.Designer.cs;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
-  <data name="CadastrodeCliente" xml:space="preserve">
-    <value>Register of the Client</value>
+  <data name="Resource_es_ES" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Resource.es-ES.resx;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
-  <data name="CadastrodeProduto" xml:space="preserve">
-    <value>Register of the Product</value>
+  <data name="Resource_es_ES_Designer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Resource.es-ES.Designer.cs;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
-  <data name="CadastrodeRotas" xml:space="preserve">
-    <value>Register of the Routes</value>
+  <data name="Resource_pt_BR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Resource.pt-BR.resx;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
-  <data name="CadastrodeUsuario" xml:space="preserve">
-    <value>Register of the Users</value>
-  </data>
-  <data name="CadastrodeVeiculo" xml:space="preserve">
-    <value>Register of the Vehícle</value>
-  </data>
-  <data name="CadastrodeVendedor" xml:space="preserve">
-    <value>Register of the saleman</value>
-  </data>
-  <data name="Cancelar" xml:space="preserve">
-    <value>Cancel</value>
-  </data>
-  <data name="Categoria" xml:space="preserve">
-    <value>Category</value>
-  </data>
-  <data name="Categorias" xml:space="preserve">
-    <value>Categories</value>
-  </data>
-  <data name="CEP" xml:space="preserve">
-    <value>ZIpcode</value>
-  </data>
-  <data name="Cliente" xml:space="preserve">
-    <value>Client</value>
-  </data>
-  <data name="Clientes" xml:space="preserve">
-    <value>Clients</value>
-  </data>
-  <data name="CNPJ" xml:space="preserve">
-    <value>EIN</value>
-  </data>
-  <data name="Codigo" xml:space="preserve">
-    <value>Code</value>
-  </data>
-  <data name="CodigoBarra" xml:space="preserve">
-    <value>Bar Code</value>
-  </data>
-  <data name="CodigodeBarra" xml:space="preserve">
-    <value>Bars Code</value>
-  </data>
-  <data name="CPF" xml:space="preserve">
-    <value>SSA</value>
-  </data>
-  <data name="Lista" xml:space="preserve">
-    <value>List</value>
-  </data>
-  <data name="ListaNotasFiscais" xml:space="preserve">
-    <value>List  tax invoice</value>
-  </data>
-  <data name="Marca" xml:space="preserve">
-    <value>Brand</value>
-  </data>
-  <data name="Modelo" xml:space="preserve">
-    <value>Model</value>
-  </data>
-  <data name="Nome" xml:space="preserve">
-    <value>Name</value>
-  </data>
-  <data name="NotaFiscal" xml:space="preserve">
-    <value>Tax Invoice</value>
-  </data>
-  <data name="NovaCategoria" xml:space="preserve">
-    <value>New Category</value>
-  </data>
-  <data name="NovaRota" xml:space="preserve">
-    <value>New Route</value>
-  </data>
-  <data name="NovoCliente" xml:space="preserve">
-    <value>New Client</value>
-  </data>
-  <data name="NovoProduto" xml:space="preserve">
-    <value>New Product</value>
-  </data>
-  <data name="NovoUsuario" xml:space="preserve">
-    <value>Novo Usuário</value>
-  </data>
-  <data name="NovoVeiculo" xml:space="preserve">
-    <value>New Vehicles</value>
-  </data>
-  <data name="NovoVendedor" xml:space="preserve">
-    <value>New Saleman</value>
-  </data>
-  <data name="NumeroCaminhao" xml:space="preserve">
-    <value>Number truck</value>
-  </data>
-  <data name="Numerodocaminhao" xml:space="preserve">
-    <value>Number of truck</value>
-  </data>
-  <data name="Placa" xml:space="preserve">
-    <value>Plate</value>
-  </data>
-  <data name="Prdutos" xml:space="preserve">
-    <value>Products</value>
-  </data>
-  <data name="Produto" xml:space="preserve">
-    <value>Product</value>
-  </data>
-  <data name="Quantidade" xml:space="preserve">
-    <value>Amount</value>
-  </data>
-  <data name="QuantidadeProdutos" xml:space="preserve">
-    <value>Product Amount</value>
-  </data>
-  <data name="Rota" xml:space="preserve">
-    <value>Route</value>
-  </data>
-  <data name="Rotas" xml:space="preserve">
-    <value>Routes</value>
-  </data>
-  <data name="Salvar" xml:space="preserve">
-    <value>Save</value>
-  </data>
-  <data name="Selecioneumacategoria" xml:space="preserve">
-    <value>Select an Category</value>
-  </data>
-  <data name="Selecioneumamarca" xml:space="preserve">
-    <value>Select an Brand</value>
-  </data>
-  <data name="Selecioneumusuario" xml:space="preserve">
-    <value>Select one user</value>
-  </data>
-  <data name="SelecioneumVeiculo" xml:space="preserve">
-    <value>Select one Vehicle</value>
-  </data>
-  <data name="SelecioneumVendedor" xml:space="preserve">
-    <value>Select one Saleman</value>
-  </data>
-  <data name="Senha" xml:space="preserve">
-    <value>Password</value>
-  </data>
-  <data name="Telefone" xml:space="preserve">
-    <value>Phone</value>
-  </data>
-  <data name="Usuario" xml:space="preserve">
-    <value>User</value>
-  </data>
-  <data name="Usuarios" xml:space="preserve">
-    <value>Users</value>
-  </data>
-  <data name="Valor" xml:space="preserve">
-    <value>Valor</value>
-  </data>
-  <data name="ValorFinal" xml:space="preserve">
-    <value>Final Value</value>
-  </data>
-  <data name="Valorunitario" xml:space="preserve">
-    <value>Unty Value</value>
-  </data>
-  <data name="Veiculos" xml:space="preserve">
-    <value>Vehicles</value>
-  </data>
-  <data name="Venda" xml:space="preserve">
-    <value>Sale</value>
-  </data>
-  <data name="Vendedor" xml:space="preserve">
-    <value>Saleman</value>
+  <data name="Resource_pt_BR1_Designer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Resource.pt-BR1.Designer.cs;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
 </root>
