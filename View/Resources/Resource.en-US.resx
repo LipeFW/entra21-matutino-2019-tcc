@@ -336,4 +336,64 @@
   <data name="Enderco" xml:space="preserve">
     <value>Address</value>
   </data>
+  <data name="atuar" xml:space="preserve">
+    <value>act</value>
+  </data>
+  <data name="de" xml:space="preserve">
+    <value>of</value>
+  </data>
+  <data name="desenvolvido" xml:space="preserve">
+    <value>developed</value>
+  </data>
+  <data name="e" xml:space="preserve">
+    <value>and</value>
+  </data>
+  <data name="em" xml:space="preserve">
+    <value>in</value>
+  </data>
+  <data name="entrada" xml:space="preserve">
+    <value>input</value>
+  </data>
+  <data name="estoque" xml:space="preserve">
+    <value>carrier</value>
+  </data>
+  <data name="facilitando" xml:space="preserve">
+    <value>facilitating</value>
+  </data>
+  <data name="foi" xml:space="preserve">
+    <value>was</value>
+  </data>
+  <data name="geral" xml:space="preserve">
+    <value>general</value>
+  </data>
+  <data name="mercadorias" xml:space="preserve">
+    <value>mercandise</value>
+  </data>
+  <data name="Nosso" xml:space="preserve">
+    <value>Our</value>
+  </data>
+  <data name="o" xml:space="preserve">
+    <value>the</value>
+  </data>
+  <data name="ou" xml:space="preserve">
+    <value>ou</value>
+  </data>
+  <data name="para" xml:space="preserve">
+    <value>for</value>
+  </data>
+  <data name="saida" xml:space="preserve">
+    <value>exit</value>
+  </data>
+  <data name="software" xml:space="preserve">
+    <value>software</value>
+  </data>
+  <data name="trabalho" xml:space="preserve">
+    <value>work</value>
+  </data>
+  <data name="transportadora" xml:space="preserve">
+    <value>transportadora</value>
+  </data>
+  <data name="uma" xml:space="preserve">
+    <value>an</value>
+  </data>
 </root>

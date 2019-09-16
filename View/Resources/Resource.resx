@@ -117,15 +117,316 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Endereco" xml:space="preserve">
-    <value>Aqui voce devera por o endereco</value>
-  </data>
-  <data name="Nome" xml:space="preserve">
+  <data name="Acao" xml:space="preserve">
     <value>string</value>
-    <comment>pt-BR--en-US</comment>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
+  <data name="AlterarDados" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="AlterarSenha" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
+  <data name="Anodefabricacao" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="AnoFabricacao" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
+  <data name="atuar" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="CadastrodeCategoria" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="CadastrodeCliente" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
+  <data name="CadastrodeProduto" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="CadastrodeRotas" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
+  <data name="CadastrodeUsuario" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="CadastrodeVeiculo" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
+  <data name="CadastrodeVendedor" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Cancelar" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
+  <data name="Categoria" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Categorias" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
+  <data name="CEP" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Cidade" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
+  <data name="Cliente" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Clientes" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
+  <data name="CNH" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="CNPJ" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
+  <data name="Codigo" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="CodigoBarra" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
+  <data name="CodigodeBarra" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="ConfirmarSenha" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
+  <data name="CPF" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="DadosPessoais" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
+  <data name="de" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="desenvolvido" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="e" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="em" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Endereco1" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="entrada" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Estado" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
+  <data name="estoque" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="facilitando" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="foi" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="geral" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Lista" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="ListaNotasFiscais" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
+  <data name="Logradouro" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Marca" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
+  <data name="mercadorias" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Modelo" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Nome1" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
+  <data name="Nosso" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="NotaFiscal" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="NovaCategoria" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
+  <data name="NovaRota" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="NovoCliente" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
+  <data name="NovoProduto" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="NovoUsuario" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
+  <data name="NovoVeiculo" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="NovoVendedor" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
+  <data name="NumeroCaminhao" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Numerodocaminhao" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
+  <data name="o" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="ou" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="para" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="País" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Placa" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
+  <data name="Prdutos" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Produto" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
+  <data name="Quantidade" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="QuantidadeProdutos" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
+  <data name="Rota" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Rotas" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
+  <data name="saida" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Salvar" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Selecioneumacategoria" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
+  <data name="Selecioneumacidade" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Selecioneumamarca" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
+  <data name="Selecioneumestado" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Selecioneumpaís" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
+  <data name="Selecioneumusuario" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="SelecioneumVeiculo" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
+  <data name="SelecioneumVendedor" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Senha" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
+  <data name="software" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Telefone" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="trabalho" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="transportadora" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="uma" xml:space="preserve">
+    <value>string</value>
   </data>
   <data name="Usuario" xml:space="preserve">
     <value>string</value>
-    <comment>pt-BR--en-US</comment>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
+  <data name="Usuarios" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Valor" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
+  <data name="ValorFinal" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Valorunitario" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
+  <data name="Veiculos" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Venda" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
+  <data name="Vendedor" xml:space="preserve">
+    <value>string</value>
   </data>
 </root>
