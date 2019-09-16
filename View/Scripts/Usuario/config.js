@@ -10,11 +10,16 @@
         }
 
         else if (senha == senhaConfirm) {
-
+            AlterarSenha();
 
             alert("Senha alterada com sucesso");
         } else {
             alert("As senhas não coincidem");
         }
     });
+
+    function AlterarSenha() {
+
+    }
+
 });
