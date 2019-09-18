@@ -333,53 +333,24 @@
   <data name="Selecioneumpaís" xml:space="preserve">
     <value>Select one Country</value>
   </data>
-  <data name="Enderco" xml:space="preserve">
-    <value>Address</value>
-  </data>
-  <data name="atuar" xml:space="preserve">
-    <value>act</value>
-  </data>
-  <data name="de" xml:space="preserve">
-    <value>of</value>
-  </data>
-  <data name="desenvolvido" xml:space="preserve">
-    <value>developed</value>
-  </data>
-  <data name="e" xml:space="preserve">
-    <value>and</value>
-  </data>
-  <data name="em" xml:space="preserve">
-    <value>in</value>
-  </data>
   <data name="entrada" xml:space="preserve">
     <value>input</value>
-  </data>
-  <data name="estoque" xml:space="preserve">
-    <value>carrier</value>
-  </data>
-  <data name="facilitando" xml:space="preserve">
-    <value>facilitating</value>
-  </data>
-  <data name="foi" xml:space="preserve">
-    <value>was</value>
-  </data>
-  <data name="geral" xml:space="preserve">
-    <value>general</value>
   </data>
   <data name="mercadorias" xml:space="preserve">
     <value>mercandise</value>
   </data>
-  <data name="Nosso" xml:space="preserve">
-    <value>Our</value>
+  <data name="NossoSoftware" xml:space="preserve">
+    <value>Our software is designed to work by facilitating the entry and the exit of products in the stock.</value>
   </data>
-  <data name="o" xml:space="preserve">
-    <value>the</value>
-  </data>
-  <data name="ou" xml:space="preserve">
-    <value>ou</value>
-  </data>
-  <data name="para" xml:space="preserve">
-    <value>for</value>
+  <data name="Omodo" xml:space="preserve">
+    <value>The purpose of this system is to make the sales and transportation processes easier by including the goods through the barcode reading. The available quantity of each product will be displayed on the screen and updated at any time. When a product is sold, the system automaticaly updates the database.
+
+
+The reading of the codes can be done from a mobile device, it will send the information online to the system. To make the data entry easier, the camera will register the barcode.
+
+ 
+
+The system seeks to quickly employ the processes mentioned with the ease of a smartphone in hand.</value>
   </data>
   <data name="saida" xml:space="preserve">
     <value>exit</value>
@@ -395,5 +366,8 @@
   </data>
   <data name="uma" xml:space="preserve">
     <value>an</value>
+  </data>
+  <data name="BemVindo" xml:space="preserve">
+    <value>Welcome</value>
   </data>
 </root>

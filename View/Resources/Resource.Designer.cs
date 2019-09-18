@@ -117,6 +117,15 @@ namespace View.Resources {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a string.
         /// </summary>
+        public static string BemVindo {
+            get {
+                return ResourceManager.GetString("BemVindo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
         public static string CadastrodeCategoria {
             get {
                 return ResourceManager.GetString("CadastrodeCategoria", resourceCulture);
@@ -477,9 +486,9 @@ namespace View.Resources {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a string.
         /// </summary>
-        public static string Nosso {
+        public static string NossoSoftware {
             get {
-                return ResourceManager.GetString("Nosso", resourceCulture);
+                return ResourceManager.GetString("NossoSoftware", resourceCulture);
             }
         }
         
@@ -576,9 +585,9 @@ namespace View.Resources {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a string.
         /// </summary>
-        public static string o {
+        public static string Omodo {
             get {
-                return ResourceManager.GetString("o", resourceCulture);
+                return ResourceManager.GetString("Omodo", resourceCulture);
             }
         }
         
@@ -885,6 +894,15 @@ namespace View.Resources {
         public static string Vendedor {
             get {
                 return ResourceManager.GetString("Vendedor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
+        public static string Vindo {
+            get {
+                return ResourceManager.GetString("Vindo", resourceCulture);
             }
         }
     }
