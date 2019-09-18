@@ -106,8 +106,8 @@
             success: function (data) {
                 $('#veiculo-campo-marca').val(data.Marca);
                 $('#veiculo-campo-modelo').val(data.Modelo);
-                $('#veiculo-campo-ano-fabricacao').val(data.Ano_Fabricacao);
-                $('#veiculo-campo-numero-caminhao').val(data.Numero_caminhao);
+                $('#veiculo-campo-anofabricacao').val(data.AnoFabricacao);
+                $('#veiculo-campo-numerocaminhao').val(data.NumeroCaminhao);
                 $('#veiculo-campo-placa').val(data.Placa);
 
                 $('#modal-veiculo').modal('show');
