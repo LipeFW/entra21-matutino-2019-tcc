@@ -99,7 +99,7 @@
         });
     });
 
-    $('.table').on('click', 'botao-editar', function () {
+    $('.table').on('click', '.botao-editar', function () {
         $idAlterar = $(this).data('id');
 
         $.ajax({
@@ -107,7 +107,7 @@
             method: 'get',
 
             success: function (data) {
-                $('venda-campo-qantidade').val(data.Quantidade);
+                $('venda-campo-quantidade').val(data.Quantidade);
                 $('venda-campo-vendedor').val(data.Vendedor);
                 $('venda-campo-cliente').val(data.Cliente);
                 $('venda-campo-produto').val(data.Produto);

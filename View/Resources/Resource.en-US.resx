@@ -370,4 +370,19 @@ The system seeks to quickly employ the processes mentioned with the ease of a sm
   <data name="BemVindo" xml:space="preserve">
     <value>Welcome</value>
   </data>
+  <data name="Configacoesdaconta" xml:space="preserve">
+    <value>Acount Configuration</value>
+  </data>
+  <data name="Inicio" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="Menu" xml:space="preserve">
+    <value>Menu</value>
+  </data>
+  <data name="MeuPerfil" xml:space="preserve">
+    <value>My Profile</value>
+  </data>
+  <data name="Sair" xml:space="preserve">
+    <value>Exit</value>
+  </data>
 </root>

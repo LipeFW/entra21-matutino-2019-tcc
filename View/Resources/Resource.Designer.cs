@@ -297,6 +297,15 @@ namespace View.Resources {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a string.
         /// </summary>
+        public static string Configuracoesdaconta {
+            get {
+                return ResourceManager.GetString("Configuracoesdaconta", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
         public static string ConfirmarSenha {
             get {
                 return ResourceManager.GetString("ConfirmarSenha", resourceCulture);
@@ -423,6 +432,15 @@ namespace View.Resources {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a string.
         /// </summary>
+        public static string Inicio {
+            get {
+                return ResourceManager.GetString("Inicio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
         public static string Lista {
             get {
                 return ResourceManager.GetString("Lista", resourceCulture);
@@ -459,9 +477,27 @@ namespace View.Resources {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a string.
         /// </summary>
+        public static string Menu {
+            get {
+                return ResourceManager.GetString("Menu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
         public static string mercadorias {
             get {
                 return ResourceManager.GetString("mercadorias", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
+        public static string MeuPerfil {
+            get {
+                return ResourceManager.GetString("MeuPerfil", resourceCulture);
             }
         }
         
@@ -477,9 +513,9 @@ namespace View.Resources {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a string.
         /// </summary>
-        public static string Nome1 {
+        public static string Nome {
             get {
-                return ResourceManager.GetString("Nome1", resourceCulture);
+                return ResourceManager.GetString("Nome", resourceCulture);
             }
         }
         
@@ -687,6 +723,15 @@ namespace View.Resources {
         public static string saida {
             get {
                 return ResourceManager.GetString("saida", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
+        public static string Sair {
+            get {
+                return ResourceManager.GetString("Sair", resourceCulture);
             }
         }
         

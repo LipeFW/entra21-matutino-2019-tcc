@@ -81,6 +81,7 @@
             })
         }
     })
+
     $('.table').on('click', '.botao-apagar', function () {
         $idApagar = $(this).data('id');
 
