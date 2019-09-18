@@ -31,5 +31,11 @@ namespace Model
 
         [Column("registro_ativo")]
         public bool RegistroAtivo { get; set; }
+
+        //[NotMapped]
+        //public string MarcaEModelo { get
+        //    {
+        //        return Veiculo.Marca + " " + Veiculo.Modelo;
+        //    } }
     }
 }

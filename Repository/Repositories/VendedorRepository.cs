@@ -23,6 +23,7 @@ namespace Repository.Repositories
                 return false;
 
             vendedorOriginal.Id = vendedor.Id;
+            vendedorOriginal.Nome = vendedor.Nome;
             vendedorOriginal.IdUsuario = vendedor.IdUsuario;
             vendedorOriginal.IdVeiculo = vendedor.IdVeiculo;
             
