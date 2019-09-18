@@ -273,7 +273,7 @@
     <value>string</value>
     <comment>pt-BR_en-US_es-ES</comment>
   </data>
-  <data name="Nosso" xml:space="preserve">
+  <data name="NossoSoftware" xml:space="preserve">
     <value>string</value>
   </data>
   <data name="NotaFiscal" xml:space="preserve">
@@ -311,7 +311,7 @@
     <value>string</value>
     <comment>pt-BR_en-US_es-ES</comment>
   </data>
-  <data name="o" xml:space="preserve">
+  <data name="Omodo" xml:space="preserve">
     <value>string</value>
   </data>
   <data name="ou" xml:space="preserve">
@@ -427,6 +427,13 @@
     <comment>pt-BR_en-US_es-ES</comment>
   </data>
   <data name="Vendedor" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="BemVindo" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR--es-ES</comment>
+  </data>
+  <data name="Vindo" xml:space="preserve">
     <value>string</value>
   </data>
 </root>
