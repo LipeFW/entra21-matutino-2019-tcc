@@ -366,11 +366,11 @@
   <data name="mercadorias" xml:space="preserve">
     <value>mercadorias</value>
   </data>
-  <data name="Nosso" xml:space="preserve">
-    <value>Nosso</value>
+  <data name="NossoSoftware" xml:space="preserve">
+    <value>Nosso software foi desenvolvido para atuar facilitando o trabalho de entrada e saída de mercadorias de uma transportadora ou estoque em geral .</value>
   </data>
-  <data name="o" xml:space="preserve">
-    <value>o</value>
+  <data name="Omodo" xml:space="preserve">
+    <value>O modo de utilizar baseia-se na facilidade de cadastro na hora de receber mercadorias incluindo através da leitura do codigo de barras, incluido-o assim em um banco de dados que fará a contagem da mercadoria e exibindo-a em telas, a quantidade disponivel em estoque sendo atualizado a cada movimentação, também no momento da retirada da mercadoria o próprio sistema atuará para atualizar o banco de dados. A leitura poderá ser feita a partir de um aparelho celular por um AppMobile que irá enviar informações através da nuvem para o sistema, assim, facilitando a inclusão de dados através da camera do dispositivo que registrará o codigo de barras. O sistema busca empregar rapidez aos processos citados com a facilidade de um smartphone em suas mãos.</value>
   </data>
   <data name="ou" xml:space="preserve">
     <value>ou</value>
@@ -392,5 +392,8 @@
   </data>
   <data name="uma" xml:space="preserve">
     <value>uma</value>
+  </data>
+  <data name="BemVindo" xml:space="preserve">
+    <value>Bem Vindo</value>
   </data>
 </root>

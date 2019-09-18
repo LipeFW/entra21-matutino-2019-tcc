@@ -43,9 +43,9 @@ namespace View.Controllers
         {
             var alterou = repository.Alterar(rota);
             var resultado = new { status = alterou };
-            return Json(resultado,
-              JsonRequestBehavior.AllowGet);
+            return Json(resultado, JsonRequestBehavior.AllowGet);
         }
+
 
         [HttpGet, Route("apagar")]
         public JsonResult Apagar(int id)
@@ -67,6 +67,7 @@ namespace View.Controllers
         { 
             return Json(repository.ObterPeloId(id) ,JsonRequestBehavior.AllowGet);
         }
+
 
         [HttpGet, Route("obtertodosselect2")]
         public JsonResult ObterTodosSelect2(string term)

@@ -34,7 +34,7 @@
             alterar($marca, $modelo, $ano_fabricacao, $numero_caminhao, $placa);
         }
 
-
+        //Arrumar
         function alterar($marca, $modelo, $ano_fabricacao, $numero_caminhao, $placa) {
         $.ajax({
             url: 'http://localhost:51242/veiculo/update',
@@ -81,6 +81,7 @@
             })
         }
     })
+
     $('.table').on('click', '.botao-apagar', function () {
         $idApagar = $(this).data('id');
 

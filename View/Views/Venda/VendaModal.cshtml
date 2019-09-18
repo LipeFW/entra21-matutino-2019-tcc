@@ -56,14 +56,20 @@
                 <div class="modal-body">
                     <div class="form-group">
                         <label for="venda-campo-desconto">Desconto</label>
-                    <input type= "number" id="campo-venda-desconto" class="form-control" />
+                        <input type="number" id="campo-venda-desconto" class="form-control" min="0" max="25" />
                     </div>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="venda-campo-total">Total</label>
+                        <input type="number" id="campo-venda-total" class="form-control"/>
                     </div>
+                </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-outline-danger" data-dismiss="modal"><i class="fas fa-times"></i> Cancelar</button>
                     <button type="button" class="btn btn-success" id="venda-botao-salvar"><i class="fas fa-save"></i>  Salvar</button>
                 </div>
-                    </div>
+            </div>
                 </div>
             </div>
 </div>
