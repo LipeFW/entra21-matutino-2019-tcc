@@ -269,7 +269,7 @@
   <data name="Modelo" xml:space="preserve">
     <value>string</value>
   </data>
-  <data name="Nome1" xml:space="preserve">
+  <data name="Nome" xml:space="preserve">
     <value>string</value>
     <comment>pt-BR_en-US_es-ES</comment>
   </data>
@@ -434,6 +434,21 @@
     <comment>pt-BR--es-ES</comment>
   </data>
   <data name="Vindo" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Configuracoesdaconta" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Inicio" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Menu" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="MeuPerfil" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Sair" xml:space="preserve">
     <value>string</value>
   </data>
 </root>

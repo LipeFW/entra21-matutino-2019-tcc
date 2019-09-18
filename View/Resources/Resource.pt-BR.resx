@@ -396,4 +396,19 @@
   <data name="BemVindo" xml:space="preserve">
     <value>Bem Vindo</value>
   </data>
+  <data name="Configuacoesdaconta" xml:space="preserve">
+    <value>Configurações da Conta</value>
+  </data>
+  <data name="Inicio" xml:space="preserve">
+    <value>Início</value>
+  </data>
+  <data name="Menu" xml:space="preserve">
+    <value>Menu</value>
+  </data>
+  <data name="MeuPerfil" xml:space="preserve">
+    <value>Meu Perfil</value>
+  </data>
+  <data name="Sair" xml:space="preserve">
+    <value>Sair</value>
+  </data>
 </root>

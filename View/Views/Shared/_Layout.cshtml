@@ -120,9 +120,13 @@
                     </a>
 
                     <div class="dropdown-menu dropdown-menu-right">
-                        <a href="/usuario/perfil" class="dropdown-item"><i class="icon-user-plus"></i> Meu Perfil</a>
+                        <a href="/usuario/perfil" class="dropdown-item">
+                            <i class="icon-user-plus"></i>Meu Perfil
+
+                        
+                        </a>
                         <div class="/dropdown-divider"></div>
-                        <a href="/usuario/config" class="dropdown-item"><i class="icon-cog5"></i> <span id="configText">Configurações da Conta</span> </a>
+                        <a href="/usuario/config" class="dropdown-item"><i class="icon-cog5"></i> <span id="configText">Configuracoesdaconta</span> </a>
                         <a href="/login/index" class="dropdown-item"><i class="icon-switch2"></i> <span id="sairText">Sair</span></a>
                     </div>
                 </li>
@@ -179,39 +183,40 @@
                 <div class="card card-sidebar-mobile">
                     <ul class="nav nav-sidebar" data-nav-type="accordion">
                         <!-- Main -->
-                        <li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Menu</div> <i class="icon-menu" title="Main"></i></li>
+                        <li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">@View.Resources.Resource.Menu</div> <i class="icon-menu" title="Main"></i></li>
                         <li class="nav-item">
-                            <a href="/home/index" class="nav-link"><i class="fas fa-home"></i><span id="inicioText">Início</span></a>
+                            <a href="/home/index" class="nav-link"><i class="fas fa-home"></i><span id="inicioText">@View.Resources.Resource.Inicio</span></a>
                         </li>
                         <!-- Usuário -->
                         <li class="nav-item nav-item-submenu">
-                            <a href="#" class="nav-link"><i class="fas fa-user"></i> <span id="usuarioText">Usuário</span></a>
+                            <a href="#" class="nav-link"><i class="fas fa-user"></i> <span id="usuarioText">@View.Resources.Resource.Usuario</span></a>
                             <ul class="nav nav-group-sub" data-submenu-title="Usuário">
-                                <li class="nav-item"><a href="/usuario/index" class="nav-link ">Lista</a></li>
+                                <li class="nav-item"><a href="/usuario/index" class="nav-link ">@View.Resources.Resource.Lista</a></li>
                             </ul>
                         </li>
                         <!-- /Usuário -->
                         <!-- Categoria -->
                         <li class="nav-item nav-item-submenu">
-                            <a href="#" class="nav-link"><i class="icon-clipboard"></i><span id="categoriaText">Categoria</span></a>
+                            <a href="#" class="nav-link"><i class="icon-clipboard"></i>
+                            <span id="categoriaText">@View.Resources.Resource.Categoria</span></a>
                             <ul class="nav nav-group-sub" data-submenu-title="Categoria">
-                                <li class="nav-item"><a href="/categoria/index" class="nav-link ">Lista</a></li>
+                                <li class="nav-item"><a href="/categoria/index" class="nav-link ">@View.Resources.Resource.Lista</a></li>
                             </ul>
                         </li>
                         <!-- /Categoria -->
                         <!-- Cliente -->
                         <li class="nav-item nav-item-submenu">
-                            <a href="#" class="nav-link"><i class="fas fa-user-tie"></i><span>Cliente</span></a>
+                            <a href="#" class="nav-link"><i class="fas fa-user-tie"></i><span>@View.Resources.Resource.Cliente</span></a>
                             <ul class="nav nav-group-sub" data-submenu-title="Cliente">
-                                <li class="nav-item"><a href="/cliente/index" class="nav-link ">Lista</a></li>
+                                <li class="nav-item"><a href="/cliente/index" class="nav-link ">@View.Resources.Resource.Lista</a></li>
                             </ul>
                         </li>
                         <!-- /Cliente -->
                         <!-- Veículo -->
                         <li class="nav-item nav-item-submenu">
-                            <a href="#" class="nav-link"><i class="icon-truck"></i><span id="veiculoText">Veículos</span></a>
+                            <a href="#" class="nav-link"><i class="icon-truck"></i><span id="veiculoText">@View.Resources.Resource.Veiculos</span></a>
                             <ul class="nav nav-group-sub" data-submenu-title="Veículo">
-                                <li class="nav-item"><a href="/veiculo/index" class="nav-link">Lista</a></li>
+                                <li class="nav-item"><a href="/veiculo/index" class="nav-link">@View.Resources.Resource.Lista</a></li>
                             </ul>
                         </li>
                         <!-- /Veículo -->
@@ -219,40 +224,40 @@
                         <li class="nav-item nav-item-submenu">
                             <a href="#" class="nav-link"><i class="fas fa-boxes"></i><span id="veiculoText">Inventário</span></a>
                             <ul class="nav nav-group-sub" data-submenu-title="Inventário">
-                                <li class="nav-item"><a href="/inventario/index" class="nav-link">Lista</a></li>
+                                <li class="nav-item"><a href="/inventario/index" class="nav-link">@View.Resources.Resource.Lista</a></li>
                             </ul>
                         </li>
                         <!-- /Inventário -->
                         <!-- Rota -->
                         <li class="nav-item nav-item-submenu">
-                            <a href="#" class="nav-link"><i class="fas fa-road"></i><span>Rota</span></a>
+                            <a href="#" class="nav-link"><i class="fas fa-road"></i><span>@View.Resources.Resource.Rota</span></a>
                             <ul class="nav nav-group-sub" data-submenu-title="Rota">
-                                <li class="nav-item"><a href="/rota/index" class="nav-link">Lista</a></li>
+                                <li class="nav-item"><a href="/rota/index" class="nav-link">@View.Resources.Resource.Lista</a></li>
                             </ul>
                         </li>
                         <!-- /Rota-->
                         <!-- Produto-->
                         <li class="nav-item nav-item-submenu">
-                            <a href="#" class="nav-link"><i class="fas fa-box-open"></i><span id="produtoText">Produto</span></a>
+                            <a href="#" class="nav-link"><i class="fas fa-box-open"></i><span id="produtoText">@View.Resources.Resource.Produto</span></a>
                             <ul class="nav nav-group-sub" data-submenu-title="Produto">
-                                <li class="nav-item"><a href="/produto/index" class="nav-link">Lista</a></li>
+                                <li class="nav-item"><a href="/produto/index" class="nav-link">@View.Resources.Resource.Lista</a></li>
                             </ul>
                         </li>
                         <!-- /Produto-->
                         <!-- Vendedor -->
                         <li class="nav-item nav-item-submenu">
-                            <a href="#" class="nav-link"><i class="far fa-address-card"></i><span>Vendedor</span></a>
+                            <a href="#" class="nav-link"><i class="far fa-address-card"></i><span>@View.Resources.Resource.Vendedor</span></a>
                             <ul class="nav nav-group-sub" data-submenu-title="Vendedor">
-                                <li class="nav-item"><a href="/vendedor/index" class="nav-link">Lista</a></li>
+                                <li class="nav-item"><a href="/vendedor/index" class="nav-link">@View.Resources.Resource.Lista</a></li>
                             </ul>
                         </li>
                         <!-- /Vendedor-->
                         <!-- Venda -->
                         <li class="nav-item nav-item-submenu">
-                            <a href="#" class="nav-link"><i class="fas fa-suitcase"></i><span>Venda</span></a>
+                            <a href="#" class="nav-link"><i class="fas fa-suitcase"></i><span>@View.Resources.Resource.Venda</span></a>
                             <ul class="nav nav-group-sub" data-submenu-title="Venda">
-                                <li class="nav-item"><a href="/venda/index" class="nav-link">Lista</a></li>
-                                <li class="nav-item"><a href="/notafiscal/index" class="nav-link">Nota Fiscal</a></li>
+                                <li class="nav-item"><a href="/venda/index" class="nav-link">@View.Resources.Resource.Lista</a></li>
+                                <li class="nav-item"><a href="/notafiscal/index" class="nav-link">@View.Resources.Resource.NotaFiscal</a></li>
                             </ul>
                         </li>
                         <!-- /Venda-->
