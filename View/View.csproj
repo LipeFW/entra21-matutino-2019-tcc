@@ -2670,6 +2670,7 @@
     <Content Include="Scripts\inputmask\min\inputmask.min.js" />
     <Content Include="Scripts\inputmask\min\inputmask.numeric.extensions.min.js" />
     <Content Include="Scripts\inputmask\min\jquery.inputmask.min.js" />
+    <Content Include="Scripts\Inventario\inventario.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.js" />
@@ -2702,6 +2703,7 @@
     <Compile Include="Controllers\ClienteController.cs" />
     <Compile Include="Controllers\EstadoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\InventarioController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\MarcaController.cs" />
     <Compile Include="Controllers\ModeloController.cs" />
@@ -2780,6 +2782,8 @@
     <Content Include="Views\Rota\RotaModal.cshtml" />
     <Content Include="Views\Vendedor\VendedorModal.cshtml" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+    <Content Include="Views\Inventario\Index.cshtml" />
+    <Content Include="Views\Inventario\InventarioModal.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
