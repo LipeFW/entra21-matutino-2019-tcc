@@ -39,7 +39,7 @@ namespace View.Controllers
         }
 
         [HttpPost, Route("update")]
-        public JsonResult Editar(Rota rota)
+        public JsonResult Update(Rota rota)
         {
             var alterou = repository.Alterar(rota);
             var resultado = new { status = alterou };
@@ -66,17 +66,6 @@ namespace View.Controllers
         public JsonResult ObterPeloId(int id)
         { 
             return Json(repository.ObterPeloId(id) ,JsonRequestBehavior.AllowGet);
-        }
-
-        [HttpGet]
-        public ActionResult Editar(int id)
-        {
-            var rota = repository.ObterPeloId(id);
-            if (rota == null)
-                return RedirectToAction("Index");
-
-            ViewBag.Rota = rota;
-            return View();
         }
 
         [HttpGet, Route("obtertodosselect2")]
