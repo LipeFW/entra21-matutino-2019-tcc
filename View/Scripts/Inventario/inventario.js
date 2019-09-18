@@ -85,7 +85,7 @@
             method: 'get',
             success: function (data) {                
                 $('#inventario-campo-numerocaminhao').val(data.NumeroCaminhao);
-                $('#modal-veiculo').modal('show');
+                $('#modal-inventario').modal('show');
             },
             error: function (err) {
                 alert('Não foi possivel carregar');
