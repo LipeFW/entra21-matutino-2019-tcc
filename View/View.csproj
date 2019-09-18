@@ -115,6 +115,7 @@
       <DependentUpon>Database.mdf</DependentUpon>
     </Content>
     <Content Include="Content\css\outros.css" />
+    <Content Include="Content\css\replaces.css" />
     <Content Include="Content\css\select2.css" />
     <Content Include="Content\css\select2.min.css" />
     <Content Include="Content\js\lang.js" />
@@ -2794,6 +2795,7 @@
   <ItemGroup>
     <Folder Include="Content\fonts\" />
     <Folder Include="Models\" />
+    <Folder Include="Scripts\NewFolder1\" />
     <Folder Include="Views\Cidade\" />
     <Folder Include="Views\Estado\" />
     <Folder Include="Views\Filtro\" />
