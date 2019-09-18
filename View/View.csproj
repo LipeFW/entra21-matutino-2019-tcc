@@ -2670,7 +2670,6 @@
     <Content Include="Scripts\inputmask\min\inputmask.min.js" />
     <Content Include="Scripts\inputmask\min\inputmask.numeric.extensions.min.js" />
     <Content Include="Scripts\inputmask\min\jquery.inputmask.min.js" />
-    <Content Include="Scripts\Inventario\inventario.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.js" />
@@ -2794,6 +2793,7 @@
   <ItemGroup>
     <Folder Include="Content\fonts\" />
     <Folder Include="Models\" />
+    <Folder Include="Scripts\Inventario\" />
     <Folder Include="Views\Cidade\" />
     <Folder Include="Views\Estado\" />
     <Folder Include="Views\Filtro\" />
