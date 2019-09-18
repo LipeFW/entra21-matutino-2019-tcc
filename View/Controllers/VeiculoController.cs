@@ -14,13 +14,15 @@ namespace View.Controllers
     {
         private VeiculoRepository repository;
         private MarcaRepository repositoryMarca;
+        private ModeloRepository repositoryModelo;
 
         public VeiculoController()
         {
             repository = new VeiculoRepository();
             repositoryMarca = new MarcaRepository();
+            repositoryModelo = new ModeloRepository();
         }
-        
+
         [HttpGet, Route("obtertodos")]
         public JsonResult ObterTodos()
         {
@@ -39,12 +41,13 @@ namespace View.Controllers
               JsonRequestBehavior.AllowGet);
         }
 
-        [HttpPost, Route("editar")]
-        public JsonResult Editar(Veiculo veiculo)
+
+        [HttpPost, Route("update")]
+        public JsonResult Update(Veiculo veiculo)
         {
             var alterou = repository.Alterar(veiculo);
             var resultado = new { status = alterou };
-            return Json(resultado, JsonRequestBehavior.AllowGet);
+            return Json(resultado);
         }
 
         [HttpGet, Route("apagar")]
@@ -65,7 +68,11 @@ namespace View.Controllers
         {
             List<Marca> marcas = repositoryMarca.ObterTodos();
             ViewBag.Marcas = marcas;
+
+            List<Modelo> modelos = repositoryModelo.ObterTodos();
+            ViewBag.Modelos = modelos;
             return View();
+
         }
 
         public ActionResult Cadastro()
@@ -73,14 +80,6 @@ namespace View.Controllers
             return View();
         }
 
-        public ActionResult Editar(int id)
-        {
-            var veiculo = repository.ObterPeloId(id);
-            if (veiculo == null)
-                return RedirectToAction("Index");
-
-            ViewBag.Veiculo = veiculo;
-            return View();
-        }
+      
     }
 }

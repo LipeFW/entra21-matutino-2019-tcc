@@ -20,26 +20,31 @@
                 </div>
                 <div class="form-group">
                     <label for="veiculo-campo-modelo">Modelo</label>
-                    <input class="form-control" name="campo-modelo" id="veiculo-campo-modelo" type="text" required="required">
+                    <select class="form-control" id="veiculo-campo-modelo" name="campo-marca">
+                        <option disabled="disabled" selected="selected">Selecione um Modelo</option>
+                        @foreach (Model.Modelo modelo in ViewBag.Modelos)
+                        {
+                            <option value="@modelo.Id">@modelo.Nome</option>
+                        }
+                    </select>
+                    <div class="form-group">
+                        <label for="veiculo-campo-anofabricacao">Ano de fabricação</label>
+                        <input class="form-control" name="campo-anofabricacao" id="veiculo-campo-anofabricacao" type="number" min="1945" max="2025" required="required">
+                    </div>
+                    <div class="form-group">
+                        <label for="veiculo-campo-numerocaminhao">Numero Do Caminhão</label>
+                        <input class="form-control" name="campo-numerocaminhao" id="veiculo-campo-numerocaminhao" type="text" required="required" />
+                    </div>
+                    <div class="form-group">
+                        <label for="veiculo-campo-placa">Placa</label>
+                        <input class="form-control" name="campo-placa" id="veiculo-campo-placa" type="text" required="required" />
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="veiculo-campo-anofabricacao">Ano de fabricação</label>
-                    <input class="form-control" name="campo-anofabricacao" id="veiculo-campo-anofabricacao" type="number" min="1945" max="2025" required="required">
-                </div>
-                <div class="form-group">
-                    <label for="veiculo-campo-numerocaminhao">Numero Do Caminhão</label>
-                    <input class="form-control" name="campo-numerocaminhao" id="veiculo-campo-numerocaminhao" type="text" required="required" />
-                </div>
-                <div class="form-group">
-                    <label for="veiculo-campo-placa">Placa</label>
-                    <input class="form-control" name="campo-placa" id="veiculo-campo-placa" type="text" required="required" />
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-danger" data-dismiss="modal"><i class="fas fa-times"></i> Cancelar</button>
+                    <button id="veiculo-botao-salvar" type="button" class="btn btn-success"><i class="fas fa-save"></i>  Salvar</button>
                 </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-outline-danger" data-dismiss="modal"><i class="fas fa-times"></i> Cancelar</button>
-                <button id="veiculo-botao-salvar" type="button" class="btn btn-success"><i class="fas fa-save"></i>  Salvar</button>
-            </div>
-        </div>
     </div>
 </div>
 @section js{

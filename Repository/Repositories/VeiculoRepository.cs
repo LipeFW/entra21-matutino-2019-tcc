@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Model;
+using System.Data.Entity;
+
 namespace Repository.Repositories
 {
     public class VeiculoRepository : IVeiculoRepository
@@ -42,29 +44,28 @@ namespace Repository.Repositories
 
         public Veiculo ObterPeloId(int id)
         {
-            return context.Veiculos.FirstOrDefault(x => x.Id == id);
+            return context.Veiculos.Include("Marca").Include("Modelo").FirstOrDefault(x => x.Id == id);
 
         }
 
 
         public List<Veiculo> ObterTodos()
         {
-            return context.Veiculos.Where(x => x.RegistroAtivo == true).ToList();
+            return context.Veiculos.Where(x => x.RegistroAtivo == true).Include("Marca").Include("Modelo").ToList();
 
         }
         public bool Alterar(Veiculo veiculo)
         {
-            var veiculooriginal = context.Veiculos.FirstOrDefault(x => x.Id == veiculo.Id);
+            var veiculoOriginal = context.Veiculos.FirstOrDefault(x => x.Id == veiculo.Id);
 
-            if (veiculooriginal == null)
+            if (veiculoOriginal == null)
                 return false;
 
-            veiculooriginal.Id = veiculo.Id;
-            veiculooriginal.Marca = veiculo.Marca;
-            veiculooriginal.Modelo = veiculo.Modelo;
-            veiculooriginal.NumeroCaminhao = veiculo.NumeroCaminhao;
-            veiculooriginal.Placa = veiculo.Placa;
-            veiculooriginal.RegistroAtivo = veiculo.RegistroAtivo;
+            veiculoOriginal.Id = veiculo.Id;
+            veiculoOriginal.Marca = veiculo.Marca;
+            veiculoOriginal.Modelo = veiculo.Modelo;
+            veiculoOriginal.NumeroCaminhao = veiculo.NumeroCaminhao;
+            veiculoOriginal.Placa = veiculo.Placa;
 
             int quantidadeafetada = context.SaveChanges();
             return quantidadeafetada == 1;

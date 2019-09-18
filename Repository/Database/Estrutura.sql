@@ -21,8 +21,8 @@ nome VARCHAR(100),
 registro_ativo BIT
 );
 
-INSERT INTO paises(nome, registro_ativo) VALUES ('Brasil', 1);
-INSERT INTO paises(nome, registro_ativo) VALUES ('Estados Unidos', 1);
+INSERT INTO paises(nome, registro_ativo) VALUES ('Brasil', 1),
+												('Estados Unidos', 1);
 
 CREATE TABLE estados(
 id INT PRIMARY KEY IDENTITY(1,1),
@@ -32,8 +32,8 @@ registro_ativo BIT,
 FOREIGN KEY(id_pais) REFERENCES paises (id)
 );
 
- INSERT INTO estados(id_pais, nome, registro_ativo) VALUES (1, 'Santa Catarina',1 );
- INSERT INTO estados(id_pais, nome, registro_ativo) VALUES (2, 'Flórida', 1);
+ INSERT INTO estados(id_pais, nome, registro_ativo) VALUES	(1, 'Santa Catarina',1 ),
+															(2, 'Flórida', 1);
 
 CREATE TABLE cidades(
 id INT PRIMARY KEY IDENTITY(1,1),
@@ -43,8 +43,8 @@ registro_ativo BIT,
 FOREIGN KEY(id_estado) REFERENCES estados (id)
 );
 
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES (1, 'Blumenau', 1);
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES (2, 'Miami', 1);
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	(1, 'Blumenau', 1),
+															(2, 'Miami', 1);
 
 CREATE TABLE categorias( 
 id INT PRIMARY KEY IDENTITY(1,1),
@@ -53,7 +53,9 @@ registro_ativo BIT
 );
  
 INSERT INTO categorias(nome,registro_ativo)
-VALUES	 ('Bebidas', 1),		 ('Doces', 1),		 ('Salgados', 1);
+VALUES	('Bebidas', 1),	
+		('Doces', 1),		 
+		('Salgados', 1);
 
 CREATE TABLE marcas( 
 id INT PRIMARY KEY IDENTITY(1,1),
@@ -63,18 +65,30 @@ registro_ativo BIT);
 INSERT INTO marcas(nome,registro_ativo)
 VALUES ('Ford', 1);
 
+CREATE TABLE modelos(
+id INT PRIMARY KEY IDENTITY(1,1),
+nome VARCHAR(50),
+id_marca INT,
+FOREIGN KEY (id_marca) REFERENCES marcas(id),
+registro_ativo BIT);
+
+INSERT INTO modelos(id_marca,nome, registro_ativo)
+VALUES (1,'Cargo', 1);
+
  CREATE TABLE veiculos(
 id INT PRIMARY KEY IDENTITY(1,1),
-marca VARCHAR(100),
-modelo VARCHAR(100),
+id_marca INT,
+id_modelo INT,
 ano_fabricacao INT,
 numero_caminhao INT,
 placa VARCHAR(8),
-registro_ativo BIT
+registro_ativo BIT,
+FOREIGN KEY(id_marca) REFERENCES marcas (id),
+FOREIGN KEY(id_modelo) REFERENCES modelos (id)
 );
 
-INSERT INTO veiculos(marca, modelo, ano_fabricacao, numero_caminhao, placa, registro_ativo)
-VALUES ('Ford', 'Cargo', '2005', 002, 'MJX-0585', 1 );
+INSERT INTO veiculos(id_marca, id_modelo, ano_fabricacao, numero_caminhao, placa, registro_ativo)
+VALUES (1, 1, '2005', 002, 'MJX-0585', 1 );
 
 CREATE TABLE vendedores(
 id INT PRIMARY KEY IDENTITY(1,1),

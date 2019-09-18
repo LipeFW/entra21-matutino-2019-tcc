@@ -71,6 +71,7 @@
     <Compile Include="Interface\ICidadeRepository.cs" />
     <Compile Include="Interface\IClienteRepository.cs" />
     <Compile Include="Interface\IEstadoRepository.cs" />
+    <Compile Include="Interface\IModeloRepository.cs" />
     <Compile Include="Interface\INotaFiscalRepository.cs" />
     <Compile Include="Interface\IPaisRepository.cs" />
     <Compile Include="Interface\IProdutoRepository.cs" />
@@ -85,6 +86,7 @@
     <Compile Include="Repositories\EstadoRepository.cs" />
     <Compile Include="Repositories\MarcaRepository.cs" />
     <Compile Include="Repositories\ClienteRepository.cs" />
+    <Compile Include="Repositories\ModeloRepository.cs" />
     <Compile Include="Repositories\NotaFiscalRepository.cs" />
     <Compile Include="Repositories\PaisRepository.cs" />
     <Compile Include="Repositories\ProdutoRepository.cs" />

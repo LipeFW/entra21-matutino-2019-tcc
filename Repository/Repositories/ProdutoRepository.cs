@@ -21,12 +21,12 @@ namespace Repository.Repositories
 
         public bool Apagar(int id)
         {
-            var venda = context.Produtos.FirstOrDefault(x => x.Id == id);
+            var produto = context.Produtos.FirstOrDefault(x => x.Id == id);
 
-            if (venda == null)
+            if (produto == null)
                 return false;
 
-            venda.RegistroAtivo = false;
+            produto.RegistroAtivo = false;
             int quantidadeAfetada = context.SaveChanges();
             return quantidadeAfetada == 1;
         }

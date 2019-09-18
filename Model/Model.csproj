@@ -93,6 +93,7 @@
     <Compile Include="Cliente.cs" />
     <Compile Include="Estado.cs" />
     <Compile Include="Marca.cs" />
+    <Compile Include="Modelo.cs" />
     <Compile Include="NotaFiscal.cs" />
     <Compile Include="Pais.cs" />
     <Compile Include="Produto.cs" />
