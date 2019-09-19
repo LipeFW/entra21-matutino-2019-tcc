@@ -11,63 +11,67 @@
         <span class="h3">Dados Pessoais</span>
     </legend>
     <div class="form-group">
-        <label style="font-weight:bold" for="perfil-campo-nome">@View.Resources.Resource.Nome <span class="text-danger">*</span></label>
-        <input id="perfil-campo-nome" class="form-control border-dark" />
+        <label style="font-weight:bold" for="config-campo-nome">@View.Resources.Resource.Nome <span class="text-danger">*</span></label>
+        <input id="config-campo-nome" class="form-control border-dark" />
     </div>
     <div class="form-group">
-        <label style="font-weight:bold" for="perfil-campo-telefone">@View.Resources.Resource.Telefone <span class="text-danger">*</span></label>
-        <input id="perfil-campo-telefone" class="form-control border-dark" />
+        <label style="font-weight:bold" for="config-campo-telefone">@View.Resources.Resource.Telefone <span class="text-danger">*</span></label>
+        <input id="config-campo-telefone" class="form-control border-dark" />
     </div>
     <div class="form-group">
-        <label style="font-weight:bold" for="perfil-campo-cpf">@View.Resources.Resource.CPF <span class="text-danger">*</span></label>
-        <input id="perfil-campo-cpf" class="form-control border-dark" />
+        <label style="font-weight:bold" for="config-campo-cpf">@View.Resources.Resource.CPF <span class="text-danger">*</span></label>
+        <input id="config-campo-cpf" class="form-control border-dark" />
     </div>
     <div class="form-group">
-        <label style="font-weight:bold" for="perfil-campo-cnh">@View.Resources.Resource.CNH <span class="text-danger">*</span></label>
-        <input id="perfil-campo-cnh" class="form-control border-dark" />
+        <label style="font-weight:bold" for="config-campo-rg">@View.Resources.Resource.RG <span class="text-danger">*</span></label>
+        <input id="config-campo-rg" class="form-control border-dark" />
     </div>
     <div class="form-group">
-        <label style="font-weight:bold" for="perfil-campo-cep">@View.Resources.Resource.CEP <span class="text-danger">*</span></label>
-        <input id="perfil-campo-cep" class="form-control border-dark" />
+        <label style="font-weight:bold" for="config-campo-cnh">@View.Resources.Resource.CNH <span class="text-danger">*</span></label>
+        <input id="config-campo-cnh" class="form-control border-dark" />
     </div>
     <div class="form-group">
-        <label style="font-weight:bold" for="perfil-campo-pais">@View.Resources.Resource.País <span class="text-danger">*</span></label>
-        <select class="form-control border-dark" id="perfil-campo-pais">
+        <label style="font-weight:bold" for="config-campo-cep">@View.Resources.Resource.CEP <span class="text-danger">*</span></label>
+        <input id="config-campo-cep" class="form-control border-dark" />
+    </div>
+    <div class="form-group">
+        <label style="font-weight:bold" for="config-campo-pais">@View.Resources.Resource.País <span class="text-danger">*</span></label>
+        <select class="form-control border-dark" id="config-campo-pais">
             <option disabled="disabled" selected="selected"> @View.Resources.Resource.Selecioneumpaís</option>
         </select>
     </div>
     <div class="form-group">
-        <label style="font-weight:bold" for="perfil-campo-estado">@View.Resources.Resource.Estado <span class="text-danger">*</span></label>
-        <select class="form-control border-dark" id="perfil-campo-estado">
+        <label style="font-weight:bold" for="config-campo-estado">@View.Resources.Resource.Estado <span class="text-danger">*</span></label>
+        <select class="form-control border-dark" id="config-campo-estado">
             <option disabled="disabled" selected="selected"> @View.Resources.Resource.Selecioneumestado</option>
 
         </select>
     </div>
     <div class="form-group">
-        <label style="font-weight:bold" for="perfil-campo-cidade">@View.Resources.Resource.Cidade <span class="text-danger">*</span></label>
-        <select class="form-control border-dark" id="perfil-campo-cidade">
+        <label style="font-weight:bold" for="config-campo-cidade">@View.Resources.Resource.Cidade <span class="text-danger">*</span></label>
+        <select class="form-control border-dark" id="config-campo-cidade">
             <option disabled="disabled" selected="selected"> @View.Resources.Resource.Selecioneumacidade</option>
         </select>
     </div>
     <div class="form-group">
-        <label style="font-weight:bold" for="perfil-campo-logradouro">@View.Resources.Resource.Logradouro <span class="text-danger">*</span></label>
-        <input id="perfil-campo-logradouro" class="form-control border-dark" />
+        <label style="font-weight:bold" for="config-campo-logradouro">@View.Resources.Resource.Logradouro <span class="text-danger">*</span></label>
+        <input id="config-campo-logradouro" class="form-control border-dark" />
     </div>
     <div>
         <button class="btn btn-primary float-right"><i class="fas fa-pencil-alt"></i> @View.Resources.Resource.AlterarDados</button>
     </div>
 </div>
 <div class="modal-body">
-<legend>
-    <span class="h3">@View.Resources.Resource.AlterarSenha</span>
-</legend>
+    <legend>
+        <span class="h3">@View.Resources.Resource.AlterarSenha</span>
+    </legend>
     <div class="form-group">
-        <label style="font-weight:bold" for="perfil-campo-senha">@View.Resources.Resource.Senha</label>
-        <input type="password" id="perfil-campo-senha" class="form-control border-dark" />
+        <label style="font-weight:bold" for="config-campo-senha">@View.Resources.Resource.Senha</label>
+        <input type="password" id="config-campo-senha" class="form-control border-dark" />
     </div>
     <div class="form-group">
-        <label style="font-weight:bold" for="perfil-campo-senha2">@View.Resources.Resource.ConfirmarSenha</label>
-        <input type="password" id="perfil-campo-senha2" class="form-control border-dark" />
+        <label style="font-weight:bold" for="config-campo-senha2">@View.Resources.Resource.ConfirmarSenha</label>
+        <input type="password" id="config-campo-senha2" class="form-control border-dark" />
     </div>
     <div>
         <button id="alterarSenha" class="btn btn-primary float-right"><i class="fas fa-lock"></i> @View.Resources.Resource.AlterarSenha</button>
@@ -77,5 +81,6 @@
 
 @section js {
     @*<script src="~/Scripts/Usuario/perfil.js"></script>*@
-    <script src="~/Scripts/Usuario/config.js"~></script>
+    <script src="~/Scripts/Usuario/config.js" ~></script>
+    <script type="text/javascript" src="~/Scripts/Mascaras/Mask.js"></script>
 }

@@ -411,4 +411,7 @@
   <data name="Sair" xml:space="preserve">
     <value>Sair</value>
   </data>
+  <data name="RG" xml:space="preserve">
+    <value>RG</value>
+  </data>
 </root>

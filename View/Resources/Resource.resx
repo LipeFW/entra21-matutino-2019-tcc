@@ -258,6 +258,7 @@
   </data>
   <data name="Logradouro" xml:space="preserve">
     <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
   </data>
   <data name="Marca" xml:space="preserve">
     <value>string</value>
@@ -450,5 +451,9 @@
   </data>
   <data name="Sair" xml:space="preserve">
     <value>string</value>
+  </data>
+  <data name="RG" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
   </data>
 </root>

@@ -702,6 +702,15 @@ namespace View.Resources {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a string.
         /// </summary>
+        public static string RG {
+            get {
+                return ResourceManager.GetString("RG", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
         public static string Rota {
             get {
                 return ResourceManager.GetString("Rota", resourceCulture);

@@ -2,19 +2,65 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Cadastro de Usuário</h5>
+                <h4 class="modal-title"><i class="fas fa-user"></i> Cadastro de Usuário</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body back">
                 <div class="form-group">
-                    <label for="usuario-campo-nome">Nome</label>
-                    <input id="usuario-campo-nome" class="form-control" />
+                    <label style="font-weight:bold" for="usuario-campo-nome">Nome <span class="text-danger">*</span></label>
+                    <input id="usuario-campo-nome" class="form-control border-dark" />
                 </div>
-                <div>
-                    <label for="usuario-campo-senha">Senha</label>
-                    <input type="password" id="usuario-campo-senha" class="form-control" />
+                <div class="form-group">
+                    <label style="font-weight:bold" for="usuario-campo-usuario">Usuário <span class="text-danger">*</span></label>
+                    <input id="usuario-campo-nome" class="form-control border-dark" />
+                </div>
+                <div class="form-group">
+                    <label style="font-weight:bold" for="usuario-campo-senha">Senha <span class="text-danger">*</span></label>
+                    <input type="password" id="usuario-campo-senha" class="form-control border-dark" />
+                </div>
+                <div class="form-group">
+                    <label style="font-weight:bold" for="usuario-campo-telefone">Telefone <span class="text-danger">*</span></label>
+                    <input id="usuario-campo-nome" class="form-control border-dark" />
+                </div>
+                <div class="form-group">
+                    <label style="font-weight:bold" for="usuario-campo-cpf">CPF <span class="text-danger">*</span></label>
+                    <input id="usuario-campo-nome" class="form-control border-dark" />
+                </div>
+                <div class="form-group">
+                    <label style="font-weight:bold" for="usuario-campo-rg">RG <span class="text-danger">*</span></label>
+                    <input id="usuario-campo-nome" class="form-control border-dark" />
+                </div>
+                <div class="form-group">
+                    <label style="font-weight:bold" for="usuario-campo-cnh">CNH <span class="text-danger">*</span></label>
+                    <input id="usuario-campo-nome" class="form-control border-dark" />
+                </div>
+                <div class="form-group">
+                    <label style="font-weight:bold" for="usuario-campo-cep">CEP <span class="text-danger">*</span></label>
+                    <input id="usuario-campo-nome" class="form-control border-dark" />
+                </div>
+                <div class="form-group">
+                    <label style="font-weight:bold" for="usuario-campo-pais">@View.Resources.Resource.Cidade <span class="text-danger">*</span></label>
+                    <select class="form-control border-dark" id="usuario-campo-pais">
+                        <option disabled="disabled" selected="selected"> @View.Resources.Resource.Selecioneumacidade</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label style="font-weight:bold" for="usuario-campo-estado">@View.Resources.Resource.Cidade <span class="text-danger">*</span></label>
+                    <select class="form-control border-dark" id="usuario-campo-estado">
+                        <option disabled="disabled" selected="selected"> @View.Resources.Resource.Selecioneumacidade</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label style="font-weight:bold" for="usuario-campo-cidade">@View.Resources.Resource.Cidade <span class="text-danger">*</span></label>
+                    <select class="form-control border-dark" id="usuario-campo-cidade">
+                        <option disabled="disabled" selected="selected"> @View.Resources.Resource.Selecioneumacidade</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label style="font-weight:bold" for="usuario-campo-logradouro">@View.Resources.Resource.Logradouro<span class="text-danger">*</span></label>
+                    <input id="usuario-campo-nome" class="form-control border-dark" />
                 </div>
             </div>
             <div class="modal-footer">
