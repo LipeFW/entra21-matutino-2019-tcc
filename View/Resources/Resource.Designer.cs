@@ -297,9 +297,9 @@ namespace View.Resources {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a string.
         /// </summary>
-        public static string Configuracoesdaconta {
+        public static string Configuracaoconta {
             get {
-                return ResourceManager.GetString("Configuracoesdaconta", resourceCulture);
+                return ResourceManager.GetString("Configuracaoconta", resourceCulture);
             }
         }
         
@@ -417,6 +417,15 @@ namespace View.Resources {
         public static string foi {
             get {
                 return ResourceManager.GetString("foi", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
+        public static string Funcao {
+            get {
+                return ResourceManager.GetString("Funcao", resourceCulture);
             }
         }
         
@@ -918,6 +927,15 @@ namespace View.Resources {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a string.
         /// </summary>
+        public static string Veiculo {
+            get {
+                return ResourceManager.GetString("Veiculo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
         public static string Veiculos {
             get {
                 return ResourceManager.GetString("Veiculos", resourceCulture);
@@ -939,6 +957,15 @@ namespace View.Resources {
         public static string Vendedor {
             get {
                 return ResourceManager.GetString("Vendedor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
+        public static string Vendedores {
+            get {
+                return ResourceManager.GetString("Vendedores", resourceCulture);
             }
         }
         
