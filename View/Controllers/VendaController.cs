@@ -32,12 +32,13 @@ namespace View.Controllers
             return Json(resultado, JsonRequestBehavior.AllowGet);
         }
 
-        [HttpPost, Route("cadastro")]
-        public ActionResult Cadastro(Venda venda)
+        [HttpPost, Route("inserir")]
+        public ActionResult Inserir(Venda venda)
         {
-            int id = repository.Inserir(venda);
-            return RedirectToAction("Editar",
-                new { id = id });
+            venda.RegistroAtivo = true;
+            var id = repository.Inserir(venda);
+            var resultado = new { id = id };
+            return Json(resultado, JsonRequestBehavior.AllowGet);
         }
 
         [HttpPost, Route("editar")]
@@ -56,6 +57,12 @@ namespace View.Controllers
             var resultado = new { status = apagou };
             return Json(resultado,
                 JsonRequestBehavior.AllowGet);
+        }
+
+        [HttpGet,Route("obterpeloid")]
+        public JsonResult ObterPeloId(int id)
+        {
+            return Json(repository.ObterPeloId(id), JsonRequestBehavior.AllowGet);
         }
 
         public ActionResult Index()
