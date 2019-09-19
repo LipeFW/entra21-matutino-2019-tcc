@@ -13,6 +13,7 @@ INSERT INTO usuarios(nome,senha,registro_ativo)
 VALUES ('lipefw', 'anaumsei', 1),
 	    ('illan', 'illanzoka', 1),
 	    ('eduardo', '123456', 1),
+		('Pabloluz','1234',1),
 	    ('henrique', 'pimbinha6000', 1);
 
 CREATE TABLE paises(

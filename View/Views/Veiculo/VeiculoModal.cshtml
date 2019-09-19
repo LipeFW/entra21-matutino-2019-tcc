@@ -2,16 +2,16 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Cadastro de Veículo</h5>
+                <h5 class="modal-title">@View.Resources.Resource.CadastrodeVeiculo</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
                 <div class="form-group">
-                    <label for="veiculo-campo-marca">Marca</label>
+                    <label for="veiculo-campo-marca">@View.Resources.Resource.Marca</label>
                     <select class="form-control" id="veiculo-campo-marca" name="campo-marca">
-                        <option disabled="disabled" selected="selected">Selecione uma marca</option>
+                        <option disabled="disabled" selected="selected">@View.Resources.Resource.Selecioneumamarca</option>
                         @foreach (Model.Marca marca in ViewBag.Marcas)
                         {
                             <option value="@marca.Id">@marca.Nome</option>
@@ -19,30 +19,30 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="veiculo-campo-modelo">Modelo</label>
+                    <label for="veiculo-campo-modelo">@View.Resources.Resource.Modelo</label>
                     <select class="form-control" id="veiculo-campo-modelo" name="campo-marca">
-                        <option disabled="disabled" selected="selected">Selecione um Modelo</option>
+                        <option disabled="disabled" selected="selected">@View.Resources.Resource.SelecioneumModelo</option>
                         @foreach (Model.Modelo modelo in ViewBag.Modelos)
                         {
                             <option value="@modelo.Id">@modelo.Nome</option>
                         }
                     </select>
                     <div class="form-group">
-                        <label for="veiculo-campo-anofabricacao">Ano de fabricação</label>
+                        <label for="veiculo-campo-anofabricacao">@View.Resources.Resource.AnoFabricacao</label>
                         <input class="form-control" name="campo-anofabricacao" id="veiculo-campo-anofabricacao" type="number" min="1945" max="2025" required="required">
                     </div>
                     <div class="form-group">
-                        <label for="veiculo-campo-numerocaminhao">Numero Do Caminhão</label>
+                        <label for="veiculo-campo-numerocaminhao">@View.Resources.Resource.Numerodocaminhao</label>
                         <input class="form-control" name="campo-numerocaminhao" id="veiculo-campo-numerocaminhao" type="text" required="required" />
                     </div>
                     <div class="form-group">
-                        <label for="veiculo-campo-placa">Placa</label>
+                        <label for="veiculo-campo-placa">@View.Resources.Resource.Placa</label>
                         <input class="form-control" name="campo-placa" id="veiculo-campo-placa" type="text" required="required" />
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-outline-danger" data-dismiss="modal"><i class="fas fa-times"></i> Cancelar</button>
-                    <button id="veiculo-botao-salvar" type="button" class="btn btn-success"><i class="fas fa-save"></i>  Salvar</button>
+                    <button type="button" class="btn btn-outline-danger" data-dismiss="modal"><i class="fas fa-times"></i> @View.Resources.Resource.Cancelar</button>
+                    <button id="veiculo-botao-salvar" type="button" class="btn btn-success"><i class="fas fa-save"></i>  @View.Resources.Resource.Salvar</button>
                 </div>
             </div>
     </div>

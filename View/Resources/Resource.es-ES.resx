@@ -228,7 +228,7 @@
   <data name="Placa" xml:space="preserve">
     <value>Tarjeta</value>
   </data>
-  <data name="Prdutos" xml:space="preserve">
+  <data name="Produtos" xml:space="preserve">
     <value>Productos</value>
   </data>
   <data name="Produto" xml:space="preserve">
@@ -399,7 +399,7 @@
   <data name="Configuracaoconta" xml:space="preserve">
     <value>Configurción de la Cuenta</value>
   </data>
-  <data name="inicio" xml:space="preserve">
+  <data name="Inicio" xml:space="preserve">
     <value>Principio</value>
   </data>
   <data name="Menu" xml:space="preserve">
@@ -414,8 +414,41 @@
   <data name="Funcao" xml:space="preserve">
     <value>Función</value>
   </data>
+  <data name="CadastrodeInventario" xml:space="preserve">
+    <value>Registro de Inventario</value>
+  </data>
+  <data name="CadastroVenda" xml:space="preserve">
+    <value>Registro del Venda</value>
+  </data>
+  <data name="Desconto" xml:space="preserve">
+    <value>Descuento</value>
+  </data>
+  <data name="NovaVenda" xml:space="preserve">
+    <value>Nueva Venda</value>
+  </data>
+  <data name="Novoinventario" xml:space="preserve">
+    <value>Nuevo Inventario</value>
+  </data>
+  <data name="Perfil" xml:space="preserve">
+    <value>Perfil</value>
+  </data>
+  <data name="SelecioneumCliente" xml:space="preserve">
+    <value>Seleccione un Cliente</value>
+  </data>
+  <data name="SelecioneumModelo" xml:space="preserve">
+    <value>Seleccione un Modelo</value>
+  </data>
+  <data name="SelecioneumProduto" xml:space="preserve">
+    <value>Seleccione un Producto</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>Total</value>
+  </data>
   <data name="Veiculo" xml:space="preserve">
     <value>Coche</value>
+  </data>
+  <data name="Vendas" xml:space="preserve">
+    <value>Vendas</value>
   </data>
   <data name="Vendedores" xml:space="preserve">
     <value>Vendedores</value>
