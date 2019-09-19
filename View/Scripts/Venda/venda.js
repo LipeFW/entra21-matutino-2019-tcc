@@ -37,19 +37,19 @@
 
     function alterar($quantidade, $vendedor, $cliente, $produto, $total, $desconto) {
         $.ajax({
-            url: 'http://localhost:51242/Venda/update',
+            url: 'http://localhost:51242/Venda/editar',
             method: 'post',
             data: {
                 id: $idAlterar,
                 quantidade: $quantidade,
-                vendedor: $vendedor,
-                cliente: $cliente,
-                produto: $produto,
+                idVendedor: $vendedor,
+                idCliente: $cliente,
+                idProduto: $produto,
                 total: $total,
                 desconto: $desconto
             },
             success: function (data) {
-                $("#modal-venda").mdal("hide");
+                $("#modal-venda").modal("hide");
                 $idAlterar = -1;
                 $tabelaVenda.ajax.reload();
                 alert("Registro alterado com sucesso");
@@ -61,15 +61,15 @@
         })
     }
 
-    function inserir($quantidade, $vendedor, $cliente, $total, $desconto) {
+    function inserir($quantidade, $vendedor, $cliente, $produto, $total, $desconto) {
         $.ajax({
             url: 'http://localhost:51242/Venda/inserir',
             method: 'post',
             data: {
                 quantidade: $quantidade,
-                vendedor: $vendedor,
-                cliente: $cliente,
-                produto: $produto,
+                idVendedor: $vendedor,
+                idCliente: $cliente,
+                idProduto: $produto,
                 total: $total,
                 desconto: $desconto
             },
@@ -86,7 +86,9 @@
 
     $('.table').on('click', '.botao-apagar', function () {
         $idApagar = $(this).data('id');
+        var confirmacao = confirm("Deseja apagar o registro?");
 
+        if (confirmacao == true) {
         $.ajax({
             url: 'http://localhost:51242/Venda/apagar?id=' + $idApagar,
             method: 'get',
@@ -94,9 +96,11 @@
                 $tabelaVenda.ajax.reload();
             },
             error: function (err) {
-                alert("Não foi possivel apagar")
+                alert("Não foi possivel apagar");
             }
         });
+        }
+
     });
 
     $('.table').on('click', '.botao-editar', function () {
@@ -107,18 +111,18 @@
             method: 'get',
 
             success: function (data) {
-                $('venda-campo-quantidade').val(data.Quantidade);
-                $('venda-campo-vendedor').val(data.Vendedor);
-                $('venda-campo-cliente').val(data.Cliente);
-                $('venda-campo-produto').val(data.Produto);
-                $('venda-campo-total').val(data.Total);
-                $('venda-campo-desconto').val(data.Desconto);
+                $('#venda-campo-quantidade').val(data.Quantidade);
+                $('#venda-campo-vendedor').val(data.Vendedor);
+                $('#venda-campo-cliente').val(data.Cliente);
+                $('#venda-campo-produto').val(data.Produto);
+                $('#venda-campo-total').val(data.Total);
+                $('#venda-campo-desconto').val(data.Desconto);
 
-                $('modal-venda').modal('show');
+                $('#modal-venda').modal('show');
 
             },
             error: function (err) {
-                alert("Mão foi possivel editar");
+                alert("Não foi possivel editar");
             }
         })
     });

@@ -117,6 +117,14 @@
     <Content Include="Content\css\outros.css" />
     <Content Include="Content\css\select2.css" />
     <Content Include="Content\css\select2.min.css" />
+    <Content Include="Content\image\fundinho.jpg" />
+    <Content Include="Content\image\fundinho3.png" />
+    <Content Include="Content\image\fundinho4.png" />
+    <Content Include="Content\image\fundinho_1.jpg" />
+    <Content Include="Content\image\fundinho_2.jpg" />
+    <Content Include="Content\image\gato-confuo.jpg" />
+    <Content Include="Content\image\gatodandopinote.png" />
+    <Content Include="Content\image\hamsterchavoso.png" />
     <Content Include="Content\js\lang.js" />
     <Content Include="Content\js\login.js" />
     <Content Include="Content\js\mostrarSenha.js" />
@@ -2698,6 +2706,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\CategoriaController.cs" />
     <Compile Include="Controllers\CidadeController.cs" />
     <Compile Include="Controllers\ClienteController.cs" />
@@ -2794,6 +2803,7 @@
   <ItemGroup>
     <Folder Include="Content\fonts\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\Base\" />
     <Folder Include="Views\Cidade\" />
     <Folder Include="Views\Estado\" />
     <Folder Include="Views\Filtro\" />

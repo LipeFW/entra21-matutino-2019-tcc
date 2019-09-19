@@ -2,70 +2,24 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title"><i class="fas fa-user"></i> Cadastro de Usuário</h4>
+                <h5 class="modal-title">@View.Resources.Resource.CadastrodeUsuario</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="modal-body back">
+            <div class="modal-body">
                 <div class="form-group">
-                    <label style="font-weight:bold" for="usuario-campo-nome">Nome <span class="text-danger">*</span></label>
-                    <input id="usuario-campo-nome" class="form-control border-dark" />
+                    <label for="usuario-campo-nome">@View.Resources.Resource.Nome</label>
+                    <input id="usuario-campo-nome" class="form-control" />
                 </div>
-                <div class="form-group">
-                    <label style="font-weight:bold" for="usuario-campo-usuario">Usuário <span class="text-danger">*</span></label>
-                    <input id="usuario-campo-nome" class="form-control border-dark" />
-                </div>
-                <div class="form-group">
-                    <label style="font-weight:bold" for="usuario-campo-senha">Senha <span class="text-danger">*</span></label>
-                    <input type="password" id="usuario-campo-senha" class="form-control border-dark" />
-                </div>
-                <div class="form-group">
-                    <label style="font-weight:bold" for="usuario-campo-telefone">Telefone <span class="text-danger">*</span></label>
-                    <input id="usuario-campo-nome" class="form-control border-dark" />
-                </div>
-                <div class="form-group">
-                    <label style="font-weight:bold" for="usuario-campo-cpf">CPF <span class="text-danger">*</span></label>
-                    <input id="usuario-campo-nome" class="form-control border-dark" />
-                </div>
-                <div class="form-group">
-                    <label style="font-weight:bold" for="usuario-campo-rg">RG <span class="text-danger">*</span></label>
-                    <input id="usuario-campo-nome" class="form-control border-dark" />
-                </div>
-                <div class="form-group">
-                    <label style="font-weight:bold" for="usuario-campo-cnh">CNH <span class="text-danger">*</span></label>
-                    <input id="usuario-campo-nome" class="form-control border-dark" />
-                </div>
-                <div class="form-group">
-                    <label style="font-weight:bold" for="usuario-campo-cep">CEP <span class="text-danger">*</span></label>
-                    <input id="usuario-campo-nome" class="form-control border-dark" />
-                </div>
-                <div class="form-group">
-                    <label style="font-weight:bold" for="usuario-campo-pais">@View.Resources.Resource.Cidade <span class="text-danger">*</span></label>
-                    <select class="form-control border-dark" id="usuario-campo-pais">
-                        <option disabled="disabled" selected="selected"> @View.Resources.Resource.Selecioneumacidade</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label style="font-weight:bold" for="usuario-campo-estado">@View.Resources.Resource.Cidade <span class="text-danger">*</span></label>
-                    <select class="form-control border-dark" id="usuario-campo-estado">
-                        <option disabled="disabled" selected="selected"> @View.Resources.Resource.Selecioneumacidade</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label style="font-weight:bold" for="usuario-campo-cidade">@View.Resources.Resource.Cidade <span class="text-danger">*</span></label>
-                    <select class="form-control border-dark" id="usuario-campo-cidade">
-                        <option disabled="disabled" selected="selected"> @View.Resources.Resource.Selecioneumacidade</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label style="font-weight:bold" for="usuario-campo-logradouro">@View.Resources.Resource.Logradouro<span class="text-danger">*</span></label>
-                    <input id="usuario-campo-nome" class="form-control border-dark" />
+                <div>
+                    <label for="usuario-campo-senha">@View.Resources.Resource.Senha</label>
+                    <input type="password" id="usuario-campo-senha" class="form-control" />
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-outline-danger" data-dismiss="modal"><i class="fas fa-times"></i> Cancelar</button>
-                <button id="usuario-botao-salvar" type="button" class="btn btn-success"><i class="fas fa-save"></i>  Salvar</button>
+                <button type="button" class="btn btn-outline-danger" data-dismiss="modal"><i class="fas fa-times"></i> @View.Resources.Resource.Cancelar</button>
+                <button id="usuario-botao-salvar" type="button" class="btn btn-success"><i class="fas fa-save"></i>  @View.Resources.Resource.Salvar</button>
             </div>
         </div>
     </div>

@@ -13,7 +13,7 @@
     <link href="~/Content/theme/global_assets/css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
 
 
-    <script src="~/Content/js/login.js"></script>
+    @*<script src="~/Content/js/login.js"></script>*@
     <script src="~/Scripts/jquery-3.4.1.min.js"></script>
     <script src="~/Content/js/mostrarSenha.js"></script>
 
@@ -25,26 +25,26 @@
         <div class="login-tabela">
             <div id="form">
 
-                @*<form name="login">*@
-                <h2 class="titulo text-center">mcss</h2>
-                <div class="form-group">
-                    <label>Usuário</label>
-                    <input id="usuario" name="usuario" type="text" class="form-control" placeholder="User/Usuario" required="required" autofocus />
-                </div>
-                <div class="form-group">
-                    <label>Senha</label>
-                    <input id="password" name="password" type="password" class="form-control" placeholder="Password/Contraseña" required="required" />
-                </div>
-                <div class="form-group">
-                    <input type="checkbox" id="showPassword" /><label for="showPassword"> Mostrar senha </label>
-                </div>
-                
+                <form action="login" method="post">
+                    <h2 class="titulo text-center">mcss</h2>
+                    <div class="form-group">
+                        <label>Usuário</label>
+                        <input id="usuario" name="login" type="text" class="form-control" placeholder="User/Usuario" required="required" autofocus />
+                    </div>
+                    <div class="form-group">
+                        <label>Senha</label>
+                        <input id="password" name="senha" type="password" class="form-control" placeholder="Password/Contraseña" required="required" />
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="showPassword" /><label for="showPassword"> Mostrar senha </label>
+                    </div>
 
-                <div class="form-group">
-                    <button onclick="Login()" id="entrar" type="button" class="btn btn-success btn-block">Entrar</button>
-                </div>
+
+                    <div class="form-group">
+                        <button id="entrar" type="submit" class="btn btn-primary btn-block">Entrar</button>
+                    </div>
+                </form>
             </div>
-            @*</form>*@
         </div>
     </div>
 </body>

@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -60,6 +60,12 @@ namespace Repository.Repositories
         public Usuario ObterPeloId(int id)
         {
             var usuario = context.Usuarios.FirstOrDefault(x => x.Id == id);
+            return usuario;
+        }
+
+        public Usuario Verificar(string nome, string senha)
+        {
+            var usuario = context.Usuarios.FirstOrDefault(x => x.Nome == nome && x.Senha == senha);
             return usuario;
         }
 

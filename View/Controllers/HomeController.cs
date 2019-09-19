@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Repository.Repositories;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
@@ -8,8 +9,9 @@ using System.Web.Mvc;
 
 namespace View.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
+
         public ActionResult Change(String lang)
         {
             if (lang != null)
@@ -29,5 +31,8 @@ namespace View.Controllers
         {
             return View();
         }
+
+       
+
     }
 }

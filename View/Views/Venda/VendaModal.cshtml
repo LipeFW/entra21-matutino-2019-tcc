@@ -2,24 +2,24 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Cadastro de Venda</h5>
+                <h5 class="modal-title">@View.Resources.Resource.CadastroVenda</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
                 <div class="form-group">
-                    <label for="venda-campo-quantidade">Quantidade</label>
+                    <label for="venda-campo-quantidade">@View.Resources.Resource.Quantidade</label>
                     <input type="number" id="venda-campo-quantidade" class="form-control" min="0" max="10000" />
                 </div>
                 <div class="modal-body">
                     <div class="form-group">
-                        <label for="venda-campo-vendedor">Vendedor</label>
+                        <label for="venda-campo-vendedor">@View.Resources.Resource.Vendedor</label>
                         <select class="form-control"
                                 id="venda-campo-vendedor">
                             <option disabled="disabled"
                                     selected="selected">
-                                Selecione O Vendedor
+                                @View.Resources.Resource.SelecioneumVendedor
                             </option>
                             @foreach (Model.Vendedor vendedor in ViewBag.Vendedores)
                             {
@@ -31,9 +31,9 @@
                 </div>
                 <div class="modal-body">
                     <div class="form-group">
-                        <label for="venda-campo-cliente">Cliente</label>
+                        <label for="venda-campo-cliente">@View.Resources.Resource.Cliente</label>
                         <select class="form-control" id="venda-campo-cliente" name="campo-cliente">
-                            <option disabled="disabled" selected="selected">Selecione Um Cliente</option>
+                            <option disabled="disabled" selected="selected">@View.Resources.Resource.SelecioneumCliente</option>
                             @foreach (Model.Cliente cliente in ViewBag.Clientes)
                             {
                                 <option value="@cliente.Id">@cliente.Nome</option>
@@ -43,9 +43,9 @@
                 </div>
                 <div class="modal-body">
                     <div class="form-group">
-                        <label for="venda-campo-produto">Produto</label>
+                        <label for="venda-campo-produto">@View.Resources.Resource.Produto</label>
                         <select class="form-control" id="venda-campo-produto" name="campo-produto">
-                            <option disabled="disabled" selected="selected">Selecione Um Produto</option>
+                            <option disabled="disabled" selected="selected">@View.Resources.Resource.SelecioneumProduto</option>
                             @foreach (Model.Produto produto in ViewBag.Produtos)
                             {
                                 <option value="@produto.Id">@produto.Nome</option>
@@ -56,19 +56,19 @@
                 <div class="modal-body">
                     <div class="form-group">
                         <label for="venda-campo-total">Total</label>
-                        <input type="number" id="campo-venda-total" class="form-control" />
+                        <input type="number" id="venda-campo-total" class="form-control" />
                     </div>
                     <div class="modal-body">
                         <div class="form-group">
                             <label for="venda-campo-desconto">Desconto</label>
-                            <input type="number" id="campo-venda-desconto" class="form-control" min="0" max="25" />
+                            <input type="number" id="venda-campo-desconto" class="form-control" min="0" max="25" />
                         </div>
                     </div>
 
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-outline-danger" data-dismiss="modal"><i class="fas fa-times"></i> Cancelar</button>
-                    <button type="button" class="btn btn-success" id="venda-botao-salvar"><i class="fas fa-save"></i>  Salvar</button>
+                    <button type="button" class="btn btn-outline-danger" data-dismiss="modal"><i class="fas fa-times"></i> @View.Resources.Resource.Cancelar</button>
+                    <button type="button" class="btn btn-success" id="venda-botao-salvar"><i class="fas fa-save"></i>  @View.Resources.Resource.Salvar</button>
                 </div>
             </div>
                 </div>

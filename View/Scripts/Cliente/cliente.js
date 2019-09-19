@@ -81,8 +81,8 @@
                 },
                 success: function (data) {
                     $('#modal-cliente').modal('hide');
-                    $tabelaCliente.ajax.reload();
                     alert('Registro inserido com Sucesso');
+                    $tabelaCliente.ajax.reload();
                 },
                 error: function (err) {
                     alert('Não foi possivel cadastrar o cliente');
@@ -93,18 +93,21 @@
 
     $(".table").on("click", ".botao-apagar", function () {
         $idApagar = $(this).data("id");
+        var confirmacao = confirm("Deseja realmente apagar o registro?")
+        if (confirmacao == true) {
         $.ajax({
             url: "http://localhost:51242/Cliente/Apagar?id=" + $idApagar,
             method: "get",
             success: function (data) {
-                $tabelaCliente.ajax.reload();
                 alert("Registro Apagado Com Sucesso")
+                $tabelaCliente.ajax.reload();
 
             },
             error: function (err) {
                 alert('Não Foi Possível Apagar');
             }
         });
+        }
     });
 
     $('.table').on('click', '.botao-editar', function () {

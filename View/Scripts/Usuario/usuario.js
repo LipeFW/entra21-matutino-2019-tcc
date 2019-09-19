@@ -115,6 +115,8 @@
 
     $(".table").on("click", ".botao-apagar", function () {
         $idApagar = $(this).data("id");
+        var confirmacao = confirm("Deseja realmente apagar o registro?");
+        if (confirmacao == true) {
         $.ajax({
             url: "http://localhost:51242/Usuario/Apagar?id=" + $idApagar,
             method: "get",
@@ -127,6 +129,7 @@
                 alert('Não Foi Possível Apagar');
             }
         });
+        }
     });
 
     $(".table").on("click", ".botao-editar", function () {
