@@ -436,7 +436,7 @@
   <data name="Vindo" xml:space="preserve">
     <value>string</value>
   </data>
-  <data name="Configuracoesdaconta" xml:space="preserve">
+  <data name="Configuracaoconta" xml:space="preserve">
     <value>string</value>
   </data>
   <data name="Inicio" xml:space="preserve">
@@ -449,6 +449,15 @@
     <value>string</value>
   </data>
   <data name="Sair" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Funcao" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Veiculo" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Vendedores" xml:space="preserve">
     <value>string</value>
   </data>
 </root>

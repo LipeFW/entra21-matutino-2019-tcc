@@ -211,7 +211,7 @@
     <value>New Product</value>
   </data>
   <data name="NovoUsuario" xml:space="preserve">
-    <value>Novo Usuário</value>
+    <value>New User</value>
   </data>
   <data name="NovoVeiculo" xml:space="preserve">
     <value>New Vehicles</value>
@@ -370,7 +370,7 @@ The system seeks to quickly employ the processes mentioned with the ease of a sm
   <data name="BemVindo" xml:space="preserve">
     <value>Welcome</value>
   </data>
-  <data name="Configacoesdaconta" xml:space="preserve">
+  <data name="Configacaoconta" xml:space="preserve">
     <value>Acount Configuration</value>
   </data>
   <data name="Inicio" xml:space="preserve">
@@ -384,5 +384,14 @@ The system seeks to quickly employ the processes mentioned with the ease of a sm
   </data>
   <data name="Sair" xml:space="preserve">
     <value>Exit</value>
+  </data>
+  <data name="Funcao" xml:space="preserve">
+    <value>Function</value>
+  </data>
+  <data name="Veiculo" xml:space="preserve">
+    <value>Vehicle</value>
+  </data>
+  <data name="Vendedores" xml:space="preserve">
+    <value>Salemans</value>
   </data>
 </root>

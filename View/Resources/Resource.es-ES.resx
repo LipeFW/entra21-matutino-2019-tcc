@@ -396,11 +396,11 @@
   <data name="BemVindo" xml:space="preserve">
     <value>Biem Venido</value>
   </data>
-  <data name="Configuracoesdaconta" xml:space="preserve">
+  <data name="Configuracaoconta" xml:space="preserve">
     <value>Configurción de la Cuenta</value>
   </data>
   <data name="inicio" xml:space="preserve">
-    <value>Procipio</value>
+    <value>Principio</value>
   </data>
   <data name="Menu" xml:space="preserve">
     <value>Menu</value>
@@ -410,5 +410,14 @@
   </data>
   <data name="Sair" xml:space="preserve">
     <value>salir</value>
+  </data>
+  <data name="Funcao" xml:space="preserve">
+    <value>Función</value>
+  </data>
+  <data name="Veiculo" xml:space="preserve">
+    <value>Coche</value>
+  </data>
+  <data name="Vendedores" xml:space="preserve">
+    <value>Vendedores</value>
   </data>
 </root>
