@@ -86,7 +86,9 @@
 
     $('.table').on('click', '.botao-apagar', function () {
         $idApagar = $(this).data('id');
+        var confirmacao = confirm("Deseja apagar o registro?");
 
+        if (confirmacao == true) {
         $.ajax({
             url: 'http://localhost:51242/Venda/apagar?id=' + $idApagar,
             method: 'get',
@@ -97,6 +99,8 @@
                 alert("Não foi possivel apagar");
             }
         });
+        }
+
     });
 
     $('.table').on('click', '.botao-editar', function () {

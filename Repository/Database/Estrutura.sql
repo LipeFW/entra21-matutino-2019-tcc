@@ -63,7 +63,8 @@ nome VARCHAR(100),
 registro_ativo BIT);
  
 INSERT INTO marcas(nome,registro_ativo)
-VALUES ('Ford', 1);
+VALUES ('Ford', 1),
+	   ('Volvo', 1);
 
 CREATE TABLE modelos(
 id INT PRIMARY KEY IDENTITY(1,1),
@@ -73,7 +74,8 @@ FOREIGN KEY (id_marca) REFERENCES marcas(id),
 registro_ativo BIT);
 
 INSERT INTO modelos(id_marca,nome, registro_ativo)
-VALUES (1,'Cargo', 1);
+VALUES (1,'Cargo', 1),
+		(2, 'Pimba', 1);
 
  CREATE TABLE veiculos(
 id INT PRIMARY KEY IDENTITY(1,1),
