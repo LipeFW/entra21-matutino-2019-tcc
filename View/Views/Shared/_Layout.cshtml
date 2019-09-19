@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@{ 
+    var usuario = (Model.Usuario) Session["Usuario"];
+}
+
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="utf-8">
@@ -127,7 +131,7 @@
                         
                         </a>
                         <div class="/dropdown-divider"></div>
-                        <a href="/usuario/config" class="dropdown-item"><i class="icon-cog5"></i> <span id="configText">Configuracoesdaconta</span> </a>
+                        <a href="/usuario/config" class="dropdown-item"><i class="icon-cog5"></i> <span id="configText">Configurações da Conta</span> </a>
                         <a href="/login/index" class="dropdown-item"><i class="icon-switch2"></i> <span id="sairText">Sair</span></a>
                     </div>
                 </li>
@@ -167,7 +171,7 @@
                             </div>
 
                             <div class="media-body">
-                                <div class="media-title font-weight-semibold"><span id="nomeText"></span></div>
+                                <div class="media-title font-weight-semibold"><span>@usuario.Nome</span></div>
                                 <div class="font-size-xs opacity-50">
                                     <i class="icon-pin font-size-sm"></i> &nbsp;Blumenau - SC, Brasil
                                 </div>
@@ -284,13 +288,13 @@
                 <!-- /main charts -->
             </div>
 
-            <div class="col-xl-4">
+            @*<div class="col-xl-4">
                 <!-- Progress counters -->
                 <div class="row">
                     <div class="col-sm-6"></div>
                 </div>
                 <!-- /progress counters -->
-            </div>
+            </div>*@
         </div>
         <!-- /dashboard content -->
         <!-- /Content area -->

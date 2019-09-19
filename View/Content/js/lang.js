@@ -9,8 +9,6 @@
         $("#itemRota").addClass("disabled");
         $("#itemVendedor").addClass("disabled");
         $("#itemVeiculo").addClass("disabled");
-        $("#imagemUsuario").attr("src", "/Content/image/gato-confuo.jpg");
-        $("#imagemUsuario2").attr("src", "/Content/image/gato-confuo.jpg");
     }
     else if (isAdmin == 1) {
         $("#itemUsuario").removeClass("disabled");
@@ -19,7 +17,10 @@
         $("#itemRota").removeClass("disabled");
         $("#itemVendedor").removeClass("disabled");
         $("#itemVeiculo").removeClass("disabled");
-        $("#imagemUsuario").attr("src", "/Content/image/gatodandopinote.png");
-        $("#imagemUsuario2").attr("src", "/Content/image/gatodandopinote.png");
+        $("#navbar-mobile").addClass("primary");
     }
+
+    $("#imagemUsuario").attr("src", localStorage.getItem(urlImage));
+    $("#imagemUsuario2").attr("src", localStorage.getItem(urlImage));
+
 });

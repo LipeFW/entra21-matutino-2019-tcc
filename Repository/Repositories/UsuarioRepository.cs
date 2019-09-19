@@ -63,6 +63,12 @@ namespace Repository.Repositories
             return usuario;
         }
 
+        public Usuario Verificar(string nome, string senha)
+        {
+            var usuario = context.Usuarios.FirstOrDefault(x => x.Nome == nome && x.Senha == senha);
+            return usuario;
+        }
+
         public List<Usuario> ObterTodos()
         {
             return context.Usuarios.Where(x => x.RegistroAtivo == true).ToList();

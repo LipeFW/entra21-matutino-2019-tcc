@@ -64,6 +64,7 @@ namespace Repository.Repositories
             veiculoOriginal.Id = veiculo.Id;
             veiculoOriginal.Marca = veiculo.Marca;
             veiculoOriginal.Modelo = veiculo.Modelo;
+            veiculoOriginal.AnoFabricacao = veiculo.AnoFabricacao;
             veiculoOriginal.NumeroCaminhao = veiculo.NumeroCaminhao;
             veiculoOriginal.Placa = veiculo.Placa;
 

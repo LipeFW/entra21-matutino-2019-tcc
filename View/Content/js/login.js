@@ -17,6 +17,8 @@
         localStorage.setItem("username", "Illan Dickmann");
         localStorage.setItem("firstName", "Illan");
         localStorage.setItem("isAdmin", isAdmin);
+        localStorage.setItem("urlImage", "/Content/image/gato-confuo.jpg");
+
     }
 
     // User: Felipe
@@ -26,7 +28,8 @@
         localStorage.setItem("username", "Felipe Weber");
         localStorage.setItem("firstName", "Felipe");
         localStorage.setItem("isAdmin", isAdmin);
-
+        localStorage.setItem("urlImage", "/Content/image/gatodandopinote.png");
+        localStorage.setItem("colorTheme", "blue");
     }
 
     // User: Eduardo
@@ -39,10 +42,12 @@
     }
 
     // User: Henrique
-    if (usuario == "henrique" && senha == "Pimbinha6000") {
+    if (usuario == "henrique" && senha == "pimbinha6000") {
         done = 1;
         localStorage.setItem("username", "Henrique Montibeller");
         localStorage.setItem("firstName", "Henrique");
+        localStorage.setItem("urlImage", "/Content/image/hamsterchavoso.png");
+
 
 
     }
