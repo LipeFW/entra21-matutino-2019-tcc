@@ -49,7 +49,7 @@
             url: 'http://localhost:51242/inventario/inserir',
             method: 'post',
             data: {
-                numeroCaminhao: $numero_caminhao;
+                numeroCaminhao: $numero_caminhao
             },
             success: function (data) {
                 $('#modal-inventario').modal('hide');

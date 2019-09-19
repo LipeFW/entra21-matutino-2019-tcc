@@ -61,15 +61,15 @@
         })
     }
 
-    function inserir($quantidade, $vendedor, $cliente, $total, $desconto) {
+    function inserir($quantidade, $vendedor, $cliente, $produto, $total, $desconto) {
         $.ajax({
             url: 'http://localhost:51242/Venda/inserir',
             method: 'post',
             data: {
                 quantidade: $quantidade,
-                vendedor: $vendedor,
-                cliente: $cliente,
-                produto: $produto,
+                idVendedor: $vendedor,
+                idCliente: $cliente,
+                idProduto: $produto,
                 total: $total,
                 desconto: $desconto
             },
@@ -94,7 +94,7 @@
                 $tabelaVenda.ajax.reload();
             },
             error: function (err) {
-                alert("Não foi possivel apagar")
+                alert("Não foi possivel apagar");
             }
         });
     });
