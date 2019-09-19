@@ -2,19 +2,19 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Cadastro de Vendedor</h5>
+                <h5 class="modal-title">@View.Resources.Resource.CadastrodeVendedor</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
                 <div class="form-group">
-                    <label for="vendedor-campo-nome">Nome</label>
+                    <label for="vendedor-campo-nome">@View.Resources.Resource.Nome</label>
                     <input id="vendedor-campo-nome" class="form-control" />
                     <div>
-                        <label for="vendedor-campo-usuario">Usuário</label>
+                        <label for="vendedor-campo-usuario">@View.Resources.Resource.Usuario</label>
                         <select class="form-control " id="vendedor-campo-usuario" name="campo-usuario">
-                            <option disabled="disabled" selected="selected">Selecione um usuário</option>
+                            <option disabled="disabled" selected="selected">@View.Resources.Resource.Selecioneumusuario</option>
                             @foreach (Model.Usuario usuario in ViewBag.Usuarios)
                             {
                                 <option value="@usuario.Id">@usuario.Nome</option>
@@ -24,7 +24,7 @@
                     <div>
                         <label for="vendedor-campo-veiculo">Veículo</label>
                         <select class="form-control" id="vendedor-campo-veiculo" name="campo-veiculo">
-                            <option disabled="disabled" selected="selected">Selecione um veículo</option>
+                            <option disabled="disabled" selected="selected">@View.Resources.Resource.SelecioneumVeiculo</option>
                             @foreach (Model.Veiculo veiculo in ViewBag.Veiculos)
                             {
                                 <option value="@veiculo.Id">@veiculo.Modelo</option>
@@ -32,8 +32,8 @@
                         </select>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-outline-danger" data-dismiss="modal"><i class="fas fa-times"></i> Cancelar</button>
-                        <button type="button" class="btn btn-success" id="vendedor-botao-salvar"><i class="fas fa-save"></i>  Salvar</button>
+                        <button type="button" class="btn btn-outline-danger" data-dismiss="modal"><i class="fas fa-times"></i> @View.Resources.Resource.Cancelar</button>
+                        <button type="button" class="btn btn-success" id="vendedor-botao-salvar"><i class="fas fa-save"></i>  @View.Resources.Resource.Salvar</button>
                     </div>
                 </div>
             </div>

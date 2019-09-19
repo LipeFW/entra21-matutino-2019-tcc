@@ -228,7 +228,7 @@
   <data name="Placa" xml:space="preserve">
     <value>Placa</value>
   </data>
-  <data name="Prdutos" xml:space="preserve">
+  <data name="Produtos" xml:space="preserve">
     <value>Produtos</value>
   </data>
   <data name="Produto" xml:space="preserve">
@@ -414,8 +414,44 @@
   <data name="funcao" xml:space="preserve">
     <value>Função</value>
   </data>
+  <data name="Cadastrodeinventario" xml:space="preserve">
+    <value>Cadastro de Inventário</value>
+  </data>
+  <data name="CadastroVenda" xml:space="preserve">
+    <value>Cadastro de Venda</value>
+  </data>
+  <data name="Desconto" xml:space="preserve">
+    <value>Desconto</value>
+  </data>
+  <data name="Inventarios" xml:space="preserve">
+    <value>Inventários</value>
+  </data>
+  <data name="NovaVenda" xml:space="preserve">
+    <value>Nova Venda</value>
+  </data>
+  <data name="NovoInventario" xml:space="preserve">
+    <value>Novo Inventário</value>
+  </data>
+  <data name="Perfil" xml:space="preserve">
+    <value>Perfil</value>
+  </data>
+  <data name="SelecioneumCliente" xml:space="preserve">
+    <value>Selecione um Cliente</value>
+  </data>
+  <data name="SelecioneumModelo" xml:space="preserve">
+    <value>Selecione um Modelo</value>
+  </data>
+  <data name="SelecioneumProcuto" xml:space="preserve">
+    <value>Selecione um Produto</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>Total</value>
+  </data>
   <data name="Veiculo" xml:space="preserve">
     <value>Veículo</value>
+  </data>
+  <data name="Vendas" xml:space="preserve">
+    <value>Vendas</value>
   </data>
   <data name="Vendedores" xml:space="preserve">
     <value>Vendedores</value>

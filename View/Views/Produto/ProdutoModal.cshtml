@@ -4,19 +4,19 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Cadastro de Produto</h5>
+                <h5 class="modal-title">@View.Resources.Resource.CadastrodeProduto</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
                 <div class="form-group">
-                    <label for="produto-campo-categoria">Categoria</label>
+                    <label for="produto-campo-categoria">@View.Resources.Resource.Categoria</label>
                     <select class="form-control"
                             id="produto-campo-categoria">
                         <option disabled="disabled"
                                 selected="selected">
-                            Selecione uma categoria
+                            @View.Resources.Resource.Selecioneumacategoria
                         </option>
                         @foreach (Model.Categoria categoria in ViewBag.Categorias)
                         {
@@ -25,26 +25,26 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="produto-campo-nome">Nome</label>
+                    <label for="produto-campo-nome">@View.Resources.Resource.Nome</label>
                     <input id="produto-campo-nome" class="form-control" />
                 </div>
 
                 <div class="form-group">
-                    <label for="produto-campo-codigo">Código de Barra</label>
+                    <label for="produto-campo-codigo">@View.Resources.Resource.CodigodeBarra</label>
                     <input id="produto-campo-codigo" class="form-control" />
                 </div>
                 <div class="form-group">
-                    <label for="produto-campo-quantidade">Quantidade</label>
+                    <label for="produto-campo-quantidade">@View.Resources.Resource.Quantidade</label>
                     <input type="number" id="produto-campo-quantidade" class="form-control" />
                 </div>
                 <div class="form-group">
-                    <label for="produto-campo-valor">Valor</label>
+                    <label for="produto-campo-valor">@View.Resources.Resource.Valor</label>
                     <input id="produto-campo-valor" class="form-control" />
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-outline-danger" data-dismiss="modal"><i class="fas fa-times"></i> Cancelar</button>
-                <button id="produto-botao-salvar" type="button" class="btn btn-success"><i class="fas fa-save"></i>  Salvar</button>
+                <button type="button" class="btn btn-outline-danger" data-dismiss="modal"><i class="fas fa-times"></i> @View.Resources.Resource.Cancelar</button>
+                <button id="produto-botao-salvar" type="button" class="btn btn-success"><i class="fas fa-save"></i>  @View.Resources.Resource.Salvar</button>
             </div>
         </div>
     </div>
