@@ -6,22 +6,23 @@
 <link rel="stylesheet" type="text/css" href="~/Content/css/tabela/util.css" />
 <div class="table responsive">
 
-    <h2 class="text-center">Vendedores</h2>
+    <h2 class="text-center">@View.Resources.Resource.Vendedores</h2>
 
 
     <button data-toggle="modal" data-target="#modal-vendedor"
             class="btn btn-primary float-right mb-2">
-        <i class="fas fa-plus"></i>  Novo Vendedor
+        <i class="fas fa-plus">
+            </i>  @View.Resources.Resource.NovoVendedor
     </button>
 
     <table id="vendedor-tabela" class="table table-hover table-bordered table-striped">
         <thead>
             <tr>
                 <th>Id</th>
-                <th>Nome</th>
-                <th>Usuario</th>
-                <th>Veiculo</th>
-                <th>Ação</th>
+                <th>@View.Resources.Resource.Nome</th>
+                <th>@View.Resources.Resource.Usuario</th>
+                <th>@View.Resources.Resource.Veiculo</th>
+                <th>@View.Resources.Resource.Acao</th>
             </tr>
         </thead>
     </table>
