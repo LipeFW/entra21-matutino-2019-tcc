@@ -396,7 +396,7 @@
   <data name="BemVindo" xml:space="preserve">
     <value>Bem Vindo</value>
   </data>
-  <data name="Configuacoesdaconta" xml:space="preserve">
+  <data name="Configuacaoconta" xml:space="preserve">
     <value>Configurações da Conta</value>
   </data>
   <data name="Inicio" xml:space="preserve">
@@ -410,5 +410,14 @@
   </data>
   <data name="Sair" xml:space="preserve">
     <value>Sair</value>
+  </data>
+  <data name="funcao" xml:space="preserve">
+    <value>Função</value>
+  </data>
+  <data name="Veiculo" xml:space="preserve">
+    <value>Veículo</value>
+  </data>
+  <data name="Vendedores" xml:space="preserve">
+    <value>Vendedores</value>
   </data>
 </root>
