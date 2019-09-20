@@ -2,14 +2,14 @@
     $idAlterar = -1;
 
     $tabelaInventario = $('#inventario-tabela').DataTable({
-        ajax: 'http://localhost:51242/inventario/obtertodos',
+        ajax: 'http://localhost:51242/veiculo/obtertodos',
         serverSide: true,
         columns: [
             { 'data': 'Id' },
             { 'data': 'NumeroCaminhao' },
             {
                 render: function (data, type, row) {
-                    return '<button class="btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i> Editar</button>\<button class="btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i> Apagar</button>'
+                    return '<button class="btn btn-success botao-abrir" data-id="' + row.Id + '"><i class="fas fa-arrow-right"></i> Abrir</button>\<button class="btn btn-primary botao-editar ml-1" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i> Editar</button>'
                 }
             }
         ]
@@ -60,6 +60,22 @@
             }
         });
     }
+
+    $('.table').on('click', '.botao-abrir', function () {
+        $idAbrir = $(this).data('id');
+
+        $.ajax({
+            url: "http://localhost:51242/inventario/abrir?id=" + $idAbrir,
+            method: 'get',
+            success: function (data) {
+                $('#inventario-campo-numerocaminhao').val(data.NumeroCaminhao);
+                $('#modal-inventario').modal('show');
+            },
+            error: function (err) {
+                alert('Ainda não abre, sry :(');
+            }
+        })
+    });
 
     $('.table').on('click', '.botao-apagar', function () {
         $idApagar = $(this).data('id');

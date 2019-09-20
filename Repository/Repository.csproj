@@ -84,6 +84,7 @@
     <Compile Include="Repositories\CategoriaRepository.cs" />
     <Compile Include="Repositories\CidadeRepository.cs" />
     <Compile Include="Repositories\EstadoRepository.cs" />
+    <Compile Include="Repositories\InventarioRepository.cs" />
     <Compile Include="Repositories\MarcaRepository.cs" />
     <Compile Include="Repositories\ClienteRepository.cs" />
     <Compile Include="Repositories\ModeloRepository.cs" />
