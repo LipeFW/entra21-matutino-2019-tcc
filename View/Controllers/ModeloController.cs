@@ -8,7 +8,7 @@ namespace View.Controllers
 {
     public class ModeloController : Controller
     {
-        // GET: Modelo
+        
         public ActionResult Index()
         {
             return View();
