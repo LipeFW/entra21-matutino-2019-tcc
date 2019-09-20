@@ -166,7 +166,7 @@
     <value>Clientes</value>
   </data>
   <data name="CNPJ" xml:space="preserve">
-    <value>CNPLJ</value>
+    <value>CNPJ</value>
   </data>
   <data name="Codigo" xml:space="preserve">
     <value>Código</value>
@@ -413,5 +413,11 @@
   </data>
   <data name="RG" xml:space="preserve">
     <value>RG</value>
+  </data>
+  <data name="CadastrodeMarca" xml:space="preserve">
+    <value>Cadastro de Marca</value>
+  </data>
+  <data name="NovaMarca" xml:space="preserve">
+    <value>Nova Marca</value>
   </data>
 </root>

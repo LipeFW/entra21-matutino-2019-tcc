@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h3>Lista de Marcas</h3>
+
+<div class="table-responsive">
+    <h2 class="text-center">@View.Resources.Resource.Marca</h2>
+    <button data-toggle="modal" data-target="#modal-marca" class="btn btn-primary float-right mb-2 mt-2"><i class="fas fa-plus"></i> @View.Resources.Resource.NovaMarca</button>
+
+    <table class="table table-hover table-striped table-bordered" id="marca-tabela">
+        <thead>
+            <tr>
+                <th>@View.Resources.Resource.Codigo</th>
+                <th>@View.Resources.Resource.Nome</th>
+                <th>@View.Resources.Resource.Acao</th>
+            </tr>
+        </thead>        
+    </table>
+</div>
+
+@RenderPage("MarcaModal.cshtml")
+@section js{
+    <script src="~/Scripts/Marca/marca.js"></script>
+}
