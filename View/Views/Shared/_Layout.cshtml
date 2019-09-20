@@ -1,5 +1,5 @@
-﻿@{ 
-    var usuario = (Model.Usuario) Session["Usuario"];
+﻿@{
+    var usuario = (Model.Usuario)Session["Usuario"];
 }
 
 <!DOCTYPE html>
@@ -128,7 +128,7 @@
                         <a href="/usuario/perfil" class="dropdown-item">
                             <i class="icon-user-plus"></i>Meu Perfil
 
-                        
+
                         </a>
                         <div class="/dropdown-divider"></div>
                         <a href="/usuario/config" class="dropdown-item"><i class="icon-cog5"></i> <span id="configText">Configurações da Conta</span> </a>
@@ -194,7 +194,7 @@
                         </li>
                         <!-- Usuário -->
                         <li class="nav-item nav-item-submenu">
-                            <a href="#" id="itemUsuario"  class="nav-link"><i class="fas fa-user"></i> <span id="usuarioText">@View.Resources.Resource.Usuario</span></a>
+                            <a href="#" id="itemUsuario" class="nav-link"><i class="fas fa-user"></i> <span id="usuarioText">@View.Resources.Resource.Usuario</span></a>
                             <ul class="nav nav-group-sub" data-submenu-title="Usuário">
                                 <li class="nav-item"><a href="/usuario/index" class="nav-link ">@View.Resources.Resource.Lista</a></li>
                             </ul>
@@ -202,8 +202,10 @@
                         <!-- /Usuário -->
                         <!-- Categoria -->
                         <li class="nav-item nav-item-submenu">
-                            <a href="#" id="itemCategoria" class="nav-link"><i class="icon-clipboard"></i>
-                            <span id="categoriaText">@View.Resources.Resource.Categoria</span></a>
+                            <a href="#" id="itemCategoria" class="nav-link">
+                                <i class="icon-clipboard"></i>
+                                <span id="categoriaText">@View.Resources.Resource.Categoria</span>
+                            </a>
                             <ul class="nav nav-group-sub" data-submenu-title="Categoria">
                                 <li class="nav-item"><a href="/categoria/index" class="nav-link ">@View.Resources.Resource.Lista</a></li>
                             </ul>
@@ -289,12 +291,12 @@
             </div>
 
             @*<div class="col-xl-4">
-                <!-- Progress counters -->
-                <div class="row">
-                    <div class="col-sm-6"></div>
-                </div>
-                <!-- /progress counters -->
-            </div>*@
+                    <!-- Progress counters -->
+                    <div class="row">
+                        <div class="col-sm-6"></div>
+                    </div>
+                    <!-- /progress counters -->
+                </div>*@
         </div>
         <!-- /dashboard content -->
         <!-- /Content area -->
@@ -310,14 +312,13 @@
                 Footer
             </button>
         </div>
-    <div class="navbar-collapse collapse" id="navbar-footer">
-        <span class="navbar-text">
-            &copy; 2019 - MCSS Company
-        </span>
+        <div class="navbar-collapse collapse" id="navbar-footer">
+            <span class="navbar-text">
+                &copy; 2019 - MCSS Company
+            </span>
+        </div>
     </div>*@
 
-
-    </div>
     <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
     <script src="~/Scripts/select2.min.js"></script>
     @RenderSection("js", false)
