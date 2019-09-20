@@ -2793,6 +2793,8 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
     <Content Include="Views\Inventario\Index.cshtml" />
     <Content Include="Views\Inventario\InventarioModal.cshtml" />
+    <Content Include="Views\Marca\Index.cshtml" />
+    <Content Include="Views\Marca\MarcaModal.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

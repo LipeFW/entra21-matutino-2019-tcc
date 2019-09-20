@@ -92,7 +92,7 @@
             method: 'get',
             success: function (data) {
                 $tabelaVeiculo.ajax.reload();
-                alert("Registro Apagado Com Sucesso")
+                alert("Registro Apagado Com Sucesso");
             },
             error: function (err) {
                 alert('Não foi possivel apagar');

@@ -12,7 +12,7 @@ $(document).ready(function () {
     $("#perfil-campo-cpf").mask("000.000.000-00");
     $("#perfil-campo-cep").mask("99999-999");
     $("#perfil-campo-cnh").mask("999999999999");
-
+    $("#inventario-campo-numerocaminhao").mask("999999");
 
 
 
