@@ -166,7 +166,7 @@
     <value>Clientes</value>
   </data>
   <data name="CNPJ" xml:space="preserve">
-    <value>CNPLJ</value>
+    <value>CNPJ</value>
   </data>
   <data name="Codigo" xml:space="preserve">
     <value>Código</value>
