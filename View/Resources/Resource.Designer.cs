@@ -144,6 +144,15 @@ namespace View.Resources {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a string.
         /// </summary>
+        public static string CadastrodeMarca {
+            get {
+                return ResourceManager.GetString("CadastrodeMarca", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
         public static string CadastrodeProduto {
             get {
                 return ResourceManager.GetString("CadastrodeProduto", resourceCulture);
