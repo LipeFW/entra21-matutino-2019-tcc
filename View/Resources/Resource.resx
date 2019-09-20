@@ -464,4 +464,12 @@
     <value>string</value>
     <comment>pt-BR_en-US_es-ES</comment>
   </data>
+  <data name="NovaVenda" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
+  <data name="Vendas" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
 </root>
