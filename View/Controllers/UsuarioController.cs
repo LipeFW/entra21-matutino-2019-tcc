@@ -11,7 +11,7 @@ using System.Web.Mvc;
 namespace View.Controllers
 {
     [Route("usuario/")]
-    public class UsuarioController : Controller
+    public class UsuarioController : BaseController
     {
         public ActionResult Change(String lang)
         {

@@ -9,7 +9,7 @@ using System.Web.Mvc;
 namespace View.Controllers
 {
     [Route("vendedor/")]
-    public class VendedorController : Controller
+    public class VendedorController : BaseController
     {
         private VendedorRepository repository;
 

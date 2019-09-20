@@ -10,7 +10,7 @@ namespace View.Controllers
 {
    
     [Route("veiculo/")]
-    public class VeiculoController : Controller
+    public class VeiculoController : BaseController
     {
         private VeiculoRepository repository;
         private MarcaRepository repositoryMarca;

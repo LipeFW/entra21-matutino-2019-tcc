@@ -7,7 +7,7 @@ using System.Web.Mvc;
 
 namespace View.Controllers
 {
-    public class InventarioController : Controller
+    public class InventarioController : BaseController
     {
 
         private InventarioRepository repository;

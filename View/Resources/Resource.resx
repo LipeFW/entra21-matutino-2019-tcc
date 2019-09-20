@@ -507,4 +507,13 @@
   <data name="Vendedores" xml:space="preserve">
     <value>string</value>
   </data>
+  <data name="Frota" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Marcas" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Modelos" xml:space="preserve">
+    <value>string</value>
+  </data>
 </root>

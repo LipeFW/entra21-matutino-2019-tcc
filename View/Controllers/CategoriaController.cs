@@ -9,7 +9,7 @@ using System.Web.Mvc;
 namespace View.Controllers
 {
     [Route("categoria/")]
-    public class CategoriaController : Controller
+    public class CategoriaController : BaseController
     {
         private CategoriaRepository repository;
 
