@@ -1,4 +1,4 @@
-﻿DROP TABLE IF EXISTS notas_fiscais, rotas, vendas, clientes,vendedores, rotas, produtos, veiculos, modelos, categorias, marcas, usuarios, cidades, estados, paises;
+﻿DROP TABLE IF EXISTS notas_fiscais, rotas, vendas, clientes,vendedores, rotas, produtos,inventarios, veiculos, modelos, categorias, marcas, usuarios, cidades, estados, paises;
 
 CREATE TABLE paises(
 id INT PRIMARY KEY IDENTITY(1,1),
@@ -137,28 +137,15 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	(1, 'Blumenau', 1),
 CREATE TABLE usuarios( 
 id INT PRIMARY KEY IDENTITY(1,1),
 nome VARCHAR(100),
-usuario VARCHAR(100),
 senha VARCHAR(100),
-telefone VARCHAR(15),
-cpf VARCHAR(14),
-rg VARCHAR(12),
-cnh VARCHAR(11),
-cep VARCHAR(9),
-logradouro VARCHAR(100),
-id_pais INT,
-id_estado INT,
-id_cidade INT,
-registro_ativo BIT,
-FOREIGN KEY(id_pais) REFERENCES paises (id),
-FOREIGN KEY(id_estado) REFERENCES estados (id),
-FOREIGN KEY(id_cidade) REFERENCES cidades (id)
+registro_ativo BIT
 );
 
-INSERT INTO usuarios(nome, usuario, senha, telefone, cpf, rg, cnh, cep, logradouro, id_pais, id_estado, id_cidade, registro_ativo)
-VALUES  ('Felipe', 'lipefw', 'anaumsei', '(47) 98867-7732' , '680.528.620-43' , '45.938.864-2', '34093485793', '89030-065', 'Rua Pedro João da Luz', 1, 1, 1, 1),
-	    ('Illan', 'illan', 'illanzoka', '(47) 99423-5223', '001.739.090-16', '12.722.088-4', '11096125008', '89056-130', 'Rua Albert Einstein', 1, 1, 1, 1),
-	    ('Eduardo', 'eduardo', '123456', '(47) 96312-5231', '421.612.231-22', '56.274.823-9', '98687993934', '89046-629', 'Rua Coréia', 1, 1, 1, 1),
-	    ('Henrique', 'henrique', 'pimbinha6000', '(47) 94512-5761', '854.895.663-89', '87.359.478-3', '24742714184', '89053-070', 'Rua Augusto Schoenau', 1, 1, 1, 1);
+INSERT INTO usuarios(nome, senha, registro_ativo)
+VALUES  ( 'lipefw', 'anaumsei', 1),
+	    ( 'illan', 'illanzoka', 1),
+	    ( 'eduardo', '123456', 1),
+	    ( 'henrique', 'pimbinha6000', 1);
 
 CREATE TABLE categorias( 
 id INT PRIMARY KEY IDENTITY(1,1),
@@ -203,6 +190,15 @@ FOREIGN KEY(id_modelo) REFERENCES modelos (id)
 
 INSERT INTO veiculos(id_marca, id_modelo, ano_fabricacao, numero_caminhao, placa, registro_ativo)
 VALUES (1, 1, '2005', 002, 'MJX-0585', 1 );
+
+ CREATE TABLE inventarios(
+id INT PRIMARY KEY IDENTITY(1,1),
+numero_caminhao INT,
+registro_ativo BIT,
+);
+
+INSERT INTO inventarios(numero_caminhao, registro_ativo)
+VALUES (002, 1 );
 
 CREATE TABLE vendedores(
 id INT PRIMARY KEY IDENTITY(1,1),
