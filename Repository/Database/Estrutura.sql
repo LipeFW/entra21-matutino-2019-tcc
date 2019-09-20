@@ -5,8 +5,47 @@ id INT PRIMARY KEY IDENTITY(1,1),
 nome VARCHAR(100),
 registro_ativo BIT
 );
-INSERT INTO paises(nome, registro_ativo) VALUES ('Brasil', 1),
-												('Estados Unidos', 1);
+INSERT INTO paises(nome, registro_ativo) VALUES 
+/*Países da América do Norte*/
+/**/('Canadá', 1),
+/**/('Estados Unidos da América', 1),
+/**/('México', 1),
+/*<--Países da América Central-->*/
+/**/('Antígua e Barbuda', 1),
+/**/('Bahamas', 1),
+/**/('Barbados', 1),
+/**/('Belize', 1),
+/**/('Costa Rica', 1),
+/**/('Cuba', 1),
+/**/('Dominica', 1),
+/**/('El Salvador', 1),
+/**/('Granada', 1),
+/**/('Guatemala', 1),
+/**/('Haiti', 1),
+/**/('Honduras', 1),
+/**/('Jamaica', 1),
+/**/('Nicarágua', 1),
+/**/('Panamá', 1),
+/**/('República Dominicana', 1),
+/**/('Santa Lúcia', 1),
+/**/('São Cristóvão e Nevis', 1),
+/**/('São Vicente e Granadinas', 1),
+/**/('Trinidad e Tobago', 1),
+/*<--/Países da América Central-->*/
+/*<--Países da América do Sul-->*/
+/**/('Argentina', 1),
+/**/('Bolívia', 1),
+/**/('Brasil', 1),
+/**/('Chile', 1),
+/**/('Colômbia', 1),
+/**/('Equador', 1),
+/**/('Guiana', 1),
+/**/('Paraguai', 1),
+/**/('Peru', 1),
+/**/('Suriname', 1),
+/**/('Uruguai', 1),
+/**/('Venezuela', 1);
+/*<--/Países da América do Sul-->*/
 CREATE TABLE estados(
 id INT PRIMARY KEY IDENTITY(1,1),
 nome VARCHAR(100),
@@ -15,9 +54,24 @@ registro_ativo BIT,
 FOREIGN KEY(id_pais) REFERENCES paises (id)
 );
 
- INSERT INTO estados(id_pais, nome, registro_ativo) VALUES	(1, 'Santa Catarina',1 ),
-															(2, 'Flórida', 1);
-
+ INSERT INTO estados(id_pais, nome, registro_ativo) VALUES
+/*<--Canadá-->*/
+--Províncias
+('Alberta'
+('Colúmbia Britânica'
+('Ilha do Príncipe Eduardo'
+('Manitoba'
+('Nova Brunswick'
+('Nova Escócia'
+('Ontário'
+('Québec'
+('Saskatchewan'
+('Terra Nova e Labrador'
+--Territórios
+Nunavut
+Territórios do Noroeste
+Yukon
+/*<--/Canadá-->*/
 CREATE TABLE cidades(
 id INT PRIMARY KEY IDENTITY(1,1),
 nome VARCHAR(100),

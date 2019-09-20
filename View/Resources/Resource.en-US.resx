@@ -127,25 +127,25 @@
     <value>Year Fabrication</value>
   </data>
   <data name="CadastrodeCategoria" xml:space="preserve">
-    <value>Register of the Category</value>
+    <value>Category Registration</value>
   </data>
   <data name="CadastrodeCliente" xml:space="preserve">
-    <value>Register of the Client</value>
+    <value>Costumer Registration</value>
   </data>
   <data name="CadastrodeProduto" xml:space="preserve">
-    <value>Register of the Product</value>
+    <value>Product Registration</value>
   </data>
   <data name="CadastrodeRotas" xml:space="preserve">
-    <value>Register of the Routes</value>
+    <value>Routes Registration</value>
   </data>
   <data name="CadastrodeUsuario" xml:space="preserve">
-    <value>Register of the Users</value>
+    <value>User Registration</value>
   </data>
   <data name="CadastrodeVeiculo" xml:space="preserve">
-    <value>Register of the Vehícle</value>
+    <value>Vehicle Registration</value>
   </data>
   <data name="CadastrodeVendedor" xml:space="preserve">
-    <value>Register of the saleman</value>
+    <value>Saleman Registration</value>
   </data>
   <data name="Cancelar" xml:space="preserve">
     <value>Cancel</value>
@@ -362,7 +362,7 @@ The system seeks to quickly employ the processes mentioned with the ease of a sm
     <value>work</value>
   </data>
   <data name="transportadora" xml:space="preserve">
-    <value>transportadora</value>
+    <value>shipping company</value>
   </data>
   <data name="uma" xml:space="preserve">
     <value>an</value>
