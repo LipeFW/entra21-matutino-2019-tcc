@@ -464,12 +464,47 @@
     <value>string</value>
     <comment>pt-BR_en-US_es-ES</comment>
   </data>
-  <data name="NovaVenda" xml:space="preserve">
+  <data name="CadastrodeInventario" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="CadastroVenda" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Configuracaoconta" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Desconto" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Inventarios" xml:space="preserve">
     <value>string</value>
     <comment>pt-BR_en-US_es-ES</comment>
   </data>
+  <data name="NovaVenda" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Perfil" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="SelecioneumCliente" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="SelecioneumModelo" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="SelecioneumProduto" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Veiculo" xml:space="preserve">
+    <value>string</value>
+  </data>
   <data name="Vendas" xml:space="preserve">
     <value>string</value>
-    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
+  <data name="Vendedores" xml:space="preserve">
+    <value>string</value>
   </data>
 </root>
