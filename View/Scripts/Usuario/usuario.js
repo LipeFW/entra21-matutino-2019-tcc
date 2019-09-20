@@ -18,7 +18,6 @@
             { "data": "Pais.Nome" },
             { "data": "Estado.Nome" },
             { "data": "Cidade.Nome" },
-            { "data": "Logradouro" },
             {
                 render: function (data, type, row) {
                     return '<button class="btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button>\<button class="btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>'
@@ -39,21 +38,20 @@
         $pais = $("usuario-campo-pais").val();
         $estado = $("usuario-campo-estado").val();
         $cidade = $("usuario-campo-cidade").val();
-        $logradouro = $("usuario-campo-logradouro").val();
 
-        if (($nome.trim() == "") || ($senha == "") || ($telefone == "") || ($cpf == "") || ($rg == "") || ($cnh = "") || ($cep == "")  || ($pais == -1) || ($estado == -1) || ($cidade == -1) || ($logradouro.trim() == "")) {
+        if (($nome.trim() == "") || ($senha == "") || ($telefone == "") || ($cpf == "") || ($rg == "") || ($cnh = "") || ($cep == "")  || ($pais == -1) || ($estado == -1) || ($cidade == -1) {
             alert("Preencha corretamente os campos");
             return null;
         }
 
         if ($idAlterar == -1) {
-            inserir($nome.trim(), $usuario, $senha, $telefone, $cpf, $rg, $cnh, $cep, $pais, $estado, $cidade, $logradouro.trim());
+            inserir($nome.trim(), $usuario, $senha, $telefone, $cpf, $rg, $cnh, $cep, $pais, $estado, $cidade);
 
         } else {
-            alterar($nome.trim(), $usuario, $senha, $telefone, $cpf, $rg, $cnh, $cep, $pais, $estado, $cidade, $logradouro.trim());
+            alterar($nome.trim(), $usuario, $senha, $telefone, $cpf, $rg, $cnh, $cep, $pais, $estado, $cidade);
         }
 
-        function alterar($nome, $usuario, $senha, $telefone, $cpf, $rg, $cnh, $cep, $pais, $estado, $cidade, $logradouro) {
+        function alterar($nome, $usuario, $senha, $telefone, $cpf, $rg, $cnh, $cep, $pais, $estado, $cidade) {
             $.ajax({
                 url: "http://localhost:51242/Usuario/update",
                 method: "post",
@@ -70,7 +68,6 @@
                     pais = $pais,
                     estado = $estado,
                     cidade = $cidade,
-                    logradouro = $logradouro
                 },
                 success: function (data) {
                     $("#modal-usuario").modal("hide");
@@ -99,7 +96,6 @@
                     pais = $pais,
                     estado = $estado,
                     cidade = $cidade,
-                    logradouro = $logradouro
                 },
                 success: function (data) {
                     $("#modal-usuario").modal('hide');
@@ -122,7 +118,7 @@
             method: "get",
             success: function (data) {
                 $tabelaUsuario.ajax.reload();
-                alert("Registro Apagado Com Sucesso")
+                alert("Registro Apagado com Sucesso");
 
             },
             error: function (err) {
@@ -150,14 +146,11 @@
                 $pais = $("usuario-campo-pais").val(data.Pais);
                 $estado = $("usuario-campo-estado").val(data.Estado);
                 $cidade = $("usuario-campo-cidade").val(data.Cidade);
-                $logradouro = $("usuario-campo-logradouro").val(data.Logradouro);
                 $("#modal-usuario").modal("show");
 
             },
-
             error: function (err) {
-                alert("Não Foi Possível Carregar")
-
+                alert("Não Foi Possível Carregar");
             }
         })
     });
