@@ -420,4 +420,43 @@
   <data name="CadastrodeMarca" xml:space="preserve">
     <value>Cadastro de Marca</value>
   </data>
+  <data name="CadastrodeInventario" xml:space="preserve">
+    <value>Cadastro de Inventários</value>
+  </data>
+  <data name="Configuracaoconta" xml:space="preserve">
+    <value>Configuração da Conta</value>
+  </data>
+  <data name="Desconto" xml:space="preserve">
+    <value>Desconto</value>
+  </data>
+  <data name="Inventarios" xml:space="preserve">
+    <value>Inventários</value>
+  </data>
+  <data name="NovaVenda" xml:space="preserve">
+    <value>Nova Venda</value>
+  </data>
+  <data name="Perfil" xml:space="preserve">
+    <value>Perfil</value>
+  </data>
+  <data name="SelecioneumCliente" xml:space="preserve">
+    <value>Selecione um cliente</value>
+  </data>
+  <data name="SelecioneumModelo" xml:space="preserve">
+    <value>Selecione um modelo</value>
+  </data>
+  <data name="SelecioneumProduto" xml:space="preserve">
+    <value>Selecione um produto</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="Veiculo" xml:space="preserve">
+    <value>Veículo</value>
+  </data>
+  <data name="Vendas" xml:space="preserve">
+    <value>Vendas</value>
+  </data>
+  <data name="Vendedores" xml:space="preserve">
+    <value>Vendedores</value>
+  </data>
 </root>

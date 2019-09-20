@@ -388,4 +388,13 @@ The system seeks to quickly employ the processes mentioned with the ease of a sm
   <data name="RG" xml:space="preserve">
     <value>ID</value>
   </data>
+  <data name="CadastrodeInventario" xml:space="preserve">
+    <value>Inventory Register</value>
+  </data>
+  <data name="Veiculo" xml:space="preserve">
+    <value>Vehicle</value>
+  </data>
+  <data name="Vendedores" xml:space="preserve">
+    <value>Saleman</value>
+  </data>
 </root>
