@@ -2688,6 +2688,7 @@
     <Content Include="Scripts\Mascaras\jquery.mask.js" />
     <Content Include="Scripts\Mascaras\jquery.mask.min.js" />
     <Content Include="Scripts\Mascaras\Mask.js" />
+    <Content Include="Scripts\Modelo\modelo.js" />
     <Content Include="Scripts\Produto\produto.js" />
     <Content Include="Scripts\Rota\rota.js" />
     <Content Include="Scripts\select2.js" />
