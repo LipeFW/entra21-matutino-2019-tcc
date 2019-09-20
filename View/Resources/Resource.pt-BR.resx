@@ -414,4 +414,10 @@
   <data name="RG" xml:space="preserve">
     <value>RG</value>
   </data>
+  <data name="CadastrodeMarca" xml:space="preserve">
+    <value>Cadastro de Marca</value>
+  </data>
+  <data name="NovaMarca" xml:space="preserve">
+    <value>Nova Marca</value>
+  </data>
 </root>
