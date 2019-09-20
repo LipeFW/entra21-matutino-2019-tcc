@@ -13,6 +13,11 @@ $(document).ready(function () {
     $("#perfil-campo-cep").mask("99999-999");
     $("#perfil-campo-cnh").mask("999999999999");
     $("#inventario-campo-numerocaminhao").mask("999999");
+    $("#usuario-campo-telefone").mask("(99) 99999-9999");
+    $("#usuario-campo-cpf").mask("000.000.000-00");
+    $("#usuario-campo-cnh").mask("999999999999");
+    $("#usuario-campo-rg").mask("9.999.999");
+    $("#usuario-campo-cep").mask("99999-999");
 
 
 
