@@ -675,18 +675,18 @@ namespace View.Resources {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a string.
         /// </summary>
-        public static string Prdutos {
+        public static string Produto {
             get {
-                return ResourceManager.GetString("Prdutos", resourceCulture);
+                return ResourceManager.GetString("Produto", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a string.
         /// </summary>
-        public static string Produto {
+        public static string Produtos {
             get {
-                return ResourceManager.GetString("Produto", resourceCulture);
+                return ResourceManager.GetString("Produtos", resourceCulture);
             }
         }
         
