@@ -121,10 +121,10 @@
     <value>Ación</value>
   </data>
   <data name="Anodefabricacao" xml:space="preserve">
-    <value>Año del fabricación</value>
+    <value>Año del Fabricación</value>
   </data>
   <data name="AnoFabricacao" xml:space="preserve">
-    <value>Año fabricación</value>
+    <value>Año Fabricación</value>
   </data>
   <data name="CadastrodeCategoria" xml:space="preserve">
     <value>Registro del Categoría</value>
@@ -169,13 +169,13 @@
     <value>CNPJ</value>
   </data>
   <data name="Codigo" xml:space="preserve">
-    <value>Código</value>
+    <value>Codigo</value>
   </data>
   <data name="CodigoBarra" xml:space="preserve">
     <value>Codigo Barra</value>
   </data>
   <data name="CodigodeBarra" xml:space="preserve">
-    <value>Codigo del barras</value>
+    <value>Codigo del Barras</value>
   </data>
   <data name="CPF" xml:space="preserve">
     <value>CPF</value>
@@ -295,10 +295,10 @@
     <value>Vendedor</value>
   </data>
   <data name="AlterarDados" xml:space="preserve">
-    <value>Cambiar datos</value>
+    <value>Cambiar Datos</value>
   </data>
   <data name="AlterarSenha" xml:space="preserve">
-    <value>Cambiar Corteseña</value>
+    <value>Cambiar Contraseña</value>
   </data>
   <data name="Cidade" xml:space="preserve">
     <value>Ciudad</value>
@@ -307,7 +307,7 @@
     <value>CNH</value>
   </data>
   <data name="ConfirmarSenha" xml:space="preserve">
-    <value>Confirme Corteseña</value>
+    <value>Confirme Contraseña</value>
   </data>
   <data name="DadosPessoais" xml:space="preserve">
     <value>Datos personales</value>
@@ -330,8 +330,8 @@
   <data name="Selecioneumpaís" xml:space="preserve">
     <value>Seleccione un Pais</value>
   </data>
-  <data name="Endeco" xml:space="preserve">
-    <value>Address</value>
+  <data name="Endereco" xml:space="preserve">
+    <value>Dirección</value>
   </data>
   <data name="atuar" xml:space="preserve">
     <value>actuar</value>
@@ -400,7 +400,7 @@
     <value>Configurción de la Cuenta</value>
   </data>
   <data name="inicio" xml:space="preserve">
-    <value>Procipio</value>
+    <value>Pricipio</value>
   </data>
   <data name="Menu" xml:space="preserve">
     <value>Menu</value>
