@@ -84,7 +84,7 @@
         $idAlterar = $(this).data('id');
 
         $.ajax({
-            url: 'http://localhost:51242/Marca/editar?id=' + $idAlterar,
+            url: 'http://localhost:51242/Marca/obterpeloid?id=' + $idAlterar,
             method: 'get',
             success: function (data) {
                 $('#marca-campo-nome').val(data.Nome);
