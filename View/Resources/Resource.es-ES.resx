@@ -166,7 +166,7 @@
     <value>Clientes</value>
   </data>
   <data name="CNPJ" xml:space="preserve">
-    <value>CNPLJ</value>
+    <value>CNPJ</value>
   </data>
   <data name="Codigo" xml:space="preserve">
     <value>Código</value>
@@ -228,7 +228,7 @@
   <data name="Placa" xml:space="preserve">
     <value>Tarjeta</value>
   </data>
-  <data name="Prdutos" xml:space="preserve">
+  <data name="Produtos" xml:space="preserve">
     <value>Productos</value>
   </data>
   <data name="Produto" xml:space="preserve">

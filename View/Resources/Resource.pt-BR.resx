@@ -166,7 +166,7 @@
     <value>Clientes</value>
   </data>
   <data name="CNPJ" xml:space="preserve">
-    <value>CNPLJ</value>
+    <value>CNPJ</value>
   </data>
   <data name="Codigo" xml:space="preserve">
     <value>Código</value>
@@ -184,7 +184,7 @@
     <value>Lista</value>
   </data>
   <data name="ListaNotasFiscais" xml:space="preserve">
-    <value>Lista notas Fiscais</value>
+    <value>Lista notas fiscais</value>
   </data>
   <data name="Marca" xml:space="preserve">
     <value>Marca</value>
@@ -196,39 +196,39 @@
     <value>Nome</value>
   </data>
   <data name="NotaFiscal" xml:space="preserve">
-    <value>Nota Fiscal</value>
+    <value>Nota fiscal</value>
   </data>
   <data name="NovaCategoria" xml:space="preserve">
-    <value>Nova Categoria</value>
+    <value>Nova categoria</value>
   </data>
   <data name="NovaRota" xml:space="preserve">
-    <value>Nova Rota</value>
+    <value>Nova rota</value>
   </data>
   <data name="NovoCliente" xml:space="preserve">
-    <value>Novo Cliente</value>
+    <value>Novo cliente</value>
   </data>
   <data name="NovoProduto" xml:space="preserve">
-    <value>Novo Produto</value>
+    <value>Novo produto</value>
   </data>
   <data name="NovoUsuario" xml:space="preserve">
-    <value>Novo Usuário</value>
+    <value>Novo usuário</value>
   </data>
   <data name="NovoVeiculo" xml:space="preserve">
-    <value>Novo Veículos</value>
+    <value>Novo veículos</value>
   </data>
   <data name="NovoVendedor" xml:space="preserve">
-    <value>Novo Vendedor</value>
+    <value>Novo vendedor</value>
   </data>
   <data name="NumeroCaminhao" xml:space="preserve">
-    <value>Número Caminhão</value>
+    <value>Número caminhão</value>
   </data>
   <data name="Numerodocaminhao" xml:space="preserve">
-    <value>Numero do Caminhão</value>
+    <value>Numero do caminhão</value>
   </data>
   <data name="Placa" xml:space="preserve">
     <value>Placa</value>
   </data>
-  <data name="Prdutos" xml:space="preserve">
+  <data name="Produtos" xml:space="preserve">
     <value>Produtos</value>
   </data>
   <data name="Produto" xml:space="preserve">
@@ -250,19 +250,19 @@
     <value>Salvar</value>
   </data>
   <data name="Selecioneumacategoria" xml:space="preserve">
-    <value>Selecione uma Categoria</value>
+    <value>Selecione uma ategoria</value>
   </data>
   <data name="Selecioneumamarca" xml:space="preserve">
-    <value>Selecione uma Marca</value>
+    <value>Selecione uma marca</value>
   </data>
   <data name="Selecioneumusuario" xml:space="preserve">
     <value>Selecione um usuário</value>
   </data>
   <data name="SelecioneumVeiculo" xml:space="preserve">
-    <value>Selecione um Veículo</value>
+    <value>Selecione um veículo</value>
   </data>
   <data name="SelecioneumVendedor" xml:space="preserve">
-    <value>Selecione um Vendedor</value>
+    <value>Selecione um vendedor</value>
   </data>
   <data name="Senha" xml:space="preserve">
     <value>Senha</value>
@@ -325,13 +325,13 @@
     <value>País</value>
   </data>
   <data name="Selecioneumacidade" xml:space="preserve">
-    <value>Selecione uma Cidade</value>
+    <value>Selecione uma cidade</value>
   </data>
   <data name="Selecioneumestado" xml:space="preserve">
-    <value>Selecione um Estado</value>
+    <value>Selecione um estado</value>
   </data>
   <data name="Selecioneumpaís" xml:space="preserve">
-    <value>Selecione um País</value>
+    <value>Selecione um país</value>
   </data>
   <data name="atuar" xml:space="preserve">
     <value>atuar</value>
@@ -413,5 +413,11 @@
   </data>
   <data name="RG" xml:space="preserve">
     <value>RG</value>
+  </data>
+  <data name="NovaMarca" xml:space="preserve">
+    <value>Nova Marca</value>
+  </data>
+  <data name="CadastrodeMarca" xml:space="preserve">
+    <value>Cadastro de Marca</value>
   </data>
 </root>
