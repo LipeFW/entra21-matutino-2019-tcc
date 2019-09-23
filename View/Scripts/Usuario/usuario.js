@@ -59,7 +59,7 @@
                 method: "post",
                 data: {
                     nome: $nome,
-                    senha: $senha,
+                    senha: $senha
                 },
                 success: function (data) {
                     $("#modal-usuario").modal('hide');
