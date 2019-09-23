@@ -21,8 +21,9 @@
                 <th>@View.Resources.Resource.Vendedor</th>
                 <th>@View.Resources.Resource.Cliente</th>
                 <th>@View.Resources.Resource.Produto</th>
-                <th>@View.Resources.Resource.Total</th>
+             
                 <th>@View.Resources.Resource.Desconto</th>
+                   <th>@View.Resources.Resource.Total</th>
                 <th>@View.Resources.Resource.Acao</th>
             </tr>
         </thead>
@@ -31,4 +32,5 @@
 @RenderPage("VendaModal.cshtml")
 @section js{
     <script src="~/Scripts/Venda/venda.js"></script>
+    <script src="~/Scripts/Calculos/Total.js"></script>
 }
