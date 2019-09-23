@@ -28,6 +28,15 @@ namespace View.Controllers
             return View();
         }
 
+        public ActionResult Cadastro()
+        {
+            MarcaRepository marcaRepository = new MarcaRepository();
+            List<Marca> marcas = marcaRepository.ObterTodos();
+            ViewBag.Marcas = marcas;
+
+            return View();
+        }
+
         [HttpGet, Route("obtertodos")]
         public JsonResult ObterTodos()
         {
@@ -61,7 +70,7 @@ namespace View.Controllers
         {
             var alterou = repository.Alterar(modelo);
             var resultado = new { status = alterou };
-            return Json(resultado);
+            return Json(resultado, JsonRequestBehavior.AllowGet);
         }
 
         [HttpGet, Route("obterpeloid")]

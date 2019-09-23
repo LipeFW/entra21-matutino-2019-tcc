@@ -307,21 +307,121 @@ registro_ativo BIT,
 FOREIGN KEY(id_estado) REFERENCES estados (id)
 );
 
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	(1, 'Blumenau', 1),
-															(2, 'Miami', 1);
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
+/*<--Canada-->*/
+/*<--Cidades do Alberta-->*/
+(1,'Airdrie',1),
+(1,'Athabasca',1),
+(1,'Banff',1),
+(1,'Barrhead',1),
+(1,'Bassano',1),
+(1,'Beaverlodge',1),
+(1,'Black Diamond',1),
+(1,'Blackfalds',1),
+(1,'Blairmore',1),
+(1,'Bon Accord',1),
+(1,'Bonnyville',1),
+(1,'Bow Island',1),
+(1,'Brooks',1),
+(1,'Calgary',1),
+(1,'Calmar',1),
+(1,'Camrose',1),
+(1,'Canmore',1),
+(1,'Cardston',1),
+(1,'Carstairs',1),
+(1,'Clairmont',1),
+(1,'Claresholm',1),
+(1,'Coaldale',1),
+(1,'Cochrane',1),
+(1,'Crossfield',1),
+(1,'Devon',1),
+(1,'Didsbury',1),
+(1,'Drayton Valley',1),
+(1,'Drumheller',1),
+(1,'Edmonton',1),
+(1,'Edson',1),
+(1,'Elk Point',1),
+(1,'Fairview',1),
+(1,'Grand Center',1),
+(1,'Grande Prairie',1),
+(1,'Grimshaw',1),
+(1,'Hanna',1),
+(1,'High Level',1),
+(1,'High Prairie',1),
+(1,'High River',1),
+(1,'Hinton',1),
+(1,'Irricana',1),
+(1,'Jasper',1),
+(1,'Killan',1),
+(1,'Lacombe',1),
+(1,'Lamont',1),
+(1,'Leduc',1),
+(1,'Lethbridge',1),
+(1,'Magrath',1),
+(1,'Medicine Hat',1),
+(1,'Millet',1),
+(1,'Morinville',1),
+(1,'Nanton',1),
+(1,'Okotoks',1),
+(1,'Olds',1),
+(1,'Peace River',1),
+(1,'Penhold',1),
+(1,'Pincher Creek',1),
+(1,'Ponoka',1),
+(1,'Provost',1),
+(1,'Raymont',1),
+(1,'Red Deer',1),
+(1,'Rimbey',1),
+(1,'Rocky Mountai House',1),
+(1,'Saint Paul',1),
+(1,'Sexsmith',1),
+(1,'Slave Lake',1),
+(1,'Smoky Lake',1),
+(1,'Spirit River',1),
+(1,'Spruce Grove',1),
+(1,'Stettler',1),
+(1,'Stony Plain',1),
+(1,'Sylvan Lake',1),
+(1,'Taber',1),
+(1,'Three Hills',1),
+(1,'Tofield',1),
+(1,'Two Hills',1),
+(1,'Valleyview',1),
+(1,'Vegreville',1),
+(1,'Vermilion',1),
+(1,'Viking',1),
+(1,'Vulcan',1),
+(1,'Wainwright',1),
+(1,'Wembley',1),
+(1,'Westlock',1),
+(1,'Wetaskiwin',1),
+(1,'Valleyview',1),
+(1,'Whitecourt',1),
+/*<--/Cidades do Alberta-->*/
+/*<--/Canada-->*/
+
+
+
+
 
 CREATE TABLE usuarios( 
 id INT PRIMARY KEY IDENTITY(1,1),
 nome VARCHAR(100),
+url_imagem VARCHAR(100),
+nome_completo VARCHAR(100),
 senha VARCHAR(100),
+admin INT,
 registro_ativo BIT
 );
 
-INSERT INTO usuarios(nome, senha, registro_ativo)
-VALUES  ( 'lipefw', 'anaumsei', 1),
-	    ( 'illan', 'illanzoka', 1),
-	    ( 'eduardo', '123456', 1),
-	    ( 'henrique', 'pimbinha6000', 1);
+INSERT INTO usuarios(nome,nome_completo,url_imagem, admin, senha,  registro_ativo)
+VALUES  ( 'lipefw','Felipe','gatodandopinote.png',1 , 'anaumsei', 1),
+	    ( 'illan','Illan','gato-confuo.jpg',0 , 'illanzoka', 1),
+	    ( 'eduardo','Eduardo','guaxinimdoido.jpg',1 , '123456', 1),
+	    ( 'henrique','Henrique','hamsterchavoso.png',1 , 'pimbinha6000', 1),
+	    ( 'pablo','Pablo','', 1, '1234', 1),
+	    ( 'nathan','Nathan','passaroseila.jpg', 1, '1203', 1);
+
 
 CREATE TABLE categorias( 
 id INT PRIMARY KEY IDENTITY(1,1),

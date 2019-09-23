@@ -399,7 +399,7 @@
   <data name="Configuracoesdaconta" xml:space="preserve">
     <value>Configurción de la Cuenta</value>
   </data>
-  <data name="inicio" xml:space="preserve">
+  <data name="Inicio" xml:space="preserve">
     <value>Pricipio</value>
   </data>
   <data name="Menu" xml:space="preserve">
@@ -413,5 +413,47 @@
   </data>
   <data name="RG" xml:space="preserve">
     <value>RG</value>
+  </data>
+  <data name="CadastrodeMarca" xml:space="preserve">
+    <value>Registro del Marcas</value>
+  </data>
+  <data name="CadastroVenda" xml:space="preserve">
+    <value>Registro venda</value>
+  </data>
+  <data name="Frota" xml:space="preserve">
+    <value>Flota</value>
+  </data>
+  <data name="Inventario" xml:space="preserve">
+    <value>Inventario</value>
+  </data>
+  <data name="Inventarios" xml:space="preserve">
+    <value>Inventarios</value>
+  </data>
+  <data name="ListadeMarcas" xml:space="preserve">
+    <value>Lista de las Marcas</value>
+  </data>
+  <data name="Marcas" xml:space="preserve">
+    <value>Marcas</value>
+  </data>
+  <data name="Modelos" xml:space="preserve">
+    <value>Modelos</value>
+  </data>
+  <data name="NovaMarca" xml:space="preserve">
+    <value>Nueva Marca</value>
+  </data>
+  <data name="Portugues" xml:space="preserve">
+    <value>Epañol</value>
+  </data>
+  <data name="SelecioneumCliente" xml:space="preserve">
+    <value>Seleccione un Cliente</value>
+  </data>
+  <data name="SelecioneumProduto" xml:space="preserve">
+    <value>Seleccione un Producto</value>
+  </data>
+  <data name="Veiculo" xml:space="preserve">
+    <value>Vehiculo</value>
+  </data>
+  <data name="Vendedores" xml:space="preserve">
+    <value>Vendedores</value>
   </data>
 </root>

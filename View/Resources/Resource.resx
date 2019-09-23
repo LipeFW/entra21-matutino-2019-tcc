@@ -227,7 +227,7 @@
   <data name="em" xml:space="preserve">
     <value>string</value>
   </data>
-  <data name="Endereco1" xml:space="preserve">
+  <data name="Endereco" xml:space="preserve">
     <value>string</value>
   </data>
   <data name="entrada" xml:space="preserve">
@@ -520,6 +520,18 @@
     <value>string</value>
   </data>
   <data name="CadastrodeModelo" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="CadastrodeMarcas" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Inventario" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="ListadeMarcas" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Portugues" xml:space="preserve">
     <value>string</value>
   </data>
 </root>
