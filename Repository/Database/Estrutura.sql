@@ -296,7 +296,7 @@ FOREIGN KEY(id_pais) REFERENCES paises (id)
 /*ID 208*/(13, 'Solola', 1),
 /*ID 209*/(13, 'Suchitepequez', 1),
 /*ID 210*/(13, 'Totonicapan', 1),
-/*ID 211*/(13, 'Zacapa', 1),
+/*ID 211*/(13, 'Zacapa', 1);
 /*<--/Guatemala-->*/
 /*<--/América Central (ID:4 - 23)-->*/
 CREATE TABLE cidades(
@@ -396,7 +396,7 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (1,'Westlock',1),
 (1,'Wetaskiwin',1),
 (1,'Valleyview',1),
-(1,'Whitecourt',1),
+(1,'Whitecourt',1);
 /*<--/Cidades do Alberta-->*/
 /*<--/Canada-->*/
 
