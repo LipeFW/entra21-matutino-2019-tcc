@@ -145,7 +145,10 @@ INSERT INTO usuarios(nome, senha, registro_ativo)
 VALUES  ( 'lipefw', 'anaumsei', 1),
 	    ( 'illan', 'illanzoka', 1),
 	    ( 'eduardo', '123456', 1),
-	    ( 'henrique', 'pimbinha6000', 1);
+	    ( 'henrique', 'pimbinha6000', 1),
+	    ( 'pablo', '1234', 1),
+	    ( 'nathan', '1203', 1);
+
 
 CREATE TABLE categorias( 
 id INT PRIMARY KEY IDENTITY(1,1),

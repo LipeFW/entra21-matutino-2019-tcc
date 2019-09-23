@@ -10,7 +10,6 @@
             { 'data': 'Nome' },
             { 'data': 'Telefone' },
             { 'data': 'CNPJ' },
-            { 'data': 'CPF'},
             { 'data': 'CEP' },
             { 'data': 'Vendedor.Nome'},
             {
@@ -25,7 +24,6 @@
         $nome = $('#cliente-campo-nome').val();
         $telefone = $('#cliente-campo-telefone').val();
         $cnpj = $('#cliente-campo-cnpj').val();
-        $cpf = $('#cliente-campo-cpf').val();
         $cep = $('#cliente-campo-cep').val();
         $vendedor = $('#cliente-campo-vendedor').val();
 
@@ -52,7 +50,6 @@
                     nome: $nome,
                     telefone: $telefone,
                     cnpj: $cnpj,
-                    cpf: $cpf,
                     cep: $cep,
                     idVendedor: $vendedor
                 },
@@ -75,7 +72,6 @@
                     nome: $nome,
                     telefone: $telefone,
                     cnpj: $cnpj,
-                    cpf: $cpf,
                     cep: $cep,
                     idVendedor: $vendedor
                 },
@@ -121,7 +117,6 @@
                 $('#cliente-campo-nome').val(data.Nome);
                 $('#cliente-campo-telefone').val(data.Telefone);
                 $('#cliente-campo-cnpj').val(data.CNPJ);
-                $('#cliente-campo-cpf').val(data.CPF);
                 $('#cliente-campo-cep').val(data.CEP);
                 $('#cliente-campo-vendedor').val(data.Vendedor)
 
