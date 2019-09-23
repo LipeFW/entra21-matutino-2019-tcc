@@ -34,7 +34,7 @@
                 data: {
                     id: $idAlterar,
                     nome: $nome,
-                    idMarca: $marca,
+                    idMarca: $marca
                 },
                 success: function (data) {
                     $("#modal-modelo").modal("hide");
@@ -53,7 +53,7 @@
                 method: "post",
                 data: {
                     nome: $nome,
-                    idMarca: $marca,
+                    idMarca: $marca
                 },
                 success: function (data) {
                     $("#modal-modelo").modal('hide');
