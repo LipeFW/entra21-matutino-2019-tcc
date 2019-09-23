@@ -396,7 +396,7 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (1,'Westlock',1),
 (1,'Wetaskiwin',1),
 (1,'Valleyview',1),
-(1,'Whitecourt',1),
+(1,'Whitecourt',1);
 /*<--/Cidades do Alberta-->*/
 /*<--Cidades do Colúmbia Britânica-->*/
 (2, 'Abbotsford', 1),
@@ -525,13 +525,13 @@ admin INT,
 registro_ativo BIT
 );
 
-INSERT INTO usuarios(nome,nome_completo,url_imagem, admin, senha,  registro_ativo)
-VALUES  ( 'lipefw','Felipe','gatodandopinote.png',1 , 'anaumsei', 1),
-	    ( 'illan','Illan','gato-confuo.jpg',0 , 'illanzoka', 1),
-	    ( 'eduardo','Eduardo','guaxinimdoido.jpg',1 , 'RetardoMental', 1),
-	    ( 'henrique','Henrique','hamsterchavoso.png',1 , 'pimbinha6000', 1),
-	    ( 'pablo','Pablo','', 1, '1234', 1),
-	    ( 'nathan','Nathan','passaroseila.jpg', 1, '1203', 1);
+INSERT INTO usuarios(nome,nome_completo, admin, senha, registro_ativo)
+VALUES  ( 'lipefw','Felipe', 1 , 'anaumsei', 1),
+	    ( 'illan','Illan', 0 , 'illanzoka', 1),
+	    ( 'eduardo','Eduardo', 1 , 'RetardoMental', 1),
+	    ( 'henrique','Henrique', 1 , 'pimbinha6000', 1),
+	    ( 'pablo','Pablo', 0, '1234', 1),
+	    ( 'nathan','Nathan', 1, '1203', 1);
 
 
 CREATE TABLE categorias( 

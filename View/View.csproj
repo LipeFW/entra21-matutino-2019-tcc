@@ -122,9 +122,6 @@
     <Content Include="Content\image\fundinho4.png" />
     <Content Include="Content\image\fundinho_1.jpg" />
     <Content Include="Content\image\fundinho_2.jpg" />
-    <Content Include="Content\image\gato-confuo.jpg" />
-    <Content Include="Content\image\gatodandopinote.png" />
-    <Content Include="Content\image\hamsterchavoso.png" />
     <Content Include="Content\js\admin.js" />
     <Content Include="Content\js\lang.js" />
     <Content Include="Content\js\login.js" />
@@ -2787,6 +2784,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\fonts\" />
+    <Folder Include="Content\uploads\" />
     <Folder Include="Models\" />
     <Folder Include="Scripts\Login\" />
     <Folder Include="Views\Base\" />

@@ -3,6 +3,7 @@ using Repository.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Threading;
 using System.Web;
@@ -116,6 +117,36 @@ namespace View.Controllers
             }
             var resultado = new { results = usuariosSelect2 };
             return Json(resultado, JsonRequestBehavior.AllowGet);
+        }
+
+        public ActionResult Upload()
+        {
+
+            HttpPostedFileBase arquivo = Request.Files[0];
+
+            //Suas validações ......
+
+            //Salva o arquivo
+            if (arquivo.ContentLength > 0)
+            {
+                var uploadPath = Server.MapPath("~/Content/uploads");
+                var nomeImagem = Path.GetFileName(arquivo.FileName);
+
+                string caminhoArquivo = Path.Combine(@uploadPath, nomeImagem);
+
+                arquivo.SaveAs(caminhoArquivo);
+
+                var usuarioLogado = (Usuario)Session["Usuario"];
+
+                Usuario usuario = repository.ObterPeloId(usuarioLogado.Id);
+                usuario.UrlImagem = nomeImagem;
+                repository.Alterar(usuario);
+                Session["Usuario"] = usuario;
+            }
+
+
+            ViewData["Message"] = String.Format(" arquivo(s) salvo(s) com sucesso.");
+            return RedirectToAction("config");
         }
 
     }
