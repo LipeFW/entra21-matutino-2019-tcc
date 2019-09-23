@@ -23,9 +23,6 @@
          [Column("cnpj")]
          public string CNPJ { get; set; }
          
-         [Column("cpf")]
-         public string CPF { get; set; }
- 
          [Column("cep")]
          public string CEP { get; set; }
  

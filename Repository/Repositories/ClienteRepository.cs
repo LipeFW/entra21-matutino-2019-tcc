@@ -26,7 +26,6 @@ namespace Repository.Repositories
                 return false;
 
             clienteOriginal.CNPJ = cliente.CNPJ;
-            clienteOriginal.CPF = cliente.CPF;
             clienteOriginal.CEP = cliente.CEP;
             clienteOriginal.IdVendedor = cliente.IdVendedor;
             clienteOriginal.Telefone = cliente.Telefone;
