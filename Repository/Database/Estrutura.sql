@@ -144,7 +144,7 @@ registro_ativo BIT
 INSERT INTO usuarios(nome, senha, registro_ativo)
 VALUES  ( 'lipefw', 'anaumsei', 1),
 	    ( 'illan', 'illanzoka', 1),
-	    ( 'eduardo', '123456', 1),
+	    ( 'eduardo', 'RetardoMental', 1),
 	    ( 'henrique', 'pimbinha6000', 1),
 	    ( 'pablo', '1234', 1),
 	    ( 'nathan', '1203', 1);
