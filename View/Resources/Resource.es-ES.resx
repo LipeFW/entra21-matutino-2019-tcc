@@ -456,4 +456,25 @@
   <data name="Vendedores" xml:space="preserve">
     <value>Vendedores</value>
   </data>
+  <data name="Configuracaoconta" xml:space="preserve">
+    <value>Configuración de la cuenta</value>
+  </data>
+  <data name="Desconto" xml:space="preserve">
+    <value>Descuento</value>
+  </data>
+  <data name="NovaVenda" xml:space="preserve">
+    <value>Nueva Venda</value>
+  </data>
+  <data name="Perfil" xml:space="preserve">
+    <value>Perfil</value>
+  </data>
+  <data name="Tema" xml:space="preserve">
+    <value>Tema</value>
+  </data>
+  <data name="Temas" xml:space="preserve">
+    <value>Temas</value>
+  </data>
+  <data name="Vendas" xml:space="preserve">
+    <value>Vendas</value>
+  </data>
 </root>
