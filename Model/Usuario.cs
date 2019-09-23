@@ -16,11 +16,20 @@
  
          [Column("nome")]
          public string Nome { get; set; }
- 
-         [Column("senha")]
+
+        [Column("nome_completo")]
+        public string NomeCompleto { get; set; }
+
+        [Column("url_imagem")]
+        public string UrlImagem { get; set; }
+
+        [Column("senha")]
          public string Senha { get; set; }
- 
-         [Column("registro_ativo")]
+
+        [Column("admin")]
+        public int Admin { get; set; }
+
+        [Column("registro_ativo")]
          public bool RegistroAtivo { get; set; }
      }
  }
