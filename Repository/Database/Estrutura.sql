@@ -7,12 +7,12 @@ registro_ativo BIT
 );
 INSERT INTO paises(nome, registro_ativo) VALUES 
 /*<--Países da América do Norte (ID:1 - 3)-->*/
-/*ID 01*/('Canadá', 1),
-/*ID 02*/('Estados Unidos da América', 1),
-/*ID 03*/('México', 1),
+/*ID 01*/('Canada', 1),
+/*ID 02*/('United States', 1),
+/*ID 03*/('Mexico', 1),
 /*<--/Países da América do Norte-->*/
 /*<--Países da América Central (ID:4 - 23)-->*/
-/*ID 04*/('Antígua & Barbuda', 1),
+/*ID 04*/('Antigua & Barbuda', 1),
 /*ID 05*/('Bahamas', 1),
 /*ID 06*/('Barbados', 1),
 /*ID 07*/('Belize', 1),
@@ -20,31 +20,31 @@ INSERT INTO paises(nome, registro_ativo) VALUES
 /*ID 09*/('Cuba', 1),
 /*ID 10*/('Dominica', 1),
 /*ID 11*/('El Salvador', 1),
-/*ID 12*/('Granada', 1),
+/*ID 12*/('Grenada', 1),
 /*ID 13*/('Guatemala', 1),
 /*ID 14*/('Haiti', 1),
 /*ID 15*/('Honduras', 1),
 /*ID 16*/('Jamaica', 1),
-/*ID 17*/('Nicarágua', 1),
-/*ID 18*/('Panamá', 1),
-/*ID 19*/('República Dominicana', 1),
-/*ID 20*/('Santa Lúcia', 1),
-/*ID 21*/('São Cristóvão e Nevis', 1),
-/*ID 22*/('São Vicente e Granadinas', 1),
-/*ID 23*/('Trinidad e Tobago', 1),
+/*ID 17*/('Nicaragua', 1),
+/*ID 18*/('Panama', 1),
+/*ID 19*/('Dominican Republic', 1),
+/*ID 20*/('Saint Lucia', 1),
+/*ID 21*/('St. Kitts & Nevis', 1),
+/*ID 22*/('St. Vincent & the Grenadines', 1),
+/*ID 23*/('Trinidad & Tobago', 1),
 /*<--/Países da América Central-->*/
 /*<--Países da América do Sul (ID:24 - 35)-->*/
 /*ID 24*/('Argentina', 1),
-/*ID 25*/('Bolívia', 1),
+/*ID 25*/('Bolivia', 1),
 /*ID 26*/('Brasil', 1),
 /*ID 27*/('Chile', 1),
-/*ID 28*/('Colômbia', 1),
-/*ID 29*/('Equador', 1),
-/*ID 30*/('Guiana', 1),
-/*ID 31*/('Paraguai', 1),
+/*ID 28*/('Colombia', 1),
+/*ID 29*/('Ecuador', 1),
+/*ID 30*/('Guyana', 1),
+/*ID 31*/('Paraguay', 1),
 /*ID 32*/('Peru', 1),
 /*ID 33*/('Suriname', 1),
-/*ID 34*/('Uruguai', 1),
+/*ID 34*/('Uruguay', 1),
 /*ID 35*/('Venezuela', 1);
 /*<--/Países da América do Sul-->*/
 CREATE TABLE estados(
@@ -57,7 +57,7 @@ FOREIGN KEY(id_pais) REFERENCES paises (id)
 
  INSERT INTO estados(id_pais, nome, registro_ativo) VALUES
 /*<--América do Norte (ID: 1-3)-->*/
-/*<--Canadá (ID: 1-13)-->*/
+/*<--Canada (ID: 1-13)-->*/
 /*ID 001*/(1, 'Alberta', 1),
 /*ID 002*/(1, 'Colúmbia Britânica', 1),
 /*ID 003*/(1, 'Ilha do Príncipe Eduardo', 1),
@@ -71,8 +71,8 @@ FOREIGN KEY(id_pais) REFERENCES paises (id)
 /*ID 011*/(1, 'Nunavut', 1),
 /*ID 012*/(1, 'Territórios do Noroeste', 1),
 /*ID 013*/(1, 'Yukon', 1),
-/*<--/Canadá-->*/
-/*<--Estados Unidos da América (ID: 14-63)-->*/
+/*<--/Canada-->*/
+/*<--United States (ID: 14-63)-->*/
 /*ID 014*/(2, 'Alabama', 1),
 /*ID 015*/(2, 'Alasca', 1),
 /*ID 016*/(2, 'Arizona', 1),
@@ -124,7 +124,7 @@ FOREIGN KEY(id_pais) REFERENCES paises (id)
 /*ID 062*/(2, 'Wisconsin', 1),
 /*ID 063*/(2, 'Wyoming', 1),
 /*<--/Estados Unidos da América-->*/
-/*<--México (ID: 64-94-->*/
+/*<--Mexico (ID: 64-94-->*/
 /*ID 064*/(3, 'Aguascalientes', 1),
 /*ID 065*/(3, 'Baixa Califórnia', 1),
 /*ID 066*/(3, 'Baixa Califórnia do Sul', 1),
@@ -156,7 +156,7 @@ FOREIGN KEY(id_pais) REFERENCES paises (id)
 /*ID 092*/(3, 'Veracruz', 1),
 /*ID 093*/(3, 'Iucatán', 1),
 /*ID 094*/(3, 'Zaratecas', 1),
-/*<--/México-->*/
+/*<--/Mexico-->*/
 /*<--/América do Norte-->*/
 /*<--América Central (ID:4 - 23)-->*/
 /*<--Antígua & Barbuda (ID: 95 - 101-->*/
@@ -204,7 +204,7 @@ FOREIGN KEY(id_pais) REFERENCES paises (id)
 /*ID 131*/(6, 'Saint Philip', 1),
 /*ID 132*/(6, 'Saint Thomas', 1),
 /*<--/Barbados-->*/
-/*<--Belize-->*/
+/*<--Belize (ID:133 - 138)-->*/
 /*ID 133*/(7, 'Belize', 1),
 /*ID 134*/(7, 'Cayo', 1),
 /*ID 135*/(7, 'Corozal', 1),
@@ -212,7 +212,7 @@ FOREIGN KEY(id_pais) REFERENCES paises (id)
 /*ID 137*/(7, 'Stann Creek', 1),
 /*ID 138*/(7, 'Toledo', 1),
 /*/<--Belize-->*/
-/*<--Costa Rica-->*/
+/*<--Costa Rica (ID:139 - 145)-->*/
 /*ID 139*/(8, 'Alajuela', 1),
 /*ID 140*/(8, 'Cartago', 1),
 /*ID 141*/(8, 'Guanacaste', 1),
@@ -221,7 +221,7 @@ FOREIGN KEY(id_pais) REFERENCES paises (id)
 /*ID 144*/(8, 'Puntarenas', 1),
 /*ID 145*/(8, 'San Jose', 1),
 /*<--/Costa Rica-->*/
-/*<--Cuba-->*/
+/*<--Cuba (ID:146 - 160)-->*/
 /*ID 146*/(9, 'Pinar del Rio', 1),
 /*ID 147*/(9, 'Ciudad de la Habana', 1),
 /*ID 148*/(9, 'Matanzas', 1),
@@ -238,66 +238,226 @@ FOREIGN KEY(id_pais) REFERENCES paises (id)
 /*ID 159*/(9, 'Santiago de Cuba', 1),
 /*ID 160*/(9, 'Villa Clara', 1),
 /*<--/Cuba-->*/
-/*<--Dominica-->*/
-/*ID 160*/(10, 'Saint Andrew', 1),
-/*ID 161*/(10, 'Saint David', 1),
-/*ID 162*/(10, 'Sanit George', 1),
-/*ID 163*/(10, 'Saint John', 1),
-/*ID 164*/(10, 'Saint Joseph', 1),
-/*ID 165*/(10, 'Saint Luke', 1),
-/*ID 166*/(10, 'Saint Mark', 1),
-/*ID 167*/(10, 'Saint Patrick', 1),
-/*ID 168*/(10, 'Saint Paul', 1),
-/*ID 169*/(10, 'Saint Peter', 1),
+/*<--Dominica (ID:160 - 170)-->*/
+/*ID 161*/(10, 'Saint Andrew', 1),
+/*ID 162*/(10, 'Saint David', 1),
+/*ID 163*/(10, 'Sanit George', 1),
+/*ID 164*/(10, 'Saint John', 1),
+/*ID 165*/(10, 'Saint Joseph', 1),
+/*ID 166*/(10, 'Saint Luke', 1),
+/*ID 167*/(10, 'Saint Mark', 1),
+/*ID 168*/(10, 'Saint Patrick', 1),
+/*ID 169*/(10, 'Saint Paul', 1),
+/*ID 170*/(10, 'Saint Peter', 1),
 /*<--/Dominica-->*/
-/*<--El Salvador-->*/
-/*ID 170*/(11, 'Ahuachapan', 1),
-/*ID 171*/(11, 'Cabanas', 1),
-/*ID 172*/(11, 'Chalatenango', 1),
-/*ID 173*/(11, 'Cuscatlan', 1),
-/*ID 174*/(11, 'La Libertad', 1),
-/*ID 175*/(11, 'La Paz', 1),
-/*ID 176*/(11, 'La Union', 1),
-/*ID 177*/(11, 'Morazan', 1),
-/*ID 178*/(11, 'San Miguel', 1),
-/*ID 179*/(11, 'San Salvador', 1),
-/*ID 180*/(11, 'Santa Ana', 1),
-/*ID 181*/(11, 'San Vicente', 1),
-/*ID 182*/(11, 'Sonsonate', 1),
-/*ID 183*/(11, 'Usulutan', 1),
+/*<--El Salvador (ID:171 - 184)-->*/
+/*ID 171*/(11, 'Ahuachapan', 1),
+/*ID 172*/(11, 'Cabanas', 1),
+/*ID 173*/(11, 'Chalatenango', 1),
+/*ID 174*/(11, 'Cuscatlan', 1),
+/*ID 175*/(11, 'La Libertad', 1),
+/*ID 176*/(11, 'La Paz', 1),
+/*ID 177*/(11, 'La Union', 1),
+/*ID 178*/(11, 'Morazan', 1),
+/*ID 179*/(11, 'San Miguel', 1),
+/*ID 180*/(11, 'San Salvador', 1),
+/*ID 181*/(11, 'Santa Ana', 1),
+/*ID 182*/(11, 'San Vicente', 1),
+/*ID 183*/(11, 'Sonsonate', 1),
+/*ID 184*/(11, 'Usulutan', 1),
 /*<--/El Salvador-->*/
-/*<--Granada-->*/
-/*ID 184*/(12, 'Saint Andrew', 1),
-/*ID 185*/(12, 'Saint David', 1),
-/*ID 186*/(12, 'Saint George', 1),
-/*ID 187*/(12, 'Saint John', 1),
-/*ID 188*/(12, 'Saint Mark', 1),
-/*ID 189*/(12, 'Saint Patrick', 1),
-/*<--/Granada-->*/
-/*<--Guatemala-->*/
-/*ID 190*/(13, 'Alta Verapaz', 1),
-/*ID 191*/(13, 'Baja Verapaz', 1),
-/*ID 192*/(13, 'Chimaltenango', 1),
-/*ID 193*/(13, 'Chiquimula', 1),
-/*ID 194*/(13, 'El Progreso', 1),
-/*ID 195*/(13, 'Escuintla', 1),
-/*ID 196*/(13, 'Guatemala', 1),
-/*ID 197*/(13, 'Huehuetenango', 1),
-/*ID 198*/(13, 'Izabal', 1),
-/*ID 199*/(13, 'Jabala', 1),
-/*ID 200*/(13, 'Jutiapa', 1),
-/*ID 201*/(13, 'Peten', 1),
-/*ID 202*/(13, 'Quetzaltenango', 1),
-/*ID 203*/(13, 'Quiche', 1),
-/*ID 204*/(13, 'Retalhuleu', 1),
-/*ID 205*/(13, 'Sacatepequez', 1),
-/*ID 206*/(13, 'San Marcos', 1),
-/*ID 207*/(13, 'Santa Rosa', 1),
-/*ID 208*/(13, 'Solola', 1),
-/*ID 209*/(13, 'Suchitepequez', 1),
-/*ID 210*/(13, 'Totonicapan', 1),
-/*ID 211*/(13, 'Zacapa', 1),
+/*<--Grenada (ID:185 - 190)-->*/
+/*ID 185*/(12, 'Saint Andrew', 1),
+/*ID 186*/(12, 'Saint David', 1),
+/*ID 187*/(12, 'Saint George', 1),
+/*ID 188*/(12, 'Saint John', 1),
+/*ID 189*/(12, 'Saint Mark', 1),
+/*ID 190*/(12, 'Saint Patrick', 1),
+/*<--/Grenada-->*/
+/*<--Guatemala (ID:190 - 221)-->*/
+/*ID 191*/(13, 'Alta Verapaz', 1),
+/*ID 192*/(13, 'Baja Verapaz', 1),
+/*ID 193*/(13, 'Chimaltenango', 1),
+/*ID 194*/(13, 'Chiquimula', 1),
+/*ID 195*/(13, 'El Progreso', 1),
+/*ID 196*/(13, 'Escuintla', 1),
+/*ID 197*/(13, 'Guatemala', 1),
+/*ID 198*/(13, 'Huehuetenango', 1),
+/*ID 199*/(13, 'Izabal', 1),
+/*ID 200*/(13, 'Jabala', 1),
+/*ID 201*/(13, 'Jutiapa', 1),
+/*ID 202*/(13, 'Peten', 1),
+/*ID 203*/(13, 'Quetzaltenango', 1),
+/*ID 204*/(13, 'Quiche', 1),
+/*ID 205*/(13, 'Retalhuleu', 1),
+/*ID 206*/(13, 'Sacatepequez', 1),
+/*ID 207*/(13, 'San Marcos', 1),
+/*ID 208*/(13, 'Santa Rosa', 1),
+/*ID 209*/(13, 'Solola', 1),
+/*ID 210*/(13, 'Suchitepequez', 1),
+/*ID 211*/(13, 'Totonicapan', 1),
+/*ID 212*/(13, 'Zacapa', 1),
 /*<--/Guatemala-->*/
+/*<--Haiti (ID:213 - 221)-->*/
+/*ID 212*/(14, 'Nord-Ouest', 1),
+/*ID 213*/(14, 'Artibonite', 1),
+/*ID 214*/(14, 'Centre', 1),
+/*ID 215*/(14, 'Grand''Anse', 1),
+/*ID 216*/(14, 'Nord', 1),
+/*ID 217*/(14, 'Nord-Est', 1),
+/*ID 218*/(14, 'Ouest', 1),
+/*ID 219*/(14, 'Sud', 1),
+/*ID 220*/(14, 'Sud-Est', 1),
+/*<--/Haiti-->*/
+/*<--Honduras (ID:221 - 238)-->*/
+/*ID 221*/(15, 'Atlantida', 1),
+/*ID 222*/(15, 'Choluteca', 1),
+/*ID 223*/(15, 'Colon', 1),
+/*ID 224*/(15, 'Comayagua', 1),
+/*ID 225*/(15, 'Copan', 1),
+/*ID 226*/(15, 'Cortes', 1),
+/*ID 227*/(15, 'El Paraiso', 1),
+/*ID 228*/(15, 'Franciso Morazan', 1),
+/*ID 229*/(15, 'Gracias a Dios', 1),
+/*ID 230*/(15, 'Intibuca', 1),
+/*ID 231*/(15, 'Islas de la Bahia', 1),
+/*ID 232*/(15, 'La Paz', 1),
+/*ID 233*/(15, 'Lempira', 1),
+/*ID 234*/(15, 'Ocotepaque', 1),
+/*ID 235*/(15, 'Olancho', 1),
+/*ID 236*/(15, 'Santa Barbara', 1),
+/*ID 237*/(15, 'Valle', 1),
+/*ID 238*/(15, 'Yoro', 1),
+/*<--/Honduras-->*/
+/*<--Jamaica (ID:238 - 251)-->*/
+/*ID 238*/(16, 'Clarendon', 1),
+/*ID 239*/(16, 'Hanover', 1),
+/*ID 240*/(16, 'Manchester', 1),
+/*ID 241*/(16, 'Portland', 1),
+/*ID 242*/(16, 'Saint ', 1),
+/*ID 243*/(16, 'Saint ', 1),
+/*ID 244*/(16, 'Saint ', 1),
+/*ID 245*/(16, 'Saint ', 1),
+/*ID 246*/(16, 'Saint ', 1),
+/*ID 247*/(16, 'Saint ', 1),
+/*ID 248*/(16, 'Saint ', 1),
+/*ID 249*/(16, 'Trelawny', 1),
+/*ID 250*/(16, 'Westmoreland', 1),
+/*ID 251*/(16, 'Kingston', 1),
+/*<--/Jamaica-->*/
+/*<--Nicaragua (ID:252 - 267)-->*/
+/*ID 252*/(17, 'Boaco', 1),
+/*ID 253*/(17, 'Carazo', 1),
+/*ID 254*/(17, 'Chinandega', 1),
+/*ID 255*/(17, 'Chontales', 1),
+/*ID 256*/(17, 'Esteli', 1),
+/*ID 257*/(17, 'Granada', 1),
+/*ID 258*/(17, 'Jinotega', 1),
+/*ID 259*/(17, 'Leon', 1),
+/*ID 260*/(17, 'Madriz', 1),
+/*ID 261*/(17, 'Managua', 1),
+/*ID 262*/(17, 'Masaya', 1),
+/*ID 263*/(17, 'Matagalpa', 1),
+/*ID 264*/(17, 'Nueva Segovia', 1),
+/*ID 265*/(17, 'Rio San Juan', 1),
+/*ID 266*/(17, 'Rivas', 1),
+/*ID 267*/(17, 'Zelaya', 1),
+/*<--/Nicaragua-->*/
+/*<--Panama (ID:268 - 277)-->*/
+/*ID 268*/(18, 'Bocas del Toro', 1),
+/*ID 269*/(18, 'Chiriqui', 1),
+/*ID 270*/(18, 'Cocle', 1),
+/*ID 271*/(18, 'Colon', 1),
+/*ID 272*/(18, 'Darien', 1),
+/*ID 273*/(18, 'Herrera', 1),
+/*ID 274*/(18, 'Los Santos', 1),
+/*ID 275*/(18, 'Panama', 1),
+/*ID 276*/(18, 'San Blas', 1),
+/*ID 277*/(18, 'Veraguas', 1),
+/*<--/Panama-->*/
+/*<--Dominican Republic (ID:278 - 307)-->*/
+/*ID 278*/(19, 'Azua', 1),
+/*ID 279*/(19, 'Baoruco', 1),
+/*ID 280*/(19, 'Barahona', 1),
+/*ID 281*/(19, 'Dajabon', 1),
+/*ID 282*/(19, 'Distrito Nacional', 1),
+/*ID 283*/(19, 'Duarte', 1),
+/*ID 284*/(19, 'Espaillat', 1),
+/*ID 285*/(19, 'Independencia', 1),
+/*ID 286*/(19, 'La Altagracia', 1),
+/*ID 287*/(19, 'Elias Pina', 1),
+/*ID 288*/(19, 'La Romana', 1),
+/*ID 289*/(19, 'Maria Trinidad Sanchez', 1),
+/*ID 290*/(19, 'Monte Cristi', 1),
+/*ID 291*/(19, 'Pedernales', 1),
+/*ID 292*/(19, 'Peravia', 1),
+/*ID 293*/(19, 'Puerto Plata', 1),
+/*ID 294*/(19, 'Salcedo', 1),
+/*ID 295*/(19, 'Samana', 1),
+/*ID 296*/(19, 'Sanchez Ramirez', 1),
+/*ID 297*/(19, 'San Juan', 1),
+/*ID 298*/(19, 'San Pedro De Macoris', 1),
+/*ID 299*/(19, 'Santiago', 1),
+/*ID 300*/(19, 'Santiago Rodriguez', 1),
+/*ID 301*/(19, 'Valverde', 1),
+/*ID 302*/(19, 'El Seibo', 1),
+/*ID 303*/(19, 'Hato Mayor', 1),
+/*ID 304*/(19, 'La Vega', 1),
+/*ID 305*/(19, 'Monsenor Nouel', 1),
+/*ID 306*/(19, 'Monte Plata', 1),
+/*ID 307*/(19, 'San Cristobal', 1),
+/*<--/Dominican Republic-->*/
+/*<--Saint Lucia (ID:308 - 318)-->*/
+/*ID 308*/(20, 'Anse-la-Raye', 1),
+/*ID 309*/(20, 'Dauphin', 1),
+/*ID 310*/(20, 'Castries', 1),
+/*ID 311*/(20, 'Choiseul', 1),
+/*ID 312*/(20, 'Dennery', 1),
+/*ID 313*/(20, 'Gros-Islet', 1),
+/*ID 314*/(20, 'Laborie', 1),
+/*ID 315*/(20, 'Micoud', 1),
+/*ID 316*/(20, 'Soufriere', 1),
+/*ID 317*/(20, 'Vieux-Fort', 1),
+/*ID 318*/(20, 'Praslin', 1),
+/*<--/Saint Lucia-->*/
+/*<--St. Kitts & Nevis (ID:319 - 332)'-->*/
+/*ID 319*/(21, 'Christ Church Nichola Town', 1),
+/*ID 320*/(21, 'Saint Anne Sandy Point', 1),
+/*ID 321*/(21, 'Saint George Basseterre', 1),
+/*ID 322*/(21, 'Saint George Gingerland', 1),
+/*ID 323*/(21, 'Saint James Windward', 1),
+/*ID 324*/(21, 'Saint John Capisterre', 1),
+/*ID 325*/(21, 'Saint John Figtree', 1),
+/*ID 326*/(21, 'Saint Mary Cayon', 1),
+/*ID 327*/(21, 'Saint Paul Capisterre', 1),
+/*ID 328*/(21, 'Saint Paul Charlestown', 1),
+/*ID 329*/(21, 'Saint Peter Basseterre', 1),
+/*ID 330*/(21, 'Saint Thomas Lowland', 1),
+/*ID 331*/(21, 'Saint Thomas Middle Island', 1),
+/*ID 332*/(21, 'Trinity Palmetto Point', 1),
+/*<--/St. Kitts & Nevis'-->*/
+/*<--St. Vincent & the Grenadines (ID:333 - 338)'-->*/
+/*ID 333*/(22, 'Charlotte', 1),
+/*ID 334*/(22, 'Saint Andrew', 1),
+/*ID 335*/(22, 'Saint David', 1),
+/*ID 336*/(22, 'Saint George', 1),
+/*ID 337*/(22, 'Saint Patrick', 1),
+/*ID 338*/(22, 'Grenadines', 1),
+/*<--/St. Vincent & the Grenadines'-->*/
+/*<--Trinidad & Tobago (ID:339 - 350)-->*/
+/*ID 339*/(23, 'Arima', 1),
+/*ID 340*/(23, 'Caroni', 1),
+/*ID 341*/(23, 'Mayaro', 1),
+/*ID 342*/(23, 'Nariva', 1),
+/*ID 343*/(23, 'Port-of-Spain', 1),
+/*ID 344*/(23, 'Saint Andrew', 1),
+/*ID 345*/(23, 'Saint David', 1),
+/*ID 346*/(23, 'Saint George', 1),
+/*ID 347*/(23, 'Saint Patrick', 1),
+/*ID 348*/(23, 'San Fernando', 1),
+/*ID 349*/(23, 'Tobago', 1),
+/*ID 350*/(23, 'Victoria', 1),
+/*<--/Trinidad & Tobago-->*/
 /*<--/América Central (ID:4 - 23)-->*/
 CREATE TABLE cidades(
 id INT PRIMARY KEY IDENTITY(1,1),
