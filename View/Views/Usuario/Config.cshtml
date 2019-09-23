@@ -69,16 +69,10 @@
         <span class="h3">Alterar Foto</span>
     </legend>
     <div class="form-group">
-        <form method="post" enctype="multipart/form-data" asp-controller="Correto" asp-action="Upload">
-
-            <div class="custom-file">
-                <input type="file" id="arquivo" name="arquivo" class="custom-file-input">
-                <label for="arquivo" class="custom-file-label">Arquivo</label>
-            </div>
-
-            <div class="mt-3">
-                <button class="btn btn-success float-right" type="submit">Enviar</button>
-            </div>
+        <form action="Upload" method="post" enctype="multipart/form-data">
+            <img id="imagemUsuario" src="~/Content/uploads/@usuario.UrlImagem" class="round mb-2" height="125" width="125" alt="">
+            <input type="file" name="file" />
+            <button class="btn btn-primary float-right" type="submit"><i class="fas fa-file-import"></i>  @View.Resources.Resource.Enviar</button>
         </form>
     </div>
 
@@ -115,5 +109,6 @@
 
 
 @section js {
-    <script type="text/javascript" src="~/Scripts/Mascaras/Mask.js"></script>
+    <script type="text/javascript" ></script>
+    <script src="~/Scripts/Mascaras/Mask.js"></script>
 }

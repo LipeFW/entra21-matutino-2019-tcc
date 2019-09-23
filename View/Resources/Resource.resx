@@ -534,4 +534,7 @@
   <data name="Portugues" xml:space="preserve">
     <value>string</value>
   </data>
+  <data name="Enviar" xml:space="preserve">
+    <value>string</value>
+  </data>
 </root>
