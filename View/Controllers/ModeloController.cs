@@ -37,6 +37,18 @@ namespace View.Controllers
             return View();
         }
 
+        public ActionResult Editar(int id)
+        {
+            var modelo = repository.ObterPeloId(id);
+            if (modelo == null)
+            {
+                return RedirectToAction("Index");
+            }
+
+            ViewBag.Modelo = modelo;
+            return View();
+        }
+
         [HttpGet, Route("obtertodos")]
         public JsonResult ObterTodos()
         {
