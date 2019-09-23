@@ -19,7 +19,7 @@ namespace View.Resources {
     // através de uma ferramenta como ResGen ou Visual Studio.
     // Para adicionar ou remover um associado, edite o arquivo .ResX e execute ResGen novamente
     // com a opção /str, ou recrie o projeto do VS.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class Resource {
@@ -156,6 +156,15 @@ namespace View.Resources {
         public static string CadastrodeMarca {
             get {
                 return ResourceManager.GetString("CadastrodeMarca", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
+        public static string CadastrodeModelo {
+            get {
+                return ResourceManager.GetString("CadastrodeModelo", resourceCulture);
             }
         }
         
@@ -660,6 +669,15 @@ namespace View.Resources {
         public static string NovoCliente {
             get {
                 return ResourceManager.GetString("NovoCliente", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
+        public static string NovoModelo {
+            get {
+                return ResourceManager.GetString("NovoModelo", resourceCulture);
             }
         }
         

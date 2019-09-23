@@ -178,13 +178,13 @@
     <value>Bars Code</value>
   </data>
   <data name="CPF" xml:space="preserve">
-    <value>SSN</value>
+    <value>SSNl</value>
   </data>
   <data name="Lista" xml:space="preserve">
     <value>List</value>
   </data>
   <data name="ListaNotasFiscais" xml:space="preserve">
-    <value>List  tax invoice</value>
+    <value>List  tax Invoice</value>
   </data>
   <data name="Marca" xml:space="preserve">
     <value>Brand</value>
@@ -307,10 +307,10 @@
     <value>Driving License</value>
   </data>
   <data name="ConfirmarSenha" xml:space="preserve">
-    <value>Password confim</value>
+    <value>Password confirm</value>
   </data>
   <data name="DadosPessoais" xml:space="preserve">
-    <value>date Personal</value>
+    <value>Date Personal</value>
   </data>
   <data name="Endereco" xml:space="preserve">
     <value>Street</value>
@@ -383,7 +383,7 @@ The system seeks to quickly employ the processes mentioned with the ease of a sm
     <value>My Profile</value>
   </data>
   <data name="Sair" xml:space="preserve">
-    <value>Exit</value>
+    <value>Leave</value>
   </data>
   <data name="RG" xml:space="preserve">
     <value>ID</value>

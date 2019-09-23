@@ -59,15 +59,15 @@
     <div class="navbar navbar-expand-md navbar-light">
 
         <!-- Header with logos -->
-        <div class="navbar-header navbar-dark d-none d-md-flex align-items-md-center">
+        <div id="sidebartop" class="navbar-header navbar-dark d-none d-md-flex align-items-md-center">
             <div class="navbar-brand navbar-brand-md">
-                <div href="index.html">
+                <div href="#">
                     <h2 class="titulonav text-center">mcss</h2>
                 </div>
             </div>
 
             <div class="navbar-brand navbar-brand-xs">
-                <a href="index.html" class="d-inline-block">
+                <a href="#" class="d-inline-block">
                     <img src="~/Content/theme/global_assets/images/logo_icon_light.png" alt="">
                 </a>
             </div>
@@ -121,7 +121,7 @@
                 <li class="nav-item dropdown dropdown-user">
                     <a href="" class="navbar-nav-link d-flex align-items-center dropdown-toggle" data-toggle="dropdown">
                         <img id="imagemUsuario" src="~/Content/theme/global_assets/images/placeholders/user.png" class="rounded-circle mr-2" height="34" width="34" alt="">
-                        <span name="usuarioNome" id="usuarioNome"></span>
+                        <span>@usuario.Nome</span>
                     </a>
 
                     <div class="dropdown-menu dropdown-menu-right">
@@ -160,7 +160,7 @@
             </div>
             <!-- /sidebar mobile toggler -->
             <!-- Sidebar content -->
-            <div class="sidebar-content">
+            <div id="sidebar" class="sidebar-content">
 
                 <!-- User menu -->
                 <div class="sidebar-user">
@@ -223,9 +223,9 @@
                         <li class="nav-item nav-item-submenu">
                             <a href="#" id="itemVeiculo" class="nav-link"><i class="icon-truck"></i><span id="veiculoText">@View.Resources.Resource.Frota</span></a>
                             <ul class="nav nav-group-sub" data-submenu-title="Veículo">
-                                <li class="nav-item"><a href="/veiculo/index" class="nav-link">@View.Resources.Resource.Marcas</a></li>
-                                <li class="nav-item"><a href="/marca/index" class="nav-link">@View.Resources.Resource.Modelos</a></li>
-                                <li class="nav-item"><a href="/modelo/index" class="nav-link">@View.Resources.Resource.Veiculos</a></li>
+                                <li class="nav-item"><a href="/Marca/index" class="nav-link">@View.Resources.Resource.Marcas</a></li>
+                                <li class="nav-item"><a href="/Modelo/index" class="nav-link">@View.Resources.Resource.Modelos</a></li>
+                                <li class="nav-item"><a href="/Veiculo/index" class="nav-link">@View.Resources.Resource.Veiculos</a></li>
                             </ul>
                         </li>
                         <!-- /Veículo -->
@@ -307,27 +307,28 @@
     </div>
     <!-- Footer -->
     @*<div class="navbar navbar-expand-lg navbar-light">
-        <div class="text-center d-lg-none w-100">
-            <button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse"
-                    data-target="#navbar-footer">
-                <i class="icon-unfold mr-2"></i>
-                Footer
-            </button>
-        </div>
-        <div class="navbar-collapse collapse" id="navbar-footer">
-            <span class="navbar-text">
-                &copy; 2019 - MCSS Company
-            </span>
-        </div>
-    </div>*@
+            <div class="text-center d-lg-none w-100">
+                <button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse"
+                        data-target="#navbar-footer">
+                    <i class="icon-unfold mr-2"></i>
+                    Footer
+                </button>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-footer">
+                <span class="navbar-text">
+                    &copy; 2019 - MCSS Company
+                </span>
+            </div>
+        </div>*@
 
     <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
     <script src="~/Scripts/select2.min.js"></script>
+    <script src="~/Scripts/Usuario/config.js" ~></script>
     @RenderSection("js", false)
 
     <script type="text/javascript">
-        document.getElementById("usuarioNome").innerHTML = localStorage.getItem("firstName");
-        document.getElementById("nomeText").innerHTML = localStorage.getItem("username");
+            //document.getElementById("usuarioNome").innerHTML = localStorage.getItem("firstName");
+            //document.getElementById("nomeText").innerHTML = localStorage.getItem("username");
     </script>
 </body>
 </html>

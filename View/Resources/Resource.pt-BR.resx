@@ -175,7 +175,7 @@
     <value>Código Barra</value>
   </data>
   <data name="CodigodeBarra" xml:space="preserve">
-    <value>Código de barras</value>
+    <value>Código de Barras</value>
   </data>
   <data name="CPF" xml:space="preserve">
     <value>CPF</value>
@@ -184,7 +184,7 @@
     <value>Lista</value>
   </data>
   <data name="ListaNotasFiscais" xml:space="preserve">
-    <value>Lista notas fiscais</value>
+    <value>Lista notas Fiscais</value>
   </data>
   <data name="Marca" xml:space="preserve">
     <value>Marca</value>
@@ -220,10 +220,10 @@
     <value>Novo vendedor</value>
   </data>
   <data name="NumeroCaminhao" xml:space="preserve">
-    <value>Número caminhão</value>
+    <value>Número Caminhão</value>
   </data>
   <data name="Numerodocaminhao" xml:space="preserve">
-    <value>Numero do caminhão</value>
+    <value>Numero do Caminhão</value>
   </data>
   <data name="Placa" xml:space="preserve">
     <value>Placa</value>
@@ -250,7 +250,7 @@
     <value>Salvar</value>
   </data>
   <data name="Selecioneumacategoria" xml:space="preserve">
-    <value>Selecione uma ategoria</value>
+    <value>Selecione uma categoria</value>
   </data>
   <data name="Selecioneumamarca" xml:space="preserve">
     <value>Selecione uma marca</value>
@@ -313,7 +313,7 @@
     <value>Dados Pessoais</value>
   </data>
   <data name="Endereco" xml:space="preserve">
-    <value>Endereço 2</value>
+    <value>Endereço </value>
   </data>
   <data name="Estado" xml:space="preserve">
     <value>Estado</value>
@@ -467,5 +467,11 @@
   </data>
   <data name="Modelos" xml:space="preserve">
     <value>Modelos</value>
+  </data>
+  <data name="NovoModelo" xml:space="preserve">
+    <value>Novo Modelo</value>
+  </data>
+  <data name="CadastrodeModelo" xml:space="preserve">
+    <value>Cadastro de Modelo</value>
   </data>
 </root>
