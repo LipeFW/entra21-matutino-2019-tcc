@@ -477,4 +477,10 @@
   <data name="CadastroVenda" xml:space="preserve">
     <value>Cadastro de Venda</value>
   </data>
+  <data name="Inventario" xml:space="preserve">
+    <value>Inventário</value>
+  </data>
+  <data name="Enviar" xml:space="preserve">
+    <value>Enviar</value>
+  </data>
 </root>
