@@ -534,7 +534,10 @@
   <data name="Portugues" xml:space="preserve">
     <value>string</value>
   </data>
-  <data name="Enviar" xml:space="preserve">
+  <data name="Tema" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Temas" xml:space="preserve">
     <value>string</value>
   </data>
 </root>

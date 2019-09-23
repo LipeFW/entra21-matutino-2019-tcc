@@ -106,15 +106,32 @@
             <ul class="navbar-nav">
                 <li class="nav-item dropdown">
                     <a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown">
-                        <img id="imgLANG" src="~/Content/theme/global_assets/images/lang/br.png" class="img-flag mr-2" alt=""><span id="langAtual">Português</span>
+
+                        @if (Session["Language"] == null || Session["Language"].ToString() == "pt-BR")
+                        {
+
+                            <img id="imgLANG" src="~/Content/theme/global_assets/images/lang/br.png" class="img-flag mr-2" alt="">
+                            <span id="langAtual">Português</span>
+                        }
+                        else if (Session["Language"] == null || Session["Language"].ToString() == "en-US")
+                        {
+                            <img id="imgLANG" src="~/Content/theme/global_assets/images/lang/gb.png" class="img-flag mr-2" alt="">
+                            <span id="langAtual">English</span>
+                        }
+                        else
+                        {
+                            <img id="imgLANG" src="~/Content/theme/global_assets/images/lang/es.png" class="img-flag mr-2" alt="">
+                            <span id="langAtual">Español</span>
+                        }
+
+
+
+
                     </a>
 
                     <div class="dropdown-menu dropdown-menu-right">
-                        <a id="btnPT" href="/Home/Change?lang=pt-BR" class="dropdown-item portuguese active">
-                            <img src="~/Content/theme/global_assets/images/lang/br.png" class="img-flag" alt="">
-                            <span id="ptLang">Portugues</span>
-                        </a>
-                        <a id="btnEN" href="/Home/Change?lang=en-US" class="dropdown-item english"><img src="~/Content/theme/global_assets/images/lang/gb.png" class="img-flag" alt=""><span id="enLang">Englsh</span> </a>
+                        <a id="btnPT" href="/Home/Change?lang=pt-BR" class="dropdown-item portuguese active"><img src="~/Content/theme/global_assets/images/lang/br.png" class="img-flag" alt=""><span id="ptLang">Portugues</span></a>
+                        <a id="btnEN" href="/Home/Change?lang=en-US" class="dropdown-item english"><img src="~/Content/theme/global_assets/images/lang/gb.png" class="img-flag" alt=""><span id="enLang">English</span> </a>
                         <a id="btnES" href="/Home/Change?lang=es-ES" class="dropdown-item spanish"><img src="~/Content/theme/global_assets/images/lang/es.png" class="img-flag" alt=""><span id="eslang">Español</span> </a>
                     </div>
                 </li>

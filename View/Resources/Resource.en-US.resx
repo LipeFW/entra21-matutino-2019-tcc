@@ -370,7 +370,7 @@ The system seeks to quickly employ the processes mentioned with the ease of a sm
   <data name="BemVindo" xml:space="preserve">
     <value>Welcome</value>
   </data>
-  <data name="Configacoesdaconta" xml:space="preserve">
+  <data name="Configuracoesdaconta" xml:space="preserve">
     <value>Acount Configuration</value>
   </data>
   <data name="Inicio" xml:space="preserve">
@@ -432,5 +432,26 @@ The system seeks to quickly employ the processes mentioned with the ease of a sm
   </data>
   <data name="SelecioneumProduto" xml:space="preserve">
     <value>Select a Product</value>
+  </data>
+  <data name="Configuracaoconta" xml:space="preserve">
+    <value>Acount Configuration</value>
+  </data>
+  <data name="Desconto" xml:space="preserve">
+    <value>Discount</value>
+  </data>
+  <data name="NovaVenda" xml:space="preserve">
+    <value>New Sale</value>
+  </data>
+  <data name="Perfil" xml:space="preserve">
+    <value>Profile</value>
+  </data>
+  <data name="Tema" xml:space="preserve">
+    <value>Theme</value>
+  </data>
+  <data name="Temas" xml:space="preserve">
+    <value>Themes</value>
+  </data>
+  <data name="Vendas" xml:space="preserve">
+    <value>Sales</value>
   </data>
 </root>
