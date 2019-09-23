@@ -49,7 +49,7 @@
 
         function inserir($nome, $marca) {
             $.ajax({
-                url: "http://localhost:51242/modelo/Inserir",
+                url: "http://localhost:51242/modelo/inserir",
                 method: "post",
                 data: {
                     nome: $nome,

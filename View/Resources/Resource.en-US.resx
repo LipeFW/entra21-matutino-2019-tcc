@@ -228,7 +228,7 @@
   <data name="Placa" xml:space="preserve">
     <value>Plate</value>
   </data>
-  <data name="Prdutos" xml:space="preserve">
+  <data name="Produtos" xml:space="preserve">
     <value>Products</value>
   </data>
   <data name="Produto" xml:space="preserve">
@@ -277,7 +277,7 @@
     <value>Users</value>
   </data>
   <data name="Valor" xml:space="preserve">
-    <value>Valor</value>
+    <value>Value</value>
   </data>
   <data name="ValorFinal" xml:space="preserve">
     <value>Final Value</value>
@@ -395,6 +395,42 @@ The system seeks to quickly employ the processes mentioned with the ease of a sm
     <value>Vehicle</value>
   </data>
   <data name="Vendedores" xml:space="preserve">
-    <value>Saleman</value>
+    <value>Salemans</value>
+  </data>
+  <data name="CadastrodeMarca" xml:space="preserve">
+    <value>Brand Register</value>
+  </data>
+  <data name="CadastroVenda" xml:space="preserve">
+    <value>Register sale</value>
+  </data>
+  <data name="Frota" xml:space="preserve">
+    <value>Fleet</value>
+  </data>
+  <data name="Inventario" xml:space="preserve">
+    <value>Inventary</value>
+  </data>
+  <data name="Inventarios" xml:space="preserve">
+    <value>Inventaries</value>
+  </data>
+  <data name="ListadeMarcas" xml:space="preserve">
+    <value>List Brands</value>
+  </data>
+  <data name="Marcas" xml:space="preserve">
+    <value>Brands</value>
+  </data>
+  <data name="Modelos" xml:space="preserve">
+    <value>Models</value>
+  </data>
+  <data name="NovaMarca" xml:space="preserve">
+    <value>New Brand</value>
+  </data>
+  <data name="Portugues" xml:space="preserve">
+    <value>inglich</value>
+  </data>
+  <data name="SelecioneumCliente" xml:space="preserve">
+    <value>Select a Client</value>
+  </data>
+  <data name="SelecioneumProduto" xml:space="preserve">
+    <value>Select a Product</value>
   </data>
 </root>

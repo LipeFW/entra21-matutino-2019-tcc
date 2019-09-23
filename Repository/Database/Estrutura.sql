@@ -137,17 +137,20 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	(1, 'Blumenau', 1),
 CREATE TABLE usuarios( 
 id INT PRIMARY KEY IDENTITY(1,1),
 nome VARCHAR(100),
+url_imagem VARCHAR(100),
+nome_completo VARCHAR(100),
 senha VARCHAR(100),
+admin INT,
 registro_ativo BIT
 );
 
-INSERT INTO usuarios(nome, senha, registro_ativo)
-VALUES  ( 'lipefw', 'anaumsei', 1),
-	    ( 'illan', 'illanzoka', 1),
-	    ( 'eduardo', '123456', 1),
-	    ( 'henrique', 'pimbinha6000', 1),
-	    ( 'pablo', '1234', 1),
-	    ( 'nathan', '1203', 1);
+INSERT INTO usuarios(nome,nome_completo,url_imagem, admin, senha,  registro_ativo)
+VALUES  ( 'lipefw','Felipe','gatodandopinote.png',1 , 'anaumsei', 1),
+	    ( 'illan','Illan','gato-confuo.jpg',0 , 'illanzoka', 1),
+	    ( 'eduardo','Eduardo','guaxinimdoido.jpg',1 , '123456', 1),
+	    ( 'henrique','Henrique','hamsterchavoso.png',1 , 'pimbinha6000', 1),
+	    ( 'pablo','Pablo','', 1, '1234', 1),
+	    ( 'nathan','Nathan','passaroseila.jpg', 1, '1203', 1);
 
 
 CREATE TABLE categorias( 

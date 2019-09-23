@@ -1,6 +1,7 @@
 ﻿
 @{
     ViewBag.Title = "Config";
+    var usuario = (Model.Usuario)Session["Usuario"];
 }
 
 <legend>
@@ -65,6 +66,24 @@
 
     <legend>
 
+        <span class="h3">Alterar Foto</span>
+    </legend>
+    <div class="form-group">
+        <form method="post" enctype="multipart/form-data" asp-controller="Correto" asp-action="Upload">
+
+            <div class="custom-file">
+                <input type="file" id="arquivo" name="arquivo" class="custom-file-input">
+                <label for="arquivo" class="custom-file-label">Arquivo</label>
+            </div>
+
+            <div class="mt-3">
+                <button class="btn btn-success float-right" type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+
+    <legend>
+
         <span class="h3">Temas</span>
     </legend>
     <div class="form-group">
@@ -73,6 +92,8 @@
         <button type="button" class="btn btn-danger" id="colorRed"> </button>
         <button type="button" class="btn btn-dark" id="colorDark"> </button>
     </div>
+
+
 
     <legend>
 
