@@ -27,7 +27,7 @@
 
     function alterar($nome) {
         $.ajax({
-            url: 'http://localhost:51242/Marca/update',
+            url: 'http://localhost:51242/Marca/editar',
             method: 'post',
             data: {
                 id: $idAlterar,

@@ -28,16 +28,7 @@
                     <label for="cliente-campo-cep">@View.Resources.Resource.CEP</label>
                     <input type="text" id="cliente-campo-cep" class="form-control" />
                 </div>
-                <div class="form-group">
-                    <label for="cliente-campo-vendedor">@View.Resources.Resource.Vendedor</label>
-                    <select id="cliente-campo-vendedor" class="form-control" name="campo-vendedor">
-                        <option disabled="disabled" selected="selected">@View.Resources.Resource.SelecioneumVendedor</option>
-                        @foreach (Model.Vendedor vendedor in ViewBag.Vendedores)
-                        {
-                            <option value="@vendedor.Id">@vendedor.Nome</option>
-                        }
-                    </select>
-                </div>
+                z
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-outline-danger" data-dismiss="modal"><i class="fas fa-times"></i> @View.Resources.Resource.Cancelar</button>

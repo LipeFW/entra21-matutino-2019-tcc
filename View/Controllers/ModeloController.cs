@@ -28,6 +28,11 @@ namespace View.Controllers
             return View();
         }
 
+        public ActionResult Cadastro()
+        {
+            return View();
+        }
+
         [HttpGet, Route("obtertodos")]
         public JsonResult ObterTodos()
         {
