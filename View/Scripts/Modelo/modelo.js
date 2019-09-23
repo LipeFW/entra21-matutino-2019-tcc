@@ -44,7 +44,7 @@
                 error: function (err) {
                     alert("Não foi possivel alterar o modelo");
                 }
-            })
+            });
         }
 
         function inserir($nome, $marca) {
@@ -63,7 +63,7 @@
                 error: function (err) {
                     alert('Não foi possivel inserir');
                 }
-            })
+            });
         }
     })
 
