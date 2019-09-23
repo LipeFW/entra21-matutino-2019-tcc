@@ -474,4 +474,7 @@
   <data name="CadastrodeModelo" xml:space="preserve">
     <value>Cadastro de Modelo</value>
   </data>
+  <data name="CadastroVenda" xml:space="preserve">
+    <value>Cadastro de Venda</value>
+  </data>
 </root>
