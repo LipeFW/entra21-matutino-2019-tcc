@@ -474,13 +474,7 @@
   <data name="CadastrodeModelo" xml:space="preserve">
     <value>Cadastro de Modelo</value>
   </data>
-  <data name="inventario" xml:space="preserve">
-    <value>Inventário</value>
-  </data>
-  <data name="ListadeMarcas" xml:space="preserve">
-    <value>Lista de Marcas</value>
-  </data>
-  <data name="Portugues" xml:space="preserve">
-    <value>Português</value>
+  <data name="CadastroVenda" xml:space="preserve">
+    <value>Cadastro de Venda</value>
   </data>
 </root>
