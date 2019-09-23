@@ -396,7 +396,7 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (1,'Westlock',1),
 (1,'Wetaskiwin',1),
 (1,'Valleyview',1),
-(1,'Whitecourt',1);
+(1,'Whitecourt',1),
 /*<--/Cidades do Alberta-->*/
 /*<--Cidades do Colúmbia Britânica-->*/
 (2, 'Abbotsford', 1),
@@ -513,7 +513,30 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (4, 'Winkler', 1),
 (4, 'Winnipeg', 1),
 /*<--/Cidades do Monitoba-->*/
-
+/*<--Cidades do Nova Brunswick-->*/
+(5, 'Bathurst', 1),
+(5, 'Campbellton', 1),
+(5, 'Caraquet', 1),
+(5, 'Dalhousie', 1),
+(5, 'Edmundston', 1),
+(5, 'Fredericton', 1),
+(5, 'Grand Falls', 1),
+(5, 'Hampton', 1),
+(5, 'Kedgwick', 1),
+(5, 'Moncton', 1),
+(5, 'Oromocto', 1),
+(5, 'Plaster Rock', 1),
+(5, 'Sackville', 1),
+(5, 'Saint Andrews', 1),
+(5, 'Saint John', 1),
+(5, 'Saint Leonard', 1),
+(5, 'Saint Quentin', 1),
+(5, 'Saint Stephen', 1),
+(5, 'Salisbury', 1),
+(5, 'Shediac', 1),
+(5, 'Sussex', 1),
+(5, 'Woodstock', 1),
+/*<--/Cidades do Nova Brunswick-->*/
 /*<--/Canada-->*/
 CREATE TABLE usuarios( 
 id INT PRIMARY KEY IDENTITY(1,1),
