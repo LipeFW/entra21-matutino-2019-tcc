@@ -112,10 +112,10 @@
                     <div class="dropdown-menu dropdown-menu-right">
                         <a id="btnPT" href="/Home/Change?lang=pt-BR" class="dropdown-item portuguese active">
                             <img src="~/Content/theme/global_assets/images/lang/br.png" class="img-flag" alt="">
-                            <span id="ptLang">Português</span>
+                            <span id="ptLang">Portugues</span>
                         </a>
-                        <a id="btnEN" href="/Home/Change?lang=en-US" class="dropdown-item english"><img src="~/Content/theme/global_assets/images/lang/gb.png" class="img-flag" alt=""><span id="enLang">Inglês</span> </a>
-                        <a id="btnES" href="/Home/Change?lang=es-ES" class="dropdown-item spanish"><img src="~/Content/theme/global_assets/images/lang/es.png" class="img-flag" alt=""><span id="eslang">Espanhol</span> </a>
+                        <a id="btnEN" href="/Home/Change?lang=en-US" class="dropdown-item english"><img src="~/Content/theme/global_assets/images/lang/gb.png" class="img-flag" alt=""><span id="enLang">Englsh</span> </a>
+                        <a id="btnES" href="/Home/Change?lang=es-ES" class="dropdown-item spanish"><img src="~/Content/theme/global_assets/images/lang/es.png" class="img-flag" alt=""><span id="eslang">Español</span> </a>
                     </div>
                 </li>
 
@@ -127,13 +127,13 @@
 
                     <div class="dropdown-menu dropdown-menu-right">
                         <a href="/usuario/perfil" class="dropdown-item">
-                            <i class="icon-user-plus"></i>Meu Perfil
+                            <i class="icon-user-plus"></i>@View.Resources.Resource.MeuPerfil
 
 
                         </a>
                         <div class="/dropdown-divider"></div>
-                        <a href="/usuario/config" class="dropdown-item"><i class="icon-cog5"></i> <span id="configText">Configurações da Conta</span> </a>
-                        <a href="/login/logout" class="dropdown-item"><i class="icon-switch2"></i> <span id="sairText">Sair</span></a>
+                        <a href="/usuario/config" class="dropdown-item"><i class="icon-cog5"></i> <span id="configText">@View.Resources.Resource.Configuracoesdaconta</span> </a>
+                        <a href="/login/logout" class="dropdown-item"><i class="icon-switch2"></i> <span id="sairText">@View.Resources.Resource.Sair</span></a>
                     </div>
                 </li>
             </ul>
@@ -232,7 +232,7 @@
                         <!-- /Veículo -->
                         <!-- Inventário -->
                         <li class="nav-item nav-item-submenu">
-                            <a href="#" class="nav-link"><i class="fas fa-boxes"></i><span id="veiculoText">Inventário</span></a>
+                            <a href="#" class="nav-link"><i class="fas fa-boxes"></i><span id="veiculoText">@View.Resources.Resource.Inventario</span></a>
                             <ul class="nav nav-group-sub" data-submenu-title="Inventário">
                                 <li class="nav-item"><a href="/inventario/index" class="nav-link">@View.Resources.Resource.Lista</a></li>
                             </ul>

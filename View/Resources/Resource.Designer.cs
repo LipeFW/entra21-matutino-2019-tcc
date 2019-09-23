@@ -19,7 +19,7 @@ namespace View.Resources {
     // através de uma ferramenta como ResGen ou Visual Studio.
     // Para adicionar ou remover um associado, edite o arquivo .ResX e execute ResGen novamente
     // com a opção /str, ou recrie o projeto do VS.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class Resource {
@@ -156,6 +156,15 @@ namespace View.Resources {
         public static string CadastrodeMarca {
             get {
                 return ResourceManager.GetString("CadastrodeMarca", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
+        public static string CadastrodeMarcas {
+            get {
+                return ResourceManager.GetString("CadastrodeMarcas", resourceCulture);
             }
         }
         
@@ -423,9 +432,9 @@ namespace View.Resources {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a string.
         /// </summary>
-        public static string Endereco1 {
+        public static string Endereco {
             get {
-                return ResourceManager.GetString("Endereco1", resourceCulture);
+                return ResourceManager.GetString("Endereco", resourceCulture);
             }
         }
         
@@ -504,6 +513,15 @@ namespace View.Resources {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a string.
         /// </summary>
+        public static string Inventario {
+            get {
+                return ResourceManager.GetString("Inventario", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
         public static string Inventarios {
             get {
                 return ResourceManager.GetString("Inventarios", resourceCulture);
@@ -516,6 +534,15 @@ namespace View.Resources {
         public static string Lista {
             get {
                 return ResourceManager.GetString("Lista", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
+        public static string ListadeMarcas {
+            get {
+                return ResourceManager.GetString("ListadeMarcas", resourceCulture);
             }
         }
         
@@ -786,6 +813,15 @@ namespace View.Resources {
         public static string Placa {
             get {
                 return ResourceManager.GetString("Placa", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
+        public static string Portugues {
+            get {
+                return ResourceManager.GetString("Portugues", resourceCulture);
             }
         }
         
