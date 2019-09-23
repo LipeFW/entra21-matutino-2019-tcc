@@ -1,6 +1,7 @@
 ﻿
 @{
     ViewBag.Title = "Config";
+    var usuario = (Model.Usuario)Session["Usuario"];
 }
 
 <legend>
@@ -65,7 +66,19 @@
 
     <legend>
 
-        <span class="h3">@View.Resources.Resource.Temas</span>
+        <span class="h3">Alterar Foto</span>
+    </legend>
+    <div class="form-group">
+        <form action="Upload" method="post" enctype="multipart/form-data">
+            <img id="imagemUsuario" src="~/Content/uploads/@usuario.UrlImagem" class="rounded mb-2" height="125" width="125" alt="">
+            <input type="file" name="file" />
+            <button class="btn btn-primary float-right" type="submit"><i class="fas fa-file-import"></i>  @View.Resources.Resource.Enviar</button>
+        </form>
+    </div>
+
+    <legend>
+
+        <span class="h3">Temas</span>
     </legend>
     <div class="form-group">
         <button type="button" class="btn btn-primary" id="colorBlue"> </button>
@@ -73,6 +86,8 @@
         <button type="button" class="btn btn-danger" id="colorRed"> </button>
         <button type="button" class="btn btn-dark" id="colorDark"> </button>
     </div>
+
+
 
     <legend>
 
@@ -94,5 +109,6 @@
 
 
 @section js {
-    <script type="text/javascript" src="~/Scripts/Mascaras/Mask.js"></script>
+    <script type="text/javascript" ></script>
+    <script src="~/Scripts/Mascaras/Mask.js"></script>
 }
