@@ -18,6 +18,11 @@ $(document).ready(function () {
     $("#usuario-campo-cnh").mask("999999999999");
     $("#usuario-campo-rg").mask("9.999.999");
     $("#usuario-campo-cep").mask("99999-999");
+    $("#config-campo-cep").mask("000.000.000-00");
+    $("#config-campo-telefone").mask("(99) 99999-9999");
+    $("#config-campo-rg").mask("9.999.999");
+    $("#config-campo-cpf").mask("999.999.999-99");
+    $("#config-campo-cnh").mask("999999999999");
 
 
 

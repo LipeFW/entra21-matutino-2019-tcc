@@ -1996,7 +1996,6 @@
     <Content Include="Content\theme\global_assets\js\polyfills\promise.min.js" />
     <Content Include="Content\theme\global_assets\swf\datatables\flashExport.swf" />
     <Content Include="Global.asax" />
-    <Content Include="Scripts\Calculos\Total.js" />
     <Content Include="Scripts\Categoria\categoria.js" />
     <Content Include="Scripts\Cliente\cliente.js" />
     <Content Include="Content\login\font\DreamMMA.ttf" />
