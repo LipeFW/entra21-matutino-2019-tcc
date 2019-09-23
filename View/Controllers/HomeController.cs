@@ -20,6 +20,7 @@ namespace View.Controllers
                 Thread.CurrentThread.CurrentCulture = new CultureInfo(lang);
                 HttpCookie cookie = new HttpCookie("Language");
                 cookie.Value = lang;
+                Session["Language"] = lang;
                 Response.Cookies.Add(cookie);
             }
             return Redirect(Request.UrlReferrer.ToString());

@@ -34,7 +34,7 @@
                 data: {
                     id: $idAlterar,
                     nome: $nome,
-                    idMarca: $marca,
+                    idMarca: $marca
                 },
                 success: function (data) {
                     $("#modal-modelo").modal("hide");
@@ -44,7 +44,7 @@
                 error: function (err) {
                     alert("Não foi possivel alterar o modelo");
                 }
-            })
+            });
         }
 
         function inserir($nome, $marca) {
@@ -53,7 +53,7 @@
                 method: "post",
                 data: {
                     nome: $nome,
-                    idMarca: $marca,
+                    idMarca: $marca
                 },
                 success: function (data) {
                     $("#modal-modelo").modal('hide');
@@ -63,7 +63,7 @@
                 error: function (err) {
                     alert('Não foi possivel inserir');
                 }
-            })
+            });
         }
     })
 
