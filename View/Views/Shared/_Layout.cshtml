@@ -10,7 +10,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>MCSS - @ViewBag.Title</title>
 
-    <script src="~/Content/js/login.js"></script>
 
     <link href="~/Content/theme/global_assets/images/logo_icon_dark.png" rel="shortcut icon" />
     <link href="~/Content/login/css/login.css" rel="stylesheet" type="text/css">
@@ -54,6 +53,8 @@
 </head>
 
 <body>
+
+    <input type="hidden" id="admin" value="@usuario.Admin" />
 
     <!-- Main navbar -->
     <div class="navbar navbar-expand-md navbar-light">
@@ -120,8 +121,8 @@
 
                 <li class="nav-item dropdown dropdown-user">
                     <a href="" class="navbar-nav-link d-flex align-items-center dropdown-toggle" data-toggle="dropdown">
-                        <img id="imagemUsuario" src="~/Content/theme/global_assets/images/placeholders/user.png" class="rounded-circle mr-2" height="34" width="34" alt="">
-                        <span>@usuario.Nome</span>
+                        <img id="imagemUsuario" src="~/Content/image/@usuario.UrlImagem" class="rounded-circle mr-2" height="34" width="34" alt="">
+                        <span>@usuario.NomeCompleto</span>
                     </a>
 
                     <div class="dropdown-menu dropdown-menu-right">
@@ -167,11 +168,11 @@
                     <div class="card-body">
                         <div class="media">
                             <div class="mr-3">
-                                <a href="/usuario/perfil"><img id="imagemUsuario2" src="~/Content/theme/global_assets/images/placeholders/user.png" width="38" height="38" class="rounded-circle" alt=""></a>
+                                <a href="/usuario/perfil"><img id="imagemUsuario2" src="~/Content/image/@usuario.UrlImagem" width="38" height="38" class="rounded-circle" alt=""></a>
                             </div>
 
                             <div class="media-body">
-                                <div class="media-title font-weight-semibold"><span>@usuario.Nome</span></div>
+                                <div class="media-title font-weight-semibold"><span>@usuario.NomeCompleto</span></div>
                                 <div class="font-size-xs opacity-50">
                                     <i class="icon-pin font-size-sm"></i> &nbsp;Blumenau - SC, Brasil
                                 </div>
@@ -324,11 +325,13 @@
     <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
     <script src="~/Scripts/select2.min.js"></script>
     <script src="~/Scripts/Usuario/config.js" ~></script>
+    <script src="~/Content/js/login.js"></script>
+    <script src="~/Content/js/admin.js"></script>
     @RenderSection("js", false)
 
     <script type="text/javascript">
-            //document.getElementById("usuarioNome").innerHTML = localStorage.getItem("firstName");
-            //document.getElementById("nomeText").innerHTML = localStorage.getItem("username");
+                    //document.getElementById("usuarioNome").innerHTML = localStorage.getItem("firstName");
+                    //document.getElementById("nomeText").innerHTML = localStorage.getItem("username");
     </script>
 </body>
 </html>

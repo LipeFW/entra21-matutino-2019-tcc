@@ -125,6 +125,7 @@
     <Content Include="Content\image\gato-confuo.jpg" />
     <Content Include="Content\image\gatodandopinote.png" />
     <Content Include="Content\image\hamsterchavoso.png" />
+    <Content Include="Content\js\admin.js" />
     <Content Include="Content\js\lang.js" />
     <Content Include="Content\js\login.js" />
     <Content Include="Content\js\mostrarSenha.js" />
