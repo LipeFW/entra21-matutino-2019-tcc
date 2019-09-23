@@ -43,7 +43,7 @@
 
         function alterar($nome, $telefone, $cnpj, $cpf, $cep, $vendedor) {
             $.ajax({
-                url: 'http://localhost:51242/cliente/update',
+                url: 'http://localhost:51242/cliente/editar',
                 method: 'post',
                 data: {
                     id: $idAlterar,
