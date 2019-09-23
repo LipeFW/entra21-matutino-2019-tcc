@@ -30,8 +30,8 @@
             url: 'http://localhost:51242/Marca/update',
             method: 'post',
             data: {
-                id = $idAlterar,
-                nome = $nome
+                id: $idAlterar,
+                nome: $nome
             },
             success: function (data) {
                 $('#modal-marca').modal('hide');
@@ -49,7 +49,7 @@
             url: 'http://localhost:51242/Marca/inserir',
             method: 'post',
             data: {
-                nome = $nome
+                nome: $nome
             },
             success: function (data) {
                 $('#modal-marca').modal('hide');

@@ -1,0 +1,38 @@
+﻿<link href="~/Content/theme/global_assets/css/icons/fontawesome/styles.min.css" rel="stylesheet" type="text/css" />
+
+<div class="modal" tabindex="-1" role="dialog" id="modal-modelo">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">@View.Resources.Resource.CadastrodeModelo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="modelo-campo-categoria">@View.Resources.Resource.Marca</label>
+                    <select class="form-control"
+                            id="modelo-campo-categoria">
+                        <option disabled="disabled"
+                                selected="selected">
+                            @View.Resources.Resource.Selecioneumamarca
+                        </option>
+                        @foreach (Model.Marca marca in ViewBag.Marcas)
+                        {
+                            <option value="@marca.Id">@marca.Nome</option>
+                        }
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="modelo-campo-nome">@View.Resources.Resource.Nome</label>
+                    <input id="modelo-campo-nome" class="form-control" />
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-danger" data-dismiss="modal"><i class="fas fa-times"></i> @View.Resources.Resource.Cancelar</button>
+                <button id="modelo-botao-salvar" type="button" class="btn btn-success"><i class="fas fa-save"></i>  @View.Resources.Resource.Salvar</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -9,7 +9,7 @@ using System.Web.Mvc;
 namespace View.Controllers
 {
     [Route("modelo/")]
-    public class ModeloController : Controller
+    public class ModeloController : BaseController
     {
         private ModeloRepository repository;
         private MarcaRepository repositoryMarca;

@@ -516,4 +516,10 @@
   <data name="Modelos" xml:space="preserve">
     <value>string</value>
   </data>
+  <data name="NovoModelo" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="CadastrodeModelo" xml:space="preserve">
+    <value>string</value>
+  </data>
 </root>

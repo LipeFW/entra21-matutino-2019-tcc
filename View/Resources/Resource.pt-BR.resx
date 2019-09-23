@@ -468,4 +468,10 @@
   <data name="Modelos" xml:space="preserve">
     <value>Modelos</value>
   </data>
+  <data name="NovoModelo" xml:space="preserve">
+    <value>Novo Modelo</value>
+  </data>
+  <data name="CadastrodeModelo" xml:space="preserve">
+    <value>Cadastro de Modelo</value>
+  </data>
 </root>

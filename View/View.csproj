@@ -2663,7 +2663,6 @@
     <Content Include="Scripts\jquery-3.4.1.min.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
-    <Content Include="Scripts\Login\mostrarSenha.js" />
     <Content Include="Scripts\Marca\marca.js" />
     <Content Include="Scripts\Mascaras\jquery.mask.js" />
     <Content Include="Scripts\Mascaras\jquery.mask.min.js" />
@@ -2777,6 +2776,7 @@
     <Content Include="Views\Marca\Index.cshtml" />
     <Content Include="Views\Marca\MarcaModal.cshtml" />
     <Content Include="Views\Modelo\Index.cshtml" />
+    <Content Include="Views\Modelo\ModeloModal.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -2787,6 +2787,7 @@
   <ItemGroup>
     <Folder Include="Content\fonts\" />
     <Folder Include="Models\" />
+    <Folder Include="Scripts\Login\" />
     <Folder Include="Views\Base\" />
     <Folder Include="Views\Filtro\" />
     <Folder Include="Views\NotaFiscal\" />
