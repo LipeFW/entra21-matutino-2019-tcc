@@ -473,7 +473,12 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (2, 'Williams Lake',1),
 /*<--/Cidades do Colúmbia Britânica-->*/
 /*<--Cidades do Ilha do Principe Eduardo-->*/
-
+(3, 'Alberton', 1),
+(3, 'Charlottetown', 1),
+(3, 'Kensington', 1),
+(3, 'Montague', 1),
+(3, 'Souris', 1),
+(3, 'Summerside', 1),
 /*<--/Cidades do Ilha do Principe Eduardo-->*/
 /*<--Cidades do Monitoba-->*/
 (4, 'Altona', 1),
