@@ -28,7 +28,7 @@ namespace View.Controllers
                 listaPaises.Add(new { id = pais.Id, text = pais.Nome });
             }
 
-            var resultado = new { results =  listaPaises };
+            var resultado = new { results = listaPaises };
             return Json(resultado, JsonRequestBehavior.AllowGet);
         }
 

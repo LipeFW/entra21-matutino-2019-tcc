@@ -11,7 +11,7 @@
             { 'data': 'Telefone' },
             { 'data': 'CNPJ' },
             { 'data': 'CEP' },
-            { 'data': 'Vendedor.Nome'},
+            { 'data': 'Vendedor.Nome' },
             {
                 render: function (data, type, row) {
                     return '<button class="btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button>\<button class="btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>'
@@ -27,7 +27,7 @@
         $cep = $('#cliente-campo-cep').val();
         $vendedor = $('#cliente-campo-vendedor').val();
 
-        if (($nome.trim() == "") || ($telefone.trim == "") || ($cnpj == "") || ($cpf == "") || ($cep == "")){
+        if (($nome.trim() == "") || ($telefone.trim == "") || ($cnpj == "") || ($cpf == "") || ($cep == "")) {
             alert("Preencha corretamente os campos!");
             return null;
         }
@@ -41,68 +41,68 @@
         }
     });
 
-        function alterar($nome, $telefone, $cnpj, $cpf, $cep, $vendedor) {
-            $.ajax({
-                url: 'http://localhost:51242/cliente/editar',
-                method: 'post',
-                data: {
-                    id: $idAlterar,
-                    nome: $nome,
-                    telefone: $telefone,
-                    cnpj: $cnpj,
-                    cep: $cep,
-                    idVendedor: $vendedor
-                },
-                success: function (data) {
-                    $('#modal-cliente').modal('hide');
-                    $idAlterar = -1;
-                    $tabelaCliente.ajax.reload();
-                },
-                error: function (err) {
-                    alert('Não foi possivel alterar');
-                }
-            })
-        }
+    function alterar($nome, $telefone, $cnpj, $cpf, $cep, $vendedor) {
+        $.ajax({
+            url: 'http://localhost:51242/cliente/editar',
+            method: 'post',
+            data: {
+                id: $idAlterar,
+                nome: $nome,
+                telefone: $telefone,
+                cnpj: $cnpj,
+                cep: $cep,
+                idVendedor: $vendedor
+            },
+            success: function (data) {
+                $('#modal-cliente').modal('hide');
+                $idAlterar = -1;
+                $tabelaCliente.ajax.reload();
+            },
+            error: function (err) {
+                alert('Não foi possivel alterar');
+            }
+        })
+    }
 
-        function inserir($nome, $telefone, $cnpj, $cpf, $cep, $vendedor) {
-            $.ajax({
-                url: 'http://localhost:51242/cliente/inserir',
-                method: 'post',
-                data: {
-                    nome: $nome,
-                    telefone: $telefone,
-                    cnpj: $cnpj,
-                    cep: $cep,
-                    idVendedor: $vendedor
-                },
-                success: function (data) {
-                    $('#modal-cliente').modal('hide');
-                    alert('Registro inserido com Sucesso');
-                    $tabelaCliente.ajax.reload();
-                },
-                error: function (err) {
-                    alert('Não foi possivel cadastrar o cliente');
-                }
-            });
-        }
+    function inserir($nome, $telefone, $cnpj, $cpf, $cep, $vendedor) {
+        $.ajax({
+            url: 'http://localhost:51242/cliente/inserir',
+            method: 'post',
+            data: {
+                nome: $nome,
+                telefone: $telefone,
+                cnpj: $cnpj,
+                cep: $cep,
+                idVendedor: $vendedor
+            },
+            success: function (data) {
+                $('#modal-cliente').modal('hide');
+                alert('Registro inserido com Sucesso');
+                $tabelaCliente.ajax.reload();
+            },
+            error: function (err) {
+                alert('Não foi possivel cadastrar o cliente');
+            }
+        });
+    }
 
 
     $(".table").on("click", ".botao-apagar", function () {
         $idApagar = $(this).data("id");
         var confirmacao = confirm("Deseja realmente apagar o registro?")
         if (confirmacao == true) {
-        $.ajax({
-            url: "http://localhost:51242/Cliente/Apagar?id=" + $idApagar,
-            method: "get",
-            success: function (data) {
-                alert("Registro Apagado Com Sucesso")
-                $tabelaCliente.ajax.reload();
+            $.ajax({
+                url: "http://localhost:51242/Cliente/Apagar?id=" + $idApagar,
+                method: "get",
+                success: function (data) {
+                    alert("Registro Apagado Com Sucesso")
+                    $tabelaCliente.ajax.reload();
 
-            },
-            error: function (err) {
-                alert('Não Foi Possível Apagar');
-            }
-        });
+                },
+                error: function (err) {
+                    alert('Não Foi Possível Apagar');
+                }
+            });
         }
     });
 

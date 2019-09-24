@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Repository.Repositories
 {
-    public class VendedorRepository: IVendedorRepository
+    public class VendedorRepository : IVendedorRepository
     {
         public SystemContext context;
         public VendedorRepository()
@@ -26,18 +26,18 @@ namespace Repository.Repositories
             vendedorOriginal.Nome = vendedor.Nome;
             vendedorOriginal.IdUsuario = vendedor.IdUsuario;
             vendedorOriginal.IdVeiculo = vendedor.IdVeiculo;
-            
+
             int quantidadeAfetada = context.SaveChanges();
             return quantidadeAfetada == 1;
         }
-            public int Inserir(Vendedor vendedor)
+        public int Inserir(Vendedor vendedor)
         {
             vendedor.RegistroAtivo = true;
             context.Vendedores.Add(vendedor);
             context.SaveChanges();
             return vendedor.Id;
         }
-        public Vendedor ObterPeloId( int id)
+        public Vendedor ObterPeloId(int id)
         {
             return context.Vendedores.Include("Usuario").Include("Veiculo").FirstOrDefault(x => x.Id == id);
         }
