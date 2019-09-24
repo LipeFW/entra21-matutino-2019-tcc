@@ -11,10 +11,9 @@ namespace View.Controllers
     [Route("venda/")]
     public class VendaController : BaseController
     {
-        private VendaRepository repository;
+        VendaRepository repository;
         private VendedorRepository repositoryVendedor;
         private ClienteRepository repositoryCliente;
-        private ProdutoRepository repositoryProduto;
 
 
         public VendaController()
@@ -22,7 +21,6 @@ namespace View.Controllers
             repository = new VendaRepository();
             repositoryVendedor = new VendedorRepository();
             repositoryCliente = new ClienteRepository();
-            repositoryProduto = new ProdutoRepository();
         }
         [HttpGet, Route("obtertodos")]
         public JsonResult ObterTodos()
@@ -32,17 +30,15 @@ namespace View.Controllers
             return Json(resultado, JsonRequestBehavior.AllowGet);
         }
 
-        [HttpPost, Route("inserir")]
-        public ActionResult Inserir(Venda venda)
+        [HttpPost, Route("cadastro")]
+        public ActionResult Cadastro(Venda venda)
         {
-            venda.RegistroAtivo = true;
-            var id = repository.Inserir(venda);
-            var resultado = new { id = id };
-            return Json(resultado, JsonRequestBehavior.AllowGet);
+            int id = repository.Inserir(venda);
+            return RedirectToAction("Editar", new { id = id });
         }
 
-        [HttpPost, Route("editar")]
-        public JsonResult Editar(Venda venda)
+        [HttpPost, Route("update")]
+        public JsonResult Update(Venda venda)
         {
             var alterou = repository.Alterar(venda);
             var resultado = new { status = alterou };
@@ -72,8 +68,6 @@ namespace View.Controllers
             ViewBag.Vendedores = vendedores;
             List<Cliente> clientes = repositoryCliente.ObterTodos();
             ViewBag.Clientes = clientes;
-            List<Produto> produtos = repositoryProduto.ObterTodos();
-            ViewBag.Produtos = produtos;
             return View();
         }
 
@@ -87,11 +81,16 @@ namespace View.Controllers
             List<Cliente> clientes = clienteRepository.ObterTodos();
             ViewBag.Clientes = clientes;
 
-            ProdutoRepository produtoRepository = new ProdutoRepository();
-            List<Produto> produtos = produtoRepository.ObterTodos();
-            ViewBag.Produtos = produtos;
 
             return View();
+        }
+
+        [HttpPost, Route("editar")]
+        public JsonResult Editar(Venda venda)
+        {
+            var alterou = repository.Alterar(venda);
+            var resultado = new { status = alterou };
+            return Json(resultado, JsonRequestBehavior.AllowGet);
         }
 
         [HttpGet]

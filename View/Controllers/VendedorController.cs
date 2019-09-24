@@ -83,8 +83,7 @@ namespace View.Controllers
         {
             var vendedores = repository.ObterTodos();
 
-            List<object> vendedoresSelect2 =
-                new List<object>();
+            List<object> vendedoresSelect2 = new List<object>();
             foreach (Vendedor vendedor in vendedores)
             {
                 vendedoresSelect2.Add(new
@@ -93,12 +92,8 @@ namespace View.Controllers
                     text = vendedor.Nome
                 });
             }
-            var resultado = new
-            {
-                results = vendedoresSelect2
-            };
-            return Json(resultado,
-                JsonRequestBehavior.AllowGet);
+            var resultado = new { results = vendedoresSelect2 };
+            return Json(resultado, JsonRequestBehavior.AllowGet);
         }
     }
 }

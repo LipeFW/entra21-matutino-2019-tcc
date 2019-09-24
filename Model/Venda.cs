@@ -14,9 +14,6 @@ namespace Model
         [Key, Column("id")]
         public int Id { get; set; }
 
-        [Column("quantidade")]
-        public int Quantidade { get; set; }
-
         [Column("id_vendedor")]
         public int IdVendedor { get; set; }
 
@@ -29,17 +26,8 @@ namespace Model
         [ForeignKey("IdCliente")]
         public Cliente Cliente { get; set; }
 
-        [Column("id_produto")]
-        public int IdProduto { get; set; }
-
-        [ForeignKey("IdProduto")]
-        public Produto Produto { get; set; }
-
-        [Column("total")]
-        public decimal Total { get; set; }
-
-        [Column("desconto")]
-        public decimal Desconto { get; set; }
+        [Column("descricao")]
+        public string Descricao { get; set; }
 
         [Column("registro_ativo")]
         public bool RegistroAtivo { get; set; }

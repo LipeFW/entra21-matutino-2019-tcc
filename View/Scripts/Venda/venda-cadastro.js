@@ -1,7 +1,14 @@
 ﻿$(function () {
     $("#venda-cliente").select2({
         ajax: {
-            url: "/pessoa/obtertodosselect2",
+            url: "/cliente/obtertodosselect2",
+            dataType: "json"
+        }
+    });
+
+    $("#venda-vendedor").select2({
+        ajax: {
+            url: "/vendedor/obtertodosselect2",
             dataType: "json"
         }
     });

@@ -1,4 +1,4 @@
-﻿DROP TABLE IF EXISTS notas_fiscais, rotas, vendas, clientes,vendedores, rotas, produtos,inventarios, veiculos, modelos, categorias, marcas, usuarios, cidades, estados, paises;
+﻿DROP TABLE IF EXISTS notas_fiscais, rotas,produtos, vendas, clientes,vendedores, rotas, inventarios, veiculos, modelos, categorias, marcas, usuarios, cidades, estados, paises;
 
 CREATE TABLE paises(
 id INT PRIMARY KEY IDENTITY(1,1),
@@ -456,7 +456,7 @@ FOREIGN KEY(id_pais) REFERENCES paises (id)
 /*ID 347*/(23, 'Saint Patrick', 1),
 /*ID 348*/(23, 'San Fernando', 1),
 /*ID 349*/(23, 'Tobago', 1),
-/*ID 350*/(23, 'Victoria', 1);
+/*ID 350*/(23, 'Victoria', 1),
 /*<--/Trinidad & Tobago-->*/
 /*<--/América Central (ID:4 - 23)-->*/
 /*<--América do Sul (ID:24 - 35)-->*/
@@ -718,7 +718,7 @@ FOREIGN KEY(id_pais) REFERENCES paises (id)
 /*ID 568*/(35, 'Zulia', 1),
 /*ID 569*/(35, 'Dependencias Federales', 1),
 /*ID 570*/(35, 'Distrito Federal', 1),
-/*ID 571*/(35, 'Vargas', 1),
+/*ID 571*/(35, 'Vargas', 1);
 /*<--/Venezuela-->*/
 /*<--/América do Sul-->*/
 CREATE TABLE cidades(
@@ -1467,7 +1467,7 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Cidades do Yukon-->*/
 (1, 'Haines Junction', 1),
 (1, 'Mayo', 1),
-(1, 'Whitehorse', 1),
+(1, 'Whitehorse', 1);
 /*<--/Cidades do Yukon-->*/
 /*<--/Canada-->*/
 /*<--América do Sul-->*/
@@ -1571,34 +1571,31 @@ FOREIGN KEY(id_vendedor) REFERENCES vendedores(id)
 INSERT INTO clientes(nome, telefone, cnpj, cpf, cep, registro_ativo, id_vendedor)
 VALUES ('Pedro', '(47) 99158-1254', '08.371.556/0001-04', '241.586.758-63', '89085-578', 1, 1);
 
-CREATE TABLE produtos(
-id INT PRIMARY KEY IDENTITY(1,1),
-nome VARCHAR(50),
-id_categoria INT,
-codigo_barra VARCHAR(30),
-quantidade_produto INT,
-valor_unitario DECIMAL(8,2),
-FOREIGN KEY (id_categoria) REFERENCES categorias(id),
-registro_ativo BIT);
-
-INSERT INTO produtos(id_categoria,nome, codigo_barra, quantidade_produto, valor_unitario, registro_ativo)
-VALUES (1,'Toddynho', '173937229417429475205792634916', 1, 1, 1);
-
 CREATE TABLE vendas(
 id INT PRIMARY KEY IDENTITY(1,1),
-quantidade INT,
+descricao TEXT,
 id_vendedor INT,
 id_cliente INT,
-id_produto INT,
 FOREIGN KEY (id_vendedor) REFERENCES vendedores(id),
 FOREIGN KEY (id_cliente) REFERENCES clientes(id),
-FOREIGN KEY (id_produto) REFERENCES produtos(id),
-total DECIMAL(8,2),
-desconto DECIMAL(8,2),
 registro_ativo BIT);
 
-INSERT INTO vendas(quantidade,id_vendedor,id_cliente,id_produto, registro_ativo, total, desconto)
-VALUES (1, 1, 1, 1, 1, 100, 10);
+INSERT INTO vendas(id_vendedor,descricao,id_cliente, registro_ativo)
+VALUES (1,'teste', 1, 1);
+
+CREATE TABLE produtos(
+id INT PRIMARY KEY IDENTITY(1,1),
+id_venda INT,
+id_categoria INT,
+nome VARCHAR(50),
+quantidade INT,
+valor DECIMAL(8,2),
+FOREIGN KEY(id_venda) REFERENCES vendas(id),
+FOREIGN KEY(id_categoria) REFERENCES categorias(id),
+registro_ativo BIT);
+
+INSERT INTO produtos(id_venda,nome, quantidade, valor, registro_ativo)
+VALUES (1,'Toddynho', 1, 1, 1);
 
 CREATE TABLE rotas(
 id INT PRIMARY KEY IDENTITY(1,1),
