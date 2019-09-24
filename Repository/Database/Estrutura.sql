@@ -1470,7 +1470,141 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (1, 'Whitehorse', 1),
 /*<--/Cidades do Yukon-->*/
 /*<--/Canada-->*/
-/*<--América do Sul -->*/
+/*<--América do Sul-->*/
+/*<--Argentina-->*/
+/*<--Buenos Aires-->*/
+(351, 'Azul', 1),
+(351, 'Bahia Blanca', 1),
+(351, 'Campana', 1),
+(351, 'Chacabuco', 1),
+(351, 'Chivilcoy', 1),
+(351, 'Dolores', 1),
+(351, 'Junin', 1),
+(351, 'La Plata', 1),
+(351, 'Lincoln', 1),
+(351, 'Lujan', 1),
+(351, 'Mar Del Plata', 1),
+(351, 'Mercedes', 1),
+(351, 'Necochea', 1),
+(351, 'Nueve De Julio', 1),
+(351, 'Olavarria', 1),
+(351, 'Pergamino', 1),
+(351, 'Punta Alta', 1),
+(351, 'San Nicolas', 1),
+(351, 'San Pedro', 1),
+(351, 'San Vicente', 1),
+(351, 'Tandil', 1),
+(351, 'Tres Arroyos', 1),
+(351, 'Veinticinco De Mayo', 1),
+(351, 'Zarate', 1),
+/*<--/Buenos Aires-->*/
+/*<--Catamarca-->*/
+(352, 'Catamarca', 1),
+/*<--/Catamarca-->*/
+/*<--Chaco-->*/
+(353, 'Presidencia Roque Saenz Pena', 1),
+(353, 'Resistencia', 1),
+/*<--/Chaco-->*/
+/*<--Chubut-->*/
+(354, 'Puerto Madryn', 1),
+(354, 'Rawson', 1),
+(354, 'Trelew', 1),
+/*<--/Chubut-->*/
+/*<--Cordoba-->*/
+(355, 'Alta Gracia', 1),
+(355, 'Bell Ville', 1),
+(355, 'Cordoba', 1),
+(355, 'Rio Cuarto', 1),
+(355, 'Rio Tercero', 1),
+(355, 'San Francisco', 1),
+(355, 'Villa Carlos Paz', 1),
+(355, 'Villa Maria', 1),
+/*<--/Cordoba-->*/
+/*<--Corrientes-->*/
+(356, 'Corrientes', 1),
+(356, 'Goya', 1),
+(356, 'Mercedes', 1),
+(356, 'San Lorenzo', 1),
+/*<--/Corrientes-->*/
+/*<--Distrito Federal-->*/
+(357, 'Comodoro Rivadavia', 1),
+/*<--/Distrito Federal-->*/
+/*<--Entre Rios-->*/
+(358, 'Concepcion Del Uruguay', 1),
+(358, 'Concordia', 1),
+(358, 'Gualeguay', 1),
+(358, 'Gualeguaychu', 1),
+(358, 'Parana', 1),
+(358, 'Victoria', 1),
+/*<--/Entre Rios-->*/
+/*<--Formosa-->*/
+(359, 'Formosa', 1),
+/*<--/Formosa-->*/
+/*<--Jujuy-->*/
+(360, 'Jujuy', 1),
+(360, 'Libertador General San Martin', 1),
+(360, 'San Pedro', 1),
+/*<--/Jujuy-->*/
+/*<--La Pampa-->*/
+(361, 'General Pico', 1);
+(361, 'Santa Rosa', 1);
+/*<--/La Pampa-->*/
+/*<--La Rioja-->*/
+(362, 'La Rioja', 1),
+/*<--/La Rioja-->*/
+/*<--Mendoza-->*/
+(363, 'Lujan', 1),
+(363, 'Mendoza', 1),
+(363, 'Rivadavia', 1),
+(363, 'San Martin', 1),
+(363, 'San Rafael', 1),
+/*<--/Mendoza-->*/
+/*<--Misiones-->*/
+(364, 'Eldorado', 1),
+(364, 'Obera', 1),
+(364, 'Posadas', 1),
+/*<--/Misiones-->*/
+/*<--Neuquen-->*/
+(365, 'Neuquen', 1),
+/*<--/Neuquen-->*/
+/*<--Rio Negro-->*/
+(366, 'General Roca', 1),
+(366, 'San Carlos De Bariloche', 1),
+(366, 'Viedma', 1),
+/*<--/Rio Negro-->*/
+/*<--Salta-->*/
+(367, 'Salta', 1),
+(367, 'San Ramon De La Nueva Oran', 1),
+(367, 'Tartagal', 1),
+/*<--/Salta-->*/
+/*<--San Juan-->*/
+(368, 'San Juan', 1),
+/*<--/San Juan-->*/
+/*<--San Luis-->*/
+(369, 'Mercedes', 1),
+(369, 'San Luis', 1),
+/*<--/San Luis-->*/
+/*<--Santa Cruz-->*/
+(370, 'Rio Gallegos', 1),
+/*<--/Santa Cruz-->*/
+/*<--Santa Fe-->*/
+(371, 'Rafaela', 1),
+(371, 'Reconquista', 1),
+(371, 'Rosario', 1),
+(371, 'Santa Fe', 1),
+(371, 'Venado Tuerto', 1),
+(371, 'Villa Constitucion', 1),
+/*<--/Santa Fe-->*/
+/*<--Santiago del Estero-->*/
+(372, 'Santiago Del Estero', 1),
+/*<--/Santiago del Estero-->*/
+/*<--Tierra del Fuego-->*/
+(373, 'Ushuaia', 1),
+/*<--/Tierra del Fuego-->*/
+/*<--Tucuman-->*/
+(374, 'Tucuman', 1),
+/*<--/Tucuman-->*/
+/*<--/Argentina-->*/
 /*<--/América do Sul-->*/
 CREATE TABLE usuarios( 
 id INT PRIMARY KEY IDENTITY(1,1),
