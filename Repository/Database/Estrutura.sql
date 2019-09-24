@@ -2223,7 +2223,268 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (20, 'West Columbia', 1),
 /*<--/Cidades do Carolina do  Sul-->*/
 /*<--/United States-->*/
-/*<--América do Sul -->*/
+/*<--América do Sul-->*/
+/*<--Argentina-->*/
+/*<--Buenos Aires-->*/
+(351, 'Azul', 1),
+(351, 'Bahia Blanca', 1),
+(351, 'Campana', 1),
+(351, 'Chacabuco', 1),
+(351, 'Chivilcoy', 1),
+(351, 'Dolores', 1),
+(351, 'Junin', 1),
+(351, 'La Plata', 1),
+(351, 'Lincoln', 1),
+(351, 'Lujan', 1),
+(351, 'Mar Del Plata', 1),
+(351, 'Mercedes', 1),
+(351, 'Necochea', 1),
+(351, 'Nueve De Julio', 1),
+(351, 'Olavarria', 1),
+(351, 'Pergamino', 1),
+(351, 'Punta Alta', 1),
+(351, 'San Nicolas', 1),
+(351, 'San Pedro', 1),
+(351, 'San Vicente', 1),
+(351, 'Tandil', 1),
+(351, 'Tres Arroyos', 1),
+(351, 'Veinticinco De Mayo', 1),
+(351, 'Zarate', 1),
+/*<--/Buenos Aires-->*/
+/*<--Catamarca-->*/
+(352, 'Catamarca', 1),
+/*<--/Catamarca-->*/
+/*<--Chaco-->*/
+(353, 'Presidencia Roque Saenz Pena', 1),
+(353, 'Resistencia', 1),
+/*<--/Chaco-->*/
+/*<--Chubut-->*/
+(354, 'Puerto Madryn', 1),
+(354, 'Rawson', 1),
+(354, 'Trelew', 1),
+/*<--/Chubut-->*/
+/*<--Cordoba-->*/
+(355, 'Alta Gracia', 1),
+(355, 'Bell Ville', 1),
+(355, 'Cordoba', 1),
+(355, 'Rio Cuarto', 1),
+(355, 'Rio Tercero', 1),
+(355, 'San Francisco', 1),
+(355, 'Villa Carlos Paz', 1),
+(355, 'Villa Maria', 1),
+/*<--/Cordoba-->*/
+/*<--Corrientes-->*/
+(356, 'Corrientes', 1),
+(356, 'Goya', 1),
+(356, 'Mercedes', 1),
+(356, 'San Lorenzo', 1),
+/*<--/Corrientes-->*/
+/*<--Distrito Federal-->*/
+(357, 'Comodoro Rivadavia', 1),
+/*<--/Distrito Federal-->*/
+/*<--Entre Rios-->*/
+(358, 'Concepcion Del Uruguay', 1),
+(358, 'Concordia', 1),
+(358, 'Gualeguay', 1),
+(358, 'Gualeguaychu', 1),
+(358, 'Parana', 1),
+(358, 'Victoria', 1),
+/*<--/Entre Rios-->*/
+/*<--Formosa-->*/
+(359, 'Formosa', 1),
+/*<--/Formosa-->*/
+/*<--Jujuy-->*/
+(360, 'Jujuy', 1),
+(360, 'Libertador General San Martin', 1),
+(360, 'San Pedro', 1),
+/*<--/Jujuy-->*/
+/*<--La Pampa-->*/
+(361, 'General Pico', 1);
+(361, 'Santa Rosa', 1);
+/*<--/La Pampa-->*/
+/*<--La Rioja-->*/
+(362, 'La Rioja', 1),
+/*<--/La Rioja-->*/
+/*<--Mendoza-->*/
+(363, 'Lujan', 1),
+(363, 'Mendoza', 1),
+(363, 'Rivadavia', 1),
+(363, 'San Martin', 1),
+(363, 'San Rafael', 1),
+/*<--/Mendoza-->*/
+/*<--Misiones-->*/
+(364, 'Eldorado', 1),
+(364, 'Obera', 1),
+(364, 'Posadas', 1),
+/*<--/Misiones-->*/
+/*<--Neuquen-->*/
+(365, 'Neuquen', 1),
+/*<--/Neuquen-->*/
+/*<--Rio Negro-->*/
+(366, 'General Roca', 1),
+(366, 'San Carlos De Bariloche', 1),
+(366, 'Viedma', 1),
+/*<--/Rio Negro-->*/
+/*<--Salta-->*/
+(367, 'Salta', 1),
+(367, 'San Ramon De La Nueva Oran', 1),
+(367, 'Tartagal', 1),
+/*<--/Salta-->*/
+/*<--San Juan-->*/
+(368, 'San Juan', 1),
+/*<--/San Juan-->*/
+/*<--San Luis-->*/
+(369, 'Mercedes', 1),
+(369, 'San Luis', 1),
+/*<--/San Luis-->*/
+/*<--Santa Cruz-->*/
+(370, 'Rio Gallegos', 1),
+/*<--/Santa Cruz-->*/
+/*<--Santa Fe-->*/
+(371, 'Rafaela', 1),
+(371, 'Reconquista', 1),
+(371, 'Rosario', 1),
+(371, 'Santa Fe', 1),
+(371, 'Venado Tuerto', 1),
+(371, 'Villa Constitucion', 1),
+/*<--/Santa Fe-->*/
+/*<--Santiago del Estero-->*/
+(372, 'Santiago Del Estero', 1),
+/*<--/Santiago del Estero-->*/
+/*<--Tierra del Fuego-->*/
+(373, 'Ushuaia', 1),
+/*<--/Tierra del Fuego-->*/
+/*<--Tucuman-->*/
+(374, 'Tucuman', 1),
+/*<--/Tucuman-->*/
+/*<--/Argentina-->*/
+/*<--Bolivia-->*/
+/*<--Chuquisaca-->*/
+(375, 'Camargo', 1),
+(375, 'Monteagudo', 1),
+(375, 'Padilla', 1),
+(375, 'Sucre', 1),
+(375, 'Tarabuco', 1),
+/*<--/Chuquisaca-->*/
+/*<--Cochabamba-->*/
+(376, 'Aiquile', 1),
+(376, 'Arani', 1),
+(376, 'Capinota', 1),
+(376, 'Chimore', 1),
+(376, 'Cliza', 1),
+(376, 'Cochabamba', 1),
+(376, 'Colomi', 1),
+(376, 'Irpa Irpa', 1),
+(376, 'Mizque', 1),
+(376, 'Punata', 1),
+(376, 'Sipe Sipe', 1),
+(376, 'Tarata', 1),
+/*<--/Cochabamba-->*/
+/*<--El Beni-->*/
+(377, 'Guayaramerin', 1),
+(377, 'Reyes', 1),
+(377, 'Riberalta', 1),
+(377, 'Rurrenabaque', 1),
+(377, 'San Borja', 1),
+(377, 'San Ramon', 1),
+(377, 'Santa Rosa', 1),
+(377, 'Trinidad', 1),
+/*<--/El Beni-->*/
+/*<--La Paz-->*/
+(378, 'Achacachi', 1),
+(378, 'Caranavi', 1),
+(378, 'Chulumani', 1),
+(378, 'Colquiri', 1),
+(378, 'Copacabana', 1),
+(378, 'Coripata', 1),
+(378, 'Coroico', 1),
+(378, 'Eucaliptus', 1),
+(378, 'Guanay', 1),
+(378, 'La Paz', 1),
+(378, 'Lahuachaca', 1),
+(378, 'Mapiri', 1),
+(378, 'Patacamaya', 1),
+(378, 'Quime', 1),
+(378, 'Sorata', 1),
+(378, 'Tipuani', 1),
+(378, 'Viloco', 1),
+/*<--/La Paz-->*/
+/*<--Oruro-->*/
+(379, 'Caracollo', 1),
+(379, 'Challapata', 1),
+(379, 'Huanuni', 1),
+(379, 'Machacamarca', 1),
+(379, 'Oruro', 1),
+(379, 'Poopo', 1),
+(379, 'Totoral', 1),
+/*<--/Oruro-->*/
+/*<--Pando-->*/
+(380, 'Cobija', 1),
+/*<--/Pando-->*/
+/*<--Potosi-->*/
+(381, 'Atocha', 1),
+(381, 'Betanzos', 1),
+(381, 'Colquechaca', 1),
+(381, 'Llallagua', 1),
+(381, 'Potosi', 1),
+(381, 'Santa Barbara', 1),
+(381, 'Tupiza', 1),
+(381, 'Uncia', 1),
+(381, 'Uyuni', 1),
+(381, 'Villazon', 1),
+/*<--/Potosi-->*/
+/*<--Santa Cruz-->*/
+(382, 'Abapo', 1),
+(382, 'Ascension', 1),
+(382, 'Boyuibe', 1),
+(382, 'Buena Vista', 1),
+(382, 'Camiri', 1),
+(382, 'Charagua', 1),
+(382, 'Comarapa', 1),
+(382, 'Concepcion', 1),
+(382, 'Cotoca', 1),
+(382, 'El Carmen', 1),
+(382, 'El Torno', 1),
+(382, 'Jorochito', 1),
+(382, 'La Belgica', 1),
+(382, 'La Guardia', 1),
+(382, 'Limoncito', 1),
+(382, 'Los Negros', 1),
+(382, 'Mairana', 1),
+(382, 'Mineros', 1),
+(382, 'Montero', 1),
+(382, 'Pailon', 1),
+(382, 'Portachuelo', 1),
+(382, 'Puerto Pailas', 1),
+(382, 'Puerto Quijarro', 1),
+(382, 'Puerto Suarez', 1),
+(382, 'Robore', 1),
+(382, 'Samaipata', 1),
+(382, 'San Carlos', 1),
+(382, 'San Ignacio', 1),
+(382, 'San Javier', 1),
+(382, 'San Joaquin', 1),
+(382, 'San Jose', 1),
+(382, 'San Julian', 1),
+(382, 'San Matias', 1),
+(382, 'San Miguel', 1),
+(382, 'San Pedro', 1),
+(382, 'San Rafael', 1),
+(382, 'San Ramon', 1),
+(382, 'Santa Rita', 1),
+(382, 'Santa Rosa', 1),
+(382, 'Urubicha', 1),
+(382, 'Warnes', 1),
+/*<--/Santa Cruz-->*/
+/*<--Tarija-->*/
+(383, 'Bermejo', 1),
+(383, 'Entre Rios', 1),
+(383, 'San Lorenzo', 1),
+(383, 'Tarija', 1),
+(383, 'Villamontes', 1),
+(383, 'Yacuiba', 1),
+/*<--/Tarija-->*/
+/*<--/Bolivia-->*/
 /*<--/América do Sul-->*/
 CREATE TABLE usuarios( 
 id INT PRIMARY KEY IDENTITY(1,1),
