@@ -19,8 +19,7 @@
             }
         ]
     });
-
-
+    
     $('#veiculo-botao-salvar').on('click', function () {
         $marca = $('#veiculo-campo-marca').val();
         $modelo = $('#veiculo-campo-modelo').val();
@@ -34,7 +33,6 @@
             alterar($marca, $modelo, $anoFabricacao, $numeroCaminhao, $placa);
         }
 
-        //Arrumar
         function alterar($marca, $modelo, $anoFabricacao, $numeroCaminhao, $placa) {
             $.ajax({
                 url: 'http://localhost:51242/veiculo/update',
@@ -49,15 +47,15 @@
                 },
                 success: function (data) {
                     $('#modal-veiculo').modal('hide');
+                    limparCampos();
                     $idAlterar = -1;
                     $tabelaVeiculo.ajax.reload();
                 },
                 error: function (err) {
                     alert('Não foi possivel alterar');
                 }
-            })
+            });
         }
-
 
         function inserir($marca, $modelo, $anoFabricacao, $numeroCaminhao, $placa) {
             $.ajax({
@@ -72,15 +70,16 @@
                 },
                 success: function (data) {
                     $('#modal-veiculo').modal('hide');
+                    limparCampos();
                     $tabelaVeiculo.ajax.reload();
                     alert('Registro inserido com Sucesso');
                 },
                 error: function (err) {
                     alert('Não foi possivel inserir');
                 }
-            })
+            });
         }
-    })
+    });
 
     $('.table').on('click', '.botao-apagar', function () {
         $idApagar = $(this).data('id');
@@ -119,6 +118,15 @@
             error: function (err) {
                 alert('Não foi possivel carregar');
             }
-        })
+        });
     });
+
+    function limparCampos() {
+        $("#veiculo-campo-marca").val("");
+        $("#veiculo-campo-modelo").val("");
+        $("#veiculo-campo-anofabricacao").val("");
+        $("#veiculo-campo-numerocaminhao").val("");
+        $("#veiculo-campo-placa").val("");
+        $idAlterar = -1;
+    }
 });

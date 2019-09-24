@@ -18,7 +18,6 @@ namespace Repository.Repositories
             context = new SystemContext();
         }
 
-
         public bool Apagar(int id)
         {
             var produto = context.Produtos.FirstOrDefault(x => x.Id == id);
@@ -37,7 +36,6 @@ namespace Repository.Repositories
             context.Produtos.Add(produto);
             context.SaveChanges();
             return produto.Id;
-
         }
 
         public Produto ObterPeloId(int id)

@@ -11,7 +11,6 @@ namespace View.Controllers
 {
     public class HomeController : BaseController
     {
-
         public ActionResult Change(String lang)
         {
             if (lang != null)
@@ -24,7 +23,6 @@ namespace View.Controllers
                 Response.Cookies.Add(cookie);
             }
             return Redirect(Request.UrlReferrer.ToString());
-
         }
 
         // GET: Home
@@ -32,8 +30,5 @@ namespace View.Controllers
         {
             return View();
         }
-
-
-
     }
 }

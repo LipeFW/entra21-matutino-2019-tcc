@@ -15,13 +15,13 @@ namespace View.Controllers
         private VendedorRepository repositoryVendedor;
         private ClienteRepository repositoryCliente;
 
-
         public VendaController()
         {
             repository = new VendaRepository();
             repositoryVendedor = new VendedorRepository();
             repositoryCliente = new ClienteRepository();
         }
+
         [HttpGet, Route("obtertodos")]
         public JsonResult ObterTodos()
         {
@@ -63,7 +63,6 @@ namespace View.Controllers
 
         public ActionResult Index()
         {
-
             List<Vendedor> vendedores = repositoryVendedor.ObterTodos();
             ViewBag.Vendedores = vendedores;
             List<Cliente> clientes = repositoryCliente.ObterTodos();

@@ -19,7 +19,6 @@ namespace Repository.Repositories
 
         }
 
-
         public bool Apagar(int id)
         {
             var veiculo = context.Veiculos.FirstOrDefault(x => x.Id == id);
@@ -31,7 +30,6 @@ namespace Repository.Repositories
             return quantidadeAfetada == 1;
 
         }
-
 
         public int Inserir(Veiculo veiculo)
         {
@@ -48,12 +46,12 @@ namespace Repository.Repositories
 
         }
 
-
         public List<Veiculo> ObterTodos()
         {
             return context.Veiculos.Where(x => x.RegistroAtivo == true).Include("Marca").Include("Modelo").ToList();
 
         }
+
         public bool Alterar(Veiculo veiculo)
         {
             var veiculoOriginal = context.Veiculos.FirstOrDefault(x => x.Id == veiculo.Id);
@@ -71,11 +69,5 @@ namespace Repository.Repositories
             int quantidadeafetada = context.SaveChanges();
             return quantidadeafetada == 1;
         }
-
-
-
-
-
-
     }
 }

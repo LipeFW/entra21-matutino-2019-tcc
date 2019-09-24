@@ -10,20 +10,16 @@ namespace Repository.Repositories
 {
     public class InventarioRepository
     {
-
         private SystemContext context;
 
         public InventarioRepository()
         {
             context = new SystemContext();
-
         }
 
         public List<Inventario> ObterTodos()
         {
             return context.Inventarios.Where(x => x.RegistroAtivo == true).ToList();
-
         }
-
     }
 }

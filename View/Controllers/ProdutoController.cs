@@ -44,7 +44,6 @@ namespace View.Controllers
             return Json(resultado, JsonRequestBehavior.AllowGet);
         }
 
-
         [HttpPost, Route("inserir")]
         public ActionResult Inserir(Produto produto)
         {
@@ -54,8 +53,7 @@ namespace View.Controllers
             return Json(resultado,
               JsonRequestBehavior.AllowGet);
         }
-
-
+        
         [HttpGet, Route("apagar")]
         public JsonResult Apagar(int id)
         {

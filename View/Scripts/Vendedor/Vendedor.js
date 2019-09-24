@@ -34,7 +34,6 @@
         else {
             alterar($nome, $usuario, $veiculo);
         }
-
     });
 
     function alterar($nome, $usuario, $veiculo) {
@@ -49,6 +48,7 @@
             },
             success: function (data) {
                 $('#modal-vendedor').modal('hide');
+                limparCampos();
                 $idAlterar = -1;
                 $tabelaVendedor.ajax.reload();
                 alert("Registro alterado com sucesso");
@@ -56,7 +56,7 @@
             error: function (err) {
                 alert("Não foi possivel alterar");
             }
-        })
+        });
     }
 
     function inserir($nome, $usuario, $veiculo) {
@@ -70,13 +70,14 @@
             },
             success: function (data) {
                 $('#modal-vendedor').modal('hide');
+                limparCampos();
                 $tabelaVendedor.ajax.reload();
                 alert("Registro inserido com sucesso");
             },
             error: function (err) {
                 alert("Não foi possivel inserir");
             }
-        })
+        });
     }
 
     $('.table').on('click', '.botao-apagar', function () {
@@ -112,6 +113,13 @@
             error: function (err) {
                 alert("Não foi possivel carregar");
             }
-        })
+        });
     });
+
+    function limparCampos() {
+        $('#vendedor-campo-nome').val("");
+        $('#vendedor-campo-usuario').val("");
+        $('#vendedor-campo-veiculo').val("");
+        $idAlterar = -1;
+    }
 });

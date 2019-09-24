@@ -18,6 +18,5 @@ namespace Repository.Interface
         bool Apagar(int id);
 
         Categoria ObterPeloId(int id);
-
     }
 }

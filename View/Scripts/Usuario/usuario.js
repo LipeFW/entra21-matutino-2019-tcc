@@ -1,5 +1,4 @@
 ﻿$(function () {
-
     $idAlterar = -1;
 
     $tabelaUsuario = $('#usuario-tabela').DataTable({
@@ -44,13 +43,14 @@
                 },
                 success: function (data) {
                     $("#modal-usuario").modal("hide");
+                    limparCampos();
                     $idAlterar = -1;
                     $tabelaUsuario.ajax.reload();
                 },
                 error: function (err) {
                     alert("Não foi possível alterar");
                 }
-            })
+            });
         }
 
         function inserir($nome, $senha) {
@@ -63,13 +63,14 @@
                 },
                 success: function (data) {
                     $("#modal-usuario").modal('hide');
+                    limparCampos();
                     $tabelaUsuario.ajax.reload();
                     alert("Registro Inserido Com Sucesso");
                 },
                 error: function (err) {
                     alert("Não Foi Possível Inserir")
                 }
-            })
+            });
         }
     })
 
@@ -107,6 +108,12 @@
             error: function (err) {
                 alert("Não Foi Possível Carregar");
             }
-        })
+        });
     });
+
+    function limparCampos() {
+        $nome = $("#usuario-campo-nome").val("");
+        $senha = $("#usuario-campo-senha").val("");
+        $idAlterar = -1;
+    }
 });

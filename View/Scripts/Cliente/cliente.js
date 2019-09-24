@@ -1,5 +1,4 @@
 ﻿$(function () {
-
     $idAlterar = -1;
 
     $tabelaCliente = $('#cliente-tabela').DataTable({
@@ -55,6 +54,7 @@
             },
             success: function (data) {
                 $('#modal-cliente').modal('hide');
+                limparCampos();
                 $idAlterar = -1;
                 $tabelaCliente.ajax.reload();
             },
@@ -77,6 +77,7 @@
             },
             success: function (data) {
                 $('#modal-cliente').modal('hide');
+                limparCampos();
                 alert('Registro inserido com Sucesso');
                 $tabelaCliente.ajax.reload();
             },
@@ -85,7 +86,6 @@
             }
         });
     }
-
 
     $(".table").on("click", ".botao-apagar", function () {
         $idApagar = $(this).data("id");
@@ -112,14 +112,12 @@
         $.ajax({
             url: 'http://localhost:51242/cliente/obterpeloid?id=' + $idAlterar,
             method: 'get',
-
             success: function (data) {
                 $('#cliente-campo-nome').val(data.Nome);
                 $('#cliente-campo-telefone').val(data.Telefone);
                 $('#cliente-campo-cnpj').val(data.CNPJ);
                 $('#cliente-campo-cep').val(data.CEP);
-                $('#cliente-campo-vendedor').val(data.Vendedor)
-
+                $('#cliente-campo-vendedor').val(data.Vendedor);
                 $('#modal-cliente').modal('show');
             },
             error: function (err) {
@@ -128,4 +126,12 @@
         });
     });
 
+    function limparCampos() {
+        $('#cliente-campo-nome').val("");
+        $('#cliente-campo-telefone').val("");
+        $('#cliente-campo-cnpj').val("");
+        $('#cliente-campo-cep').val("");
+        $('#cliente-campo-vendedor').val("");
+        $idAlterar = -1;
+    }
 });

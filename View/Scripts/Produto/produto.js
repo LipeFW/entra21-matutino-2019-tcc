@@ -1,5 +1,4 @@
 ﻿$(function () {
-
     $idAlterar = -1;
 
     $tabelaProduto = $("#produto-tabela").DataTable({
@@ -44,13 +43,14 @@
                 },
                 success: function (data) {
                     $("#modal-produto").modal("hide");
+                    limparCampos();
                     $idAlterar = -1;
                     $tabelaProduto.ajax.reload();
                 },
                 error: function (err) {
                     alert("Não foi possivel alterar o Produto");
                 }
-            })
+            });
         }
 
         function inserir($nome, $categoria,  $quantidade, $valor) {
@@ -65,13 +65,14 @@
                 },
                 success: function (data) {
                     $("#modal-produto").modal('hide');
+                    limparCampos();
                     $tabelaProduto.ajax.reload();
                     alert("Registro Inserido Com Sucesso")
                 },
                 error: function (err) {
                     alert('Não foi possivel inserir');
                 }
-            })
+            });
         }
     })
 
@@ -111,4 +112,13 @@
             }
         })
     });
+
+    function limparCampos() {
+        $("#produto-campo-nome").val("");
+        $("#produto-campo-categoria").val("");
+        $("#produto-campo-codigo").val("");
+        $("#produto-campo-quantidade").val("");
+        $("#produto-campo-valor").val("");
+        $idAlterar = -1;
+    }
 });

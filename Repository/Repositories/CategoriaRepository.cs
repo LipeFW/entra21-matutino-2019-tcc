@@ -11,7 +11,6 @@ namespace Repository.Repositories
 {
     public class CategoriaRepository : ICategoriaRepository
     {
-
         private SystemContext context;
         public CategoriaRepository()
         {
@@ -34,8 +33,7 @@ namespace Repository.Repositories
         public bool Apagar(int id)
         {
             var categoria = context.Categorias.FirstOrDefault(x => x.Id == id);
-
-
+            
             if (categoria == null)
             {
                 return false;
@@ -45,7 +43,6 @@ namespace Repository.Repositories
             int quantidadeAfetada = context.SaveChanges();
 
             return quantidadeAfetada == 1;
-
         }
 
         public int Inserir(Categoria categoria)
@@ -66,5 +63,4 @@ namespace Repository.Repositories
             return context.Categorias.Where(x => x.RegistroAtivo == true).OrderBy(x => x.Id).ToList();
         }
     }
-
 }

@@ -25,7 +25,6 @@ namespace View.Controllers
                 Response.Cookies.Add(cookie);
             }
             return Redirect(Request.UrlReferrer.ToString());
-
         }
 
         private UsuarioRepository repository;
@@ -144,10 +143,8 @@ namespace View.Controllers
                 Session["Usuario"] = usuario;
             }
 
-
             ViewData["Message"] = String.Format(" arquivo(s) salvo(s) com sucesso.");
             return RedirectToAction("config");
         }
-
     }
 }

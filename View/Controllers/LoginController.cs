@@ -9,7 +9,6 @@ namespace View.Controllers
 {
     public class LoginController : Controller
     {
-
         private UsuarioRepository repository;
 
         public LoginController()

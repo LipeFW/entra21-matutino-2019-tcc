@@ -16,6 +16,7 @@ namespace Repository.Repositories
         {
             context = new SystemContext();
         }
+
         public bool Alterar(Vendedor vendedor)
         {
             var vendedorOriginal = context.Vendedores.FirstOrDefault(x => x.Id == vendedor.Id);
@@ -37,10 +38,12 @@ namespace Repository.Repositories
             context.SaveChanges();
             return vendedor.Id;
         }
+
         public Vendedor ObterPeloId(int id)
         {
             return context.Vendedores.Include("Usuario").Include("Veiculo").FirstOrDefault(x => x.Id == id);
         }
+
         public bool Apagar(int id)
         {
             var vendedor = context.Vendedores.FirstOrDefault(x => x.Id == id);
@@ -50,6 +53,7 @@ namespace Repository.Repositories
             int quantidadeAfetada = context.SaveChanges();
             return quantidadeAfetada == 1;
         }
+
         public List<Vendedor> ObterTodos()
         {
             return context.Vendedores.Where(x => x.RegistroAtivo).Include("Veiculo").Include("Usuario").ToList();

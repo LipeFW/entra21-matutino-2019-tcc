@@ -38,6 +38,7 @@
             },
             success: function (data) {
                 $("#modal-rota").modal("hide");
+                limparCampos();
                 $idAlterar = -1;
                 $tabelaRota.ajax.reload();
             },
@@ -57,6 +58,7 @@
             },
             success: function (data) {
                 $("#modal-rota").modal('hide');
+                limparCampos();
                 alert('Registro inserido com Sucesso');
                 $tabelaRota.ajax.reload();
             },
@@ -98,6 +100,12 @@
             error: function (err) {
                 alert('Não foi possivel carregar')
             }
-        })
-    })
+        });
+    });
+
+    function limparCampos() {
+        $('#rota-campo-nome').val("");
+        $('#rota-campo-vendedor').val("");
+        $idAlterar = -1;
+    }
 });
