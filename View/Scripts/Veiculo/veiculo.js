@@ -49,6 +49,7 @@
                 },
                 success: function (data) {
                     $('#modal-veiculo').modal('hide');
+                    limparCampos();
                     $idAlterar = -1;
                     $tabelaVeiculo.ajax.reload();
                 },
@@ -72,6 +73,7 @@
                 },
                 success: function (data) {
                     $('#modal-veiculo').modal('hide');
+                    limparCampos();
                     $tabelaVeiculo.ajax.reload();
                     alert('Registro inserido com Sucesso');
                 },
@@ -121,4 +123,13 @@
             }
         })
     });
+
+    function limparCampos() {
+        $("#veiculo-campo-marca").val("");
+        $("#veiculo-campo-modelo").val("");
+        $("#veiculo-campo-anofabricacao").val("");
+        $("#veiculo-campo-numerocaminhao").val("");
+        $("#veiculo-campo-placa").val("");
+        $idAlterar = -1;
+    }
 });

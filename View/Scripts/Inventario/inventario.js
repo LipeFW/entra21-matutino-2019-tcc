@@ -35,6 +35,7 @@
             },
             success: function (data) {
                 $('#modal-inventario').modal('hide');
+                limparCampos();
                 $idAlterar = -1;
                 $tabelaInventario.ajax.reload();
             },
@@ -53,6 +54,7 @@
             },
             success: function (data) {
                 $('#modal-inventario').modal('hide');
+                limparCampos();
                 $tabelaInventario.ajax.reload();
             },
             error: function (err) {
@@ -110,4 +112,9 @@
             }
         })
     });
+
+    function limparCampos() {
+        $('#inventario-campo-numerocaminhao').val("");
+        $idAlterar = -1;
+    }
 });
