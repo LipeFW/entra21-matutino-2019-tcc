@@ -7,9 +7,7 @@ using System.Threading.Tasks;
 
 namespace Repository.Interface
 {
-
     public interface IVendedorRepository
-
     {
         int Inserir(Vendedor vendedor);
 

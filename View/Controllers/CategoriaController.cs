@@ -31,7 +31,7 @@ namespace View.Controllers
         {
             categoria.RegistroAtivo = true;
             var id = repository.Inserir(categoria);
-            var resultado = new {id = id };
+            var resultado = new { id = id };
             return Json(resultado, JsonRequestBehavior.AllowGet);
         }
 
@@ -58,12 +58,12 @@ namespace View.Controllers
         }
 
         public ActionResult Index()
-        { 
+        {
             return View();
         }
 
         public ActionResult Cadastro()
-        {        
+        {
             return View();
         }
 

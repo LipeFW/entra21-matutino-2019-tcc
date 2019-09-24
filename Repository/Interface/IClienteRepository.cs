@@ -9,7 +9,6 @@ namespace Repository.Interface
 {
     public interface IClienteRepository
     {
-
         int Inserir(Cliente cliente);
 
         bool Alterar(Cliente cliente);

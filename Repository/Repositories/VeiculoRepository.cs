@@ -14,7 +14,7 @@ namespace Repository.Repositories
         private SystemContext context;
 
         public VeiculoRepository()
-            {
+        {
             context = new SystemContext();
 
         }
@@ -35,7 +35,7 @@ namespace Repository.Repositories
 
         public int Inserir(Veiculo veiculo)
         {
-           veiculo.RegistroAtivo = true;
+            veiculo.RegistroAtivo = true;
             context.Veiculos.Add(veiculo);
             context.SaveChanges();
             return veiculo.Id;
@@ -72,10 +72,10 @@ namespace Repository.Repositories
             return quantidadeafetada == 1;
         }
 
-     
 
 
 
-     
+
+
     }
 }
