@@ -2392,6 +2392,23 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (24, 'Watertown', 1),
 (24, 'Yankton', 1),
 /*<--/Cidades do Dacota do Sul-->*/
+/*<--Cidades do Delaware-->*/
+(25, 'Brookside', 1),
+(25, 'Claymont', 1),
+(25, 'Dover', 1),
+(25, 'Edgemoor', 1),
+(25, 'Elsmere', 1),
+(25, 'Georgetown', 1),
+(25, 'Middletown', 1),
+(25, 'Milford', 1),
+(25, 'New Castle', 1),
+(25, 'Newark', 1),
+(25, 'Pike Creek', 1),
+(25, 'Seaford', 1),
+(25, 'Smyrna', 1),
+(25, 'Wilmington', 1),
+(25, 'Wilmington Manor', 1),
+/*<--/Cidades do Delaware-->*/
 /*<--/United States-->*/
 /*<--América do Sul-->*/
 /*<--Argentina-->*/
