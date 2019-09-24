@@ -1,5 +1,4 @@
 ﻿$(function () {
-
     $idAlterar = -1;
 
     $tabelaUsuario = $('#usuario-tabela').DataTable({
@@ -51,7 +50,7 @@
                 error: function (err) {
                     alert("Não foi possível alterar");
                 }
-            })
+            });
         }
 
         function inserir($nome, $senha) {
@@ -71,7 +70,7 @@
                 error: function (err) {
                     alert("Não Foi Possível Inserir")
                 }
-            })
+            });
         }
     })
 
@@ -109,7 +108,7 @@
             error: function (err) {
                 alert("Não Foi Possível Carregar");
             }
-        })
+        });
     });
 
     function limparCampos() {

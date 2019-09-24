@@ -100,7 +100,7 @@
             error: function (err) {
                 alert('Não foi possivel carregar')
             }
-        })
+        });
     });
 
     function limparCampos() {

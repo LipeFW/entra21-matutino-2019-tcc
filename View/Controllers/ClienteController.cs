@@ -11,7 +11,6 @@ namespace View.Controllers
     [Route("cliente/")]
     public class ClienteController : Controller
     {
-
         private ClienteRepository repository;
         private VendedorRepository repositoryVendedor;
 
@@ -20,8 +19,7 @@ namespace View.Controllers
             repository = new ClienteRepository();
             repositoryVendedor = new VendedorRepository();
         }
-
-
+        
         public ActionResult Cadastro()
         {
             return View();

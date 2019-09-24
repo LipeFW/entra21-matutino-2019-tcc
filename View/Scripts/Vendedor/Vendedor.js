@@ -34,7 +34,6 @@
         else {
             alterar($nome, $usuario, $veiculo);
         }
-
     });
 
     function alterar($nome, $usuario, $veiculo) {
@@ -57,7 +56,7 @@
             error: function (err) {
                 alert("Não foi possivel alterar");
             }
-        })
+        });
     }
 
     function inserir($nome, $usuario, $veiculo) {
@@ -78,7 +77,7 @@
             error: function (err) {
                 alert("Não foi possivel inserir");
             }
-        })
+        });
     }
 
     $('.table').on('click', '.botao-apagar', function () {
@@ -114,7 +113,7 @@
             error: function (err) {
                 alert("Não foi possivel carregar");
             }
-        })
+        });
     });
 
     function limparCampos() {

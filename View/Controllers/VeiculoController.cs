@@ -72,14 +72,11 @@ namespace View.Controllers
             List<Modelo> modelos = repositoryModelo.ObterTodos();
             ViewBag.Modelos = modelos;
             return View();
-
         }
 
         public ActionResult Cadastro()
         {
             return View();
         }
-
-
     }
 }

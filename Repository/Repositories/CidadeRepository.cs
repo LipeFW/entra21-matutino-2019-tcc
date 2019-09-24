@@ -15,6 +15,7 @@ namespace Repository.Repositories
         {
             context = new SystemContext();
         }
+
         public bool Alterar(Cidade cidade)
         {
             var cidadeOriginal = context.Cidades.FirstOrDefault(x => x.Id == cidade.Id);
@@ -31,8 +32,7 @@ namespace Repository.Repositories
         public bool Apagar(int id)
         {
             var cidade = context.Cidades.FirstOrDefault(x => x.Id == id);
-
-
+            
             if (cidade == null)
             {
                 return false;
@@ -42,7 +42,6 @@ namespace Repository.Repositories
             int quantidadeAfetada = context.SaveChanges();
 
             return quantidadeAfetada == 1;
-
         }
 
         public int Inserir(Cidade cidade)

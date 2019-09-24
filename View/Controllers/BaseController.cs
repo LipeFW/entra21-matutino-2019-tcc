@@ -18,6 +18,5 @@ namespace View.Controllers
                 filterContext.Result = new RedirectResult(urlHelper.Action("Index", "Login"));
             }
         }
-
     }
 }

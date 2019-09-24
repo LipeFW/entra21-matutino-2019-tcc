@@ -454,4 +454,19 @@ The system seeks to quickly employ the processes mentioned with the ease of a sm
   <data name="Vendas" xml:space="preserve">
     <value>Sales</value>
   </data>
+  <data name="AlterarFoto" xml:space="preserve">
+    <value>Change Photo</value>
+  </data>
+  <data name="CadastrodeModelo" xml:space="preserve">
+    <value>Register of Model</value>
+  </data>
+  <data name="Enviar" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="ListadeModelos" xml:space="preserve">
+    <value>Model List</value>
+  </data>
+  <data name="NovoModelo" xml:space="preserve">
+    <value>New Model</value>
+  </data>
 </root>

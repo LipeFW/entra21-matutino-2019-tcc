@@ -1,5 +1,4 @@
 ﻿$(function () {
-
     $("#colorBlue").on("click", function () {
         $("#sidebar").addClass("bg-primary");
         $("#sidebar").removeClass("bg-danger");
@@ -9,7 +8,6 @@
         $("#sidebartop").removeClass("bg-danger");
         $("#sidebartop").removeClass("bg-warning");
         $("#sidebartop").removeClass("bg-dark");
-
     });
     $("#colorOrange").on("click", function () {
         $("#sidebar").addClass("bg-warning");
@@ -41,9 +39,7 @@
         $("#sidebartop").removeClass("bg-primary");
         $("#sidebartop").removeClass("bg-warning");
     });
-
     $('#alterarSenha').on('click', function () {
-
         var senha = $('#config-campo-senha').val();
         var senhaConfirm = $('#config-campo-senha2').val();
 
@@ -63,5 +59,4 @@
     function AlterarSenha() {
 
     }
-
 });
