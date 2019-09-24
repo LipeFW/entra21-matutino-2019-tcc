@@ -2359,6 +2359,21 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (22, 'Woodbridge', 1),
 (22, 'Woodbury', 1),
 /*<--/Cidades do Connecticut-->*/
+/*<--Cidades do Dacota do Norte-->*/
+(23, 'Bismarck', 1),
+(23, 'Devils Lake', 1),
+(23, 'Dickinson', 1),
+(23, 'Fargo', 1),
+(23, 'Grafton', 1),
+(23, 'Grand Forks', 1),
+(23, 'Jamestown', 1),
+(23, 'Mandan', 1),
+(23, 'Minot', 1),
+(23, 'Valley City', 1),
+(23, 'Wahpeton', 1),
+(23, 'West Fargo', 1),
+(23, 'Williston', 1),
+/*<--/Cidades do Dacota do Norte-->*/
 /*<--/United States-->*/
 /*<--América do Sul-->*/
 /*<--Argentina-->*/
