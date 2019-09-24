@@ -38,6 +38,7 @@
             },
             success: function (data) {
                 $("#modal-rota").modal("hide");
+                limparCampos();
                 $idAlterar = -1;
                 $tabelaRota.ajax.reload();
             },
@@ -57,6 +58,7 @@
             },
             success: function (data) {
                 $("#modal-rota").modal('hide');
+                limparCampos();
                 alert('Registro inserido com Sucesso');
                 $tabelaRota.ajax.reload();
             },
@@ -70,16 +72,16 @@
         $idApagar = $(this).data('id');
         var confirmacao = confirm("Deseja realmente apagar o registro?");
         if (confirmacao == true) {
-        $.ajax({
-            url: 'http://localhost:51242/Rota/apagar?id=' + $idApagar,
-            method: 'get',
-            success: function (data) {
-                $tabelaRota.ajax.reload();
-            },
-            error: function (err) {
-                alert('Não foi possivel apagar');
-            }
-        });
+            $.ajax({
+                url: 'http://localhost:51242/Rota/apagar?id=' + $idApagar,
+                method: 'get',
+                success: function (data) {
+                    $tabelaRota.ajax.reload();
+                },
+                error: function (err) {
+                    alert('Não foi possivel apagar');
+                }
+            });
         }
     });
 
@@ -99,5 +101,11 @@
                 alert('Não foi possivel carregar')
             }
         })
-    })
+    });
+
+    function limparCampos() {
+        $('#rota-campo-nome').val("");
+        $('#rota-campo-vendedor').val("");
+        $idAlterar = -1;
+    }
 });

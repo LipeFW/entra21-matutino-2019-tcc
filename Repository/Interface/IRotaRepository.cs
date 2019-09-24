@@ -7,10 +7,7 @@ using System.Threading.Tasks;
 
 namespace Repository.Interface
 {
-
-
     public interface IRotaRepository
-
     {
         int Inserir(Rota rota);
 

@@ -41,6 +41,7 @@
             },
             success: function (data) {
                 $('#modal-categoria').modal('hide');
+                limparCampos();
                 $idAlterar = -1;
                 $tabelaCategoria.ajax.reload();
             },
@@ -59,6 +60,7 @@
             },
             success: function (data) {
                 $('#modal-categoria').modal('hide');
+                limparCampos();
                 $tabelaCategoria.ajax.reload();
                 alert("Registro Inserido Com Sucesso")
             },
@@ -100,4 +102,9 @@
             }
         })
     });
+
+    function limparCampos() {
+        $('#categoria-campo-nome').val("");
+        $idAlterar = -1;
+    }
 });

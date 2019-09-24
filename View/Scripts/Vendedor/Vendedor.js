@@ -49,6 +49,7 @@
             },
             success: function (data) {
                 $('#modal-vendedor').modal('hide');
+                limparCampos();
                 $idAlterar = -1;
                 $tabelaVendedor.ajax.reload();
                 alert("Registro alterado com sucesso");
@@ -70,6 +71,7 @@
             },
             success: function (data) {
                 $('#modal-vendedor').modal('hide');
+                limparCampos();
                 $tabelaVendedor.ajax.reload();
                 alert("Registro inserido com sucesso");
             },
@@ -83,16 +85,16 @@
         $idApagar = $(this).data('id');
         var confirmacao = confirm("Deseja realmente apagar o registro?");
         if (confirmacao == true) {
-        $.ajax({
-            url: 'http://localhost:51242/vendedor/apagar?id=' + $idApagar,
-            method: 'get',
-            success: function (data) {
-                $tabelaVendedor.ajax.reload();
-            },
-            error: function (err) {
-                alert("Não foi possivel apagar");
-            }
-        });
+            $.ajax({
+                url: 'http://localhost:51242/vendedor/apagar?id=' + $idApagar,
+                method: 'get',
+                success: function (data) {
+                    $tabelaVendedor.ajax.reload();
+                },
+                error: function (err) {
+                    alert("Não foi possivel apagar");
+                }
+            });
         }
     });
 
@@ -114,4 +116,11 @@
             }
         })
     });
+
+    function limparCampos() {
+        $('#vendedor-campo-nome').val("");
+        $('#vendedor-campo-usuario').val("");
+        $('#vendedor-campo-veiculo').val("");
+        $idAlterar = -1;
+    }
 });

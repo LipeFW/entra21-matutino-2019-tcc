@@ -31,7 +31,7 @@ namespace View.Controllers
             var resultado = new { results = listaCidades };
             return Json(resultado, JsonRequestBehavior.AllowGet);
         }
-        
+
         [HttpPost, Route("inserir")]
         public ActionResult Inserir(Cidade cidade)
         {

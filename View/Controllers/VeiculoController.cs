@@ -8,7 +8,7 @@ using System.Web.Mvc;
 
 namespace View.Controllers
 {
-   
+
     [Route("veiculo/")]
     public class VeiculoController : BaseController
     {
@@ -80,6 +80,6 @@ namespace View.Controllers
             return View();
         }
 
-      
+
     }
 }

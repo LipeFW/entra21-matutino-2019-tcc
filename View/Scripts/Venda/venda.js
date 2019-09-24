@@ -50,6 +50,7 @@
             },
             success: function (data) {
                 $("#modal-venda").modal("hide");
+                limparCampos();
                 $idAlterar = -1;
                 $tabelaVenda.ajax.reload();
                 alert("Registro alterado com sucesso");
@@ -75,6 +76,7 @@
             },
             success: function (data) {
                 $("#modal-venda").modal("hide");
+                limparCampos();
                 $tabelaVenda.ajax.reload();
                 alert('Registro inserido com sucesso');
             },
@@ -89,16 +91,16 @@
         var confirmacao = confirm("Deseja apagar o registro?");
 
         if (confirmacao == true) {
-        $.ajax({
-            url: 'http://localhost:51242/Venda/apagar?id=' + $idApagar,
-            method: 'get',
-            success: function (data) {
-                $tabelaVenda.ajax.reload();
-            },
-            error: function (err) {
-                alert("Não foi possivel apagar");
-            }
-        });
+            $.ajax({
+                url: 'http://localhost:51242/Venda/apagar?id=' + $idApagar,
+                method: 'get',
+                success: function (data) {
+                    $tabelaVenda.ajax.reload();
+                },
+                error: function (err) {
+                    alert("Não foi possivel apagar");
+                }
+            });
         }
 
     });
@@ -126,4 +128,14 @@
             }
         })
     });
-})
+
+    function limparCampos() {
+        $('#venda-campo-quantidade').val("");
+        $('#venda-campo-vendedor').val("");
+        $('#venda-campo-cliente').val("");
+        $('#venda-campo-produto').val("");
+        $('#venda-campo-total').val("");
+        $('#venda-campo-desconto').val("");
+        $idAlterar = -1;
+    }
+});

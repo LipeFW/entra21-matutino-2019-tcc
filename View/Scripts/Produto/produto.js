@@ -47,6 +47,7 @@
                 },
                 success: function (data) {
                     $("#modal-produto").modal("hide");
+                    limparCampos();
                     $idAlterar = -1;
                     $tabelaProduto.ajax.reload();
                 },
@@ -69,6 +70,7 @@
                 },
                 success: function (data) {
                     $("#modal-produto").modal('hide');
+                    limparCampos();
                     $tabelaProduto.ajax.reload();
                     alert("Registro Inserido Com Sucesso")
                 },
@@ -83,17 +85,17 @@
         $idApagar = $(this).data("id");
         var confirmacao = confirm("Deseja realmente apagar o registro?");
         if (confirmacao == true) {
-        $.ajax({
-            url: "http://localhost:51242/Produto/apagar?id=" + $idApagar,
-            method: "get",
-            success: function (data) {
-                $tabelaProduto.ajax.reload();
-                alert('Apagado com Sucesso');
-            },
-            error: function (err) {
-                alert('Não foi possivel apagar');
-            }
-        });
+            $.ajax({
+                url: "http://localhost:51242/Produto/apagar?id=" + $idApagar,
+                method: "get",
+                success: function (data) {
+                    $tabelaProduto.ajax.reload();
+                    alert('Apagado com Sucesso');
+                },
+                error: function (err) {
+                    alert('Não foi possivel apagar');
+                }
+            });
         }
     });
 
@@ -116,4 +118,13 @@
             }
         })
     });
+
+    function limparCampos() {
+        $("#produto-campo-nome").val("");
+        $("#produto-campo-categoria").val("");
+        $("#produto-campo-codigo").val("");
+        $("#produto-campo-quantidade").val("");
+        $("#produto-campo-valor").val("");
+        $idAlterar = -1;
+    }
 });
