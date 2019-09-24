@@ -2802,6 +2802,37 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (28, 'Waimalu', 1),
 (28, 'Waipahu', 1),
 /*<--/Cidades do Havaí-->*/
+/*<-- Cidades do Idaho-->*/
+(29,' Ammon', 1),
+(29,' Blackfoot', 1),
+(29,' Boise', 1),
+(29,' Burley', 1),
+(29,' Caldwell', 1),
+(29,' Chubbuck', 1),
+(29,' Eagle', 1),
+(29,' Emmett', 1),
+(29,' Garden City', 1),
+(29,' Hailey', 1),
+(29,' Hayden', 1),
+(29,' Idaho Falls', 1),
+(29,' Jerome', 1),
+(29,' Kuna', 1),
+(29,' Lewiston', 1),
+(29,' Meridian', 1),
+(29,' Moscow', 1),
+(29,' Mountain Home', 1),
+(29,' Nampa', 1),
+(29,' Payette', 1),
+(29,' Pocatello', 1),
+(29,' Post Falls', 1),
+(29,' Preston', 1),
+(29,' Rathdrum', 1),
+(29,' Rexburg', 1),
+(29,' Rupert', 1),
+(29,' Sandpoint', 1),
+(29,' Twin Falls', 1),
+(29,' Weiser', 1),
+/*<--/Cidades do Idaho-->*/
 /*<--/United States-->*/
 /*<--América do Sul-->*/
 /*<--Argentina-->*/
