@@ -1470,7 +1470,8 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (1, 'Whitehorse', 1),
 /*<--/Cidades do Yukon-->*/
 /*<--/Canada-->*/
-
+/*<--América do Sul-->*/
+/*<--/América do Sul-->*/
 CREATE TABLE usuarios( 
 id INT PRIMARY KEY IDENTITY(1,1),
 nome VARCHAR(100),
