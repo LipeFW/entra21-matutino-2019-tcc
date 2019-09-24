@@ -1190,10 +1190,18 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (10, 'Wabana', 1),
 /*<--/Cidades do Terra Nova e Labrador-->*/
 /*<--Cidades do Nunavut-->*/
-(1, 'Clyde River', 1),
-(1, 'Iqaluit', 1),
-(1, 'Pangnirtung', 1),
+(11, 'Clyde River', 1),
+(11, 'Iqaluit', 1),
+(11, 'Pangnirtung', 1),
 /*<--/Cidades do Nunavut-->*/
+/*<--Cidades do Territórios do Noroeste-->*/
+(12, 'Aklavik', 1),
+(12, 'Hay River', 1),
+(12, 'Inuvik', 1),
+(12, 'Norman Wells', 1),
+(12, 'Tuktoyaktuk', 1),
+(12, 'Yellowknife', 1),
+/*<--/Cidades do Territórios do Noroeste-->*/
 /*<--/Canada-->*/
 
 CREATE TABLE usuarios( 
