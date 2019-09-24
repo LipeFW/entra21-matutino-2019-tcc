@@ -456,7 +456,7 @@ FOREIGN KEY(id_pais) REFERENCES paises (id)
 /*ID 347*/(23, 'Saint Patrick', 1),
 /*ID 348*/(23, 'San Fernando', 1),
 /*ID 349*/(23, 'Tobago', 1),
-/*ID 350*/(23, 'Victoria', 1),
+/*ID 350*/(23, 'Victoria', 1);
 /*<--/Trinidad & Tobago-->*/
 /*<--/América Central (ID:4 - 23)-->*/
 CREATE TABLE cidades(
@@ -726,7 +726,7 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (6, 'Truro', 1),
 (6, 'Windsor', 1),
 (6, 'Wolfville', 1),
-(6, 'Yarmouth', 1),
+(6, 'Yarmouth', 1);
 /*<--/Cidades do Nova Escócia-->*/
 /*<--/Canada-->*/
 
