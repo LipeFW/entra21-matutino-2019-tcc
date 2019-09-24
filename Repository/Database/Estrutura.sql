@@ -1567,7 +1567,7 @@ VALUES  ( 'lipefw','Felipe','gatodandopinote.png',1 , 'anaumsei', 1),
 	    ( 'illan','Illan','gato-confuo.jpg',0 , 'illanzoka', 1),
 	    ( 'eduardo','Eduardo','guaxinimdoido.jpg',1 , 'RetardoMental', 1),
 	    ( 'henrique','Henrique','hamsterchavoso.png',1 , 'pimbinha6000', 1),
-	    ( 'pablo','Pablo','', 1, '1234', 1),
+	    ( 'pabloluz','Pablo','', 1, '1234', 1),
 	    ( 'nathan','Nathan','passaroseila.jpg', 1, '1203', 1);
 
 
