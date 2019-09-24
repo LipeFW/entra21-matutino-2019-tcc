@@ -541,4 +541,13 @@
   <data name="Temas" xml:space="preserve">
     <value>string</value>
   </data>
+  <data name="AlterarFoto" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Enviar" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="ListadeModelos" xml:space="preserve">
+    <value>string</value>
+  </data>
 </root>
