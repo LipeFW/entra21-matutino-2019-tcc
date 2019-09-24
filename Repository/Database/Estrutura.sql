@@ -1202,6 +1202,11 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (12, 'Tuktoyaktuk', 1),
 (12, 'Yellowknife', 1),
 /*<--/Cidades do Territórios do Noroeste-->*/
+/*<--Cidades do Yukon-->*/
+(1, 'Haines Junction', 1),
+(1, 'Mayo', 1),
+(1, 'Whitehorse', 1),
+/*<--/Cidades do Yukon-->*/
 /*<--/Canada-->*/
 
 CREATE TABLE usuarios( 
