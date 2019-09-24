@@ -1,5 +1,4 @@
 ﻿$(function () {
-
     $idAlterar = -1;
 
     $tabelaModelo = $("#modelo-tabela").DataTable({

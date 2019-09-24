@@ -9,7 +9,6 @@ namespace View.Controllers
 {
     public class InventarioController : BaseController
     {
-
         private InventarioRepository repository;
 
         public InventarioController()
@@ -30,6 +29,5 @@ namespace View.Controllers
             var resultado = new { data = inventarios };
             return Json(resultado, JsonRequestBehavior.AllowGet);
         }
-
     }
 }

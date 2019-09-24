@@ -19,8 +19,7 @@
             }
         ]
     });
-
-
+    
     $('#veiculo-botao-salvar').on('click', function () {
         $marca = $('#veiculo-campo-marca').val();
         $modelo = $('#veiculo-campo-modelo').val();
@@ -34,7 +33,6 @@
             alterar($marca, $modelo, $anoFabricacao, $numeroCaminhao, $placa);
         }
 
-        //Arrumar
         function alterar($marca, $modelo, $anoFabricacao, $numeroCaminhao, $placa) {
             $.ajax({
                 url: 'http://localhost:51242/veiculo/update',
@@ -56,9 +54,8 @@
                 error: function (err) {
                     alert('Não foi possivel alterar');
                 }
-            })
+            });
         }
-
 
         function inserir($marca, $modelo, $anoFabricacao, $numeroCaminhao, $placa) {
             $.ajax({
@@ -80,9 +77,9 @@
                 error: function (err) {
                     alert('Não foi possivel inserir');
                 }
-            })
+            });
         }
-    })
+    });
 
     $('.table').on('click', '.botao-apagar', function () {
         $idApagar = $(this).data('id');
@@ -121,7 +118,7 @@
             error: function (err) {
                 alert('Não foi possivel carregar');
             }
-        })
+        });
     });
 
     function limparCampos() {

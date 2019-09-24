@@ -1,5 +1,4 @@
 ﻿$(function () {
-
     $idAlterar = -1;
 
     $tabelaCliente = $('#cliente-tabela').DataTable({
@@ -88,7 +87,6 @@
         });
     }
 
-
     $(".table").on("click", ".botao-apagar", function () {
         $idApagar = $(this).data("id");
         var confirmacao = confirm("Deseja realmente apagar o registro?")
@@ -114,14 +112,12 @@
         $.ajax({
             url: 'http://localhost:51242/cliente/obterpeloid?id=' + $idAlterar,
             method: 'get',
-
             success: function (data) {
                 $('#cliente-campo-nome').val(data.Nome);
                 $('#cliente-campo-telefone').val(data.Telefone);
                 $('#cliente-campo-cnpj').val(data.CNPJ);
                 $('#cliente-campo-cep').val(data.CEP);
-                $('#cliente-campo-vendedor').val(data.Vendedor)
-
+                $('#cliente-campo-vendedor').val(data.Vendedor);
                 $('#modal-cliente').modal('show');
             },
             error: function (err) {

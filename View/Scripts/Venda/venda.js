@@ -59,7 +59,7 @@
             error: function (err) {
                 alert("Não foi possivel alterar");
             }
-        })
+        });
     }
 
     function inserir($quantidade, $vendedor, $cliente, $produto, $total, $desconto) {
@@ -102,7 +102,6 @@
                 }
             });
         }
-
     });
 
     $('.table').on('click', '.botao-editar', function () {
@@ -119,14 +118,12 @@
                 $('#venda-campo-produto').val(data.Produto);
                 $('#venda-campo-total').val(data.Total);
                 $('#venda-campo-desconto').val(data.Desconto);
-
                 $('#modal-venda').modal('show');
-
             },
             error: function (err) {
                 alert("Não foi possivel editar");
             }
-        })
+        });
     });
 
     function limparCampos() {

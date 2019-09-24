@@ -1,5 +1,4 @@
 ﻿$(function () {
-
     $idAlterar = -1;
 
     $tabelaProduto = $("#produto-tabela").DataTable({
@@ -54,7 +53,7 @@
                 error: function (err) {
                     alert("Não foi possivel alterar o Produto");
                 }
-            })
+            });
         }
 
         function inserir($nome, $categoria, $codigoBarra, $quantidadeProdutos, $valorUnitario) {
@@ -77,7 +76,7 @@
                 error: function (err) {
                     alert('Não foi possivel inserir');
                 }
-            })
+            });
         }
     })
 
