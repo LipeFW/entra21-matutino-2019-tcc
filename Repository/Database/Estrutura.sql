@@ -456,7 +456,7 @@ FOREIGN KEY(id_pais) REFERENCES paises (id)
 /*ID 347*/(23, 'Saint Patrick', 1),
 /*ID 348*/(23, 'San Fernando', 1),
 /*ID 349*/(23, 'Tobago', 1),
-/*ID 350*/(23, 'Victoria', 1);
+/*ID 350*/(23, 'Victoria', 1),
 /*<--/Trinidad & Tobago-->*/
 /*<--/América Central (ID:4 - 23)-->*/
 /*<--América do Sul (ID:24 - 35)-->*/
@@ -718,7 +718,7 @@ FOREIGN KEY(id_pais) REFERENCES paises (id)
 /*ID 568*/(35, 'Zulia', 1),
 /*ID 569*/(35, 'Dependencias Federales', 1),
 /*ID 570*/(35, 'Distrito Federal', 1),
-/*ID 571*/(35, 'Vargas', 1),
+/*ID 571*/(35, 'Vargas', 1);
 /*<--/Venezuela-->*/
 /*<--/América do Sul-->*/
 CREATE TABLE cidades(
@@ -1465,11 +1465,73 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (12, 'Yellowknife', 1),
 /*<--/Cidades do Territórios do Noroeste-->*/
 /*<--Cidades do Yukon-->*/
-(1, 'Haines Junction', 1),
-(1, 'Mayo', 1),
-(1, 'Whitehorse', 1),
+(13, 'Haines Junction', 1),
+(13, 'Mayo', 1),
+(13, 'Whitehorse', 1),
 /*<--/Cidades do Yukon-->*/
 /*<--/Canada-->*/
+/*<--United States-->*/
+/*<--Cidades do Alabama-->*/
+(14, 'Alabaster', 1),
+(14, 'Albertville', 1),
+(14, 'Alexander City', 1),
+(14, 'Anniston', 1),
+(14, 'Athens', 1),
+(14, 'Auburn', 1),
+(14, 'Bessemer', 1),
+(14, 'Birmingham', 1),
+(14, 'Cullman', 1),
+(14, 'Daphne', 1),
+(14, 'Decatur', 1),
+(14, 'Dothan', 1),
+(14, 'Enterprise', 1),
+(14, 'Eufaula', 1),
+(14, 'Fairfield', 1),
+(14, 'Fairhope', 1),
+(14, 'Florence', 1),
+(14, 'Fort Payne', 1),
+(14, 'Gadsden', 1),
+(14, 'Gardendale', 1),
+(14, 'Hartselle', 1),
+(14, 'Helena', 1),
+(14, 'Homewood', 1),
+(14, 'Hoover', 1),
+(14, 'Hueytown', 1),
+(14, 'Huntsville', 1),
+(14, 'Irondale', 1),
+(14, 'Jacksonville', 1),
+(14, 'Jasper', 1),
+(14, 'Leeds', 1),
+(14, 'Madison', 1),
+(14, 'Millbrook', 1),
+(14, 'Mobile', 1),
+(14, 'Montgomery', 1),
+(14, 'Mountain Brook', 1),
+(14, 'Muscle Shoals', 1),
+(14, 'Northport', 1),
+(14, 'Opelika', 1),
+(14, 'Oxford', 1),
+(14, 'Ozark', 1),
+(14, 'Pelham', 1),
+(14, 'Pell City', 1),
+(14, 'Phenix City', 1),
+(14, 'Pleasant Grove', 1),
+(14, 'Prattville', 1),
+(14, 'Prichard', 1),
+(14, 'Saraland', 1),
+(14, 'Scottsboro', 1),
+(14, 'Selma', 1),
+(14, 'Sheffield', 1),
+(14, 'Sylacauga', 1),
+(14, 'Talladega', 1),
+(14, 'Troy', 1),
+(14, 'Trussville', 1),
+(14, 'Tuscaloosa', 1),
+(14, 'Tuskegee', 1),
+(14, 'Valley', 1),
+(14, 'Vestavia Hills', 1),
+/*<--/Cidades do Alabama-->*/
+/*<--/United States-->*/
 /*<--América do Sul -->*/
 /*<--/América do Sul-->*/
 CREATE TABLE usuarios( 
