@@ -81,6 +81,15 @@ namespace View.Resources {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a string.
         /// </summary>
+        public static string Alterarfoto {
+            get {
+                return ResourceManager.GetString("Alterarfoto", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
         public static string AlterarSenha {
             get {
                 return ResourceManager.GetString("AlterarSenha", resourceCulture);

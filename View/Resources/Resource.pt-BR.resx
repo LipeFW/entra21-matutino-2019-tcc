@@ -489,6 +489,12 @@
   <data name="Tema" xml:space="preserve">
     <value>Tema</value>
   </data>
+  <data name="Alterarfoto" xml:space="preserve">
+    <value>Alterar Foto</value>
+  </data>
+  <data name="Enviar" xml:space="preserve">
+    <value>Enviar</value>
+  </data>
   <data name="Temas" xml:space="preserve">
     <value>Temas</value>
   </data>

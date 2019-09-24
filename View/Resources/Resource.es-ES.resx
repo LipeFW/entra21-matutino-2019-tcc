@@ -471,10 +471,16 @@
   <data name="Tema" xml:space="preserve">
     <value>Tema</value>
   </data>
-  <data name="Temas" xml:space="preserve">
-    <value>Temas</value>
-  </data>
   <data name="Vendas" xml:space="preserve">
     <value>Vendas</value>
+  </data>
+  <data name="Alterarfoto" xml:space="preserve">
+    <value>Cambiar Foto</value>
+  </data>
+  <data name="Enviar" xml:space="preserve">
+    <value>Enviar</value>
+  </data>
+  <data name="Temas" xml:space="preserve">
+    <value>Temas</value>
   </data>
 </root>
