@@ -2374,6 +2374,24 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (23, 'West Fargo', 1),
 (23, 'Williston', 1),
 /*<--/Cidades do Dacota do Norte-->*/
+/*<--/Cidades do Dacota do Sul-->*/
+(24, 'Aberdeen', 1),
+(24, 'Belle Fourche', 1),
+(24, 'Brandon', 1),
+(24, 'Brookings', 1),
+(24, 'Huron', 1),
+(24, 'Madison', 1),
+(24, 'Mitchell', 1),
+(24, 'Pierre', 1),
+(24, 'Rapid City', 1),
+(24, 'Rapid Valley', 1),
+(24, 'Sioux Falls', 1),
+(24, 'Spearfish', 1),
+(24, 'Sturgis', 1),
+(24, 'Vermillion', 1),
+(24, 'Watertown', 1),
+(24, 'Yankton', 1),
+/*<--/Cidades do Dacota do Sul-->*/
 /*<--/United States-->*/
 /*<--América do Sul-->*/
 /*<--Argentina-->*/
