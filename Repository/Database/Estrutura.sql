@@ -2485,6 +2485,8 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (383, 'Yacuiba', 1),
 /*<--/Tarija-->*/
 /*<--/Bolivia-->*/
+/*<--Brasil-->*/
+/*<--/Brasil-->*/
 /*<--/América do Sul-->*/
 CREATE TABLE usuarios( 
 id INT PRIMARY KEY IDENTITY(1,1),
