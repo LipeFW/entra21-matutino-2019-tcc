@@ -35,6 +35,7 @@
             },
             success: function (data) {
                 $('#modal-marca').modal('hide');
+                limparCampos();
                 $idAlterar = -1;
                 $tabelaMarca.ajax.reload();
             },
@@ -53,6 +54,7 @@
             },
             success: function (data) {
                 $('#modal-marca').modal('hide');
+                limparCampos();
                 $tabelaMarca.ajax.reload();
                 alert('Registro inserido com Sucesso');
 
@@ -96,4 +98,9 @@
             }
         });
     });
+
+    function limparCampos() {
+        $('#marca-campo-nome').val("");
+        $idAlterar = -1;
+    }
 });
