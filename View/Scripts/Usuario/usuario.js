@@ -44,6 +44,7 @@
                 },
                 success: function (data) {
                     $("#modal-usuario").modal("hide");
+                    limparCampos();
                     $idAlterar = -1;
                     $tabelaUsuario.ajax.reload();
                 },
@@ -63,6 +64,7 @@
                 },
                 success: function (data) {
                     $("#modal-usuario").modal('hide');
+                    limparCampos();
                     $tabelaUsuario.ajax.reload();
                     alert("Registro Inserido Com Sucesso");
                 },
@@ -109,4 +111,10 @@
             }
         })
     });
+
+    function limparCampos() {
+        $nome = $("#usuario-campo-nome").val("");
+        $senha = $("#usuario-campo-senha").val("");
+        $idAlterar = -1;
+    }
 });

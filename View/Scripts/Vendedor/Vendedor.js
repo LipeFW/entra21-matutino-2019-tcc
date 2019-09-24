@@ -49,6 +49,7 @@
             },
             success: function (data) {
                 $('#modal-vendedor').modal('hide');
+                limparCampos();
                 $idAlterar = -1;
                 $tabelaVendedor.ajax.reload();
                 alert("Registro alterado com sucesso");
@@ -70,6 +71,7 @@
             },
             success: function (data) {
                 $('#modal-vendedor').modal('hide');
+                limparCampos();
                 $tabelaVendedor.ajax.reload();
                 alert("Registro inserido com sucesso");
             },
@@ -114,4 +116,11 @@
             }
         })
     });
+
+    function limparCampos() {
+        $('#vendedor-campo-nome').val("");
+        $('#vendedor-campo-usuario').val("");
+        $('#vendedor-campo-veiculo').val("");
+        $idAlterar = -1;
+    }
 });

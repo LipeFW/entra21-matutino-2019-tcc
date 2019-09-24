@@ -55,6 +55,7 @@
             },
             success: function (data) {
                 $('#modal-cliente').modal('hide');
+                limparCampos();
                 $idAlterar = -1;
                 $tabelaCliente.ajax.reload();
             },
@@ -77,6 +78,7 @@
             },
             success: function (data) {
                 $('#modal-cliente').modal('hide');
+                limparCampos();
                 alert('Registro inserido com Sucesso');
                 $tabelaCliente.ajax.reload();
             },
@@ -128,4 +130,12 @@
         });
     });
 
+    function limparCampos() {
+        $('#cliente-campo-nome').val("");
+        $('#cliente-campo-telefone').val("");
+        $('#cliente-campo-cnpj').val("");
+        $('#cliente-campo-cep').val("");
+        $('#cliente-campo-vendedor').val("");
+        $idAlterar = -1;
+    }
 });
