@@ -2675,6 +2675,7 @@
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
     <Content Include="Scripts\Usuario\config.js" />
+    <Content Include="Scripts\Usuario\fix.js" />
     <Content Include="Scripts\Usuario\perfil.js" />
     <Content Include="Scripts\Usuario\usuario.js" />
     <Content Include="Scripts\Veiculo\veiculo.js" />

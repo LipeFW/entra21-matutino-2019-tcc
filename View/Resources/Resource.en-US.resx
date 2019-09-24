@@ -371,7 +371,7 @@ The system seeks to quickly employ the processes mentioned with the ease of a sm
     <value>Welcome</value>
   </data>
   <data name="Configuracoesdaconta" xml:space="preserve">
-    <value>Acount Configuration</value>
+    <value>Account Configurations</value>
   </data>
   <data name="Inicio" xml:space="preserve">
     <value>Start</value>
@@ -434,7 +434,7 @@ The system seeks to quickly employ the processes mentioned with the ease of a sm
     <value>Select a Product</value>
   </data>
   <data name="Configuracaoconta" xml:space="preserve">
-    <value>Acount Configuration</value>
+    <value>Account Configuration</value>
   </data>
   <data name="Desconto" xml:space="preserve">
     <value>Discount</value>
@@ -448,25 +448,16 @@ The system seeks to quickly employ the processes mentioned with the ease of a sm
   <data name="Tema" xml:space="preserve">
     <value>Theme</value>
   </data>
-  <data name="Temas" xml:space="preserve">
-    <value>Themes</value>
-  </data>
   <data name="Vendas" xml:space="preserve">
     <value>Sales</value>
   </data>
-  <data name="AlterarFoto" xml:space="preserve">
-    <value>Change Photo</value>
-  </data>
-  <data name="CadastrodeModelo" xml:space="preserve">
-    <value>Register of Model</value>
+  <data name="Alterarfoto" xml:space="preserve">
+    <value>Change Photos</value>
   </data>
   <data name="Enviar" xml:space="preserve">
     <value>Send</value>
   </data>
-  <data name="ListadeModelos" xml:space="preserve">
-    <value>Model List</value>
-  </data>
-  <data name="NovoModelo" xml:space="preserve">
-    <value>New Model</value>
+  <data name="Temas" xml:space="preserve">
+    <value>Themes</value>
   </data>
 </root>

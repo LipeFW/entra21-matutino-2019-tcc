@@ -1198,7 +1198,7 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (7, 'Wiarton', 1),
 (7, 'Winchester', 1),
 (7, 'Windsor', 1),
-(7, 'Wingham', 1),
+(7, 'Wingham', 1);
 /*<--/Cidades do Ontário-->*/
 /*<--Cidades do Québec-->*/
 

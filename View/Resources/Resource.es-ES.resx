@@ -471,25 +471,16 @@
   <data name="Tema" xml:space="preserve">
     <value>Tema</value>
   </data>
-  <data name="Temas" xml:space="preserve">
-    <value>Temas</value>
-  </data>
   <data name="Vendas" xml:space="preserve">
     <value>Vendas</value>
   </data>
-  <data name="AlterarFoto" xml:space="preserve">
-    <value>Cambiar Fotografía</value>
-  </data>
-  <data name="CadastrodeModelo" xml:space="preserve">
-    <value>Registro del Modelo</value>
+  <data name="Alterarfoto" xml:space="preserve">
+    <value>Cambiar Foto</value>
   </data>
   <data name="Enviar" xml:space="preserve">
     <value>Enviar</value>
   </data>
-  <data name="ListadeModelos" xml:space="preserve">
-    <value>Lista del Modelos</value>
-  </data>
-  <data name="NovoModelo" xml:space="preserve">
-    <value>Nuevo Modelo</value>
+  <data name="Temas" xml:space="preserve">
+    <value>Temas</value>
   </data>
 </root>

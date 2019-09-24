@@ -123,6 +123,7 @@
   </data>
   <data name="AlterarDados" xml:space="preserve">
     <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
   </data>
   <data name="AlterarSenha" xml:space="preserve">
     <value>string</value>
@@ -439,7 +440,6 @@
   </data>
   <data name="Configuracoesdaconta" xml:space="preserve">
     <value>string</value>
-    <comment>pt-BR_en-US_es-ES</comment>
   </data>
   <data name="Inicio" xml:space="preserve">
     <value>string</value>
@@ -541,13 +541,12 @@
   <data name="Temas" xml:space="preserve">
     <value>string</value>
   </data>
-  <data name="AlterarFoto" xml:space="preserve">
+  <data name="Alterarfoto" xml:space="preserve">
     <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
   </data>
   <data name="Enviar" xml:space="preserve">
     <value>string</value>
-  </data>
-  <data name="ListadeModelos" xml:space="preserve">
-    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
   </data>
 </root>
