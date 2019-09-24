@@ -1465,13 +1465,12 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (12, 'Yellowknife', 1),
 /*<--/Cidades do Territórios do Noroeste-->*/
 /*<--Cidades do Yukon-->*/
-(1, 'Haines Junction', 1),
-(1, 'Mayo', 1),
-(1, 'Whitehorse', 1),
+(13, 'Haines Junction', 1),
+(13, 'Mayo', 1),
+(13, 'Whitehorse', 1),
 /*<--/Cidades do Yukon-->*/
 /*<--/Canada-->*/
-/*<--América do Sul-->*/
-/*<--/América do Sul-->*/
+
 CREATE TABLE usuarios( 
 id INT PRIMARY KEY IDENTITY(1,1),
 nome VARCHAR(100),
