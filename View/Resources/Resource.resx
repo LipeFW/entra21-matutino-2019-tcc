@@ -439,6 +439,7 @@
   </data>
   <data name="Configuracoesdaconta" xml:space="preserve">
     <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
   </data>
   <data name="Inicio" xml:space="preserve">
     <value>string</value>
