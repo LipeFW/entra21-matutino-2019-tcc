@@ -2221,7 +2221,7 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (20, 'Union', 1),
 (20, 'Wade Hampton', 1),
 (20, 'West Columbia', 1),
-/*<--/Cidades do Carolina do Sul-->*/
+/*<--/Cidades do Carolina do  Sul-->*/
 /*<--/United States-->*/
 /*<--América do Sul -->*/
 /*<--/América do Sul-->*/
