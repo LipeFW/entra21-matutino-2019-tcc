@@ -45,8 +45,7 @@ namespace View.Controllers
             var resultado = new { status = alterou };
             return Json(resultado, JsonRequestBehavior.AllowGet);
         }
-
-
+        
         [HttpGet, Route("apagar")]
         public JsonResult Apagar(int id)
         {
@@ -64,11 +63,10 @@ namespace View.Controllers
 
         [HttpGet, Route("obterpeloid")]
         public JsonResult ObterPeloId(int id)
-        { 
-            return Json(repository.ObterPeloId(id) ,JsonRequestBehavior.AllowGet);
+        {
+            return Json(repository.ObterPeloId(id), JsonRequestBehavior.AllowGet);
         }
-
-
+        
         [HttpGet, Route("obtertodosselect2")]
         public JsonResult ObterTodosSelect2(string term)
         {

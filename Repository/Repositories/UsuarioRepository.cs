@@ -1,4 +1,4 @@
-﻿ using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -73,6 +73,5 @@ namespace Repository.Repositories
         {
             return context.Usuarios.Where(x => x.RegistroAtivo == true).ToList();
         }
-
     }
 }

@@ -33,8 +33,7 @@ namespace Repository.Repositories
         public bool Apagar(int id)
         {
             var estado = context.Estados.FirstOrDefault(x => x.Id == id);
-
-
+            
             if (estado == null)
             {
                 return false;
@@ -44,7 +43,6 @@ namespace Repository.Repositories
             int quantidadeAfetada = context.SaveChanges();
 
             return quantidadeAfetada == 1;
-
         }
 
         public int Inserir(Estado estado)

@@ -10,10 +10,7 @@ using System.Threading.Tasks;
 namespace Repository.Repositories
 {
     public class RotaRepository : IRotaRepository
-
     {
-
-
         private SystemContext context;
         public RotaRepository()
         {
@@ -21,7 +18,6 @@ namespace Repository.Repositories
         }
 
         public bool Alterar(Rota rota)
-
         {
             var rotaOriginal = context.Rotas.FirstOrDefault(x => x.Id == rota.Id);
 
@@ -38,8 +34,7 @@ namespace Repository.Repositories
         public bool Apagar(int id)
         {
             var rota = context.Rotas.FirstOrDefault(x => x.Id == id);
-
-
+            
             if (rota == null)
             {
                 return false;
@@ -49,7 +44,6 @@ namespace Repository.Repositories
             int quantidadeAfetada = context.SaveChanges();
 
             return quantidadeAfetada == 1;
-
         }
 
         public int Inserir(Rota rota)
@@ -70,5 +64,4 @@ namespace Repository.Repositories
             return context.Rotas.Where(x => x.RegistroAtivo == true).OrderBy(x => x.Id).Include("Vendedor").ToList();
         }
     }
-
 }

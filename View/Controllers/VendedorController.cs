@@ -12,9 +12,7 @@ namespace View.Controllers
     public class VendedorController : BaseController
     {
         private VendedorRepository repository;
-
         private VeiculoRepository repositoryVeiculo;
-
         private UsuarioRepository repositoryUsuario;
 
         public VendedorController()
@@ -23,7 +21,6 @@ namespace View.Controllers
             repositoryUsuario = new UsuarioRepository();
 
             repositoryVeiculo = new VeiculoRepository();
-
         }
 
         [HttpGet, Route("obtertodos")]
@@ -62,7 +59,6 @@ namespace View.Controllers
 
         public ActionResult Index()
         {
-
             List<Veiculo> veiculos = repositoryVeiculo.ObterTodos();
             ViewBag.Veiculos = veiculos;
 

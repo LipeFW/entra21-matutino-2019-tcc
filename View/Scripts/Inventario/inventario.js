@@ -35,6 +35,7 @@
             },
             success: function (data) {
                 $('#modal-inventario').modal('hide');
+                limparCampos();
                 $idAlterar = -1;
                 $tabelaInventario.ajax.reload();
             },
@@ -53,6 +54,7 @@
             },
             success: function (data) {
                 $('#modal-inventario').modal('hide');
+                limparCampos();
                 $tabelaInventario.ajax.reload();
             },
             error: function (err) {
@@ -81,17 +83,17 @@
         $idApagar = $(this).data('id');
         var confirmacao = confirm("Deseja realmente apagar o registro?")
         if (confirmacao == true) {
-        $.ajax({
-            url: 'http://localhost:51242/inventario/apagar?id=' + $idApagar,
-            method: 'get',
-            success: function (data) {
-                $tabelaInventario.ajax.reload();
-                alert("Registro Apagado Com Sucesso")
-            },
-            error: function (err) {
-                alert('Não foi possivel apagar');
-            }
-        });
+            $.ajax({
+                url: 'http://localhost:51242/inventario/apagar?id=' + $idApagar,
+                method: 'get',
+                success: function (data) {
+                    $tabelaInventario.ajax.reload();
+                    alert("Registro Apagado Com Sucesso")
+                },
+                error: function (err) {
+                    alert('Não foi possivel apagar');
+                }
+            });
         }
     });
 
@@ -101,7 +103,7 @@
         $.ajax({
             url: "http://localhost:51242/inventario/obterpeloid?id=" + $idAlterar,
             method: 'get',
-            success: function (data) {                
+            success: function (data) {
                 $('#inventario-campo-numerocaminhao').val(data.NumeroCaminhao);
                 $('#modal-inventario').modal('show');
             },
@@ -110,4 +112,9 @@
             }
         })
     });
+
+    function limparCampos() {
+        $('#inventario-campo-numerocaminhao').val("");
+        $idAlterar = -1;
+    }
 });

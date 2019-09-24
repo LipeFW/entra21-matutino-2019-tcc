@@ -1,5 +1,4 @@
 ﻿$(function () {
-
     $idAlterar = -1;
 
     $tabelaUsuario = $('#usuario-tabela').DataTable({
@@ -21,7 +20,7 @@
         $nome = $("#usuario-campo-nome").val();
         $senha = $("#usuario-campo-senha").val();
 
-        if (($nome.trim() == "") || ($senha == "")){
+        if (($nome.trim() == "") || ($senha == "")) {
             alert("Preencha corretamente os campos");
             return null;
         }
@@ -44,13 +43,14 @@
                 },
                 success: function (data) {
                     $("#modal-usuario").modal("hide");
+                    limparCampos();
                     $idAlterar = -1;
                     $tabelaUsuario.ajax.reload();
                 },
                 error: function (err) {
                     alert("Não foi possível alterar");
                 }
-            })
+            });
         }
 
         function inserir($nome, $senha) {
@@ -63,13 +63,14 @@
                 },
                 success: function (data) {
                     $("#modal-usuario").modal('hide');
+                    limparCampos();
                     $tabelaUsuario.ajax.reload();
                     alert("Registro Inserido Com Sucesso");
                 },
                 error: function (err) {
                     alert("Não Foi Possível Inserir")
                 }
-            })
+            });
         }
     })
 
@@ -77,18 +78,18 @@
         $idApagar = $(this).data("id");
         var confirmacao = confirm("Deseja realmente apagar o registro?");
         if (confirmacao == true) {
-        $.ajax({
-            url: "http://localhost:51242/Usuario/Apagar?id=" + $idApagar,
-            method: "get",
-            success: function (data) {
-                $tabelaUsuario.ajax.reload();
-                alert("Registro Apagado com Sucesso");
+            $.ajax({
+                url: "http://localhost:51242/Usuario/Apagar?id=" + $idApagar,
+                method: "get",
+                success: function (data) {
+                    $tabelaUsuario.ajax.reload();
+                    alert("Registro Apagado com Sucesso");
 
-            },
-            error: function (err) {
-                alert('Não Foi Possível Apagar');
-            }
-        });
+                },
+                error: function (err) {
+                    alert('Não Foi Possível Apagar');
+                }
+            });
         }
     });
 
@@ -107,6 +108,12 @@
             error: function (err) {
                 alert("Não Foi Possível Carregar");
             }
-        })
+        });
     });
+
+    function limparCampos() {
+        $nome = $("#usuario-campo-nome").val("");
+        $senha = $("#usuario-campo-senha").val("");
+        $idAlterar = -1;
+    }
 });

@@ -1,6 +1,4 @@
-
 $(document).ready(function () {
- 
     $("#cliente-campo-cpf").mask("000.000.000-00");
     $("#cliente-campo-cnpj").mask("99.999.999/9999-99");
     $("#cliente-campo-cep").mask("99999-999");
@@ -23,10 +21,6 @@ $(document).ready(function () {
     $("#config-campo-rg").mask("9.999.999");
     $("#config-campo-cpf").mask("999.999.999-99");
     $("#config-campo-cnh").mask("999999999999");
-
-
-
 });
 
 
-       

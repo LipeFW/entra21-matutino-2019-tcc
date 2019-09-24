@@ -8,7 +8,7 @@ using System.Web.Mvc;
 
 namespace View.Controllers
 {
-   
+
     [Route("veiculo/")]
     public class VeiculoController : BaseController
     {
@@ -72,14 +72,11 @@ namespace View.Controllers
             List<Modelo> modelos = repositoryModelo.ObterTodos();
             ViewBag.Modelos = modelos;
             return View();
-
         }
 
         public ActionResult Cadastro()
         {
             return View();
         }
-
-      
     }
 }

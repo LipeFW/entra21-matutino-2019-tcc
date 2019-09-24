@@ -16,7 +16,6 @@ namespace View.Controllers
         private ClienteRepository repositoryCliente;
         private ProdutoRepository repositoryProduto;
 
-
         public VendaController()
         {
             repository = new VendaRepository();
@@ -24,6 +23,7 @@ namespace View.Controllers
             repositoryCliente = new ClienteRepository();
             repositoryProduto = new ProdutoRepository();
         }
+
         [HttpGet, Route("obtertodos")]
         public JsonResult ObterTodos()
         {
@@ -59,7 +59,7 @@ namespace View.Controllers
                 JsonRequestBehavior.AllowGet);
         }
 
-        [HttpGet,Route("obterpeloid")]
+        [HttpGet, Route("obterpeloid")]
         public JsonResult ObterPeloId(int id)
         {
             return Json(repository.ObterPeloId(id), JsonRequestBehavior.AllowGet);
@@ -67,7 +67,6 @@ namespace View.Controllers
 
         public ActionResult Index()
         {
-
             List<Vendedor> vendedores = repositoryVendedor.ObterTodos();
             ViewBag.Vendedores = vendedores;
             List<Cliente> clientes = repositoryCliente.ObterTodos();

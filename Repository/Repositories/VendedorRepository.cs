@@ -9,13 +9,14 @@ using System.Threading.Tasks;
 
 namespace Repository.Repositories
 {
-    public class VendedorRepository: IVendedorRepository
+    public class VendedorRepository : IVendedorRepository
     {
         public SystemContext context;
         public VendedorRepository()
         {
             context = new SystemContext();
         }
+
         public bool Alterar(Vendedor vendedor)
         {
             var vendedorOriginal = context.Vendedores.FirstOrDefault(x => x.Id == vendedor.Id);
@@ -26,21 +27,23 @@ namespace Repository.Repositories
             vendedorOriginal.Nome = vendedor.Nome;
             vendedorOriginal.IdUsuario = vendedor.IdUsuario;
             vendedorOriginal.IdVeiculo = vendedor.IdVeiculo;
-            
+
             int quantidadeAfetada = context.SaveChanges();
             return quantidadeAfetada == 1;
         }
-            public int Inserir(Vendedor vendedor)
+        public int Inserir(Vendedor vendedor)
         {
             vendedor.RegistroAtivo = true;
             context.Vendedores.Add(vendedor);
             context.SaveChanges();
             return vendedor.Id;
         }
-        public Vendedor ObterPeloId( int id)
+
+        public Vendedor ObterPeloId(int id)
         {
             return context.Vendedores.Include("Usuario").Include("Veiculo").FirstOrDefault(x => x.Id == id);
         }
+
         public bool Apagar(int id)
         {
             var vendedor = context.Vendedores.FirstOrDefault(x => x.Id == id);
@@ -50,6 +53,7 @@ namespace Repository.Repositories
             int quantidadeAfetada = context.SaveChanges();
             return quantidadeAfetada == 1;
         }
+
         public List<Vendedor> ObterTodos()
         {
             return context.Vendedores.Where(x => x.RegistroAtivo).Include("Veiculo").Include("Usuario").ToList();

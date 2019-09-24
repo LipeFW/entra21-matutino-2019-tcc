@@ -50,6 +50,7 @@
             },
             success: function (data) {
                 $("#modal-venda").modal("hide");
+                limparCampos();
                 $idAlterar = -1;
                 $tabelaVenda.ajax.reload();
                 alert("Registro alterado com sucesso");
@@ -58,7 +59,7 @@
             error: function (err) {
                 alert("Não foi possivel alterar");
             }
-        })
+        });
     }
 
     function inserir($quantidade, $vendedor, $cliente, $produto, $total, $desconto) {
@@ -75,6 +76,7 @@
             },
             success: function (data) {
                 $("#modal-venda").modal("hide");
+                limparCampos();
                 $tabelaVenda.ajax.reload();
                 alert('Registro inserido com sucesso');
             },
@@ -89,18 +91,17 @@
         var confirmacao = confirm("Deseja apagar o registro?");
 
         if (confirmacao == true) {
-        $.ajax({
-            url: 'http://localhost:51242/Venda/apagar?id=' + $idApagar,
-            method: 'get',
-            success: function (data) {
-                $tabelaVenda.ajax.reload();
-            },
-            error: function (err) {
-                alert("Não foi possivel apagar");
-            }
-        });
+            $.ajax({
+                url: 'http://localhost:51242/Venda/apagar?id=' + $idApagar,
+                method: 'get',
+                success: function (data) {
+                    $tabelaVenda.ajax.reload();
+                },
+                error: function (err) {
+                    alert("Não foi possivel apagar");
+                }
+            });
         }
-
     });
 
     $('.table').on('click', '.botao-editar', function () {
@@ -117,13 +118,21 @@
                 $('#venda-campo-produto').val(data.Produto);
                 $('#venda-campo-total').val(data.Total);
                 $('#venda-campo-desconto').val(data.Desconto);
-
                 $('#modal-venda').modal('show');
-
             },
             error: function (err) {
                 alert("Não foi possivel editar");
             }
-        })
+        });
     });
-})
+
+    function limparCampos() {
+        $('#venda-campo-quantidade').val("");
+        $('#venda-campo-vendedor').val("");
+        $('#venda-campo-cliente').val("");
+        $('#venda-campo-produto').val("");
+        $('#venda-campo-total').val("");
+        $('#venda-campo-desconto').val("");
+        $idAlterar = -1;
+    }
+});

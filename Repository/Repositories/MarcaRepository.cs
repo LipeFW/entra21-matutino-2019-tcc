@@ -32,8 +32,7 @@ namespace Repository.Repositories
         public bool Apagar(int id)
         {
             var marca = context.Marcas.FirstOrDefault(x => x.Id == id);
-
-
+            
             if (marca == null)
             {
                 return false;
@@ -63,5 +62,4 @@ namespace Repository.Repositories
             return context.Marcas.Where(x => x.RegistroAtivo == true).OrderBy(x => x.Id).ToList();
         }
     }
-
 }

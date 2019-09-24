@@ -24,7 +24,7 @@ namespace View.Controllers
         {
             List<Marca> marcas = repositoryMarca.ObterTodos();
             ViewBag.Marcas = marcas;
-          
+
             return View();
         }
 
@@ -56,8 +56,7 @@ namespace View.Controllers
             var resultado = new { data = modelos };
             return Json(resultado, JsonRequestBehavior.AllowGet);
         }
-
-
+        
         [HttpPost, Route("inserir")]
         public ActionResult Inserir(Modelo modelo)
         {
@@ -67,8 +66,7 @@ namespace View.Controllers
             return Json(resultado,
               JsonRequestBehavior.AllowGet);
         }
-
-
+        
         [HttpGet, Route("apagar")]
         public JsonResult Apagar(int id)
         {

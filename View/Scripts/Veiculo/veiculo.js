@@ -19,8 +19,7 @@
             }
         ]
     });
-
-
+    
     $('#veiculo-botao-salvar').on('click', function () {
         $marca = $('#veiculo-campo-marca').val();
         $modelo = $('#veiculo-campo-modelo').val();
@@ -34,70 +33,70 @@
             alterar($marca, $modelo, $anoFabricacao, $numeroCaminhao, $placa);
         }
 
-        //Arrumar
         function alterar($marca, $modelo, $anoFabricacao, $numeroCaminhao, $placa) {
-        $.ajax({
-            url: 'http://localhost:51242/veiculo/update',
-            method: 'post',
-            data: {
-                id: $idAlterar,
-                idMarca: $marca,
-                idModelo: $modelo,
-                anoFabricacao: $anoFabricacao,
-                numeroCaminhao: $numeroCaminhao,
-                placa: $placa
-            },
-            success: function (data) {
-                $('#modal-veiculo').modal('hide');
-                $idAlterar = -1;
-                $tabelaVeiculo.ajax.reload();
-            },
-            error: function (err) {
-                alert('Não foi possivel alterar');
+            $.ajax({
+                url: 'http://localhost:51242/veiculo/update',
+                method: 'post',
+                data: {
+                    id: $idAlterar,
+                    idMarca: $marca,
+                    idModelo: $modelo,
+                    anoFabricacao: $anoFabricacao,
+                    numeroCaminhao: $numeroCaminhao,
+                    placa: $placa
+                },
+                success: function (data) {
+                    $('#modal-veiculo').modal('hide');
+                    limparCampos();
+                    $idAlterar = -1;
+                    $tabelaVeiculo.ajax.reload();
+                },
+                error: function (err) {
+                    alert('Não foi possivel alterar');
                 }
-            })
+            });
         }
-
 
         function inserir($marca, $modelo, $anoFabricacao, $numeroCaminhao, $placa) {
-        $.ajax({
-            url: 'http://localhost:51242/veiculo/inserir',
-            method: 'post',
-            data: {
-                idMarca: $marca,
-                idModelo: $modelo,
-                anoFabricacao: $anoFabricacao,
-                numeroCaminhao: $numeroCaminhao,
-                placa: $placa
-            },
-            success: function (data) {
-                $('#modal-veiculo').modal('hide');
-                $tabelaVeiculo.ajax.reload();
-                alert('Registro inserido com Sucesso');
-            },
-            error: function (err) {
-                alert('Não foi possivel inserir');
+            $.ajax({
+                url: 'http://localhost:51242/veiculo/inserir',
+                method: 'post',
+                data: {
+                    idMarca: $marca,
+                    idModelo: $modelo,
+                    anoFabricacao: $anoFabricacao,
+                    numeroCaminhao: $numeroCaminhao,
+                    placa: $placa
+                },
+                success: function (data) {
+                    $('#modal-veiculo').modal('hide');
+                    limparCampos();
+                    $tabelaVeiculo.ajax.reload();
+                    alert('Registro inserido com Sucesso');
+                },
+                error: function (err) {
+                    alert('Não foi possivel inserir');
                 }
-            })
+            });
         }
-    })
+    });
 
     $('.table').on('click', '.botao-apagar', function () {
         $idApagar = $(this).data('id');
 
         var confirmacao = confirm("Deseja realmente apagar o registro?");
         if (confirmacao == true) {
-        $.ajax({
-            url: 'http://localhost:51242/veiculo/apagar?id=' + $idApagar,
-            method: 'get',
-            success: function (data) {
-                $tabelaVeiculo.ajax.reload();
-                alert("Registro Apagado Com Sucesso");
-            },
-            error: function (err) {
-                alert('Não foi possivel apagar');
-            }
-        });
+            $.ajax({
+                url: 'http://localhost:51242/veiculo/apagar?id=' + $idApagar,
+                method: 'get',
+                success: function (data) {
+                    $tabelaVeiculo.ajax.reload();
+                    alert("Registro Apagado Com Sucesso");
+                },
+                error: function (err) {
+                    alert('Não foi possivel apagar');
+                }
+            });
         }
     });
 
@@ -119,6 +118,15 @@
             error: function (err) {
                 alert('Não foi possivel carregar');
             }
-        })
+        });
     });
+
+    function limparCampos() {
+        $("#veiculo-campo-marca").val("");
+        $("#veiculo-campo-modelo").val("");
+        $("#veiculo-campo-anofabricacao").val("");
+        $("#veiculo-campo-numerocaminhao").val("");
+        $("#veiculo-campo-placa").val("");
+        $idAlterar = -1;
+    }
 });
