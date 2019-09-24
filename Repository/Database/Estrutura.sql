@@ -456,7 +456,7 @@ FOREIGN KEY(id_pais) REFERENCES paises (id)
 /*ID 347*/(23, 'Saint Patrick', 1),
 /*ID 348*/(23, 'San Fernando', 1),
 /*ID 349*/(23, 'Tobago', 1),
-/*ID 350*/(23, 'Victoria', 1),
+/*ID 350*/(23, 'Victoria', 1);
 /*<--/Trinidad & Tobago-->*/
 /*<--/América Central (ID:4 - 23)-->*/
 /*<--América do Sul (ID:24 - 35)-->*/
@@ -718,7 +718,7 @@ FOREIGN KEY(id_pais) REFERENCES paises (id)
 /*ID 568*/(35, 'Zulia', 1),
 /*ID 569*/(35, 'Dependencias Federales', 1),
 /*ID 570*/(35, 'Distrito Federal', 1),
-/*ID 571*/(35, 'Vargas', 1);
+/*ID 571*/(35, 'Vargas', 1),
 /*<--/Venezuela-->*/
 /*<--/América do Sul-->*/
 CREATE TABLE cidades(
@@ -1465,187 +1465,146 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (12, 'Yellowknife', 1),
 /*<--/Cidades do Territórios do Noroeste-->*/
 /*<--Cidades do Yukon-->*/
-(13, 'Haines Junction', 1),
-(13, 'Mayo', 1),
-(13, 'Whitehorse', 1),
+(1, 'Haines Junction', 1),
+(1, 'Mayo', 1),
+(1, 'Whitehorse', 1),
 /*<--/Cidades do Yukon-->*/
 /*<--/Canada-->*/
-/*<--United States-->*/
-/*<--Cidades do Alabama-->*/
-(14, 'Alabaster', 1),
-(14, 'Albertville', 1),
-(14, 'Alexander City', 1),
-(14, 'Anniston', 1),
-(14, 'Athens', 1),
-(14, 'Auburn', 1),
-(14, 'Bessemer', 1),
-(14, 'Birmingham', 1),
-(14, 'Cullman', 1),
-(14, 'Daphne', 1),
-(14, 'Decatur', 1),
-(14, 'Dothan', 1),
-(14, 'Enterprise', 1),
-(14, 'Eufaula', 1),
-(14, 'Fairfield', 1),
-(14, 'Fairhope', 1),
-(14, 'Florence', 1),
-(14, 'Fort Payne', 1),
-(14, 'Gadsden', 1),
-(14, 'Gardendale', 1),
-(14, 'Hartselle', 1),
-(14, 'Helena', 1),
-(14, 'Homewood', 1),
-(14, 'Hoover', 1),
-(14, 'Hueytown', 1),
-(14, 'Huntsville', 1),
-(14, 'Irondale', 1),
-(14, 'Jacksonville', 1),
-(14, 'Jasper', 1),
-(14, 'Leeds', 1),
-(14, 'Madison', 1),
-(14, 'Millbrook', 1),
-(14, 'Mobile', 1),
-(14, 'Montgomery', 1),
-(14, 'Mountain Brook', 1),
-(14, 'Muscle Shoals', 1),
-(14, 'Northport', 1),
-(14, 'Opelika', 1),
-(14, 'Oxford', 1),
-(14, 'Ozark', 1),
-(14, 'Pelham', 1),
-(14, 'Pell City', 1),
-(14, 'Phenix City', 1),
-(14, 'Pleasant Grove', 1),
-(14, 'Prattville', 1),
-(14, 'Prichard', 1),
-(14, 'Saraland', 1),
-(14, 'Scottsboro', 1),
-(14, 'Selma', 1),
-(14, 'Sheffield', 1),
-(14, 'Sylacauga', 1),
-(14, 'Talladega', 1),
-(14, 'Troy', 1),
-(14, 'Trussville', 1),
-(14, 'Tuscaloosa', 1),
-(14, 'Tuskegee', 1),
-(14, 'Valley', 1),
-(14, 'Vestavia Hills', 1),
-/*<--/Cidades do Alabama-->*/
-/*<--Cidades do Alasca -->*/
-(15,'Anchorage', 1),
-(15,'Barrow', 1),
-(15,'Bethel', 1),
-(15,'College', 1),
-(15,'Fairbanks', 1),
-(15,'Homer', 1),
-(15,'Juneau', 1),
-(15,'Kenai', 1),
-(15,'Ketchikan', 1),
-(15,'Kodiak', 1),
-(15,'Nome', 1),
-(15,'Palmer', 1),
-(15,'Sitka', 1),
-(15,'Soldotna', 1),
-(15,'Sterling', 1),
-(15,'Wasilla', 1),
-/*<--/Cidades do Alasca-->*/
-/*<--Cidades do Arizona-->*/
-(16, 'Apache Junction', 1),
-(16, 'Avondale', 1),
-(16, 'Buckeye', 1),
-(16, 'Bullhead City', 1),
-(16, 'Camp Verde', 1),
-(16, 'Casa Grande', 1),
-(16, 'Casas Adobes', 1),
-(16, 'Catalina Foothills', 1),
-(16, 'Chandler', 1),
-(16, 'Chino Valley', 1),
-(16, 'Coolidge', 1),
-(16, 'Cottonwood', 1),
-(16, 'Douglas', 1),
-(16, 'Drexel Heights', 1),
-(16, 'El Mirage', 1),
-(16, 'Eloy', 1),
-(16, 'Flagstaff', 1),
-(16, 'Florence', 1),
-(16, 'Flowing Wells', 1),
-(16, 'Fortuna Foothills', 1),
-(16, 'Fountain Hills', 1),
-(16, 'Gilbert', 1),
-(16, 'Glendale', 1),
-(16, 'Goodyear', 1),
-(16, 'Green Valley', 1),
-(16, 'Kingman', 1),
-(16, 'Lake Havasu City', 1),
-(16, 'Marana', 1),
-(16, 'Mesa', 1),
-(16, 'Nogales', 1),
-(16, 'Oro Valley', 1),
-(16, 'Paradise Valley', 1),
-(16, 'Payson', 1),
-(16, 'Peoria', 1),
-(16, 'Phoenix', 1),
-(16, 'Prescott', 1),
-(16, 'Prescott Valley', 1),
-(16, 'Safford', 1),
-(16, 'San Luis', 1),
-(16, 'Scottsdale', 1),
-(16, 'Sedona', 1),
-(16, 'Show Low', 1),
-(16, 'Sierra Vista', 1),
-(16, 'Somerton', 1),
-(16, 'Sun City', 1),
-(16, 'Sun City West', 1),
-(16, 'Surprise', 1),
-(16, 'Tempe', 1),
-(16, 'Tucson', 1),
-(16, 'Winslow', 1),
-(16, 'Yuma', 1),
-/*<--/Cidades do Arizona-->*/
-/*<--Cidades do Arkansas-->*/
-(17, 'Arkadelphia', 1),
-(17, 'Batesville', 1),
-(17, 'Bella Vista', 1),
-(17, 'Benton', 1),
-(17, 'Bentonville', 1),
-(17, 'Blytheville', 1),
-(17, 'Bryant', 1),
-(17, 'Cabot', 1),
-(17, 'Camden', 1),
-(17, 'Conway', 1),
-(17, 'El Dorado', 1),
-(17, 'Fayetteville', 1),
-(17, 'Forrest City', 1),
-(17, 'Fort Smith', 1),
-(17, 'Harrison', 1),
-(17, 'Hope', 1),
-(17, 'Hot Springs', 1),
-(17, 'Jacksonville', 1),
-(17, 'Jonesboro', 1),
-(17, 'Little Rock', 1),
-(17, 'Magnolia', 1),
-(17, 'Malvern', 1),
-(17, 'Marion', 1),
-(17, 'Maumelle', 1),
-(17, 'Monticello', 1),
-(17, 'Mountain Home', 1),
-(17, 'North Little Rock', 1),
-(17, 'Paragould', 1),
-(17, 'Pine Bluff', 1),
-(17, 'Rogers', 1),
-(17, 'Russellville', 1),
-(17, 'Searcy', 1),
-(17, 'Sherwood', 1),
-(17, 'Siloam Springs', 1),
-(17, 'Springdale', 1),
-(17, 'Stuttgart', 1),
-(17, 'Texarkana', 1),
-(17, 'Van Buren', 1),
-(17, 'West Helena', 1),
-(17, 'West Memphis', 1),
-/*<--/Cidades do Arkansas-->*/
-/*<--/United States-->*/
-/*<--América do Sul -->*/
+/*<--América do Sul-->*/
+/*<--Argentina-->*/
+/*<--Buenos Aires-->*/
+(351, 'Azul', 1),
+(351, 'Bahia Blanca', 1),
+(351, 'Campana', 1),
+(351, 'Chacabuco', 1),
+(351, 'Chivilcoy', 1),
+(351, 'Dolores', 1),
+(351, 'Junin', 1),
+(351, 'La Plata', 1),
+(351, 'Lincoln', 1),
+(351, 'Lujan', 1),
+(351, 'Mar Del Plata', 1),
+(351, 'Mercedes', 1),
+(351, 'Necochea', 1),
+(351, 'Nueve De Julio', 1),
+(351, 'Olavarria', 1),
+(351, 'Pergamino', 1),
+(351, 'Punta Alta', 1),
+(351, 'San Nicolas', 1),
+(351, 'San Pedro', 1),
+(351, 'San Vicente', 1),
+(351, 'Tandil', 1),
+(351, 'Tres Arroyos', 1),
+(351, 'Veinticinco De Mayo', 1),
+(351, 'Zarate', 1),
+/*<--/Buenos Aires-->*/
+/*<--Catamarca-->*/
+(352, 'Catamarca', 1),
+/*<--/Catamarca-->*/
+/*<--Chaco-->*/
+(353, 'Presidencia Roque Saenz Pena', 1),
+(353, 'Resistencia', 1),
+/*<--/Chaco-->*/
+/*<--Chubut-->*/
+(354, 'Puerto Madryn', 1),
+(354, 'Rawson', 1),
+(354, 'Trelew', 1),
+/*<--/Chubut-->*/
+/*<--Cordoba-->*/
+(355, 'Alta Gracia', 1),
+(355, 'Bell Ville', 1),
+(355, 'Cordoba', 1),
+(355, 'Rio Cuarto', 1),
+(355, 'Rio Tercero', 1),
+(355, 'San Francisco', 1),
+(355, 'Villa Carlos Paz', 1),
+(355, 'Villa Maria', 1),
+/*<--/Cordoba-->*/
+/*<--Corrientes-->*/
+(356, 'Corrientes', 1),
+(356, 'Goya', 1),
+(356, 'Mercedes', 1),
+(356, 'San Lorenzo', 1),
+/*<--/Corrientes-->*/
+/*<--Distrito Federal-->*/
+(357, 'Comodoro Rivadavia', 1),
+/*<--/Distrito Federal-->*/
+/*<--Entre Rios-->*/
+(358, 'Concepcion Del Uruguay', 1),
+(358, 'Concordia', 1),
+(358, 'Gualeguay', 1),
+(358, 'Gualeguaychu', 1),
+(358, 'Parana', 1),
+(358, 'Victoria', 1),
+/*<--/Entre Rios-->*/
+/*<--Formosa-->*/
+(359, 'Formosa', 1),
+/*<--/Formosa-->*/
+/*<--Jujuy-->*/
+(360, 'Jujuy', 1),
+(360, 'Libertador General San Martin', 1),
+(360, 'San Pedro', 1),
+/*<--/Jujuy-->*/
+/*<--La Pampa-->*/
+(361, 'General Pico', 1);
+(361, 'Santa Rosa', 1);
+/*<--/La Pampa-->*/
+/*<--La Rioja-->*/
+(362, 'La Rioja', 1),
+/*<--/La Rioja-->*/
+/*<--Mendoza-->*/
+(363, 'Lujan', 1),
+(363, 'Mendoza', 1),
+(363, 'Rivadavia', 1),
+(363, 'San Martin', 1),
+(363, 'San Rafael', 1),
+/*<--/Mendoza-->*/
+/*<--Misiones-->*/
+(364, 'Eldorado', 1),
+(364, 'Obera', 1),
+(364, 'Posadas', 1),
+/*<--/Misiones-->*/
+/*<--Neuquen-->*/
+(365, 'Neuquen', 1),
+/*<--/Neuquen-->*/
+/*<--Rio Negro-->*/
+(366, 'General Roca', 1),
+(366, 'San Carlos De Bariloche', 1),
+(366, 'Viedma', 1),
+/*<--/Rio Negro-->*/
+/*<--Salta-->*/
+(367, 'Salta', 1),
+(367, 'San Ramon De La Nueva Oran', 1),
+(367, 'Tartagal', 1),
+/*<--/Salta-->*/
+/*<--San Juan-->*/
+(368, 'San Juan', 1),
+/*<--/San Juan-->*/
+/*<--San Luis-->*/
+(369, 'Mercedes', 1),
+(369, 'San Luis', 1),
+/*<--/San Luis-->*/
+/*<--Santa Cruz-->*/
+(370, 'Rio Gallegos', 1),
+/*<--/Santa Cruz-->*/
+/*<--Santa Fe-->*/
+(371, 'Rafaela', 1),
+(371, 'Reconquista', 1),
+(371, 'Rosario', 1),
+(371, 'Santa Fe', 1),
+(371, 'Venado Tuerto', 1),
+(371, 'Villa Constitucion', 1),
+/*<--/Santa Fe-->*/
+/*<--Santiago del Estero-->*/
+(372, 'Santiago Del Estero', 1),
+/*<--/Santiago del Estero-->*/
+/*<--Tierra del Fuego-->*/
+(373, 'Ushuaia', 1),
+/*<--/Tierra del Fuego-->*/
+/*<--Tucuman-->*/
+(374, 'Tucuman', 1),
+/*<--/Tucuman-->*/
+/*<--/Argentina-->*/
 /*<--/América do Sul-->*/
 CREATE TABLE usuarios( 
 id INT PRIMARY KEY IDENTITY(1,1),
@@ -1662,7 +1621,7 @@ VALUES  ( 'lipefw','Felipe','gatodandopinote.png',1 , 'anaumsei', 1),
 	    ( 'illan','Illan','gato-confuo.jpg',0 , 'illanzoka', 1),
 	    ( 'eduardo','Eduardo','guaxinimdoido.jpg',1 , 'RetardoMental', 1),
 	    ( 'henrique','Henrique','hamsterchavoso.png',1 , 'pimbinha6000', 1),
-	    ( 'pablo','Pablo','', 1, '1234', 1),
+	    ( 'pabloluz','Pablo','', 1, '1234', 1),
 	    ( 'nathan','Nathan','passaroseila.jpg', 1, '1203', 1);
 
 
