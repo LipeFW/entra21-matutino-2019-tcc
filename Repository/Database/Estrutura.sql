@@ -1531,6 +1531,24 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (14, 'Valley', 1),
 (14, 'Vestavia Hills', 1),
 /*<--/Cidades do Alabama-->*/
+/*<--Cidades do Alasca -->*/
+(15,'Anchorage', 1),
+(15,'Barrow', 1),
+(15,'Bethel', 1),
+(15,'College', 1),
+(15,'Fairbanks', 1),
+(15,'Homer', 1),
+(15,'Juneau', 1),
+(15,'Kenai', 1),
+(15,'Ketchikan', 1),
+(15,'Kodiak', 1),
+(15,'Nome', 1),
+(15,'Palmer', 1),
+(15,'Sitka', 1),
+(15,'Soldotna', 1),
+(15,'Sterling', 1),
+(15,'Wasilla', 1),
+/*<--/Cidades do Alasca-->*/
 /*<--/United States-->*/
 /*<--América do Sul -->*/
 /*<--/América do Sul-->*/
