@@ -59,7 +59,7 @@ namespace View.Controllers
                 JsonRequestBehavior.AllowGet);
         }
 
-        [HttpGet,Route("obterpeloid")]
+        [HttpGet, Route("obterpeloid")]
         public JsonResult ObterPeloId(int id)
         {
             return Json(repository.ObterPeloId(id), JsonRequestBehavior.AllowGet);

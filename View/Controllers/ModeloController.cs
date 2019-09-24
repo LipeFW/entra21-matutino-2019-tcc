@@ -24,7 +24,7 @@ namespace View.Controllers
         {
             List<Marca> marcas = repositoryMarca.ObterTodos();
             ViewBag.Marcas = marcas;
-          
+
             return View();
         }
 

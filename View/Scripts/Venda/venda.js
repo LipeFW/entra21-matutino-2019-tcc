@@ -89,16 +89,16 @@
         var confirmacao = confirm("Deseja apagar o registro?");
 
         if (confirmacao == true) {
-        $.ajax({
-            url: 'http://localhost:51242/Venda/apagar?id=' + $idApagar,
-            method: 'get',
-            success: function (data) {
-                $tabelaVenda.ajax.reload();
-            },
-            error: function (err) {
-                alert("Não foi possivel apagar");
-            }
-        });
+            $.ajax({
+                url: 'http://localhost:51242/Venda/apagar?id=' + $idApagar,
+                method: 'get',
+                success: function (data) {
+                    $tabelaVenda.ajax.reload();
+                },
+                error: function (err) {
+                    alert("Não foi possivel apagar");
+                }
+            });
         }
 
     });

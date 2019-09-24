@@ -8,7 +8,6 @@ using System.Threading.Tasks;
 namespace Repository.Interface
 {
     public interface IVeiculoRepository
-
     {
         int Inserir(Veiculo veiculo);
 

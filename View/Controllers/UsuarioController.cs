@@ -73,7 +73,7 @@ namespace View.Controllers
             usuario.RegistroAtivo = true;
             var id = repository.Inserir(usuario);
             var resultado = new { id = id };
-            return Json(resultado,JsonRequestBehavior.AllowGet);
+            return Json(resultado, JsonRequestBehavior.AllowGet);
         }
 
         [HttpGet, Route("apagar")]

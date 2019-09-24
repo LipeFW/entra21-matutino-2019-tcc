@@ -83,17 +83,17 @@
         $idApagar = $(this).data("id");
         var confirmacao = confirm("Deseja realmente apagar o registro?");
         if (confirmacao == true) {
-        $.ajax({
-            url: "http://localhost:51242/Produto/apagar?id=" + $idApagar,
-            method: "get",
-            success: function (data) {
-                $tabelaProduto.ajax.reload();
-                alert('Apagado com Sucesso');
-            },
-            error: function (err) {
-                alert('Não foi possivel apagar');
-            }
-        });
+            $.ajax({
+                url: "http://localhost:51242/Produto/apagar?id=" + $idApagar,
+                method: "get",
+                success: function (data) {
+                    $tabelaProduto.ajax.reload();
+                    alert('Apagado com Sucesso');
+                },
+                error: function (err) {
+                    alert('Não foi possivel apagar');
+                }
+            });
         }
     });
 

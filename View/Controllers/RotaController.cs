@@ -64,8 +64,8 @@ namespace View.Controllers
 
         [HttpGet, Route("obterpeloid")]
         public JsonResult ObterPeloId(int id)
-        { 
-            return Json(repository.ObterPeloId(id) ,JsonRequestBehavior.AllowGet);
+        {
+            return Json(repository.ObterPeloId(id), JsonRequestBehavior.AllowGet);
         }
 
 
