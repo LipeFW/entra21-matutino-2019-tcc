@@ -2779,6 +2779,29 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (27, 'Winder', 1),
 (27, 'Woodstock', 1),
 /*<--/Cidades do Geórgia-->*/
+/*<--/Cidades do Havaí-->*/
+(28, 'Ahuimanu', 1),
+(28, 'Aiea', 1),
+(28, 'Ewa Beach', 1),
+(28, 'Hilo', 1),
+(28, 'Honolulu', 1),
+(28, 'Kahului', 1),
+(28, 'Kailua', 1),
+(28, 'Kaneohe', 1),
+(28, 'Kapaa', 1),
+(28, 'Kihei', 1),
+(28, 'Lahaina', 1),
+(28, 'Makaha', 1),
+(28, 'Makakilo City', 1),
+(28, 'Mililani Town', 1),
+(28, 'Nanakuli', 1),
+(28, 'Pearl City', 1),
+(28, 'Wahiawa', 1),
+(28, 'Waianae', 1),
+(28, 'Wailuku', 1),
+(28, 'Waimalu', 1),
+(28, 'Waipahu', 1),
+/*<--/Cidades do Havaí-->*/
 /*<--/United States-->*/
 /*<--América do Sul-->*/
 /*<--Argentina-->*/
