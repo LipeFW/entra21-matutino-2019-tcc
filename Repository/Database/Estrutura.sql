@@ -1725,7 +1725,8 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (18, 'Clayton', 1),
 (18, 'Clearlake', 1),
 (18, 'Clovis', 1),
-(18, 'Coachella', 1),
+(18, 'Coachella', 1);
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 (18, 'Coalinga', 1),
 (18, 'Colton', 1),
 (18, 'Commerce', 1),
@@ -2673,8 +2674,9 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (26, 'Winter Springs', 1),
 (26, 'Wright', 1),
 (26, 'Yeehaw Junction', 1),
-(26, 'Zephyrhills', 1),
+(26, 'Zephyrhills', 1);
 /*<--/Cidades do Flórida-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Cidades do Geórgia-->*/
 (27, 'Acworth', 1),
 (27, 'Albany', 1),
@@ -3180,8 +3182,9 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (32, 'Urbandale', 1),
 (32, 'Waterloo', 1),
 (32, 'Waverly', 1),
-(32, 'West Des Moines', 1),
+(32, 'West Des Moines', 1);
 /*<--/Cidades do Iowa-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Cidades do Kansas-->*/
 (33, 'Andover', 1),
 (33, 'Arkansas City', 1),
@@ -4096,8 +4099,9 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (394, 'Vargem Grande', 1),
 (394, 'Viana', 1),
 (394, 'Vitoria Do Mearim', 1),
-(394, 'Vitorino Freire', 1),
+(394, 'Vitorino Freire', 1);
 /*<--/Maranhao-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Minas Gerais-->*/
 (395, 'Abaete', 1),
 (395, 'Acucena', 1),
@@ -4613,59 +4617,59 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (398, 'Wenceslau Braz', 1),
 /*<--/Paraná-->*/
 /*<--Piauí-->*/
-(399, 'Agua Branca', 1);
-(399, 'Alto Longa', 1);
-(399, 'Altos', 1);
-(399, 'Amarante', 1);
-(399, 'Barras', 1);
-(399, 'Batalha', 1);
-(399, 'Beneditinos', 1);
-(399, 'Bom Jesus', 1);
-(399, 'Buriti Dos Lopes', 1);
-(399, 'Campo Maior', 1);
-(399, 'Canto Do Buriti', 1);
-(399, 'Carire', 1);
-(399, 'Castelo Do Piaui', 1);
-(399, 'Cocal', 1);
-(399, 'Corrente', 1);
-(399, 'Demerval Lobao', 1);
-(399, 'Elesbao Veloso', 1);
-(399, 'Esperantina', 1);
-(399, 'Floriano', 1);
-(399, 'Gilbues', 1);
-(399, 'Inhuma', 1);
-(399, 'Itainopolis', 1);
-(399, 'Itaueira', 1);
-(399, 'Jaicos', 1);
-(399, 'Jose De Freitas', 1);
-(399, 'Luis Correia', 1);
-(399, 'Luzilandia', 1);
-(399, 'Matias Olimpio', 1);
-(399, 'Miguel Alves', 1);
-(399, 'Mombaca', 1);
-(399, 'Monsenhor Gil', 1);
-(399, 'Oeiras', 1);
-(399, 'Palmeirais', 1);
-(399, 'Parnaiba', 1);
-(399, 'Pedreiras', 1);
-(399, 'Pedro Ii', 1);
-(399, 'Picos', 1);
-(399, 'Pimenteiras', 1);
-(399, 'Pio Ix', 1);
-(399, 'Piracuruca', 1);
-(399, 'Piripiri', 1);
-(399, 'Porto', 1);
-(399, 'Regeneracao', 1);
-(399, 'Sao Joao Do Piaui', 1);
-(399, 'Sao Miguel Do Tapuio', 1);
-(399, 'Sao Pedro Do Piaui', 1);
-(399, 'Sao Raimundo Nonato', 1);
-(399, 'Simoes', 1);
-(399, 'Simplicio Mendes', 1);
-(399, 'Teresina', 1);
-(399, 'Uniao', 1);
-(399, 'Urucui', 1);
-(399, 'Valenca Do Piaui', 1);
+(399, 'Agua Branca', 1),
+(399, 'Alto Longa', 1),
+(399, 'Altos', 1),
+(399, 'Amarante', 1),
+(399, 'Barras', 1),
+(399, 'Batalha', 1),
+(399, 'Beneditinos', 1),
+(399, 'Bom Jesus', 1),
+(399, 'Buriti Dos Lopes', 1),
+(399, 'Campo Maior', 1),
+(399, 'Canto Do Buriti', 1),
+(399, 'Carire', 1),
+(399, 'Castelo Do Piaui', 1),
+(399, 'Cocal', 1),
+(399, 'Corrente', 1),
+(399, 'Demerval Lobao', 1),
+(399, 'Elesbao Veloso', 1),
+(399, 'Esperantina', 1),
+(399, 'Floriano', 1),
+(399, 'Gilbues', 1),
+(399, 'Inhuma', 1),
+(399, 'Itainopolis', 1),
+(399, 'Itaueira', 1),
+(399, 'Jaicos', 1),
+(399, 'Jose De Freitas', 1),
+(399, 'Luis Correia', 1),
+(399, 'Luzilandia', 1),
+(399, 'Matias Olimpio', 1),
+(399, 'Miguel Alves', 1),
+(399, 'Mombaca', 1),
+(399, 'Monsenhor Gil', 1),
+(399, 'Oeiras', 1),
+(399, 'Palmeirais', 1),
+(399, 'Parnaiba', 1),
+(399, 'Pedreiras', 1),
+(399, 'Pedro Ii', 1),
+(399, 'Picos', 1),
+(399, 'Pimenteiras', 1),
+(399, 'Pio Ix', 1),
+(399, 'Piracuruca', 1),
+(399, 'Piripiri', 1),
+(399, 'Porto', 1),
+(399, 'Regeneracao', 1),
+(399, 'Sao Joao Do Piaui', 1),
+(399, 'Sao Miguel Do Tapuio', 1),
+(399, 'Sao Pedro Do Piaui', 1),
+(399, 'Sao Raimundo Nonato', 1),
+(399, 'Simoes', 1),
+(399, 'Simplicio Mendes', 1),
+(399, 'Teresina', 1),
+(399, 'Uniao', 1),
+(399, 'Urucui', 1),
+(399, 'Valenca Do Piaui', 1),
 /*<--/Piauí-->*/
 /*<--Rio de Janeiro-->*/
 (400, 'Angra Dos Reis', 1),
@@ -5553,7 +5557,7 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (410, 'Taguatinga', 1),
 (410, 'Tocantinopolis', 1),
 (410, 'Wanderland', 1),
-(410, 'Xambio', 1),
+(410, 'Xambio', 1);
 /*<--/Tocantins-->*/
 /*<--/Brasil-->*/
 /*<--/América do Sul-->*/
