@@ -456,7 +456,7 @@ FOREIGN KEY(id_pais) REFERENCES paises (id)
 /*ID 347*/(23, 'Saint Patrick', 1),
 /*ID 348*/(23, 'San Fernando', 1),
 /*ID 349*/(23, 'Tobago', 1),
-/*ID 350*/(23, 'Victoria', 1);
+/*ID 350*/(23, 'Victoria', 1),
 /*<--/Trinidad & Tobago-->*/
 /*<--/América Central (ID:4 - 23)-->*/
 /*<--América do Sul (ID:24 - 35)-->*/
@@ -718,7 +718,7 @@ FOREIGN KEY(id_pais) REFERENCES paises (id)
 /*ID 568*/(35, 'Zulia', 1),
 /*ID 569*/(35, 'Dependencias Federales', 1),
 /*ID 570*/(35, 'Distrito Federal', 1),
-/*ID 571*/(35, 'Vargas', 1),
+/*ID 571*/(35, 'Vargas', 1);
 /*<--/Venezuela-->*/
 /*<--/América do Sul-->*/
 CREATE TABLE cidades(
