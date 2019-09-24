@@ -555,7 +555,7 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (1,'Westlock',1),
 (1,'Wetaskiwin',1),
 (1,'Valleyview',1),
-(1,'Whitecourt',1);
+(1,'Whitecourt',1),
 /*<--/Cidades do Alberta-->*/
 /*<--Cidades do Colúmbia Britânica-->*/
 (2, 'Abbotsford', 1),
@@ -1165,6 +1165,30 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (9, 'Wynyard', 1),
 (9, 'Yorkton', 1),
 /*<--/Cidades do Saskatchewan-->*/
+/*<--Cidades do Terra Nova e Labrador-->*/
+(10, 'Bay Roberts', 1),
+(10, 'Bonavista', 1),
+(10, 'Botwood', 1),
+(10, 'Burgeo', 1),
+(10, 'Carbonear', 1),
+(10, 'Catalina', 1),
+(10, 'Channel-port Aux Basques', 1),
+(10, 'Corner Brook', 1),
+(10, 'Deer Lake', 1),
+(10, 'Gambo', 1),
+(10, 'Gander', 1),
+(10, 'Grand Bank', 1),
+(10, 'Harbour Breton', 1),
+(10, 'Hare Bay', 1),
+(10, 'Lewisporte', 1),
+(10, 'Marystown', 1),
+(10, 'Saint Anthony', 1),
+(10, 'Springdale', 1),
+(10, 'Stephenville', 1),
+(10, 'Stephenville Crossing', 1),
+(10, 'Torbay', 1),
+(10, 'Wabana', 1),
+/*<--/Cidades do Terra Nova e Labrador-->*/
 /*<--/Canada-->*/
 
 CREATE TABLE usuarios( 
