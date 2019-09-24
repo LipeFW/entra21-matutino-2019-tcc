@@ -73,6 +73,5 @@ namespace Repository.Repositories
         {
             return context.Usuarios.Where(x => x.RegistroAtivo == true).ToList();
         }
-
     }
 }
