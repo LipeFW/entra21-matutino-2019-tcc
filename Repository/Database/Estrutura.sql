@@ -1189,6 +1189,11 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (10, 'Torbay', 1),
 (10, 'Wabana', 1),
 /*<--/Cidades do Terra Nova e Labrador-->*/
+/*<--Cidades do Nunavut-->*/
+(1, 'Clyde River', 1),
+(1, 'Iqaluit', 1),
+(1, 'Pangnirtung', 1),
+/*<--/Cidades do Nunavut-->*/
 /*<--/Canada-->*/
 
 CREATE TABLE usuarios( 
