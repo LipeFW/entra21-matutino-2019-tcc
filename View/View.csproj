@@ -2776,6 +2776,7 @@
     <Content Include="Views\Marca\MarcaModal.cshtml" />
     <Content Include="Views\Modelo\Index.cshtml" />
     <Content Include="Views\Modelo\ModeloModal.cshtml" />
+    <Content Include="Views\Usuario\ConfirmacaoModal.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
