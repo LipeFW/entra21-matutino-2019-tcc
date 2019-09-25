@@ -11,8 +11,7 @@
             { 'data': 'Veiculo' },
             {
                 render: function (data, type, row) {
-                    return '<button class="btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button><button class="btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>'
-
+                    return '<button class="btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button><button class="btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>';
                 }
             }
         ]
@@ -27,7 +26,6 @@
             alert("Preencha corretamente os campos");
             return null;
         }
-
         if ($idAlterar == -1) {
             inserir($nome, $usuario, $veiculo);
         }
@@ -103,7 +101,6 @@
         $.ajax({
             url: 'http://localhost:51242/Vendedor/obterpeloid?id=' + $idAlterar,
             method: 'get',
-
             success: function (data) {
                 $('#vendedor-campo-nome').val(data.Nome);
                 $('#vendedor-campo-usuario').val(data.Usuario.Nome);

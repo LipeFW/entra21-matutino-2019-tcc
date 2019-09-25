@@ -1,14 +1,9 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Venda";
 }
-
 <link rel="stylesheet" type="text/css" href="~/Content/css/tabela/util.css" />
 
 <div class="row">
-
-
-
     <div class="col-12">
         <h5 class="text-primary">@View.Resources.Resource.ListadeMarcas</h5>
 
@@ -26,10 +21,8 @@
 
         </table>
     </div>
-
     <div class="col-12">
         <form action="/venda/editar" method="post">
-
             <input type="hidden" name="id" id="id" value="@ViewBag.Venda.Id" />
             <div class="form-group">
                 <label for="venda-cliente">Cliente</label>
@@ -47,12 +40,9 @@
             </div>
 
             <button class="btn btn-primary float-right">Salvar</button>
-
         </form>
     </div>
-
 </div>
-
 @RenderPage("ProdutoModal.cshtml")
 @section js{
     <script src="~/Scripts/Venda/venda-editar.js"></script>

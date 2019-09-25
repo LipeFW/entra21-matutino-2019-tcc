@@ -19,7 +19,6 @@
         ]
     });
 
-
     $('#inventario-botao-salvar').on('click', function () {
         $numero_caminhao = $('inventario-campo-numerocaminaho').val();
 
@@ -77,7 +76,7 @@
                 { 'data': 'NumeroCaminhao' },
                 {
                     render: function (data, type, row) {
-                        return '<button class="btn btn-success botao-abrir" data-id="' + row.Id + '"><i class="fas fa-arrow-right"></i> Abrir</button>\<button class="btn btn-primary botao-editar ml-1" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i> Editar</button>'
+                        return '<button class="btn btn-success botao-abrir" data-id="' + row.Id + '"><i class="fas fa-arrow-right"></i> Abrir</button>\<button class="btn btn-primary botao-editar ml-1" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i> Editar</button>';
                     }
                 }
             ]

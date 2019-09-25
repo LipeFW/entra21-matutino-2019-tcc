@@ -7,7 +7,6 @@
         }
     }).on('select2:select', function () {
         $idPais = $("#config-campo-pais").val();
-
     });
 
     $("#config-campo-estado").select2({
@@ -23,4 +22,4 @@
             }
         }
     });
-})
+});

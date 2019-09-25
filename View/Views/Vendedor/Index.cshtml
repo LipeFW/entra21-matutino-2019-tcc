@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
 
     ViewBag.Title = "Vendedor";
 }
@@ -7,8 +6,6 @@
 <div class="table responsive">
 
     <h2 class="text-center">@View.Resources.Resource.Vendedores</h2>
-
-
     <button data-toggle="modal" data-target="#modal-vendedor"
             class="btn btn-primary float-right mb-2">
         <i class="fas fa-plus">
@@ -26,14 +23,9 @@
             </tr>
         </thead>
     </table>
-
 </div>
-
-
 @RenderPage("VendedorModal.cshtml")
-
 @section js{
     <script src="~/Scripts/Vendedor/Vendedor.js">
     </script>
 }
-

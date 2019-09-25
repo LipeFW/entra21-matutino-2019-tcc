@@ -5,6 +5,7 @@ id INT PRIMARY KEY IDENTITY(1,1),
 nome VARCHAR(100),
 registro_ativo BIT
 );
+
 INSERT INTO paises(nome, registro_ativo) VALUES 
 /*<--Países da América do Norte (ID:1 - 3)-->*/
 /*ID 01*/('Canada', 1),
@@ -6404,7 +6405,6 @@ VALUES  ( 'lipefw','Felipe','gatodandopinote.png',1 , 'anaumsei', 1),
 	    ( 'henrique','Henrique','hamsterchavoso.png',1 , 'pimbinha6000', 1),
 	    ( 'pablo','Pablo','Rambo.jpg', 1, '1234', 1),
 	    ( 'nathan','Nathan','passaroseila.jpg', 1, '1203', 1);
-
 
 CREATE TABLE categorias( 
 id INT PRIMARY KEY IDENTITY(1,1),

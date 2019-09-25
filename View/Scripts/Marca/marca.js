@@ -9,7 +9,7 @@
             { 'data': 'Nome' },
             {
                 render: function (data, type, row) {
-                    return '<button class="btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button>\<button class="btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>'
+                    return '<button class="btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button>\<button class="btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>';
                 }
             }
         ]
@@ -57,7 +57,6 @@
                 limparCampos();
                 $tabelaMarca.ajax.reload();
                 alert('Registro inserido com Sucesso');
-
             },
             error: function (err) {
                 alert('Não foi possivel inserir');

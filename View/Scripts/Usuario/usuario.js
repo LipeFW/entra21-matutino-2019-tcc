@@ -10,7 +10,7 @@
             { "data": "Senha" },
             {
                 render: function (data, type, row) {
-                    return '<button class="btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button>\<button class="btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>'
+                    return '<button class="btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button>\<button class="btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>';
                 }
             }
         ]
@@ -27,7 +27,6 @@
 
         if ($idAlterar == -1) {
             inserir($nome.trim(), $senha);
-
         } else {
             alterar($nome.trim(), $senha);
         }
@@ -72,7 +71,7 @@
                 }
             });
         }
-    })
+    });
 
     $(".table").on("click", ".botao-apagar", function () {
         $idApagar = $(this).data("id");
@@ -84,8 +83,7 @@
                 success: function (data) {
                     $tabelaUsuario.ajax.reload();
                     alert("Registro Apagado com Sucesso");
-
-                },
+                                    },
                 error: function (err) {
                     alert('Não Foi Possível Apagar');
                 }

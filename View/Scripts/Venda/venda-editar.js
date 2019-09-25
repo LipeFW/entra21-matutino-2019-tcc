@@ -1,8 +1,6 @@
 ﻿$(function () {
-
-    $idAlterar = -1;
-
-    $idVenda = $("#id").val();
+        $idAlterar = -1;
+        $idVenda = $("#id").val();
 
     $tabela = $("#venda-tabela").DataTable({
         ajax: "/produto/obtertodospeloidvenda?idVenda=" + $idVenda,
@@ -45,13 +43,11 @@
             alert("Preencha os campos corretamete");
             return null;
         }
-
         if ($idAlterar == -1) {
             inserir($nome, $quantidade, $valor);
         } else {
             alterar($nome, $quantidade, $valor);
         }
-
     });
 
     function inserir($nome, $quantidade, $valor) {
@@ -63,19 +59,14 @@
                 quantidade: $quantidade,
                 valor: $valor,
                 idVenda: $idVenda
-
             },
             success: function (data) {
                 limparCampos();
                 $tabela.ajax.reload();
                 $("#venda-produto-modal").modal("hide");
-
-
             },
-
             error: function (err) {
                 alert("Não foi possível cadastrar");
-
             }
         });
     }
@@ -96,7 +87,7 @@
             error: function (data) {
                 alert("Não foi possível buscar o registro");
             }
-        })
+        });
     });
 
     function alterar($nome, $quantidade, $valor) {
@@ -114,7 +105,6 @@
                 $("#venda-produto-modal").modal("hide");
                 limparCampos();
                 $tabela.ajax.reload();
-
             },
             error: function (err) {
                 alert("Não foi possível alterar");
@@ -128,5 +118,4 @@
         $("#modal-produto-valor").val("");
         $idAlterar = -1;
     }
-
 });

@@ -12,7 +12,7 @@
             { "data": "Valor" },
             {
                 render: function (data, type, row) {
-                    return '<button class="btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button><button class="btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>'
+                    return '<button class="btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button><button class="btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>';
                 }
             }
         ]
@@ -30,7 +30,7 @@
             alterar($nome, $categoria, $codigo, $quantidade, $valor);
         }
 
-        function alterar($nome, $categoria,  $quantidade, $valor) {
+        function alterar($nome, $categoria, $quantidade, $valor) {
             $.ajax({
                 url: "http://localhost:51242/Produto/update",
                 method: 'post',
@@ -53,7 +53,7 @@
             });
         }
 
-        function inserir($nome, $categoria,  $quantidade, $valor) {
+        function inserir($nome, $categoria, $quantidade, $valor) {
             $.ajax({
                 url: "http://localhost:51242/Produto/Inserir",
                 method: "post",
@@ -74,7 +74,7 @@
                 }
             });
         }
-    })
+    });
 
     $(".table").on("click", ".botao-apagar", function () {
         $idApagar = $(this).data("id");
@@ -110,7 +110,7 @@
             error: function (err) {
                 alert('Não foi possivel carregar');
             }
-        })
+        });
     });
 
     function limparCampos() {

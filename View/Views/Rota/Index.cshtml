@@ -1,7 +1,6 @@
 ﻿@{
     ViewBag.Title = "Rota";
 }
-
 <link rel="stylesheet" type="text/css" href="~/Content/css/tabela/util.css" />
 <div class="table responsive">
 
@@ -22,17 +21,13 @@
         </thead>
     </table>
 </div>
-
-
 @RenderPage("RotaModal.cshtml")
-
 @section js{
     <script src="~/Scripts/Rota/rota.js">
     </script>
     <script src="~/Scripts/select2.js">
     </script>
 }
-
 @section css{
     <link href="~/Content/css/select2.css"
           rel="stylesheet" />
