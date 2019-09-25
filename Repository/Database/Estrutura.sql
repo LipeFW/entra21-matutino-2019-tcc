@@ -4073,8 +4073,27 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (43, 'Orchard Homes', 1),
 (43, 'Polson', 1),
 (43, 'Sidney', 1),
-(43, 'Whitefish', 1),
+(43, 'Whitefish', 1);
 /*<--/Cidades do Montana-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--/Cidades do Nebrasca-->*/
+(44, 'Beatrice', 1),
+(44, 'Bellevue', 1),
+(44, 'Columbus', 1),
+(44, 'Fremont', 1),
+(44, 'Grand Island', 1),
+(44, 'Hastings', 1),
+(44, 'Kearney', 1),
+(44, 'La Vista', 1),
+(44, 'Lexington', 1),
+(44, 'Lincoln', 1),
+(44, 'Norfolk', 1),
+(44, 'North Platte', 1),
+(44, 'Omaha', 1),
+(44, 'Papillion', 1),
+(44, 'Scottsbluff', 1),
+(44, 'South Sioux City', 1),
+/*<--/Cidades do Nebrasca-->*/
 /*<--/United States-->*/
 /*<--América do Sul-->*/
 /*<--Argentina-->*/
