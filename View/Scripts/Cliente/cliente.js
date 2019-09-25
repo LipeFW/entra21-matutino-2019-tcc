@@ -27,7 +27,7 @@
         $vendedor = $('#cliente-campo-vendedor').val();
 
         if (($nome.trim() == "") || ($telefone.trim == "") || ($cnpj == "") || ($cep == "")) {
-            alert("Preencha corretamente os campos!");
+            bootbox.alert("Preencha corretamente o campo!");
             return null;
         }
 
@@ -59,7 +59,7 @@
                 $tabelaCliente.ajax.reload();
             },
             error: function (err) {
-                alert('Não foi possivel alterar');
+                bootbox.alert('Não foi possivel alterar');
             }
         })
     }
@@ -78,32 +78,45 @@
             success: function (data) {
                 $('#modal-cliente').modal('hide');
                 limparCampos();
-                alert('Registro inserido com Sucesso');
+                bootbox.alert('Registro inserido com Sucesso');
                 $tabelaCliente.ajax.reload();
             },
             error: function (err) {
-                alert('Não foi possivel cadastrar o cliente');
+                bootbox.alert('Não foi possivel cadastrar o cliente');
             }
         });
     }
 
     $(".table").on("click", ".botao-apagar", function () {
         $idApagar = $(this).data("id");
-        var confirmacao = confirm("Deseja realmente apagar o registro?")
-        if (confirmacao == true) {
-            $.ajax({
-                url: "http://localhost:51242/Cliente/Apagar?id=" + $idApagar,
-                method: "get",
-                success: function (data) {
-                    alert("Registro Apagado Com Sucesso")
-                    $tabelaCliente.ajax.reload();
-
+        bootbox.confirm({
+            message: "Deseja realmente apagar o registro?",
+            buttons: {
+                confirm: {
+                    label: 'Sim',
+                    className: 'btn-success'
                 },
-                error: function (err) {
-                    alert('Não Foi Possível Apagar');
+                cancel: {
+                    label: 'Não',
+                    className: 'btn-danger'
                 }
-            });
-        }
+            },
+            callback: function (result) {
+                if (result)
+                    $.ajax({
+                        url: "http://localhost:51242/Usuario/Apagar?id=" + $idApagar,
+                        method: "get",
+                        success: function (data) {
+                            $tabelaCliente.ajax.reload();
+                            bootbox.alert("Registro apagado com sucesso");
+
+                        },
+                        error: function (err) {
+                            bootbox.alert('Não foi possível apagar');
+                        }
+                    });
+            }
+        });
     });
 
     $('.table').on('click', '.botao-editar', function () {
@@ -121,14 +134,14 @@
                 $('#modal-cliente').modal('show');
             },
             error: function (err) {
-                alert('Não foi possivel carregar');
+                bootbox.alert('Não foi possivel carregar');
             }
         });
     });
 
     function limparCampos() {
         $('#cliente-campo-nome').val("");
-        $('#cliente-campo-telefone').val("");
+        $('#cliente-campo-telefone').val("");   
         $('#cliente-campo-cnpj').val("");
         $('#cliente-campo-cep').val("");
         $('#cliente-campo-vendedor').val("");

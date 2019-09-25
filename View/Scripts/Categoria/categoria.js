@@ -19,7 +19,7 @@
         $nome = $('#categoria-campo-nome').val();
 
         if ($nome.trim() == "") {
-            alert("Preencha corretamente o campo!");
+            bootbox.alert("Preencha corretamente o campo!");
             return null;
         }
 
@@ -46,7 +46,7 @@
                 $tabelaCategoria.ajax.reload();
             },
             error: function (err) {
-                alert('Não foi possivel alterar');
+                bootbox.alert('Não foi possivel alterar');
             }
         });
     }
@@ -62,15 +62,15 @@
                 $('#modal-categoria').modal('hide');
                 limparCampos();
                 $tabelaCategoria.ajax.reload();
-                alert("Registro Inserido Com Sucesso")
+                bootbox.alert("Registro inserido com sucesso")
             },
             error: function (err) {
-                alert('Não foi possivel inserir');
+                bootbox.alert('Não foi possivel inserir');
             }
         });
     }
 
-    $(".table").on("click", ".botao-apagar", function () {
+    $("#categoria-tabela").on("click", ".botao-apagar", function () {
         $idApagar = $(this).data("id");
         bootbox.confirm({
             message: "Deseja realmente apagar o registro?",
@@ -87,7 +87,7 @@
             callback: function (result) {
                 if (result)
                     $.ajax({
-                        url: "http://localhost:51242/Usuario/Apagar?id=" + $idApagar,
+                        url: "http://localhost:51242/Categoria/Apagar?id=" + $idApagar,
                         method: "get",
                         success: function (data) {
                             $tabelaCategoria.ajax.reload();
@@ -109,11 +109,10 @@
             method: 'get',
             success: function (data) {
                 $('#categoria-campo-nome').val(data.Nome);
-
                 $('#modal-categoria').modal('show');
             },
             error: function (err) {
-                alert('Não foi possivel carregar');
+                bootbox.alert('Não foi possivel carregar');
             }
         })
     });
