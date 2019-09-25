@@ -8,7 +8,6 @@
             { "data": "Id" },
             { "data": "Nome" },
             { "data": "Categoria.Nome" },
-            { "data": "Quantidade" },
             { "data": "Valor" },
             {
                 render: function (data, type, row) {
@@ -21,23 +20,21 @@
     $("#produto-botao-salvar").on("click", function () {
         $nome = $("#produto-campo-nome").val();
         $categoria = $("#produto-campo-categoria").val();
-        $quantidade = $("#produto-campo-quantidade").val();
         $valor = $("#produto-campo-valor").val();
 
         if ($idAlterar == -1) {
-            inserir($nome, $categoria, $codigo, $quantidade, $valor);
+            inserir($nome, $categoria, $valor);
         } else {
-            alterar($nome, $categoria, $codigo, $quantidade, $valor);
+            alterar($nome, $categoria, $valor);
         }
 
-        function alterar($nome, $categoria,  $quantidade, $valor) {
+        function alterar($nome, $categoria, $valor) {
             $.ajax({
                 url: "http://localhost:51242/Produto/update",
                 method: 'post',
                 data: {
                     id: $idAlterar,
                     nome: $nome,
-                    idCategoria: $categoria,
                     quantidade: $quantidade,
                     valor: $valor
                 },
@@ -59,13 +56,12 @@
                 method: "post",
                 data: {
                     nome: $nome,
-                    idCategoria: $categoria,
                     quantidadeProdutos: $quantidade,
                     valorUnitario: $valor
                 },
                 success: function (data) {
                     $("#modal-produto").modal('hide');
-                    limparCampos();
+                    //limparCampos();
                     $tabelaProduto.ajax.reload();
                     alert("Registro Inserido Com Sucesso")
                 },
@@ -102,7 +98,6 @@
             method: "get",
             success: function (data) {
                 $("#produto-campo-nome").val(data.Nome);
-                $("#produto-campo-categoria").val(data.Categoria.Nome);
                 $("#produto-campo-quantidade").val(data.Quantidade);
                 $("#produto-campo-valor").val(data.Valor);
                 $("#modal-produto").modal("show");
@@ -113,12 +108,12 @@
         })
     });
 
-    function limparCampos() {
-        $("#produto-campo-nome").val("");
-        $("#produto-campo-categoria").val("");
-        $("#produto-campo-codigo").val("");
-        $("#produto-campo-quantidade").val("");
-        $("#produto-campo-valor").val("");
-        $idAlterar = -1;
-    }
+    //function limparCampos() {
+    //    $("#produto-campo-nome").val("");
+    //    $("#produto-campo-categoria").val("");
+    //    $("#produto-campo-codigo").val("");
+    //    $("#produto-campo-quantidade").val("");
+    //    $("#produto-campo-valor").val("");
+    //    $idAlterar = -1;
+    //}
 });

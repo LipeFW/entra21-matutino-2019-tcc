@@ -69,15 +69,15 @@
     }
 
     $('#modal-inventario').on('show.bs.modal', function (e) {
-        $tabelaInventario = $('#modal-inventario-tabela').DataTable({
-            ajax: 'http://localhost:51242/veiculo/obtertodos',
+        $tabelaProduto = $('#modal-inventario-tabela').DataTable({
+            ajax: 'http://localhost:51242/produto/obtertodos',
             serverSide: true,
             columns: [
-                { 'data': 'Id' },
-                { 'data': 'NumeroCaminhao' },
+                { 'data': 'Nome' },
+                { 'data': 'Quantidade' },
                 {
                     render: function (data, type, row) {
-                        return '<button class="btn btn-success botao-abrir" data-id="' + row.Id + '"><i class="fas fa-arrow-right"></i> Abrir</button>\<button class="btn btn-primary botao-editar ml-1" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i> Editar</button>'
+                        return '<button class="btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-arrow-right"></i>Editar</button>\<button class="btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i> Apagar</button>'
                     }
                 }
             ]
