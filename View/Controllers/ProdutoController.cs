@@ -28,13 +28,13 @@ namespace View.Controllers
             return View();
         }
 
-        [HttpGet, Route("obtertodospeloidvenda")]
-        public JsonResult ObterTodosPeloIdVenda(int idVenda)
-        {
-            var produtos = repository.ObterProdutosPeloIdVenda(idVenda);
-            var resultado = new { data = produtos };
-            return Json(resultado, JsonRequestBehavior.AllowGet);
-        }
+        //[HttpGet, Route("obtertodospeloidvenda")]
+        //public JsonResult ObterTodosPeloIdVenda(int idVenda)
+        //{
+        //    var produtos = repository.ObterProdutosPeloIdVenda(idVenda);
+        //    var resultado = new { data = produtos };
+        //    return Json(resultado, JsonRequestBehavior.AllowGet);
+        //}
 
         [HttpGet, Route("obtertodos")]
         public JsonResult ObterTodos()
@@ -92,7 +92,7 @@ namespace View.Controllers
                 {
                     id = produto.Id,
                     nome = produto.Nome,
-                    quantidade = produto.Quantidade,
+                    categoria = produto.Categoria,
                     valor = produto.Valor,
                     registro = produto.RegistroAtivo
 
