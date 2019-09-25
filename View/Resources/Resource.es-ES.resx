@@ -504,4 +504,10 @@
   <data name="Total" xml:space="preserve">
     <value>Total</value>
   </data>
+  <data name="ListadeModelos" xml:space="preserve">
+    <value>Lista del Modelos</value>
+  </data>
+  <data name="NovoModelo" xml:space="preserve">
+    <value>Modelo Nuevo</value>
+  </data>
 </root>

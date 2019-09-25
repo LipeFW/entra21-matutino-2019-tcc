@@ -481,4 +481,10 @@ The system seeks to quickly employ the processes mentioned with the ease of a sm
   <data name="Total" xml:space="preserve">
     <value>Total</value>
   </data>
+  <data name="ListadeModelos" xml:space="preserve">
+    <value>List Model</value>
+  </data>
+  <data name="NovoModelo" xml:space="preserve">
+    <value>New Model</value>
+  </data>
 </root>
