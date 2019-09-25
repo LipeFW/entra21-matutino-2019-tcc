@@ -235,10 +235,10 @@
     <value>Product</value>
   </data>
   <data name="Quantidade" xml:space="preserve">
-    <value>Amount</value>
+    <value>Quantity</value>
   </data>
   <data name="QuantidadeProdutos" xml:space="preserve">
-    <value>Product Amount</value>
+    <value>Quantity of Products</value>
   </data>
   <data name="Rota" xml:space="preserve">
     <value>Route</value>
@@ -459,5 +459,17 @@ The system seeks to quickly employ the processes mentioned with the ease of a sm
   </data>
   <data name="Temas" xml:space="preserve">
     <value>Themes</value>
+  </data>
+  <data name="Fechar" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="ListadeProdutos" xml:space="preserve">
+    <value>List of products</value>
+  </data>
+  <data name="ListadeVendas" xml:space="preserve">
+    <value>List of sales</value>
+  </data>
+  <data name="Novo" xml:space="preserve">
+    <value>New</value>
   </data>
 </root>
