@@ -23,16 +23,20 @@ namespace Model
         [ForeignKey("IdCategoria")]
         public Categoria Categoria { get; set; }
 
-        [Column("quantidade_produto")]
-        public int QuantidadeProdutos { get; set; }
+        [Column("quantidade")]
+        public int Quantidade { get; set; }
 
-        [Column("codigo_barra")]
-        public string CodigoBarra { get; set; }
-
-        [Column("valor_unitario")]
-        public decimal ValorUnitario { get; set; }
+        [Column("valor")]
+        public decimal Valor{ get; set; }
 
         [Column("registro_ativo")]
         public bool RegistroAtivo { get; set; }
+
+        [Column("id_venda")]
+        public int IdVenda { get; set; }
+
+        [ForeignKey("IdVenda")]
+        public Venda Venda { get; set; }
+
     }
 }

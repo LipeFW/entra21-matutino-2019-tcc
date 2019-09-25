@@ -98,5 +98,24 @@ namespace View.Controllers
         {
             return View();
         }
+
+        [HttpGet, Route("obtertodosselect2")]
+        public JsonResult ObterTodosSelect2(string term)
+        {
+            var clientes = repository.ObterTodos();
+
+            List<object> clientesSelect2 = new List<object>();
+            foreach (Cliente cliente in clientes)
+            {
+                clientesSelect2.Add(new
+                {
+                    id = cliente.Id,
+                    text = cliente.Nome
+                });
+            }
+            var resultado = new { results = clientesSelect2 };
+            return Json(resultado, JsonRequestBehavior.AllowGet);
+        }
+
     }
 }

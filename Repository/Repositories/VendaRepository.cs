@@ -18,22 +18,17 @@ namespace Repository.Repositories
             context = new SystemContext();
         }
 
+
         public bool Alterar(Venda venda)
         {
             var vendaOriginal = context.Vendas.FirstOrDefault(x => x.Id == venda.Id);
             if (venda == null)
                 return false;
 
-            vendaOriginal.Id = venda.Id;
             vendaOriginal.Vendedor = venda.Vendedor;
             vendaOriginal.IdVendedor = venda.IdVendedor;
             vendaOriginal.Cliente = venda.Cliente;
             vendaOriginal.IdCliente = venda.IdCliente;
-            vendaOriginal.Produto = venda.Produto;
-            vendaOriginal.IdProduto = venda.IdProduto;
-            vendaOriginal.Quantidade = venda.Quantidade;
-            vendaOriginal.Total = venda.Total;
-            vendaOriginal.Desconto = venda.Desconto;
             int quantidadeAfetada = context.SaveChanges();
             return quantidadeAfetada == 1;
         }
@@ -58,12 +53,15 @@ namespace Repository.Repositories
 
         public Venda ObterPeloId(int id)
         {
-            return context.Vendas.Include("Cliente").FirstOrDefault(x => x.Id == id);
+            return context.Vendas.Include("Cliente").Include("Vendedor").FirstOrDefault(x => x.Id == id);
         }
 
         public List<Venda> ObterTodos()
         {
-            return context.Vendas.Where(x => x.RegistroAtivo == true).OrderBy(x => x.Id).Include("Cliente").Include("Vendedor").Include("Produto").ToList();
+            return context
+                .Vendas
+                .Where(x => x.RegistroAtivo)
+                .ToList();
         }
     }
 }

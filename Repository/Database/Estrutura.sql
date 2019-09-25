@@ -817,8 +817,9 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (1,'Westlock',1),
 (1,'Wetaskiwin',1),
 (1,'Valleyview',1),
-(1,'Whitecourt',1),
+(1,'Whitecourt',1);
 /*<--/Cidades do Alberta-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Cidades do Colúmbia Britânica-->*/
 (2, 'Abbotsford', 1),
 (2, 'Armstrong', 1),
@@ -891,16 +892,18 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (2, 'Vernon',1),
 (2, 'Victoria',1),
 (2, 'White Rock',1),
-(2, 'Williams Lake',1),
+(2, 'Williams Lake',1);
 /*<--/Cidades do Colúmbia Britânica-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Cidades do Ilha do Principe Eduardo-->*/
 (3, 'Alberton', 1),
 (3, 'Charlottetown', 1),
 (3, 'Kensington', 1),
 (3, 'Montague', 1),
 (3, 'Souris', 1),
-(3, 'Summerside', 1),
+(3, 'Summerside', 1);
 /*<--/Cidades do Ilha do Principe Eduardo-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Cidades do Monitoba-->*/
 (4, 'Altona', 1),
 (4, 'Beausejour', 1),
@@ -932,8 +935,9 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (4, 'Thompson', 1),
 (4, 'Virden', 1),
 (4, 'Winkler', 1),
-(4, 'Winnipeg', 1),
+(4, 'Winnipeg', 1);
 /*<--/Cidades do Monitoba-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Cidades do Nova Brunswick-->*/
 (5, 'Bathurst', 1),
 (5, 'Campbellton', 1),
@@ -956,8 +960,9 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (5, 'Salisbury', 1),
 (5, 'Shediac', 1),
 (5, 'Sussex', 1),
-(5, 'Woodstock', 1),
+(5, 'Woodstock', 1);
 /*<--/Cidades do Nova Brunswick-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Cidades do Nova Escócia-->*/
 (6, 'Amherst', 1),
 (6, 'Antigonish', 1),
@@ -988,8 +993,9 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (6, 'Truro', 1),
 (6, 'Windsor', 1),
 (6, 'Wolfville', 1),
-(6, 'Yarmouth', 1),
+(6, 'Yarmouth', 1);
 /*<--/Cidades do Nova Escócia-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Cidades do Ontário-->*/
 (7, 'Acton', 1),
 (7, 'Alexandria', 1),
@@ -1198,10 +1204,10 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (7, 'Wiarton', 1),
 (7, 'Winchester', 1),
 (7, 'Windsor', 1),
-(7, 'Wingham', 1),
+(7, 'Wingham', 1);
 /*<--/Cidades do Ontário-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Cidades do Québec-->*/
-
 (8, 'Acton Vale' , 1),
 (8, 'Albanel' , 1),
 (8, 'Alma', 1),
@@ -1366,10 +1372,10 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (8, 'Warwick' , 1),
 (8, 'Waterloo' , 1),
 (8, 'Windsor' , 1),
-(8, 'Yamachiche' , 1),
+(8, 'Yamachiche' , 1);
 /*<--/Cidades do Québec-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Cidades do Saskatchewan-->*/
-
 (9, 'Assiniboia', 1),
 (9, 'Biggar', 1),
 (9, 'Canora', 1),
@@ -1425,8 +1431,9 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (9, 'Weyburn', 1),
 (9, 'Wilkie', 1),
 (9, 'Wynyard', 1),
-(9, 'Yorkton', 1),
+(9, 'Yorkton', 1);
 /*<--/Cidades do Saskatchewan-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Cidades do Terra Nova e Labrador-->*/
 (10, 'Bay Roberts', 1),
 (10, 'Bonavista', 1),
@@ -1449,28 +1456,32 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (10, 'Stephenville', 1),
 (10, 'Stephenville Crossing', 1),
 (10, 'Torbay', 1),
-(10, 'Wabana', 1),
+(10, 'Wabana', 1);
 /*<--/Cidades do Terra Nova e Labrador-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Cidades do Nunavut-->*/
 (11, 'Clyde River', 1),
 (11, 'Iqaluit', 1),
-(11, 'Pangnirtung', 1),
+(11, 'Pangnirtung', 1);
 /*<--/Cidades do Nunavut-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Cidades do Territórios do Noroeste-->*/
 (12, 'Aklavik', 1),
 (12, 'Hay River', 1),
 (12, 'Inuvik', 1),
 (12, 'Norman Wells', 1),
 (12, 'Tuktoyaktuk', 1),
-(12, 'Yellowknife', 1),
+(12, 'Yellowknife', 1);
 /*<--/Cidades do Territórios do Noroeste-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Cidades do Yukon-->*/
 (13, 'Haines Junction', 1),
 (13, 'Mayo', 1),
-(13, 'Whitehorse', 1),
+(13, 'Whitehorse', 1);
 /*<--/Cidades do Yukon-->*/
 /*<--/Canada-->*/
 /*<--United States-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Cidades do Alabama-->*/
 (14, 'Alabaster', 1),
 (14, 'Albertville', 1),
@@ -1529,8 +1540,9 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (14, 'Tuscaloosa', 1),
 (14, 'Tuskegee', 1),
 (14, 'Valley', 1),
-(14, 'Vestavia Hills', 1),
+(14, 'Vestavia Hills', 1);
 /*<--/Cidades do Alabama-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Cidades do Alasca -->*/
 (15,'Anchorage', 1),
 (15,'Barrow', 1),
@@ -1547,8 +1559,9 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (15,'Sitka', 1),
 (15,'Soldotna', 1),
 (15,'Sterling', 1),
-(15,'Wasilla', 1),
+(15,'Wasilla', 1);
 /*<--/Cidades do Alasca-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Cidades do Arizona-->*/
 (16, 'Apache Junction', 1),
 (16, 'Avondale', 1),
@@ -1600,8 +1613,9 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (16, 'Tempe', 1),
 (16, 'Tucson', 1),
 (16, 'Winslow', 1),
-(16, 'Yuma', 1),
+(16, 'Yuma', 1);
 /*<--/Cidades do Arizona-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Cidades do Arkansas-->*/
 (17, 'Arkadelphia', 1),
 (17, 'Batesville', 1),
@@ -1642,8 +1656,9 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (17, 'Texarkana', 1),
 (17, 'Van Buren', 1),
 (17, 'West Helena', 1),
-(17, 'West Memphis', 1),
+(17, 'West Memphis', 1);
 /*<--/Cidades do Arkansas-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Cidades do Califórnia-->*/
 (18, 'Adelanto', 1),
 (18, 'Agoura Hills', 1),
@@ -1725,8 +1740,7 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (18, 'Clayton', 1),
 (18, 'Clearlake', 1),
 (18, 'Clovis', 1),
-(18, 'Coachella', 1);
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
+(18, 'Coachella', 1),
 (18, 'Coalinga', 1),
 (18, 'Colton', 1),
 (18, 'Commerce', 1),
@@ -2092,8 +2106,9 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (18, 'Yorba Linda', 1),
 (18, 'Yuba City', 1),
 (18, 'Yucaipa', 1),
-(18, 'Yucca Valley', 1),
+(18, 'Yucca Valley', 1);
 /*<--/Cidades do Califórnia-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Cidades do Carolina do Norte-->*/
 (19 , 'Albemarle', 1),
 (19 , 'Apex', 1),
@@ -2170,10 +2185,10 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (19 , 'Waynesville', 1),
 (19 , 'Wilmington', 1),
 (19 , 'Wilson', 1),
-(19 , 'Winston-salem', 1),
+(19 , 'Winston-salem', 1);
 /*<--/Cidades do Carolina do Norte-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--/Cidades do Carolina do Sul-->*/
-
 (20, 'Aiken', 1),
 (20, 'Anderson', 1),
 (20, 'Beaufort', 1),
@@ -2221,10 +2236,10 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (20, 'Taylors', 1),
 (20, 'Union', 1),
 (20, 'Wade Hampton', 1),
-(20, 'West Columbia', 1),
+(20, 'West Columbia', 1);
 /*<--/Cidades do Carolina do  Sul-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Cidades do Colorado-->*/
-
 (21, 'Alamosa', 1),
 (21, 'Applewood', 1),
 (21, 'Arvada', 1),
@@ -2283,8 +2298,9 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (21, 'Welby', 1),
 (21, 'Westminster', 1),
 (21, 'Wheat Ridge', 1),
-(21, 'Windsor', 1),
+(21, 'Windsor', 1);
 /*<--/Cidades do Colorado-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Cidades do Connecticut-->*/
 (22, 'Ansonia', 1),
 (22, 'Branford', 1),
@@ -2358,8 +2374,9 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (22, 'Windsor Locks', 1),
 (22, 'Wolcott', 1),
 (22, 'Woodbridge', 1),
-(22, 'Woodbury', 1),
+(22, 'Woodbury', 1);
 /*<--/Cidades do Connecticut-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Cidades do Dacota do Norte-->*/
 (23, 'Bismarck', 1),
 (23, 'Devils Lake', 1),
@@ -2373,8 +2390,9 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (23, 'Valley City', 1),
 (23, 'Wahpeton', 1),
 (23, 'West Fargo', 1),
-(23, 'Williston', 1),
+(23, 'Williston', 1);
 /*<--/Cidades do Dacota do Norte-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--/Cidades do Dacota do Sul-->*/
 (24, 'Aberdeen', 1),
 (24, 'Belle Fourche', 1),
@@ -2391,8 +2409,9 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (24, 'Sturgis', 1),
 (24, 'Vermillion', 1),
 (24, 'Watertown', 1),
-(24, 'Yankton', 1),
+(24, 'Yankton', 1);
 /*<--/Cidades do Dacota do Sul-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Cidades do Delaware-->*/
 (25, 'Brookside', 1),
 (25, 'Claymont', 1),
@@ -2408,8 +2427,9 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (25, 'Seaford', 1),
 (25, 'Smyrna', 1),
 (25, 'Wilmington', 1),
-(25, 'Wilmington Manor', 1),
+(25, 'Wilmington Manor', 1);
 /*<--/Cidades do Delaware-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Cidades do Flórida-->*/
 (26, 'ltamonte Springs', 1),
 (26, 'popka', 1),
@@ -2779,8 +2799,9 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (27, 'Waycross', 1),
 (27, 'Wilmington Island', 1),
 (27, 'Winder', 1),
-(27, 'Woodstock', 1),
+(27, 'Woodstock', 1);
 /*<--/Cidades do Geórgia-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--/Cidades do Havaí-->*/
 (28, 'Ahuimanu', 1),
 (28, 'Aiea', 1),
@@ -2802,8 +2823,9 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (28, 'Waianae', 1),
 (28, 'Wailuku', 1),
 (28, 'Waimalu', 1),
-(28, 'Waipahu', 1),
+(28, 'Waipahu', 1);
 /*<--/Cidades do Havaí-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<-- Cidades do Idaho-->*/
 (29,' Ammon', 1),
 (29,' Blackfoot', 1),
@@ -2833,8 +2855,9 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (29,' Rupert', 1),
 (29,' Sandpoint', 1),
 (29,' Twin Falls', 1),
-(29,' Weiser', 1),
+(29,' Weiser', 1);
 /*<--/Cidades do Idaho-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--/Cidades do Illinois-->*/
 (30, 'Addison', 1),
 (30, 'Algonquin', 1),
@@ -3056,8 +3079,9 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (30, 'Woodridge', 1),
 (30, 'Woodstock', 1),
 (30, 'Worth', 1),
-(30, 'Zion', 1),
+(30, 'Zion', 1);
 /*<--/Cidades do Illinois-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Cidades do Indiana-->*/
 (31, 'Anderson', 1),
 (31, 'Angola', 1),
@@ -3139,8 +3163,9 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (31, 'Washington', 1),
 (31, 'West Lafayette', 1),
 (31, 'Westfield', 1),
-(31, 'Zionsville', 1),
+(31, 'Zionsville', 1);
 /*<--/Cidades do Indiana-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Cidades do Iowa-->*/
 (32, 'Altoona', 1),
 (32, 'Ames', 1),
@@ -3224,8 +3249,181 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (33, 'Shawnee', 1),
 (33, 'Topeka', 1),
 (33, 'Wichita', 1),
-(33, 'Winfield', 1),
+(33, 'Winfield', 1);
 /*<--/Cidades do Kansas-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
+/*<--Cidades do Kentucky-->*/
+(34, 'Ashland', 1),
+(34, 'Bardstown', 1),
+(34, 'Berea', 1),
+(34, 'Bowling Green', 1),
+(34, 'Campbellsville', 1),
+(34, 'Covington', 1),
+(34, 'Danville', 1),
+(34, 'Edgewood', 1),
+(34, 'Elizabethtown', 1),
+(34, 'Erlanger', 1),
+(34, 'Fern Creek', 1),
+(34, 'Florence', 1),
+(34, 'Fort Thomas', 1),
+(34, 'Frankfort', 1),
+(34, 'Georgetown', 1),
+(34, 'Glasgow', 1),
+(34, 'Henderson', 1),
+(34, 'Highview', 1),
+(34, 'Hopkinsville', 1),
+(34, 'Independence', 1),
+(34, 'Jeffersontown', 1),
+(34, 'Lawrenceburg', 1),
+(34, 'Lexington-fayette', 1),
+(34, 'Louisville', 1),
+(34, 'Lyndon', 1),
+(34, 'Madisonville', 1),
+(34, 'Mayfield', 1),
+(34, 'Murray', 1),
+(34, 'Newburg', 1),
+(34, 'Newport', 1),
+(34, 'Nicholasville', 1),
+(34, 'Okolona', 1),
+(34, 'Owensboro', 1),
+(34, 'Paducah', 1),
+(34, 'Paris', 1),
+(34, 'Radcliff', 1),
+(34, 'Richmond', 1),
+(34, 'Saint Matthews', 1),
+(34, 'Shelbyville', 1),
+(34, 'Shively', 1),
+(34, 'Somerset', 1),
+(34, 'Valley Station', 1),
+(34, 'Winchester', 1);
+/*<--/Cidades do Kentucky-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
+/*<--Cidades do Louisiana-->*/
+(35, 'Abbeville', 1),
+(35, 'Alexandria', 1),
+(35, 'Baker', 1),
+(35, 'Bastrop', 1),
+(35, 'Baton Rouge', 1),
+(35, 'Bogalusa', 1),
+(35, 'Bossier City', 1),
+(35, 'Chalmette', 1),
+(35, 'Crowley', 1),
+(35, 'Denham Springs', 1),
+(35, 'Estelle', 1),
+(35, 'Eunice', 1),
+(35, 'Gretna', 1),
+(35, 'Hammond', 1),
+(35, 'Harahan', 1),
+(35, 'Harvey', 1),
+(35, 'Houma', 1),
+(35, 'Jefferson', 1),
+(35, 'Jennings', 1),
+(35, 'Kenner', 1),
+(35, 'Lafayette', 1),
+(35, 'Lake Charles', 1),
+(35, 'Laplace', 1),
+(35, 'Mandeville', 1),
+(35, 'Marrero', 1),
+(35, 'Merrydale', 1),
+(35, 'Metairie', 1),
+(35, 'Minden', 1),
+(35, 'Monroe', 1),
+(35, 'Morgan City', 1),
+(35, 'Natchitoches', 1),
+(35, 'New Iberia', 1),
+(35, 'New Orleans', 1),
+(35, 'Opelousas', 1),
+(35, 'Pineville', 1),
+(35, 'River Ridge', 1),
+(35, 'Ruston', 1),
+(35, 'Shenandoah', 1),
+(35, 'Shreveport', 1),
+(35, 'Slidell', 1),
+(35, 'Sulphur', 1),
+(35, 'Terrytown', 1),
+(35, 'Thibodaux', 1),
+(35, 'Waggaman', 1),
+(35, 'West Monroe', 1),
+(35, 'Westwego', 1),
+(35, 'Zachary', 1);
+/*<--/Cidades do Louisiana-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
+/*<--Cidades do Maine-->*/
+(36, 'Auburn', 1),
+(36, 'Augusta', 1),
+(36, 'Bangor', 1),
+(36, 'Bar Harbor', 1),
+(36, 'Bath', 1),
+(36, 'Belfast', 1),
+(36, 'Berwick', 1),
+(36, 'Biddeford', 1),
+(36, 'Brewer', 1),
+(36, 'Bridgton', 1),
+(36, 'Brunswick', 1),
+(36, 'Bucksport', 1),
+(36, 'Buxton', 1),
+(36, 'Camden', 1),
+(36, 'Cape Elizabeth', 1),
+(36, 'Caribou', 1),
+(36, 'Eliot', 1),
+(36, 'Ellsworth', 1),
+(36, 'Fairfield', 1),
+(36, 'Falmouth', 1),
+(36, 'Farmington', 1),
+(36, 'Freeport', 1),
+(36, 'Gardiner', 1),
+(36, 'Gorham', 1),
+(36, 'Gray', 1),
+(36, 'Hampden', 1),
+(36, 'Hermon', 1),
+(36, 'Houlton', 1),
+(36, 'Jay', 1),
+(36, 'Kennebunk', 1),
+(36, 'Kittery', 1),
+(36, 'Lebanon', 1),
+(36, 'Lewiston', 1),
+(36, 'Lincoln', 1),
+(36, 'Lisbon', 1),
+(36, 'Madawaska', 1),
+(36, 'Madison', 1),
+(36, 'Millinocket', 1),
+(36, 'New Gloucester', 1),
+(36, 'North Berwick', 1),
+(36, 'Norway', 1),
+(36, 'Oakland', 1),
+(36, 'Old Orchard Beach', 1),
+(36, 'Old Town', 1),
+(36, 'Orono', 1),
+(36, 'Paris', 1),
+(36, 'Poland', 1),
+(36, 'Portland', 1),
+(36, 'Presque Isle', 1),
+(36, 'Raymond', 1),
+(36, 'Rockland', 1),
+(36, 'Rumford', 1),
+(36, 'Sabattus', 1),
+(36, 'Saco', 1),
+(36, 'Sanford', 1),
+(36, 'Scarborough', 1),
+(36, 'Skowhegan', 1),
+(36, 'South Berwick', 1),
+(36, 'South Portland', 1),
+(36, 'Standish', 1),
+(36, 'Topsham', 1),
+(36, 'Turner', 1),
+(36, 'Waldoboro', 1),
+(36, 'Waterboro', 1),
+(36, 'Waterville', 1),
+(36, 'Wells', 1),
+(36, 'Westbrook', 1),
+(36, 'Winslow', 1),
+(36, 'Winthrop', 1),
+(36, 'Yarmouth', 1);
+/*<--/Cidades do Maine-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--/Cidades do Maine-->*/
+
+/*<--/Cidades do Maine-->*/
 /*<--/United States-->*/
 /*<--América do Sul-->*/
 /*<--Argentina-->*/

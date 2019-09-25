@@ -17,7 +17,7 @@
     <AssemblyName>View</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
-    <Use64BitIISExpress />
+    <Use64BitIISExpress>true</Use64BitIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -2676,10 +2676,11 @@
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
     <Content Include="Scripts\Usuario\config.js" />
-    <Content Include="Scripts\Usuario\fix.js" />
     <Content Include="Scripts\Usuario\perfil.js" />
     <Content Include="Scripts\Usuario\usuario.js" />
     <Content Include="Scripts\Veiculo\veiculo.js" />
+    <Content Include="Scripts\Venda\venda-cadastro.js" />
+    <Content Include="Scripts\Venda\venda-editar.js" />
     <Content Include="Scripts\Venda\venda.js" />
     <Content Include="Scripts\Vendedor\vendedor.js" />
     <Content Include="Web.config" />
@@ -2746,7 +2747,7 @@
     <Content Include="Views\Rota\Index.cshtml" />
     <Content Include="Views\Veiculo\Index.cshtml" />
     <Content Include="Views\Produto\Index.cshtml" />
-    <Content Include="Views\Venda\Index.cshtml" />
+    <Content Include="Views\Venda\Editar.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\umd\popper.min.js.map" />
     <Content Include="Scripts\umd\popper.js.map" />
@@ -2759,7 +2760,6 @@
     <Content Include="Views\Usuario\Cadastro.cshtml" />
     <Content Include="Views\Veiculo\Cadastro.cshtml" />
     <Content Include="Views\Vendedor\Cadastro.cshtml" />
-    <Content Include="Views\Venda\Cadastro.cshtml" />
     <Content Include="Views\Usuario\Config.cshtml" />
     <Content Include="Views\Usuario\Perfil.cshtml" />
     <Content Include="Views\Usuario\UsuarioModal.cshtml" />
@@ -2777,6 +2777,10 @@
     <Content Include="Views\Marca\MarcaModal.cshtml" />
     <Content Include="Views\Modelo\Index.cshtml" />
     <Content Include="Views\Modelo\ModeloModal.cshtml" />
+    <Content Include="Views\Usuario\ConfirmacaoModal.cshtml" />
+    <Content Include="Views\Venda\Cadastro.cshtml" />
+    <Content Include="Views\Venda\ProdutoModal.cshtml" />
+    <Content Include="Views\Venda\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

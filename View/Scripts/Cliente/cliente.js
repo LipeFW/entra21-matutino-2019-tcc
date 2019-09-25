@@ -26,21 +26,21 @@
         $cep = $('#cliente-campo-cep').val();
         $vendedor = $('#cliente-campo-vendedor').val();
 
-        if (($nome.trim() == "") || ($telefone.trim == "") || ($cnpj == "") || ($cpf == "") || ($cep == "")) {
+        if (($nome.trim() == "") || ($telefone.trim == "") || ($cnpj == "") || ($cep == "")) {
             alert("Preencha corretamente os campos!");
             return null;
         }
 
         if ($idAlterar == -1) {
-            inserir($nome, $telefone, $cnpj, $cpf, $cep, $vendedor);
+            inserir($nome, $telefone, $cnpj,  $cep, $vendedor);
         }
 
         else {
-            alterar($nome, $telefone, $cnpj, $cpf, $cep, $vendedor);
+            alterar($nome, $telefone, $cnpj,  $cep, $vendedor);
         }
     });
 
-    function alterar($nome, $telefone, $cnpj, $cpf, $cep, $vendedor) {
+    function alterar($nome, $telefone, $cnpj,  $cep, $vendedor) {
         $.ajax({
             url: 'http://localhost:51242/cliente/editar',
             method: 'post',
@@ -64,7 +64,7 @@
         })
     }
 
-    function inserir($nome, $telefone, $cnpj, $cpf, $cep, $vendedor) {
+    function inserir($nome, $telefone, $cnpj,  $cep, $vendedor) {
         $.ajax({
             url: 'http://localhost:51242/cliente/inserir',
             method: 'post',

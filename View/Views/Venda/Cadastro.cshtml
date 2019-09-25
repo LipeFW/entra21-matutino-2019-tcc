@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "Cadastro";
+}
+
+<h2>Cadastro de Venda</h2>
+
+<form action="/venda/cadastro" method="post">
+
+    <div class="form-group">
+        <label for="venda-cliente">Cliente</label>
+        <select class="form-control" id="venda-cliente" name="idCliente"></select>
+    </div>
+
+    <div class="form-group">
+        <label for="venda-vendedor">Vendedor</label>
+        <select class="form-control" id="venda-vendedor" name="idVendedor"></select>
+    </div>
+
+    <div class="form-group">
+        <label for="venda-descricao">Descrição</label>
+        <textarea class="form-control" id="venda-descricao" name="descricao"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-success">Salvar</button>
+
+</form>
+
+@section css{
+    <link rel="stylesheet"
+          href="~/Content/css/select2.css" />
+}
+
+@section js{
+    <script src="~/Scripts/select2.js" }></script>
+    <script src="~/Scripts/Venda/venda-cadastro.js"></script>
+}
+
