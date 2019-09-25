@@ -504,7 +504,19 @@
   <data name="Total" xml:space="preserve">
     <value>Total</value>
   </data>
+  <data name="CadastrodeInventario" xml:space="preserve">
+    <value>Registro del inventario</value>
+  </data>
+  <data name="CadastrodeModelo" xml:space="preserve">
+    <value>Registro de modelo</value>
+  </data>
   <data name="Editar" xml:space="preserve">
     <value>Cambiar</value>
+  </data>
+  <data name="NovoModelo" xml:space="preserve">
+    <value>Nuevo modelo</value>
+  </data>
+  <data name="SelecioneumModelo" xml:space="preserve">
+    <value>Selecciona un modelo</value>
   </data>
 </root>
