@@ -2,9 +2,9 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Lista de Vendas</h2>
+<h2>@View.Resources.Resource.ListadeVendas</h2>
 
-<a class="btn btn-primary mb-3" href="/venda/cadastro">Novo</a>
+
 
 <table class="table table-striped table-bordered table-hover" id="vendas-index">
     <thead>
@@ -16,3 +16,5 @@
         </tr>
     </thead>
 </table>
+
+<a class="btn btn-primary mb-3" href="/venda/cadastro">@View.Resources.Resource.Novo</a>

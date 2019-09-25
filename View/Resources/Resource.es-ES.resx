@@ -397,7 +397,7 @@
     <value>Biem Venido</value>
   </data>
   <data name="Configuracoesdaconta" xml:space="preserve">
-    <value>Configurción de la Cuenta</value>
+    <value>Configuraciones de cuenta</value>
   </data>
   <data name="Inicio" xml:space="preserve">
     <value>Pricipio</value>
@@ -483,16 +483,16 @@
   <data name="Temas" xml:space="preserve">
     <value>Temas</value>
   </data>
-  <data name="CadastrodeModelo" xml:space="preserve">
-    <value>Registro del Modelo</value>
+  <data name="Fechar" xml:space="preserve">
+    <value>Cerrar</value>
   </data>
-  <data name="ListadeModelos" xml:space="preserve">
-    <value>Lista del Modelos</value>
+  <data name="ListaDeProdutos" xml:space="preserve">
+    <value>Lista de Productos</value>
   </data>
-  <data name="NovoModelo" xml:space="preserve">
-    <value>Modelo Nuevo</value>
+  <data name="ListadeVendas" xml:space="preserve">
+    <value>Lista de ventas</value>
   </data>
-  <data name="SelecioneumModelo" xml:space="preserve">
-    <value>Seleccione un Modelo</value>
+  <data name="Novo" xml:space="preserve">
+    <value>Nuevo</value>
   </data>
 </root>
