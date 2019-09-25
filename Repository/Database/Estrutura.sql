@@ -3224,12 +3224,11 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (33, 'Shawnee', 1),
 (33, 'Topeka', 1),
 (33, 'Wichita', 1),
-(33, 'Winfield', 1);
+(33, 'Winfield', 1),
 /*<--/Cidades do Kansas-->*/
 /*<--/United States-->*/
 /*<--América do Sul-->*/
 /*<--Argentina-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Buenos Aires-->*/
 (351, 'Azul', 1),
 (351, 'Bahia Blanca', 1),
@@ -3254,24 +3253,20 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (351, 'Tandil', 1),
 (351, 'Tres Arroyos', 1),
 (351, 'Veinticinco De Mayo', 1),
-(351, 'Zarate', 1);
+(351, 'Zarate', 1),
 /*<--/Buenos Aires-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Catamarca-->*/
-(352, 'Catamarca', 1);
+(352, 'Catamarca', 1),
 /*<--/Catamarca-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Chaco-->*/
 (353, 'Presidencia Roque Saenz Pena', 1),
-(353, 'Resistencia', 1);
+(353, 'Resistencia', 1),
 /*<--/Chaco-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Chubut-->*/
 (354, 'Puerto Madryn', 1),
 (354, 'Rawson', 1),
-(354, 'Trelew', 1);
+(354, 'Trelew', 1),
 /*<--/Chubut-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Cordoba-->*/
 (355, 'Alta Gracia', 1),
 (355, 'Bell Ville', 1),
@@ -3280,122 +3275,101 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (355, 'Rio Tercero', 1),
 (355, 'San Francisco', 1),
 (355, 'Villa Carlos Paz', 1),
-(355, 'Villa Maria', 1);
+(355, 'Villa Maria', 1),
 /*<--/Cordoba-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Corrientes-->*/
 (356, 'Corrientes', 1),
 (356, 'Goya', 1),
 (356, 'Mercedes', 1),
-(356, 'San Lorenzo', 1);
+(356, 'San Lorenzo', 1),
 /*<--/Corrientes-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Distrito Federal-->*/
-(357, 'Comodoro Rivadavia', 1);
+(357, 'Comodoro Rivadavia', 1),
 /*<--/Distrito Federal-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Entre Rios-->*/
 (358, 'Concepcion Del Uruguay', 1),
 (358, 'Concordia', 1),
 (358, 'Gualeguay', 1),
 (358, 'Gualeguaychu', 1),
 (358, 'Parana', 1),
-(358, 'Victoria', 1);
+(358, 'Victoria', 1),
 /*<--/Entre Rios-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Formosa-->*/
-(359, 'Formosa', 1);
+(359, 'Formosa', 1),
 /*<--/Formosa-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Jujuy-->*/
 (360, 'Jujuy', 1),
 (360, 'Libertador General San Martin', 1),
-(360, 'San Pedro', 1);
+(360, 'San Pedro', 1),
 /*<--/Jujuy-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--La Pampa-->*/
 (361, 'General Pico', 1),
-(361, 'Santa Rosa', 1);
+(361, 'Santa Rosa', 1),
 /*<--/La Pampa-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--La Rioja-->*/
-(362, 'La Rioja', 1);
+(362, 'La Rioja', 1),
 /*<--/La Rioja-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Mendoza-->*/
 (363, 'Lujan', 1),
 (363, 'Mendoza', 1),
 (363, 'Rivadavia', 1),
 (363, 'San Martin', 1),
-(363, 'San Rafael', 1);
+(363, 'San Rafael', 1),
 /*<--/Mendoza-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Misiones-->*/
 (364, 'Eldorado', 1),
 (364, 'Obera', 1),
-(364, 'Posadas', 1);
+(364, 'Posadas', 1),
 /*<--/Misiones-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Neuquen-->*/
-(365, 'Neuquen', 1);
+(365, 'Neuquen', 1),
 /*<--/Neuquen-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Rio Negro-->*/
 (366, 'General Roca', 1),
 (366, 'San Carlos De Bariloche', 1),
-(366, 'Viedma', 1);
+(366, 'Viedma', 1),
 /*<--/Rio Negro-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Salta-->*/
 (367, 'Salta', 1),
 (367, 'San Ramon De La Nueva Oran', 1),
-(367, 'Tartagal', 1);
+(367, 'Tartagal', 1),
 /*<--/Salta-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--San Juan-->*/
-(368, 'San Juan', 1);
+(368, 'San Juan', 1),
 /*<--/San Juan-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--San Luis-->*/
 (369, 'Mercedes', 1),
-(369, 'San Luis', 1);
+(369, 'San Luis', 1),
 /*<--/San Luis-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Santa Cruz-->*/
-(370, 'Rio Gallegos', 1);
+(370, 'Rio Gallegos', 1),
 /*<--/Santa Cruz-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Santa Fe-->*/
 (371, 'Rafaela', 1),
 (371, 'Reconquista', 1),
 (371, 'Rosario', 1),
 (371, 'Santa Fe', 1),
 (371, 'Venado Tuerto', 1),
-(371, 'Villa Constitucion', 1);
+(371, 'Villa Constitucion', 1),
 /*<--/Santa Fe-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Santiago del Estero-->*/
-(372, 'Santiago Del Estero', 1);
+(372, 'Santiago Del Estero', 1),
 /*<--/Santiago del Estero-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Tierra del Fuego-->*/
-(373, 'Ushuaia', 1);
+(373, 'Ushuaia', 1),
 /*<--/Tierra del Fuego-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Tucuman-->*/
-(374, 'Tucuman', 1);
+(374, 'Tucuman', 1),
 /*<--/Tucuman-->*/
 /*<--/Argentina-->*/
 /*<--Bolivia-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Chuquisaca-->*/
 (375, 'Camargo', 1),
 (375, 'Monteagudo', 1),
 (375, 'Padilla', 1),
 (375, 'Sucre', 1),
-(375, 'Tarabuco', 1);
+(375, 'Tarabuco', 1),
 /*<--/Chuquisaca-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Cochabamba-->*/
 (376, 'Aiquile', 1),
 (376, 'Arani', 1),
@@ -3408,9 +3382,8 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (376, 'Mizque', 1),
 (376, 'Punata', 1),
 (376, 'Sipe Sipe', 1),
-(376, 'Tarata', 1);
+(376, 'Tarata', 1),
 /*<--/Cochabamba-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--El Beni-->*/
 (377, 'Guayaramerin', 1),
 (377, 'Reyes', 1),
@@ -3419,9 +3392,8 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (377, 'San Borja', 1),
 (377, 'San Ramon', 1),
 (377, 'Santa Rosa', 1),
-(377, 'Trinidad', 1);
+(377, 'Trinidad', 1),
 /*<--/El Beni-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--La Paz-->*/
 (378, 'Achacachi', 1),
 (378, 'Caranavi', 1),
@@ -3439,9 +3411,8 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (378, 'Quime', 1),
 (378, 'Sorata', 1),
 (378, 'Tipuani', 1),
-(378, 'Viloco', 1);
+(378, 'Viloco', 1),
 /*<--/La Paz-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Oruro-->*/
 (379, 'Caracollo', 1),
 (379, 'Challapata', 1),
@@ -3449,13 +3420,11 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (379, 'Machacamarca', 1),
 (379, 'Oruro', 1),
 (379, 'Poopo', 1),
-(379, 'Totoral', 1);
+(379, 'Totoral', 1),
 /*<--/Oruro-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Pando-->*/
-(380, 'Cobija', 1);
+(380, 'Cobija', 1),
 /*<--/Pando-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Potosi-->*/
 (381, 'Atocha', 1),
 (381, 'Betanzos', 1),
@@ -3466,9 +3435,8 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (381, 'Tupiza', 1),
 (381, 'Uncia', 1),
 (381, 'Uyuni', 1),
-(381, 'Villazon', 1);
+(381, 'Villazon', 1),
 /*<--/Potosi-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Santa Cruz-->*/
 (382, 'Abapo', 1),
 (382, 'Ascension', 1),
@@ -3510,20 +3478,18 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (382, 'Santa Rita', 1),
 (382, 'Santa Rosa', 1),
 (382, 'Urubicha', 1),
-(382, 'Warnes', 1);
+(382, 'Warnes', 1),
 /*<--/Santa Cruz-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Tarija-->*/
 (383, 'Bermejo', 1),
 (383, 'Entre Rios', 1),
 (383, 'San Lorenzo', 1),
 (383, 'Tarija', 1),
 (383, 'Villamontes', 1),
-(383, 'Yacuiba', 1);
+(383, 'Yacuiba', 1),
 /*<--/Tarija-->*/
 /*<--/Bolivia-->*/
 /*<--Brasil-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Acre-->*/
 (384, 'Brasileia', 1),
 (384, 'Cruzeiro Do Sul', 1),
@@ -3536,9 +3502,8 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (384, 'Sena Madureira', 1),
 (384, 'Senador Guiomard', 1),
 (384, 'Tarauaca', 1),
-(384, 'Xapuri', 1);
+(384, 'Xapuri', 1),
 /*<--/Acre-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Alagoas-->*/
 (385, 'Agua Branca', 1),
 (385, 'Anadia', 1),
@@ -3604,15 +3569,13 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (385, 'Taquarana', 1),
 (385, 'Traipu', 1),
 (385, 'Uniao Dos Palmares', 1),
-(385, 'Vicosa', 1);
+(385, 'Vicosa', 1),
 /*<--/Alagoas-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Amapa-->*/
 (386, 'Amapa', 1),
 (386, 'Macapa', 1),
-(386, 'Mazagao', 1);
+(386, 'Mazagao', 1),
 /*<--/Amapa-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Amazonas-->*/
 (387, 'Alvaraes', 1),
 (387, 'Anori', 1),
@@ -3659,9 +3622,8 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (387, 'Tefe', 1),
 (387, 'Tonantins', 1),
 (387, 'Uarini', 1),
-(387, 'Urucara', 1);
+(387, 'Urucara', 1),
 /*<--/Amazonas-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Bahia-->*/
 (388, 'Acajutiba', 1),
 (388, 'Alagoinhas', 1),
@@ -3837,9 +3799,8 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (388, 'Valente', 1),
 (388, 'Vera Cruz', 1),
 (388, 'Vitoria Da Conquista', 1),
-(388, 'Xique-xique', 1);
+(388, 'Xique-xique', 1),
 /*<--/Bahia-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Ceara-->*/
 (389, 'Acarau', 1),
 (389, 'Acopiara', 1),
@@ -3934,14 +3895,12 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (389, 'Uruburetama', 1),
 (389, 'Varjota', 1),
 (389, 'Varzea Alegre', 1),
-(389, 'Vicosa Do Ceara', 1);
+(389, 'Vicosa Do Ceara', 1),
 /*<--/Ceara-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Distrito Federal-->*/
 (390, 'Brasilia', 1),
-(390, 'Planaltina', 1);
+(390, 'Planaltina', 1),
 /*<--/Distrito Federal-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Espirito Santo-->*/
 (391, 'Afonso Claudio', 1),
 (391, 'Aguia Branca', 1),
@@ -3996,9 +3955,8 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (391, 'Vargem Alta', 1),
 (391, 'Viana', 1),
 (391, 'Vila Velha', 1),
-(391, 'Vitoria', 1);
+(391, 'Vitoria', 1),
 /*<--/Espirito Santo-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Mato Grosso do Sul-->*/
 (392, 'Amambai', 1),
 (392, 'Anastacio', 1),
@@ -4035,9 +3993,8 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (392, 'Rio Verde De Mato Grosso', 1),
 (392, 'Sidrolandia', 1),
 (392, 'Terenos', 1),
-(392, 'Tres Lagoas', 1);
+(392, 'Tres Lagoas', 1),
 /*<--/Mato Grosso do Sul-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Mato Grosso-->*/
 (393, 'Alta Floresta', 1),
 (393, 'Alto Araguaia', 1),
@@ -4061,9 +4018,8 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (393, 'Rondonopolis', 1),
 (393, 'Rosario Oeste', 1),
 (393, 'Santo Antonio Do Leverger', 1),
-(393, 'Varzea Grande', 1);
+(393, 'Varzea Grande', 1),
 /*<--/Mato Grosso-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Maranhao-->*/
 (394, 'Alcantara', 1),
 (394, 'Amarante Do Maranhao', 1),
@@ -4396,9 +4352,8 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (395, 'Vazante', 1),
 (395, 'Vespasiano', 1),
 (395, 'Vicosa', 1),
-(395, 'Visconde Do Rio Branco', 1);
+(395, 'Visconde Do Rio Branco', 1),
 /*<--/Minas Gerais-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Para-->*/
 (396, 'Abaetetuba', 1),
 (396, 'Acara', 1),
@@ -4462,9 +4417,8 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (396, 'Tucuma', 1),
 (396, 'Tucurui', 1),
 (396, 'Vigia', 1),
-(396, 'Viseu', 1);
+(396, 'Viseu', 1),
 /*<--/Para-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Paraiba-->*/
 (397, 'Alagoa Grande', 1),
 (397, 'Alagoa Nova', 1),
@@ -4545,9 +4499,8 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (397, 'Triunfo', 1),
 (397, 'Uirauna', 1),
 (397, 'Umbuzeiro', 1),
-(397, 'Umbuzeiro', 1);
+(397, 'Umbuzeiro', 1),
 /*<--/Paraiba-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Paraná-->*/
 (398, 'Almirante Tamandare', 1),
 (398, 'Alto Parana', 1),
@@ -4661,9 +4614,8 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (398, 'Toledo', 1),
 (398, 'Umuarama', 1),
 (398, 'Uniao Da Victoria', 1),
-(398, 'Wenceslau Braz', 1);
+(398, 'Wenceslau Braz', 1),
 /*<--/Paraná-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Piauí-->*/
 (399, 'Agua Branca', 1),
 (399, 'Alto Longa', 1),
@@ -4717,9 +4669,8 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (399, 'Teresina', 1),
 (399, 'Uniao', 1),
 (399, 'Urucui', 1),
-(399, 'Valenca Do Piaui', 1);
+(399, 'Valenca Do Piaui', 1),
 /*<--/Piauí-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Rio de Janeiro-->*/
 (400, 'Angra Dos Reis', 1),
 (400, 'Araruama', 1),
@@ -4790,9 +4741,8 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (400, 'Tres Rios', 1),
 (400, 'Valenca', 1),
 (400, 'Vassouras', 1),
-(400, 'Volta Redonda', 1);
+(400, 'Volta Redonda', 1),
 /*<--/Rio de Janeiro-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Rio Grande do Norte-->*/
 (401, 'Acari', 1),
 (401, 'Acu', 1),
@@ -4847,9 +4797,8 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (401, 'Tangara', 1),
 (401, 'Touros', 1),
 (401, 'Umarizal', 1),
-(401, 'Upanema', 1);
+(401, 'Upanema', 1),
 /*<--/Rio Grande do Norte-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Rio Grande do Sul-->*/
 (402, 'Alegrete', 1),
 (402, 'Arroio Do Meio', 1),
@@ -4969,9 +4918,8 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (402, 'Vacaria', 1),
 (402, 'Venancio Aires', 1),
 (402, 'Veranopolis', 1),
-(402, 'Viamao', 1);
+(402, 'Viamao', 1),
 /*<--/Rio Grande do Sul-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Rondonia-->*/
 (403, 'Ariquemes', 1),
 (403, 'Cacoal', 1),
@@ -4984,14 +4932,12 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (403, 'Presidente Medici', 1),
 (403, 'Rodrigues Alves', 1),
 (403, 'Rolim De Moura', 1),
-(403, 'Vilhena', 1);
+(403, 'Vilhena', 1),
 /*<--/Rondonia-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Roraima-->*/
 (404, 'Boa Vista', 1),
-(404, 'Bonfim', 1);
+(404, 'Bonfim', 1),
 /*<--/Roraima-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Santa Catarina-->*/
 (405, 'Araquari', 1),
 (405, 'Ararangua', 1),
@@ -5063,7 +5009,7 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (405, 'Xanxere', 1),
 (405, 'Xaxim', 1);
 /*<--/Santa Catarina-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--São Paulo-->*/
 (406, 'Adamantina', 1),
 (406, 'Aguai', 1),
@@ -5368,9 +5314,8 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (406, 'Varzea Paulista', 1),
 (406, 'Vinhedo', 1),
 (406, 'Viradouro', 1),
-(406, 'Votorantim', 1);
+(406, 'Votorantim', 1),
 /*<--/São Paulo-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Sergipe-->*/
 (407, 'Aquidaba', 1),
 (407, 'Aracaju', 1),
@@ -5413,9 +5358,8 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (407, 'Simao Dias', 1),
 (407, 'Tobias Barreto', 1),
 (407, 'Tomar Do Geru', 1),
-(407, 'Umbauba', 1);
+(407, 'Umbauba', 1),
 /*<--/Sergipe-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Goias-->*/
 (408, 'Abadiania', 1),
 (408, 'Anapolis', 1),
@@ -5485,9 +5429,8 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (408, 'Trindade', 1),
 (408, 'Uruacu', 1),
 (408, 'Uruana', 1),
-(408, 'Vianopolis', 1);
+(408, 'Vianopolis', 1),
 /*<--/Goias-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Pernambuco-->*/
 (409, 'Abreu E Lima', 1),
 (409, 'Afogados Da Ingazeira', 1),
@@ -5593,9 +5536,8 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (409, 'Trindade', 1),
 (409, 'Tupanatinga', 1),
 (409, 'Vicencia', 1),
-(409, 'Vitoria De Santo Antao', 1);
+(409, 'Vitoria De Santo Antao', 1),
 /*<--/Pernambuco-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Tocantins-->*/
 (410, 'Alvora', 1),
 (410, 'Ananas', 1),
@@ -5632,7 +5574,7 @@ registro_ativo BIT
 
 INSERT INTO usuarios(nome,nome_completo,url_imagem, admin, senha,  registro_ativo)
 VALUES  ( 'lipefw','Felipe','gatodandopinote.png',1 , 'anaumsei', 1),
-	    ( 'illan','Illan','gato-confuo.jpg',1 , 'illanzoka', 1),
+	    ( 'illan','Illan','gato-confuo.jpg',0 , 'illanzoka', 1),
 	    ( 'eduardo','Eduardo','guaxinimdoido.jpg',1 , 'RetardoMental', 1),
 	    ( 'henrique','Henrique','hamsterchavoso.png',1 , 'pimbinha6000', 1),
 	    ( 'pablo','Pablo','Rambo.jpg', 1, '1234', 1),
