@@ -574,4 +574,7 @@
   <data name="Preco" xml:space="preserve">
     <value>string</value>
   </data>
+  <data name="Editar" xml:space="preserve">
+    <value>string</value>
+  </data>
 </root>
