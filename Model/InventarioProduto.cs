@@ -17,11 +17,17 @@ namespace Model
         [Column("id_inventario")]
         public int IdInventario { get; set; }
 
-
+        [ForeignKey("IdInventario")]
+        public Inventario Inventario { get; set; }
 
         [Column("id_produto")]
         public int IdProduto { get; set; }
 
+        [ForeignKey("IdProduto")]
+        public Produto Produto { get; set; }
+
+        [Column("registro_ativo")]
+        public bool RegistroAtivo { get; set; }
 
     }
 }
