@@ -211,7 +211,7 @@
     <value>New Product</value>
   </data>
   <data name="NovoUsuario" xml:space="preserve">
-    <value>New user</value>
+    <value>New User</value>
   </data>
   <data name="NovoVeiculo" xml:space="preserve">
     <value>New Vehicles</value>
@@ -362,7 +362,7 @@ The system seeks to quickly employ the processes mentioned with the ease of a sm
     <value>work</value>
   </data>
   <data name="transportadora" xml:space="preserve">
-    <value>shipping company</value>
+    <value>Cargo Company</value>
   </data>
   <data name="uma" xml:space="preserve">
     <value>an</value>
@@ -407,10 +407,10 @@ The system seeks to quickly employ the processes mentioned with the ease of a sm
     <value>Fleet</value>
   </data>
   <data name="Inventario" xml:space="preserve">
-    <value>Inventory</value>
+    <value>Inventary</value>
   </data>
   <data name="Inventarios" xml:space="preserve">
-    <value>Inventories</value>
+    <value>Inventaries</value>
   </data>
   <data name="ListadeMarcas" xml:space="preserve">
     <value>List Brands</value>
@@ -460,6 +460,9 @@ The system seeks to quickly employ the processes mentioned with the ease of a sm
   <data name="Temas" xml:space="preserve">
     <value>Themes</value>
   </data>
+  <data name="Descricao" xml:space="preserve">
+    <value>Description</value>
+  </data>
   <data name="Fechar" xml:space="preserve">
     <value>Close</value>
   </data>
@@ -472,16 +475,10 @@ The system seeks to quickly employ the processes mentioned with the ease of a sm
   <data name="Novo" xml:space="preserve">
     <value>New</value>
   </data>
-  <data name="CadastrodeModelo" xml:space="preserve">
-    <value>Register Model</value>
+  <data name="Preco" xml:space="preserve">
+    <value>Value</value>
   </data>
-  <data name="ListadeModelos" xml:space="preserve">
-    <value>Model List</value>
-  </data>
-  <data name="NovoModelo" xml:space="preserve">
-    <value>New Model</value>
-  </data>
-  <data name="SelecioneumModelo" xml:space="preserve">
-    <value>Select a Model</value>
+  <data name="Total" xml:space="preserve">
+    <value>Total</value>
   </data>
 </root>
