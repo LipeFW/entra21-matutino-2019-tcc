@@ -49,6 +49,9 @@ namespace View.Controllers
         [HttpGet]
         public ActionResult Config()
         {
+            var usuario =(Usuario)  Session["Usuario"];
+            ViewBag.Usuario = usuario;
+
             return View();
         }
 

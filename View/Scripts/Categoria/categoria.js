@@ -19,7 +19,7 @@
         $nome = $('#categoria-campo-nome').val();
 
         if ($nome.trim() == "") {
-            alert("Preencha corretamente o campo!");
+            bootbox.alert("Preencha corretamente o campo!");
             return null;
         }
 
@@ -46,7 +46,7 @@
                 $tabelaCategoria.ajax.reload();
             },
             error: function (err) {
-                alert('Não foi possivel alterar');
+                bootbox.alert('Não foi possivel alterar');
             }
         });
     }
@@ -62,29 +62,44 @@
                 $('#modal-categoria').modal('hide');
                 limparCampos();
                 $tabelaCategoria.ajax.reload();
-                alert("Registro Inserido Com Sucesso")
+                bootbox.alert("Registro inserido com sucesso")
             },
             error: function (err) {
-                alert('Não foi possivel inserir');
+                bootbox.alert('Não foi possivel inserir');
             }
         });
     }
 
-    $('.table').on('click', '.botao-apagar', function () {
-        $idApagar = $(this).data('id');
-        var confirmacao = confirm("Deseja realmente apagar o registro?");
-        if (confirmacao == true) {
-            $.ajax({
-                url: 'http://localhost:51242/Categoria/apagar?id=' + $idApagar,
-                method: 'get',
-                success: function (data) {
-                    $tabelaCategoria.ajax.reload();
+    $("#categoria-tabela").on("click", ".botao-apagar", function () {
+        $idApagar = $(this).data("id");
+        bootbox.confirm({
+            message: "Deseja realmente apagar o registro?",
+            buttons: {
+                confirm: {
+                    label: 'Sim',
+                    className: 'btn-success'
                 },
-                error: function (err) {
-                    alert('Não foi possivel apagar');
+                cancel: {
+                    label: 'Não',
+                    className: 'btn-danger'
                 }
-            });
-        }
+            },
+            callback: function (result) {
+                if (result)
+                    $.ajax({
+                        url: "http://localhost:51242/Categoria/Apagar?id=" + $idApagar,
+                        method: "get",
+                        success: function (data) {
+                            $tabelaCategoria.ajax.reload();
+                            bootbox.alert("Registro apagado com sucesso");
+
+                        },
+                        error: function (err) {
+                            bootbox.alert('Não foi possível apagar');
+                        }
+                    });
+            }
+        });
     });
 
     $('.table').on('click', '.botao-editar', function () {
@@ -94,11 +109,10 @@
             method: 'get',
             success: function (data) {
                 $('#categoria-campo-nome').val(data.Nome);
-
                 $('#modal-categoria').modal('show');
             },
             error: function (err) {
-                alert('Não foi possivel carregar');
+                bootbox.alert('Não foi possivel carregar');
             }
         })
     });

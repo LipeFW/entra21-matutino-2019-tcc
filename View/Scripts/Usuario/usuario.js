@@ -21,7 +21,7 @@
         $senha = $("#usuario-campo-senha").val();
 
         if (($nome.trim() == "") || ($senha == "")) {
-            alert("Preencha corretamente os campos");
+            bootbox.alert("Preencha corretamente os campos");
             return null;
         }
 
@@ -48,7 +48,7 @@
                     $tabelaUsuario.ajax.reload();
                 },
                 error: function (err) {
-                    alert("Não foi possível alterar");
+                    bootbox.alert("Não foi possível alterar");
                 }
             });
         }
@@ -65,10 +65,10 @@
                     $("#modal-usuario").modal('hide');
                     limparCampos();
                     $tabelaUsuario.ajax.reload();
-                    alert("Registro Inserido Com Sucesso");
+                    bootbox.alert("Registro inserido com sucesso");
                 },
                 error: function (err) {
-                    alert("Não Foi Possível Inserir")
+                    bootbox.alert("Não foi possível inserir")
                 }
             });
         }
@@ -119,7 +119,7 @@
 
             },
             error: function (err) {
-                alert("Não Foi Possível Carregar");
+                bootbox.alert("Não Foi Possível Carregar");
             }
         });
     });
