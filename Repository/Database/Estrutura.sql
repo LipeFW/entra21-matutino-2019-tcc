@@ -4092,8 +4092,29 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (44, 'Omaha', 1),
 (44, 'Papillion', 1),
 (44, 'Scottsbluff', 1),
-(44, 'South Sioux City', 1),
+(44, 'South Sioux City', 1);
 /*<--/Cidades do Nebrasca-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Cidades do Nevada-->*/
+(45, 'Boulder City', 1),
+(45, 'Carson City', 1),
+(45, 'Elko', 1),
+(45, 'Fallon', 1),
+(45, 'Fernley', 1),
+(45, 'Henderson', 1),
+(45, 'Las Vegas', 1),
+(45, 'North Las Vegas', 1),
+(45, 'Pahrump', 1),
+(45, 'Paradise', 1),
+(45, 'Reno', 1),
+(45, 'Sparks', 1),
+(45, 'Spring Valley', 1),
+(45, 'Sun Valley', 1),
+(45, 'Sunrise Manor', 1),
+(45, 'West Wendover', 1),
+(45, 'Winchester', 1),
+(45, 'Winnemucca', 1),
+/*<--/Cidades do Nevada-->*/
 /*<--/United States-->*/
 /*<--América do Sul-->*/
 /*<--Argentina-->*/

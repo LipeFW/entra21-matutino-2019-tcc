@@ -483,6 +483,9 @@
   <data name="Temas" xml:space="preserve">
     <value>Temas</value>
   </data>
+  <data name="Descricao" xml:space="preserve">
+    <value>descripción</value>
+  </data>
   <data name="Fechar" xml:space="preserve">
     <value>Cerrar</value>
   </data>
@@ -495,16 +498,10 @@
   <data name="Novo" xml:space="preserve">
     <value>Nuevo</value>
   </data>
-  <data name="CadastrodeModelo" xml:space="preserve">
-    <value>Registro del Modelo</value>
+  <data name="Preco" xml:space="preserve">
+    <value>Precio</value>
   </data>
-  <data name="ListadeModelos" xml:space="preserve">
-    <value>Lista del Modelos</value>
-  </data>
-  <data name="NovoModelo" xml:space="preserve">
-    <value>Modelo Nuevo</value>
-  </data>
-  <data name="SelecioneumModelo" xml:space="preserve">
-    <value>Seleccione un Modelo</value>
+  <data name="Total" xml:space="preserve">
+    <value>Total</value>
   </data>
 </root>
