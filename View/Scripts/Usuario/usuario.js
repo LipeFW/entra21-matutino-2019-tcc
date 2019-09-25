@@ -74,7 +74,7 @@
         }
     })
 
-    $(".table").on("click", ".botao-apagar", function () {
+    $("#usuario-tabela").on("click", ".botao-apagar", function () {
         $idApagar = $(this).data("id");
         bootbox.confirm({
             message: "Deseja realmente apagar o registro?",

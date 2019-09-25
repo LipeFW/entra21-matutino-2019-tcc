@@ -64,21 +64,36 @@
         });
     }
 
-    $('.table').on('click', '.botao-apagar', function () {
-        $idApagar = $(this).data('id');
-        var confirmacao = confirm("Deseja realmente apagar o registro?");
-        if (confirmacao == true) {
-            $.ajax({
-                url: 'http://localhost:51242/Marca/apagar?id=' + $idApagar,
-                method: 'get',
-                success: function (data) {
-                    $tabelaMarca.ajax.reload();
+    $("#marca-tabela").on("click", ".botao-apagar", function () {
+        $idApagar = $(this).data("id");
+        bootbox.confirm({
+            message: "Deseja realmente apagar o registro?",
+            buttons: {
+                confirm: {
+                    label: 'Sim',
+                    className: 'btn-success'
                 },
-                error: function (err) {
-                    alert('Não foi possivel apagar');
+                cancel: {
+                    label: 'Não',
+                    className: 'btn-danger'
                 }
-            });
-        }
+            },
+            callback: function (result) {
+                if (result)
+                    $.ajax({
+                        url: "http://localhost:51242/Marca/Apagar?id=" + $idApagar,
+                        method: "get",
+                        success: function (data) {
+                            $tabelaMarca.ajax.reload();
+                            bootbox.alert("Registro apagado com sucesso");
+
+                        },
+                        error: function (err) {
+                            bootbox.alert('Não foi possível apagar');
+                        }
+                    });
+            }
+        });
     });
 
     $('.table').on('click', '.botao-editar', function () {

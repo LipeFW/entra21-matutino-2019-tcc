@@ -87,7 +87,7 @@
         });
     }
 
-    $(".table").on("click", ".botao-apagar", function () {
+    $("#cliente-tabela").on("click", ".botao-apagar", function () {
         $idApagar = $(this).data("id");
         bootbox.confirm({
             message: "Deseja realmente apagar o registro?",
@@ -104,7 +104,7 @@
             callback: function (result) {
                 if (result)
                     $.ajax({
-                        url: "http://localhost:51242/Usuario/Apagar?id=" + $idApagar,
+                        url: "http://localhost:51242/cliente/Apagar?id=" + $idApagar,
                         method: "get",
                         success: function (data) {
                             $tabelaCliente.ajax.reload();

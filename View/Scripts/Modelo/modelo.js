@@ -68,22 +68,36 @@
         }
     });
 
-    $(".table").on("click", ".botao-apagar", function () {
+    $("#modelo-tabela").on("click", ".botao-apagar", function () {
         $idApagar = $(this).data("id");
-        var confirmacao = confirm("Deseja realmente apagar o registro?");
-        if (confirmacao == true) {
-            $.ajax({
-                url: "http://localhost:51242/modelo/apagar?id=" + $idApagar,
-                method: "get",
-                success: function (data) {
-                    $tabelaModelo.ajax.reload();
-                    alert('Apagado com Sucesso');
+        bootbox.confirm({
+            message: "Deseja realmente apagar o registro?",
+            buttons: {
+                confirm: {
+                    label: 'Sim',
+                    className: 'btn-success'
                 },
-                error: function (err) {
-                    alert('Não foi possivel apagar');
+                cancel: {
+                    label: 'Não',
+                    className: 'btn-danger'
                 }
-            });
-        }
+            },
+            callback: function (result) {
+                if (result)
+                    $.ajax({
+                        url: "http://localhost:51242/modelo/Apagar?id=" + $idApagar,
+                        method: "get",
+                        success: function (data) {
+                            $tabelaModelo.ajax.reload();
+                            bootbox.alert("Registro apagado com sucesso");
+
+                        },
+                        error: function (err) {
+                            bootbox.alert('Não foi possível apagar');
+                        }
+                    });
+            }
+        });
     });
 
     $(".table").on("click", ".botao-editar", function () {
