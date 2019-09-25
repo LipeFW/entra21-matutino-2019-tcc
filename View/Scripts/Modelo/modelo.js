@@ -19,6 +19,10 @@
     $("#modelo-botao-salvar").on("click", function () {
         $nome = $("#modelo-campo-nome").val();
         $marca = $("#modelo-campo-marca").val();
+        if (($nome.trim() == "") || ($marca == -1)) {
+            bootbox.alert("Preencha corretamente os campos!");
+            return null;
+        }
 
         if ($idAlterar == -1) {
             inserir($nome, $marca);
@@ -42,7 +46,7 @@
                     $tabelaModelo.ajax.reload();
                 },
                 error: function (err) {
-                    alert("Não foi possivel alterar o modelo");
+                    bootbox.alert("Não foi possivel alterar o modelo!");
                 }
             });
         }
@@ -59,10 +63,10 @@
                     $("#modal-modelo").modal('hide');
                     limparCampos();
                     $tabelaModelo.ajax.reload();
-                    alert("Registro Inserido Com Sucesso")
+                    bootbox.alert("Registro inserido com sucesso!")
                 },
                 error: function (err) {
-                    alert('Não foi possivel inserir');
+                    bootbox.alert('Não foi possivel inserir!');
                 }
             });
         }
@@ -89,11 +93,11 @@
                         method: "get",
                         success: function (data) {
                             $tabelaModelo.ajax.reload();
-                            bootbox.alert("Registro apagado com sucesso");
+                            bootbox.alert("Registro apagado com sucesso!");
 
                         },
                         error: function (err) {
-                            bootbox.alert('Não foi possível apagar');
+                            bootbox.alert('Não foi possível apagar!');
                         }
                     });
             }
@@ -112,7 +116,7 @@
                 $("#modal-modelo").modal("show");
             },
             error: function (err) {
-                alert('Não foi possivel carregar');
+                bootbox.alert('Não foi possivel carregar!');
             }
         })
     });

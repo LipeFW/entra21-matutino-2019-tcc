@@ -45,7 +45,7 @@
                     $tabelaProduto.ajax.reload();
                 },
                 error: function (err) {
-                    alert("Não foi possivel alterar o Produto");
+                    bootbox.alert("Não foi possivel alterar o produto!");
                 }
             });
         }
@@ -63,10 +63,10 @@
                     $("#modal-produto").modal('hide');
                     //limparCampos();
                     $tabelaProduto.ajax.reload();
-                    alert("Registro Inserido Com Sucesso")
+                    bootbox.alert("Registro inserido com sucesso!")
                 },
                 error: function (err) {
-                    alert('Não foi possivel inserir');
+                    bootbox.alert('Não foi possivel inserir!');
                 }
             });
         }
@@ -97,7 +97,7 @@
 
                         },
                         error: function (err) {
-                            bootbox.alert('Não foi possível apagar');
+                            bootbox.alert('Não foi possível apagar!');
                         }
                     });
             }
@@ -117,7 +117,7 @@
                 $("#modal-produto").modal("show");
             },
             error: function (err) {
-                alert('Não foi possivel carregar');
+                bootbox.alert('Não foi possivel carregar!');
             }
         })
     });

@@ -46,7 +46,7 @@
                 $tabelaCategoria.ajax.reload();
             },
             error: function (err) {
-                bootbox.alert('Não foi possivel alterar');
+                bootbox.alert('Não foi possivel alterar!');
             }
         });
     }
@@ -62,10 +62,10 @@
                 $('#modal-categoria').modal('hide');
                 limparCampos();
                 $tabelaCategoria.ajax.reload();
-                bootbox.alert("Registro inserido com sucesso")
+                bootbox.alert("Registro inserido com sucesso!")
             },
             error: function (err) {
-                bootbox.alert('Não foi possivel inserir');
+                bootbox.alert('Não foi possivel inserir!');
             }
         });
     }
@@ -91,11 +91,11 @@
                         method: "get",
                         success: function (data) {
                             $tabelaCategoria.ajax.reload();
-                            bootbox.alert("Registro apagado com sucesso");
+                            bootbox.alert('Registro apagado com sucesso!');
 
                         },
                         error: function (err) {
-                            bootbox.alert('Não foi possível apagar');
+                            bootbox.alert('Não foi possível apagar!');
                         }
                     });
             }

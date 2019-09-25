@@ -18,6 +18,11 @@
     $('#marca-botao-salvar').on('click', function () {
         $nome = $('#marca-campo-nome').val();
 
+        if ($nome.trim() == "") {
+            bootbox.alert('Preencha corretamente o campo!');
+            return null;
+        }
+
         if ($idAlterar == -1) {
             inserir($nome);
         } else {
@@ -40,7 +45,7 @@
                 $tabelaMarca.ajax.reload();
             },
             error: function (err) {
-                alert('Não foi possivel alterar');
+                bootbox.alert('Não foi possivel alterar!');
             }
         });
     }
@@ -56,10 +61,10 @@
                 $('#modal-marca').modal('hide');
                 limparCampos();
                 $tabelaMarca.ajax.reload();
-                alert('Registro inserido com Sucesso');
+                bootbox.alert('Registro inserido com sucesso!');
             },
             error: function (err) {
-                alert('Não foi possivel inserir');
+                bootbox.alert('Não foi possivel inserir!');
             }
         });
     }
@@ -67,7 +72,7 @@
     $("#marca-tabela").on("click", ".botao-apagar", function () {
         $idApagar = $(this).data("id");
         bootbox.confirm({
-            message: "Deseja realmente apagar o registro?",
+            message: 'Deseja realmente apagar o registro?',
             buttons: {
                 confirm: {
                     label: 'Sim',
@@ -85,11 +90,11 @@
                         method: "get",
                         success: function (data) {
                             $tabelaMarca.ajax.reload();
-                            bootbox.alert("Registro apagado com sucesso");
+                            bootbox.alert('Registro apagado com sucesso!');
 
                         },
                         error: function (err) {
-                            bootbox.alert('Não foi possível apagar');
+                            bootbox.alert('Não foi possível apagar!');
                         }
                     });
             }
@@ -108,7 +113,7 @@
                 $('#modal-marca').modal('show');
             },
             error: function (err) {
-                alert('Não foi possivel carregar');
+                alert('Não foi possivel carregar!');
             }
         });
     });

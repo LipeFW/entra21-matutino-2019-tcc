@@ -43,7 +43,7 @@
                 $tabelaRota.ajax.reload();
             },
             error: function (err) {
-                alert('Não foi possivel alterar');
+                bootbox.alert('Não foi possivel alterar!');
             }
         });
     }
@@ -59,11 +59,11 @@
             success: function (data) {
                 $("#modal-rota").modal('hide');
                 limparCampos();
-                alert('Registro inserido com Sucesso');
+                alert('Registro inserido com sucesso!');
                 $tabelaRota.ajax.reload();
             },
             error: function (err) {
-                alert('Não foi possivel inserir');
+                bootbox.alert('Não foi possivel inserir!');
             }
         });
     }
@@ -89,11 +89,11 @@
                         method: "get",
                         success: function (data) {
                             $tabelaRota.ajax.reload();
-                            bootbox.alert("Registro apagado com sucesso");
+                            bootbox.alert("Registro apagado com sucesso!");
 
                         },
                         error: function (err) {
-                            bootbox.alert('Não foi possível apagar');
+                            bootbox.alert('Não foi possível apagar!');
                         }
                     });
             }
@@ -112,7 +112,7 @@
                 $('#modal-rota').modal('show');
             },
             error: function (err) {
-                alert('Não foi possivel carregar')
+                bootbox.alert('Não foi possivel carregar!')
             }
         });
     });
