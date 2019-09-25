@@ -8,9 +8,8 @@
             { "data": "Id" },
             { "data": "Nome" },
             { "data": "Categoria.Nome" },
-            { "data": "CodigoBarra" },
-            { "data": "QuantidadeProdutos" },
-            { "data": "ValorUnitario" },
+            { "data": "Quantidade" },
+            { "data": "Valor" },
             {
                 render: function (data, type, row) {
                     return '<button class="btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button><button class="btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>'
@@ -22,17 +21,16 @@
     $("#produto-botao-salvar").on("click", function () {
         $nome = $("#produto-campo-nome").val();
         $categoria = $("#produto-campo-categoria").val();
-        $codigo = $("#produto-campo-codigo").val();
-        $quantidadeProdutos = $("#produto-campo-quantidade").val();
-        $valorUnitario = $("#produto-campo-valor").val();
+        $quantidade = $("#produto-campo-quantidade").val();
+        $valor = $("#produto-campo-valor").val();
 
         if ($idAlterar == -1) {
-            inserir($nome, $categoria, $codigo, $quantidadeProdutos, $valorUnitario);
+            inserir($nome, $categoria, $codigo, $quantidade, $valor);
         } else {
-            alterar($nome, $categoria, $codigo, $quantidadeProdutos, $valorUnitario);
+            alterar($nome, $categoria, $codigo, $quantidade, $valor);
         }
 
-        function alterar($nome, $categoria, $codigoBarra, $quantidadeProdutos, $valorUnitario) {
+        function alterar($nome, $categoria,  $quantidade, $valor) {
             $.ajax({
                 url: "http://localhost:51242/Produto/update",
                 method: 'post',
@@ -40,9 +38,8 @@
                     id: $idAlterar,
                     nome: $nome,
                     idCategoria: $categoria,
-                    codigoBarra: $codigoBarra,
-                    quantidadeProdutos: $quantidadeProdutos,
-                    valorUnitario: $valorUnitario
+                    quantidade: $quantidade,
+                    valor: $valor
                 },
                 success: function (data) {
                     $("#modal-produto").modal("hide");
@@ -56,16 +53,15 @@
             });
         }
 
-        function inserir($nome, $categoria, $codigoBarra, $quantidadeProdutos, $valorUnitario) {
+        function inserir($nome, $categoria,  $quantidade, $valor) {
             $.ajax({
                 url: "http://localhost:51242/Produto/Inserir",
                 method: "post",
                 data: {
                     nome: $nome,
                     idCategoria: $categoria,
-                    codigo: $codigoBarra,
-                    quantidadeProdutos: $quantidadeProdutos,
-                    valorUnitario: $valorUnitario
+                    quantidadeProdutos: $quantidade,
+                    valorUnitario: $valor
                 },
                 success: function (data) {
                     $("#modal-produto").modal('hide');
@@ -107,9 +103,8 @@
             success: function (data) {
                 $("#produto-campo-nome").val(data.Nome);
                 $("#produto-campo-categoria").val(data.Categoria.Nome);
-                $("#produto-campo-codigo").val(data.CodigoBarra);
-                $("#produto-campo-quantidade").val(data.QuantidadeProdutos);
-                $("#produto-campo-valor").val(data.ValorUnitario);
+                $("#produto-campo-quantidade").val(data.Quantidade);
+                $("#produto-campo-valor").val(data.Valor);
                 $("#modal-produto").modal("show");
             },
             error: function (err) {

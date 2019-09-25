@@ -1,5 +1,6 @@
 ﻿$(function () {
     $idAlterar = -1;
+    $idInventario = 0;
 
     $tabelaInventario = $('#inventario-tabela').DataTable({
         ajax: 'http://localhost:51242/veiculo/obtertodos',
@@ -9,11 +10,15 @@
             { 'data': 'NumeroCaminhao' },
             {
                 render: function (data, type, row) {
-                    return '<button class="btn btn-success botao-abrir" data-id="' + row.Id + '"><i class="fas fa-arrow-right"></i> Abrir</button>\<button class="btn btn-primary botao-editar ml-1" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i> Editar</button>'
+                    return '<button class="btn btn-success botao-abrir" \
+                                data-id="' + row.Id + '"><i class="fas fa-arrow-right"></i> Abrir</button>\
+                            <button class="btn btn-primary botao-editar ml-1" \
+                                data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i> Editar</button>'
                 }
             }
         ]
     });
+
 
     $('#inventario-botao-salvar').on('click', function () {
         $numero_caminhao = $('inventario-campo-numerocaminaho').val();
@@ -63,20 +68,26 @@
         });
     }
 
-    $('.table').on('click', '.botao-abrir', function () {
-        $idAbrir = $(this).data('id');
+    $('#modal-inventario').on('show.bs.modal', function (e) {
+        $tabelaInventario = $('#modal-inventario-tabela').DataTable({
+            ajax: 'http://localhost:51242/veiculo/obtertodos',
+            serverSide: true,
+            columns: [
+                { 'data': 'Id' },
+                { 'data': 'NumeroCaminhao' },
+                {
+                    render: function (data, type, row) {
+                        return '<button class="btn btn-success botao-abrir" data-id="' + row.Id + '"><i class="fas fa-arrow-right"></i> Abrir</button>\<button class="btn btn-primary botao-editar ml-1" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i> Editar</button>'
+                    }
+                }
+            ]
+        });
 
-        $.ajax({
-            url: "http://localhost:51242/inventario/abrir?id=" + $idAbrir,
-            method: 'get',
-            success: function (data) {
-                $('#inventario-campo-numerocaminhao').val(data.NumeroCaminhao);
-                $('#modal-inventario').modal('show');
-            },
-            error: function (err) {
-                alert('Ainda não abre, sry :(');
-            }
-        })
+    });
+
+    $('.table').on('click', '.botao-abrir', function () {
+        $idInventario = $(this).data("id");
+        $('#modal-inventario').modal('show');
     });
 
     $('.table').on('click', '.botao-apagar', function () {

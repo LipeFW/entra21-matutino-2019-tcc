@@ -57,9 +57,18 @@ namespace Repository.Repositories
             return pais;
         }
 
-        public List<Pais> ObterTodos()
+        public List<Pais> ObterTodos(string query)
         {
-            return context.Paises.Where(x => x.RegistroAtivo == true).OrderBy(x => x.Id).ToList();
+            var consulta = context.Paises
+                .Where(x => x.RegistroAtivo == true);
+
+            if (!string.IsNullOrEmpty(query))
+            {
+                consulta = consulta.Where(x => x.Nome.Contains(query));
+            }
+            return consulta
+                .OrderBy(x => x.Nome)
+                .ToList();
         }
     }
 }
