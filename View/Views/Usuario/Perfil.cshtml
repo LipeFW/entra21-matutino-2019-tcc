@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Perfil";
 }
 <legend>
@@ -39,7 +38,6 @@
         <label style="font-weight:bold" for="perfil-campo-estado">@View.Resources.Resource.Estado <span class="text-danger">*</span></label>
         <select class="form-control border-dark" id="perfil-campo-estado">
             <option disabled="disabled" selected="selected"> @View.Resources.Resource.Selecioneumestado</option>
-
         </select>
     </div>
     <div class="form-group">
@@ -48,7 +46,6 @@
             <option disabled="disabled" selected="selected"> @View.Resources.Resource.Selecioneumacidade</option>
         </select>
     </div>
-   
     <div>
         <button class="btn btn-primary float-right"><i class="fas fa-pencil-alt"></i> @View.Resources.Resource.AlterarDados</button>
     </div>
@@ -70,9 +67,7 @@
     </div>
 </div>
 <legend></legend>
-
 @section js {
     <script src="~/Scripts/Usuario/perfil.js"></script>
-
     <script type="text/javascript" src="~/Scripts/Mascaras/Mask.js"></script>
 }

@@ -9,7 +9,7 @@
             { 'data': 'Nome' },
             {
                 render: function (data, type, row) {
-                    return '<button class="btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button>\<button class="btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>'
+                    return '<button class="btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button>\<button class="btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>';
                 }
             }
         ]
@@ -70,21 +70,36 @@
         });
     }
 
-    $('.table').on('click', '.botao-apagar', function () {
-        $idApagar = $(this).data('id');
-        var confirmacao = confirm("Deseja realmente apagar o registro?");
-        if (confirmacao == true) {
-            $.ajax({
-                url: 'http://localhost:51242/Categoria/apagar?id=' + $idApagar,
-                method: 'get',
-                success: function (data) {
-                    $tabelaCategoria.ajax.reload();
+    $(".table").on("click", ".botao-apagar", function () {
+        $idApagar = $(this).data("id");
+        bootbox.confirm({
+            message: "Deseja realmente apagar o registro?",
+            buttons: {
+                confirm: {
+                    label: 'Sim',
+                    className: 'btn-success'
                 },
-                error: function (err) {
-                    alert('Não foi possivel apagar');
+                cancel: {
+                    label: 'Não',
+                    className: 'btn-danger'
                 }
-            });
-        }
+            },
+            callback: function (result) {
+                if (result)
+                    $.ajax({
+                        url: "http://localhost:51242/Usuario/Apagar?id=" + $idApagar,
+                        method: "get",
+                        success: function (data) {
+                            $tabelaCategoria.ajax.reload();
+                            bootbox.alert("Registro apagado com sucesso");
+
+                        },
+                        error: function (err) {
+                            bootbox.alert('Não foi possível apagar');
+                        }
+                    });
+            }
+        });
     });
 
     $('.table').on('click', '.botao-editar', function () {

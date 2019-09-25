@@ -44,7 +44,7 @@ namespace Repository.Repositories
         }
         public List<Produto> ObterTodos()
         {
-            return context.Produtos.Where(x => x.RegistroAtivo == true).Include("Categoria").ToList();
+            return context.Produtos.Where(x => x.RegistroAtivo).Include("Categoria").ToList();
         }
 
         public bool Alterar(Produto produto)
@@ -57,16 +57,16 @@ namespace Repository.Repositories
 
             produtoOriginal.Id = produto.Id;
             produtoOriginal.Nome = produto.Nome;
+            produtoOriginal.IdCategoria = produto.IdCategoria;
             produtoOriginal.Valor = produto.Valor;
-            produtoOriginal.Quantidade = produto.Quantidade;
 
             int quantidadeAfetada = context.SaveChanges();
             return quantidadeAfetada == 1;
         }
 
-        public List<Produto> ObterProdutosPeloIdVenda(int idVenda)
+        public List<Produto> ObterProdutosPeloIdVenda()
         {
-            return context.Produtos.Where(x => x.IdVenda == idVenda && x.RegistroAtivo).ToList();
+            return context.Produtos.Where(x => x.RegistroAtivo == true).ToList();
         }
     }
 }

@@ -5,6 +5,7 @@ id INT PRIMARY KEY IDENTITY(1,1),
 nome VARCHAR(100),
 registro_ativo BIT
 );
+
 INSERT INTO paises(nome, registro_ativo) VALUES 
 /*<--Países da América do Norte (ID:1 - 3)-->*/
 /*ID 01*/('Canada', 1),
@@ -6723,9 +6724,36 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (410, 'Taguatinga', 1),
 (410, 'Tocantinopolis', 1),
 (410, 'Wanderland', 1),
-(410, 'Xambio', 1);
+(410, 'Xambio', 1),
 /*<--/Tocantins-->*/
 /*<--/Brasil-->*/
+/*<--/Chile-->*/
+/*<--/Valparaiso-->*/
+(411, 'Cabildo' , 1),
+(411, 'Calera' , 1),
+(411, 'Calera' , 1),
+(411, 'La Ligua' , 1),
+(411, 'Limache' , 1),
+(411, 'Llaillay' , 1),
+(411, 'Los Andes' , 1),
+(411, 'Quillota' , 1),
+(411, 'Quilpue' , 1),
+(411, 'San Antonio' , 1),
+(411, 'San Felipe' , 1),
+(411, 'Valparaiso' , 1),
+(411, 'Villa Alemana' , 1),
+(411, 'Vina Del Mar' , 1),
+/*<--/Valparaiso-->*/
+/*<--/Aisen del General Carlos Ibanez-->*/
+(412, 'Coihaique', 1),
+/*<--/Aisen del General Carlos Ibanez-->*/
+/*<--/Antofagasta-->*/
+(413, 'Antofagasta', 1),
+(413, 'Calama', 1),
+(413, 'Taltal', 1),
+(413, 'Tocopilla', 1);
+/*<--/Antofagasta-->*/
+/*<--/Chile-->*/
 /*<--/América do Sul-->*/
 CREATE TABLE usuarios( 
 id INT PRIMARY KEY IDENTITY(1,1),
@@ -6739,12 +6767,11 @@ registro_ativo BIT
 
 INSERT INTO usuarios(nome,nome_completo,url_imagem, admin, senha,  registro_ativo)
 VALUES  ( 'lipefw','Felipe','gatodandopinote.png',1 , 'anaumsei', 1),
-	    ( 'illan','Illan','gato-confuo.jpg',0 , 'illanzoka', 1),
+	    ( 'illan','Illan','gato-confuo.jpg',1 , 'illanzoka', 1),
 	    ( 'eduardo','Eduardo','guaxinimdoido.jpg',1 , 'RetardoMental', 1),
 	    ( 'henrique','Henrique','hamsterchavoso.png',1 , 'pimbinha6000', 1),
 	    ( 'pablo','Pablo','Rambo.jpg', 1, '1234', 1),
 	    ( 'nathan','Nathan','passaroseila.jpg', 1, '1203', 1);
-
 
 CREATE TABLE categorias( 
 id INT PRIMARY KEY IDENTITY(1,1),
@@ -6763,17 +6790,25 @@ nome VARCHAR(100),
 registro_ativo BIT);
  
 INSERT INTO marcas(nome,registro_ativo)
-VALUES ('Ford', 1);
+VALUES	('Ford', 1),
+		('Iveco', 1),
+		('Volkswagen', 1),
+		('Volvo', 1),
+		('Scania', 1);
 
 CREATE TABLE modelos(
 id INT PRIMARY KEY IDENTITY(1,1),
-nome VARCHAR(50),
+nome VARCHAR(100),
 id_marca INT,
 FOREIGN KEY (id_marca) REFERENCES marcas(id),
 registro_ativo BIT);
 
 INSERT INTO modelos(id_marca, nome, registro_ativo)
-VALUES (1,'Cargo', 1);
+VALUES	(1,'Cargo', 1),
+		(2,'Stralis', 1),
+		(3,'Contellation', 1),
+		(4,'FH16', 1),
+		(5,'G420', 1);
 
  CREATE TABLE veiculos(
 id INT PRIMARY KEY IDENTITY(1,1),
@@ -6787,17 +6822,26 @@ FOREIGN KEY(id_marca) REFERENCES marcas (id),
 FOREIGN KEY(id_modelo) REFERENCES modelos (id)
 );
 
-INSERT INTO veiculos(id_marca, id_modelo, ano_fabricacao, numero_caminhao, placa, registro_ativo)
-VALUES (1, 1, '2005', 002, 'MJX-0585', 1 );
+INSERT INTO veiculos(id_marca,id_modelo, ano_fabricacao, numero_caminhao, placa, registro_ativo)
+VALUES	(1, 1, '2011', 001, 'MJX-0585', 1 ),
+		(2, 2, '2003', 002, 'ABC-1548', 1 ),
+		(3, 3, '2007', 003, 'JCF-1957', 1 ),
+		(4, 4, '2014', 004, 'MUW-0423', 1 ),
+		(5, 5, '2004', 005, 'PAI-9785', 1 );
 
  CREATE TABLE inventarios(
 id INT PRIMARY KEY IDENTITY(1,1),
-numero_caminhao INT,
+id_veiculo INT,
+FOREIGN KEY (id_veiculo) REFERENCES veiculos(id),
 registro_ativo BIT,
 );
 
-INSERT INTO inventarios(numero_caminhao, registro_ativo)
-VALUES (002, 1 );
+INSERT INTO inventarios(id_veiculo, registro_ativo)
+VALUES	(1, 1 ),
+		(2, 1 ),
+		(3, 1 ),
+		(4, 1 ),
+		(5, 1 );
 
 CREATE TABLE vendedores(
 id INT PRIMARY KEY IDENTITY(1,1),
@@ -6809,7 +6853,8 @@ FOREIGN KEY (id_veiculo) REFERENCES veiculos(id),
 registro_ativo BIT);
 
 INSERT INTO vendedores(nome, id_veiculo, id_usuario, registro_ativo)
-VALUES ('Felipe' , 1, 1, 1);
+VALUES	('Felipe' , 1, 1, 1),
+		('Illan' , 2, 2, 1);
 
 CREATE TABLE clientes(
 id INT PRIMARY KEY IDENTITY(1,1),
@@ -6828,32 +6873,26 @@ VALUES ('Pedro', '(47) 99158-1254', '08.371.556/0001-04', '241.586.758-63', '890
 
 CREATE TABLE produtos(
 id INT PRIMARY KEY IDENTITY(1,1),
-nome VARCHAR(50),
 id_categoria INT,
-codigo_barra VARCHAR(30),
-quantidade_produto INT,
-valor_unitario DECIMAL(8,2),
+nome VARCHAR(50),
+valor DECIMAL(8,2),
 FOREIGN KEY (id_categoria) REFERENCES categorias(id),
 registro_ativo BIT);
 
-INSERT INTO produtos(id_categoria,nome, codigo_barra, quantidade_produto, valor_unitario, registro_ativo)
-VALUES (1,'Toddynho', '173937229417429475205792634916', 1, 1, 1);
+INSERT INTO produtos(id_categoria,nome, valor, registro_ativo)
+VALUES (1,'Toddynho', 1, 1);
 
 CREATE TABLE vendas(
 id INT PRIMARY KEY IDENTITY(1,1),
 quantidade INT,
-id_vendedor INT,
 id_cliente INT,
-id_produto INT,
-FOREIGN KEY (id_vendedor) REFERENCES vendedores(id),
 FOREIGN KEY (id_cliente) REFERENCES clientes(id),
-FOREIGN KEY (id_produto) REFERENCES produtos(id),
 total DECIMAL(8,2),
 desconto DECIMAL(8,2),
 registro_ativo BIT);
 
-INSERT INTO vendas(quantidade,id_vendedor,id_cliente,id_produto, registro_ativo, total, desconto)
-VALUES (1, 1, 1, 1, 1, 100, 10);
+INSERT INTO vendas(quantidade, id_cliente, registro_ativo, total, desconto)
+VALUES (1, 1, 1, 100, 10);
 
 CREATE TABLE rotas(
 id INT PRIMARY KEY IDENTITY(1,1),
