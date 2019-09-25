@@ -1198,7 +1198,7 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (7, 'Wiarton', 1),
 (7, 'Winchester', 1),
 (7, 'Windsor', 1),
-(7, 'Wingham', 1);
+(7, 'Wingham', 1),
 /*<--/Cidades do Ontário-->*/
 /*<--Cidades do Québec-->*/
 
@@ -5007,313 +5007,314 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (405, 'Urussanga', 1),
 (405, 'Videira', 1),
 (405, 'Xanxere', 1),
-(405, 'Xaxim', 1),
+(405, 'Xaxim', 1);
 /*<--/Santa Catarina-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--São Paulo-->*/
-(406, 'Adamantina', 1)
-(406, 'Aguai', 1)
-(406, 'Aguas De Lindoia', 1)
-(406, 'Agudos', 1)
-(406, 'Altinopolis', 1)
-(406, 'Alvares Machado', 1)
-(406, 'Americana', 1)
-(406, 'Americo Brasiliense', 1)
-(406, 'Amparo', 1)
-(406, 'Andradina', 1)
-(406, 'Angatuba', 1)
-(406, 'Aparecida', 1)
-(406, 'Apiai', 1)
-(406, 'Aracatuba', 1)
-(406, 'Aracoiaba Da Serra', 1)
-(406, 'Araraquara', 1)
-(406, 'Araras', 1)
-(406, 'Artur Nogueira', 1)
-(406, 'Aruja', 1)
-(406, 'Assis', 1)
-(406, 'Atibaia', 1)
-(406, 'Auriflama', 1)
-(406, 'Avare', 1)
-(406, 'Bady Bassitt', 1)
-(406, 'Bariri', 1)
-(406, 'Barra Bonita', 1)
-(406, 'Barretos', 1)
-(406, 'Barrinha', 1)
-(406, 'Barueri', 1)
-(406, 'Bastos', 1)
-(406, 'Batatais', 1)
-(406, 'Bauru', 1)
-(406, 'Bebedouro', 1)
-(406, 'Bernardino De Campos', 1)
-(406, 'Birigui', 1)
-(406, 'Biritiba-mirim', 1)
-(406, 'Boa Esperanca Do Sul', 1)
-(406, 'Boituva', 1)
-(406, 'Bom Jesus Dos Perdoes', 1)
-(406, 'Borborema', 1)
-(406, 'Botucatu', 1)
-(406, 'Braganca Paulista', 1)
-(406, 'Brodowski', 1)
-(406, 'Brotas', 1)
-(406, 'Buri', 1)
-(406, 'Buritama', 1)
-(406, 'Cabreuva', 1)
-(406, 'Cacapava', 1)
-(406, 'Caconde', 1)
-(406, 'Cafelandia', 1)
-(406, 'Caieiras', 1)
-(406, 'Cajamar', 1)
-(406, 'Cajati', 1)
-(406, 'Cajuru', 1)
-(406, 'Campinas', 1)
-(406, 'Campos Do Jordao', 1)
-(406, 'Cananeia', 1)
-(406, 'Candido Mota', 1)
-(406, 'Capao Bonito', 1)
-(406, 'Capela Do Alto', 1)
-(406, 'Capivari', 1)
-(406, 'Caraguatatuba', 1)
-(406, 'Carapicuiba', 1)
-(406, 'Cardoso', 1)
-(406, 'Casa Branca', 1)
-(406, 'Castilho', 1)
-(406, 'Catanduva', 1)
-(406, 'Cerqueira Cesar', 1)
-(406, 'Cerquilho', 1)
-(406, 'Charqueada', 1)
-(406, 'Chavantes', 1)
-(406, 'Colina', 1)
-(406, 'Conchal', 1)
-(406, 'Conchas', 1)
-(406, 'Cordeiropolis', 1)
-(406, 'Cosmopolis', 1)
-(406, 'Cotia', 1)
-(406, 'Cravinhos', 1)
-(406, 'Cruzeiro', 1)
-(406, 'Cubatao', 1)
-(406, 'Cunha', 1)
-(406, 'Descalvado', 1)
-(406, 'Diadema', 1)
-(406, 'Dois Corregos', 1)
-(406, 'Dracena', 1)
-(406, 'Duartina', 1)
-(406, 'Elias Fausto', 1)
-(406, 'Embu', 1)
-(406, 'Embu-guacu', 1)
-(406, 'Espirito Santo Do Pinhal', 1)
-(406, 'Fartura', 1)
-(406, 'Fernandopolis', 1)
-(406, 'Ferraz De Vasconcelos', 1)
-(406, 'Franca', 1)
-(406, 'Francisco Morato', 1)
-(406, 'Franco Da Rocha', 1)
-(406, 'Garca', 1)
-(406, 'General Salgado', 1)
-(406, 'Guaira', 1)
-(406, 'Guapiacu', 1)
-(406, 'Guara', 1)
-(406, 'Guararapes', 1)
-(406, 'Guararema', 1)
-(406, 'Guaratingueta', 1)
-(406, 'Guariba', 1)
-(406, 'Guaruja', 1)
-(406, 'Guarulhos', 1)
-(406, 'Hortolandia', 1)
-(406, 'Ibate', 1)
-(406, 'Ibitinga', 1)
-(406, 'Ibiuna', 1)
-(406, 'Igaracu Do Tiete', 1)
-(406, 'Igarapava', 1)
-(406, 'Iguape', 1)
-(406, 'Ilhabela', 1)
-(406, 'Indaiatuba', 1)
-(406, 'Ipaussu', 1)
-(406, 'Ipero', 1)
-(406, 'Ipua', 1)
-(406, 'Iracemapolis', 1)
-(406, 'Itabera', 1)
-(406, 'Itai', 1)
-(406, 'Itajobi', 1)
-(406, 'Itanhaem', 1)
-(406, 'Itapecerica Da Serra', 1)
-(406, 'Itapetininga', 1)
-(406, 'Itapeva', 1)
-(406, 'Itapevi', 1)
-(406, 'Itapira', 1)
-(406, 'Itapolis', 1)
-(406, 'Itaporanga', 1)
-(406, 'Itapui', 1)
-(406, 'Itaquaquecetuba', 1)
-(406, 'Itarare', 1)
-(406, 'Itatiba', 1)
-(406, 'Itatinga', 1)
-(406, 'Itirapina', 1)
-(406, 'Itu', 1)
-(406, 'Ituverava', 1)
-(406, 'Jaboticabal', 1)
-(406, 'Jacarei', 1)
-(406, 'Jacupiranga', 1)
-(406, 'Jaguariuna', 1)
-(406, 'Jales', 1)
-(406, 'Jandira', 1)
-(406, 'Jardinopolis', 1)
-(406, 'Jarinu', 1)
-(406, 'Jau', 1)
-(406, 'Joanopolis', 1)
-(406, 'Jose Bonifacio', 1)
-(406, 'Jundiai', 1)
-(406, 'Junqueiropolis', 1)
-(406, 'Juquia', 1)
-(406, 'Juquitiba', 1)
-(406, 'Laranjal Paulista', 1)
-(406, 'Leme', 1)
-(406, 'Lencois Paulista', 1)
-(406, 'Limeira', 1)
-(406, 'Lins', 1)
-(406, 'Lorena', 1)
-(406, 'Louveira', 1)
-(406, 'Lucelia', 1)
-(406, 'Macatuba', 1)
-(406, 'Mairinque', 1)
-(406, 'Mairipora', 1)
-(406, 'Maracai', 1)
-(406, 'Marilia', 1)
-(406, 'Martinopolis', 1)
-(406, 'Matao', 1)
-(406, 'Maua', 1)
-(406, 'Miguelopolis', 1)
-(406, 'Miracatu', 1)
-(406, 'Mirandopolis', 1)
-(406, 'Mirante Do Paranapanema', 1)
-(406, 'Mirassol', 1)
-(406, 'Mococa', 1)
-(406, 'Moji Das Cruzes', 1)
-(406, 'Moji-mirim', 1)
-(406, 'Mongagua', 1)
-(406, 'Monte Alto', 1)
-(406, 'Monte Aprazivel', 1)
-(406, 'Monte Azul Paulista', 1)
-(406, 'Monte Mor', 1)
-(406, 'Morro Agudo', 1)
-(406, 'Nova Granada', 1)
-(406, 'Nova Odessa', 1)
-(406, 'Novo Horizonte', 1)
-(406, 'Olimpia', 1)
-(406, 'Orlandia', 1)
-(406, 'Osasco', 1)
-(406, 'Osvaldo Cruz', 1)
-(406, 'Ourinhos', 1)
-(406, 'Pacaembu', 1)
-(406, 'Palmital', 1)
-(406, 'Panorama', 1)
-(406, 'Paraguacu Paulista', 1)
-(406, 'Paranapanema', 1)
-(406, 'Pariquera-acu', 1)
-(406, 'Paulinia', 1)
-(406, 'Pederneiras', 1)
-(406, 'Pedregulho', 1)
-(406, 'Pedreira', 1)
-(406, 'Penapolis', 1)
-(406, 'Pereira Barreto', 1)
-(406, 'Peruibe', 1)
-(406, 'Piedade', 1)
-(406, 'Pilar Do Sul', 1)
-(406, 'Pindamonhangaba', 1)
-(406, 'Pindorama', 1)
-(406, 'Piquete', 1)
-(406, 'Piracaia', 1)
-(406, 'Piracicaba', 1)
-(406, 'Piraju', 1)
-(406, 'Pirajui', 1)
-(406, 'Pirapora Do Bom Jesus', 1)
-(406, 'Pirapozinho', 1)
-(406, 'Pirassununga', 1)
-(406, 'Pitangueiras', 1)
-(406, 'Poa', 1)
-(406, 'Pompeia', 1)
-(406, 'Pontal', 1)
-(406, 'Porto Feliz', 1)
-(406, 'Porto Ferreira', 1)
-(406, 'Pradopolis', 1)
-(406, 'Praia Grande', 1)
-(406, 'Presidente Bernardes', 1)
-(406, 'Presidente Epitacio', 1)
-(406, 'Presidente Prudente', 1)
-(406, 'Presidente Venceslau', 1)
-(406, 'Promissao', 1)
-(406, 'Quata', 1)
-(406, 'Rancharia', 1)
-(406, 'Regente Feijo', 1)
-(406, 'Registro', 1)
-(406, 'Ribeirao Bonito', 1)
-(406, 'Ribeirao Branco', 1)
-(406, 'Ribeirao Pires', 1)
-(406, 'Ribeirao Preto', 1)
-(406, 'Rio Claro', 1)
-(406, 'Rio Das Pedras', 1)
-(406, 'Rio Grande Da Serra', 1)
-(406, 'Salto', 1)
-(406, 'Salto De Pirapora', 1)
-(406, 'Santa Adelia', 1)
-(406, 'Santa Branca', 1)
-(406, 'Santa Cruz Das Palmeiras', 1)
-(406, 'Santa Cruz Do Rio Pardo', 1)
-(406, 'Santa Fe Do Sul', 1)
-(406, 'Santa Gertrudes', 1)
-(406, 'Santa Isabel', 1)
-(406, 'Santa Rita Do Passa Quatro', 1)
-(406, 'Santa Rosa De Viterbo', 1)
-(406, 'Santana De Parnaiba', 1)
-(406, 'Santo Anastacio', 1)
-(406, 'Santo Andre', 1)
-(406, 'Santo Antonio De Posse', 1)
-(406, 'Santos', 1)
-(406, 'Sao Bernardo Do Campo', 1)
-(406, 'Sao Caetano Do Sul', 1)
-(406, 'Sao Carlos', 1)
-(406, 'Sao Joao Da Boa Vista', 1)
-(406, 'Sao Joaquim Da Barra', 1)
-(406, 'Sao Jose Do Rio Pardo', 1)
-(406, 'Sao Jose Do Rio Preto', 1)
-(406, 'Sao Jose Dos Campos', 1)
-(406, 'Sao Lourenco Da Serra', 1)
-(406, 'Sao Manuel', 1)
-(406, 'Sao Paulo', 1)
-(406, 'Sao Pedro', 1)
-(406, 'Sao Roque', 1)
-(406, 'Sao Sebastiao', 1)
-(406, 'Sao Simao', 1)
-(406, 'Sao Vicente', 1)
-(406, 'Serra Negra', 1)
-(406, 'Serrana', 1)
-(406, 'Sertaozinho', 1)
-(406, 'Severinia', 1)
-(406, 'Socorro', 1)
-(406, 'Sorocaba', 1)
-(406, 'Sumare', 1)
-(406, 'Suzano', 1)
-(406, 'Tabatinga', 1)
-(406, 'Taboao Da Serra', 1)
-(406, 'Tambau', 1)
-(406, 'Tanabi', 1)
-(406, 'Taquaritinga', 1)
-(406, 'Taquarituba', 1)
-(406, 'Taruma', 1)
-(406, 'Tatui', 1)
-(406, 'Taubate', 1)
-(406, 'Teodoro Sampaio', 1)
-(406, 'Tiete', 1)
-(406, 'Tremembe', 1)
-(406, 'Tupa', 1)
-(406, 'Tupi Paulista', 1)
-(406, 'Ubatuba', 1)
-(406, 'Urupes', 1)
-(406, 'Valinhos', 1)
-(406, 'Valparaiso', 1)
-(406, 'Vargem Grande Do Sul', 1)
-(406, 'Varzea Paulista', 1)
-(406, 'Vinhedo', 1)
-(406, 'Viradouro', 1)
-(406, 'Votorantim', 1)
+(406, 'Adamantina', 1),
+(406, 'Aguai', 1),
+(406, 'Aguas De Lindoia', 1),
+(406, 'Agudos', 1),
+(406, 'Altinopolis', 1),
+(406, 'Alvares Machado', 1),
+(406, 'Americana', 1),
+(406, 'Americo Brasiliense', 1),
+(406, 'Amparo', 1),
+(406, 'Andradina', 1),
+(406, 'Angatuba', 1),
+(406, 'Aparecida', 1),
+(406, 'Apiai', 1),
+(406, 'Aracatuba', 1),
+(406, 'Aracoiaba Da Serra', 1),
+(406, 'Araraquara', 1),
+(406, 'Araras', 1),
+(406, 'Artur Nogueira', 1),
+(406, 'Aruja', 1),
+(406, 'Assis', 1),
+(406, 'Atibaia', 1),
+(406, 'Auriflama', 1),
+(406, 'Avare', 1),
+(406, 'Bady Bassitt', 1),
+(406, 'Bariri', 1),
+(406, 'Barra Bonita', 1),
+(406, 'Barretos', 1),
+(406, 'Barrinha', 1),
+(406, 'Barueri', 1),
+(406, 'Bastos', 1),
+(406, 'Batatais', 1),
+(406, 'Bauru', 1),
+(406, 'Bebedouro', 1),
+(406, 'Bernardino De Campos', 1),
+(406, 'Birigui', 1),
+(406, 'Biritiba-mirim', 1),
+(406, 'Boa Esperanca Do Sul', 1),
+(406, 'Boituva', 1),
+(406, 'Bom Jesus Dos Perdoes', 1),
+(406, 'Borborema', 1),
+(406, 'Botucatu', 1),
+(406, 'Braganca Paulista', 1),
+(406, 'Brodowski', 1),
+(406, 'Brotas', 1),
+(406, 'Buri', 1),
+(406, 'Buritama', 1),
+(406, 'Cabreuva', 1),
+(406, 'Cacapava', 1),
+(406, 'Caconde', 1),
+(406, 'Cafelandia', 1),
+(406, 'Caieiras', 1),
+(406, 'Cajamar', 1),
+(406, 'Cajati', 1),
+(406, 'Cajuru', 1),
+(406, 'Campinas', 1),
+(406, 'Campos Do Jordao', 1),
+(406, 'Cananeia', 1),
+(406, 'Candido Mota', 1),
+(406, 'Capao Bonito', 1),
+(406, 'Capela Do Alto', 1),
+(406, 'Capivari', 1),
+(406, 'Caraguatatuba', 1),
+(406, 'Carapicuiba', 1),
+(406, 'Cardoso', 1),
+(406, 'Casa Branca', 1),
+(406, 'Castilho', 1),
+(406, 'Catanduva', 1),
+(406, 'Cerqueira Cesar', 1),
+(406, 'Cerquilho', 1),
+(406, 'Charqueada', 1),
+(406, 'Chavantes', 1),
+(406, 'Colina', 1),
+(406, 'Conchal', 1),
+(406, 'Conchas', 1),
+(406, 'Cordeiropolis', 1),
+(406, 'Cosmopolis', 1),
+(406, 'Cotia', 1),
+(406, 'Cravinhos', 1),
+(406, 'Cruzeiro', 1),
+(406, 'Cubatao', 1),
+(406, 'Cunha', 1),
+(406, 'Descalvado', 1),
+(406, 'Diadema', 1),
+(406, 'Dois Corregos', 1),
+(406, 'Dracena', 1),
+(406, 'Duartina', 1),
+(406, 'Elias Fausto', 1),
+(406, 'Embu', 1),
+(406, 'Embu-guacu', 1),
+(406, 'Espirito Santo Do Pinhal', 1),
+(406, 'Fartura', 1),
+(406, 'Fernandopolis', 1),
+(406, 'Ferraz De Vasconcelos', 1),
+(406, 'Franca', 1),
+(406, 'Francisco Morato', 1),
+(406, 'Franco Da Rocha', 1),
+(406, 'Garca', 1),
+(406, 'General Salgado', 1),
+(406, 'Guaira', 1),
+(406, 'Guapiacu', 1),
+(406, 'Guara', 1),
+(406, 'Guararapes', 1),
+(406, 'Guararema', 1),
+(406, 'Guaratingueta', 1),
+(406, 'Guariba', 1),
+(406, 'Guaruja', 1),
+(406, 'Guarulhos', 1),
+(406, 'Hortolandia', 1),
+(406, 'Ibate', 1),
+(406, 'Ibitinga', 1),
+(406, 'Ibiuna', 1),
+(406, 'Igaracu Do Tiete', 1),
+(406, 'Igarapava', 1),
+(406, 'Iguape', 1),
+(406, 'Ilhabela', 1),
+(406, 'Indaiatuba', 1),
+(406, 'Ipaussu', 1),
+(406, 'Ipero', 1),
+(406, 'Ipua', 1),
+(406, 'Iracemapolis', 1),
+(406, 'Itabera', 1),
+(406, 'Itai', 1),
+(406, 'Itajobi', 1),
+(406, 'Itanhaem', 1),
+(406, 'Itapecerica Da Serra', 1),
+(406, 'Itapetininga', 1),
+(406, 'Itapeva', 1),
+(406, 'Itapevi', 1),
+(406, 'Itapira', 1),
+(406, 'Itapolis', 1),
+(406, 'Itaporanga', 1),
+(406, 'Itapui', 1),
+(406, 'Itaquaquecetuba', 1),
+(406, 'Itarare', 1),
+(406, 'Itatiba', 1),
+(406, 'Itatinga', 1),
+(406, 'Itirapina', 1),
+(406, 'Itu', 1),
+(406, 'Ituverava', 1),
+(406, 'Jaboticabal', 1),
+(406, 'Jacarei', 1),
+(406, 'Jacupiranga', 1),
+(406, 'Jaguariuna', 1),
+(406, 'Jales', 1),
+(406, 'Jandira', 1),
+(406, 'Jardinopolis', 1),
+(406, 'Jarinu', 1),
+(406, 'Jau', 1),
+(406, 'Joanopolis', 1),
+(406, 'Jose Bonifacio', 1),
+(406, 'Jundiai', 1),
+(406, 'Junqueiropolis', 1),
+(406, 'Juquia', 1),
+(406, 'Juquitiba', 1),
+(406, 'Laranjal Paulista', 1),
+(406, 'Leme', 1),
+(406, 'Lencois Paulista', 1),
+(406, 'Limeira', 1),
+(406, 'Lins', 1),
+(406, 'Lorena', 1),
+(406, 'Louveira', 1),
+(406, 'Lucelia', 1),
+(406, 'Macatuba', 1),
+(406, 'Mairinque', 1),
+(406, 'Mairipora', 1),
+(406, 'Maracai', 1),
+(406, 'Marilia', 1),
+(406, 'Martinopolis', 1),
+(406, 'Matao', 1),
+(406, 'Maua', 1),
+(406, 'Miguelopolis', 1),
+(406, 'Miracatu', 1),
+(406, 'Mirandopolis', 1),
+(406, 'Mirante Do Paranapanema', 1),
+(406, 'Mirassol', 1),
+(406, 'Mococa', 1),
+(406, 'Moji Das Cruzes', 1),
+(406, 'Moji-mirim', 1),
+(406, 'Mongagua', 1),
+(406, 'Monte Alto', 1),
+(406, 'Monte Aprazivel', 1),
+(406, 'Monte Azul Paulista', 1),
+(406, 'Monte Mor', 1),
+(406, 'Morro Agudo', 1),
+(406, 'Nova Granada', 1),
+(406, 'Nova Odessa', 1),
+(406, 'Novo Horizonte', 1),
+(406, 'Olimpia', 1),
+(406, 'Orlandia', 1),
+(406, 'Osasco', 1),
+(406, 'Osvaldo Cruz', 1),
+(406, 'Ourinhos', 1),
+(406, 'Pacaembu', 1),
+(406, 'Palmital', 1),
+(406, 'Panorama', 1),
+(406, 'Paraguacu Paulista', 1),
+(406, 'Paranapanema', 1),
+(406, 'Pariquera-acu', 1),
+(406, 'Paulinia', 1),
+(406, 'Pederneiras', 1),
+(406, 'Pedregulho', 1),
+(406, 'Pedreira', 1),
+(406, 'Penapolis', 1),
+(406, 'Pereira Barreto', 1),
+(406, 'Peruibe', 1),
+(406, 'Piedade', 1),
+(406, 'Pilar Do Sul', 1),
+(406, 'Pindamonhangaba', 1),
+(406, 'Pindorama', 1),
+(406, 'Piquete', 1),
+(406, 'Piracaia', 1),
+(406, 'Piracicaba', 1),
+(406, 'Piraju', 1),
+(406, 'Pirajui', 1),
+(406, 'Pirapora Do Bom Jesus', 1),
+(406, 'Pirapozinho', 1),
+(406, 'Pirassununga', 1),
+(406, 'Pitangueiras', 1),
+(406, 'Poa', 1),
+(406, 'Pompeia', 1),
+(406, 'Pontal', 1),
+(406, 'Porto Feliz', 1),
+(406, 'Porto Ferreira', 1),
+(406, 'Pradopolis', 1),
+(406, 'Praia Grande', 1),
+(406, 'Presidente Bernardes', 1),
+(406, 'Presidente Epitacio', 1),
+(406, 'Presidente Prudente', 1),
+(406, 'Presidente Venceslau', 1),
+(406, 'Promissao', 1),
+(406, 'Quata', 1),
+(406, 'Rancharia', 1),
+(406, 'Regente Feijo', 1),
+(406, 'Registro', 1),
+(406, 'Ribeirao Bonito', 1),
+(406, 'Ribeirao Branco', 1),
+(406, 'Ribeirao Pires', 1),
+(406, 'Ribeirao Preto', 1),
+(406, 'Rio Claro', 1),
+(406, 'Rio Das Pedras', 1),
+(406, 'Rio Grande Da Serra', 1),
+(406, 'Salto', 1),
+(406, 'Salto De Pirapora', 1),
+(406, 'Santa Adelia', 1),
+(406, 'Santa Branca', 1),
+(406, 'Santa Cruz Das Palmeiras', 1),
+(406, 'Santa Cruz Do Rio Pardo', 1),
+(406, 'Santa Fe Do Sul', 1),
+(406, 'Santa Gertrudes', 1),
+(406, 'Santa Isabel', 1),
+(406, 'Santa Rita Do Passa Quatro', 1),
+(406, 'Santa Rosa De Viterbo', 1),
+(406, 'Santana De Parnaiba', 1),
+(406, 'Santo Anastacio', 1),
+(406, 'Santo Andre', 1),
+(406, 'Santo Antonio De Posse', 1),
+(406, 'Santos', 1),
+(406, 'Sao Bernardo Do Campo', 1),
+(406, 'Sao Caetano Do Sul', 1),
+(406, 'Sao Carlos', 1),
+(406, 'Sao Joao Da Boa Vista', 1),
+(406, 'Sao Joaquim Da Barra', 1),
+(406, 'Sao Jose Do Rio Pardo', 1),
+(406, 'Sao Jose Do Rio Preto', 1),
+(406, 'Sao Jose Dos Campos', 1),
+(406, 'Sao Lourenco Da Serra', 1),
+(406, 'Sao Manuel', 1),
+(406, 'Sao Paulo', 1),
+(406, 'Sao Pedro', 1),
+(406, 'Sao Roque', 1),
+(406, 'Sao Sebastiao', 1),
+(406, 'Sao Simao', 1),
+(406, 'Sao Vicente', 1),
+(406, 'Serra Negra', 1),
+(406, 'Serrana', 1),
+(406, 'Sertaozinho', 1),
+(406, 'Severinia', 1),
+(406, 'Socorro', 1),
+(406, 'Sorocaba', 1),
+(406, 'Sumare', 1),
+(406, 'Suzano', 1),
+(406, 'Tabatinga', 1),
+(406, 'Taboao Da Serra', 1),
+(406, 'Tambau', 1),
+(406, 'Tanabi', 1),
+(406, 'Taquaritinga', 1),
+(406, 'Taquarituba', 1),
+(406, 'Taruma', 1),
+(406, 'Tatui', 1),
+(406, 'Taubate', 1),
+(406, 'Teodoro Sampaio', 1),
+(406, 'Tiete', 1),
+(406, 'Tremembe', 1),
+(406, 'Tupa', 1),
+(406, 'Tupi Paulista', 1),
+(406, 'Ubatuba', 1),
+(406, 'Urupes', 1),
+(406, 'Valinhos', 1),
+(406, 'Valparaiso', 1),
+(406, 'Vargem Grande Do Sul', 1),
+(406, 'Varzea Paulista', 1),
+(406, 'Vinhedo', 1),
+(406, 'Viradouro', 1),
+(406, 'Votorantim', 1),
 /*<--/São Paulo-->*/
 /*<--Sergipe-->*/
 (407, 'Aquidaba', 1),
