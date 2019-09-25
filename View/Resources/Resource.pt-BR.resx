@@ -388,7 +388,7 @@
     <value>trabalho</value>
   </data>
   <data name="transportadora" xml:space="preserve">
-    <value>transportadora</value>
+    <value>Transportadora</value>
   </data>
   <data name="uma" xml:space="preserve">
     <value>uma</value>
@@ -501,6 +501,12 @@
   <data name="ListadeModelos" xml:space="preserve">
     <value>Lista de Modelos</value>
   </data>
+  <data name="Descricao" xml:space="preserve">
+    <value>Descrição</value>
+  </data>
+  <data name="Editar" xml:space="preserve">
+    <value>Editar</value>
+  </data>
   <data name="Fechar" xml:space="preserve">
     <value>Fechar</value>
   </data>
@@ -512,5 +518,8 @@
   </data>
   <data name="Novo" xml:space="preserve">
     <value>Novo</value>
+  </data>
+  <data name="Preco" xml:space="preserve">
+    <value>Preço</value>
   </data>
 </root>
