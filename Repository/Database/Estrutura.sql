@@ -4049,8 +4049,32 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (42, 'Webster Groves', 1),
 (42, 'Wentzville', 1),
 (42, 'West Plains', 1),
-(42, 'Wildwood', 1),
+(42, 'Wildwood', 1);
 /*<--/Cidades do Missouri-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Cidades do Montana-->*/
+(43, 'Anaconda', 1),
+(43, 'Belgrade', 1),
+(43, 'Billings', 1),
+(43, 'Bozeman', 1),
+(43, 'Butte', 1),
+(43, 'Dillon', 1),
+(43, 'Glendive', 1),
+(43, 'Great Falls', 1),
+(43, 'Hamilton', 1),
+(43, 'Havre', 1),
+(43, 'Helena', 1),
+(43, 'Kalispell', 1),
+(43, 'Laurel', 1),
+(43, 'Lewistown', 1),
+(43, 'Livingston', 1),
+(43, 'Miles City', 1),
+(43, 'Missoula', 1),
+(43, 'Orchard Homes', 1),
+(43, 'Polson', 1),
+(43, 'Sidney', 1),
+(43, 'Whitefish', 1),
+/*<--/Cidades do Montana-->*/
 /*<--/United States-->*/
 /*<--América do Sul-->*/
 /*<--Argentina-->*/
