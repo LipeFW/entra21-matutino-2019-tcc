@@ -5205,8 +5205,9 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (405, 'Urussanga', 1),
 (405, 'Videira', 1),
 (405, 'Xanxere', 1),
-(405, 'Xaxim', 1),
+(405, 'Xaxim', 1);
 /*<--/Santa Catarina-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--São Paulo-->*/
 (406, 'Adamantina', 1),
 (406, 'Aguai', 1),
