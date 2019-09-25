@@ -552,4 +552,13 @@
   <data name="ListadeModelos" xml:space="preserve">
     <value>string</value>
   </data>
+  <data name="Descricao" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="ListadeVendas" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Novo" xml:space="preserve">
+    <value>string</value>
+  </data>
 </root>

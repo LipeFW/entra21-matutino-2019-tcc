@@ -414,6 +414,15 @@ namespace View.Resources {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a string.
         /// </summary>
+        public static string Descricao {
+            get {
+                return ResourceManager.GetString("Descricao", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
         public static string desenvolvido {
             get {
                 return ResourceManager.GetString("desenvolvido", resourceCulture);
@@ -576,6 +585,15 @@ namespace View.Resources {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a string.
         /// </summary>
+        public static string ListadeVendas {
+            get {
+                return ResourceManager.GetString("ListadeVendas", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
         public static string ListaNotasFiscais {
             get {
                 return ResourceManager.GetString("ListaNotasFiscais", resourceCulture);
@@ -714,6 +732,15 @@ namespace View.Resources {
         public static string NovaVenda {
             get {
                 return ResourceManager.GetString("NovaVenda", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
+        public static string Novo {
+            get {
+                return ResourceManager.GetString("Novo", resourceCulture);
             }
         }
         

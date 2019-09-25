@@ -41,7 +41,7 @@ namespace Repository.Repositories
 
         public Vendedor ObterPeloId(int id)
         {
-            return context.Vendedores.Include("Usuario").Include("Veiculo").FirstOrDefault(x => x.Id == id);
+            return context.Vendedores.Include("Usuario").Include("Veiculo.Modelo.Marca").FirstOrDefault(x => x.Id == id);
         }
 
         public bool Apagar(int id)
@@ -56,7 +56,9 @@ namespace Repository.Repositories
 
         public List<Vendedor> ObterTodos()
         {
-            return context.Vendedores.Where(x => x.RegistroAtivo).Include("Veiculo").Include("Usuario").ToList();
+            return context.Vendedores.Where(x => x.RegistroAtivo)
+                .Include("Veiculo.Modelo.Marca")
+                .Include("Usuario").ToList();
         }
 
     }

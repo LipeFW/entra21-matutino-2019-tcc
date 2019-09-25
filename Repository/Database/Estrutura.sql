@@ -1,4 +1,4 @@
-﻿DROP TABLE IF EXISTS notas_fiscais, rotas, vendas, clientes,vendedores, rotas, produtos,inventarios, veiculos, modelos, categorias, marcas, usuarios, cidades, estados, paises;
+﻿DROP TABLE IF EXISTS notas_fiscais, rotas, vendas, clientes,vendedores, rotas,inventarios_produtos, produtos,inventarios, veiculos, modelos, categorias, marcas, usuarios, cidades, estados, paises;
 
 CREATE TABLE paises(
 id INT PRIMARY KEY IDENTITY(1,1),
@@ -6881,6 +6881,15 @@ registro_ativo BIT);
 
 INSERT INTO produtos(id_categoria,nome, valor, registro_ativo)
 VALUES (1,'Toddynho', 1, 1);
+
+CREATE TABLE inventarios_produtos(
+id INT PRIMARY KEY IDENTITY(1,1),
+id_produto INT,
+id_veiculo INT,
+FOREIGN KEY (id_produto) REFERENCES produtos(id),
+FOREIGN KEY (id_veiculo) REFERENCES veiculos(id),
+registro_ativo BIT
+);
 
 CREATE TABLE vendas(
 id INT PRIMARY KEY IDENTITY(1,1),
