@@ -441,6 +441,15 @@ namespace View.Resources {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a string.
         /// </summary>
+        public static string Editar {
+            get {
+                return ResourceManager.GetString("Editar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
         public static string em {
             get {
                 return ResourceManager.GetString("em", resourceCulture);

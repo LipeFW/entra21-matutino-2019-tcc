@@ -504,4 +504,7 @@
   <data name="Total" xml:space="preserve">
     <value>Total</value>
   </data>
+  <data name="Editar" xml:space="preserve">
+    <value>Cambiar</value>
+  </data>
 </root>
