@@ -549,4 +549,20 @@
     <value>string</value>
     <comment>pt-BR_en-US_es-ES</comment>
   </data>
+  <data name="Fechar" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
+  <data name="ListadeProdutos" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
+  <data name="ListadeVendas" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
+  <data name="Novo" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
 </root>
