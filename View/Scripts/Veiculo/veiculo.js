@@ -13,13 +13,12 @@
             { 'data': 'Placa' },
             {
                 render: function (data, type, row) {
-                    return '<button class="btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button>\<button class="btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>'
-
+                    return '<button class="btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button>\<button class="btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>';
                 }
             }
         ]
     });
-    
+
     $('#veiculo-botao-salvar').on('click', function () {
         $marca = $('#veiculo-campo-marca').val();
         $modelo = $('#veiculo-campo-modelo').val();
@@ -113,7 +112,6 @@
                 $("#veiculo-campo-numerocaminhao").val(data.NumeroCaminhao);
                 $("#veiculo-campo-placa").val(data.Placa);
                 $("#modal-veiculo").modal("show");
-
             },
             error: function (err) {
                 alert('Não foi possivel carregar');

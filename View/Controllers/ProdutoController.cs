@@ -28,6 +28,14 @@ namespace View.Controllers
             return View();
         }
 
+        [HttpGet, Route("obtertodospeloidvenda")]
+        public JsonResult ObterTodosPeloIdVenda(int idVenda)
+        {
+            var produtos = repository.ObterProdutosPeloIdVenda(idVenda);
+            var resultado = new { data = produtos };
+            return Json(resultado, JsonRequestBehavior.AllowGet);
+        }
+
         [HttpGet, Route("obtertodos")]
         public JsonResult ObterTodos()
         {
@@ -63,9 +71,13 @@ namespace View.Controllers
         }
 
         [HttpGet, Route("obterpeloid")]
-        public JsonResult ObterPeloId(int id)
+        public ActionResult ObterPeloId(int id)
         {
-            return Json(repository.ObterPeloId(id), JsonRequestBehavior.AllowGet);
+            var produto = repository.ObterPeloId(id);
+            if (produto == null)
+                return HttpNotFound();
+
+            return Json(produto, JsonRequestBehavior.AllowGet);
         }
 
         [HttpGet, Route("obtertodosselect2")]
@@ -80,10 +92,8 @@ namespace View.Controllers
                 {
                     id = produto.Id,
                     nome = produto.Nome,
-                    categoria = produto.IdCategoria,
-                    quantidade = produto.QuantidadeProdutos,
-                    valor = produto.ValorUnitario,
-                    codigobarra = produto.CodigoBarra,
+                    quantidade = produto.Quantidade,
+                    valor = produto.Valor,
                     registro = produto.RegistroAtivo
 
                 });

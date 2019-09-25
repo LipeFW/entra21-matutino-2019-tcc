@@ -1,8 +1,6 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Marcas";
 }
-
 <h3>@View.Resources.Resource.ListadeMarcas</h3>
 
 <div class="table-responsive">
@@ -16,10 +14,9 @@
                 <th>@View.Resources.Resource.Nome</th>
                 <th>@View.Resources.Resource.Acao</th>
             </tr>
-        </thead>        
+        </thead>
     </table>
 </div>
-
 @RenderPage("MarcaModal.cshtml")
 @section js{
     <script src="~/Scripts/Marca/marca.js"></script>

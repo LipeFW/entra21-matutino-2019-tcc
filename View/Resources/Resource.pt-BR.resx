@@ -238,7 +238,7 @@
     <value>Quantidade</value>
   </data>
   <data name="QuantidadeProdutos" xml:space="preserve">
-    <value>Quantidade Produtos</value>
+    <value>Quantidade de Produtos</value>
   </data>
   <data name="Rota" xml:space="preserve">
     <value>Rota</value>
@@ -388,7 +388,7 @@
     <value>trabalho</value>
   </data>
   <data name="transportadora" xml:space="preserve">
-    <value>transportadora</value>
+    <value>Transportadora</value>
   </data>
   <data name="uma" xml:space="preserve">
     <value>uma</value>
@@ -498,13 +498,28 @@
   <data name="Temas" xml:space="preserve">
     <value>Temas</value>
   </data>
-  <data name="AlterarFoto" xml:space="preserve">
-    <value>Alterar Foto</value>
-  </data>
-  <data name="Enviar" xml:space="preserve">
-    <value>Enviar</value>
-  </data>
   <data name="ListadeModelos" xml:space="preserve">
     <value>Lista de Modelos</value>
+  </data>
+  <data name="Descricao" xml:space="preserve">
+    <value>Descrição</value>
+  </data>
+  <data name="Editar" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="Fechar" xml:space="preserve">
+    <value>Fechar</value>
+  </data>
+  <data name="ListadeProdutos" xml:space="preserve">
+    <value>Lista De Produtos</value>
+  </data>
+  <data name="ListadeVendas" xml:space="preserve">
+    <value>Lista de Vendas</value>
+  </data>
+  <data name="Novo" xml:space="preserve">
+    <value>Novo</value>
+  </data>
+  <data name="Preco" xml:space="preserve">
+    <value>Preço</value>
   </data>
 </root>

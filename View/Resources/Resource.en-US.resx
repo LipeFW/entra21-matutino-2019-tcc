@@ -211,7 +211,7 @@
     <value>New Product</value>
   </data>
   <data name="NovoUsuario" xml:space="preserve">
-    <value>Novo Usuário</value>
+    <value>New User</value>
   </data>
   <data name="NovoVeiculo" xml:space="preserve">
     <value>New Vehicles</value>
@@ -235,10 +235,10 @@
     <value>Product</value>
   </data>
   <data name="Quantidade" xml:space="preserve">
-    <value>Amount</value>
+    <value>Quantity</value>
   </data>
   <data name="QuantidadeProdutos" xml:space="preserve">
-    <value>Product Amount</value>
+    <value>Quantity of Products</value>
   </data>
   <data name="Rota" xml:space="preserve">
     <value>Route</value>
@@ -362,7 +362,7 @@ The system seeks to quickly employ the processes mentioned with the ease of a sm
     <value>work</value>
   </data>
   <data name="transportadora" xml:space="preserve">
-    <value>shipping company</value>
+    <value>Cargo Company</value>
   </data>
   <data name="uma" xml:space="preserve">
     <value>an</value>
@@ -459,5 +459,29 @@ The system seeks to quickly employ the processes mentioned with the ease of a sm
   </data>
   <data name="Temas" xml:space="preserve">
     <value>Themes</value>
+  </data>
+  <data name="Descricao" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Fechar" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="ListadeProdutos" xml:space="preserve">
+    <value>List of products</value>
+  </data>
+  <data name="ListadeVendas" xml:space="preserve">
+    <value>List of sales</value>
+  </data>
+  <data name="Novo" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="Preco" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="Editar" xml:space="preserve">
+    <value>Edit</value>
   </data>
 </root>

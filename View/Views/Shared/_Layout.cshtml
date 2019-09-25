@@ -10,7 +10,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>MCSS - @ViewBag.Title</title>
 
-
     <link href="~/Content/theme/global_assets/images/logo_icon_dark.png" rel="shortcut icon" />
     <link href="~/Content/login/css/login.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="~/Content/css/tabela/util.css" />
@@ -51,9 +50,7 @@
     <!-- /theme JS files -->
     @RenderSection("css", false)
 </head>
-
 <body>
-
     <input type="hidden" id="admin" value="@usuario.Admin" />
 
     <!-- Main navbar -->
@@ -109,7 +106,6 @@
 
                         @if (Session["Language"] == null || Session["Language"].ToString() == "pt-BR")
                         {
-
                             <img id="imgLANG" src="~/Content/theme/global_assets/images/lang/br.png" class="img-flag mr-2" alt="">
                             <span id="langAtual">Português</span>
                         }
@@ -123,14 +119,10 @@
                             <img id="imgLANG" src="~/Content/theme/global_assets/images/lang/es.png" class="img-flag mr-2" alt="">
                             <span id="langAtual">Español</span>
                         }
-
-
-
-
                     </a>
 
                     <div class="dropdown-menu dropdown-menu-right">
-                        <a id="btnPT" href="/Home/Change?lang=pt-BR" class="dropdown-item portuguese active"><img src="~/Content/theme/global_assets/images/lang/br.png" class="img-flag" alt=""><span id="ptLang">Portugues</span></a>
+                        <a id="btnPT" href="/Home/Change?lang=pt-BR" class="dropdown-item portuguese"><img src="~/Content/theme/global_assets/images/lang/br.png" class="img-flag" alt=""><span id="ptLang">Português</span></a>
                         <a id="btnEN" href="/Home/Change?lang=en-US" class="dropdown-item english"><img src="~/Content/theme/global_assets/images/lang/gb.png" class="img-flag" alt=""><span id="enLang">English</span> </a>
                         <a id="btnES" href="/Home/Change?lang=es-ES" class="dropdown-item spanish"><img src="~/Content/theme/global_assets/images/lang/es.png" class="img-flag" alt=""><span id="eslang">Español</span> </a>
                     </div>
@@ -145,8 +137,6 @@
                     <div class="dropdown-menu dropdown-menu-right">
                         <a href="/usuario/perfil" class="dropdown-item">
                             <i class="icon-user-plus"></i>@View.Resources.Resource.MeuPerfil
-
-
                         </a>
                         <div class="/dropdown-divider"></div>
                         <a href="/usuario/config" class="dropdown-item"><i class="icon-cog5"></i> <span>@View.Resources.Resource.Configuracoesdaconta</span> </a>
@@ -164,7 +154,6 @@
 
         <!-- Main sidebar -->
         <div class="sidebar sidebar-dark sidebar-main sidebar-expand-md">
-
             <!-- Sidebar mobile toggler -->
             <div class="sidebar-mobile-toggler text-center">
                 <a href="#" class="sidebar-mobile-main-toggle">
@@ -179,7 +168,6 @@
             <!-- /sidebar mobile toggler -->
             <!-- Sidebar content -->
             <div id="sidebar" class="sidebar-content">
-
                 <!-- User menu -->
                 <div class="sidebar-user">
                     <div class="card-body">
@@ -347,9 +335,8 @@
     @RenderSection("js", false)
 
     <script type="text/javascript">
-                    //document.getElementById("usuarioNome").innerHTML = localStorage.getItem("firstName");
-                    //document.getElementById("nomeText").innerHTML = localStorage.getItem("username");
+                                            //document.getElementById("usuarioNome").innerHTML = localStorage.getItem("firstName");
+                                            //document.getElementById("nomeText").innerHTML = localStorage.getItem("username");
     </script>
 </body>
 </html>
-

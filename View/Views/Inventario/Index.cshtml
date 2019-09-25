@@ -1,17 +1,14 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Inventário";
 }
 <link rel="stylesheet" type="text/css" href="~/Content/css/tabela/util.css" />
 
 <div class="table responsive">
-
     <h2 class="text-center">@View.Resources.Resource.Inventarios</h2>
     @*<button data-toggle="modal" data-target="#modal-inventario"
-            class="btn btn-primary float-right mb-2">
-        <i class="fas fa-plus"></i> @View.Resources.Resource.NovoInventario
-    </button>*@
-
+                class="btn btn-primary float-right mb-2">
+            <i class="fas fa-plus"></i> @View.Resources.Resource.NovoInventario
+        </button>*@
     <table class="table table-bordered table-hover table-striped" id="inventario-tabela">
         <thead>
             <tr>
@@ -21,12 +18,9 @@
             </tr>
         </thead>
     </table>
-
 </div>
 @RenderPage("InventarioModal.cshtml")
-
 @section js{
     <script src="~/Scripts/Inventario/inventario.js"></script>
-
     <script type="text/javascript" src="~/Scripts/Mascaras/Mask.js"></script>
 }

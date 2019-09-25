@@ -10,7 +10,7 @@
             { 'data': 'Vendedor.Nome' },
             {
                 render: function (data, type, row) {
-                    return '<button class="btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button>\<button class="btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>'
+                    return '<button class="btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button>\<button class="btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>';
                 }
             }
         ]
@@ -94,7 +94,6 @@
             success: function (data) {
                 $('#rota-campo-nome').val(data.Nome);
                 $('#rota-campo-vendedor').val(data.Vendedor);
-
                 $('#modal-rota').modal('show');
             },
             error: function (err) {

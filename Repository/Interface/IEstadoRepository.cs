@@ -13,7 +13,7 @@ namespace Repository.Interface
 
         bool Alterar(Estado estado);
 
-        List<Estado> ObterTodosPeloIdPais(int idPais);
+        List<Estado> ObterTodosPeloIdPais(int idPais, string busca);
 
         bool Apagar(int id);
 

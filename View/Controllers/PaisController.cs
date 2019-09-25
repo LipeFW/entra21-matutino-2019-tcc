@@ -19,9 +19,9 @@ namespace View.Controllers
         }
 
         [HttpGet, Route("obtertodosselect2")]
-        public JsonResult ObterTodosSelect2()
+        public JsonResult ObterTodosSelect2(string q)
         {
-            var paises = repository.ObterTodos();
+            var paises = repository.ObterTodos(q);
             var listaPaises = new List<object>();
             foreach (var pais in paises)
             {
@@ -35,7 +35,7 @@ namespace View.Controllers
         [HttpGet, Route("obtertodos")]
         public JsonResult ObterTodos()
         {
-            var paises = repository.ObterTodos();
+            var paises = repository.ObterTodos("");
             var resultado = new { data = paises };
             return Json(resultado, JsonRequestBehavior.AllowGet);
         }

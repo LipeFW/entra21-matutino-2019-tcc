@@ -40,12 +40,11 @@ namespace Repository.Repositories
 
         public Produto ObterPeloId(int id)
         {
-            return context.Produtos.Include("Categoria").FirstOrDefault(x => x.Id == id);
+            return context.Produtos.FirstOrDefault(x => x.Id == id);
         }
-
         public List<Produto> ObterTodos()
         {
-            return context.Produtos.Where(x => x.RegistroAtivo).Include("Categoria").ToList();
+            return context.Produtos.Where(x => x.RegistroAtivo == true).Include("Categoria").ToList();
         }
 
         public bool Alterar(Produto produto)
@@ -58,13 +57,16 @@ namespace Repository.Repositories
 
             produtoOriginal.Id = produto.Id;
             produtoOriginal.Nome = produto.Nome;
-            produtoOriginal.IdCategoria = produto.IdCategoria;
-            produtoOriginal.CodigoBarra = produto.CodigoBarra;
-            produtoOriginal.ValorUnitario = produto.ValorUnitario;
-            produtoOriginal.QuantidadeProdutos = produto.QuantidadeProdutos;
+            produtoOriginal.Valor = produto.Valor;
+            produtoOriginal.Quantidade = produto.Quantidade;
 
             int quantidadeAfetada = context.SaveChanges();
             return quantidadeAfetada == 1;
+        }
+
+        public List<Produto> ObterProdutosPeloIdVenda(int idVenda)
+        {
+            return context.Produtos.Where(x => x.IdVenda == idVenda && x.RegistroAtivo).ToList();
         }
     }
 }
