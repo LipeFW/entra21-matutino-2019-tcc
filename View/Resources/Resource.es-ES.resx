@@ -483,6 +483,9 @@
   <data name="Temas" xml:space="preserve">
     <value>Temas</value>
   </data>
+  <data name="Descricao" xml:space="preserve">
+    <value>descripción</value>
+  </data>
   <data name="Fechar" xml:space="preserve">
     <value>Cerrar</value>
   </data>
@@ -494,5 +497,11 @@
   </data>
   <data name="Novo" xml:space="preserve">
     <value>Nuevo</value>
+  </data>
+  <data name="Preco" xml:space="preserve">
+    <value>Precio</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>Total</value>
   </data>
 </root>
