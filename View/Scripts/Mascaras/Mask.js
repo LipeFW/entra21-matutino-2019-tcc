@@ -22,5 +22,3 @@ $(document).ready(function () {
     $("#config-campo-cpf").mask("999.999.999-99");
     $("#config-campo-cnh").mask("999999999999");
 });
-
-

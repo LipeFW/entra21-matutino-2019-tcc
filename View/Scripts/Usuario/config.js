@@ -46,7 +46,6 @@
         if ((senha.trim() == "") || (senhaConfirm.trim() == "")) {
             alert("A senha não pode estar vazia");
         }
-
         else if (senha == senhaConfirm) {
             AlterarSenha();
 
