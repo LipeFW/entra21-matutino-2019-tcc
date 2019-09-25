@@ -6964,8 +6964,69 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (413, 'Antofagasta', 1),
 (413, 'Calama', 1),
 (413, 'Taltal', 1),
-(413, 'Tocopilla', 1);
+(413, 'Tocopilla', 1),
 /*<--/Antofagasta-->*/
+/*<--/Araucania-->*/
+(414, 'Angol', 1),
+(414, 'Carahue', 1),
+(414, 'Collipulli', 1),
+(414, 'Freire', 1),
+(414, 'Lautaro', 1),
+(414, 'Loncoche', 1),
+(414, 'Nueva Imperial', 1),
+(414, 'Pitrufquen', 1),
+(414, 'Temuco', 1),
+(414, 'Traiguen', 1),
+(414, 'Victoria', 1),
+(414, 'Vilcun', 1),
+(414, 'Villarrica', 1),
+/*<--/Araucania-->*/
+/*<--/Atacama-->*/
+(415, 'Copiapo', 1),
+(415, 'Diego De Almagro', 1),
+(415, 'Vallenar', 1),
+/*<--/Atacama-->*/
+/*<--/Bio-Bio-->*/
+(416, 'Arauco', 1),
+(416, 'Bulnes', 1),
+(416, 'Cabrero', 1),
+(416, 'Canete', 1),
+(416, 'Chiguayante', 1),
+(416, 'Chillan', 1),
+(416, 'Coihueco', 1),
+(416, 'Concepcion', 1),
+(416, 'Coronel', 1),
+(416, 'Curanilahue', 1),
+(416, 'Laja', 1),
+(416, 'Lebu', 1),
+(416, 'Los Angeles', 1),
+(416, 'Lota', 1),
+(416, 'Mulchen', 1),
+(416, 'Nacimiento', 1),
+(416, 'Penco', 1),
+(416, 'San Carlos', 1),
+(416, 'Talcahuano', 1),
+(416, 'Tome', 1),
+(416, 'Yumbel', 1),
+/*<--/Bio-Bio-->*/
+/*<--/Coquimbo-->*/
+(417, 'Coquimbo', 1),
+(417, 'Illapel', 1),
+(417, 'La Serena', 1),
+(417, 'Monte Patria', 1),
+(417, 'Ovalle', 1),
+(417, 'Salamanca', 1),
+(417, 'Vicuna', 1),
+/*<--/Coquimbo-->*/
+/*<--/Libertador General Bernardo O´H-->*/
+(418, 'Chimbarongo', 1),
+(418, 'Graneros', 1),
+(418, 'Machali', 1),
+(418, 'Rancagua', 1),
+(418, 'Rengo', 1),
+(418, 'San Vicente', 1),
+(418, 'Santa Cruz', 1);
+/*<--/Libertador General Bernardo O´H-->*/
 /*<--/Chile-->*/
 /*<--/América do Sul-->*/
 CREATE TABLE usuarios( 
