@@ -58,10 +58,17 @@ namespace Repository.Repositories
             return estado;
         }
 
-        public List<Estado> ObterTodosPeloIdPais(int idPais)
+        public List<Estado> ObterTodosPeloIdPais(int idPais, string busca)
         {
-            return context.Estados
-                .Where(x => x.RegistroAtivo == true && x.IdPais == idPais)
+            var consulta = context.Estados
+                .Where(x => x.RegistroAtivo == true && x.IdPais == idPais);
+
+            if (!string.IsNullOrEmpty(busca))
+            {
+                consulta = consulta.Where(x => x.Nome.Contains(busca));
+            }
+
+            return consulta
                 .OrderBy(x => x.Nome)
                 .ToList();
         }

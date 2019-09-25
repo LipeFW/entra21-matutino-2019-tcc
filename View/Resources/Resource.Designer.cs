@@ -81,9 +81,9 @@ namespace View.Resources {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a string.
         /// </summary>
-        public static string AlterarFoto {
+        public static string Alterarfoto {
             get {
-                return ResourceManager.GetString("AlterarFoto", resourceCulture);
+                return ResourceManager.GetString("Alterarfoto", resourceCulture);
             }
         }
         
@@ -459,6 +459,15 @@ namespace View.Resources {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a string.
         /// </summary>
+        public static string Enviar {
+            get {
+                return ResourceManager.GetString("Enviar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
         public static string Estado {
             get {
                 return ResourceManager.GetString("Estado", resourceCulture);
@@ -552,15 +561,6 @@ namespace View.Resources {
         public static string ListadeMarcas {
             get {
                 return ResourceManager.GetString("ListadeMarcas", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
-        /// </summary>
-        public static string ListadeModelos {
-            get {
-                return ResourceManager.GetString("ListadeModelos", resourceCulture);
             }
         }
         
