@@ -473,12 +473,15 @@ The system seeks to quickly employ the processes mentioned with the ease of a sm
     <value>New</value>
   </data>
   <data name="CadastrodeModelo" xml:space="preserve">
-    <value>Resgister Model</value>
+    <value>Register Model</value>
   </data>
   <data name="ListadeModelos" xml:space="preserve">
     <value>Model List</value>
   </data>
   <data name="NovoModelo" xml:space="preserve">
     <value>New Model</value>
+  </data>
+  <data name="SelecioumModelo" xml:space="preserve">
+    <value>Select a Model</value>
   </data>
 </root>
