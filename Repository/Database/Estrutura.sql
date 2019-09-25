@@ -6724,9 +6724,36 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (410, 'Taguatinga', 1),
 (410, 'Tocantinopolis', 1),
 (410, 'Wanderland', 1),
-(410, 'Xambio', 1);
+(410, 'Xambio', 1),
 /*<--/Tocantins-->*/
 /*<--/Brasil-->*/
+/*<--/Chile-->*/
+/*<--/Valparaiso-->*/
+(411, 'Cabildo' , 1),
+(411, 'Calera' , 1),
+(411, 'Calera' , 1),
+(411, 'La Ligua' , 1),
+(411, 'Limache' , 1),
+(411, 'Llaillay' , 1),
+(411, 'Los Andes' , 1),
+(411, 'Quillota' , 1),
+(411, 'Quilpue' , 1),
+(411, 'San Antonio' , 1),
+(411, 'San Felipe' , 1),
+(411, 'Valparaiso' , 1),
+(411, 'Villa Alemana' , 1),
+(411, 'Vina Del Mar' , 1),
+/*<--/Valparaiso-->*/
+/*<--/Aisen del General Carlos Ibanez-->*/
+(412, 'Coihaique', 1),
+/*<--/Aisen del General Carlos Ibanez-->*/
+/*<--/Antofagasta-->*/
+(413, 'Antofagasta', 1),
+(413, 'Calama', 1),
+(413, 'Taltal', 1),
+(413, 'Tocopilla', 1);
+/*<--/Antofagasta-->*/
+/*<--/Chile-->*/
 /*<--/América do Sul-->*/
 CREATE TABLE usuarios( 
 id INT PRIMARY KEY IDENTITY(1,1),
