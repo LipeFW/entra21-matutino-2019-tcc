@@ -4390,8 +4390,184 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (47, 'Westbury', 1),
 (47, 'White Plains', 1),
 (47, 'Woodmere', 1),
-(47, 'Yonkers', 1),
+(47, 'Yonkers', 1);
 /*<--/Cidades do Nova Iorque-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Cidades do Nova Jérsei-->*/
+(48, 'Asbury Park', 1),
+(48, 'Atlantic City', 1),
+(48, 'Audubon', 1),
+(48, 'Avenel', 1),
+(48, 'Bayonne', 1),
+(48, 'Beachwood', 1),
+(48, 'Belleville', 1),
+(48, 'Bellmawr', 1),
+(48, 'Bergenfield', 1),
+(48, 'Berkeley Heights', 1),
+(48, 'Bloomfield', 1),
+(48, 'Bound Brook', 1),
+(48, 'Bridgeton', 1),
+(48, 'Brigantine', 1),
+(48, 'Burlington', 1),
+(48, 'Camden', 1),
+(48, 'Carteret', 1),
+(48, 'Cedar Grove', 1),
+(48, 'Cherry Hill', 1),
+(48, 'Cinnaminson', 1),
+(48, 'Clark', 1),
+(48, 'Cliffside Park', 1),
+(48, 'Clifton', 1),
+(48, 'Collingswood', 1),
+(48, 'Colonia', 1),
+(48, 'Cranford', 1),
+(48, 'Dover', 1),
+(48, 'Dumont', 1),
+(48, 'East Brunswick', 1),
+(48, 'East Hanover', 1),
+(48, 'East Orange', 1),
+(48, 'Eatontown', 1),
+(48, 'Edgewater', 1),
+(48, 'Edison', 1),
+(48, 'Elizabeth', 1),
+(48, 'Elmwood Park', 1),
+(48, 'Englewood', 1),
+(48, 'Ewing', 1),
+(48, 'Fair Lawn', 1),
+(48, 'Fairview', 1),
+(48, 'Florham Park', 1),
+(48, 'Fords', 1),
+(48, 'Fort Dix', 1),
+(48, 'Fort Lee', 1),
+(48, 'Franklin Lakes', 1),
+(48, 'Freehold', 1),
+(48, 'Garfield', 1),
+(48, 'Glassboro', 1),
+(48, 'Glen Rock', 1),
+(48, 'Gloucester City', 1),
+(48, 'Guttenberg', 1),
+(48, 'Hackensack', 1),
+(48, 'Hackettstown', 1),
+(48, 'Haddonfield', 1),
+(48, 'Hammonton', 1),
+(48, 'Harrison', 1),
+(48, 'Hasbrouck Heights', 1),
+(48, 'Hawthorne', 1),
+(48, 'Highland Park', 1),
+(48, 'Hillsdale', 1),
+(48, 'Hillside', 1),
+(48, 'Hoboken', 1),
+(48, 'Hopatcong', 1),
+(48, 'Irvington', 1),
+(48, 'Iselin', 1),
+(48, 'Jersey City', 1),
+(48, 'Keansburg', 1),
+(48, 'Kearny', 1),
+(48, 'Kinnelon', 1),
+(48, 'Lakewood', 1),
+(48, 'Lincoln Park', 1),
+(48, 'Linden', 1),
+(48, 'Lindenwold', 1),
+(48, 'Little Falls', 1),
+(48, 'Little Ferry', 1),
+(48, 'Livingston', 1),
+(48, 'Lodi', 1),
+(48, 'Long Branch', 1),
+(48, 'Lyndhurst', 1),
+(48, 'Madison', 1),
+(48, 'Manville', 1),
+(48, 'Maple Shade', 1),
+(48, 'Maplewood', 1),
+(48, 'Marlton', 1),
+(48, 'Maywood', 1),
+(48, 'Metuchen', 1),
+(48, 'Middlesex', 1),
+(48, 'Millburn', 1),
+(48, 'Millville', 1),
+(48, 'Montclair', 1),
+(48, 'Morristown', 1),
+(48, 'Mount Holly', 1),
+(48, 'New Brunswick', 1),
+(48, 'New Milford', 1),
+(48, 'New Providence', 1),
+(48, 'Newark', 1),
+(48, 'North Arlington', 1),
+(48, 'North Bergen', 1),
+(48, 'North Plainfield', 1),
+(48, 'Nutley', 1),
+(48, 'Oakland', 1),
+(48, 'Ocean City', 1),
+(48, 'Old Bridge', 1),
+(48, 'Orange', 1),
+(48, 'Palisades Park', 1),
+(48, 'Paramus', 1),
+(48, 'Passaic', 1),
+(48, 'Paterson', 1),
+(48, 'Pennsauken', 1),
+(48, 'Pennsville', 1),
+(48, 'Perth Amboy', 1),
+(48, 'Phillipsburg', 1),
+(48, 'Pine Hill', 1),
+(48, 'Pitman', 1),
+(48, 'Plainfield', 1),
+(48, 'Pleasantville', 1),
+(48, 'Point Pleasant', 1),
+(48, 'Pompton Lakes', 1),
+(48, 'Princeton', 1),
+(48, 'Rahway', 1),
+(48, 'Ramsey', 1),
+(48, 'Red Bank', 1),
+(48, 'Ridgefield', 1),
+(48, 'Ridgefield Park', 1),
+(48, 'Ridgewood', 1),
+(48, 'Ringwood', 1),
+(48, 'River Edge', 1),
+(48, 'Roselle', 1),
+(48, 'Roselle Park', 1),
+(48, 'Rutherford', 1),
+(48, 'Saddle Brook', 1),
+(48, 'Sayreville', 1),
+(48, 'Scotch Plains', 1),
+(48, 'Secaucus', 1),
+(48, 'Somers Point', 1),
+(48, 'Somerset', 1),
+(48, 'Somerville', 1),
+(48, 'South Orange', 1),
+(48, 'South Plainfield', 1),
+(48, 'South River', 1),
+(48, 'Springfield', 1),
+(48, 'Summit', 1),
+(48, 'Teaneck', 1),
+(48, 'Tenafly', 1),
+(48, 'Tinton Falls', 1),
+(48, 'Toms River', 1),
+(48, 'Totowa', 1),
+(48, 'Trenton', 1),
+(48, 'Union', 1),
+(48, 'Union City', 1),
+(48, 'Ventnor City', 1),
+(48, 'Verona', 1),
+(48, 'Vineland', 1),
+(48, 'Waldwick', 1),
+(48, 'Wallington', 1),
+(48, 'Wanaque', 1),
+(48, 'Wayne', 1),
+(48, 'Weehawken', 1),
+(48, 'West Caldwell', 1),
+(48, 'West Freehold', 1),
+(48, 'West Milford', 1),
+(48, 'West New York', 1),
+(48, 'West Orange', 1),
+(48, 'West Paterson', 1),
+(48, 'Westfield', 1),
+(48, 'Westwood', 1),
+(48, 'Williamstown', 1),
+(48, 'Willingboro', 1),
+(48, 'Woodbridge', 1),
+(48, 'Woodbury', 1),
+(48, 'Wyckoff', 1),
+/*<--/Cidades do Nova Jérsei-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--/Cidades do Nova Jérsei-->*/
 /*<--/United States-->*/
 /*<--América do Sul-->*/
 /*<--Argentina-->*/
@@ -6828,7 +7004,7 @@ registro_ativo BIT
 
 INSERT INTO usuarios(nome,nome_completo,url_imagem, admin, senha,  registro_ativo)
 VALUES  ( 'lipefw','Felipe','gatodandopinote.png',1 , 'anaumsei', 1),
-	    ( 'illan','Illan','gato-confuo.jpg',0 , 'illanzoka', 1),
+	    ( 'illan','Illan','gato-confuo.jpg',1 , 'illanzoka', 1),
 	    ( 'eduardo','Eduardo','guaxinimdoido.jpg',1 , 'RetardoMental', 1),
 	    ( 'henrique','Henrique','hamsterchavoso.png',1 , 'pimbinha6000', 1),
 	    ( 'pablo','Pablo','Rambo.jpg', 1, '1234', 1),
@@ -6851,17 +7027,25 @@ nome VARCHAR(100),
 registro_ativo BIT);
  
 INSERT INTO marcas(nome,registro_ativo)
-VALUES ('Ford', 1);
+VALUES	('Ford', 1),
+		('Iveco', 1),
+		('Volkswagen', 1),
+		('Volvo', 1),
+		('Scania', 1);
 
 CREATE TABLE modelos(
 id INT PRIMARY KEY IDENTITY(1,1),
-nome VARCHAR(50),
+nome VARCHAR(100),
 id_marca INT,
 FOREIGN KEY (id_marca) REFERENCES marcas(id),
 registro_ativo BIT);
 
 INSERT INTO modelos(id_marca, nome, registro_ativo)
-VALUES (1,'Cargo', 1);
+VALUES	(1,'Cargo', 1),
+		(2,'Stralis', 1),
+		(3,'Contellation', 1),
+		(4,'FH16', 1),
+		(5,'G420', 1);
 
  CREATE TABLE veiculos(
 id INT PRIMARY KEY IDENTITY(1,1),
@@ -6875,17 +7059,26 @@ FOREIGN KEY(id_marca) REFERENCES marcas (id),
 FOREIGN KEY(id_modelo) REFERENCES modelos (id)
 );
 
-INSERT INTO veiculos(id_marca, id_modelo, ano_fabricacao, numero_caminhao, placa, registro_ativo)
-VALUES (1, 1, '2005', 002, 'MJX-0585', 1 );
+INSERT INTO veiculos(id_marca,id_modelo, ano_fabricacao, numero_caminhao, placa, registro_ativo)
+VALUES	(1, 1, '2011', 001, 'MJX-0585', 1 ),
+		(2, 2, '2003', 002, 'ABC-1548', 1 ),
+		(3, 3, '2007', 003, 'JCF-1957', 1 ),
+		(4, 4, '2014', 004, 'MUW-0423', 1 ),
+		(5, 5, '2004', 005, 'PAI-9785', 1 );
 
  CREATE TABLE inventarios(
 id INT PRIMARY KEY IDENTITY(1,1),
-numero_caminhao INT,
+id_veiculo INT,
+FOREIGN KEY (id_veiculo) REFERENCES veiculos(id),
 registro_ativo BIT,
 );
 
-INSERT INTO inventarios(numero_caminhao, registro_ativo)
-VALUES (002, 1 );
+INSERT INTO inventarios(id_veiculo, registro_ativo)
+VALUES	(1, 1 ),
+		(2, 1 ),
+		(3, 1 ),
+		(4, 1 ),
+		(5, 1 );
 
 CREATE TABLE vendedores(
 id INT PRIMARY KEY IDENTITY(1,1),
@@ -6897,7 +7090,8 @@ FOREIGN KEY (id_veiculo) REFERENCES veiculos(id),
 registro_ativo BIT);
 
 INSERT INTO vendedores(nome, id_veiculo, id_usuario, registro_ativo)
-VALUES ('Felipe' , 1, 1, 1);
+VALUES	('Felipe' , 1, 1, 1),
+		('Illan' , 2, 2, 1);
 
 CREATE TABLE clientes(
 id INT PRIMARY KEY IDENTITY(1,1),
@@ -6916,32 +7110,26 @@ VALUES ('Pedro', '(47) 99158-1254', '08.371.556/0001-04', '241.586.758-63', '890
 
 CREATE TABLE produtos(
 id INT PRIMARY KEY IDENTITY(1,1),
-nome VARCHAR(50),
 id_categoria INT,
-codigo_barra VARCHAR(30),
-quantidade_produto INT,
-valor_unitario DECIMAL(8,2),
+nome VARCHAR(50),
+valor DECIMAL(8,2),
 FOREIGN KEY (id_categoria) REFERENCES categorias(id),
 registro_ativo BIT);
 
-INSERT INTO produtos(id_categoria,nome, codigo_barra, quantidade_produto, valor_unitario, registro_ativo)
-VALUES (1,'Toddynho', '173937229417429475205792634916', 1, 1, 1);
+INSERT INTO produtos(id_categoria,nome, valor, registro_ativo)
+VALUES (1,'Toddynho', 1, 1);
 
 CREATE TABLE vendas(
 id INT PRIMARY KEY IDENTITY(1,1),
 quantidade INT,
-id_vendedor INT,
 id_cliente INT,
-id_produto INT,
-FOREIGN KEY (id_vendedor) REFERENCES vendedores(id),
 FOREIGN KEY (id_cliente) REFERENCES clientes(id),
-FOREIGN KEY (id_produto) REFERENCES produtos(id),
 total DECIMAL(8,2),
 desconto DECIMAL(8,2),
 registro_ativo BIT);
 
-INSERT INTO vendas(quantidade,id_vendedor,id_cliente,id_produto, registro_ativo, total, desconto)
-VALUES (1, 1, 1, 1, 1, 100, 10);
+INSERT INTO vendas(quantidade, id_cliente, registro_ativo, total, desconto)
+VALUES (1, 1, 1, 100, 10);
 
 CREATE TABLE rotas(
 id INT PRIMARY KEY IDENTITY(1,1),
