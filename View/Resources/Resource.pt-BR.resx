@@ -504,6 +504,9 @@
   <data name="Descricao" xml:space="preserve">
     <value>Descrição</value>
   </data>
+  <data name="Editar" xml:space="preserve">
+    <value>Editar</value>
+  </data>
   <data name="Fechar" xml:space="preserve">
     <value>Fechar</value>
   </data>

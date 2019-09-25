@@ -481,4 +481,7 @@ The system seeks to quickly employ the processes mentioned with the ease of a sm
   <data name="Total" xml:space="preserve">
     <value>Total</value>
   </data>
+  <data name="Editar" xml:space="preserve">
+    <value>Edit</value>
+  </data>
 </root>
