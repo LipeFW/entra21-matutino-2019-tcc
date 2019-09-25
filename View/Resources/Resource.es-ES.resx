@@ -397,7 +397,7 @@
     <value>Biem Venido</value>
   </data>
   <data name="Configuracoesdaconta" xml:space="preserve">
-    <value>Configurción de la Cuenta</value>
+    <value>Configuraciones de cuenta</value>
   </data>
   <data name="Inicio" xml:space="preserve">
     <value>Pricipio</value>
@@ -482,5 +482,29 @@
   </data>
   <data name="Temas" xml:space="preserve">
     <value>Temas</value>
+  </data>
+  <data name="Descricao" xml:space="preserve">
+    <value>descripción</value>
+  </data>
+  <data name="Fechar" xml:space="preserve">
+    <value>Cerrar</value>
+  </data>
+  <data name="ListaDeProdutos" xml:space="preserve">
+    <value>Lista de Productos</value>
+  </data>
+  <data name="ListadeVendas" xml:space="preserve">
+    <value>Lista de ventas</value>
+  </data>
+  <data name="Novo" xml:space="preserve">
+    <value>Nuevo</value>
+  </data>
+  <data name="Preco" xml:space="preserve">
+    <value>Precio</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="Editar" xml:space="preserve">
+    <value>Cambiar</value>
   </data>
 </root>

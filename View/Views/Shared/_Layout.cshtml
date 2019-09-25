@@ -10,7 +10,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>MCSS - @ViewBag.Title</title>
 
-
     <link href="~/Content/theme/global_assets/images/logo_icon_dark.png" rel="shortcut icon" />
     <link href="~/Content/login/css/login.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="~/Content/css/tabela/util.css" />
@@ -40,7 +39,7 @@
     <script src="~/Content/theme/global_assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
     <script src="~/Content/theme/global_assets/js/plugins/ui/moment/moment.min.js"></script>
     <script src="~/Content/theme/global_assets/js/plugins/pickers/daterangepicker.js"></script>
-
+    <script src="~/Scripts/bootbox.min.js"></script>
     <script src="~/Content/theme/assets/js/app.js"></script>
     <script src="~/Content/js/lang.js"></script>
     <script src="~/Content/theme/global_assets/js/demo_pages/dashboard.js"></script>
@@ -51,9 +50,7 @@
     <!-- /theme JS files -->
     @RenderSection("css", false)
 </head>
-
 <body>
-
     <input type="hidden" id="admin" value="@usuario.Admin" />
 
     <!-- Main navbar -->
@@ -109,7 +106,6 @@
 
                         @if (Session["Language"] == null || Session["Language"].ToString() == "pt-BR")
                         {
-
                             <img id="imgLANG" src="~/Content/theme/global_assets/images/lang/br.png" class="img-flag mr-2" alt="">
                             <span id="langAtual">Português</span>
                         }
@@ -123,10 +119,6 @@
                             <img id="imgLANG" src="~/Content/theme/global_assets/images/lang/es.png" class="img-flag mr-2" alt="">
                             <span id="langAtual">Español</span>
                         }
-
-
-
-
                     </a>
 
                     <div class="dropdown-menu dropdown-menu-right">
@@ -145,8 +137,6 @@
                     <div class="dropdown-menu dropdown-menu-right">
                         <a href="/usuario/perfil" class="dropdown-item">
                             <i class="icon-user-plus"></i>@View.Resources.Resource.MeuPerfil
-
-
                         </a>
                         <div class="/dropdown-divider"></div>
                         <a href="/usuario/config" class="dropdown-item"><i class="icon-cog5"></i> <span>@View.Resources.Resource.Configuracoesdaconta</span> </a>
@@ -164,7 +154,6 @@
 
         <!-- Main sidebar -->
         <div class="sidebar sidebar-dark sidebar-main sidebar-expand-md">
-
             <!-- Sidebar mobile toggler -->
             <div class="sidebar-mobile-toggler text-center">
                 <a href="#" class="sidebar-mobile-main-toggle">
@@ -179,7 +168,6 @@
             <!-- /sidebar mobile toggler -->
             <!-- Sidebar content -->
             <div id="sidebar" class="sidebar-content">
-
                 <!-- User menu -->
                 <div class="sidebar-user">
                     <div class="card-body">
@@ -347,9 +335,8 @@
     @RenderSection("js", false)
 
     <script type="text/javascript">
-                    //document.getElementById("usuarioNome").innerHTML = localStorage.getItem("firstName");
-                    //document.getElementById("nomeText").innerHTML = localStorage.getItem("username");
+                                            //document.getElementById("usuarioNome").innerHTML = localStorage.getItem("firstName");
+                                            //document.getElementById("nomeText").innerHTML = localStorage.getItem("username");
     </script>
 </body>
 </html>
-
