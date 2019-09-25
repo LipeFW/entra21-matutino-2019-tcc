@@ -4564,10 +4564,47 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (48, 'Willingboro', 1),
 (48, 'Woodbridge', 1),
 (48, 'Woodbury', 1),
-(48, 'Wyckoff', 1),
+(48, 'Wyckoff', 1);
 /*<--/Cidades do Nova Jérsei-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
-/*<--/Cidades do Nova Jérsei-->*/
+/*<--Cidades do Novo México-->*/
+(49, 'Alamogordo', 1),
+(49, 'Albuquerque', 1),
+(49, 'Artesia', 1),
+(49, 'Aztec', 1),
+(49, 'Belen', 1),
+(49, 'Bernalillo', 1),
+(49, 'Bloomfield', 1),
+(49, 'Carlsbad', 1),
+(49, 'Clovis', 1),
+(49, 'Corrales', 1),
+(49, 'Deming', 1),
+(49, 'Espanola', 1),
+(49, 'Farmington', 1),
+(49, 'Gallup', 1),
+(49, 'Grants', 1),
+(49, 'Hobbs', 1),
+(49, 'Las Cruces', 1),
+(49, 'Las Vegas', 1),
+(49, 'Los Alamos', 1),
+(49, 'Los Lunas', 1),
+(49, 'Los Ranchos De Albuquerque', 1),
+(49, 'Lovington', 1),
+(49, 'North Valley', 1),
+(49, 'Portales', 1),
+(49, 'Raton', 1),
+(49, 'Rio Rancho', 1),
+(49, 'Roswell', 1),
+(49, 'Ruidoso', 1),
+(49, 'Santa Fe', 1),
+(49, 'Silver City', 1),
+(49, 'Socorro', 1),
+(49, 'South Valley', 1),
+(49, 'Sunland Park', 1),
+(49, 'Taos', 1),
+(49, 'Truth Or Consequences', 1),
+(49, 'Tucumcari', 1),
+/*<--/Cidades do Novo México-->*/
 /*<--/United States-->*/
 /*<--América do Sul-->*/
 /*<--Argentina-->*/
