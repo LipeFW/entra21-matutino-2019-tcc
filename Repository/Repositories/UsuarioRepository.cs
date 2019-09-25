@@ -65,7 +65,7 @@ namespace Repository.Repositories
 
         public Usuario Verificar(string nome, string senha)
         {
-            var usuario = context.Usuarios.FirstOrDefault(x => x.Nome == nome && x.Senha == senha);
+            var usuario = context.Usuarios.FirstOrDefault(x => x.Nome == nome && x.Senha == senha && x.RegistroAtivo == true);
             return usuario;
         }
 
