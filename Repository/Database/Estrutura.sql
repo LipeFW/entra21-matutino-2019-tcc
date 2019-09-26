@@ -6548,7 +6548,7 @@ INSERT INTO cidades(id_estado,nome,registro_ativo)VALUES
   (78,'Zinapecuaro',1),
   (78,'Zitacuaro',1);
 /*<--Cidades de Michoacan de Ocampo-->*/
-INSERT INTO(id,nome,registro_ativo) Values
+INSERT INTO(id,nome,registro_ativo) VALUES
 /*<--Cidades de Morelos-->*/
 (79,'Alpuyeca',1),
 (79,'Amayuca',1),
@@ -6598,7 +6598,35 @@ INSERT INTO(id,nome,registro_ativo) Values
 (79,'Yecapixtla',1),
 (79,'Zacatepec',1),
 /*<--Cidades de Morelos-->*/
+INSERT INTO(id,nome,registro_ativo) VALUES
+/*<--Cidades de Nayarit-->*/
 
+ 
+  (80,'Acaponeta',1),
+  (80,'Ahuacatlan',1),
+  (80,'Bucerias',1),
+  (80,'Compostela',1),
+  (80,'Ixtlan Del Rio',1),
+  (80,'Jala',1),
+  (80,'Jalcocotan',1),
+  (80,'Jesus Maria',1),
+  (80,'La Presa',1),
+  (80,'Lagunillas',1),
+  (80,'Las Varas',1),
+  (80,'Puga',1),
+  (80,'Rosamorada',1),
+  (80,'Ruiz',1),
+  (80,'San Blas',1),
+  (80,'San Vicente',1),
+  (80,'Santa Maria Del Oro',1),
+  (80,'Tecuala',1),
+  (80,'Tepic',1),
+  (80,'Tuxpan',1),
+  (80,'Valle De Banderas',1),
+  (80,'Yago',1),
+  (80,'Zacualpan',1),
+
+/*<--Cidades de Nayarit-->*/
 
 /*<--\México-->*/
 /*<--Antigua & Barbuda-->*/
