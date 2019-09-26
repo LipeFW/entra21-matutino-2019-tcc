@@ -6084,8 +6084,6 @@ INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Cidades de Guerrero-->*/
 INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Cidades de Hidalgo-->*/
-
-   
     (75,'Acaxochitlan',1),
     (75,'Acayuca',1),
     (75,'Actopan',1),
@@ -6551,6 +6549,9 @@ INSERT INTO cidades(id_estado,nome,registro_ativo)VALUES
   (78,'Zitacuaro',1),
 /*<--Cidades de Michoacan de Ocampo-->*/
 /*<--\México-->*/
+/*<--Antigua & Barbuda-->*/
+
+/*<--Antigua & Barbuda-->*/
 
 --==================================================
 --ACREDITO QUE OS IDS ESTÂO ERRADOS DAQUI PARA BAIXO
