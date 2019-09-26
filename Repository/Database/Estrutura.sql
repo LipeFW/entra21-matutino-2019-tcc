@@ -4910,8 +4910,19 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (64, 'Rincon De Romos', 1),
 (64, 'San Jose De Gracia', 1),
 (64, 'Tepezala', 1),
-(64, 'Villa Juarez', 1),
+(64, 'Villa Juarez', 1);
 /*<--Cidades de Aguascalientes-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Cidades de Baixa California-->*/
+
+(65,'Cabo San Lucas',1),
+(65,'Constitucion',1),
+(65,'Guerrero Negro',1),
+(65,'La Paz',1),
+(65,'Loreto',1),
+(65,'Santa Rosalia',1),
+(65,'Todos Santos',1),
+/*<--Cidades de Baixa California-->*/
 /*<--\México-->*/
 
 --==================================================
