@@ -20,7 +20,4 @@
         $("#navbar-mobile").addClass("primary");
     }
 
-    $("#imagemUsuario").attr("src", localStorage.getItem(urlImage));
-    $("#imagemUsuario2").attr("src", localStorage.getItem(urlImage));
-
 });
