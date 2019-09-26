@@ -990,6 +990,15 @@ namespace View.Resources {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a string.
         /// </summary>
+        public static string Selecione {
+            get {
+                return ResourceManager.GetString("Selecione", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
         public static string Selecioneumacategoria {
             get {
                 return ResourceManager.GetString("Selecioneumacategoria", resourceCulture);

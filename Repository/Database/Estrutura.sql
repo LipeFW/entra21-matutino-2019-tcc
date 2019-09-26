@@ -6437,7 +6437,7 @@ INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 (77,'Zinacantepec',1),
 (77,'Zolotepec',1),
 (77,'Zumpahuacan',1),
-(77,'Zumpango',1),
+(77,'Zumpango',1);
 /*<--Cidades de Mexico-->*/
 /*<--\México-->*/
 /*<--Antigua & Barbuda-->*/

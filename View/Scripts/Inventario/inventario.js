@@ -19,20 +19,20 @@
     });
 
 
-    $('#inventario-botao-salvar').on('click', function () {
-        $numero_caminhao = $('inventario-campo-numerocaminaho').val();
+    //$('#inventario-botao-salvar').on('click', function () {
+    //    $numero_caminhao = $('inventario-campo-numerocaminaho').val();
 
-        if (($numero_caminhao.trim() == ""){
-            bootbox.alert("Preencha corretamente o campo!");
-            return null;
-        }
+    //    if ($numero_caminhao.trim() == ""){
+    //        bootbox.alert("Preencha corretamente o campo!");
+    //        return null;
+    //    }
 
-        if ($idAlterar == -1) {
-            inserir($numero_caminhao);
-        } else {
-            alterar($numero_caminhao);
-        }
-    });
+    //    if ($idAlterar == -1) {
+    //        inserir($numero_caminhao);
+    //    } else {
+    //        alterar($numero_caminhao);
+    //    }
+    //});
 
     function alterar($numero_caminhao) {
         $.ajax({
