@@ -115,6 +115,7 @@
     <Content Include="App_Data\Database_log.ldf">
       <DependentUpon>Database.mdf</DependentUpon>
     </Content>
+    <Content Include="Content\css\Animate.css" />
     <Content Include="Content\css\outros.css" />
     <Content Include="Content\css\select2.css" />
     <Content Include="Content\css\select2.min.css" />
@@ -2682,10 +2683,11 @@
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
     <Content Include="Scripts\Usuario\config.js" />
-    <Content Include="Scripts\Usuario\fix.js" />
     <Content Include="Scripts\Usuario\perfil.js" />
     <Content Include="Scripts\Usuario\usuario.js" />
     <Content Include="Scripts\Veiculo\veiculo.js" />
+    <Content Include="Scripts\Venda\venda-cadastro.js" />
+    <Content Include="Scripts\Venda\venda-editar.js" />
     <Content Include="Scripts\Venda\venda.js" />
     <Content Include="Scripts\Vendedor\vendedor.js" />
     <Content Include="Web.config" />

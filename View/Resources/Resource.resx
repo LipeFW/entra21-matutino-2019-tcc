@@ -563,4 +563,13 @@
   <data name="Novo" xml:space="preserve">
     <value>string</value>
   </data>
+  <data name="Preco" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Fechar" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Selecione" xml:space="preserve">
+    <value>string</value>
+  </data>
 </root>

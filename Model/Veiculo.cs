@@ -37,5 +37,14 @@ namespace Model
 
         [Column("placa")]
         public string Placa { get; set; }
+
+        [NotMapped]
+        public string MarcaEModelo
+        {
+            get
+            {
+                return Marca.Nome + " " + Modelo.Nome;
+            }
+        }
     }
 }

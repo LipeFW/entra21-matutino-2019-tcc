@@ -1,16 +1,27 @@
 ﻿@{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Venda";
 }
-<h2>@View.Resources.Resource.ListadeVendas</h2>
 
-<table class="table table-striped table-bordered table-hover" id="vendas-index">
-    <thead>
-        <tr>
-            <th>@View.Resources.Resource.Codigo</th>
-            <th>@View.Resources.Resource.Cliente</th>
-            <th>@View.Resources.Resource.Total</th>
-            <th>@View.Resources.Resource.Acao</th>
-        </tr>
-    </thead>
-</table>
-<a class="btn btn-primary mb-3" href="/venda/cadastro">@View.Resources.Resource.Novo</a>
+<div class="table responsive">
+
+    <h2 class="text-center">@View.Resources.Resource.ListadeVendas</h2>
+    <a class="btn btn-primary float-right mb-2" href="/venda/cadastro"> <i class="fas fa-plus"></i> @View.Resources.Resource.NovaVenda</a>
+    <table class="table table-striped table-bordered table-hover" id="vendas-tabela">
+        <thead>
+            <tr>
+                <th>@View.Resources.Resource.Codigo</th>
+                <th>@View.Resources.Resource.Cliente</th>
+                <th>@View.Resources.Resource.Vendedor</th>
+                <th>@View.Resources.Resource.Total</th>
+                <th>@View.Resources.Resource.Acao</th>
+            </tr>
+        </thead>
+    </table>
+</div>
+
+
+@RenderPage("VendaModal.cshtml")
+@section js{
+    <script src="~/Scripts/Venda/venda.js">
+    </script>
+}

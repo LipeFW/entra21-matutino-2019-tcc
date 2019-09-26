@@ -9,7 +9,7 @@
             { 'data': 'Nome' },
             {
                 render: function (data, type, row) {
-                    return '<button class="btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button>\<button class="btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>';
+                    return '<button class="fadeIn animated btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button>\<button class="fadeIn animated btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>'
                 }
             }
         ]
@@ -101,14 +101,14 @@
         });
     });
 
-    $('.table').on('click', '.botao-editar', function () {
-        $idAlterar = $(this).data('id');
+$('#marca-tabela').on('click', '.botao-editar', function () {
+    $idAlterar = $(this).data('id');
 
-        $.ajax({
-            url: 'http://localhost:51242/Marca/obterpeloid?id=' + $idAlterar,
-            method: 'get',
-            success: function (data) {
-                $('#marca-campo-nome').val(data.Nome);
+    $.ajax({
+        url: 'http://localhost:51242/Marca/obterpeloid?id=' + $idAlterar,
+        method: 'get',
+        success: function (data) {
+            $('#marca-campo-nome').val(data.Nome);
 
                 $('#modal-marca').modal('show');
             },
@@ -118,8 +118,8 @@
         });
     });
 
-    function limparCampos() {
-        $('#marca-campo-nome').val("");
-        $idAlterar = -1;
-    }
+function limparCampos() {
+    $('#marca-campo-nome').val("");
+    $idAlterar = -1;
+}
 });

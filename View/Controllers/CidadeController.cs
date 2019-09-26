@@ -19,9 +19,9 @@ namespace View.Controllers
         }
 
         [HttpGet, Route("obtertodosselect2peloiddoestado")]
-        public JsonResult ObterTodosSelect2PeloIdDoEstado(int idEstado)
+        public JsonResult ObterTodosSelect2PeloIdDoEstado(int idEstado, string q)
         {
-            var cidades = repository.ObterTodosPeloIdEstado(idEstado);
+            var cidades = repository.ObterTodosPeloIdEstado(idEstado, q);
             var listaCidades = new List<object>();
             foreach (var cidade in cidades)
             {

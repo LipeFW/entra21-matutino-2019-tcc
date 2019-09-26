@@ -1,6 +1,7 @@
 ﻿$(function () {
     $idPais = 0;
     $idEstado = 0;
+
     $("#config-campo-pais").select2({
         ajax: {
             url: "/pais/obtertodosselect2",

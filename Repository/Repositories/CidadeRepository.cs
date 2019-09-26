@@ -57,10 +57,18 @@ namespace Repository.Repositories
             return cidade;
         }
 
-        public List<Cidade> ObterTodosPeloIdEstado(int idEstado)
+        public List<Cidade> ObterTodosPeloIdEstado(int idEstado, string busca)
         {
-            return context.Cidades
-                .Where(x => x.RegistroAtivo == true && x.IdEstado == idEstado)
+
+            var consulta = context.Cidades
+               .Where(x => x.RegistroAtivo == true && x.IdEstado == idEstado);
+
+            if (!string.IsNullOrEmpty(busca))
+            {
+                consulta = consulta.Where(x => x.Nome.Contains(busca));
+            }
+
+            return consulta
                 .OrderBy(x => x.Nome)
                 .ToList();
         }
