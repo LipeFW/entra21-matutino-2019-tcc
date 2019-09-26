@@ -4840,7 +4840,24 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (51, 'Yukon', 1),
 /*<--/Cidades do Oklahoma-->*/
 /*<--/United States-->*/
-
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--México-->*/
+/*<--Cidades de Aguascalientes-->*/
+(64, 'Aguascalientes', 1),
+(64, 'Asientos', 1),
+(64, 'Calvillo', 1),
+(64, 'Cosio', 1),
+(64, 'Loreto', 1),
+(64, 'Margaritas', 1),
+(64, 'Pabellon De Arteaga', 1),
+(64, 'Pabellon De Hidalgo', 1),
+(64, 'Palo Alto', 1),
+(64, 'Rincon De Romos', 1),
+(64, 'San Jose De Gracia', 1),
+(64, 'Tepezala', 1),
+(64, 'Villa Juarez', 1),
+/*<--Cidades de Aguascalientes-->*/
+/*<--\México-->*/
 
 --==================================================
 --ACREDITO QUE OS IDS ESTÂO ERRADOS DAQUI PARA BAIXO
