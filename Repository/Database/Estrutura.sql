@@ -5382,8 +5382,40 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (57, 'Washington', 1),
 (57, 'Washington Terrace', 1),
 (57, 'West Jordan', 1),
-(57, 'West Valley City', 1),
+(57, 'West Valley City', 1);
 /*<--/Cidades do Utah-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--/Cidades do Vermont-->*/
+(58, 'Barre', 1),
+(58, 'Bennington', 1),
+(58, 'Brattleboro', 1),
+(58, 'Burlington', 1),
+(58, 'Colchester', 1),
+(58, 'Hartford', 1),
+(58, 'Hinesburg', 1),
+(58, 'Jericho', 1),
+(58, 'Lyndon', 1),
+(58, 'Manchester', 1),
+(58, 'Middlebury', 1),
+(58, 'Milton', 1),
+(58, 'Montpelier', 1),
+(58, 'Morristown', 1),
+(58, 'Newport', 1),
+(58, 'Northfield', 1),
+(58, 'Randolph', 1),
+(58, 'Rockingham', 1),
+(58, 'Rutland', 1),
+(58, 'Saint Albans', 1),
+(58, 'Saint Johnsbury', 1),
+(58, 'Shelburne', 1),
+(58, 'South Burlington', 1),
+(58, 'Springfield', 1),
+(58, 'Stowe', 1),
+(58, 'Swanton', 1),
+(58, 'Waterbury', 1),
+(58, 'Williston', 1),
+(58, 'Winooski', 1),
+/*<--/Cidades do Vermont-->*/
 /*<--/United States-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--México-->*/
