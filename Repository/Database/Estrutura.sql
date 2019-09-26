@@ -4991,8 +4991,43 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (53, 'Willow Grove', 1),
 (53, 'Woodlyn', 1),
 (53, 'Yeadon', 1),
-(53, 'York', 1),
+(53, 'York', 1);
 /*<--/Cidades do Pensilvânia-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Cidades do Rhode Island-->*/
+(54, 'Barrington', 1),
+(54, 'Bristol', 1),
+(54, 'Central Falls', 1),
+(54, 'Charlestown', 1),
+(54, 'Coventry', 1),
+(54, 'Cranston', 1),
+(54, 'Cumberland', 1),
+(54, 'East Greenwich', 1),
+(54, 'East Providence', 1),
+(54, 'Exeter', 1),
+(54, 'Foster', 1),
+(54, 'Greenville', 1),
+(54, 'Hopkinton', 1),
+(54, 'Jamestown', 1),
+(54, 'Kingston', 1),
+(54, 'Middletown', 1),
+(54, 'Narragansett', 1),
+(54, 'Newport', 1),
+(54, 'North Providence', 1),
+(54, 'North Smithfield', 1),
+(54, 'Pascoag', 1),
+(54, 'Pawtucket', 1),
+(54, 'Portsmouth', 1),
+(54, 'Providence', 1),
+(54, 'Smithfield', 1),
+(54, 'Tiverton', 1),
+(54, 'Valley Falls', 1),
+(54, 'Warren', 1),
+(54, 'Warwick', 1),
+(54, 'West Warwick', 1),
+(54, 'Westerly', 1),
+(54, 'Woonsocket', 1),
+/*<--/Cidades do Rhode Island-->*/
 /*<--/United States-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--México-->*/
