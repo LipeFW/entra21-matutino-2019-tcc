@@ -45,7 +45,7 @@
                     $tabelaProduto.ajax.reload();
                 },
                 error: function (err) {
-                    alert("Não foi possivel alterar o Produto");
+                    bootbox.alert("Não foi possivel alterar o produto!");
                 }
             });
         }
@@ -63,31 +63,45 @@
                     $("#modal-produto").modal('hide');
                     //limparCampos();
                     $tabelaProduto.ajax.reload();
-                    alert("Registro Inserido Com Sucesso")
+                    bootbox.alert("Registro inserido com sucesso!")
                 },
                 error: function (err) {
-                    alert('Não foi possivel inserir');
+                    bootbox.alert('Não foi possivel inserir!');
                 }
             });
         }
     })
 
-    $(".table").on("click", ".botao-apagar", function () {
+    $("#produto-tabela").on("click", ".botao-apagar", function () {
         $idApagar = $(this).data("id");
-        var confirmacao = confirm("Deseja realmente apagar o registro?");
-        if (confirmacao == true) {
-            $.ajax({
-                url: "http://localhost:51242/Produto/apagar?id=" + $idApagar,
-                method: "get",
-                success: function (data) {
-                    $tabelaProduto.ajax.reload();
-                    alert('Apagado com Sucesso');
+        bootbox.confirm({
+            message: "Deseja realmente apagar o registro?",
+            buttons: {
+                confirm: {
+                    label: 'Sim',
+                    className: 'btn-success'
                 },
-                error: function (err) {
-                    alert('Não foi possivel apagar');
+                cancel: {
+                    label: 'Não',
+                    className: 'btn-danger'
                 }
-            });
-        }
+            },
+            callback: function (result) {
+                if (result)
+                    $.ajax({
+                        url: "http://localhost:51242/Produto/Apagar?id=" + $idApagar,
+                        method: "get",
+                        success: function (data) {
+                            $tabelaProduto.ajax.reload();
+                            bootbox.alert("Registro apagado com sucesso");
+
+                        },
+                        error: function (err) {
+                            bootbox.alert('Não foi possível apagar!');
+                        }
+                    });
+            }
+        });
     });
 
     $(".table").on("click", ".botao-editar", function () {
@@ -103,7 +117,7 @@
                 $("#modal-produto").modal("show");
             },
             error: function (err) {
-                alert('Não foi possivel carregar');
+                bootbox.alert('Não foi possivel carregar!');
             }
         })
     });

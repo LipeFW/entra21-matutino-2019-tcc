@@ -1,5 +1,6 @@
 ﻿$(function () {
     $idPais = 0;
+    $idEstado = 0;
     $("#config-campo-pais").select2({
         ajax: {
             url: "/pais/obtertodosselect2",
@@ -17,6 +18,22 @@
                 var query = {
                     q: params.term,
                     idPais: $idPais
+                }
+                return query;
+            }
+        }
+    }).on('select2:select', function () {
+        $idEstado = $("#config-campo-estado").val();
+    });
+
+    $("#config-campo-cidade").select2({
+        ajax: {
+            url: "/cidade/obtertodosselect2peloiddoestado",
+            dataType: 'json',
+            data: function (params) {
+                var query = {
+                    q: params.term,
+                    idEstado: $idEstado
                 }
                 return query;
             }

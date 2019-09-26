@@ -27,7 +27,7 @@
         $vendedor = $('#cliente-campo-vendedor').val();
 
         if (($nome.trim() == "") || ($telefone.trim == "") || ($cnpj == "") || ($cep == "")) {
-            bootbox.alert("Preencha corretamente o campo!");
+            bootbox.alert("Preencha corretamente os campos!");
             return null;
         }
 
@@ -59,7 +59,7 @@
                 $tabelaCliente.ajax.reload();
             },
             error: function (err) {
-                bootbox.alert('Não foi possivel alterar');
+                bootbox.alert('Não foi possivel alterar!');
             }
         })
     }
@@ -78,16 +78,16 @@
             success: function (data) {
                 $('#modal-cliente').modal('hide');
                 limparCampos();
-                bootbox.alert('Registro inserido com Sucesso');
+                bootbox.alert('Registro inserido com sucesso!');
                 $tabelaCliente.ajax.reload();
             },
             error: function (err) {
-                bootbox.alert('Não foi possivel cadastrar o cliente');
+                bootbox.alert('Não foi possivel cadastrar o cliente!');
             }
         });
     }
 
-    $(".table").on("click", ".botao-apagar", function () {
+    $("#cliente-tabela").on("click", ".botao-apagar", function () {
         $idApagar = $(this).data("id");
         bootbox.confirm({
             message: "Deseja realmente apagar o registro?",
@@ -104,15 +104,15 @@
             callback: function (result) {
                 if (result)
                     $.ajax({
-                        url: "http://localhost:51242/Usuario/Apagar?id=" + $idApagar,
+                        url: "http://localhost:51242/cliente/Apagar?id=" + $idApagar,
                         method: "get",
                         success: function (data) {
                             $tabelaCliente.ajax.reload();
-                            bootbox.alert("Registro apagado com sucesso");
+                            bootbox.alert("Registro apagado com sucesso!");
 
                         },
                         error: function (err) {
-                            bootbox.alert('Não foi possível apagar');
+                            bootbox.alert('Não foi possível apagar!');
                         }
                     });
             }
@@ -134,7 +134,7 @@
                 $('#modal-cliente').modal('show');
             },
             error: function (err) {
-                bootbox.alert('Não foi possivel carregar');
+                bootbox.alert('Não foi possivel carregar!');
             }
         });
     });

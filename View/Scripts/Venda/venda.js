@@ -75,24 +75,37 @@
 //        });
 //    }
 
-//    $('.table').on('click', '.botao-apagar', function () {
-//        $idApagar = $(this).data('id');
-//        var confirmacao = confirm("Deseja apagar o registro?");
-
-//        if (confirmacao == true) {
-//            $.ajax({
-//                url: 'http://localhost:51242/Venda/apagar?id=' + $idApagar,
-//                method: 'get',
-//                success: function (data) {
-//                    $tabelaVenda.ajax.reload();
-//                },
-//                error: function (err) {
-//                    alert("Não foi possivel apagar");
-//                }
-//            });
+//$("#venda-tabela").on("click", ".botao-apagar", function () {
+//    $idApagar = $(this).data("id");
+//    bootbox.confirm({
+//        message: "Deseja realmente apagar o registro?",
+//        buttons: {
+//            confirm: {
+//                label: 'Sim',
+//                className: 'btn-success'
+//            },
+//            cancel: {
+//                label: 'Não',
+//                className: 'btn-danger'
+//            }
+//        },
+//        callback: function (result) {
+//            if (result)
+//                $.ajax({
+//                    url: "http://localhost:51242/Venda/Apagar?id=" + $idApagar,
+//                    method: "get",
+//                    success: function (data) {
+//                        $tabelaVenda.ajax.reload();
+//                        bootbox.alert("Registro apagado com sucesso");
+//
+//                    },
+//                    error: function (err) {
+//                        bootbox.alert('Não foi possível apagar');
+//                    }
+//                });
 //        }
-
 //    });
+//});
 
 //    $('.table').on('click', '.botao-editar', function () {
 //        $idAlterar = $(this).data('id');

@@ -18,6 +18,11 @@
     $('#marca-botao-salvar').on('click', function () {
         $nome = $('#marca-campo-nome').val();
 
+        if ($nome.trim() == "") {
+            bootbox.alert('Preencha corretamente o campo!');
+            return null;
+        }
+
         if ($idAlterar == -1) {
             inserir($nome);
         } else {
@@ -40,7 +45,7 @@
                 $tabelaMarca.ajax.reload();
             },
             error: function (err) {
-                alert('Não foi possivel alterar');
+                bootbox.alert('Não foi possivel alterar!');
             }
         });
     }
@@ -56,27 +61,44 @@
                 $('#modal-marca').modal('hide');
                 limparCampos();
                 $tabelaMarca.ajax.reload();
-                bootbox.alert('Registro inserido com Sucesso');
+                bootbox.alert('Registro inserido com sucesso!');
             },
             error: function (err) {
-                alert('Não foi possivel inserir');
+                bootbox.alert('Não foi possivel inserir!');
             }
         });
     }
 
-    $('#marca-tabela').on('click', '.botao-apagar', function () {
-        $idApagar = $(this).data('id');
-        $.ajax({
-            url: 'http://localhost:51242/Marca/apagar?id=' + $idApagar,
-            method: 'get',
-            success: function (data) {
-                $tabelaMarca.ajax.reload();
+    $("#marca-tabela").on("click", ".botao-apagar", function () {
+        $idApagar = $(this).data("id");
+        bootbox.confirm({
+            message: 'Deseja realmente apagar o registro?',
+            buttons: {
+                confirm: {
+                    label: 'Sim',
+                    className: 'btn-success'
+                },
+                cancel: {
+                    label: 'Não',
+                    className: 'btn-danger'
+                }
             },
-            error: function (err) {
-                alert('Não foi possivel apagar');
+            callback: function (result) {
+                if (result)
+                    $.ajax({
+                        url: "http://localhost:51242/Marca/Apagar?id=" + $idApagar,
+                        method: "get",
+                        success: function (data) {
+                            $tabelaMarca.ajax.reload();
+                            bootbox.alert('Registro apagado com sucesso!');
+
+                        },
+                        error: function (err) {
+                            bootbox.alert('Não foi possível apagar!');
+                        }
+                    });
             }
         });
-    }
     });
 
 $('#marca-tabela').on('click', '.botao-editar', function () {
@@ -88,13 +110,13 @@ $('#marca-tabela').on('click', '.botao-editar', function () {
         success: function (data) {
             $('#marca-campo-nome').val(data.Nome);
 
-            $('#modal-marca').modal('show');
-        },
-        error: function (err) {
-            alert('Não foi possivel carregar');
-        }
+                $('#modal-marca').modal('show');
+            },
+            error: function (err) {
+                alert('Não foi possivel carregar!');
+            }
+        });
     });
-});
 
 function limparCampos() {
     $('#marca-campo-nome').val("");

@@ -19,6 +19,10 @@
     $("#modelo-botao-salvar").on("click", function () {
         $nome = $("#modelo-campo-nome").val();
         $marca = $("#modelo-campo-marca").val();
+        if (($nome.trim() == "") || ($marca == -1)) {
+            bootbox.alert("Preencha corretamente os campos!");
+            return null;
+        }
 
         if ($idAlterar == -1) {
             inserir($nome, $marca);
@@ -42,7 +46,7 @@
                     $tabelaModelo.ajax.reload();
                 },
                 error: function (err) {
-                    bootbox.alert("Não foi possivel alterar o modelo");
+                    bootbox.alert("Não foi possivel alterar o modelo!");
                 }
             });
         }
@@ -59,10 +63,10 @@
                     $("#modal-modelo").modal('hide');
                     limparCampos();
                     $tabelaModelo.ajax.reload();
-                    bootbox.alert("Registro Inserido Com Sucesso")
+                    bootbox.alert("Registro inserido com sucesso!")
                 },
                 error: function (err) {
-                    alert('Não foi possivel inserir');
+                    bootbox.alert('Não foi possivel inserir!');
                 }
             });
         }
@@ -70,18 +74,34 @@
 
     $("#modelo-tabela").on("click", ".botao-apagar", function () {
         $idApagar = $(this).data("id");
-            $.ajax({
-                url: "http://localhost:51242/modelo/apagar?id=" + $idApagar,
-                method: "get",
-                success: function (data) {
-                    $tabelaModelo.ajax.reload();
-                    alert('Apagado com Sucesso');
+        bootbox.confirm({
+            message: "Deseja realmente apagar o registro?",
+            buttons: {
+                confirm: {
+                    label: 'Sim',
+                    className: 'btn-success'
                 },
-                error: function (err) {
-                    alert('Não foi possivel apagar');
+                cancel: {
+                    label: 'Não',
+                    className: 'btn-danger'
                 }
-            });
-        }
+            },
+            callback: function (result) {
+                if (result)
+                    $.ajax({
+                        url: "http://localhost:51242/modelo/Apagar?id=" + $idApagar,
+                        method: "get",
+                        success: function (data) {
+                            $tabelaModelo.ajax.reload();
+                            bootbox.alert("Registro apagado com sucesso!");
+
+                        },
+                        error: function (err) {
+                            bootbox.alert('Não foi possível apagar!');
+                        }
+                    });
+            }
+        });
     });
 
     $("#modelo-tabela").on("click", ".botao-editar", function () {
@@ -96,7 +116,7 @@
                 $("#modal-modelo").modal("show");
             },
             error: function (err) {
-                alert('Não foi possivel carregar');
+                bootbox.alert('Não foi possivel carregar!');
             }
         })
     });

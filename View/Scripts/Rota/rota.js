@@ -43,7 +43,7 @@
                 $tabelaRota.ajax.reload();
             },
             error: function (err) {
-                alert('Não foi possivel alterar');
+                bootbox.alert('Não foi possivel alterar!');
             }
         });
     }
@@ -59,30 +59,45 @@
             success: function (data) {
                 $("#modal-rota").modal('hide');
                 limparCampos();
-                alert('Registro inserido com Sucesso');
+                alert('Registro inserido com sucesso!');
                 $tabelaRota.ajax.reload();
             },
             error: function (err) {
-                alert('Não foi possivel inserir');
+                bootbox.alert('Não foi possivel inserir!');
             }
         });
     }
 
-    $('.table').on('click', '.botao-apagar', function () {
-        $idApagar = $(this).data('id');
-        var confirmacao = confirm("Deseja realmente apagar o registro?");
-        if (confirmacao == true) {
-            $.ajax({
-                url: 'http://localhost:51242/Rota/apagar?id=' + $idApagar,
-                method: 'get',
-                success: function (data) {
-                    $tabelaRota.ajax.reload();
+    $("#rota-tabela").on("click", ".botao-apagar", function () {
+        $idApagar = $(this).data("id");
+        bootbox.confirm({
+            message: "Deseja realmente apagar o registro?",
+            buttons: {
+                confirm: {
+                    label: 'Sim',
+                    className: 'btn-success'
                 },
-                error: function (err) {
-                    alert('Não foi possivel apagar');
+                cancel: {
+                    label: 'Não',
+                    className: 'btn-danger'
                 }
-            });
-        }
+            },
+            callback: function (result) {
+                if (result)
+                    $.ajax({
+                        url: "http://localhost:51242/Rota/Apagar?id=" + $idApagar,
+                        method: "get",
+                        success: function (data) {
+                            $tabelaRota.ajax.reload();
+                            bootbox.alert("Registro apagado com sucesso!");
+
+                        },
+                        error: function (err) {
+                            bootbox.alert('Não foi possível apagar!');
+                        }
+                    });
+            }
+        });
     });
 
     $('.table').on('click', '.botao-editar', function () {
@@ -97,7 +112,7 @@
                 $('#modal-rota').modal('show');
             },
             error: function (err) {
-                alert('Não foi possivel carregar')
+                bootbox.alert('Não foi possivel carregar!')
             }
         });
     });
