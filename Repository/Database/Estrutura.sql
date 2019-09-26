@@ -6440,8 +6440,36 @@ INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 (77,'Zumpango',1),
 /*<--Cidades de Mexico-->*/
 /*<--\México-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Antigua & Barbuda-->*/
+/*<--Cidades de Barbuda-->*/
+(95, 'Codrington', 1);
+/*<--/Cidades de Barbuda-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Saint George-->*/
+(96,'Carlisle', 1);
+/*<--/Cidades de Saint George-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Saint John-->*/
 
+/*<--/Cidades de Saint John-->*/
+/*<--Cidades de Saint Mary-->*/
+(98, 'Old Road', 1);
+/*<--/Cidades de Saint Mary-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Saint Paul-->*/
+(99, 'All Saints', 1),
+(99, 'Liberta', 1),
+(99, 'Swetes', 1);
+/*<--/Cidades de Saint Paul-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--/Cidades de Saint Peter-->*/
+(100, 'Parham', 1);
+/*<--/Cidades de Saint Peter-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--/Cidades de Saint Philip-->*/
+(101, 'Freetown', 1);
+/*<--/Cidades de Saint Philip-->*/
 /*<--Antigua & Barbuda-->*/
 
 --==================================================
