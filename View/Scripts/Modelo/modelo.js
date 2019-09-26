@@ -10,7 +10,7 @@
             { "data": "Marca.Nome" },
             {
                 render: function (data, type, row) {
-                    return '<button class="btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button><button class="btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>';
+                    return '<button class="fadeIn animated btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button>\<button class="fadeIn animated btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>'
                 }
             }
         ]
@@ -42,7 +42,7 @@
                     $tabelaModelo.ajax.reload();
                 },
                 error: function (err) {
-                    alert("Não foi possivel alterar o modelo");
+                    bootbox.alert("Não foi possivel alterar o modelo");
                 }
             });
         }
@@ -59,7 +59,7 @@
                     $("#modal-modelo").modal('hide');
                     limparCampos();
                     $tabelaModelo.ajax.reload();
-                    alert("Registro Inserido Com Sucesso")
+                    bootbox.alert("Registro Inserido Com Sucesso")
                 },
                 error: function (err) {
                     alert('Não foi possivel inserir');
@@ -68,10 +68,8 @@
         }
     });
 
-    $(".table").on("click", ".botao-apagar", function () {
+    $("#modelo-tabela").on("click", ".botao-apagar", function () {
         $idApagar = $(this).data("id");
-        var confirmacao = confirm("Deseja realmente apagar o registro?");
-        if (confirmacao == true) {
             $.ajax({
                 url: "http://localhost:51242/modelo/apagar?id=" + $idApagar,
                 method: "get",
@@ -86,7 +84,7 @@
         }
     });
 
-    $(".table").on("click", ".botao-editar", function () {
+    $("#modelo-tabela").on("click", ".botao-editar", function () {
         $idAlterar = $(this).data("id");
 
         $.ajax({

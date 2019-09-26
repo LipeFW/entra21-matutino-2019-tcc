@@ -9,7 +9,7 @@
             { 'data': 'Nome' },
             {
                 render: function (data, type, row) {
-                    return '<button class="btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button>\<button class="btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>';
+                    return '<button class="fadeIn animated btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button>\<button class="fadeIn animated btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>'
                 }
             }
         ]
@@ -56,7 +56,7 @@
                 $('#modal-marca').modal('hide');
                 limparCampos();
                 $tabelaMarca.ajax.reload();
-                alert('Registro inserido com Sucesso');
+                bootbox.alert('Registro inserido com Sucesso');
             },
             error: function (err) {
                 alert('Não foi possivel inserir');
@@ -64,42 +64,40 @@
         });
     }
 
-    $('.table').on('click', '.botao-apagar', function () {
+    $('#marca-tabela').on('click', '.botao-apagar', function () {
         $idApagar = $(this).data('id');
-        var confirmacao = confirm("Deseja realmente apagar o registro?");
-        if (confirmacao == true) {
-            $.ajax({
-                url: 'http://localhost:51242/Marca/apagar?id=' + $idApagar,
-                method: 'get',
-                success: function (data) {
-                    $tabelaMarca.ajax.reload();
-                },
-                error: function (err) {
-                    alert('Não foi possivel apagar');
-                }
-            });
-        }
-    });
-
-    $('.table').on('click', '.botao-editar', function () {
-        $idAlterar = $(this).data('id');
-
         $.ajax({
-            url: 'http://localhost:51242/Marca/obterpeloid?id=' + $idAlterar,
+            url: 'http://localhost:51242/Marca/apagar?id=' + $idApagar,
             method: 'get',
             success: function (data) {
-                $('#marca-campo-nome').val(data.Nome);
-
-                $('#modal-marca').modal('show');
+                $tabelaMarca.ajax.reload();
             },
             error: function (err) {
-                alert('Não foi possivel carregar');
+                alert('Não foi possivel apagar');
             }
         });
+    }
     });
 
-    function limparCampos() {
-        $('#marca-campo-nome').val("");
-        $idAlterar = -1;
-    }
+$('#marca-tabela').on('click', '.botao-editar', function () {
+    $idAlterar = $(this).data('id');
+
+    $.ajax({
+        url: 'http://localhost:51242/Marca/obterpeloid?id=' + $idAlterar,
+        method: 'get',
+        success: function (data) {
+            $('#marca-campo-nome').val(data.Nome);
+
+            $('#modal-marca').modal('show');
+        },
+        error: function (err) {
+            alert('Não foi possivel carregar');
+        }
+    });
+});
+
+function limparCampos() {
+    $('#marca-campo-nome').val("");
+    $idAlterar = -1;
+}
 });

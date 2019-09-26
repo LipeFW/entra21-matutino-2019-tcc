@@ -7169,13 +7169,15 @@ CREATE TABLE vendas(
 id INT PRIMARY KEY IDENTITY(1,1),
 quantidade INT,
 id_cliente INT,
+id_vendedor INT,
 FOREIGN KEY (id_cliente) REFERENCES clientes(id),
 total DECIMAL(8,2),
 desconto DECIMAL(8,2),
+descricao TEXT,
 registro_ativo BIT);
 
-INSERT INTO vendas(quantidade, id_cliente, registro_ativo, total, desconto)
-VALUES (1, 1, 1, 100, 10);
+INSERT INTO vendas(quantidade, id_cliente,id_vendedor, registro_ativo, total, desconto, descricao)
+VALUES (1, 1, 1, 1, 100, 10, 'teste');
 
 CREATE TABLE rotas(
 id INT PRIMARY KEY IDENTITY(1,1),

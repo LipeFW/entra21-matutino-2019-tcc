@@ -1,22 +1,21 @@
 ﻿//$(function () {
 //    $idAlterar = -1;
 
-//    $tabelaVenda = $('#venda-tabela').DataTable({
-//        ajax: 'http://localhost:51242/Venda/obtertodos',
-//        serverSide: true,
-//        columns: [
-//            { 'data': 'Id' },
-//            { 'data': 'Vendedor.Nome' },
-//            { 'data': 'Cliente.Nome' },
-//            { 'data': 'Desconto' },
-//            { 'data': 'Total' },
-//            {
-//                render: function (data, type, row) {
-//                    return '<button class="btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button><button class="btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>'
-//                }
-//            }
-//        ]
-//    });
+    $tabelaVenda = $('#vendas-tabela').DataTable({
+        ajax: 'http://localhost:51242/Venda/obtertodos',
+        serverSide: true,
+        columns: [
+            { 'data': 'Id' },
+            { 'data': 'Venda.Cliente.Nome' },
+            { 'data': 'Venda.Vendedor.Nome' },
+            { 'data': 'Total' },
+            {
+                render: function (data, type, row) {
+                    return '<button class="btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button><button class="btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>'
+                }
+            }
+        ]
+    });
 
 //    $('#venda-botao-salvar').on('click', function () {
 //        $vendedor = $('#venda-campo-vendedor').val();
