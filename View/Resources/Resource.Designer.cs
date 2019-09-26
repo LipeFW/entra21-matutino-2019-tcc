@@ -630,6 +630,15 @@ namespace View.Resources {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a string.
         /// </summary>
+        public static string MCSS {
+            get {
+                return ResourceManager.GetString("MCSS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
         public static string Menu {
             get {
                 return ResourceManager.GetString("Menu", resourceCulture);
@@ -813,15 +822,6 @@ namespace View.Resources {
         public static string Numerodocaminhao {
             get {
                 return ResourceManager.GetString("Numerodocaminhao", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
-        /// </summary>
-        public static string Omodo {
-            get {
-                return ResourceManager.GetString("Omodo", resourceCulture);
             }
         }
         

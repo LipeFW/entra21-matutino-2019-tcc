@@ -313,8 +313,9 @@
     <value>string</value>
     <comment>pt-BR_en-US_es-ES</comment>
   </data>
-  <data name="Omodo" xml:space="preserve">
+  <data name="MCSS" xml:space="preserve">
     <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
   </data>
   <data name="ou" xml:space="preserve">
     <value>string</value>
@@ -446,6 +447,7 @@
   </data>
   <data name="Menu" xml:space="preserve">
     <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
   </data>
   <data name="MeuPerfil" xml:space="preserve">
     <value>string</value>
