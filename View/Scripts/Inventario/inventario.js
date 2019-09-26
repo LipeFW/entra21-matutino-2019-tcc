@@ -6,13 +6,12 @@
         ajax: 'http://localhost:51242/veiculo/obtertodos',
         serverSide: true,
         columns: [
-            { 'data': 'Id' },
             { 'data': 'NumeroCaminhao' },
             {
                 render: function (data, type, row) {
-                    return '<button class="btn btn-success botao-abrir" \
+                    return '<button class="fadeIn animated btn btn-success botao-abrir" \
                                 data-id="' + row.Id + '"><i class="fas fa-arrow-right"></i> Abrir</button>\
-                            <button class="btn btn-primary botao-editar ml-1" \
+                            <button class="fadeIn animated btn btn-primary botao-editar ml-1" \
                                 data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i> Editar</button>'
                 }
             }
@@ -79,10 +78,10 @@
             serverSide: true,
             columns: [
                 { 'data': 'Nome' },
-                { 'data': 'Quantidade' },
+                { 'data': 'Valor' },
                 {
                     render: function (data, type, row) {
-                        return '<button class="btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-arrow-right"></i>Editar</button>\<button class="btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i> Apagar</button>'
+                        return '<button class="fadeI animated btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i> Editar</button>\<button class="fadeIn animated btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i> Apagar</button>'
                     }
                 }
             ]
