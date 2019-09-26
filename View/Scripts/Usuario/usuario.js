@@ -10,7 +10,7 @@
             { "data": "Senha" },
             {
                 render: function (data, type, row) {
-                    return '<button class="btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button>\<button class="btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>'
+                    return '<button class="fadeIn animated btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button>\<button class="fadeIn animated btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>'
                 }
             }
         ]
@@ -77,36 +77,41 @@
     $("#usuario-tabela").on("click", ".botao-apagar", function () {
         $idApagar = $(this).data("id");
         bootbox.confirm({
+            title: 'Aviso',
             message: "Deseja realmente apagar o registro?",
+            backdrop: true,
             buttons: {
                 confirm: {
-                    label: 'Sim',
-                    className: 'btn-success'
+                    label: '<i class="fa fa-check"></i> Sim',
+                    className: 'rubberBand animated btn-success',
                 },
                 cancel: {
-                    label: 'Não',
-                    className: 'btn-danger'
+                    label: '<i class="fa fa-times"></i> Não',
+                    className: 'rubberBand animated btn-outline-danger'
                 }
             },
             callback: function (result) {
                 if (result)
-                $.ajax({
-                    url: "http://localhost:51242/Usuario/Apagar?id=" + $idApagar,
-                    method: "get",
-                    success: function (data) {
-                        $tabelaUsuario.ajax.reload();
-                        bootbox.alert("Registro apagado com sucesso");
+                    $.ajax({
+                        url: "http://localhost:51242/Usuario/Apagar?id=" + $idApagar,
+                        method: "get",
+                        success: function (data) {
+                            $tabelaUsuario.ajax.reload();
+                            bootbox.alert({
+                                title: "Aviso",
+                                message:"Registro apagado com sucesso",
+                            })
 
-                    },
-                    error: function (err) {
-                        bootbox.alert('Não foi possível apagar');
-                    }
-                });
+                        },
+                        error: function (err) {
+                            bootbox.alert('Não foi possível apagar');
+                        }
+                    });
             }
         });
     });
 
-    $(".table").on("click", ".botao-editar", function () {
+    $("#usuario-tabela").on("click", ".botao-editar", function () {
         $idAlterar = $(this).data("id");
 
         $.ajax({

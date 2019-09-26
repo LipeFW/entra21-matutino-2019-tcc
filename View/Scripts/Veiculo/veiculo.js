@@ -13,7 +13,8 @@
             { 'data': 'Placa' },
             {
                 render: function (data, type, row) {
-                    return '<button class="btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button>\<button class="btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>';
+                    return '<button class="fadeIn animated btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button>\<button class="fadeIn animated btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>'
+
                 }
             }
         ]
@@ -80,8 +81,9 @@
         }
     });
 
-    $("#veiculo-tabela").on("click", ".botao-apagar", function () {
-        $idApagar = $(this).data("id");
+    $('#veiculo-tabela').on('click', '.botao-apagar', function () {
+        $idApagar = $(this).data('id');
+
         bootbox.confirm({
             message: "Deseja realmente apagar o registro?",
             buttons: {
@@ -95,24 +97,24 @@
                 }
             },
             callback: function (result) {
-                if (result)
+                if (result) {
                     $.ajax({
-                        url: "http://localhost:51242/Veiculo/Apagar?id=" + $idApagar,
-                        method: "get",
+                        url: 'http://localhost:51242/veiculo/apagar?id=' + $idApagar,
+                        method: 'get',
                         success: function (data) {
                             $tabelaVeiculo.ajax.reload();
-                            bootbox.alert("Registro apagado com sucesso");
-
+                            bootbox.alert("Registro Apagado Com Sucesso");
                         },
                         error: function (err) {
-                            bootbox.alert('Não foi possível apagar');
+                            bootbox.alert('Não foi possivel apagar');
                         }
                     });
+                }
             }
-        });
+        })
     });
 
-    $(".table").on("click", ".botao-editar", function () {
+    $("#veiculo-tabela").on("click", ".botao-editar", function () {
         $idAlterar = $(this).data("id");
 
         $.ajax({
