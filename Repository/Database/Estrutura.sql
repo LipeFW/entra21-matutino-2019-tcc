@@ -5950,10 +5950,71 @@ INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
     (74,'Zihuatanejo',1),
     (74,'Zirandaro',1),
     (74,'Zitlala',1),
-    (74,'Zumpango',1),
+    (74,'Zumpango',1);
 
 /*<--Cidades de Guerrero-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Hidalgo-->*/
 
+   
+    (75,'Acaxochitlan',1),
+    (75,'Acayuca',1),
+    (75,'Actopan',1),
+    (75,'Ajacuba',1),
+    (75,'Almoloya',1),
+    (75,'Apan',1),
+    (75,'Atengo',1),
+    (75,'Atitalaquia',1),
+    (75,'Atotonilco El Grande',1),
+    (75,'Calnali',1),
+    (75,'Cardonal',1),
+    (75,'Chapulhuacan',1),
+    (75,'Cuautepec',1),
+    (75,'Doxey',1),
+    (75,'El Arenal',1),
+    (75,'El Llano',1),
+    (75,'Emiliano Zapata',1),
+    (75,'Huautla',1),
+    (75,'Huejutla',1),
+    (75,'Huichapan',1),
+    (75,'Ixmiquilpan',1),
+    (75,'Jacala',1),
+    (75,'Jaltocan',1),
+    (75,'Los Reyes',1),
+    (75,'Mineral Del Monte',1),
+    (75,'Mixquiahuala',1),
+    (75,'Molango',1),
+    (75,'Orizatlan',1),
+    (75,'Pachuca',1),
+    (75,'Pachuquilla',1),
+    (75,'Progreso',1),
+    (75,'Sahagun',1),
+    (75,'San Juan Tepa',1),
+    (75,'San Marcos',1),
+    (75,'Singuilucan',1),
+    (75,'Tasquillo',1),
+    (75,'Tecozautla',1),
+    (75,'Tepatepec',1),
+    (75,'Tepeapulco',1),
+    (75,'Tepeji',1),
+    (75,'Tepepa',1),
+    (75,'Tetepango',1),
+    (75,'Tezontepec',1),
+    (75,'Tizayuca',1),
+    (75,'Tlahuelilpan',1),
+    (75,'Tlanalapa',1),
+    (75,'Tlanchinol',1),
+    (75,'Tlaxcoapan',1),
+    (75,'Tlaxiaca',1),
+    (75,'Tolcayuca',1),
+    (75,'Tula De Allende',1),
+    (75,'Tulancingo',1),
+    (75,'Zacualtipan',1),
+    (75,'Zapotlan',1),
+    (75,'Zempoala',1),
+    (75,'Zimapan',1);
+
+/*<--Cidades de Hidalgo-->*/
 /*<--\México-->*/
 
 --==================================================
