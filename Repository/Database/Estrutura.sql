@@ -5005,6 +5005,56 @@ INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 (70,'Zaragoza',1)
 /*<--Cidades de Coahuila de Zaragoza-->*/
 INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Colima-->*/
+    (71,'Armeria',1),
+    (71,'Cofradia',1),
+    (71,'Colima',1),
+    (71,'Comala',1),
+    (71,'Coquimatlan',1),
+    (71,'Cuauhtemoc',1),
+    (71,'El Colomo',1),
+    (71,'Madrid',1),
+    (71,'Manzanillo',1),
+    (71,'Minatitlan',1),
+    (71,'Queseria',1),
+    (71,'Suchitlan',1),
+    (71,'Tecoman',1),
+    (71,'Villa De Alvarez',1);
+/*<--Cidades de Colima-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Durango-->*/
+
+  (72,'Bermejillo',1),
+  (72,'Canatlan',1),
+  (72,'Cuencame',1),
+  (72,'Durango',1),
+  (72,'Gomez Palacio',1),
+  (72,'Guadalupe Victoria',1),
+  (72,'Juarez',1),
+  (72,'Lerdo',1),
+  (72,'Mapimin',1),
+  (72,'Mixtepec',1),
+  (72,'Nazareno',1),
+  (72,'Nazas',1),
+  (72,'Nombre De Dios',1),
+  (72,'Nuevo Ideal',1),
+  (72,'Panuco',1),
+  (72,'Papasquiaro',1),
+  (72,'Penon Blanco',1),
+  (72,'Poanas',1),
+  (72,'Pueblo Nuevo',1),
+  (72,'Rodeo',1),
+  (72,'San Pedro De Los Naranjos',1),
+  (72,'Santa Catarina De Tepehuanes',1),
+  (72,'Santa Clara',1),
+  (72,'Santa Clara',1),
+  (72,'Santa Maria Del Oro',1),
+  (72,'Suchil',1),
+  (72,'Tayoltita',1),
+  (72,'Tlahualilo',1),
+  (72,'Vicente Guerrero',1),
+
+/*<--Cidades de Durango-->*/
 
 
 
