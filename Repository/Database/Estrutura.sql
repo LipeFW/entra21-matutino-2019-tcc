@@ -4859,15 +4859,155 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Cidades de Aguascalientes-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Cidades de Baixa California-->*/
+(65, 'Algodones', 1),
+(65, 'Camalu', 1),
+(65, 'Cuervos', 1),
+(65, 'Delta', 1),
+(65, 'Ejido Hermosillo', 1),
+(65, 'El Sauzal', 1),
+(65, 'Ensenada', 1),
+(65, 'Estacion Coahuila', 1),
+(65, 'Guadalupe Victoria', 1),
+(65, 'La Joya', 1),
+(65, 'Maneadero', 1),
+(65, 'Mexicali', 1),
+(65, 'Mulege', 1),
+(65, 'Primo Tapia', 1),
+(65, 'Progreso', 1),
+(65, 'Puebla', 1),
+(65, 'Rosarito', 1),
+(65, 'San Felipe', 1),
+(65, 'San Luis', 1),
+(65, 'San Quintin', 1),
+(65, 'Santa Isabel', 1),
+(65, 'Tecate', 1),
+(65, 'Tijuana', 1),
+(65, 'Vicente Guerrero', 1);
 
-(65,'Cabo San Lucas',1),
-(65,'Constitucion',1),
-(65,'Guerrero Negro',1),
-(65,'La Paz',1),
-(65,'Loreto',1),
-(65,'Santa Rosalia',1),
-(65,'Todos Santos',1),
 /*<--Cidades de Baixa California-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Cidades de Baixa Califórnia do Sul-->*/
+(66,'Cabo San Lucas',1),
+(66,'Constitucion',1),
+(66,'Guerrero Negro',1),
+(66,'La Paz',1),
+(66,'Loreto',1),
+(66,'Santa Rosalia',1),
+(66,'Todos Santos',1);
+/*<--Cidades de Baixa Califórnia do Sul-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Cidades de Campeche-->*/
+(67,'Becal',1),
+(67,'Bolonchen',1),
+(67,'Calkini',1),
+(67,'Campeche',1),
+(67,'Candelaria',1),
+(67,'Carmen',1),
+(67,'Champoton',1),
+(67,'China',1),
+(67,'Dzitbalche',1),
+(67,'Escarcega',1),
+(67,'Hecelchak ',1),
+(67,'Hopelche',1),
+(67,'Isla Agua ',1),
+(67,'Nunkin',1),
+(67,'Palizad',1),
+(67,'Pomuc',1),
+(67,'Reform',1),
+(67,'Sabancu',1),
+(67,'Seybaplay',1),
+(67,'Tenabo',1);
+/*<--Cidades de Campeche-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Cidades de Chiapas -->*/
+(68,'Acacoyagua',1),
+(68,'Acala',1),
+(68,'Acapetahua',1),
+(68,'Altamirano',1),
+(68,'Alvaro Obregon',1),
+(68,'Amatan',1),
+(68,'Amatenango Del Valle',1),
+(68,'Arriaga',1),
+(68,'Benemerito De Las Americas',1),
+(68,'Berriozabal',1),
+(68,'Bochil',1),
+(68,'Cacahoatan',1),
+(68,'Cancuc',1),
+(68,'Catazaja',1),
+(68,'Chanal',1),
+(68,'Chiapa',1),
+(68,'Chiapilla',1),
+(68,'Chicomuselo',1),
+(68,'Chilon',1);
+
+/*<--Cidades de Chiapas -->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Chihuahua-->*/
+    (69,'Adolfo Lopez Mateos',1),
+    (69,'Ahumada',1),
+    (69,'Anahuac',1),
+    (69,'Ascension',1),
+    (69,'Benito Juarez',1),
+    (69,'Camargo',1),
+    (69,'Casas Grandes',1),
+    (69,'Chihuahua',1),
+    (69,'Creel',1),
+    (69,'Cuauhtemoc',1),
+    (69,'Delicias',1),
+    (69,'Guadalupe Y Calvo',1),
+    (69,'Ignacio Zaragoza',1),
+    (69,'Jimenez',1),
+    (69,'Madera',1),
+    (69,'Meoqui',1),
+    (69,'Naica',1),
+    (69,'Nuevo Casas Grandes',1),
+    (69,'Ojinaga',1),
+    (69,'Praxedis Guerrero',1),
+    (69,'Puerto Palomas',1),
+    (69,'San Buenaventura',1),
+    (69,'Santa Barbara',1),
+    (69,'Santa Cruz De Rosale',1),
+    (69,'Saucillo',1),
+    (69,'Valentin Gomez Faria',1),
+    (69,'Valle De Allende',1);
+
+/*<--Cidades de Chihuahua-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Coahuila de Zaragoza-->*/
+(70,'Acuna',1),
+(70,'Allende',1),
+(70,'Arteaga',1),
+(70,'Castanos',1),
+(70,'Concordia',1),
+(70,'El Coyote',1),
+(70,'Frontera',1),
+(70,'General Cepeda',1),
+(70,'Matamoros',1),
+(70,'Minas De Barroteran',1),
+(70,'Monclova',1),
+(70,'Muzquiz',1),
+(70,'Nadadores',1),
+(70,'Nava',1),
+(70,'Nueva Rosita',1),
+(70,'Ocampo',1),
+(70,'Palau',1),
+(70,'Parras',1),
+(70,'Piedras Negras',1),
+(70,'Ramos Arizpe',1),
+(70,'Sabinas',1),
+(70,'Saltillo',1),
+(70,'San Buenaventura',1),
+(70,'San Pedro',1),
+(70,'Torreon',1),
+(70,'Venustiano Carranza',1),
+(70,'Viesca',1),
+(70,'Villa Union',1),
+(70,'Zaragoza',1)
+/*<--Cidades de Coahuila de Zaragoza-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+
+
+
 /*<--\México-->*/
 
 --==================================================
