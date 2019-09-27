@@ -7577,6 +7577,36 @@ INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 (122,'Cockburn Town',1);
 /*<--/Cidades de Salvador and Rum Cay-->*/
 /*<--/Bahamas-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Belize-->*/
+/*<--Cidades de Belize-->*/
+(134,'Belize',1),
+(134,'San Pedro',1);
+/*<--Cidades de Belize-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Cayo-->*/
+    (135,'Belmopan',1),
+    (135,'Benque Viejo',1),
+    (135,'San Ignacio',1);
+/*<--Cidades de Cayo-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Corozal-->*/
+  (136,'Corozal',1);
+/*<--Cidades de Corozal-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Orange Walk-->*/
+(137,'Orange Walk',1);
+/*<--Cidades de Orange Walk-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Stan Creek-->*/
+(138,'Dagringa',1);
+/*<--Cidades de Stan Creek-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Toledo-->*/
+(139,'Punta Gorda',1)
+/*<--Cidades de Toledo-->*/
+/*<--Belize-->*/
+
 
 --==================================================
 --ACREDITO QUE OS IDS ESTÂO ERRADOS DAQUI PARA BAIXO
