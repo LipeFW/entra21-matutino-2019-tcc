@@ -6943,8 +6943,87 @@ INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 (101, 'Freetown', 1);
 /*<--/Cidades de Saint Philip-->*/
 /*<--/Antigua & Barbuda-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Bahamas-->*/
-(Alice Town
+/*<--Cidades de Bimini-->*/
+(102, 'Alice Town',1);
+/*<--/Cidades de Bimini-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Cat Island-->*/
+
+/*<--/Cidades de Cat Island-->*/
+/*<--Cidades de Exuma-->*/
+
+/*<--/Cidades de Exuma-->*/
+/*<--/Cidades de Inagua-->*/
+(105, 'Matthew Town',1);
+/*<--/Cidades de Inagua-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Long Island-->*/
+(106, 'Clarence Town',1);
+/*<--/Cidades de Long Island-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Mayaguana-->*/
+(107, 'Pirates Well',1);
+/*<--/Cidades de Mayaguana-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Ragged Island-->*/
+
+/*<--/Cidades de Ragged Island-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Harbour Island-->*/
+(109,'Dunmore Town',1);
+/*<--/Cidades de Harbour Island-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de New Providence-->*/
+(110,'Nassau',1);
+/*<--/Cidades de New Providence-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Acklins and Crooked Island-->*/
+(111, 'Colonel Hill', 1),
+(111, 'Snug Corner', 1);
+/*<--/Cidades de Acklins and Crooked Island-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Freeport-->*/
+(112,'Freeport',1);
+/*<--/Cidades de Freeport-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Fresh Creek-->*/
+(113,'Andros Town',1);
+/*<--/Cidades de Fresh Creek-->*/
+/*<--Cidades de Governor''s Harbour-->*/
+
+/*<--/Cidades de Governor''s Harbour-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Green Turtle Cay-->*/
+(115,'Sweeting Cay',1);
+/*<--/Cidades de Green Turtle Cay-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de High Rock-->*/
+(116,'High Rock',1);
+/*<--/Cidades de High Rock-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Kemps Bay-->*/
+
+/*<--/Cidades de Kemps Bay-->*/
+/*<--Cidades de Marsh Harbour-->*/
+(118,'Marsh Harbour',1);
+/*<--/Cidades de Marsh Harbour-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Nichollstown and Berry Island-->*/
+(119,'Nicholls Town',1);
+/*<--/Cidades de Nichollstown and Berry Island-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Rock Sound-->*/
+(120,'Rock Sound',1);
+/*<--/Cidades de Rock Sound-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Sandy Point-->*/
+
+/*<--/Cidades de Sandy Point-->*/
+/*<--Cidades de Salvador and Rum Cay-->*/
+(122,'Cockburn Town',1);
+/*<--/Cidades de Salvador and Rum Cay-->*/
 /*<--/Bahamas-->*/
 
 --==================================================
@@ -9369,52 +9448,8 @@ INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 --(418, 'Rancagua', 1),
 --(418, 'Rengo', 1),
 --(418, 'San Vicente', 1),
---(418, 'Santa Cruz', 1),
+--(418, 'Santa Cruz', 1);
 /*<--/Libertador General Bernardo O´H-->*/
-/*<--/Los Lagos-->*/
---(419, 'Ancud', 1),
---(419, 'Calbuco', 1),
---(419, 'Castro', 1),
---(419, 'La Union', 1),
---(419, 'Osorno', 1),
---(419, 'Panguipulli', 1),
---(419, 'Puerto Montt', 1),
---(419, 'Puerto Varas', 1),
---(419, 'Purranque', 1),
---(419, 'Rio Bueno', 1),
---(419, 'Valdivia', 1),
-/*<--/Los Lagos-->*/
-/*<--/Magallanes y de la Antartica Chi-->*/
---(420, 'Punta Arenas', 1),
-/*<--/Magallanes y de la Antartica Chi-->*/
-/*<--/Maule-->*/
---(421, 'Cauquenes', 1),
---(421, 'Constitucion', 1),
---(421, 'Curico', 1),
---(421, 'Linares', 1),
---(421, 'Longavi', 1),
---(421, 'Molina', 1),
---(421, 'Parral', 1),
---(421, 'San Clemente', 1),
---(421, 'San Javier', 1),
---(421, 'Talca', 1),
---(421, 'Teno', 1),
-/*<--/Maule-->*/
-/*<--/Region Metropolitana-->*/
---(422, 'Buin', 1),
---(422, 'El Monte', 1),
---(422, 'Lampa', 1),
---(422, 'Melipilla', 1),
---(422, 'Paine', 1),
---(422, 'Penaflor', 1),
---(422, 'San Bernardo', 1),
---(422, 'Santiago', 1),
---(422, 'Talagante', 1),
-/*<--/Region Metropolitana-->*/
-/*<--/Tarapaca-->*/
---(423, 'Arica', 1),
---(423, 'Iquique', 1),
-/*<--/Tarapaca-->*/
 /*<--/Chile-->*/
 /*<--/América do Sul-->*/
 CREATE TABLE usuarios( 
