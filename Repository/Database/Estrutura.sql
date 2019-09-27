@@ -10129,20 +10129,20 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Chile-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Valparaiso-->*/
-(412, 'Cabildo' , 1),
-(412, 'Calera' , 1),
-(412, 'Calera' , 1),
-(412, 'La Ligua' , 1),
-(412, 'Limache' , 1),
-(412, 'Llaillay' , 1),
-(412, 'Los Andes' , 1),
-(412, 'Quillota' , 1),
-(412, 'Quilpue' , 1),
-(412, 'San Antonio' , 1),
-(412, 'San Felipe' , 1),
-(412, 'Valparaiso' , 1),
-(412, 'Villa Alemana' , 1),
-(412, 'Vina Del Mar' , 1),
+(414, 'Cabildo' , 1),
+(414, 'Calera' , 1),
+(414, 'Calera' , 1),
+(414, 'La Ligua' , 1),
+(414, 'Limache' , 1),
+(414, 'Llaillay' , 1),
+(414, 'Los Andes' , 1),
+(414, 'Quillota' , 1),
+(414, 'Quilpue' , 1),
+(414, 'San Antonio' , 1),
+(414, 'San Felipe' , 1),
+(414, 'Valparaiso' , 1),
+(414, 'Villa Alemana' , 1),
+(414, 'Vina Del Mar' , 1),
 /*<--/Valparaiso-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Aisen del General Carlos Ibanez-->*/
