@@ -10203,13 +10203,13 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Bio-Bio-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Coquimbo-->*/
-(418, 'Coquimbo', 1),
-(418, 'Illapel', 1),
-(418, 'La Serena', 1),
-(418, 'Monte Patria', 1),
-(418, 'Ovalle', 1),
-(418, 'Salamanca', 1),
-(418, 'Vicuna', 1);
+(420, 'Coquimbo', 1),
+(420, 'Illapel', 1),
+(420, 'La Serena', 1),
+(420, 'Monte Patria', 1),
+(420, 'Ovalle', 1),
+(420, 'Salamanca', 1),
+(420, 'Vicuna', 1);
 /*<--/Coquimbo-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Libertador General Bernardo O´H-->*/
