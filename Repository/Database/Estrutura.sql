@@ -7603,9 +7603,132 @@ INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Cidades de Stan Creek-->*/
 INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Cidades de Toledo-->*/
-(139,'Punta Gorda',1)
+(139,'Punta Gorda',1);
 /*<--Cidades de Toledo-->*/
 /*<--Belize-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Costa Rica-->*/
+/*<--Cidades de Alajuela-->*/
+
+(140, 'Alajuela', 1),
+(140, 'Atenas', 1),
+(140, 'Cinco Esquinas', 1),
+(140, 'Florencia', 1),
+(140, 'Grecia', 1),
+(140, 'Los Chiles', 1),
+(140, 'Naranjo', 1),
+(140, 'Orotina', 1),
+(140, 'Pital', 1),
+(140, 'Pocosol', 1),
+(140, 'Quesada', 1),
+(140, 'Rio Segundo', 1),
+(140, 'San Antonio', 1),
+(140, 'San Antonio', 1),
+(140, 'San Antonio', 1),
+(140, 'San Jose', 1),
+(140, 'San Juan', 1),
+(140, 'San Rafael', 1),
+(140, 'San Ramon', 1),
+(140, 'Upala', 1),
+(140, 'Zarcero', 1);
+/*<--/Cidades de Alajuela-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--/Cidades de Cartago-->*/
+(141, 'Cartago', 1),
+(141, 'Concepcion', 1),
+(141, 'Guadalupe', 1),
+(141, 'Guadalupe', 1),
+(141, 'La Suiza', 1),
+(141, 'Pacayas', 1),
+(141, 'Paraiso', 1),
+(141, 'San Diego', 1),
+(141, 'San Rafael', 1),
+(141, 'Tres Rios', 1),
+(141, 'Turrialba', 1);
+/*<--/Cidades de Cartago-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Guanacaste-->*/
+(142, 'Canas', 1),
+(142, 'Juntas', 1),
+(142, 'La Cruz', 1),
+(142, 'Liberia', 1),
+(142, 'Nicoya', 1),
+(142, 'Santa Cruz', 1),
+(142, 'Tilaran', 1);
+/*<--/Cidades de Guanacaste-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--/Cidades de Heredia-->*/
+(143, 'Heredia', 1),
+(143, 'Mercedes', 1),
+(143, 'San Francisco', 1),
+(143, 'San Francisco', 1),
+(143, 'San Isidro', 1),
+(143, 'San Isidro', 1),
+(143, 'San Josecito', 1),
+(143, 'San Pablo', 1),
+(143, 'San Rafael', 1),
+(143, 'San Vicente', 1),
+(143, 'San Vicente', 1),
+(143, 'Santo Domingo', 1);
+/*<--/Cidades de Heredia-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Limon-->*/
+(144, 'Batan', 1),
+(144, 'Carmen', 1),
+(144, 'Guacimo', 1),
+(144, 'Guapiles', 1),
+(144, 'Limon', 1),
+(144, 'Matina', 1),
+(144, 'Roxana', 1),
+(144, 'Siquirres', 1);
+/*<--/Cidades de Limon-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Puntarenas-->*/
+(145, 'Buenos Aires', 1),
+(145, 'Chacarita', 1),
+(145, 'Corredor', 1),
+(145, 'Esparta', 1),
+(145, 'Golfito', 1),
+(145, 'Guacimo', 1),
+(145, 'Miramar', 1),
+(145, 'Palmar', 1),
+(145, 'Palmar', 1),
+(145, 'Parrita', 1),
+(145, 'Puerto Cortes', 1),
+(145, 'Puntarenas', 1),
+(145, 'Quepos', 1),
+(145, 'San Vito', 1);
+/*<--/Cidades de Puntarenas-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de San Jose-->*/
+(146, 'Alajuelita', 1),
+(146, 'Aserri', 1),
+(146, 'Calle Blancos', 1),
+(146, 'Colon', 1),
+(146, 'Concepcion', 1),
+(146, 'Curridabat', 1),
+(146, 'Daniel Flores', 1),
+(146, 'Desamparados', 1),
+(146, 'Escazu', 1),
+(146, 'Ipis', 1),
+(146, 'Palmares', 1),
+(146, 'Purral', 1),
+(146, 'Sabanilla', 1),
+(146, 'San Felipe', 1),
+(146, 'San Ignacio', 1),
+(146, 'San Jose', 1),
+(146, 'San Juan', 1),
+(146, 'San Marcos De Tarrazu', 1),
+(146, 'San Miguel', 1),
+(146, 'San Pedro', 1),
+(146, 'San Rafael', 1),
+(146, 'San Rafael Abajo', 1),
+(146, 'San Rafael Arriba', 1),
+(146, 'Santa Ana', 1),
+(146, 'Santiago', 1),
+
+/*<--/Cidades de San Jose-->*/
+/*<--/Costa Rica-->*/
 
 
 --==================================================
