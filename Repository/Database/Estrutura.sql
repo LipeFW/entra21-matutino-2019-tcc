@@ -7464,7 +7464,6 @@ INSERT INTO(id,nome,registro_ativo) VALUES
    /*<--Cidades de Zacatecas-->*/
    
 /*<--\México-->*/
-
 INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Antigua & Barbuda-->*/
 /*<--Cidades de Barbuda-->*/
@@ -7579,54 +7578,36 @@ INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--/Cidades de Salvador and Rum Cay-->*/
 /*<--/Bahamas-->*/
 INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
-/*<--/Barbados-->*/
+/*<--Belize-->*/
+/*<--Cidades de Belize-->*/
+(134,'Belize',1),
+(134,'San Pedro',1);
+/*<--Cidades de Belize-->*/
 INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
-/*<--Cidades de Christ Church-->*/
-(123,'Oistins',1);
-/*<--Cidades de Christ Church-->*/
+/*<--Cidades de Cayo-->*/
+    (135,'Belmopan',1),
+    (135,'Benque Viejo',1),
+    (135,'San Ignacio',1);
+/*<--Cidades de Cayo-->*/
 INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
-/*<--Cidades de Saint Andrew-->*/
-(124,'Greenlandn',1),
-(124,'Hillaby',1);
-/*<--Cidades de Saint Andrew-->*/
+/*<--Cidades de Corozal-->*/
+  (136,'Corozal',1);
+/*<--Cidades de Corozal-->*/
 INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
-/*<--Cidades de Saint George-->*/
-(125,'Não Há cidades',1);
-/*<--Cidades de Saint George-->*/
+/*<--Cidades de Orange Walk-->*/
+(137,'Orange Walk',1);
+/*<--Cidades de Orange Walk-->*/
 INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
-/*<--Cidades de Saint James-->*/
-(126,'Holetown',1);
-/*<--Cidades de Saint James-->*/
+/*<--Cidades de Stan Creek-->*/
+(138,'Dagringa',1);
+/*<--Cidades de Stan Creek-->*/
 INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
-/*<--Cidades de Saint John-->*/
-(127,'Não Há cidades',1);
-/*<--Cidades de Saint John-->*/
-INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
-/*<--Cidades de Saint Joseph-->*/
-(128,'Bathsheba',1),
-(128,'Blackmans',1);
-/*<--Cidades de Saint Joseph-->*/
-INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
-/*<--Cidades de Saint Lucy-->*/
-(129,'Crab Hill',1);
-/*<--Cidades de Saint Lucy-->*/
-INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
-/*<--Cidades de Saint Michael-->*/
-(130,'Bridgetown',1);
-/*<--Cidades de Saint Michael-->*/
-INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
-/*<--Cidades de Saint Peter-->*/
-(131,'Speightstown',1);
-/*<--Cidades de Saint Peter-->*/
-INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
-/*<--Cidades de Saint Philip-->*/
-(132,'Não Há cidades',1);
-/*<--Cidades de Saint Philip-->*/
-INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
-/*<--Cidades de Saint Thomas-->*/
-(133,'Não Há cidades',1);
-/*<--Cidades de Saint Thomas-->*/
-/*<--/Barbados-->*/
+/*<--Cidades de Toledo-->*/
+(139,'Punta Gorda',1)
+/*<--Cidades de Toledo-->*/
+/*<--Belize-->*/
+
+
 --==================================================
 --ACREDITO QUE OS IDS ESTÂO ERRADOS DAQUI PARA BAIXO
 --==================================================
@@ -10061,51 +10042,55 @@ INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 --(419, 'San Vicente', 1),
 --(419, 'Santa Cruz', 1),
 /*<--/Libertador General Bernardo O´H-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Los Lagos-->*/
---(420, 'Ancud', 1),
---(420, 'Calbuco', 1),
---(420, 'Castro', 1),
---(420, 'La Union', 1),
---(420, 'Osorno', 1),
---(420, 'Panguipulli', 1),
---(420, 'Puerto Montt', 1),
---(420, 'Puerto Varas', 1),
---(420, 'Purranque', 1),
---(420, 'Rio Bueno', 1),
---(420, 'Valdivia', 1),
+(420, 'Ancud', 1),
+(420, 'Calbuco', 1),
+(420, 'Castro', 1),
+(420, 'La Union', 1),
+(420, 'Osorno', 1),
+(420, 'Panguipulli', 1),
+(420, 'Puerto Montt', 1),
+(420, 'Puerto Varas', 1),
+(420, 'Purranque', 1),
+(420, 'Rio Bueno', 1),
+(420, 'Valdivia', 1),
 /*<--/Los Lagos-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Magallanes y de la Antartica Chi-->*/
---(421, 'Punta Arenas', 1),
+(421, 'Punta Arenas', 1),
 /*<--/Magallanes y de la Antartica Chi-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Maule-->*/
---(422, 'Cauquenes', 1),
---(422, 'Constitucion', 1),
---(422, 'Curico', 1),
---(422, 'Linares', 1),
---(422, 'Longavi', 1),
---(422, 'Molina', 1),
---(422, 'Parral', 1),
---(422, 'San Clemente', 1),
---(422, 'San Javier', 1),
---(422, 'Talca', 1),
---(422, 'Teno', 1),
+(422, 'Cauquenes', 1),
+(422, 'Constitucion', 1),
+(422, 'Curico', 1),
+(422, 'Linares', 1),
+(422, 'Longavi', 1),
+(422, 'Molina', 1),
+(422, 'Parral', 1),
+(422, 'San Clemente', 1),
+(422, 'San Javier', 1),
+(422, 'Talca', 1),
+(422, 'Teno', 1),
 /*<--/Maule-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Region Metropolitana-->*/
---(423, 'Buin', 1),
---(423, 'El Monte', 1),
---(423, 'Lampa', 1),
---(423, 'Melipilla', 1),
---(423, 'Paine', 1),
---(423, 'Penaflor', 1),
---(423, 'San Bernardo', 1),
---(423, 'Santiago', 1),
---(423, 'Talagante', 1),
+(423, 'Buin', 1),
+(423, 'El Monte', 1),
+(423, 'Lampa', 1),
+(423, 'Melipilla', 1),
+(423, 'Paine', 1),
+(423, 'Penaflor', 1),
+(423, 'San Bernardo', 1),
+(423, 'Santiago', 1),
+(423, 'Talagante', 1),
 /*<--/Region Metropolitana-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Tarapaca-->*/
---(424, 'Arica', 1),
---(424, 'Iquique', 1),
+(424, 'Arica', 1),
+(424, 'Iquique', 1),
 /*<--/Tarapaca-->*/
-
 /*<--/Chile-->*/
 /*<--/Colombia-->*/
 /*<--/Amazonas-->*/
