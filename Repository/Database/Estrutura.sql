@@ -10213,13 +10213,13 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Coquimbo-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Libertador General Bernardo O´H-->*/
-(419, 'Chimbarongo', 1),
-(419, 'Graneros', 1),
-(419, 'Machali', 1),
-(419, 'Rancagua', 1),
-(419, 'Rengo', 1),
-(419, 'San Vicente', 1),
-(419, 'Santa Cruz', 1),
+(421, 'Chimbarongo', 1),
+(421, 'Graneros', 1),
+(421, 'Machali', 1),
+(421, 'Rancagua', 1),
+(421, 'Rengo', 1),
+(421, 'San Vicente', 1),
+(421, 'Santa Cruz', 1);
 /*<--/Libertador General Bernardo O´H-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Los Lagos-->*/
