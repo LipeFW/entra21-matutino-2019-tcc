@@ -7464,6 +7464,7 @@ INSERT INTO(id,nome,registro_ativo) VALUES
    /*<--Cidades de Zacatecas-->*/
    
 /*<--\México-->*/
+
 INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Antigua & Barbuda-->*/
 /*<--Cidades de Barbuda-->*/
@@ -7498,7 +7499,55 @@ INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Bahamas-->*/
 (Alice Town
 /*<--/Bahamas-->*/
-
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--/Barbados-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Christ Church-->*/
+(123,'Oistins',1);
+/*<--Cidades de Christ Church-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Saint Andrew-->*/
+(124,'Greenlandn',1),
+(124,'Hillaby',1);
+/*<--Cidades de Saint Andrew-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Saint George-->*/
+(125,'Não Há cidades',1);
+/*<--Cidades de Saint George-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Saint James-->*/
+(126,'Holetown',1);
+/*<--Cidades de Saint James-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Saint John-->*/
+(127,'Não Há cidades',1);
+/*<--Cidades de Saint John-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Saint Joseph-->*/
+(128,'Bathsheba',1),
+(128,'Blackmans',1);
+/*<--Cidades de Saint Joseph-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Saint Lucy-->*/
+(129,'Crab Hill',1);
+/*<--Cidades de Saint Lucy-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Saint Michael-->*/
+(130,'Bridgetown',1);
+/*<--Cidades de Saint Michael-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Saint Peter-->*/
+(131,'Speightstown',1);
+/*<--Cidades de Saint Peter-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Saint Philip-->*/
+(132,'Não Há cidades',1);
+/*<--Cidades de Saint Philip-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Saint Thomas-->*/
+(133,'Não Há cidades',1);
+/*<--Cidades de Saint Thomas-->*/
+/*<--/Barbados-->*/
 --==================================================
 --ACREDITO QUE OS IDS ESTÂO ERRADOS DAQUI PARA BAIXO
 --==================================================

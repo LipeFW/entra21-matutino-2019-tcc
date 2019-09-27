@@ -11,7 +11,7 @@
             { "data": "Valor" },
             {
                 render: function (data, type, row) {
-                    return '<button class="btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button><button class="btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>'
+                    return '<button class="fadeIn animated btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button><button class="fadeIn animated btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>'
                 }
             }
         ]
@@ -45,7 +45,7 @@
                     $tabelaProduto.ajax.reload();
                 },
                 error: function (err) {
-                    bootbox.alert("Não foi possivel alterar o produto!");
+                    bootbox.alert("Não foi possivel editar o produto!");
                 }
             });
         }
@@ -63,10 +63,10 @@
                     $("#modal-produto").modal('hide');
                     //limparCampos();
                     $tabelaProduto.ajax.reload();
-                    bootbox.alert("Registro inserido com sucesso!")
+                    bootbox.alert("Produto cadastrado com sucesso!")
                 },
                 error: function (err) {
-                    bootbox.alert('Não foi possivel inserir!');
+                    bootbox.alert('Não foi possivel cadastrar o produto!');
                 }
             });
         }
@@ -78,12 +78,12 @@
             message: "Deseja realmente apagar o registro?",
             buttons: {
                 confirm: {
-                    label: 'Sim',
-                    className: 'btn-success'
+                    label: '<i class="fa fa-check"></i> Sim',
+                    className: 'rubberBand animated btn-success',
                 },
                 cancel: {
-                    label: 'Não',
-                    className: 'btn-danger'
+                    label: '<i class="fa fa-times"></i> Não',
+                    className: 'rubberBand animated btn-outline-danger'
                 }
             },
             callback: function (result) {
@@ -93,11 +93,11 @@
                         method: "get",
                         success: function (data) {
                             $tabelaProduto.ajax.reload();
-                            bootbox.alert("Registro apagado com sucesso");
+                            bootbox.alert("Produto removido com sucesso");
 
                         },
                         error: function (err) {
-                            bootbox.alert('Não foi possível apagar!');
+                            bootbox.alert('Não foi possível remover o produto!');
                         }
                     });
             }
@@ -117,7 +117,7 @@
                 $("#modal-produto").modal("show");
             },
             error: function (err) {
-                bootbox.alert('Não foi possivel carregar!');
+                bootbox.alert('Não foi possivel carregar o produto!');
             }
         })
     });
