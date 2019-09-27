@@ -10146,7 +10146,7 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Valparaiso-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Aisen del General Carlos Ibanez-->*/
-(413, 'Coihaique', 1),
+(415, 'Coihaique', 1),
 /*<--/Aisen del General Carlos Ibanez-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Antofagasta-->*/
