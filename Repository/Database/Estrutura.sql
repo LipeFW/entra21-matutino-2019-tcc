@@ -9357,18 +9357,18 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Rio Grande do Sul-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Rondonia-->*/
-(404, 'Ariquemes', 1),
-(404, 'Cacoal', 1),
-(404, 'Guajara-mirim', 1),
-(404, 'Jaru', 1),
-(404, 'Ji-parana', 1),
-(404, 'Ouro Preto Do Oeste', 1),
-(404, 'Pimenta Bueno', 1),
-(404, 'Porto Velho', 1),
-(404, 'Presidente Medici', 1),
-(404, 'Rodrigues Alves', 1),
-(404, 'Rolim De Moura', 1),
-(404, 'Vilhena', 1);
+(406, 'Ariquemes', 1),
+(406, 'Cacoal', 1),
+(406, 'Guajara-mirim', 1),
+(406, 'Jaru', 1),
+(406, 'Ji-parana', 1),
+(406, 'Ouro Preto Do Oeste', 1),
+(406, 'Pimenta Bueno', 1),
+(406, 'Porto Velho', 1),
+(406, 'Presidente Medici', 1),
+(406, 'Rodrigues Alves', 1),
+(406, 'Rolim De Moura', 1),
+(406, 'Vilhena', 1);
 /*<--/Rondonia-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Roraima-->*/
