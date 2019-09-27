@@ -7611,6 +7611,7 @@ INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 --==================================================
 --ACREDITO QUE OS IDS ESTÂO ERRADOS DAQUI PARA BAIXO
 --==================================================
+<<<<<<< HEAD
 /*<--América do Sul-->*/
 /*<--Argentina-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
@@ -10075,7 +10076,7 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (417, 'San Carlos', 1),
 (417, 'Talcahuano', 1),
 (417, 'Tome', 1),
-(417, 'Yumbel', 1),
+(417, 'Yumbel', 1);
 /*<--/Bio-Bio-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Coquimbo-->*/
@@ -10085,10 +10086,8 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (418, 'Monte Patria', 1),
 (418, 'Ovalle', 1),
 (418, 'Salamanca', 1),
-(418, 'Vicuna', 1),
+(418, 'Vicuna', 1);
 /*<--/Coquimbo-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
-
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Libertador General Bernardo O´H-->*/
 (419, 'Chimbarongo', 1),
@@ -10111,11 +10110,11 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (420, 'Puerto Varas', 1),
 (420, 'Purranque', 1),
 (420, 'Rio Bueno', 1),
-(420, 'Valdivia', 1),
+(420, 'Valdivia', 1);
 /*<--/Los Lagos-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Magallanes y de la Antartica Chi-->*/
-(421, 'Punta Arenas', 1),
+(421, 'Punta Arenas', 1);
 /*<--/Magallanes y de la Antartica Chi-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Maule-->*/
@@ -10129,7 +10128,7 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (422, 'San Clemente', 1),
 (422, 'San Javier', 1),
 (422, 'Talca', 1),
-(422, 'Teno', 1),
+(422, 'Teno', 1);
 /*<--/Maule-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Region Metropolitana-->*/
@@ -10141,14 +10140,154 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (423, 'Penaflor', 1),
 (423, 'San Bernardo', 1),
 (423, 'Santiago', 1),
-(423, 'Talagante', 1),
+(423, 'Talagante', 1);
 /*<--/Region Metropolitana-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Tarapaca-->*/
 (424, 'Arica', 1),
-(424, 'Iquique', 1),
+(424, 'Iquique', 1);
 /*<--/Tarapaca-->*/
 /*<--/Chile-->*/
+/*<--/Colombia-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--/Amazonas-->*/
+(427, 'Leticia', 1),
+(427, 'Puerto Narino', 1);
+/*<--/Amazonas-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--/Antioquia-->*/
+(428, 'Abejorral', 1),
+(428, 'Abriaqui', 1),
+(428, 'Alejandria', 1),
+(428, 'Amaga', 1),
+(428, 'Amalfi', 1),
+(428, 'Andes', 1),
+(428, 'Angelopolis', 1),
+(428, 'Angostura', 1),
+(428, 'Anori', 1),
+(428, 'Antioquia', 1),
+(428, 'Apartado', 1),
+(428, 'Arboletes', 1),
+(428, 'Argelia', 1),
+(428, 'Armenia', 1),
+(428, 'Barbosa', 1),
+(428, 'Bello', 1),
+(428, 'Belmira', 1),
+(428, 'Betania', 1),
+(428, 'Betulia', 1),
+(428, 'Briceno', 1),
+(428, 'Buritica', 1),
+(428, 'Caceres', 1),
+(428, 'Caicedo', 1),
+(428, 'Caldas', 1),
+(428, 'Campamento', 1),
+(428, 'Canasgordas', 1),
+(428, 'Caracoli', 1),
+(428, 'Caramanta', 1),
+(428, 'Carepa', 1),
+(428, 'Carmen De Viboral', 1),
+(428, 'Carolina', 1),
+(428, 'Caucasia', 1),
+(428, 'Chigorodo', 1),
+(428, 'Cisneros', 1),
+(428, 'Cocorna', 1),
+(428, 'Concepcion', 1),
+(428, 'Concordia', 1),
+(428, 'Copacabana', 1),
+(428, 'Dabeiba', 1),
+(428, 'Don Matias', 1),
+(428, 'Ebejico', 1),
+(428, 'El Bagre', 1),
+(428, 'Entrerrios', 1),
+(428, 'Envigado', 1),
+(428, 'Fredonia', 1),
+(428, 'Frontino', 1),
+(428, 'Giraldo', 1),
+(428, 'Gomez Plata', 1),
+(428, 'Granada', 1),
+(428, 'Guadalupe', 1),
+(428, 'Guarne', 1),
+(428, 'Guatape', 1),
+(428, 'Heliconia', 1),
+(428, 'Hispania', 1),
+(428, 'Itagui', 1),
+(428, 'Ituango', 1),
+(428, 'Jardin', 1),
+(428, 'Jerico', 1),
+(428, 'La Ceja', 1),
+(428, 'La Estrella', 1),
+(428, 'La Pintada', 1),
+(428, 'La Union', 1),
+(428, 'Liborina', 1),
+(428, 'Maceo', 1),
+(428, 'Marinilla', 1),
+(428, 'Medellin', 1),
+(428, 'Montebello', 1),
+(428, 'Murindo', 1),
+(428, 'Mutata', 1),
+(428, 'Narino', 1),
+(428, 'Nechi', 1),
+(428, 'Necocli', 1),
+(428, 'Olaya', 1),
+(428, 'Peque', 1),
+(428, 'Pueblorrico', 1),
+(428, 'Puerto Berrio', 1),
+(428, 'Puerto Triunfo', 1),
+(428, 'Remedios', 1),
+(428, 'Retiro', 1),
+(428, 'Rionegro', 1),
+(428, 'Sabanalarga', 1),
+(428, 'Sabaneta', 1),
+(428, 'Salgar', 1),
+(428, 'San Andres', 1),
+(428, 'San Carlos', 1),
+(428, 'San Francisco', 1),
+(428, 'San Jeronimo', 1),
+(428, 'San Juan De Uraba', 1),
+(428, 'San Luis', 1),
+(428, 'San Pedro', 1),
+(428, 'San Pedro De Uraba', 1),
+(428, 'San Rafael', 1),
+(428, 'San Roque', 1),
+(428, 'San Vicente', 1),
+(428, 'Santa Barbara', 1),
+(428, 'Santa Rosa De Osos', 1),
+(428, 'Santo Domingo', 1),
+(428, 'Santuario', 1),
+(428, 'Segovia', 1),
+(428, 'Sonson', 1),
+(428, 'Sopetran', 1),
+(428, 'Tamesis', 1),
+(428, 'Taraza', 1),
+(428, 'Tarso', 1),
+(428, 'Titiribi', 1),
+(428, 'Toledo', 1),
+(428, 'Turbo', 1),
+(428, 'Uramita', 1),
+(428, 'Urrao', 1),
+(428, 'Valdivia', 1),
+(428, 'Valparaiso', 1),
+(428, 'Vegachi', 1),
+(428, 'Venecia', 1),
+(428, 'Vigia Del Fuerte', 1),
+(428, 'Yali', 1),
+(428, 'Yarumal', 1),
+(428, 'Yolombo', 1),
+(428, 'Yondo', 1),
+(428, 'Zaragoza', 1);
+/*<--/Antioquia-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--/Arauca-->*/
+(429, 'Arauca', 1),
+(429, 'Arauquita', 1),
+(429, 'Cravo Norte', 1),
+(429, 'Fortul', 1),
+(429, 'Puerto Rondon', 1),
+(429, 'Saravena', 1),
+(429, 'Tame', 1);
+/*<--/Arauca-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--/Colombia-->*/
 /*<--/América do Sul-->*/
 CREATE TABLE usuarios( 
 id INT PRIMARY KEY IDENTITY(1,1),
