@@ -10150,10 +10150,10 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Aisen del General Carlos Ibanez-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Antofagasta-->*/
-(414, 'Antofagasta', 1),
-(414, 'Calama', 1),
-(414, 'Taltal', 1),
-(414, 'Tocopilla', 1),
+(416, 'Antofagasta', 1),
+(416, 'Calama', 1),
+(416, 'Taltal', 1),
+(416, 'Tocopilla', 1),
 /*<--/Antofagasta-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Araucania-->*/
