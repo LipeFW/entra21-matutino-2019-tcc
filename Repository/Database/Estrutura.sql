@@ -10173,9 +10173,9 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Araucania-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Atacama-->*/
-(416, 'Copiapo', 1),
-(416, 'Diego De Almagro', 1),
-(416, 'Vallenar', 1),
+(418, 'Copiapo', 1),
+(418, 'Diego De Almagro', 1),
+(418, 'Vallenar', 1),
 /*<--/Atacama-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Bio-Bio-->*/
