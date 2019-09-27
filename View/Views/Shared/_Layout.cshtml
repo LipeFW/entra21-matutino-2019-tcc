@@ -25,7 +25,7 @@
     <link href="~/Content/theme/assets/css/layout.min.css" rel="stylesheet" type="text/css">
     <link href="~/Content/theme/assets/css/components.min.css" rel="stylesheet" type="text/css">
     <link href="~/Content/theme/assets/css/colors.min.css" rel="stylesheet" type="text/css">
-    @*<link href="~/Content/css/select2.min.css" rel="stylesheet" type="text/css">*@
+    <!-- <link href="~/Content/css/select2.min.css" rel="stylesheet" type="text/css"> -->
     <link href="~/Content/css/replaces.css" rel="stylesheet" type="text/css">
     <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet" />
     <!-- /global stylesheets -->
@@ -131,7 +131,16 @@
 
                 <li class="nav-item dropdown dropdown-user">
                     <a href="" class="navbar-nav-link d-flex align-items-center dropdown-toggle" data-toggle="dropdown">
+                       
+                        @if (@usuario.UrlImagem == "")
+                        {
+                        <img id="imagemUsuario" src="~/Content/image/avatar.png" class="rounded-circle mr-2" height="34" width="34" alt="">
+                        }
+                        else 
+                        {
                         <img id="imagemUsuario" src="~/Content/uploads/@usuario.UrlImagem" class="rounded-circle mr-2" height="34" width="34" alt="">
+                        }
+
                         <span>@usuario.NomeCompleto</span>
                     </a>
 
@@ -174,7 +183,15 @@
                     <div class="card-body">
                         <div class="media">
                             <div class="mr-3">
-                                <a href="/usuario/perfil"><img id="imagemUsuario2" src="~/Content/uploads/@usuario.UrlImagem" width="38" height="38" class="rounded-circle" alt=""></a>
+                        @if (@usuario.UrlImagem == "")
+                        {
+ <a href="/usuario/perfil"><img id="imagemUsuario2" src="~/Content/image/avatar.png" width="38" height="38" class="rounded-circle" alt=""></a>
+                        }
+                        else 
+                        {
+ <a href="/usuario/perfil"><img id="imagemUsuario2" src="~/Content/uploads/@usuario.UrlImagem" width="38" height="38" class="rounded-circle" alt=""></a>
+                        }
+                               
                             </div>
 
                             <div class="media-body">
