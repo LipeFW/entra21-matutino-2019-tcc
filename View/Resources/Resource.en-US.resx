@@ -593,4 +593,12 @@
     <value>Select a model</value>
     <comment>checked</comment>
   </data>
+  <data name="Nosbuscamos" xml:space="preserve">
+    <value>We seek to help people by facilitating their lives always with ideas that are beyond financial gains,
+Because money can end but the satisfaction and pride of a good job that really helps,
+It never ends, and every achievement arises more motivation to not give up and always keep working.</value>
+  </data>
+  <data name="Visao" xml:space="preserve">
+    <value>Vision</value>
+  </data>
 </root>
