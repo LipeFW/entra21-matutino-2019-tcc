@@ -9372,8 +9372,8 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Rondonia-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Roraima-->*/
-(405, 'Boa Vista', 1),
-(405, 'Bonfim', 1);
+(407, 'Boa Vista', 1),
+(407, 'Bonfim', 1);
 /*<--/Roraima-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Santa Catarina-->*/
