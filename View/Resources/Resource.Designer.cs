@@ -702,6 +702,15 @@ namespace View.Resources {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a string.
         /// </summary>
+        public static string Nosbuscamos {
+            get {
+                return ResourceManager.GetString("Nosbuscamos", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
         public static string NossoSoftware {
             get {
                 return ResourceManager.GetString("NossoSoftware", resourceCulture);
@@ -1281,6 +1290,15 @@ namespace View.Resources {
         public static string Vindo {
             get {
                 return ResourceManager.GetString("Vindo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
+        public static string Visao {
+            get {
+                return ResourceManager.GetString("Visao", resourceCulture);
             }
         }
     }

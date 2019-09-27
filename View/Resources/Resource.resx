@@ -572,4 +572,10 @@
   <data name="Selecione" xml:space="preserve">
     <value>string</value>
   </data>
+  <data name="Nosbuscamos" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Visao" xml:space="preserve">
+    <value>string</value>
+  </data>
 </root>
