@@ -10157,19 +10157,19 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Antofagasta-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Araucania-->*/
-(415, 'Angol', 1),
-(415, 'Carahue', 1),
-(415, 'Collipulli', 1),
-(415, 'Freire', 1),
-(415, 'Lautaro', 1),
-(415, 'Loncoche', 1),
-(415, 'Nueva Imperial', 1),
-(415, 'Pitrufquen', 1),
-(415, 'Temuco', 1),
-(415, 'Traiguen', 1),
-(415, 'Victoria', 1),
-(415, 'Vilcun', 1),
-(415, 'Villarrica', 1),
+(417, 'Angol', 1),
+(417, 'Carahue', 1),
+(417, 'Collipulli', 1),
+(417, 'Freire', 1),
+(417, 'Lautaro', 1),
+(417, 'Loncoche', 1),
+(417, 'Nueva Imperial', 1),
+(417, 'Pitrufquen', 1),
+(417, 'Temuco', 1),
+(417, 'Traiguen', 1),
+(417, 'Victoria', 1),
+(417, 'Vilcun', 1),
+(417, 'Villarrica', 1),
 /*<--/Araucania-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Atacama-->*/
