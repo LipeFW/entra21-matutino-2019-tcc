@@ -634,4 +634,12 @@ transportista o acciones en general, y al mismo tiempo registrar una venta y tod
     <value>Selecciona un Modelo</value>
     <comment>checked</comment>
   </data>
+  <data name="Nosbuscamos" xml:space="preserve">
+    <value>Buscamos ayudar a las personas facilitando sus vidas siempre con ideas que están más allá de las ganancias financieras,
+Porque el dinero puede terminar pero la satisfacción y el orgullo de un buen trabajo que realmente ayuda,
+Nunca termina, y cada logro surge más motivación para no rendirse y siempre seguir trabajando.</value>
+  </data>
+  <data name="Visao" xml:space="preserve">
+    <value>Visión</value>
+  </data>
 </root>
