@@ -13,7 +13,7 @@
             { 'data': 'Vendedor.Nome' },
             {
                 render: function (data, type, row) {
-                    return '<button class="btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button>\<button class="btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>';
+                    return '<button class="fadeIn animated btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button>\<button class="fadeIn animated btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>';
                 }
             }
         ]
@@ -59,7 +59,9 @@
                 $tabelaCliente.ajax.reload();
             },
             error: function (err) {
-                bootbox.alert('Não foi possivel alterar!');
+                bootbox.alert('Não foi possivel editar o cliente!');
+                limparCampos();
+                $idAlterar = -1;
             }
         })
     }
@@ -78,7 +80,7 @@
             success: function (data) {
                 $('#modal-cliente').modal('hide');
                 limparCampos();
-                bootbox.alert('Registro inserido com sucesso!');
+                bootbox.alert('Cliente cadastrado com sucesso!');
                 $tabelaCliente.ajax.reload();
             },
             error: function (err) {
@@ -90,15 +92,15 @@
     $("#cliente-tabela").on("click", ".botao-apagar", function () {
         $idApagar = $(this).data("id");
         bootbox.confirm({
-            message: "Deseja realmente apagar o registro?",
+            message: "Deseja realmente remover o cliente?",
             buttons: {
                 confirm: {
-                    label: 'Sim',
-                    className: 'btn-success'
+                    label: '<i class="fa fa-check"></i> Sim',
+                    className: 'rubberBand animated btn-success',
                 },
                 cancel: {
-                    label: 'Não',
-                    className: 'btn-danger'
+                    label: '<i class="fa fa-times"></i> Não',
+                    className: 'rubberBand animated btn-outline-danger'
                 }
             },
             callback: function (result) {
@@ -108,11 +110,11 @@
                         method: "get",
                         success: function (data) {
                             $tabelaCliente.ajax.reload();
-                            bootbox.alert("Registro apagado com sucesso!");
+                            bootbox.alert("Cliente removido com sucesso!");
 
                         },
                         error: function (err) {
-                            bootbox.alert('Não foi possível apagar!');
+                            bootbox.alert('Não foi possível remover o cliente!');
                         }
                     });
             }
@@ -134,7 +136,7 @@
                 $('#modal-cliente').modal('show');
             },
             error: function (err) {
-                bootbox.alert('Não foi possivel carregar!');
+                bootbox.alert('Não foi possivel carregar o cliente!');
             }
         });
     });

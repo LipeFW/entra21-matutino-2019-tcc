@@ -45,7 +45,10 @@
                 $tabelaMarca.ajax.reload();
             },
             error: function (err) {
-                bootbox.alert('Não foi possivel alterar!');
+                bootbox.alert('Não foi possivel editar a marca!');
+                limparCampos();
+                $idAlterar = -1;
+
             }
         });
     }
@@ -61,10 +64,10 @@
                 $('#modal-marca').modal('hide');
                 limparCampos();
                 $tabelaMarca.ajax.reload();
-                bootbox.alert('Registro inserido com sucesso!');
+                bootbox.alert('Marca cadastrada com sucesso!');
             },
             error: function (err) {
-                bootbox.alert('Não foi possivel inserir!');
+                bootbox.alert('Não foi possivel cadastrar a marca!');
             }
         });
     }
@@ -72,15 +75,15 @@
     $("#marca-tabela").on("click", ".botao-apagar", function () {
         $idApagar = $(this).data("id");
         bootbox.confirm({
-            message: 'Deseja realmente apagar o registro?',
+            message: 'Deseja realmente remover a marca?',
             buttons: {
                 confirm: {
-                    label: 'Sim',
-                    className: 'btn-success'
+                    label: '<i class="fa fa-check"></i> Sim',
+                    className: 'rubberBand animated btn-success',
                 },
                 cancel: {
-                    label: 'Não',
-                    className: 'btn-danger'
+                    label: '<i class="fa fa-times"></i> Não',
+                    className: 'rubberBand animated btn-outline-danger'
                 }
             },
             callback: function (result) {
@@ -90,11 +93,11 @@
                         method: "get",
                         success: function (data) {
                             $tabelaMarca.ajax.reload();
-                            bootbox.alert('Registro apagado com sucesso!');
+                            bootbox.alert('Marca removida com sucesso!');
 
                         },
                         error: function (err) {
-                            bootbox.alert('Não foi possível apagar!');
+                            bootbox.alert('Não foi possível remover a marca!');
                         }
                     });
             }
@@ -113,7 +116,7 @@ $('#marca-tabela').on('click', '.botao-editar', function () {
                 $('#modal-marca').modal('show');
             },
             error: function (err) {
-                alert('Não foi possivel carregar!');
+                alert('Não foi possivel carregar a marca!');
             }
         });
     });
