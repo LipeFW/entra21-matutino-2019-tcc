@@ -10179,27 +10179,27 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Atacama-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Bio-Bio-->*/
-(417, 'Arauco', 1),
-(417, 'Bulnes', 1),
-(417, 'Cabrero', 1),
-(417, 'Canete', 1),
-(417, 'Chiguayante', 1),
-(417, 'Chillan', 1),
-(417, 'Coihueco', 1),
-(417, 'Concepcion', 1),
-(417, 'Coronel', 1),
-(417, 'Curanilahue', 1),
-(417, 'Laja', 1),
-(417, 'Lebu', 1),
-(417, 'Los Angeles', 1),
-(417, 'Lota', 1),
-(417, 'Mulchen', 1),
-(417, 'Nacimiento', 1),
-(417, 'Penco', 1),
-(417, 'San Carlos', 1),
-(417, 'Talcahuano', 1),
-(417, 'Tome', 1),
-(417, 'Yumbel', 1);
+(419, 'Arauco', 1),
+(419, 'Bulnes', 1),
+(419, 'Cabrero', 1),
+(419, 'Canete', 1),
+(419, 'Chiguayante', 1),
+(419, 'Chillan', 1),
+(419, 'Coihueco', 1),
+(419, 'Concepcion', 1),
+(419, 'Coronel', 1),
+(419, 'Curanilahue', 1),
+(419, 'Laja', 1),
+(419, 'Lebu', 1),
+(419, 'Los Angeles', 1),
+(419, 'Lota', 1),
+(419, 'Mulchen', 1),
+(419, 'Nacimiento', 1),
+(419, 'Penco', 1),
+(419, 'San Carlos', 1),
+(419, 'Talcahuano', 1),
+(419, 'Tome', 1),
+(419, 'Yumbel', 1);
 /*<--/Bio-Bio-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Coquimbo-->*/
