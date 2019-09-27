@@ -11,7 +11,7 @@
             { 'data': 'Vendedor.Veiculo.MarcaEModelo' },
             {
                 render: function (data, type, row) {
-                    return '<button class="btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button><button class="btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>';
+                    return '<button class="fadeIn animated btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button><button class="fadeIn animatedbtn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>';
                 }
             }
         ]
@@ -23,7 +23,7 @@
         $veiculo = $('#vendedor-campo-veiculo').val();
 
         if (($nome.trim() == "")) {
-            alert("Preencha corretamente os campos");
+            alert("Preencha corretamente os campos!");
             return null;
         }
         if ($idAlterar == -1) {
@@ -49,10 +49,12 @@
                 limparCampos();
                 $idAlterar = -1;
                 $tabelaVendedor.ajax.reload();
-                alert("Registro alterado com sucesso");
+                alert("Vendedor editado com sucesso!");
             },
             error: function (err) {
-                alert("Não foi possivel alterar");
+                alert("Não foi possivel editar o vendedor!");
+                limparCampos();
+                $idAlterar = -1;
             }
         });
     }
@@ -70,10 +72,10 @@
                 $('#modal-vendedor').modal('hide');
                 limparCampos();
                 $tabelaVendedor.ajax.reload();
-                alert("Registro inserido com sucesso");
+                alert("Vendedor cadastrado com sucesso!");
             },
             error: function (err) {
-                alert("Não foi possivel inserir");
+                alert("Não foi possivel cadastrar o vendedor!");
             }
         });
     }
@@ -81,15 +83,15 @@
     $("#vendedor-tabela").on("click", ".botao-apagar", function () {
         $idApagar = $(this).data("id");
         bootbox.confirm({
-            message: "Deseja realmente apagar o registro?",
+            message: "Deseja realmente remover o vendedor?",
             buttons: {
                 confirm: {
-                    label: 'Sim',
-                    className: 'btn-success'
+                    label: '<i class="fa fa-check"></i> Sim',
+                    className: 'rubberBand animated btn-success',
                 },
                 cancel: {
-                    label: 'Não',
-                    className: 'btn-danger'
+                    label: '<i class="fa fa-times"></i> Não',
+                    className: 'rubberBand animated btn-outline-danger'
                 }
             },
             callback: function (result) {
@@ -99,11 +101,11 @@
                         method: "get",
                         success: function (data) {
                             $tabelaVendedor.ajax.reload();
-                            bootbox.alert("Registro apagado com sucesso");
+                            bootbox.alert("Vendedor removido com sucesso!");
 
                         },
                         error: function (err) {
-                            bootbox.alert('Não foi possível apagar');
+                            bootbox.alert('Não foi possível remover o vendedor!');
                         }
                     });
             }
@@ -123,7 +125,7 @@
                 $('#modal-vendedor').modal('show');
             },
             error: function (err) {
-                alert("Não foi possivel carregar");
+                alert("Não foi possivel carregar o vendedor!");
             }
         });
     });

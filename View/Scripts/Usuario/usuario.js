@@ -21,7 +21,7 @@
         $senha = $("#usuario-campo-senha").val();
 
         if (($nome.trim() == "") || ($senha == "")) {
-            bootbox.alert("Preencha corretamente os campos");
+            bootbox.alert("Preencha corretamente os campos!");
             return null;
         }
 
@@ -48,7 +48,9 @@
                     $tabelaUsuario.ajax.reload();
                 },
                 error: function (err) {
-                    bootbox.alert("Não foi possível alterar");
+                    bootbox.alert("Não foi possível editar o usuário.");
+                    limparCampos();
+                    $idAlterar = -1;
                 }
             });
         }
@@ -65,10 +67,10 @@
                     $("#modal-usuario").modal('hide');
                     limparCampos();
                     $tabelaUsuario.ajax.reload();
-                    bootbox.alert("Registro inserido com sucesso");
+                    bootbox.alert("Usuário cadastrado com sucesso!");
                 },
                 error: function (err) {
-                    bootbox.alert("Não foi possível inserir")
+                    bootbox.alert("Não foi possível cadastrar o usuário!")
                 }
             });
         }
@@ -78,7 +80,7 @@
         $idApagar = $(this).data("id");
         bootbox.confirm({
             title: 'Aviso',
-            message: "Deseja realmente apagar o registro?",
+            message: "Deseja realmente remover o usuário?",
             backdrop: true,
             buttons: {
                 confirm: {
@@ -99,12 +101,12 @@
                             $tabelaUsuario.ajax.reload();
                             bootbox.alert({
                                 title: "Aviso",
-                                message:"Registro apagado com sucesso",
+                                message:"Usuário removido com sucesso",
                             })
 
                         },
                         error: function (err) {
-                            bootbox.alert('Não foi possível apagar');
+                            bootbox.alert('Não foi possível remover o usuário');
                         }
                     });
             }
@@ -124,7 +126,7 @@
 
             },
             error: function (err) {
-                bootbox.alert("Não Foi Possível Carregar");
+                bootbox.alert("Não foi possível carregar o usuário!");
             }
         });
     });

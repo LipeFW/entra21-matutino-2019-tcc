@@ -262,3 +262,5 @@ __pycache__/
 /View/Scripts
 View/App_Data/Database.mdf
 View/App_Data/Database_log.ldf
+View/App_Data/Database.mdf
+View/App_Data/Database_log.ldf

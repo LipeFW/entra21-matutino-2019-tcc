@@ -10,7 +10,7 @@
             { 'data': 'Vendedor.Nome' },
             {
                 render: function (data, type, row) {
-                    return '<button class="btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button>\<button class="btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>';
+                    return '<button class="fadeIn animated btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button>\<button class="fadeIn animated btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>';
                 }
             }
         ]
@@ -43,7 +43,7 @@
                 $tabelaRota.ajax.reload();
             },
             error: function (err) {
-                bootbox.alert('Não foi possivel alterar!');
+                bootbox.alert('Não foi possivel editar a rota!');
             }
         });
     }
@@ -59,11 +59,11 @@
             success: function (data) {
                 $("#modal-rota").modal('hide');
                 limparCampos();
-                alert('Registro inserido com sucesso!');
+                alert('Rota cadastrada com sucesso!');
                 $tabelaRota.ajax.reload();
             },
             error: function (err) {
-                bootbox.alert('Não foi possivel inserir!');
+                bootbox.alert('Não foi possivel cadastrar a rota!');
             }
         });
     }
@@ -71,15 +71,15 @@
     $("#rota-tabela").on("click", ".botao-apagar", function () {
         $idApagar = $(this).data("id");
         bootbox.confirm({
-            message: "Deseja realmente apagar o registro?",
+            message: "Deseja realmente remover a rota?",
             buttons: {
                 confirm: {
-                    label: 'Sim',
-                    className: 'btn-success'
+                    label: '<i class="fa fa-check"></i> Sim',
+                    className: 'rubberBand animated btn-success',
                 },
                 cancel: {
-                    label: 'Não',
-                    className: 'btn-danger'
+                    label: '<i class="fa fa-times"></i> Não',
+                    className: 'rubberBand animated btn-outline-danger'
                 }
             },
             callback: function (result) {
@@ -89,11 +89,11 @@
                         method: "get",
                         success: function (data) {
                             $tabelaRota.ajax.reload();
-                            bootbox.alert("Registro apagado com sucesso!");
+                            bootbox.alert("Rota removida com sucesso!");
 
                         },
                         error: function (err) {
-                            bootbox.alert('Não foi possível apagar!');
+                            bootbox.alert('Não foi possíel remover a rota!');
                         }
                     });
             }
@@ -112,7 +112,7 @@
                 $('#modal-rota').modal('show');
             },
             error: function (err) {
-                bootbox.alert('Não foi possivel carregar!')
+                bootbox.alert('Não foi possivel carregar a rota!')
             }
         });
     });
