@@ -52,7 +52,7 @@
                     $tabelaVeiculo.ajax.reload();
                 },
                 error: function (err) {
-                    alert('Não foi possivel alterar');
+                    alert('Não foi possivel editar a venda!');
                 }
             });
         }
@@ -72,10 +72,10 @@
                     $('#modal-veiculo').modal('hide');
                     limparCampos();
                     $tabelaVeiculo.ajax.reload();
-                    alert('Registro inserido com Sucesso');
+                    alert('Venda cadastrada com sucesso!');
                 },
                 error: function (err) {
-                    alert('Não foi possivel inserir');
+                    alert('Não foi possivel cadastrar a venda!');
                 }
             });
         }
@@ -85,15 +85,15 @@
         $idApagar = $(this).data('id');
 
         bootbox.confirm({
-            message: "Deseja realmente apagar o registro?",
+            message: "Deseja realmente remover a venda?",
             buttons: {
                 confirm: {
-                    label: 'Sim',
-                    className: 'btn-success'
+                    label: '<i class="fa fa-check"></i> Sim',
+                    className: 'rubberBand animated btn-success',
                 },
                 cancel: {
-                    label: 'Não',
-                    className: 'btn-danger'
+                    label: '<i class="fa fa-times"></i> Não',
+                    className: 'rubberBand animated btn-outline-danger'
                 }
             },
             callback: function (result) {
@@ -103,10 +103,10 @@
                         method: 'get',
                         success: function (data) {
                             $tabelaVeiculo.ajax.reload();
-                            bootbox.alert("Registro Apagado Com Sucesso");
+                            bootbox.alert("Venda removida com sucesso!");
                         },
                         error: function (err) {
-                            bootbox.alert('Não foi possivel apagar');
+                            bootbox.alert('Não foi possivel remover a venda!');
                         }
                     });
                 }
@@ -129,7 +129,7 @@
                 $("#modal-veiculo").modal("show");
             },
             error: function (err) {
-                alert('Não foi possivel carregar');
+                alert('Não foi possivel carregar a venda!');
             }
         });
     });

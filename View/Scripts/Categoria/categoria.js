@@ -47,7 +47,8 @@
                 $tabelaCategoria.ajax.reload();
             },
             error: function (err) {
-                bootbox.alert('Não foi possivel alterar!');
+                bootbox.alert('Não foi possivel editar a categoria.');
+                $idAlterar = -1;
             }
         });
     }
@@ -63,10 +64,10 @@
                 $('#modal-categoria').modal('hide');
                 limparCampos();
                 $tabelaCategoria.ajax.reload();
-                bootbox.alert("Registro inserido com sucesso!")
+                bootbox.alert("Categoria cadastrada com sucesso!")
             },
             error: function (err) {
-                bootbox.alert('Não foi possivel inserir!');
+                bootbox.alert('Não foi possível cadastrar a categoria.');
             }
         });
     }
@@ -75,7 +76,7 @@
         $idApagar = $(this).data("id");
         bootbox.confirm({
             title: 'Aviso',
-            message: "Deseja realmente apagar o registro?",
+            message: "Deseja realmente remover a categoria?",
             className: 'bounceInDown animated',
             buttons: {
                 confirm: {
@@ -94,11 +95,11 @@
                         method: "get",
                         success: function (data) {
                             $tabelaCategoria.ajax.reload();
-                            bootbox.alert('Registro apagado com sucesso!');
+                            bootbox.alert('Categoria removida com sucesso!');
 
                         },
                         error: function (err) {
-                            bootbox.alert('Não foi possível apagar!');
+                            bootbox.alert('Não foi possível remover a categoria!');
                         }
                     });
             }
@@ -115,7 +116,7 @@
                 $('#modal-categoria').modal('show');
             },
             error: function (err) {
-                bootbox.alert('Não foi possivel carregar');
+                bootbox.alert('Não foi possivel carregar a categoria.');
             }
         })
     });
