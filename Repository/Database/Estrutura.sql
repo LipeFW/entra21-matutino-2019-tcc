@@ -7430,6 +7430,7 @@ INSERT INTO(id,nome,registro_ativo) VALUES
    /*<--Cidades de Zacatecas-->*/
    
 /*<--\México-->*/
+
 INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Antigua & Barbuda-->*/
 /*<--Cidades de Barbuda-->*/
@@ -7464,7 +7465,55 @@ INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Bahamas-->*/
 (Alice Town
 /*<--/Bahamas-->*/
-
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--/Barbados-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Christ Church-->*/
+(123,'Oistins',1);
+/*<--Cidades de Christ Church-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Saint Andrew-->*/
+(124,'Greenlandn',1),
+(124,'Hillaby',1);
+/*<--Cidades de Saint Andrew-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Saint George-->*/
+(125,'Não Há cidades',1);
+/*<--Cidades de Saint George-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Saint James-->*/
+(126,'Holetown',1);
+/*<--Cidades de Saint James-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Saint John-->*/
+(127,'Não Há cidades',1);
+/*<--Cidades de Saint John-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Saint Joseph-->*/
+(128,'Bathsheba',1),
+(128,'Blackmans',1);
+/*<--Cidades de Saint Joseph-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Saint Lucy-->*/
+(129,'Crab Hill',1);
+/*<--Cidades de Saint Lucy-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Saint Michael-->*/
+(130,'Bridgetown',1);
+/*<--Cidades de Saint Michael-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Saint Peter-->*/
+(131,'Speightstown',1);
+/*<--Cidades de Saint Peter-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Saint Philip-->*/
+(132,'Não Há cidades',1);
+/*<--Cidades de Saint Philip-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Saint Thomas-->*/
+(133,'Não Há cidades',1);
+/*<--Cidades de Saint Thomas-->*/
+/*<--/Barbados-->*/
 --==================================================
 --ACREDITO QUE OS IDS ESTÂO ERRADOS DAQUI PARA BAIXO
 --==================================================
@@ -9804,134 +9853,134 @@ INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 --/*<--/Brasil-->*/
 --/*<--/Chile-->*/
 --/*<--/Valparaiso-->*/
---(412, 'Cabildo' , 1),
---(412, 'Calera' , 1),
---(412, 'Calera' , 1),
---(412, 'La Ligua' , 1),
---(412, 'Limache' , 1),
---(412, 'Llaillay' , 1),
---(412, 'Los Andes' , 1),
---(412, 'Quillota' , 1),
---(412, 'Quilpue' , 1),
---(412, 'San Antonio' , 1),
---(412, 'San Felipe' , 1),
---(412, 'Valparaiso' , 1),
---(412, 'Villa Alemana' , 1),
---(412, 'Vina Del Mar' , 1),
+--(411, 'Cabildo' , 1),
+--(411, 'Calera' , 1),
+--(411, 'Calera' , 1),
+--(411, 'La Ligua' , 1),
+--(411, 'Limache' , 1),
+--(411, 'Llaillay' , 1),
+--(411, 'Los Andes' , 1),
+--(411, 'Quillota' , 1),
+--(411, 'Quilpue' , 1),
+--(411, 'San Antonio' , 1),
+--(411, 'San Felipe' , 1),
+--(411, 'Valparaiso' , 1),
+--(411, 'Villa Alemana' , 1),
+--(411, 'Vina Del Mar' , 1),
 --/*<--/Valparaiso-->*/
 --/*<--/Aisen del General Carlos Ibanez-->*/
---(413, 'Coihaique', 1),
+--(412, 'Coihaique', 1),
 --/*<--/Aisen del General Carlos Ibanez-->*/
 --/*<--/Antofagasta-->*/
---(414, 'Antofagasta', 1),
---(414, 'Calama', 1),
---(414, 'Taltal', 1),
---(414, 'Tocopilla', 1),
+--(413, 'Antofagasta', 1),
+--(413, 'Calama', 1),
+--(413, 'Taltal', 1),
+--(413, 'Tocopilla', 1),
 --/*<--/Antofagasta-->*/
 --/*<--/Araucania-->*/
---(415, 'Angol', 1),
---(415, 'Carahue', 1),
---(415, 'Collipulli', 1),
---(415, 'Freire', 1),
---(415, 'Lautaro', 1),
---(415, 'Loncoche', 1),
---(415, 'Nueva Imperial', 1),
---(415, 'Pitrufquen', 1),
---(415, 'Temuco', 1),
---(415, 'Traiguen', 1),
---(415, 'Victoria', 1),
---(415, 'Vilcun', 1),
---(415, 'Villarrica', 1),
+--(414, 'Angol', 1),
+--(414, 'Carahue', 1),
+--(414, 'Collipulli', 1),
+--(414, 'Freire', 1),
+--(414, 'Lautaro', 1),
+--(414, 'Loncoche', 1),
+--(414, 'Nueva Imperial', 1),
+--(414, 'Pitrufquen', 1),
+--(414, 'Temuco', 1),
+--(414, 'Traiguen', 1),
+--(414, 'Victoria', 1),
+--(414, 'Vilcun', 1),
+--(414, 'Villarrica', 1),
 --/*<--/Araucania-->*/
 --/*<--/Atacama-->*/
---(416, 'Copiapo', 1),
---(416, 'Diego De Almagro', 1),
---(416, 'Vallenar', 1),
+--(415, 'Copiapo', 1),
+--(415, 'Diego De Almagro', 1),
+--(415, 'Vallenar', 1),
 --/*<--/Atacama-->*/
 --/*<--/Bio-Bio-->*/
---(417, 'Arauco', 1),
---(417, 'Bulnes', 1),
---(417, 'Cabrero', 1),
---(417, 'Canete', 1),
---(417, 'Chiguayante', 1),
---(417, 'Chillan', 1),
---(417, 'Coihueco', 1),
---(417, 'Concepcion', 1),
---(417, 'Coronel', 1),
---(417, 'Curanilahue', 1),
---(417, 'Laja', 1),
---(417, 'Lebu', 1),
---(417, 'Los Angeles', 1),
---(417, 'Lota', 1),
---(417, 'Mulchen', 1),
---(417, 'Nacimiento', 1),
---(417, 'Penco', 1),
---(417, 'San Carlos', 1),
---(417, 'Talcahuano', 1),
---(417, 'Tome', 1),
---(417, 'Yumbel', 1),
+--(416, 'Arauco', 1),
+--(416, 'Bulnes', 1),
+--(416, 'Cabrero', 1),
+--(416, 'Canete', 1),
+--(416, 'Chiguayante', 1),
+--(416, 'Chillan', 1),
+--(416, 'Coihueco', 1),
+--(416, 'Concepcion', 1),
+--(416, 'Coronel', 1),
+--(416, 'Curanilahue', 1),
+--(416, 'Laja', 1),
+--(416, 'Lebu', 1),
+--(416, 'Los Angeles', 1),
+--(416, 'Lota', 1),
+--(416, 'Mulchen', 1),
+--(416, 'Nacimiento', 1),
+--(416, 'Penco', 1),
+--(416, 'San Carlos', 1),
+--(416, 'Talcahuano', 1),
+--(416, 'Tome', 1),
+--(416, 'Yumbel', 1),
 --/*<--/Bio-Bio-->*/
 --/*<--/Coquimbo-->*/
---(418, 'Coquimbo', 1),
---(418, 'Illapel', 1),
---(418, 'La Serena', 1),
---(418, 'Monte Patria', 1),
---(418, 'Ovalle', 1),
---(418, 'Salamanca', 1),
---(418, 'Vicuna', 1),
+--(417, 'Coquimbo', 1),
+--(417, 'Illapel', 1),
+--(417, 'La Serena', 1),
+--(417, 'Monte Patria', 1),
+--(417, 'Ovalle', 1),
+--(417, 'Salamanca', 1),
+--(417, 'Vicuna', 1),
 --/*<--/Coquimbo-->*/
 --/*<--/Libertador General Bernardo O´H-->*/
---(419, 'Chimbarongo', 1),
---(419, 'Graneros', 1),
---(419, 'Machali', 1),
---(419, 'Rancagua', 1),
---(419, 'Rengo', 1),
---(419, 'San Vicente', 1),
---(419, 'Santa Cruz', 1),
+--(418, 'Chimbarongo', 1),
+--(418, 'Graneros', 1),
+--(418, 'Machali', 1),
+--(418, 'Rancagua', 1),
+--(418, 'Rengo', 1),
+--(418, 'San Vicente', 1),
+--(418, 'Santa Cruz', 1),
 /*<--/Libertador General Bernardo O´H-->*/
 /*<--/Los Lagos-->*/
---(420, 'Ancud', 1),
---(420, 'Calbuco', 1),
---(420, 'Castro', 1),
---(420, 'La Union', 1),
---(420, 'Osorno', 1),
---(420, 'Panguipulli', 1),
---(420, 'Puerto Montt', 1),
---(420, 'Puerto Varas', 1),
---(420, 'Purranque', 1),
---(420, 'Rio Bueno', 1),
---(420, 'Valdivia', 1),
+--(419, 'Ancud', 1),
+--(419, 'Calbuco', 1),
+--(419, 'Castro', 1),
+--(419, 'La Union', 1),
+--(419, 'Osorno', 1),
+--(419, 'Panguipulli', 1),
+--(419, 'Puerto Montt', 1),
+--(419, 'Puerto Varas', 1),
+--(419, 'Purranque', 1),
+--(419, 'Rio Bueno', 1),
+--(419, 'Valdivia', 1),
 /*<--/Los Lagos-->*/
 /*<--/Magallanes y de la Antartica Chi-->*/
---(421, 'Punta Arenas', 1),
+--(420, 'Punta Arenas', 1),
 /*<--/Magallanes y de la Antartica Chi-->*/
 /*<--/Maule-->*/
---(422, 'Cauquenes', 1),
---(422, 'Constitucion', 1),
---(422, 'Curico', 1),
---(422, 'Linares', 1),
---(422, 'Longavi', 1),
---(422, 'Molina', 1),
---(422, 'Parral', 1),
---(422, 'San Clemente', 1),
---(422, 'San Javier', 1),
---(422, 'Talca', 1),
---(422, 'Teno', 1),
+--(421, 'Cauquenes', 1),
+--(421, 'Constitucion', 1),
+--(421, 'Curico', 1),
+--(421, 'Linares', 1),
+--(421, 'Longavi', 1),
+--(421, 'Molina', 1),
+--(421, 'Parral', 1),
+--(421, 'San Clemente', 1),
+--(421, 'San Javier', 1),
+--(421, 'Talca', 1),
+--(421, 'Teno', 1),
 /*<--/Maule-->*/
 /*<--/Region Metropolitana-->*/
---(423, 'Buin', 1),
---(423, 'El Monte', 1),
---(423, 'Lampa', 1),
---(423, 'Melipilla', 1),
---(423, 'Paine', 1),
---(423, 'Penaflor', 1),
---(423, 'San Bernardo', 1),
---(423, 'Santiago', 1),
---(423, 'Talagante', 1),
+--(422, 'Buin', 1),
+--(422, 'El Monte', 1),
+--(422, 'Lampa', 1),
+--(422, 'Melipilla', 1),
+--(422, 'Paine', 1),
+--(422, 'Penaflor', 1),
+--(422, 'San Bernardo', 1),
+--(422, 'Santiago', 1),
+--(422, 'Talagante', 1),
 /*<--/Region Metropolitana-->*/
 /*<--/Tarapaca-->*/
---(424, 'Arica', 1),
---(424, 'Iquique', 1),
+--(423, 'Arica', 1),
+--(423, 'Iquique', 1),
 /*<--/Tarapaca-->*/
 /*<--/Chile-->*/
 /*<--/América do Sul-->*/
