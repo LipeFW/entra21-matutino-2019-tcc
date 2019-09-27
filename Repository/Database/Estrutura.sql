@@ -9369,8 +9369,52 @@ INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 --(418, 'Rancagua', 1),
 --(418, 'Rengo', 1),
 --(418, 'San Vicente', 1),
---(418, 'Santa Cruz', 1);
+--(418, 'Santa Cruz', 1),
 /*<--/Libertador General Bernardo O´H-->*/
+/*<--/Los Lagos-->*/
+--(419, 'Ancud', 1),
+--(419, 'Calbuco', 1),
+--(419, 'Castro', 1),
+--(419, 'La Union', 1),
+--(419, 'Osorno', 1),
+--(419, 'Panguipulli', 1),
+--(419, 'Puerto Montt', 1),
+--(419, 'Puerto Varas', 1),
+--(419, 'Purranque', 1),
+--(419, 'Rio Bueno', 1),
+--(419, 'Valdivia', 1),
+/*<--/Los Lagos-->*/
+/*<--/Magallanes y de la Antartica Chi-->*/
+--(420, 'Punta Arenas', 1),
+/*<--/Magallanes y de la Antartica Chi-->*/
+/*<--/Maule-->*/
+--(421, 'Cauquenes', 1),
+--(421, 'Constitucion', 1),
+--(421, 'Curico', 1),
+--(421, 'Linares', 1),
+--(421, 'Longavi', 1),
+--(421, 'Molina', 1),
+--(421, 'Parral', 1),
+--(421, 'San Clemente', 1),
+--(421, 'San Javier', 1),
+--(421, 'Talca', 1),
+--(421, 'Teno', 1),
+/*<--/Maule-->*/
+/*<--/Region Metropolitana-->*/
+--(422, 'Buin', 1),
+--(422, 'El Monte', 1),
+--(422, 'Lampa', 1),
+--(422, 'Melipilla', 1),
+--(422, 'Paine', 1),
+--(422, 'Penaflor', 1),
+--(422, 'San Bernardo', 1),
+--(422, 'Santiago', 1),
+--(422, 'Talagante', 1),
+/*<--/Region Metropolitana-->*/
+/*<--/Tarapaca-->*/
+--(423, 'Arica', 1),
+--(423, 'Iquique', 1),
+/*<--/Tarapaca-->*/
 /*<--/Chile-->*/
 /*<--/América do Sul-->*/
 CREATE TABLE usuarios( 
