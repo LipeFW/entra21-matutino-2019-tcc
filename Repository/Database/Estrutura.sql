@@ -11279,6 +11279,7 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Zamora-Chinchipe-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Sucumbios-->*/
+(479, 'Nueva Loja', 1);
 /*<--/Sucumbios-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Napo-->*/
