@@ -35,35 +35,36 @@
                 data: {
                     id: $idAlterar,
                     nome: $nome,
-                    quantidade: $quantidade,
+                    idCategoria: $categoria,
                     valor: $valor
                 },
                 success: function (data) {
                     $("#modal-produto").modal("hide");
-                    limparCampos();
                     $idAlterar = -1;
                     $tabelaProduto.ajax.reload();
+
                 },
                 error: function (err) {
                     bootbox.alert("Não foi possivel editar o produto!");
+                    $idAlterar = -1;
+
                 }
             });
         }
 
-        function inserir($nome, $categoria,  $quantidade, $valor) {
+        function inserir($nome, $categoria, $valor) {
             $.ajax({
                 url: "http://localhost:51242/Produto/Inserir",
                 method: "post",
                 data: {
                     nome: $nome,
-                    quantidadeProdutos: $quantidade,
+                    idCategoria: $categoria,
                     valorUnitario: $valor
                 },
                 success: function (data) {
                     $("#modal-produto").modal('hide');
-                    //limparCampos();
                     $tabelaProduto.ajax.reload();
-                    bootbox.alert("Produto cadastrado com sucesso!")
+                    bootbox.alert("Produto cadastrado com sucesso!");
                 },
                 error: function (err) {
                     bootbox.alert('Não foi possivel cadastrar o produto!');
@@ -112,7 +113,7 @@
             method: "get",
             success: function (data) {
                 $("#produto-campo-nome").val(data.Nome);
-                $("#produto-campo-quantidade").val(data.Quantidade);
+                $("#produto-campo-categoria").val(data.IdCategoria);
                 $("#produto-campo-valor").val(data.Valor);
                 $("#modal-produto").modal("show");
             },

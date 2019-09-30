@@ -9,7 +9,7 @@ using System.Web.Mvc;
 
 namespace View.Controllers
 {
-    public class HomeController : BaseController
+    public class DashboardController : BaseController
     {
         public ActionResult Change(String lang)
         {

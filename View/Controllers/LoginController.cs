@@ -45,7 +45,7 @@ namespace View.Controllers
             }
 
             Session.Add("Usuario", usuario);
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Index", "Dashboard");
         }
     }
 }

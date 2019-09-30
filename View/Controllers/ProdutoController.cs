@@ -53,7 +53,7 @@ namespace View.Controllers
             return Json(resultado,
               JsonRequestBehavior.AllowGet);
         }
-        
+
         [HttpGet, Route("apagar")]
         public JsonResult Apagar(int id)
         {
@@ -100,6 +100,12 @@ namespace View.Controllers
             }
             var resultado = new { results = produtosSelect2 };
             return Json(resultado, JsonRequestBehavior.AllowGet);
+        }
+
+        [HttpGet]
+        public JsonResult ObterTodosPeloIdInventario(int idInventario)
+        {
+            return Json(new { data = repository.ObterTodosPeloIdInventario(idInventario) }, JsonRequestBehavior.AllowGet);
         }
     }
 }

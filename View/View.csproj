@@ -2699,7 +2699,7 @@
     <Compile Include="Controllers\CidadeController.cs" />
     <Compile Include="Controllers\ClienteController.cs" />
     <Compile Include="Controllers\EstadoController.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\DashboardController.cs" />
     <Compile Include="Controllers\InventarioController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\MarcaController.cs" />
@@ -2755,7 +2755,7 @@
     <Content Include="Views\Veiculo\Index.cshtml" />
     <Content Include="Views\Produto\Index.cshtml" />
     <Content Include="Views\Venda\Index.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Dashboard\Index.cshtml" />
     <Content Include="Scripts\umd\popper.min.js.map" />
     <Content Include="Scripts\umd\popper.js.map" />
     <Content Include="Scripts\umd\popper-utils.min.js.map" />
@@ -2785,6 +2785,8 @@
     <Content Include="Views\Marca\MarcaModal.cshtml" />
     <Content Include="Views\Modelo\Index.cshtml" />
     <Content Include="Views\Modelo\ModeloModal.cshtml" />
+    <Content Include="Views\Venda\Editar.cshtml" />
+    <Content Include="Views\Venda\ProdutoModal.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

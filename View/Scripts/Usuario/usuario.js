@@ -6,6 +6,7 @@
         serverSide: true,
         columns: [
             { "data": "Id" },
+            { "data": "NomeCompleto" },
             { "data": "Nome" },
             { "data": "Senha" },
             {
@@ -18,28 +19,32 @@
 
     $("#usuario-botao-salvar").on("click", function () {
         $nome = $("#usuario-campo-nome").val();
+        $nomeCompleto = $("#usuario-campo-nomecompleto").val();
         $senha = $("#usuario-campo-senha").val();
+        $imagem = $("#usuario-campo-imagem").val();
 
-        if (($nome.trim() == "") || ($senha == "")) {
+        if (($nome.trim() == "") || ($senha == "") || ($nomeCompleto == "")) {
             bootbox.alert("Preencha corretamente os campos!");
             return null;
         }
 
         if ($idAlterar == -1) {
-            inserir($nome.trim(), $senha);
+            inserir($nome.trim(), $senha, $imagem, $nomeCompleto);
 
         } else {
-            alterar($nome.trim(), $senha);
+            alterar($nome.trim(), $senha, $imagem, $nomeCompleto);
         }
 
-        function alterar($nome, $senha) {
+        function alterar($nome, $senha, $imagem, $nomeCompleto) {
             $.ajax({
                 url: "http://localhost:51242/Usuario/update",
                 method: "post",
                 data: {
                     id: $idAlterar,
                     nome: $nome,
+                    nomeCompleto: $nomeCompleto,
                     senha: $senha,
+                    urlImagem: $imagem,
                 },
                 success: function (data) {
                     $("#modal-usuario").modal("hide");
@@ -55,13 +60,15 @@
             });
         }
 
-        function inserir($nome, $senha) {
+        function inserir($nome, $senha, $imagem, $nomeCompleto) {
             $.ajax({
                 url: "http://localhost:51242/Usuario/Inserir",
                 method: "post",
                 data: {
                     nome: $nome,
-                    senha: $senha
+                    nomeCompleto: $nomeCompleto,
+                    senha: $senha,
+                    urlImagem: $imagem
                 },
                 success: function (data) {
                     $("#modal-usuario").modal('hide');
@@ -122,6 +129,8 @@
             success: function (data) {
                 $nome = $("#usuario-campo-nome").val(data.Nome);
                 $senha = $("#usuario-campo-senha").val(data.Senha);
+                $imagem = $("#usuario-campo-imagem").val(data.UrlImagem);
+                $nomeCompleto = $("#usuario-campo-nomecompleto").val(data.NomeCompleto);
                 $("#modal-usuario").modal("show");
 
             },

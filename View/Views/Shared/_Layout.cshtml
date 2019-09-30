@@ -93,7 +93,7 @@
         <div class="collapse navbar-collapse" id="navbar-mobile">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a href="Home/change?lang=en-US" class="navbar-nav-link sidebar-control sidebar-main-toggle d-none d-md-block">
+                    <a href="Dashboard/change?lang=en-US" class="navbar-nav-link sidebar-control sidebar-main-toggle d-none d-md-block">
                         <i class="icon-paragraph-justify3"></i>
                     </a>
                 </li>
@@ -123,16 +123,16 @@
                     </a>
 
                     <div class="dropdown-menu dropdown-menu-right">
-                        <a id="btnPT" href="/Home/Change?lang=pt-BR" class="dropdown-item portuguese"><img src="~/Content/theme/global_assets/images/lang/br.png" class="img-flag" alt=""><span id="ptLang">Português</span></a>
-                        <a id="btnEN" href="/Home/Change?lang=en-US" class="dropdown-item english"><img src="~/Content/theme/global_assets/images/lang/gb.png" class="img-flag" alt=""><span id="enLang">English</span> </a>
-                        <a id="btnES" href="/Home/Change?lang=es-ES" class="dropdown-item spanish"><img src="~/Content/theme/global_assets/images/lang/es.png" class="img-flag" alt=""><span id="eslang">Español</span> </a>
+                        <a id="btnPT" href="/Dashboard/Change?lang=pt-BR" class="dropdown-item portuguese"><img src="~/Content/theme/global_assets/images/lang/br.png" class="img-flag" alt=""><span id="ptLang">Português</span></a>
+                        <a id="btnEN" href="/Dashboard/Change?lang=en-US" class="dropdown-item english"><img src="~/Content/theme/global_assets/images/lang/gb.png" class="img-flag" alt=""><span id="enLang">English</span> </a>
+                        <a id="btnES" href="/Dashboard/Change?lang=es-ES" class="dropdown-item spanish"><img src="~/Content/theme/global_assets/images/lang/es.png" class="img-flag" alt=""><span id="eslang">Español</span> </a>
                     </div>
                 </li>
 
                 <li class="nav-item dropdown dropdown-user">
                     <a href="" class="navbar-nav-link d-flex align-items-center dropdown-toggle" data-toggle="dropdown">
                        
-                        @if (@usuario.UrlImagem == "")
+                        @if (@usuario.UrlImagem == "default")
                         {
                         <img id="imagemUsuario" src="~/Content/image/avatar.png" class="rounded-circle mr-2" height="34" width="34" alt="">
                         }
@@ -183,7 +183,7 @@
                     <div class="card-body">
                         <div class="media">
                             <div class="mr-3">
-                        @if (@usuario.UrlImagem == "")
+                        @if (@usuario.UrlImagem == "default")
                         {
                         <a href="/usuario/perfil"><img id="imagemUsuario2" src="~/Content/image/avatar.png" width="38" height="38" class="rounded-circle" alt=""></a>
                         }
@@ -214,7 +214,7 @@
                         <!-- Main -->
                         <li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">@View.Resources.Resource.Menu</div> <i class="icon-menu" title="Main"></i></li>
                         <li class="nav-item">
-                            <a href="/home/index" class="nav-link"><i class="fas fa-home"></i><span id="inicioText">@View.Resources.Resource.Inicio</span></a>
+                            <a href="/Dashboard/index" class="nav-link"><i class="fas fa-home"></i><span id="inicioText">@View.Resources.Resource.Inicio</span></a>
                         </li>
                         <!-- Usuário -->
                         <li class="nav-item nav-item-submenu">

@@ -26,6 +26,7 @@ namespace Repository.Repositories
             if (usuarioOriginal == null)
                 return false;
 
+            usuarioOriginal.NomeCompleto = usuario.NomeCompleto;
             usuarioOriginal.Nome = usuario.Nome;
             usuarioOriginal.Senha = usuario.Senha;
             int quantidadeAfetada = context.SaveChanges();

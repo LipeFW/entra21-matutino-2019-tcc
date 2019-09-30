@@ -28,6 +28,7 @@ namespace Repository
         public DbSet<Usuario> Usuarios  { get; set; }
         public DbSet<Veiculo> Veiculos { get; set; }
         public DbSet<Inventario> Inventarios { get; set; }
+        public DbSet<InventarioProduto> InventariosProdutos { get; set; }
         public DbSet<Venda> Vendas  { get; set; }
         public DbSet<Vendedor> Vendedores { get; set; }
     }
