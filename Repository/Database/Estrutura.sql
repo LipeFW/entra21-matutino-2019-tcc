@@ -10509,7 +10509,8 @@ VALUES  ( 'lipefw'  , 'Felipe'   , ''  , 1 , 'anaumsei'      , 1),
 	     ( 'eduardo'  , 'Eduardo'  , ''    , 1 , 'RetardoMental' , 1),
 	     ( 'henrique' , 'Henrique' , ''   , 1 , 'pimbinha6000'  , 1),
 	     ( 'pablo'    , 'Pablo'    , ''            , 1 , '1234'          , 1),
-	     ( 'nathan'   , 'Nathan'   , ''     , 1 , '1203'          , 1);
+	     ( 'nathan'   , 'Nathan'   , ''     , 1 , '1203'          , 1),
+	     ( 'josealencar'   , 'José de Alencar'   , ''     , 0 , 'jsale'          , 1);
 
 CREATE TABLE categorias( 
 id INT PRIMARY KEY IDENTITY(1,1),
@@ -10618,16 +10619,26 @@ FOREIGN KEY (id_categoria) REFERENCES categorias(id),
 registro_ativo BIT);
 
 INSERT INTO produtos(id_categoria,nome, valor, registro_ativo)
-VALUES (1,'Toddynho', 1, 1);
+VALUES 
+(1,'Toddynho', 1, 1),
+(1,'Xbox', 1, 1),
+(1,'PS4', 1, 1);
+
 
 CREATE TABLE inventarios_produtos(
-id INT PRIMARY KEY IDENTITY(1,1),
-id_produto INT,
-id_veiculo INT,
-FOREIGN KEY (id_produto) REFERENCES produtos(id),
-FOREIGN KEY (id_veiculo) REFERENCES veiculos(id),
-registro_ativo BIT
+	id INT PRIMARY KEY IDENTITY(1,1),
+	id_produto INT,
+	id_inventario INT,
+	FOREIGN KEY (id_produto) REFERENCES produtos(id),
+	FOREIGN KEY (id_inventario) REFERENCES inventarios(id),
+	registro_ativo BIT
 );
+
+INSERT INTO inventarios_produtos(id_produto, id_inventario, registro_ativo)
+VALUES	(1, 1, 1),
+		(2, 1, 1),
+		(2, 2, 1),
+		(3, 1, 1);
 
 CREATE TABLE vendas(
 id INT PRIMARY KEY IDENTITY(1,1),

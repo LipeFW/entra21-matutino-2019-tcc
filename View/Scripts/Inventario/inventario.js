@@ -1,7 +1,7 @@
 ﻿$(function () {
     $idAlterar = -1;
     $idInventario = 0;
-
+    $tabelaProduto = null;
     $tabelaInventario = $('#inventario-tabela').DataTable({
         ajax: 'http://localhost:51242/veiculo/obtertodos',
         serverSide: true,
@@ -73,19 +73,30 @@
     }
 
     $('#modal-inventario').on('show.bs.modal', function (e) {
-        $tabelaProduto = $('#modal-inventario-tabela').DataTable({
-            ajax: 'http://localhost:51242/produto/obtertodos',
-            serverSide: true,
-            columns: [
-                { 'data': 'Nome' },
-                { 'data': 'Valor' },
-                {
-                    render: function (data, type, row) {
-                        return '<button class="fadeI animated btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i> Editar</button>\<button class="fadeIn animated btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i> Apagar</button>'
+        if ($tabelaProduto == null) {
+
+            $tabelaProduto = $('#modal-inventario-tabela').DataTable({
+                ajax: {
+                    url: 'http://localhost:51242/produto/ObterTodosPeloIdInventario',
+                    data: function (d) {
+                        d.idInventario = $idInventario
+                    },
+                },
+                serverSide: true,
+                columns: [
+                    { 'data': 'Produto.Nome' },
+                    { 'data': 'Produto.Valor' },
+                    {
+                        render: function (data, type, row) {
+                            return '<button class="fadeI animated btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i> Editar</button>\
+                    <button class="fadeIn animated btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i> Apagar</button>'
+                        }
                     }
-                }
-            ]
-        });
+                ]
+            });
+        } else {
+            $tabelaProduto.ajax.reload();
+        }
 
     });
 

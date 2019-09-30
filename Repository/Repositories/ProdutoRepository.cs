@@ -42,6 +42,15 @@ namespace Repository.Repositories
         {
             return context.Produtos.FirstOrDefault(x => x.Id == id);
         }
+
+        public List<InventarioProduto> ObterTodosPeloIdInventario(int idInventario)
+        {
+            return context.InventariosProdutos
+                .Include("Produto.Categoria")
+                .Where(x => x.RegistroAtivo && x.IdInventario == idInventario)
+                .ToList();
+        }
+
         public List<Produto> ObterTodos()
         {
             return context.Produtos.Where(x => x.RegistroAtivo).Include("Categoria").ToList();

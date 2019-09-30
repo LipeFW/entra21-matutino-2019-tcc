@@ -8,7 +8,7 @@
             { 'data': 'Id' },
             { 'data': 'Nome' },
             { 'data': 'Usuario.Nome' },
-            { 'data': 'Vendedor.Veiculo.MarcaEModelo' },
+            { 'data': 'Veiculo.MarcaEModelo' },
             {
                 render: function (data, type, row) {
                     return '<button class="fadeIn animated btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button><button class="fadeIn animated btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>';

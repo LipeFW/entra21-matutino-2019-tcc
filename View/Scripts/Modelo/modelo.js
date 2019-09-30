@@ -6,8 +6,8 @@
         serverSide: true,
         columns: [
             { "data": "Id" },
-            { "data": "Nome" },
             { "data": "Marca.Nome" },
+            { "data": "Nome" },
             {
                 render: function (data, type, row) {
                     return '<button class="fadeIn animated btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button>\<button class="fadeIn animated btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>'
@@ -19,10 +19,10 @@
     $("#modelo-botao-salvar").on("click", function () {
         $nome = $("#modelo-campo-nome").val();
         $marca = $("#modelo-campo-marca").val();
-        if (($nome.trim() == "") || ($marca == -1)) {
-            bootbox.alert("Preencha corretamente os campos!");
-            return null;
-        }
+        //if (($nome.trim() == "") || ($marca == -1)) {
+        //    bootbox.alert("Preencha corretamente os campos!");
+        //    return null;
+        //}
 
         if ($idAlterar == -1) {
             inserir($nome, $marca);
@@ -63,7 +63,7 @@
                     $("#modal-modelo").modal('hide');
                     limparCampos();
                     $tabelaModelo.ajax.reload();
-                    bootbox.alert("Modelo cadastrado com sucesso!")
+                    bootbox.alert("Modelo cadastrado com sucesso!");
                 },
                 error: function (err) {
                     bootbox.alert('Não foi possível cadastrar o modelo!');
@@ -112,7 +112,7 @@
             method: "get",
             success: function (data) {
                 $("#modelo-campo-nome").val(data.Nome);
-                $("#modelo-campo-marca").val(data.Marca.Nome);
+                $("#modelo-campo-marca").val(data.IdMarca);
                 $("#modal-modelo").modal("show");
             },
             error: function (err) {

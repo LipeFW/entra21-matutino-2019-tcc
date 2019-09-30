@@ -12,10 +12,10 @@
                 <div class="form-group">
                     <label for="modelo-campo-marca">@View.Resources.Resource.Marca</label>
                     <select class="form-control"
-                            id="modelo-campo-categoria">
+                            id="modelo-campo-marca">
                         <option disabled="disabled"
-                                selected="selected"
-                           placeholder = @View.Resources.Resource.Selecioneumamarca>
+                                selected="selected">
+                            @View.Resources.Resource.SelecioneumModelo
                         </option>
                         @foreach (Model.Marca marca in ViewBag.Marcas)
                         {
