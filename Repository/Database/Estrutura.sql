@@ -11156,7 +11156,16 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (466, 'San Miguel', 1),
 (466, 'Saquisili', 1);
 /*<--/Cotopaxi-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--El Oro-->*/
+(467, 'Arenillas', 1),
+(467, 'Huaquillas', 1),
+(467, 'Machala', 1),
+(467, 'Pasaje', 1),
+(467, 'Pinas', 1),
+(467, 'Portovelo', 1),
+(467, 'Santa Rosa', 1),
+(467, 'Zaruma', 1);
 /*<--/El Oro-->*/
 /*<--Esmeraldas-->*/
 /*<--/Esmeraldas-->*/
