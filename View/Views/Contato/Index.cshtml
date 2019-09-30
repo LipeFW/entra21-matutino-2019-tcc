@@ -1,101 +1,22 @@
 ﻿
 @{
-    Layout = null;
-    ViewBag.Title = "Index";
-    <link href="~/Content/css/outros.css" type="text/css" rel="stylesheet" />
+    ViewBag.Title = "Contato";
+
 }
 
+<h3>Contato</h3>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Contato</title>
-</head>
 <body>
-    <div id="contato">
-        <p>contato</p>
-    </div>
-    <div id="paginaContato">
-        <form action="dadosc.php" method="post" id="formularioCont">
-            <fieldset class="grupo">
-                <div class="campo">
-                    <label for="fNome">Nome Completo:</label>
-                    <input type="text" name="fNome" id="fNome" style="width: 320px;" />
-                </div>
-                <div class="campo">
-                    <label for="fTelefone">Telefone:</label>
-                    <input type="text" name="fTelefone" id="fTelefone" style="width: 320px;">
-                </div>
-                <div class="campo">
-                    <label for="fEmail">E-mail:</label>
-                    <input type="email" name="fEmail" id="fEmail" style="width: 655px;" />
-                </div>
-            </fieldset>
-            <fieldset class="grupo">
-                <div class="campo">
-                    <label for="fCidade">Cidade:</label>
-                    <input type="text" name="fCidade" id="fCidade" style="width: 320px;">
-                </div>
-                <div class="campo">
-                    <label for="fEstado">Estado:</label>
-                    <select name="fEstado" id="fEstado">
-                        <option value="">--</option>
-                        <option value="AC">Acre</option>
-                        <option value="AL">Alagoas</option>
-                        <option value="AP">Amapá</option>
-                        <option value="AM">Amazonas</option>
-                        <option value="BA">Bahia</option>
-                        <option value="CE">Ceará</option>
-                        <option value="DF">Distrito Federal</option>
-                        <option value="ES">Espírito Santo</option>
-                        <option value="GO">Goiás</option>
-                        <option value="MA">Maranhão</option>
-                        <option value="MT">Mato Grosso</option>
-                        <option value="MS">Mato Grosso do Sul</option>
-                        <option value="MG">Minas Gerais</option>
-                        <option value="PA">Pará</option>
-                        <option value="PB">Paraíba</option>
-                        <option value="PR">Paraná</option>
-                        <option value="PE">Pernambuco</option>
-                        <option value="PI">Piauí</option>
-                        <option value="RJ">Rio de Janeiro</option>
-                        <option value="RN">Rio Grande do Norte</option>
-                        <option value="RS">Rio Grande do Sul</option>
-                        <option value="RO">Rondônia</option>
-                        <option value="RR">Roraima</option>
-                        <option value="SC">Santa Catarina</option>
-                        <option value="SP">São Paulo</option>
-                        <option value="SE">Sergipe</option>
-                        <option value="TO">Tocantins</option>
-                    </select>
-                </div>
-            </fieldset>
-            <fieldset class="campo">
-                <div class="campo">
-                    <label for="fTitulo">Título da Mensagem:</label>
-                    <select name="fTitulo" id="fTitulo">
-                        <option value="">--</option>
-                        <option value="Duvidas">Dúvidas</option>
-                        <option value="Elogios">Elogios</option>
-                        <option value="Encomendar">Encomendar</option>
-                        <option value="Reclamacoes">Reclamações</option>
-                    </select>
-                </div>
-            </fieldset>
-            <fieldset class="grupo">
-                <div class="campo">
-                    <label for="fMsag">Mensagem:</label>
-                    <textarea rows="6" name="fMsag" id="fMsag" style="width: 655px;"></textarea>
-                </div>
-            </fieldset>
-            <center>
-                <button class="botao" type="submit" name="submit" onclick="alert('Formulário Enviado')">Enviar</button>
-            </center>
-        </form>
+    <div class="form-group">
+        <div class="form-control">
+            <label for="campo-nome" id="contato-campo-nome">Nome</label>
+            <input type="text" name="campo-nome" id="contato-campo-nome" />
+        </div>
+        <div class="form-control">
+            <label for="campo-sobrenome" id="contato-campo-sobrenome">Sobrenome</label>
+            <input type="text" name="campo-sobrenome" id="contato-campo-sobrenome" />
+        </div>
     </div>
 </body>
-</html>
-
-
 
 
