@@ -11290,7 +11290,6 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Orellana-->*/
 (481, '', 1);
 /*<--/Orellana-->*/
-
 /*<--/Ecuador-->*/
 
 /*<--Venezuela-->*/
