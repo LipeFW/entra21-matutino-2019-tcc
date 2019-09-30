@@ -10266,8 +10266,8 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Region Metropolitana-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Tarapaca-->*/
-(424, 'Arica', 1),
-(424, 'Iquique', 1);
+(426, 'Arica', 1),
+(426, 'Iquique', 1);
 /*<--/Tarapaca-->*/
 /*<--/Chile-->*/
 /*<--/Colombia-->*/
