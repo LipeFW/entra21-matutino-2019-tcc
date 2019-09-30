@@ -2729,7 +2729,7 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (26, 'Winter Springs', 1),
 (26, 'Wright', 1),
 (26, 'Yeehaw Junction', 1),
-(26, 'Zephyrhills', 1),
+(26, 'Zephyrhills', 1);
 /*<--/Cidades do Flórida-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES	
 /*<--Cidades do Geórgia-->*/
@@ -6582,7 +6582,7 @@ INSERT INTO cidades(id_estado,nome,registro_ativo)VALUES
   (78,'Zinapecuaro',1),
   (78,'Zitacuaro',1);
 /*<--Cidades de Michoacan de Ocampo-->*/
-INSERT INTO(id,nome,registro_ativo) VALUES
+INSERT INTO cidades (id_estado,nome,registro_ativo) VALUES
 /*<--Cidades de Morelos-->*/
 (79,'Alpuyeca',1),
 (79,'Amayuca',1),
@@ -6630,9 +6630,9 @@ INSERT INTO(id,nome,registro_ativo) VALUES
 (79,'Xoxocotla',1),
 (79,'Yautepec',1),
 (79,'Yecapixtla',1),
-(79,'Zacatepec',1),
+(79,'Zacatepec',1);
 /*<--Cidades de Morelos-->*/
-INSERT INTO(id,nome,registro_ativo) VALUES
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Cidades de Nayarit-->*/
 
  
@@ -6658,10 +6658,10 @@ INSERT INTO(id,nome,registro_ativo) VALUES
   (80,'Tuxpan',1),
   (80,'Valle De Banderas',1),
   (80,'Yago',1),
-  (80,'Zacualpan',1),
+  (80,'Zacualpan',1);
 
 /*<--Cidades de Nayarit-->*/
-INSERT INTO(id,nome,registro_ativo) VALUES
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Cidades de Nuevo Leon-->*/
 
    (81,'Allende',1),
@@ -6694,10 +6694,10 @@ INSERT INTO(id,nome,registro_ativo) VALUES
    (81,'Sabinas Hidalgo',1),
    (81,'San Nicolas De Los Garza',1),
    (81,'Santa Catarina',1),
-   (81,'Santiago',1),
+   (81,'Santiago',1);
 
 /*<--Cidades de Nuevo Leon-->*/
-   INSERT INTO(id,nome,registro_ativo) VALUES
+   INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Cidades de Oxaxaca-->*/
 
   (82,'Acatlan',1),
@@ -6802,10 +6802,10 @@ INSERT INTO(id,nome,registro_ativo) VALUES
   (82,'Zaachila',1),
   (82,'Zacatepec',1),
   (82,'Zanatepec',1),
-  (82,'Zimatlan',1),
+  (82,'Zimatlan',1);
 
 /*<--Cidades de Oxaxaca-->*/
-   INSERT INTO(id,nome,registro_ativo) VALUES
+   INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
    /*<--Cidades de Puebla-->*/
    
 (83,'Acajete',1),
@@ -6943,10 +6943,10 @@ INSERT INTO(id,nome,registro_ativo) VALUES
 (83,'Zaragoza',1),
 (83,'Zinacatepec',1),
 (83,'Zongozotla',1),
-(83,'Zozutla',1),
+(83,'Zozutla',1);
 /*<--Cidades de Puebla-->*/
 
-INSERT INTO(id,nome,registro_ativo) VALUES
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
    /*<--Cidades de Queretaro de Artuega-->*/
     (84,'Ajuchitlan',1),
     (84,'Amealco',1),
@@ -6970,7 +6970,7 @@ INSERT INTO(id,nome,registro_ativo) VALUES
     (84,'Tlacote El Bajo',1);
 
    /*<--Cidades de Queretaro de Artuega-->*/
-INSERT INTO(id,nome,registro_ativo) VALUES
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
    /*<--Cidades de Quintana roo-->*/
     (85,'Ajuchitlan',1),
     (85,'Amealco',1),
@@ -6994,7 +6994,7 @@ INSERT INTO(id,nome,registro_ativo) VALUES
     (85,'Tlacote El Bajo',1);
 
     /*<--Cidades de Quintana roo-->*/
-    INSERT INTO(id,nome,registro_ativo) VALUES
+    INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
    /*<--Cidades de San Luis Potosi-->*/
   (86,'Ajuchitlan',1),
   (86,'Amealco',1),
@@ -7018,7 +7018,7 @@ INSERT INTO(id,nome,registro_ativo) VALUES
   (86,'Tlacote El Bajo',1);
 
    /*<--Cidades de San Luis Potosi-->*/
-   INSERT INTO(id,nome,registro_ativo) VALUES
+   INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
    /*<--Cidades de Sineloa-->*/
    
   (86,'Ajuchitlan',1),
@@ -7042,7 +7042,7 @@ INSERT INTO(id,nome,registro_ativo) VALUES
   (86,'Tequisquiapan',1),
   (86,'Tlacote El Bajo',1);
   /*<--Cidades de Sineloa-->*/
-   INSERT INTO(id,nome,registro_ativo) VALUES
+   INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
    /*<--Cidades de Sonora-->*/
    
     (87,'Agua Prieta',1),
@@ -7084,7 +7084,7 @@ INSERT INTO(id,nome,registro_ativo) VALUES
     (87,'Yavaros',1);
 
     /*<--Cidades de Sonora-->*/
-  INSERT INTO(id,nome,registro_ativo) VALUES
+  INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
    /*<--Cidades de Tabasco-->*/
    
     (88,'Ajuchitlan',1),
@@ -7109,7 +7109,7 @@ INSERT INTO(id,nome,registro_ativo) VALUES
     (88,'Tlacote El Bajo',1);
 
    /*<--Cidades de Tabasco-->*/
-   INSERT INTO(id,nome,registro_ativo) VALUES
+   INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
    /*<--Cidades de Tamaulipas-->*/
     (89,'Abasolo',1),
     (89,'Aldama',1),
@@ -7143,7 +7143,7 @@ INSERT INTO(id,nome,registro_ativo) VALUES
     (89,'Xicotencatl',1);
 
    /*<--Cidades de Tamaulipas-->*/
-   INSERT INTO(id,nome,registro_ativo) VALUES
+   INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
    /*<--Cidades de Tlxcala-->*/
    
     (90,'Altzayanca',1),
@@ -7190,7 +7190,7 @@ INSERT INTO(id,nome,registro_ativo) VALUES
     (90,'Zacatelco',1),
     (90,'Zitlaltepec',1);
    /*<--Cidades de Tlxacala-->*/
-   INSERT INTO(id,nome,registro_ativo) VALUES
+   INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
    /*<--Cidades de Veracruz-llave-->*/
    
 (91,'Acayucan',1),
@@ -7343,7 +7343,7 @@ INSERT INTO(id,nome,registro_ativo) VALUES
 (91,'Zongolica',1),
 (91,'Zozocolco',1);
    /*<--Cidades de Veracruz-Llave-->*/
-     INSERT INTO(id,nome,registro_ativo) VALUES
+     INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
    /*<--Cidades de Yucatan-->*/
    
     (92,'Acanceh',1),
@@ -7420,7 +7420,7 @@ INSERT INTO(id,nome,registro_ativo) VALUES
     (92,'X-can',1);
 
    /*<--Cidades de Yucatan-->*/
- INSERT INTO(id,nome,registro_ativo) VALUES
+ INSERT INTO cidades (id_estado,nome,registro_ativo) VALUES
    /*<--Cidades de Zacatecas-->*/
    
     (93,'Apozol',1),
@@ -7518,7 +7518,7 @@ INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Cidades de Mayaguana-->*/
 (107, 'Pirates Well',1);
 /*<--/Cidades de Mayaguana-->*/
-INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+--INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Cidades de Ragged Island-->*/
 
 /*<--/Cidades de Ragged Island-->*/
@@ -7725,7 +7725,7 @@ INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 (146, 'San Rafael Abajo', 1),
 (146, 'San Rafael Arriba', 1),
 (146, 'Santa Ana', 1),
-(146, 'Santiago', 1),
+(146, 'Santiago', 1);
 
 /*<--/Cidades de San Jose-->*/
 /*<--/Costa Rica-->*/
@@ -7734,7 +7734,6 @@ INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 --==================================================
 --ACREDITO QUE OS IDS ESTÂO ERRADOS DAQUI PARA BAIXO
 --==================================================
-<<<<<<< HEAD
 /*<--América do Sul-->*/
 /*<--Argentina-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
@@ -10123,7 +10122,7 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (413, 'Taguatinga', 1),
 (413, 'Tocantinopolis', 1),
 (413, 'Wanderland', 1),
-(413, 'Xambio', 1),
+(413, 'Xambio', 1);
 /*<--/Tocantins-->*/
 /*<--/Brasil-->*/
 /*<--/Chile-->*/
@@ -10142,18 +10141,18 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (414, 'San Felipe' , 1),
 (414, 'Valparaiso' , 1),
 (414, 'Villa Alemana' , 1),
-(414, 'Vina Del Mar' , 1),
+(414, 'Vina Del Mar' , 1);
 /*<--/Valparaiso-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Aisen del General Carlos Ibanez-->*/
-(415, 'Coihaique', 1),
+(415, 'Coihaique', 1);
 /*<--/Aisen del General Carlos Ibanez-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Antofagasta-->*/
 (416, 'Antofagasta', 1),
 (416, 'Calama', 1),
 (416, 'Taltal', 1),
-(416, 'Tocopilla', 1),
+(416, 'Tocopilla', 1);
 /*<--/Antofagasta-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Araucania-->*/
@@ -10169,13 +10168,13 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (417, 'Traiguen', 1),
 (417, 'Victoria', 1),
 (417, 'Vilcun', 1),
-(417, 'Villarrica', 1),
+(417, 'Villarrica', 1);
 /*<--/Araucania-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Atacama-->*/
 (418, 'Copiapo', 1),
 (418, 'Diego De Almagro', 1),
-(418, 'Vallenar', 1),
+(418, 'Vallenar', 1);
 /*<--/Atacama-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Bio-Bio-->*/
@@ -10407,9 +10406,8 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (429, 'Fortul', 1),
 (429, 'Puerto Rondon', 1),
 (429, 'Saravena', 1),
-(429, 'Tame', 1);
+(429, 'Tame', 1),
 /*<--/Arauca-->*/
-<<<<<<< HEAD
 /*<--/Atlantico-->*/
 (430, 'Baranoa', 1),
 (430, 'Barranquilla', 1),
@@ -10488,11 +10486,11 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (432, 'Timbiqui', 1),
 (432, 'Toribio', 1),
 (432, 'Totoro', 1),
-(432, 'Villa Rica', 1),
+(432, 'Villa Rica', 1);
 /*<--/Cauca-->*/
-=======
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
->>>>>>> 6c6bfc7bb08e6acaf50b93c4801810a6755f80ee
+
+--INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+
 /*<--/Colombia-->*/
 /*<--/América do Sul-->*/
 CREATE TABLE usuarios( 
@@ -10506,12 +10504,12 @@ registro_ativo BIT
 );
 
 INSERT INTO usuarios(nome,nome_completo,url_imagem, admin, senha,  registro_ativo)
-VALUES  ( 'lipefw'  , 'Felipe'   , 'gatodandopinote.png'  , 1 , 'anaumsei'      , 1),
-	      ( 'illan'   , 'Illan'    , 'gato-confuo.jpg'      , 1 , 'illanzoka'     , 1),
-	     ( 'eduardo'  , 'Eduardo'  , 'guaxinimdoido.jpg'    , 1 , 'RetardoMental' , 1),
-	     ( 'henrique' , 'Henrique' , 'hamsterchavoso.png'   , 1 , 'pimbinha6000'  , 1),
-	     ( 'pablo'    , 'Pablo'    , 'Rambo.jpg'            , 1 , '1234'          , 1),
-	     ( 'nathan'   , 'Nathan'   , 'passaroseila.jpg'     , 1 , '1203'          , 1);
+VALUES  ( 'lipefw'  , 'Felipe'   , ''  , 1 , 'anaumsei'      , 1),
+	      ( 'illan'   , 'Illan'    , ''      , 1 , 'illanzoka'     , 1),
+	     ( 'eduardo'  , 'Eduardo'  , ''    , 1 , 'RetardoMental' , 1),
+	     ( 'henrique' , 'Henrique' , ''   , 1 , 'pimbinha6000'  , 1),
+	     ( 'pablo'    , 'Pablo'    , ''            , 1 , '1234'          , 1),
+	     ( 'nathan'   , 'Nathan'   , ''     , 1 , '1203'          , 1);
 
 CREATE TABLE categorias( 
 id INT PRIMARY KEY IDENTITY(1,1),
