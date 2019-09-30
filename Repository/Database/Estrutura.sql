@@ -10792,8 +10792,12 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (439, 'Villanueva', 1);
 /*<--/La Guajira-->*/
 /*<--/Colombia-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Venezuela-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Distrito Federal-->*/
+(588, 'Caracas', 1);
+/*<--/Distrito Federal-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Vargas-->*/
 (589, 'Caraballeda', 1),
 (589, 'Catia La Mar', 1),
