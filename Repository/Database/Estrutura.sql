@@ -10794,6 +10794,22 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Colombia-->*/
 /*<--Venezuela-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Zulia-->*/
+(586, 'Bachaquero', 1),
+(586, 'Cabimas', 1),
+(586, 'Ciudad Ojeda', 1),
+(586, 'Lagunillas', 1),
+(586, 'Machiques', 1),
+(586, 'Maracaibo', 1),
+(586, 'San Carlos Del Zulia', 1),
+(586, 'Santa Rita', 1),
+(586, 'Villa Del Rosario', 1);
+/*<--/Zulia-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Dependencias Federales-->*/
+(587, '', 1);
+/*<--/Dependencias Federales-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Distrito Federal-->*/
 (588, 'Caracas', 1);
 /*<--/Distrito Federal-->*/
