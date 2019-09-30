@@ -11301,6 +11301,10 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Cuyuni-Mazaruni->*/
 (483, 'Bartica', 1);
 /*<--/Cuyuni-Mazaruni->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Demerara-Mahaica->*/
+(484, 'Georgetown', 1);
+/*<--/Demerara-Mahaica->*/
 
 /*<--/Guyana-->*/
 /*<--Venezuela-->*/
