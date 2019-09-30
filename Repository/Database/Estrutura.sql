@@ -11246,7 +11246,13 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (473, 'Sucre', 1),
 (473, 'Tosagua', 1);
 /*<--/Manabi-->*/
-
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Morona-Santiago-->*/
+(474, 'Gualaquiza', 1),
+(474, 'Macas', 1),
+(474, 'Palora', 1),
+(474, 'Sucua', 1);
+/*<--/Morona-Santiago-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Pastaza-->*/
 /*<--/Pastaza-->*/
