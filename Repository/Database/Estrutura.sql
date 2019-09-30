@@ -11259,9 +11259,15 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Pastaza-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Pichincha-->*/
+(476, 'Cayambe', 1),
+(476, 'Machachi', 1),
+(476, 'Quito', 1),
+(476, 'Sangolqui', 1),
+(476, 'Santo Domingo', 1);
 /*<--/Pichincha-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Tungurahua-->*/
+
 /*<--/Tungurahua-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Zamora-Chinchipe-->*/
