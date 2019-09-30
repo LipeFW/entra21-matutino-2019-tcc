@@ -10222,17 +10222,17 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Libertador General Bernardo O´H-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Los Lagos-->*/
-(420, 'Ancud', 1),
-(420, 'Calbuco', 1),
-(420, 'Castro', 1),
-(420, 'La Union', 1),
-(420, 'Osorno', 1),
-(420, 'Panguipulli', 1),
-(420, 'Puerto Montt', 1),
-(420, 'Puerto Varas', 1),
-(420, 'Purranque', 1),
-(420, 'Rio Bueno', 1),
-(420, 'Valdivia', 1);
+(422, 'Ancud', 1),
+(422, 'Calbuco', 1),
+(422, 'Castro', 1),
+(422, 'La Union', 1),
+(422, 'Osorno', 1),
+(422, 'Panguipulli', 1),
+(422, 'Puerto Montt', 1),
+(422, 'Puerto Varas', 1),
+(422, 'Purranque', 1),
+(422, 'Rio Bueno', 1),
+(422, 'Valdivia', 1);
 /*<--/Los Lagos-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Magallanes y de la Antartica Chi-->*/
