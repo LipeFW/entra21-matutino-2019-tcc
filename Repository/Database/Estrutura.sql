@@ -7842,6 +7842,54 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (155,'Corralillo',1),
 (155,'Guantanamo',1);
 /*<--Cidades de Guantanamo-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Cidades de La Habana-->*/
+(156,'Alquizar',1),
+(156,'Artemisa',1),
+(156,'Batabano',1),
+(156,'Bauta',1),
+(156,'Bejucal',1),
+(156,'Cabanas',1),
+(156,'Guanajay',1),
+(156,'Guines',1),
+(156,'Guira De Melena',1),
+(156,'Jaruco',1),
+(156,'Madruga',1),
+(156,'Mariel',1),
+(156,'San Antonio De Los Banos',1),
+(156,'San Jose De Las Lajas',1),
+(156,'San Nicolas',1),
+(156,'Santa Cruz Del Norte',1);
+/*<--Cidades de La Habana-->*/
+
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Cidades de  Holguin-->*/
+
+(157,'Baguanos',1),
+(157,'Banes',1),
+(157,'Cueto',1),
+(157,'Gibara',1),
+(157,'Holguin',1),
+(157,'Jobabo',1),
+(157,'Mayari',1),
+(157,'Moa',1),
+(157,'Sagua De Tanamo',1);
+/*<--Cidades de  Holguin-->*/
+
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Cidades de  Las Tunas-->*/
+
+(158,'Amancio',1),
+(158,'Colombia',1),
+(158,'Las Tunas',1),
+(158,'Manati',1),
+(158,'Puerto Padre',1);
+/*<--Cidades de  Las Tunas-->*/
+
+
+
+
+
 
 
 --==================================================
