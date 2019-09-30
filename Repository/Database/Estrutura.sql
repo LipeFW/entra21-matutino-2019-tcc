@@ -7729,6 +7729,119 @@ INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 
 /*<--/Cidades de San Jose-->*/
 /*<--/Costa Rica-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Cidades de Pinar del Rio-->*/
+
+    (147,'Bahia Honda',1),
+    (147,'Candelaria',1),
+    (147,'Consolacion Del Sur',1),
+    (147,'Guane',1),
+    (147,'Los Palacios',1),
+    (147,'Mantua',1),
+    (147,'Pinar Del Rio',1),
+    (147,'San Cristobal',1),
+    (147,'San Diego De Los Banos',1),
+    (147,'San Luis',1);
+
+/*<--Cidades de Pinar del Rio-->*/
+
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Cidades de Ciudad de la Habana-->*/
+
+(148,'Santiago De Las Vegas',1);
+/*<--Cidades de Ciudad de la Habana-->*/
+
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Cidades de Matanzas-->*/
+(149,'Agramonte',1),
+(149,'Alacranes',1),
+(149,'Bolondron',1),
+(149,'Calimete',1),
+(149,'Cardenas',1),
+(149,'Colon',1),
+(149,'Jaguey Grande',1),
+(149,'Jovellanos',1),
+(149,'Los Arabos',1),
+(149,'Manguito',1),
+(149,'Marti',1),
+(149,'Matanzas',1),
+(149,'Pedro Betancourt',1),
+(149,'Perico',1),
+(149,'Union De Reyes',1),
+(149,'Varadero',1);
+/*<--Cidades de Matanzas-->*/
+
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Cidades de Isla de la Juventud-->*/
+
+    (150,'Nueva Gerona',1),
+    (150,'Santa Fe',1);
+
+/*<--Cidades de Isla de la Juventud-->*/
+
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Cidades de Camaguey-->*/
+
+ 
+(151,'Camaguey',1),
+(151,'Esmeralda',1),
+(151,'Florida',1),
+(151,'Guaimaro',1),
+(151,'Minas',1),
+(151,'Nuevitas',1),
+(151,'Santa Cruz Del Sur',1),
+(151,'Sibanicu',1),
+(151,'Vertientes',1);
+
+/*<--Cidades de Camaguey-->*/
+
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Cidades de Ciego de La avilla-->*/
+
+   (152,'Baragua',1),
+   (152,'Chambas',1),
+   (152,'Ciego De Avila',1),
+   (152,'Moron',1),
+   (152,'Primero De Enero',1),
+   (152,'Venezuela',1);
+
+/*<--Cidades de Ciego de La avilla-->*/
+
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Cidades de Cienfuegos-->*/
+
+(153,'Abreus',1),
+(153,'Aguada De Pasajeros',1),
+(153,'Cienfuegos',1),
+(153,'Cruces',1),
+(153,'Cumanayagua',1),
+(153,'Palmira',1),
+(153,'Rodas',1);
+
+/*<--Cidades de Cienfuegos-->*/
+
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Cidades de Granma-->*/
+
+ (154,'Bayamo',1),
+ (154,'Campechuela',1),
+ (154,'Guisa',1),
+ (154,'Jiguani',1),
+ (154,'Manzanillo',1),
+ (154,'Media Luna',1),
+ (154,'Niquero',1),
+ (154,'Rio Cauto',1),
+ (154,'Yara',1);
+
+/*<--Cidades de Granma-->*/
+
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Cidades de Guantanamo-->*/
+
+(155,'Baracoa',1),
+(155,'Corralillo',1),
+(155,'Guantanamo',1);
+/*<--Cidades de Guantanamo-->*/
 
 
 --==================================================
