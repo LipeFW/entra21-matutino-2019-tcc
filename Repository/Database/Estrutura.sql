@@ -10694,7 +10694,7 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (432, 'Timbiqui', 1),
 (432, 'Toribio', 1),
 (432, 'Totoro', 1),
-(432, 'Villa Rica', 1),
+(432, 'Villa Rica', 1);
 /*<--/Cauca-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Cesar-->*/
@@ -10718,8 +10718,9 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (433, 'San Diego', 1),
 (433, 'San Martin', 1),
 (433, 'Tamalameque', 1),
-(433, 'Valledupar', 1),
+(433, 'Valledupar', 1);
 /*<--/Cesar-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Choco-->*/
 (434, 'Acandi', 1),
 (434, 'Alto Baudo', 1),
@@ -10741,8 +10742,9 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (434, 'San Jose Del Palmar', 1),
 (434, 'Sipi', 1),
 (434, 'Tado', 1),
-(434, 'Unguia', 1),
+(434, 'Unguia', 1);
 /*<--/Choco-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Cordoba-->*/
 (435, 'Ayapel', 1),
 (435, 'Buenavista', 1),
@@ -10766,17 +10768,20 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (435, 'San Carlos', 1),
 (435, 'San Pelayo', 1),
 (435, 'Tierralta', 1),
-(435, 'Valencia', 1),
+(435, 'Valencia', 1);
 /*<--/Cordoba-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Guaviare-->*/
 (436, 'Calamar', 1),
 (436, 'El Retorno', 1),
 (436, 'Miraflores', 1),
-(436, 'San Jose Del Guaviare', 1),
+(436, 'San Jose Del Guaviare', 1);
 /*<--/Guaviare-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Guainia-->*/
-(437, 'Inirida', 1),
+(437, 'Inirida', 1);
 /*<--/Guainia-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Huila-->*/
 (438, 'Acevedo', 1),
 (438, 'Agrado', 1),
@@ -10814,8 +10819,9 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (438, 'Tesalia', 1),
 (438, 'Timana', 1),
 (438, 'Villavieja', 1),
-(438, 'Yaguara', 1),
+(438, 'Yaguara', 1);
 /*<--/Huila-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/La Guajira-->*/
 (439, 'Albania', 1),
 (439, 'Barrancas', 1),
@@ -10834,6 +10840,27 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/La Guajira-->*/
 /*<--/Colombia-->*/
 /*<--Venezuela-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Zulia-->*/
+(586, 'Bachaquero', 1),
+(586, 'Cabimas', 1),
+(586, 'Ciudad Ojeda', 1),
+(586, 'Lagunillas', 1),
+(586, 'Machiques', 1),
+(586, 'Maracaibo', 1),
+(586, 'San Carlos Del Zulia', 1),
+(586, 'Santa Rita', 1),
+(586, 'Villa Del Rosario', 1);
+/*<--/Zulia-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Dependencias Federales-->*/
+(587, '', 1);
+/*<--/Dependencias Federales-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Distrito Federal-->*/
+(588, 'Caracas', 1);
+/*<--/Distrito Federal-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Vargas-->*/
 (589, 'Caraballeda', 1),
 (589, 'Catia La Mar', 1),
