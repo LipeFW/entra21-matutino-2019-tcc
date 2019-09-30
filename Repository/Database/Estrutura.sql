@@ -10789,8 +10789,9 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (439, 'San Juan Del Cesar', 1),
 (439, 'Uribia', 1),
 (439, 'Urumita', 1),
-(439, 'Villanueva', 1),
+(439, 'Villanueva', 1);
 /*<--/La Guajira-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Meta-->*/
 (440, 'Acacias', 1),
 (440, 'Barranca De Upia', 1),
@@ -10817,8 +10818,9 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (440, 'San Juanito', 1),
 (440, 'San Martin', 1),
 (440, 'Villavicencio', 1),
-(440, 'Vista Hermosa', 1),
+(440, 'Vista Hermosa', 1);
 /*<--/Meta-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Narino-->*/
 (441, 'Aldana', 1),
 (441, 'Ancuya', 1),
@@ -10881,8 +10883,9 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (441, 'Tangua', 1),
 (441, 'Tumaco', 1),
 (441, 'Tuquerres', 1),
-(441, 'Yacuanquer', 1),
+(441, 'Yacuanquer', 1);
 /*<--/Narino-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Norte de Santander-->*/
 (442, 'Abrego', 1),
 (442, 'Arboledas', 1),
@@ -10920,8 +10923,9 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (442, 'Silos', 1),
 (442, 'Tibu', 1),
 (442, 'Toledo', 1),
-(442, 'Villa Del Rosario', 1),
+(442, 'Villa Del Rosario', 1);
 /*<--/Norte de Santander-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Putumayo-->*/
 (443, 'Colon', 1),
 (443, 'Mocoa', 1),
@@ -10934,8 +10938,9 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (443, 'Santiago', 1),
 (443, 'Sibundoy', 1),
 (443, 'Valle Del Guamuez', 1),
-(443, 'Villagarzon', 1),
+(443, 'Villagarzon', 1);
 /*<--/Putumayo-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Quindio-->*/
 (444, 'Armenia', 1),
 (444, 'Buenavista', 1),
@@ -10948,8 +10953,9 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (444, 'Montenegro', 1),
 (444, 'Pijao', 1),
 (444, 'Quimbaya', 1),
-(444, 'Salento', 1),
+(444, 'Salento', 1);
 /*<--/Quindio-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Risaralda-->*/
 (445, 'Apia', 1),
 (445, 'Balboa', 1),
@@ -10964,10 +10970,11 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (445, 'Pueblo Rico', 1),
 (445, 'Quinchia', 1),
 (445, 'Santa Rosa De Cabal', 1),
-(445, 'Santuario', 1),
+(445, 'Santuario', 1);
 /*<--/Risaralda-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/San Andres Y Providencia-->*/
-(446, 'San Andres', 1),
+(446, 'San Andres', 1);
 /*<--/San Andres Y Providencia-->*/
 
 /*<--/Colombia-->*/
