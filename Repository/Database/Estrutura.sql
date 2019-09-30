@@ -11115,7 +11115,39 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 
 /*<--/Colombia-->*/
 /*<--Venezuela-->*/
-/*<--Venezuela-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Merida-->*/
+(577, 'Ejido', 1),
+(577, 'El Vigia', 1);
+/*<--/Merida-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Miranda-->*/
+(578, 'Baruta', 1),
+(578, 'Carrizal', 1),
+(578, 'Caucaguita', 1),
+(578, 'Chacao', 1),
+(578, 'Charallave', 1),
+(578, 'Cua', 1),
+(578, 'El Cafetal', 1),
+(578, 'El Hatillo', 1),
+(578, 'Guarenas', 1),
+(578, 'Guatire', 1),
+(578, 'La Dolorita', 1),
+(578, 'Los Dos Caminos', 1),
+(578, 'Los Teques', 1),
+(578, 'Ocumare Del Tuy', 1),
+(578, 'Petare', 1),
+(578, 'Santa Teresa', 1);
+/*<--/Miranda-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Monagas-->*/
+(579, 'Maturin', 1);
+/*<--/Monagas-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Nueva Esparta-->*/
+(580, 'La Asuncion', 1),
+(580, 'Porlamar', 1);
+/*<--/Nueva Esparta-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Portuguesa-->*/
 (581, 'Acarigua', 1),
