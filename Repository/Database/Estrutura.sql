@@ -11167,7 +11167,13 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (467, 'Santa Rosa', 1),
 (467, 'Zaruma', 1);
 /*<--/El Oro-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Esmeraldas-->*/
+(468, 'Esmeraldas', 1),
+(468, 'Muisne', 1),
+(468, 'Rosa Zarate', 1),
+(468, 'San Lorenzo', 1),
+(468, 'Valdez', 1),
 /*<--/Esmeraldas-->*/
 /*<--Guayas-->*/
 /*<--/Guayas-->*/
