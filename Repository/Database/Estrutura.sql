@@ -10794,6 +10794,13 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Colombia-->*/
 /*<--Venezuela-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Yaracuy-->*/
+(585, 'Chivacoa', 1),
+(585, 'Nirgua', 1),
+(585, 'San Felipe', 1),
+(585, 'Yaritagua', 1);
+/*<--/Yaracuy-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Zulia-->*/
 (586, 'Bachaquero', 1),
 (586, 'Cabimas', 1),
