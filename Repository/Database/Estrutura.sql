@@ -11274,6 +11274,8 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Tungurahua-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Zamora-Chinchipe-->*/
+(478, 'Yantzaza', 1),
+(478, 'Zamora', 1);
 /*<--/Zamora-Chinchipe-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Sucumbios-->*/
