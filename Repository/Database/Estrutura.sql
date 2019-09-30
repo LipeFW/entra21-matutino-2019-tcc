@@ -11208,26 +11208,37 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (470, 'Otavalo', 1),
 (470, 'Pimampiro', 1);
 /*<--/Imbabura-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Loja-->*/
 /*<--/Loja-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Los Rios-->*/
 /*<--/Los Rios-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Manabi-->*/
 /*<--/Manabi-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Morona-Santiago-->*/
 /*<--/Morona-Santiago-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Pastaza-->*/
 /*<--/Pastaza-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Pichincha-->*/
 /*<--/Pichincha-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Tungurahua-->*/
 /*<--/Tungurahua-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Zamora-Chinchipe-->*/
 /*<--/Zamora-Chinchipe-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Sucumbios-->*/
 /*<--/Sucumbios-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Napo-->*/
 /*<--/Napo-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Orellana-->*/
 /*<--/Orellana-->*/
 
