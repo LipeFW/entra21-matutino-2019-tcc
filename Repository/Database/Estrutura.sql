@@ -11121,6 +11121,11 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (460, 'Puerto Baquerizo Moreno', 1),
 (460, 'San Cristobal', 1);
 /*<--/Galapagos-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Azuay-->*/
+(461, 'Cuenca', 1),
+(461, 'Gualaceo', 1);
+/*<--/Azuay-->*/
 
 
 /*<--/Ecuador-->*/
