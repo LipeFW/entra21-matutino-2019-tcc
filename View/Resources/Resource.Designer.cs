@@ -909,6 +909,15 @@ namespace View.Resources {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a string.
         /// </summary>
+        public static string Preenchacorretamente {
+            get {
+                return ResourceManager.GetString("Preenchacorretamente", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
         public static string Produto {
             get {
                 return ResourceManager.GetString("Produto", resourceCulture);
