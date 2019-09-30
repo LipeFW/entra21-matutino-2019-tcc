@@ -11148,7 +11148,13 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (465, 'Guano', 1),
 (465, 'Riobamba', 1);
 /*<--/Chimborazo-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Cotopaxi-->*/
+(466, 'La Mana', 1),
+(466, 'Latacunga', 1),
+(466, 'Pujili', 1),
+(466, 'San Miguel', 1),
+(466, 'Saquisili', 1);
 /*<--/Cotopaxi-->*/
 /*<--El Oro-->*/
 /*<--/El Oro-->*/
