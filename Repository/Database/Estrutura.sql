@@ -11116,6 +11116,10 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Colombia-->*/
 /*<--Venezuela-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Delta Amacuro-->*/
+(573, 'Tucupita', 1);
+/*<--/Delta Amacuro-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Falcon-->*/
 (574, 'Coro', 1),
 (574, 'Punta Cardon', 1),
