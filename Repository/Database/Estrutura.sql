@@ -10240,17 +10240,17 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Magallanes y de la Antartica Chi-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Maule-->*/
-(422, 'Cauquenes', 1),
-(422, 'Constitucion', 1),
-(422, 'Curico', 1),
-(422, 'Linares', 1),
-(422, 'Longavi', 1),
-(422, 'Molina', 1),
-(422, 'Parral', 1),
-(422, 'San Clemente', 1),
-(422, 'San Javier', 1),
-(422, 'Talca', 1),
-(422, 'Teno', 1);
+(424, 'Cauquenes', 1),
+(424, 'Constitucion', 1),
+(424, 'Curico', 1),
+(424, 'Linares', 1),
+(424, 'Longavi', 1),
+(424, 'Molina', 1),
+(424, 'Parral', 1),
+(424, 'San Clemente', 1),
+(424, 'San Javier', 1),
+(424, 'Talca', 1),
+(424, 'Teno', 1);
 /*<--/Maule-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Region Metropolitana-->*/
