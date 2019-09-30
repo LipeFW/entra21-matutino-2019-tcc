@@ -11116,6 +11116,20 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Colombia-->*/
 /*<--Venezuela-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Sucre-->*/
+(582, 'Carupano', 1),
+(582, 'Cumana', 1);
+/*<--/Sucre-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Tachira-->*/
+(583, 'La Fria', 1),
+(583, 'Rubio', 1),
+(583, 'San Antonio Del Tachira', 1),
+(583, 'San Cristobal', 1),
+(583, 'San Juan De Colon', 1),
+(583, 'Tariba', 1);
+/*<--/Tachira-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Trujillo-->*/
 (584, 'Trujillo', 1),
 (584, 'Valera', 1);
