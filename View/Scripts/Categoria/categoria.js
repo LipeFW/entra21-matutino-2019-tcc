@@ -85,7 +85,7 @@
                 },
                 cancel: {
                     label: '<i class="fa fa-times"></i> Não',
-                    className: 'rubberBand animated btn-outline-danger'
+                    className: 'rubberBand animated btn-danger'
                 }
             },
             callback: function (result) {

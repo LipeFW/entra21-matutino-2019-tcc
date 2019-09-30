@@ -41,7 +41,6 @@
                 },
                 success: function (data) {
                     $("#modal-modelo").modal("hide");
-                    limparCampos();
                     $idAlterar = -1;
                     $tabelaModelo.ajax.reload();
                 },
@@ -61,7 +60,6 @@
                 },
                 success: function (data) {
                     $("#modal-modelo").modal('hide');
-                    limparCampos();
                     $tabelaModelo.ajax.reload();
                     bootbox.alert("Modelo cadastrado com sucesso!");
                 },
@@ -83,7 +81,7 @@
                 },
                 cancel: {
                     label: '<i class="fa fa-times"></i> Não',
-                    className: 'rubberBand animated btn-outline-danger'
+                    className: 'rubberBand animated btn-danger'
                 }
             },
             callback: function (result) {
