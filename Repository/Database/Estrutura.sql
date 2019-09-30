@@ -11137,7 +11137,10 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (463, 'Canar', 1),
 (463, 'La Troncal', 1);
 /*<--/Canar-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Carchi-->*/
+(464, 'El Angel', 1),
+(464, 'San Gabriel', 1);
 /*<--/Carchi-->*/
 /*<--Chimborazo-->*/
 /*<--/Chimborazo-->*/
