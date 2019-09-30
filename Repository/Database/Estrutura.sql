@@ -11116,6 +11116,19 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Colombia-->*/
 /*<--Venezuela-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Falcon-->*/
+(574, 'Coro', 1),
+(574, 'Punta Cardon', 1),
+(574, 'Punto Fijo', 1);
+/*<--/Falcon-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Guarico-->*/
+(575, 'Altagracia De Orituco', 1),
+(575, 'Calabozo', 1),
+(575, 'San Juan De Los Morros', 1),
+(575, 'Zaraza', 1);
+/*<--/Guarico-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Lara-->*/
 (576, 'Barquisimeto', 1),
 (576, 'Cabudare', 1),
