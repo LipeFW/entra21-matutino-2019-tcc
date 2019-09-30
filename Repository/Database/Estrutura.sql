@@ -11292,6 +11292,13 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Orellana-->*/
 /*<--/Ecuador-->*/
 
+/*<--Guyana-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Barima-Waini-->*/
+(482, 'Mabaruma', 1);
+/*<--/Barima-Waini->*/
+
+/*<--/Guyana-->*/
 /*<--Venezuela-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Amazonas-->*/
