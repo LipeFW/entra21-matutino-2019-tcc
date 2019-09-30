@@ -10270,8 +10270,8 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (426, 'Iquique', 1);
 /*<--/Tarapaca-->*/
 /*<--/Chile-->*/
-/*<--/Colombia-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--/Colombia-->*/
 /*<--/Amazonas-->*/
 (427, 'Leticia', 1),
 (427, 'Puerto Narino', 1);
@@ -10488,10 +10488,16 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (432, 'Totoro', 1),
 (432, 'Villa Rica', 1);
 /*<--/Cauca-->*/
-
---INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
-
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Colombia-->*/
+/*<--Venezuela-->*/
+/*<--Vargas-->*/
+(589, 'Caraballeda', 1),
+(589, 'Catia La Mar', 1),
+(589, 'La Guaira', 1),
+(589, 'Maiquetia', 1);
+/*<--/Vargas-->*/
+/*<--/Venezuela-->*/
 /*<--/América do Sul-->*/
 CREATE TABLE usuarios( 
 id INT PRIMARY KEY IDENTITY(1,1),
