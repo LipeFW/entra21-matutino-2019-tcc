@@ -11340,67 +11340,67 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Guyana-->*/
 
 /*<--Paraguay-->*/
-
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Alto Parana-->*/
 /*<--/Alto Parana-->*/
-
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Amambay-->*/
 /*<--/Amambay-->*/
-
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Boqueron-->*/
 /*<--/Boqueron-->*/
-
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Caaguazu-->*/
 /*<--/Caaguazu-->*/
-
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Caazapa-->*/
 /*<--/Caazapa-->*/
-
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Central-->*/
 /*<--/Central-->*/
-
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Concepcion-->*/
 /*<--/Concepcion-->*/
-
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Concepcion-->*/
 /*<--/Concepcion-->*/
-
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Cordillera-->*/
 /*<--/Cordillera-->*/
-
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Guaira-->*/
 /*<--/Guaira-->*/
-
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Itapua-->*/
 /*<--/Itapua-->*/
-
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Misiones-->*/
 /*<--/Misiones-->*/
-
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Neembucu-->*/
 /*<--/Neembucu-->*/
-
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Paraguari-->*/
 /*<--/Paraguari-->*/
-
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Presidente Hayes-->*/
 /*<--/Presidente Hayes-->*/
-
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--San Pedro-->*/
 /*<--/San Pedro-->*/
-
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Canindeyu-->*/
 /*<--/Canindeyu-->*/
-
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Chaco-->*/
 /*<--/Chaco-->*/
-
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Nueva Asuncion-->*/
 /*<--/Nueva Asuncion-->*/
-
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Alto Paraguay-->*/
 /*<--/Alto Paraguay-->*/
-
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Paraguay-->*/
 
 /*<--Venezuela-->*/
