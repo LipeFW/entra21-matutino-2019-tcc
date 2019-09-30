@@ -11255,6 +11255,7 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Morona-Santiago-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Pastaza-->*/
+(475, 'Puyo', 1);
 /*<--/Pastaza-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Pichincha-->*/
