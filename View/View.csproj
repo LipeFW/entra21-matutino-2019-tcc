@@ -2785,6 +2785,8 @@
     <Content Include="Views\Marca\MarcaModal.cshtml" />
     <Content Include="Views\Modelo\Index.cshtml" />
     <Content Include="Views\Modelo\ModeloModal.cshtml" />
+    <Content Include="Views\Venda\Editar.cshtml" />
+    <Content Include="Views\Venda\ProdutoModal.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
