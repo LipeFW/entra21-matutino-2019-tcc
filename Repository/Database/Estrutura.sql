@@ -11267,7 +11267,10 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Pichincha-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Tungurahua-->*/
-
+(477, 'Ambato', 1),
+(477, 'Banos', 1),
+(477, 'Pelileo', 1),
+(477, 'Pillaro', 1);
 /*<--/Tungurahua-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Zamora-Chinchipe-->*/
