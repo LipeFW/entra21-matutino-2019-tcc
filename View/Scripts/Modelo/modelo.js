@@ -5,9 +5,9 @@
         ajax: "http://localhost:51242/modelo/obtertodos",
         serverSide: true,
         columns: [
-            { "data": "Id" },
-            { "data": "Nome" },
-            { "data": "Marca.Nome" },
+            { "data": 'Id' },
+            { "data": 'Nome' },
+            { "data": 'Marca.Nome' },
             {
                 render: function (data, type, row) {
                     return '<button class="fadeIn animated btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button>\<button class="fadeIn animated btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>'
@@ -16,9 +16,9 @@
         ]
     });
 
-    $("#modelo-botao-salvar").on("click", function () {
-        $nome = $("#modelo-campo-nome").val();
-        $marca = $("#modelo-campo-marca").val();
+    $('#modelo-botao-salvar').on('click', function () {
+        $nome = $('#modelo-campo-nome').val();
+        $marca = $('#modelo-campo-marca').val();
         if (($nome.trim() == "") || ($marca == -1)) {
             bootbox.alert("Preencha corretamente os campos!");
             return null;
@@ -32,7 +32,7 @@
 
         function alterar($nome, $marca) {
             $.ajax({
-                url: "http://localhost:51242/modelo/update",
+                url: 'http://localhost:51242/modelo/update',
                 method: 'post',
                 data: {
                     id: $idAlterar,
@@ -40,7 +40,7 @@
                     idMarca: $marca
                 },
                 success: function (data) {
-                    $("#modal-modelo").modal("hide");
+                    $('#modal-modelo').modal('hide');
                     limparCampos();
                     $idAlterar = -1;
                     $tabelaModelo.ajax.reload();
@@ -53,14 +53,14 @@
 
         function inserir($nome, $marca) {
             $.ajax({
-                url: "http://localhost:51242/modelo/inserir",
-                method: "post",
+                url: 'http://localhost:51242/modelo/inserir',
+                method: 'post',
                 data: {
                     nome: $nome,
                     idMarca: $marca
                 },
                 success: function (data) {
-                    $("#modal-modelo").modal('hide');
+                    $('#modal-modelo').modal('hide');
                     limparCampos();
                     $tabelaModelo.ajax.reload();
                     bootbox.alert("Modelo cadastrado com sucesso!")
