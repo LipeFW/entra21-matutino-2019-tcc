@@ -11200,7 +11200,13 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (469, 'Velasco Ibarra', 1),
 (469, 'Yaguachi', 1);
 /*<--/Guayas-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Imbabura-->*/
+(470, 'Atuntaqui', 1),
+(470, 'Cotacachi', 1),
+(470, 'Ibarra', 1),
+(470, 'Otavalo', 1),
+(470, 'Pimampiro', 1);
 /*<--/Imbabura-->*/
 /*<--Loja-->*/
 /*<--/Loja-->*/
