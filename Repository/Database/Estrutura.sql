@@ -11126,7 +11126,11 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (461, 'Cuenca', 1),
 (461, 'Gualaceo', 1);
 /*<--/Azuay-->*/
-
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Bolivar-->*/
+(462, 'Guaranda', 1),
+(462, 'San Miguel', 1);
+/*<--/Bolivar-->*/
 
 /*<--/Ecuador-->*/
 
