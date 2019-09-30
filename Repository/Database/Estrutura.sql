@@ -11305,6 +11305,11 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Demerara-Mahaica->*/
 (484, 'Georgetown', 1);
 /*<--/Demerara-Mahaica->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--East Berbice-Corentyne->*/
+(485, 'New Amsterdam', 1),
+(485, 'Skeldon', 1);
+/*<--/East Berbice-Corentyne-->*/
 
 /*<--/Guyana-->*/
 /*<--Venezuela-->*/
