@@ -11385,8 +11385,312 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (454, 'Zipaquira', 1);
 /*<--/Cundinamarca-->*/
 
-/*<--/Colombia-->*/
+/*<--Ecuador-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Galapagos-->*/
+(460, 'Puerto Ayora', 1),
+(460, 'Puerto Baquerizo Moreno', 1),
+(460, 'San Cristobal', 1);
+/*<--/Galapagos-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Azuay-->*/
+(461, 'Cuenca', 1),
+(461, 'Gualaceo', 1);
+/*<--/Azuay-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Bolivar-->*/
+(462, 'Guaranda', 1),
+(462, 'San Miguel', 1);
+/*<--/Bolivar-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Canar-->*/
+(463, 'Azogues', 1),
+(463, 'Canar', 1),
+(463, 'La Troncal', 1);
+/*<--/Canar-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Carchi-->*/
+(464, 'El Angel', 1),
+(464, 'San Gabriel', 1);
+/*<--/Carchi-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Chimborazo-->*/
+(465, 'Alausi', 1),
+(465, 'Guano', 1),
+(465, 'Riobamba', 1);
+/*<--/Chimborazo-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Cotopaxi-->*/
+(466, 'La Mana', 1),
+(466, 'Latacunga', 1),
+(466, 'Pujili', 1),
+(466, 'San Miguel', 1),
+(466, 'Saquisili', 1);
+/*<--/Cotopaxi-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--El Oro-->*/
+(467, 'Arenillas', 1),
+(467, 'Huaquillas', 1),
+(467, 'Machala', 1),
+(467, 'Pasaje', 1),
+(467, 'Pinas', 1),
+(467, 'Portovelo', 1),
+(467, 'Santa Rosa', 1),
+(467, 'Zaruma', 1);
+/*<--/El Oro-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Esmeraldas-->*/
+(468, 'Esmeraldas', 1),
+(468, 'Muisne', 1),
+(468, 'Rosa Zarate', 1),
+(468, 'San Lorenzo', 1),
+(468, 'Valdez', 1);
+/*<--/Esmeraldas-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Guayas-->*/
+(469, 'Alfredo Baquerizo Moreno', 1),
+(469, 'Balao', 1),
+(469, 'Colimes', 1),
+(469, 'Coronel Mariduena', 1),
+(469, 'Daule', 1),
+(469, 'El Carmen', 1),
+(469, 'El Triunfo', 1),
+(469, 'Guayaquil', 1),
+(469, 'La Libertad', 1),
+(469, 'Lomas De Sargentillo', 1),
+(469, 'Milagro', 1),
+(469, 'Naranjal', 1),
+(469, 'Naranjito', 1),
+(469, 'Palestina', 1),
+(469, 'Pedro Carbo', 1),
+(469, 'Playas', 1),
+(469, 'Salinas', 1),
+(469, 'Samborondon', 1),
+(469, 'Santa Elena', 1),
+(469, 'Santa Lucia', 1),
+(469, 'Velasco Ibarra', 1),
+(469, 'Yaguachi', 1);
+/*<--/Guayas-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Imbabura-->*/
+(470, 'Atuntaqui', 1),
+(470, 'Cotacachi', 1),
+(470, 'Ibarra', 1),
+(470, 'Otavalo', 1),
+(470, 'Pimampiro', 1);
+/*<--/Imbabura-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Loja-->*/
+(471, 'Alamor', 1),
+(471, 'Cariamanga', 1),
+(471, 'Catacocha', 1),
+(471, 'Catamayo', 1),
+(471, 'Celica', 1),
+(471, 'Loja', 1),
+(471, 'Macara', 1),
+(471, 'Puebloviejo', 1);
+/*<--/Loja-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Los Rios-->*/
+(472, 'Babahoyo', 1),
+(472, 'Catarama', 1),
+(472, 'Montalvo', 1),
+(472, 'Palenque', 1),
+(472, 'Quevedo', 1),
+(472, 'Ventanas', 1),
+(472, 'Vinces', 1);
+/*<--/Los Rios-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Manabi-->*/
+(473, 'Bahia De Caraquez', 1),
+(473, 'Calceta', 1),
+(473, 'Chone', 1),
+(473, 'Jipijapa', 1),
+(473, 'Junin', 1),
+(473, 'Manta', 1),
+(473, 'Montecristi', 1),
+(473, 'Pajan', 1),
+(473, 'Pedernales', 1),
+(473, 'Portoviejo', 1),
+(473, 'Rocafuerte', 1),
+(473, 'Santa Ana', 1),
+(473, 'Sucre', 1),
+(473, 'Tosagua', 1);
+/*<--/Manabi-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Morona-Santiago-->*/
+(474, 'Gualaquiza', 1),
+(474, 'Macas', 1),
+(474, 'Palora', 1),
+(474, 'Sucua', 1);
+/*<--/Morona-Santiago-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Pastaza-->*/
+(475, 'Puyo', 1);
+/*<--/Pastaza-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Pichincha-->*/
+(476, 'Cayambe', 1),
+(476, 'Machachi', 1),
+(476, 'Quito', 1),
+(476, 'Sangolqui', 1),
+(476, 'Santo Domingo', 1);
+/*<--/Pichincha-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Tungurahua-->*/
+(477, 'Ambato', 1),
+(477, 'Banos', 1),
+(477, 'Pelileo', 1),
+(477, 'Pillaro', 1);
+/*<--/Tungurahua-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Zamora-Chinchipe-->*/
+(478, 'Yantzaza', 1),
+(478, 'Zamora', 1);
+/*<--/Zamora-Chinchipe-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Sucumbios-->*/
+(479, 'Nueva Loja', 1);
+/*<--/Sucumbios-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Napo-->*/
+(480, 'Archidona', 1),
+(480, 'Tena', 1);
+/*<--/Napo-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Orellana-->*/
+(481, '', 1);
+/*<--/Orellana-->*/
+/*<--/Ecuador-->*/
+
+/*<--Guyana-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Barima-Waini-->*/
+(482, 'Mabaruma', 1);
+/*<--/Barima-Waini->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Cuyuni-Mazaruni->*/
+(483, 'Bartica', 1);
+/*<--/Cuyuni-Mazaruni->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Demerara-Mahaica->*/
+(484, 'Georgetown', 1);
+/*<--/Demerara-Mahaica->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--East Berbice-Corentyne->*/
+(485, 'New Amsterdam', 1),
+(485, 'Skeldon', 1);
+/*<--/East Berbice-Corentyne-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Essequibo Islands-West Demerara-->*/
+(486, 'Vreed En Hoop', 1);
+/*<--/Essequibo Islands-West Demerara-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Mahaica-Berbice-->*/
+(487, 'Fort Wellington', 1),
+(487, 'Mahaicony', 1),
+(487, 'Rosignol', 1);
+/*<--/Mahaica-Berbice-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Pomeroon-Supenaam-->*/
+(488, '', 1);
+/*<--/Pomeroon-Supenaam-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Potaro-Siparuni-->*/
+(489, '', 1);
+/*<--/Potaro-Siparuni-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Upper Demerara-Berbice-->*/
+(490, 'Ituni', 1),
+(490, 'Linden', 1);
+/*<--/Upper Demerara-Berbice-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Upper Takutu-Upper Essequibo-->*/
+(491, 'Lethem', 1);
+/*<--/Upper Takutu-Upper Essequibo-->*/
+/*<--/Guyana-->*/
 /*<--Venezuela-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Amazonas-->*/
+(565, 'Puerto Ayacucho', 1);
+/*<--/Amazonas-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Anzoategui-->*/
+(566, 'Anaco', 1),
+(566, 'Barcelona', 1),
+(566, 'Cantaura', 1),
+(566, 'El Tigre', 1),
+(566, 'San Jose De Guanipa', 1);
+/*<--/Anzoategui-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<-Apure-->*/
+(567, 'Guasdualito', 1);
+/*<--/Apure-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Aragua-->*/
+(568, 'Cagua', 1),
+(568, 'El Limon', 1),
+(568, 'La Victoria', 1),
+(568, 'Maracay', 1),
+(568, 'Palo Negro', 1),
+(568, 'San Mateo', 1),
+(568, 'Turmero', 1),
+(568, 'Villa De Cura', 1);
+/*<--/Aragua-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Barinas-->*/
+(569, 'Barinas', 1),
+(569, 'Barinitas', 1);
+/*<--/Barinas-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Bolivar-->*/
+(570, 'Ciudad Bolivar', 1),
+(570, 'Ciudad Guayana', 1),
+(570, 'Upata', 1);
+/*<--/Bolivar-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Carabobo-->*/
+(571, 'Goaigoaza', 1),
+(571, 'Guacara', 1),
+(571, 'Guigue', 1),
+(571, 'Mariara', 1),
+(571, 'Moron', 1),
+(571, 'Puerto Cabello', 1),
+(571, 'San Joaquin', 1),
+(571, 'Tacarigua', 1),
+(571, 'Valencia', 1);
+/*<--/Carabobo-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Cojedes-->*/
+(572, 'San Carlos', 1),
+(572, 'Tinaquillo', 1);
+/*<--/Cojedes-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Delta Amacuro-->*/
+(573, 'Tucupita', 1);
+/*<--/Delta Amacuro-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Falcon-->*/
+(574, 'Coro', 1),
+(574, 'Punta Cardon', 1),
+(574, 'Punto Fijo', 1);
+/*<--/Falcon-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Guarico-->*/
+(575, 'Altagracia De Orituco', 1),
+(575, 'Calabozo', 1),
+(575, 'San Juan De Los Morros', 1),
+(575, 'Zaraza', 1);
+/*<--/Guarico-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Lara-->*/
+(576, 'Barquisimeto', 1),
+(576, 'Cabudare', 1),
+(576, 'Carora', 1),
+(576, 'El Tocuyo', 1),
+(576, 'Los Rastrojos', 1),
+(576, 'Quibor', 1);
+/*<--/Lara-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Merida-->*/
 (577, 'Ejido', 1),

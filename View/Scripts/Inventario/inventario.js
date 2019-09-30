@@ -49,7 +49,7 @@
                 $tabelaInventario.ajax.reload();
             },
             error: function (err) {
-                bootbox.alert('Não foi possivel alterar!');
+                bootbox.alert('Não foi possível alterar!');
             }
         });
     }
@@ -67,7 +67,7 @@
                 $tabelaInventario.ajax.reload();
             },
             error: function (err) {
-                bootbox.alert('Não foi possivel inserir!');
+                bootbox.alert('Não foi possível inserir!');
             }
         });
     }
@@ -148,7 +148,7 @@
                 $('#modal-inventario').modal('show');
             },
             error: function (err) {
-                bootbox.alert('Não foi possivel carregar!');
+                bootbox.alert('Não foi possível carregar!');
             }
         })
     });

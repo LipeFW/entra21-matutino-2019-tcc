@@ -47,7 +47,7 @@
                 $tabelaCategoria.ajax.reload();
             },
             error: function (err) {
-                bootbox.alert('Não foi possivel editar a categoria.');
+                bootbox.alert('Não foi possível editar a categoria.');
                 $idAlterar = -1;
             }
         });
@@ -85,7 +85,7 @@
                 },
                 cancel: {
                     label: '<i class="fa fa-times"></i> Não',
-                    className: 'rubberBand animated btn-outline-danger'
+                    className: 'rubberBand animated btn-danger'
                 }
             },
             callback: function (result) {
@@ -116,7 +116,7 @@
                 $('#modal-categoria').modal('show');
             },
             error: function (err) {
-                bootbox.alert('Não foi possivel carregar a categoria.');
+                bootbox.alert('Não foi possível carregar a categoria.');
             }
         })
     });
