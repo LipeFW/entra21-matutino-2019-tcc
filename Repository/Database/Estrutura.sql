@@ -11210,16 +11210,16 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Imbabura-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Loja-->*/
+(471, 'Alamor', 1),
+(471, 'Cariamanga', 1),
+(471, 'Catacocha', 1),
+(471, 'Catamayo', 1),
+(471, 'Celica', 1),
+(471, 'Loja', 1),
+(471, 'Macara', 1),
+(471, 'Puebloviejo', 1);
 /*<--/Loja-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
-/*<--Los Rios-->*/
-/*<--/Los Rios-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
-/*<--Manabi-->*/
-/*<--/Manabi-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
-/*<--Morona-Santiago-->*/
-/*<--/Morona-Santiago-->*/
+
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Pastaza-->*/
 /*<--/Pastaza-->*/
