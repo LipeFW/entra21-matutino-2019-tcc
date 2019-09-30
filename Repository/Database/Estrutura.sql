@@ -7729,6 +7729,119 @@ INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 
 /*<--/Cidades de San Jose-->*/
 /*<--/Costa Rica-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Cidades de Pinar del Rio-->*/
+
+    (147,'Bahia Honda',1),
+    (147,'Candelaria',1),
+    (147,'Consolacion Del Sur',1),
+    (147,'Guane',1),
+    (147,'Los Palacios',1),
+    (147,'Mantua',1),
+    (147,'Pinar Del Rio',1),
+    (147,'San Cristobal',1),
+    (147,'San Diego De Los Banos',1),
+    (147,'San Luis',1);
+
+/*<--Cidades de Pinar del Rio-->*/
+
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Cidades de Ciudad de la Habana-->*/
+
+(148,'Santiago De Las Vegas',1);
+/*<--Cidades de Ciudad de la Habana-->*/
+
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Cidades de Matanzas-->*/
+(149,'Agramonte',1),
+(149,'Alacranes',1),
+(149,'Bolondron',1),
+(149,'Calimete',1),
+(149,'Cardenas',1),
+(149,'Colon',1),
+(149,'Jaguey Grande',1),
+(149,'Jovellanos',1),
+(149,'Los Arabos',1),
+(149,'Manguito',1),
+(149,'Marti',1),
+(149,'Matanzas',1),
+(149,'Pedro Betancourt',1),
+(149,'Perico',1),
+(149,'Union De Reyes',1),
+(149,'Varadero',1);
+/*<--Cidades de Matanzas-->*/
+
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Cidades de Isla de la Juventud-->*/
+
+    (150,'Nueva Gerona',1),
+    (150,'Santa Fe',1);
+
+/*<--Cidades de Isla de la Juventud-->*/
+
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Cidades de Camaguey-->*/
+
+ 
+(151,'Camaguey',1),
+(151,'Esmeralda',1),
+(151,'Florida',1),
+(151,'Guaimaro',1),
+(151,'Minas',1),
+(151,'Nuevitas',1),
+(151,'Santa Cruz Del Sur',1),
+(151,'Sibanicu',1),
+(151,'Vertientes',1);
+
+/*<--Cidades de Camaguey-->*/
+
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Cidades de Ciego de La avilla-->*/
+
+   (152,'Baragua',1),
+   (152,'Chambas',1),
+   (152,'Ciego De Avila',1),
+   (152,'Moron',1),
+   (152,'Primero De Enero',1),
+   (152,'Venezuela',1);
+
+/*<--Cidades de Ciego de La avilla-->*/
+
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Cidades de Cienfuegos-->*/
+
+(153,'Abreus',1),
+(153,'Aguada De Pasajeros',1),
+(153,'Cienfuegos',1),
+(153,'Cruces',1),
+(153,'Cumanayagua',1),
+(153,'Palmira',1),
+(153,'Rodas',1);
+
+/*<--Cidades de Cienfuegos-->*/
+
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Cidades de Granma-->*/
+
+ (154,'Bayamo',1),
+ (154,'Campechuela',1),
+ (154,'Guisa',1),
+ (154,'Jiguani',1),
+ (154,'Manzanillo',1),
+ (154,'Media Luna',1),
+ (154,'Niquero',1),
+ (154,'Rio Cauto',1),
+ (154,'Yara',1);
+
+/*<--Cidades de Granma-->*/
+
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Cidades de Guantanamo-->*/
+
+(155,'Baracoa',1),
+(155,'Corralillo',1),
+(155,'Guantanamo',1);
+/*<--Cidades de Guantanamo-->*/
 
 
 --==================================================
@@ -10486,9 +10599,144 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (432, 'Timbiqui', 1),
 (432, 'Toribio', 1),
 (432, 'Totoro', 1),
-(432, 'Villa Rica', 1);
+(432, 'Villa Rica', 1),
 /*<--/Cauca-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--/Cesar-->*/
+(433, 'Aguachica', 1),
+(433, 'Agustin Codazzi', 1),
+(433, 'Astrea', 1),
+(433, 'Becerril', 1),
+(433, 'Bosconia', 1),
+(433, 'Chimichagua', 1),
+(433, 'Chiriguana', 1),
+(433, 'Curumani', 1),
+(433, 'El Copey', 1),
+(433, 'El Paso', 1),
+(433, 'Gamarra', 1),
+(433, 'Gonzalez', 1),
+(433, 'La Gloria', 1),
+(433, 'Pailitas', 1),
+(433, 'Pelaya', 1),
+(433, 'Rio De Oro', 1),
+(433, 'San Alberto', 1),
+(433, 'San Diego', 1),
+(433, 'San Martin', 1),
+(433, 'Tamalameque', 1),
+(433, 'Valledupar', 1),
+/*<--/Cesar-->*/
+/*<--/Choco-->*/
+(434, 'Acandi', 1),
+(434, 'Alto Baudo', 1),
+(434, 'Bagado', 1),
+(434, 'Bajo Baudo', 1),
+(434, 'Bojaya', 1),
+(434, 'Certegui', 1),
+(434, 'Condoto', 1),
+(434, 'El Carmen', 1),
+(434, 'Istmina', 1),
+(434, 'Jurado', 1),
+(434, 'Litoral Del San Juan', 1),
+(434, 'Lloro', 1),
+(434, 'Mutis', 1),
+(434, 'Novita', 1),
+(434, 'Nuqui', 1),
+(434, 'Quibdo', 1),
+(434, 'Riosucio', 1),
+(434, 'San Jose Del Palmar', 1),
+(434, 'Sipi', 1),
+(434, 'Tado', 1),
+(434, 'Unguia', 1),
+/*<--/Choco-->*/
+/*<--/Cordoba-->*/
+(435, 'Ayapel', 1),
+(435, 'Buenavista', 1),
+(435, 'Canalete', 1),
+(435, 'Cerete', 1),
+(435, 'Chima', 1),
+(435, 'Chinu', 1),
+(435, 'Cienaga De Oro', 1),
+(435, 'Cotorra', 1),
+(435, 'Lorica', 1),
+(435, 'Los Cordobas', 1),
+(435, 'Momil', 1),
+(435, 'Monitos', 1),
+(435, 'Monteria', 1),
+(435, 'Planeta Rica', 1),
+(435, 'Pueblo Nuevo', 1),
+(435, 'Puerto Escondido', 1),
+(435, 'Purisima', 1),
+(435, 'Sahagun', 1),
+(435, 'San Antero', 1),
+(435, 'San Carlos', 1),
+(435, 'San Pelayo', 1),
+(435, 'Tierralta', 1),
+(435, 'Valencia', 1),
+/*<--/Cordoba-->*/
+/*<--/Guaviare-->*/
+(436, 'Calamar', 1),
+(436, 'El Retorno', 1),
+(436, 'Miraflores', 1),
+(436, 'San Jose Del Guaviare', 1),
+/*<--/Guaviare-->*/
+/*<--/Guainia-->*/
+(437, 'Inirida', 1),
+/*<--/Guainia-->*/
+/*<--/Huila-->*/
+(438, 'Acevedo', 1),
+(438, 'Agrado', 1),
+(438, 'Aipe', 1),
+(438, 'Algeciras', 1),
+(438, 'Altamira', 1),
+(438, 'Baraya', 1),
+(438, 'Campoalegre', 1),
+(438, 'Colombia', 1),
+(438, 'Elias', 1),
+(438, 'Garzon', 1),
+(438, 'Gigante', 1),
+(438, 'Guadalupe', 1),
+(438, 'Hobo', 1),
+(438, 'Iquira', 1),
+(438, 'Isnos', 1),
+(438, 'La Argentina', 1),
+(438, 'La Plata', 1),
+(438, 'Nataga', 1),
+(438, 'Neiva', 1),
+(438, 'Oporapa', 1),
+(438, 'Paicol', 1),
+(438, 'Palermo', 1),
+(438, 'Palestina', 1),
+(438, 'Pital', 1),
+(438, 'Pitalito', 1),
+(438, 'Rivera', 1),
+(438, 'Saladoblanco', 1),
+(438, 'San Agustin', 1),
+(438, 'Santa Maria', 1),
+(438, 'Suaza', 1),
+(438, 'Tarqui', 1),
+(438, 'Tello', 1),
+(438, 'Teruel', 1),
+(438, 'Tesalia', 1),
+(438, 'Timana', 1),
+(438, 'Villavieja', 1),
+(438, 'Yaguara', 1),
+/*<--/Huila-->*/
+/*<--/La Guajira-->*/
+(439, 'Albania', 1),
+(439, 'Barrancas', 1),
+(439, 'Dibulla', 1),
+(439, 'Distraccion', 1),
+(439, 'El Molino', 1),
+(439, 'Fonseca', 1),
+(439, 'La Jagua Del Pilar', 1),
+(439, 'Maicao', 1),
+(439, 'Manaure', 1),
+(439, 'Riohacha', 1),
+(439, 'San Juan Del Cesar', 1),
+(439, 'Uribia', 1),
+(439, 'Urumita', 1),
+(439, 'Villanueva', 1);
+/*<--/La Guajira-->*/
 /*<--/Colombia-->*/
 /*<--Venezuela-->*/
 /*<--Vargas-->*/
