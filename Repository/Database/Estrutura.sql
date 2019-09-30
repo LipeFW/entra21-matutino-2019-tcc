@@ -11338,6 +11338,71 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (491, 'Lethem', 1);
 /*<--/Upper Takutu-Upper Essequibo-->*/
 /*<--/Guyana-->*/
+
+/*<--Paraguay-->*/
+
+/*<--Alto Parana-->*/
+/*<--/Alto Parana-->*/
+
+/*<--Amambay-->*/
+/*<--/Amambay-->*/
+
+/*<--Boqueron-->*/
+/*<--/Boqueron-->*/
+
+/*<--Caaguazu-->*/
+/*<--/Caaguazu-->*/
+
+/*<--Caazapa-->*/
+/*<--/Caazapa-->*/
+
+/*<--Central-->*/
+/*<--/Central-->*/
+
+/*<--Concepcion-->*/
+/*<--/Concepcion-->*/
+
+/*<--/Concepcion-->*/
+/*<--/Concepcion-->*/
+
+/*<--Cordillera-->*/
+/*<--/Cordillera-->*/
+
+/*<--Guaira-->*/
+/*<--/Guaira-->*/
+
+/*<--Itapua-->*/
+/*<--/Itapua-->*/
+
+/*<--Misiones-->*/
+/*<--/Misiones-->*/
+
+/*<--Neembucu-->*/
+/*<--/Neembucu-->*/
+
+/*<--Paraguari-->*/
+/*<--/Paraguari-->*/
+
+/*<--Presidente Hayes-->*/
+/*<--/Presidente Hayes-->*/
+
+/*<--San Pedro-->*/
+/*<--/San Pedro-->*/
+
+/*<--Canindeyu-->*/
+/*<--/Canindeyu-->*/
+
+/*<--Chaco-->*/
+/*<--/Chaco-->*/
+
+/*<--Nueva Asuncion-->*/
+/*<--/Nueva Asuncion-->*/
+
+/*<--Alto Paraguay-->*/
+/*<--/Alto Paraguay-->*/
+
+/*<--/Paraguay-->*/
+
 /*<--Venezuela-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Amazonas-->*/
