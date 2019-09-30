@@ -11221,13 +11221,13 @@ registro_ativo BIT
 );
 
 INSERT INTO usuarios(nome,nome_completo,url_imagem, admin, senha,  registro_ativo)
-VALUES  ( 'lipefw'  , 'Felipe'   , ''  , 1 , 'anaumsei'      , 1),
-	      ( 'illan'   , 'Illan'    , ''      , 1 , 'illanzoka'     , 1),
-	     ( 'eduardo'  , 'Eduardo'  , ''    , 1 , 'RetardoMental' , 1),
-	     ( 'henrique' , 'Henrique' , ''   , 1 , 'pimbinha6000'  , 1),
-	     ( 'pablo'    , 'Pablo'    , ''            , 1 , '1234'          , 1),
-	     ( 'nathan'   , 'Nathan'   , ''     , 1 , '1203'          , 1),
-	     ( 'josealencar'   , 'José de Alencar'   , ''     , 0 , 'jsale'          , 1);
+VALUES  ( 'lipefw'  , 'Felipe'   , 'default'  , 1 , 'anaumsei'      , 1),
+	      ( 'illan'   , 'Illan'    , 'default'      , 1 , 'illanzoka'     , 1),
+	     ( 'eduardo'  , 'Eduardo'  , 'default'    , 1 , 'RetardoMental' , 1),
+	     ( 'henrique' , 'Henrique' , 'default'   , 1 , 'pimbinha6000'  , 1),
+	     ( 'pablo'    , 'Pablo'    , 'default'            , 1 , '1234'          , 1),
+	     ( 'nathan'   , 'Nathan'   , 'default'     , 1 , '1203'          , 1),
+	     ( 'josealencar'   , 'José de Alencar'   , 'default'     , 0 , 'jsale'          , 1);
 
 CREATE TABLE categorias( 
 id INT PRIMARY KEY IDENTITY(1,1),
