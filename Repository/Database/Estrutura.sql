@@ -7886,6 +7886,54 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (158,'Puerto Padre',1);
 /*<--Cidades de  Las Tunas-->*/
 
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Cidades de Sancti Spiritus-->*/
+
+(159,'Cabaiguan',1),
+(159,'Condado',1),
+(159,'Fomento',1),
+(159,'Jatibonico',1),
+(159,'Sancti Spiritus',1),
+(159,'Trinidad',1),
+(159,'Yaguajay',1),
+(159,'Zaza Del Medio',1);
+
+/*<--Cidades de   Sancti Spiritus-->*/
+
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Cidades de  Santiago de Cuba-->*/
+
+(160,'Contramaestre',1),
+(160,'El Cobre',1),
+(160,'Palma Soriano',1),
+(160,'San Luis',1),
+(160,'Santiago De Cuba',1);
+
+ /*<--Cidades de Santiago de Cuba-->*/
+
+ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Cidades de Villa Clara-->*/
+
+  (161,'Caibarien',1),
+  (161,'Calabazar De Sagua',1),
+  (161,'Camajuani',1),
+  (161,'Cifuentes',1),
+  (161,'Encrucijada',1),
+  (161,'Esperanza',1),
+  (161,'Manicaragua',1),
+  (161,'Placetas',1),
+  (161,'Quemado De Guines',1),
+  (161,'Rancho Veloz',1),
+  (161,'Ranchuelo',1),
+  (161,'Remedios',1),
+  (161,'Sagua La Grande',1),
+  (161,'Santa Clara',1),
+  (161,'Santo Domingo',1),
+  (161,'Zulueta',1);
+
+/*<--Cidades de Villa Clara-->*/
+
+
 
 
 
@@ -10791,8 +10839,316 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (439, 'Urumita', 1),
 (439, 'Villanueva', 1);
 /*<--/La Guajira-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--/Meta-->*/
+(440, 'Acacias', 1),
+(440, 'Barranca De Upia', 1),
+(440, 'Cabuyaro', 1),
+(440, 'Cubarral', 1),
+(440, 'Cumaral', 1),
+(440, 'El Calvario', 1),
+(440, 'El Castillo', 1),
+(440, 'El Dorado', 1),
+(440, 'Fuente De Oro', 1),
+(440, 'Granada', 1),
+(440, 'Guamal', 1),
+(440, 'La Macarena', 1),
+(440, 'Lejanias', 1),
+(440, 'Mapiripan', 1),
+(440, 'Mesetas', 1),
+(440, 'Puerto Concordia', 1),
+(440, 'Puerto Gaitan', 1),
+(440, 'Puerto Lleras', 1),
+(440, 'Puerto Lopez', 1),
+(440, 'Puerto Rico', 1),
+(440, 'Restrepo', 1),
+(440, 'San Juan De Arama', 1),
+(440, 'San Juanito', 1),
+(440, 'San Martin', 1),
+(440, 'Villavicencio', 1),
+(440, 'Vista Hermosa', 1);
+/*<--/Meta-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--/Narino-->*/
+(441, 'Aldana', 1),
+(441, 'Ancuya', 1),
+(441, 'Arboleda', 1),
+(441, 'Barbacoas', 1),
+(441, 'Belen', 1),
+(441, 'Buesaco', 1),
+(441, 'Chachagui', 1),
+(441, 'Colon', 1),
+(441, 'Consaca', 1),
+(441, 'Contadero', 1),
+(441, 'Cordoba', 1),
+(441, 'Cuaspud', 1),
+(441, 'Cumbal', 1),
+(441, 'Cumbitara', 1),
+(441, 'El Penol', 1),
+(441, 'El Rosario', 1),
+(441, 'El Tablon', 1),
+(441, 'El Tambo', 1),
+(441, 'Funes', 1),
+(441, 'Guachucal', 1),
+(441, 'Guaitarilla', 1),
+(441, 'Gualmatan', 1),
+(441, 'Iles', 1),
+(441, 'Imues', 1),
+(441, 'Ipiales', 1),
+(441, 'La Cruz', 1),
+(441, 'La Florida', 1),
+(441, 'La Llanada', 1),
+(441, 'La Tola', 1),
+(441, 'La Union', 1),
+(441, 'Leiva', 1),
+(441, 'Linares', 1),
+(441, 'Los Andes', 1),
+(441, 'Magui', 1),
+(441, 'Mallama', 1),
+(441, 'Mosquera', 1),
+(441, 'Narino', 1),
+(441, 'Olaya Herrera', 1),
+(441, 'Ospina', 1),
+(441, 'Pasto', 1),
+(441, 'Penol', 1),
+(441, 'Pizarro', 1),
+(441, 'Policarpa', 1),
+(441, 'Potosi', 1),
+(441, 'Providencia', 1),
+(441, 'Puerres', 1),
+(441, 'Pupiales', 1),
+(441, 'Ricaurte', 1),
+(441, 'Roberto Payan', 1),
+(441, 'Samaniego', 1),
+(441, 'San Bernardo', 1),
+(441, 'San Lorenzo', 1),
+(441, 'San Pedro De Cartago', 1),
+(441, 'Sandona', 1),
+(441, 'Santa Barbara', 1),
+(441, 'Santacruz', 1),
+(441, 'Sapuyes', 1),
+(441, 'Taminango', 1),
+(441, 'Tangua', 1),
+(441, 'Tumaco', 1),
+(441, 'Tuquerres', 1),
+(441, 'Yacuanquer', 1);
+/*<--/Narino-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--/Norte de Santander-->*/
+(442, 'Abrego', 1),
+(442, 'Arboledas', 1),
+(442, 'Bochalema', 1),
+(442, 'Bucarasica', 1),
+(442, 'Cachira', 1),
+(442, 'Cacota', 1),
+(442, 'Chinacota', 1),
+(442, 'Chitaga', 1),
+(442, 'Convencion', 1),
+(442, 'Cucuta', 1),
+(442, 'Cucutilla', 1),
+(442, 'Durania', 1),
+(442, 'El Carmen', 1),
+(442, 'El Tarra', 1),
+(442, 'El Zulia', 1),
+(442, 'Gramalote', 1),
+(442, 'Hacari', 1),
+(442, 'Herran', 1),
+(442, 'La Esperanza', 1),
+(442, 'La Playa', 1),
+(442, 'Labateca', 1),
+(442, 'Los Patios', 1),
+(442, 'Lourdes', 1),
+(442, 'Mutiscua', 1),
+(442, 'Ocana', 1),
+(442, 'Pamplona', 1),
+(442, 'Pamplonita', 1),
+(442, 'Puerto Santander', 1),
+(442, 'Ragonvalia', 1),
+(442, 'San Calixto', 1),
+(442, 'San Cayetano', 1),
+(442, 'Santiago', 1),
+(442, 'Sardinata', 1),
+(442, 'Silos', 1),
+(442, 'Tibu', 1),
+(442, 'Toledo', 1),
+(442, 'Villa Del Rosario', 1);
+/*<--/Norte de Santander-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--/Putumayo-->*/
+(443, 'Colon', 1),
+(443, 'Mocoa', 1),
+(443, 'Orito', 1),
+(443, 'Puerto Asis', 1),
+(443, 'Puerto Guzman', 1),
+(443, 'Puerto Leguizamo', 1),
+(443, 'San Francisco', 1),
+(443, 'San Miguel', 1),
+(443, 'Santiago', 1),
+(443, 'Sibundoy', 1),
+(443, 'Valle Del Guamuez', 1),
+(443, 'Villagarzon', 1);
+/*<--/Putumayo-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--/Quindio-->*/
+(444, 'Armenia', 1),
+(444, 'Buenavista', 1),
+(444, 'Calarca', 1),
+(444, 'Circasia', 1),
+(444, 'Cordoba', 1),
+(444, 'Filandia', 1),
+(444, 'Genova', 1),
+(444, 'La Tebaida', 1),
+(444, 'Montenegro', 1),
+(444, 'Pijao', 1),
+(444, 'Quimbaya', 1),
+(444, 'Salento', 1);
+/*<--/Quindio-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--/Risaralda-->*/
+(445, 'Apia', 1),
+(445, 'Balboa', 1),
+(445, 'Belen De Umbria', 1),
+(445, 'Dos Quebradas', 1),
+(445, 'Guatica', 1),
+(445, 'La Celia', 1),
+(445, 'La Virginia', 1),
+(445, 'Marsella', 1),
+(445, 'Mistrato', 1),
+(445, 'Pereira', 1),
+(445, 'Pueblo Rico', 1),
+(445, 'Quinchia', 1),
+(445, 'Santa Rosa De Cabal', 1),
+(445, 'Santuario', 1);
+/*<--/Risaralda-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--/San Andres Y Providencia-->*/
+(446, 'San Andres', 1);
+/*<--/San Andres Y Providencia-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--/Santander-->*/
+(447, 'Albania', 1),
+(447, 'Aratoca', 1),
+(447, 'Barbosa', 1),
+(447, 'Barichara', 1),
+(447, 'Barrancabermeja', 1),
+(447, 'Betulia', 1),
+(447, 'Bolivar', 1),
+(447, 'Bucaramanga', 1),
+(447, 'Cabrera', 1),
+(447, 'California', 1),
+(447, 'Capitanejo', 1),
+(447, 'Carcasi', 1),
+(447, 'Cepita', 1),
+(447, 'Cerrito', 1),
+(447, 'Charta', 1),
+(447, 'Chima', 1),
+(447, 'Chipata', 1),
+(447, 'Cimitarra', 1),
+(447, 'Concepcion', 1),
+(447, 'Confines', 1),
+(447, 'Contratacion', 1),
+(447, 'Coromoro', 1),
+(447, 'Curiti', 1),
+(447, 'El Carmen', 1),
+(447, 'El Guacamayo', 1),
+(447, 'El Penon', 1),
+(447, 'El Playon', 1),
+(447, 'Encino', 1),
+(447, 'Enciso', 1),
+(447, 'Florian', 1),
+(447, 'Floridablanca', 1),
+(447, 'Galan', 1),
+(447, 'Gambita', 1),
+(447, 'Giron', 1),
+(447, 'Guaca', 1),
+(447, 'Guadalupe', 1),
+(447, 'Guapota', 1),
+(447, 'Guavata', 1),
+(447, 'Guepsa', 1),
+(447, 'Hato', 1),
+(447, 'Jesus Maria', 1),
+(447, 'Jordan', 1),
+(447, 'La Belleza', 1),
+(447, 'La Paz', 1),
+(447, 'Landazuri', 1),
+(447, 'Lebrija', 1),
+(447, 'Los Santos', 1),
+(447, 'Macaravita', 1),
+(447, 'Malaga', 1),
+(447, 'Matanza', 1),
+(447, 'Mogotes', 1),
+(447, 'Molagavita', 1),
+(447, 'Ocamonte', 1),
+(447, 'Oiba', 1),
+(447, 'Onzaga', 1),
+(447, 'Palmar', 1),
+(447, 'Palmas Del Socorro', 1),
+(447, 'Paramo', 1),
+(447, 'Piedecuesta', 1),
+(447, 'Pinchote', 1),
+(447, 'Puente Nacional', 1),
+(447, 'Puerto Parra', 1),
+(447, 'Puerto Wilches', 1),
+(447, 'Rionegro', 1),
+(447, 'Sabana De Torres', 1),
+(447, 'San Andres', 1),
+(447, 'San Benito', 1),
+(447, 'San Gil', 1),
+(447, 'San Joaquin', 1),
+(447, 'San Jose De Miranda', 1),
+(447, 'San Miguel', 1),
+(447, 'San Vicente De Chucuri', 1),
+(447, 'Santa Barbara', 1),
+(447, 'Santa Helena', 1),
+(447, 'Simacota', 1),
+(447, 'Soata', 1),
+(447, 'Socorro', 1),
+(447, 'Suaita', 1),
+(447, 'Sucre', 1),
+(447, 'Surata', 1),
+(447, 'Tona', 1),
+(447, 'Velez', 1),
+(447, 'Vetas', 1),
+(447, 'Villanueva', 1),
+(447, 'Zapatoca', 1);
+/*<--/Santander-->*/
+
 /*<--/Colombia-->*/
 /*<--Venezuela-->*/
+/*<--Venezuela-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Portuguesa-->*/
+(581, 'Acarigua', 1),
+(581, 'Araure', 1),
+(581, 'Guanare', 1),
+(581, 'Villa Bruzual', 1);
+/*<--/Portuguesa-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Sucre-->*/
+(582, 'Carupano', 1),
+(582, 'Cumana', 1);
+/*<--/Sucre-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Tachira-->*/
+(583, 'La Fria', 1),
+(583, 'Rubio', 1),
+(583, 'San Antonio Del Tachira', 1),
+(583, 'San Cristobal', 1),
+(583, 'San Juan De Colon', 1),
+(583, 'Tariba', 1);
+/*<--/Tachira-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Trujillo-->*/
+(584, 'Trujillo', 1),
+(584, 'Valera', 1);
+/*<--/Trujillo-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Yaracuy-->*/
+(585, 'Chivacoa', 1),
+(585, 'Nirgua', 1),
+(585, 'San Felipe', 1),
+(585, 'Yaritagua', 1);
+/*<--/Yaracuy-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Zulia-->*/
 (586, 'Bachaquero', 1),
