@@ -7904,9 +7904,9 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Cidades de  Santiago de Cuba-->*/
 
 (160,'Contramaestre',1),
-(160,'El Cobre'
+(160,'El Cobre',1),
 (160,'Palma Soriano',1),
-(160,'San Luis'
+(160,'San Luis',1),
 (160,'Santiago De Cuba',1);
 
  /*<--Cidades de Santiago de Cuba-->*/
@@ -7932,6 +7932,7 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
   (161,'Zulueta',1);
 
 /*<--Cidades de Villa Clara-->*/
+
 
 
 
