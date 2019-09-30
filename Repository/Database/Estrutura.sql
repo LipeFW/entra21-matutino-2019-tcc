@@ -11310,6 +11310,10 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (485, 'New Amsterdam', 1),
 (485, 'Skeldon', 1);
 /*<--/East Berbice-Corentyne-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Essequibo Islands-West Demerara-->*/
+(486, 'Vreed En Hoop', 1);
+/*<--/Essequibo Islands-West Demerara-->*/
 
 /*<--/Guyana-->*/
 /*<--Venezuela-->*/
