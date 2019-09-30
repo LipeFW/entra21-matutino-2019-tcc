@@ -11024,6 +11024,7 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/San Andres Y Providencia-->*/
 (446, 'San Andres', 1);
 /*<--/San Andres Y Providencia-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Santander-->*/
 (447, 'Albania', 1),
 (447, 'Aratoca', 1),
