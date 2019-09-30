@@ -11328,7 +11328,14 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Potaro-Siparuni-->*/
 (489, '', 1);
 /*<--/Potaro-Siparuni-->*/
-
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Upper Demerara-Berbice-->*/
+(490, 'Ituni', 1),
+(490, 'Linden', 1);
+/*<--/Upper Demerara-Berbice-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Upper Takutu-Upper Essequibo-->*/
+/*<--/Upper Takutu-Upper Essequibo-->*/
 /*<--/Guyana-->*/
 /*<--Venezuela-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
