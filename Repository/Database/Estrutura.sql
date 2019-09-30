@@ -11283,6 +11283,8 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Sucumbios-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Napo-->*/
+(480, 'Archidona', 1),
+(480, 'Tena', 1);
 /*<--/Napo-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Orellana-->*/
