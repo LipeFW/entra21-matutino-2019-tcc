@@ -59,7 +59,7 @@
             success: function (data) {
                 $("#modal-rota").modal('hide');
                 limparCampos();
-                alert('Rota cadastrada com sucesso!');
+                bootbox.alert('Rota cadastrada com sucesso!');
                 $tabelaRota.ajax.reload();
             },
             error: function (err) {

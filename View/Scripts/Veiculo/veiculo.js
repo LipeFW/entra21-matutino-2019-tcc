@@ -72,10 +72,10 @@
                     $('#modal-veiculo').modal('hide');
                     limparCampos();
                     $tabelaVeiculo.ajax.reload();
-                    alert('Venda cadastrada com sucesso!');
+                    bootbox.alert('Veiculo cadastrado com sucesso!');
                 },
                 error: function (err) {
-                    alert('Não foi possivel cadastrar a venda!');
+                    bootbox.alert('Não foi possivel cadastrar a venda!');
                 }
             });
         }
@@ -129,7 +129,7 @@
                 $("#modal-veiculo").modal("show");
             },
             error: function (err) {
-                alert('Não foi possivel carregar a venda!');
+                bootbox.alert('Não foi possivel carregar a venda!');
             }
         });
     });
