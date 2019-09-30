@@ -7886,6 +7886,53 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (158,'Puerto Padre',1);
 /*<--Cidades de  Las Tunas-->*/
 
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Cidades de Sancti Spiritus-->*/
+
+(159,'Cabaiguan',1),
+(159,'Condado',1),
+(159,'Fomento',1),
+(159,'Jatibonico',1),
+(159,'Sancti Spiritus',1),
+(159,'Trinidad',1),
+(159,'Yaguajay',1),
+(159,'Zaza Del Medio',1);
+
+/*<--Cidades de   Sancti Spiritus-->*/
+
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Cidades de  Santiago de Cuba-->*/
+
+(160,'Contramaestre',1),
+(160,'El Cobre'
+(160,'Palma Soriano',1),
+(160,'San Luis'
+(160,'Santiago De Cuba',1);
+
+ /*<--Cidades de Santiago de Cuba-->*/
+
+ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Cidades de Villa Clara-->*/
+
+  (161,'Caibarien',1),
+  (161,'Calabazar De Sagua',1),
+  (161,'Camajuani',1),
+  (161,'Cifuentes',1),
+  (161,'Encrucijada',1),
+  (161,'Esperanza',1),
+  (161,'Manicaragua',1),
+  (161,'Placetas',1),
+  (161,'Quemado De Guines',1),
+  (161,'Rancho Veloz',1),
+  (161,'Ranchuelo',1),
+  (161,'Remedios',1),
+  (161,'Sagua La Grande',1),
+  (161,'Santa Clara',1),
+  (161,'Santo Domingo',1),
+  (161,'Zulueta',1);
+
+/*<--Cidades de Villa Clara-->*/
+
 
 
 
