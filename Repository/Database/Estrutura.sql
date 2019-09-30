@@ -11314,6 +11314,12 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Essequibo Islands-West Demerara-->*/
 (486, 'Vreed En Hoop', 1);
 /*<--/Essequibo Islands-West Demerara-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Mahaica-Berbice-->*/
+(487, 'Fort Wellington', 1),
+(487, 'Mahaicony', 1),
+(487, 'Rosignol', 1);
+/*<--/Mahaica-Berbice-->*/
 
 /*<--/Guyana-->*/
 /*<--Venezuela-->*/
