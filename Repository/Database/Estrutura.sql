@@ -11115,6 +11115,25 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 
 /*<--/Colombia-->*/
 /*<--Venezuela-->*/
+/*<--Bolivar-->*/
+/*<--/Bolivar-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Carabobo-->*/
+(571, 'Goaigoaza', 1),
+(571, 'Guacara', 1),
+(571, 'Guigue', 1),
+(571, 'Mariara', 1),
+(571, 'Moron', 1),
+(571, 'Puerto Cabello', 1),
+(571, 'San Joaquin', 1),
+(571, 'Tacarigua', 1),
+(571, 'Valencia', 1);
+/*<--/Carabobo-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Cojedes-->*/
+(572, 'San Carlos', 1),
+(572, 'Tinaquillo', 1);
+/*<--/Cojedes-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Delta Amacuro-->*/
 (573, 'Tucupita', 1);
