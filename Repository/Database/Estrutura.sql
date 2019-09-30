@@ -6205,7 +6205,7 @@ INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
     (76,'Concepcion De Buenos Aires',1),
     (76,'Coyula',1),
     (76,'Cuitzeo',1),
-    (76,'Cuyutlan',1),
+(76,'Cuyutlan',1),
     (76,'Degollado',1),
     (76,'El Arenal',1),
     (76,'El Grullo',1),
