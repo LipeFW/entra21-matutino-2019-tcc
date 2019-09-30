@@ -333,7 +333,7 @@
   <data name="Logradouro" xml:space="preserve">
     <value>Logradouro</value>
   </data>
-  <data name="Pais" xml:space="preserve">
+  <data name="País" xml:space="preserve">
     <value>País</value>
   </data>
   <data name="Selecioneumacidade" xml:space="preserve">
@@ -573,6 +573,10 @@ isso nunca acaba,e a cada realização surge mais motivação para não desistir
   </data>
   <data name="Visao" xml:space="preserve">
     <value>Visão</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Codigo" xml:space="preserve">
+    <value>Código</value>
   </data>
   <data name="Codigo" xml:space="preserve">
     <value>Código</value>

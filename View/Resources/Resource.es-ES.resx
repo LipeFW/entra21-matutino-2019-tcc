@@ -642,4 +642,8 @@ Nunca termina, y cada logro surge más motivación para no rendirse y siempre se
   <data name="Visao" xml:space="preserve">
     <value>Visión</value>
   </data>
+  <data name="Codigo" xml:space="preserve">
+    <value>Código</value>
+    <comment>checked</comment>
+  </data>
 </root>
