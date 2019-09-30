@@ -10236,7 +10236,7 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Los Lagos-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Magallanes y de la Antartica Chi-->*/
-(421, 'Punta Arenas', 1);
+(423, 'Punta Arenas', 1);
 /*<--/Magallanes y de la Antartica Chi-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Maule-->*/
