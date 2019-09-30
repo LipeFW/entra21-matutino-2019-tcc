@@ -11324,6 +11324,10 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Pomeroon-Supenaam-->*/
 (488, '', 1);
 /*<--/Pomeroon-Supenaam-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Potaro-Siparuni-->*/
+(489, '', 1);
+/*<--/Potaro-Siparuni-->*/
 
 /*<--/Guyana-->*/
 /*<--Venezuela-->*/
