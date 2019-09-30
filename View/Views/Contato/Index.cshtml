@@ -1,6 +1,5 @@
 ﻿
 @{
-    Layout = null;
     ViewBag.Title = "Index";
     <link href="~/Content/css/outros.css" type="text/css" rel="stylesheet" />
 }
@@ -16,7 +15,7 @@
         <p>contato</p>
     </div>
     <div id="paginaContato">
-        <form action="dadosc.php" method="post" id="formularioCont">
+        <form action="#" method="post" id="formularioCont">
             <fieldset class="grupo">
                 <div class="campo">
                     <label for="fNome">Nome Completo:</label>
@@ -85,11 +84,11 @@
             <fieldset class="grupo">
                 <div class="campo">
                     <label for="fMsag">Mensagem:</label>
-                    <textarea rows="6" name="fMsag" id="fMsag" style="width: 655px;"></textarea>
+                    <textarea rows="6" name="fMsag" id="fMsag" style="width: 500px;"></textarea>
                 </div>
             </fieldset>
             <center>
-                <button class="botao" type="submit" name="submit" onclick="alert('Formulário Enviado')">Enviar</button>
+                <button class="btn btn-success" type="submit" name="submit" onclick="alert('Formulário Enviado')">Enviar</button>
             </center>
         </form>
     </div>
