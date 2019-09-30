@@ -11131,6 +11131,48 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (462, 'Guaranda', 1),
 (462, 'San Miguel', 1);
 /*<--/Bolivar-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Canar-->*/
+(463, 'Azogues', 1),
+(463, 'Canar', 1),
+(463, 'La Troncal', 1);
+/*<--/Canar-->*/
+/*<--Carchi-->*/
+/*<--/Carchi-->*/
+/*<--Chimborazo-->*/
+/*<--/Chimborazo-->*/
+/*<--Cotopaxi-->*/
+/*<--/Cotopaxi-->*/
+/*<--El Oro-->*/
+/*<--/El Oro-->*/
+/*<--Esmeraldas-->*/
+/*<--/Esmeraldas-->*/
+/*<--Guayas-->*/
+/*<--/Guayas-->*/
+/*<--Imbabura-->*/
+/*<--/Imbabura-->*/
+/*<--Loja-->*/
+/*<--/Loja-->*/
+/*<--Los Rios-->*/
+/*<--/Los Rios-->*/
+/*<--Manabi-->*/
+/*<--/Manabi-->*/
+/*<--Morona-Santiago-->*/
+/*<--/Morona-Santiago-->*/
+/*<--Pastaza-->*/
+/*<--/Pastaza-->*/
+/*<--Pichincha-->*/
+/*<--/Pichincha-->*/
+/*<--Tungurahua-->*/
+/*<--/Tungurahua-->*/
+/*<--Zamora-Chinchipe-->*/
+/*<--/Zamora-Chinchipe-->*/
+/*<--Sucumbios-->*/
+/*<--/Sucumbios-->*/
+/*<--Napo-->*/
+/*<--/Napo-->*/
+/*<--Orellana-->*/
+/*<--/Orellana-->*/
 
 /*<--/Ecuador-->*/
 
