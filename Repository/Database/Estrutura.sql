@@ -10254,15 +10254,15 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Maule-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Region Metropolitana-->*/
-(423, 'Buin', 1),
-(423, 'El Monte', 1),
-(423, 'Lampa', 1),
-(423, 'Melipilla', 1),
-(423, 'Paine', 1),
-(423, 'Penaflor', 1),
-(423, 'San Bernardo', 1),
-(423, 'Santiago', 1),
-(423, 'Talagante', 1);
+(425, 'Buin', 1),
+(425, 'El Monte', 1),
+(425, 'Lampa', 1),
+(425, 'Melipilla', 1),
+(425, 'Paine', 1),
+(425, 'Penaflor', 1),
+(425, 'San Bernardo', 1),
+(425, 'Santiago', 1),
+(425, 'Talagante', 1);
 /*<--/Region Metropolitana-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Tarapaca-->*/
