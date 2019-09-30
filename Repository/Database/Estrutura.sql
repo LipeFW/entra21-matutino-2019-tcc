@@ -11173,9 +11173,32 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (468, 'Muisne', 1),
 (468, 'Rosa Zarate', 1),
 (468, 'San Lorenzo', 1),
-(468, 'Valdez', 1),
+(468, 'Valdez', 1);
 /*<--/Esmeraldas-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Guayas-->*/
+(469, 'Alfredo Baquerizo Moreno', 1),
+(469, 'Balao', 1),
+(469, 'Colimes', 1),
+(469, 'Coronel Mariduena', 1),
+(469, 'Daule', 1),
+(469, 'El Carmen', 1),
+(469, 'El Triunfo', 1),
+(469, 'Guayaquil', 1),
+(469, 'La Libertad', 1),
+(469, 'Lomas De Sargentillo', 1),
+(469, 'Milagro', 1),
+(469, 'Naranjal', 1),
+(469, 'Naranjito', 1),
+(469, 'Palestina', 1),
+(469, 'Pedro Carbo', 1),
+(469, 'Playas', 1),
+(469, 'Salinas', 1),
+(469, 'Samborondon', 1),
+(469, 'Santa Elena', 1),
+(469, 'Santa Lucia', 1),
+(469, 'Velasco Ibarra', 1),
+(469, 'Yaguachi', 1);
 /*<--/Guayas-->*/
 /*<--Imbabura-->*/
 /*<--/Imbabura-->*/
