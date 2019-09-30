@@ -11116,6 +11116,10 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Colombia-->*/
 /*<--Venezuela-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<-Apure-->*/
+(567, 'Guasdualito', 1);
+/*<--/Apure-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Aragua-->*/
 (568, 'Cagua', 1),
 (568, 'El Limon', 1),
