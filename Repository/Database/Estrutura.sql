@@ -11115,7 +11115,11 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 
 /*<--/Colombia-->*/
 /*<--Venezuela-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Bolivar-->*/
+(570, 'Ciudad Bolivar', 1),
+(570, 'Ciudad Guayana', 1),
+(570, 'Upata', 1);
 /*<--/Bolivar-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Carabobo-->*/
