@@ -44,14 +44,14 @@
         var senhaConfirm = $('#config-campo-senha2').val();
 
         if ((senha.trim() == "") || (senhaConfirm.trim() == "")) {
-            alert("A senha não pode estar vazia");
+            bootbox.alert("O campo senha não pode ser vazio!");
         }
         else if (senha == senhaConfirm) {
             AlterarSenha();
 
-            alert("Senha alterada com sucesso");
+            bootbox.alert("Senha alterada com sucesso!");
         } else {
-            alert("As senhas não coincidem");
+            bootbox.alert("As senhas não coincidem!");
         }
     });
 
