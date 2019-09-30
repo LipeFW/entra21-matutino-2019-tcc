@@ -2789,6 +2789,7 @@
     <Content Include="Views\Venda\Editar.cshtml" />
     <Content Include="Views\Venda\ProdutoModal.cshtml" />
     <Content Include="Views\Contato\Index.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

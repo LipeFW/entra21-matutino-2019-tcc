@@ -333,7 +333,7 @@
   <data name="Logradouro" xml:space="preserve">
     <value>Logradouro</value>
   </data>
-  <data name="País" xml:space="preserve">
+  <data name="Pais" xml:space="preserve">
     <value>País</value>
   </data>
   <data name="Selecioneumacidade" xml:space="preserve">
@@ -577,5 +577,9 @@ isso nunca acaba,e a cada realização surge mais motivação para não desistir
   </data>
   <data name="Codigo" xml:space="preserve">
     <value>Código</value>
+  </data>
+  <data name="Preenchacorretamente" xml:space="preserve">
+    <value>Preencha corretamente o campo!</value>
+    <comment>checked</comment>
   </data>
 </root>

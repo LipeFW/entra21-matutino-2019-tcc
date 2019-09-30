@@ -600,5 +600,10 @@ It never ends, and every achievement arises more motivation to not give up and a
   </data>
   <data name="Visao" xml:space="preserve">
     <value>Vision</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Preenchacorretamente" xml:space="preserve">
+    <value>Fill in the field correctly!</value>
+    <comment>checked</comment>
   </data>
 </root>

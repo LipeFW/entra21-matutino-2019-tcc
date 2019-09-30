@@ -119,9 +119,9 @@
         })
     });
 
-    function limparCampos() {
-        $("#modelo-campo-nome").val("");
-        $("#modelo-campo-marca").val("");
-        $idAlterar = -1;
-    }
+    //function limparCampos() {
+    //    $("#modelo-campo-nome").val("");
+    //    $("#modelo-campo-marca").val("");
+    //    $idAlterar = -1;
+    //}
 });

@@ -59,7 +59,7 @@
                 $tabelaCliente.ajax.reload();
             },
             error: function (err) {
-                bootbox.alert('Não foi possivel editar o cliente!');
+                bootbox.alert('Não foi possível editar o cliente!');
                 limparCampos();
                 $idAlterar = -1;
             }
@@ -84,7 +84,7 @@
                 $tabelaCliente.ajax.reload();
             },
             error: function (err) {
-                bootbox.alert('Não foi possivel cadastrar o cliente!');
+                bootbox.alert('Não foi possível cadastrar o cliente!');
             }
         });
     }
@@ -136,7 +136,7 @@
                 $('#modal-cliente').modal('show');
             },
             error: function (err) {
-                bootbox.alert('Não foi possivel carregar o cliente!');
+                bootbox.alert('Não foi possível carregar o cliente!');
             }
         });
     });

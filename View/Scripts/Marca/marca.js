@@ -45,7 +45,7 @@
                 $tabelaMarca.ajax.reload();
             },
             error: function (err) {
-                bootbox.alert('Não foi possivel editar a marca!');
+                bootbox.alert('Não foi possível editar a marca!');
                 limparCampos();
                 $idAlterar = -1;
 
@@ -67,7 +67,7 @@
                 bootbox.alert('Marca cadastrada com sucesso!');
             },
             error: function (err) {
-                bootbox.alert('Não foi possivel cadastrar a marca!');
+                bootbox.alert('Não foi possível cadastrar a marca!');
             }
         });
     }
@@ -116,7 +116,7 @@ $('#marca-tabela').on('click', '.botao-editar', function () {
                 $('#modal-marca').modal('show');
             },
             error: function (err) {
-                alert('Não foi possivel carregar a marca!');
+                alert('Não foi possível carregar a marca!');
             }
         });
     });
