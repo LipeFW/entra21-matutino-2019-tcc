@@ -11219,6 +11219,16 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (471, 'Macara', 1),
 (471, 'Puebloviejo', 1);
 /*<--/Loja-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Los Rios-->*/
+(472, 'Babahoyo', 1),
+(472, 'Catarama', 1),
+(472, 'Montalvo', 1),
+(472, 'Palenque', 1),
+(472, 'Quevedo', 1),
+(472, 'Ventanas', 1),
+(472, 'Vinces', 1);
+/*<--/Los Rios-->*/
 
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Pastaza-->*/
