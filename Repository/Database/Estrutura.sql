@@ -11320,6 +11320,10 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (487, 'Mahaicony', 1),
 (487, 'Rosignol', 1);
 /*<--/Mahaica-Berbice-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Pomeroon-Supenaam-->*/
+(488, '', 1);
+/*<--/Pomeroon-Supenaam-->*/
 
 /*<--/Guyana-->*/
 /*<--Venezuela-->*/
