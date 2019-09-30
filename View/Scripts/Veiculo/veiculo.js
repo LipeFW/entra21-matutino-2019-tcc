@@ -52,7 +52,7 @@
                     $tabelaVeiculo.ajax.reload();
                 },
                 error: function (err) {
-                    alert('Não foi possivel editar a venda!');
+                    bootbox.alert('Não foi possivel editar a venda!');
                 }
             });
         }
