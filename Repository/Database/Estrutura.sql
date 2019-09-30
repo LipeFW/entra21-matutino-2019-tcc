@@ -11112,9 +11112,13 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (447, 'Villanueva', 1),
 (447, 'Zapatoca', 1);
 /*<--/Santander-->*/
-
 /*<--/Colombia-->*/
+
 /*<--Venezuela-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Amazonas-->*/
+(565, 'Puerto Ayacucho', 1);
+/*<--/Amazonas-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Anzoategui-->*/
 (566, 'Anaco', 1),
