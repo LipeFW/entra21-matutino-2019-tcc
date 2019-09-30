@@ -8,7 +8,8 @@ namespace View.Controllers
 {
     public class ContatoController : Controller
     {
-        // GET: Contato
+
+        
         public ActionResult Index()
         {
             return View();
