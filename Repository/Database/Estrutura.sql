@@ -11229,6 +11229,23 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (472, 'Ventanas', 1),
 (472, 'Vinces', 1);
 /*<--/Los Rios-->*/
+INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+/*<--Manabi-->*/
+(473, 'Bahia De Caraquez', 1),
+(473, 'Calceta', 1),
+(473, 'Chone', 1),
+(473, 'Jipijapa', 1),
+(473, 'Junin', 1),
+(473, 'Manta', 1),
+(473, 'Montecristi', 1),
+(473, 'Pajan', 1),
+(473, 'Pedernales', 1),
+(473, 'Portoviejo', 1),
+(473, 'Rocafuerte', 1),
+(473, 'Santa Ana', 1),
+(473, 'Sucre', 1),
+(473, 'Tosagua', 1);
+/*<--/Manabi-->*/
 
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Pastaza-->*/
