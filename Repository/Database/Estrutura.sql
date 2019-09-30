@@ -11335,6 +11335,7 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Upper Demerara-Berbice-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Upper Takutu-Upper Essequibo-->*/
+(491, 'Lethem', 1);
 /*<--/Upper Takutu-Upper Essequibo-->*/
 /*<--/Guyana-->*/
 /*<--Venezuela-->*/
