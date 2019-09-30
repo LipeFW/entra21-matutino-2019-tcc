@@ -10353,34 +10353,34 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Magallanes y de la Antartica Chi-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Maule-->*/
-(422, 'Cauquenes', 1),
-(422, 'Constitucion', 1),
-(422, 'Curico', 1),
-(422, 'Linares', 1),
-(422, 'Longavi', 1),
-(422, 'Molina', 1),
-(422, 'Parral', 1),
-(422, 'San Clemente', 1),
-(422, 'San Javier', 1),
-(422, 'Talca', 1),
-(422, 'Teno', 1);
+(424, 'Cauquenes', 1),
+(424, 'Constitucion', 1),
+(424, 'Curico', 1),
+(424, 'Linares', 1),
+(424, 'Longavi', 1),
+(424, 'Molina', 1),
+(424, 'Parral', 1),
+(424, 'San Clemente', 1),
+(424, 'San Javier', 1),
+(424, 'Talca', 1),
+(424, 'Teno', 1);
 /*<--/Maule-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Region Metropolitana-->*/
-(423, 'Buin', 1),
-(423, 'El Monte', 1),
-(423, 'Lampa', 1),
-(423, 'Melipilla', 1),
-(423, 'Paine', 1),
-(423, 'Penaflor', 1),
-(423, 'San Bernardo', 1),
-(423, 'Santiago', 1),
-(423, 'Talagante', 1);
+(425, 'Buin', 1),
+(425, 'El Monte', 1),
+(425, 'Lampa', 1),
+(425, 'Melipilla', 1),
+(425, 'Paine', 1),
+(425, 'Penaflor', 1),
+(425, 'San Bernardo', 1),
+(425, 'Santiago', 1),
+(425, 'Talagante', 1);
 /*<--/Region Metropolitana-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Tarapaca-->*/
-(424, 'Arica', 1),
-(424, 'Iquique', 1);
+(426, 'Arica', 1),
+(426, 'Iquique', 1);
 /*<--/Tarapaca-->*/
 /*<--/Chile-->*/
 /*<--/Colombia-->*/
