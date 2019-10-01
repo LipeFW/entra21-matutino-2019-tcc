@@ -11709,10 +11709,22 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (499, 'San Jose Obrero', 1),
 (499, 'Santa Elena', 1),
 (499, 'Tobati', 1),
-(499, 'Valenzuela', 1),
+(499, 'Valenzuela', 1);
 /*<--/Cordillera-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Guaira-->*/
+(500, 'Borja', 1),
+(500, 'Coronel Martinez', 1),
+(500, 'Doctor Botrell', 1),
+(500, 'Felix Perez Cardozo', 1),
+(500, 'Independencia', 1),
+(500, 'Itape', 1),
+(500, 'Iturbe', 1),
+(500, 'Mbocayaty', 1),
+(500, 'Natalicio Talavera', 1),
+(500, 'Numi', 1),
+(500, 'San Salvador', 1),
+(500, 'Villarrica', 1);
 /*<--/Guaira-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Itapua-->*/
