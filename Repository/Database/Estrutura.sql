@@ -12134,13 +12134,11 @@ INSERT INTO rotas(nome,id_vendedor, registro_ativo)
 VALUES ('Gaspar', 1, 1),
 	   ('Blumenau',1,1);
 
-CREATE TABLE notas_fiscais(
+CREATE TABLE contatos(
 id INT PRIMARY KEY IDENTITY(1,1),
-valor_final DECIMAL(7,2),
-id_venda INT,
-FOREIGN KEY (id_venda) REFERENCES vendas(id),
-registro_ativo BIT
+nome VARCHAR(100),
+sobrenome VARCHAR(100),
+telefone VARCHAR(15),
+titulo_mensagem VARCHAR(100),
+mensagem TEXT
 );
-
-INSERT INTO notas_fiscais(valor_final ,id_venda, registro_ativo)
-VALUES (100, 1, 1);
