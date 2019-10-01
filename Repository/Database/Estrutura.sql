@@ -11824,10 +11824,15 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (506, 'Tavai', 1),
 (506, 'Union', 1),
 (506, 'Veinticinco De Diciembre', 1),
-(506, 'Yataity Del Norte', 1),
+(506, 'Yataity Del Norte', 1);
 /*<--/San Pedro-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Canindeyu-->*/
+(507, 'Corpus Christi', 1),
+(507, 'Curuguaty', 1),
+(507, 'Itanara', 1),
+(507, 'Salto Del Guaira', 1),
+(507, 'Ygatimi', 1);
 /*<--/Canindeyu-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Chaco-->*/
