@@ -11804,6 +11804,10 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Paraguari-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Presidente Hayes-->*/
+(505, 'Benjamin Aceval', 1),
+(505, 'Pozo Colorado', 1),
+(505, 'Puerto Pinasco', 1),
+(505, 'Villa Hayes', 1);
 /*<--/Presidente Hayes-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--San Pedro-->*/
