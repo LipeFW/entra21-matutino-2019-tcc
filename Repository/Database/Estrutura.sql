@@ -11770,6 +11770,20 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Misiones-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Neembucu-->*/
+(503, 'Alberdi', 1),
+(503, 'Cerrito', 1),
+(503, 'Desmochados', 1),
+(503, 'General Jose Eduvigis Diaz', 1),
+(503, 'Humaita', 1),
+(503, 'Isla Umbu', 1),
+(503, 'Laureles', 1),
+(503, 'Paso De Patria', 1),
+(503, 'Pilar', 1),
+(503, 'San Juan Bautista De Neembucu', 1),
+(503, 'Tacuaras', 1),
+(503, 'Villa Franca', 1),
+(503, 'Villa Oliva', 1),
+(503, 'Villalbin', 1),
 /*<--/Neembucu-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Paraguari-->*/
