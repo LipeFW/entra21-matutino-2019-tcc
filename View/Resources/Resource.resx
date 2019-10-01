@@ -584,4 +584,7 @@
   <data name="NomeUsuario" xml:space="preserve">
     <value>string</value>
   </data>
+  <data name="ListadeProdutos" xml:space="preserve">
+    <value>string</value>
+  </data>
 </root>
