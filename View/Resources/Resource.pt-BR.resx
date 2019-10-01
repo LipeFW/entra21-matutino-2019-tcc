@@ -587,4 +587,7 @@ isso nunca acaba,e a cada realização surge mais motivação para não desistir
   <data name="FazerLogin" xml:space="preserve">
     <value>Login</value>
   </data>
+  <data name="AdicioneProdutos" xml:space="preserve">
+    <value>Adicione os Produtos a compra</value>
+  </data>
 </root>

@@ -92,6 +92,7 @@
     <Compile Include="Categoria.cs" />
     <Compile Include="Cidade.cs" />
     <Compile Include="Cliente.cs" />
+    <Compile Include="Contato.cs" />
     <Compile Include="Estado.cs" />
     <Compile Include="InventarioProduto.cs" />
     <Compile Include="Inventario.cs" />
