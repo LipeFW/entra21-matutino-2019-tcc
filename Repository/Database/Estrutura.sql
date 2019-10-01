@@ -11649,6 +11649,15 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Caaguazu-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Caazapa-->*/
+(496, 'Abai', 1),
+(496, 'Buena Vista', 1),
+(496, 'Caazapa', 1),
+(496, 'General Higinio Morinigo', 1),
+(496, 'Maciel', 1),
+(496, 'San Juan Nepomuceno', 1),
+(496, 'Yataity', 1),
+(496, 'Yegros', 1),
+(496, 'Yuty', 1),
 /*<--/Caazapa-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Central-->*/
