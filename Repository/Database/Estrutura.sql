@@ -7441,7 +7441,7 @@ INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--/Cidades de Saint George-->*/
 INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Cidades de Saint John-->*/
-(97, '', 1);
+(97, 'Não possui cidade', 1);
 /*<--/Cidades de Saint John-->*/
 INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Cidades de Saint Mary-->*/
@@ -7469,11 +7469,11 @@ INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--/Cidades de Bimini-->*/
 INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Cidades de Cat Island-->*/
-(103, '', 1);
+(103, 'Não possui cidade', 1);
 /*<--/Cidades de Cat Island-->*/
 INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Cidades de Exuma-->*/
-(104, '', 1);
+(104, 'Não possui cidade', 1);
 /*<--/Cidades de Exuma-->*/
 INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--/Cidades de Inagua-->*/
@@ -7489,7 +7489,7 @@ INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--/Cidades de Mayaguana-->*/
 INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Cidades de Ragged Island-->*/
-(108, '', 1);
+(108, 'Não possui cidade', 1);
 /*<--/Cidades de Ragged Island-->*/
 INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Cidades de Harbour Island-->*/
@@ -7513,9 +7513,9 @@ INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 (113,'Andros Town',1);
 /*<--/Cidades de Fresh Creek-->*/
 INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
-/*<--Cidades de Governor''s Harbour-->*/
-(114, '', 1);
-/*<--/Cidades de Governor''s Harbour-->*/
+/*<--Cidades de Governor's Harbour-->*/
+(114, 'Não possui cidade', 1);
+/*<--/Cidades de Governor's Harbour-->*/
 INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Cidades de Green Turtle Cay-->*/
 (115,'Sweeting Cay',1);
@@ -7526,7 +7526,7 @@ INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--/Cidades de High Rock-->*/
 INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Cidades de Kemps Bay-->*/
-(117, '', 1);
+(117, 'Não possui cidade', 1);
 /*<--/Cidades de Kemps Bay-->*/
 INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Cidades de Marsh Harbour-->*/
@@ -7542,7 +7542,7 @@ INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--/Cidades de Rock Sound-->*/
 INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Cidades de Sandy Point-->*/
-(121, '', 1);
+(121, 'Não possui cidade', 1);
 /*<--/Cidades de Sandy Point-->*/
 INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Cidades de Salvador and Rum Cay-->*/
@@ -11483,7 +11483,7 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Napo-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Orellana-->*/
-(481, '', 1);
+(481, 'Não possui cidade', 1);
 /*<--/Orellana-->*/
 /*<--/Ecuador-->*/
 
@@ -11517,11 +11517,11 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Mahaica-Berbice-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Pomeroon-Supenaam-->*/
-(488, '', 1);
+(488, 'Não possui cidade', 1);
 /*<--/Pomeroon-Supenaam-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Potaro-Siparuni-->*/
-(489, '', 1);
+(489, 'Não possui cidade', 1);
 /*<--/Potaro-Siparuni-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Upper Demerara-Berbice-->*/
@@ -11555,7 +11555,7 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Amambay-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Boqueron-->*/
-(494, '', 1);
+(494, 'Não possui cidade', 1);
 /*<--/Boqueron-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Caaguazu-->*/
@@ -11760,11 +11760,11 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Canindeyu-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Chaco-->*/
-(508, '', 1);
+(508, 'Não possui cidade', 1);
 /*<--/Chaco-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Nueva Asuncion-->*/
-(509, '', 1);
+(509, 'Não possui cidade', 1);
 /*<--/Nueva Asuncion-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Alto Paraguay-->*/
@@ -11946,7 +11946,7 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Zulia-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Dependencias Federales-->*/
-(587, '', 1);
+(587, 'Não possui cidade', 1);
 /*<--/Dependencias Federales-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Distrito Federal-->*/
