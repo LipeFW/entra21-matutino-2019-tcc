@@ -594,7 +594,7 @@ transportista o acciones en general, y al mismo tiempo registrar una venta y tod
     <value>Cerrar</value>
     <comment>checked</comment>
   </data>
-  <data name="ListaDeProdutos" xml:space="preserve">
+  <data name="ListadeProdutos" xml:space="preserve">
     <value>Lista de Productos</value>
     <comment>checked</comment>
   </data>
