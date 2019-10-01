@@ -11728,6 +11728,33 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Guaira-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Itapua-->*/
+(501, 'Alto Vera', 1),
+(501, 'Bella Vista', 1),
+(501, 'Cambyreta', 1),
+(501, 'Capitan Meza', 1),
+(501, 'Capitan Miranda', 1),
+(501, 'Carlos Antonio Lopez', 1),
+(501, 'Carmen Del Parana', 1),
+(501, 'Coronel Bogado', 1),
+(501, 'Edelira', 1),
+(501, 'Encarnacion', 1),
+(501, 'Fram', 1),
+(501, 'General Artigas', 1),
+(501, 'General Delgado', 1),
+(501, 'Hohenau', 1),
+(501, 'Itapua Poty', 1),
+(501, 'Jesus', 1),
+(501, 'La Paz', 1),
+(501, 'Leandro Oviedo', 1),
+(501, 'Natalio', 1),
+(501, 'Nueva Alborada', 1),
+(501, 'Obligado', 1),
+(501, 'Pirapo', 1),
+(501, 'San Cosme Y Damian', 1),
+(501, 'San Juan Del Parana', 1),
+(501, 'San Pedro Del Parana', 1),
+(501, 'San Rafael Del Parana', 1),
+(501, 'Trinidad', 1);
 /*<--/Itapua-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Misiones-->*/
