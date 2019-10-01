@@ -1,51 +1,236 @@
 ﻿
 @{
-    ViewBag.Title = "Index";
+    Layout = null;
+
+    <title>MCSS - Equipe</title>
+
+    <link href="~/Content/theme/global_assets/images/logo_icon_dark.png" rel="shortcut icon" />
+    <link href="~/Content/login/css/login.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/css/Animate.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/css/tabela/util.css" />
+    <link href="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" type="text/javascript" />
+
+    <!-- Global stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+    <link href="~/Content/theme/global_assets/css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/theme/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/theme/global_assets/css/icons/fontawesome/styles.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/theme/assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/theme/assets/css/layout.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/theme/assets/css/components.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/theme/assets/css/colors.min.css" rel="stylesheet" type="text/css">
+    <!-- <link href="~/Content/css/select2.min.css" rel="stylesheet" type="text/css"> -->
+    <link href="~/Content/css/replaces.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <!-- /global stylesheets -->
+    <!-- Core JS files -->
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script src="~/Content/theme/global_assets/js/main/bootstrap.bundle.min.js"></script>
+    <script src="~/Content/theme/global_assets/js/plugins/loaders/blockui.min.js"></script>
+    <!-- /core JS files -->
+    <!-- Theme JS files -->
+    <script src="~/Content/theme/global_assets/js/plugins/visualization/d3/d3.min.js"></script>
+    <script src="~/Content/theme/global_assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
+    <script src="~/Content/theme/global_assets/js/plugins/forms/styling/switchery.min.js"></script>
+    <script src="~/Content/theme/global_assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+    <script src="~/Content/theme/global_assets/js/plugins/ui/moment/moment.min.js"></script>
+    <script src="~/Content/theme/global_assets/js/plugins/pickers/daterangepicker.js"></script>
+    <script src="~/Scripts/bootbox.min.js"></script>
+    <script src="~/Content/theme/assets/js/app.js"></script>
+    <script src="~/Content/js/lang.js"></script>
+    <script src="~/Content/theme/global_assets/js/demo_pages/dashboard.js"></script>
+    <script src="~/Scripts/jquery.mask.js"></script>
+    <script type="text/javascript" src="~/Scripts/Mascaras/jquery.mask.js"></script>
+    <script type="text/javascript" src="~/Scripts/Mascaras/jquery.mask.min.js"></script>
 }
 
-<div id="accordion">
-    <div class="card">
-        <div class="card-header" id="headingOne">
-            <h5 class="mb-0">
-                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Felipe Franco Weber
-                </button>
-            </h5>
-        </div>
+<body class="sidebar-xs">
+    <div class="navbar navbar-expand-md navbar-dark">
 
-        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-            <div class="card-body">
-                uma breve descriçaõ do jovem lipe
+        <!-- Header with logos -->
+        <!-- /header with logos -->
+        <!-- Mobile controls -->
+        <div class="d-flex flex-1 d-md-none">
+            <div class="navbar-brand mr-auto">
+                <a href="index.html" class="d-inline-block">
+                    <h2 class="titulonav text-center">mcss</h2>
+                </a>
             </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-header" id="headingTwo">
-            <h5 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Illan Vinicius Dickmann
-                </button>
-            </h5>
-        </div>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-            <div class="card-body">
-                uma breve descriçaõ do jovem illanzoka
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-header" id="headingThree">
-            <h5 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Henrique Linhares Montibeller
-                </button>
-            </h5>
-        </div>
-        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-            <div class="card-body">
-                uma breve descriçaõ do jovem ique
-            </div>
-        </div>
-    </div>
-</div>
 
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
+                <i class="icon-paragraph-justify3"></i>
+            </button>
+
+        </div>
+        <!-- /mobile controls -->
+        <!-- Navbar content -->
+        <div class="bg-light collapse navbar-collapse primary" id="navbar-mobile">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="navbar-nav-link sidebar-control sidebar-main-toggle d-none d-md-block">
+                        <h2 class="titulonav text-center text-dark mb-0 mt-0">mcss</h2>
+                    </a>
+                </li>
+            </ul>
+
+            <span class="badge badge-pill ml-md-3 mr-md-auto"> </span>
+
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a href="#" class="text-dark navbar-nav-link dropdown-toggle" data-toggle="dropdown">
+
+                        @if (Session["Language"] == null || Session["Language"].ToString() == "pt-BR")
+                        {
+                            <img id="imgLANG" src="~/Content/theme/global_assets/images/lang/br.png" class="img-flag mr-2" alt="">
+                            <span id="langAtual">Português</span>
+                        }
+                        else if (Session["Language"] == null || Session["Language"].ToString() == "en-US")
+                        {
+                            <img id="imgLANG" src="~/Content/theme/global_assets/images/lang/gb.png" class="img-flag mr-2" alt="">
+                            <span id="langAtual">English</span>
+                        }
+                        else if (Session["Language"] == null || Session["Language"].ToString() == "es-ES")
+                        {
+                            <img id="imgLANG" src="~/Content/theme/global_assets/images/lang/es.png" class="img-flag mr-2" alt="">
+                            <span id="langAtual">Español</span>
+                        }
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a id="btnPT" href="/Home/Change?lang=pt-BR" class="dropdown-item portuguese"><img src="/Content/theme/global_assets/images/lang/br.png" class="img-flag" alt=""><span id="ptLang">Português</span></a>
+                        <a id="btnEN" href="/Home/Change?lang=en-US" class="dropdown-item english"><img src="/Content/theme/global_assets/images/lang/gb.png" class="img-flag" alt=""><span id="enLang">English</span> </a>
+                        <a id="btnES" href="/Home/Change?lang=es-ES" class="dropdown-item spanish"><img src="/Content/theme/global_assets/images/lang/es.png" class="img-flag" alt=""><span id="eslang">Español</span> </a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown dropdown-user">
+                    <a href="/login" class="navbar-nav-link d-flex align-items-center ">
+
+                        <span class="text-dark">@View.Resources.Resource.FazerLogin</span>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a href="/usuario/perfil" class="dropdown-item">
+                            <i class="icon-user-plus"></i>Meu Perfil
+                        </a>
+                        <div class="/dropdown-divider"></div>
+                        <a href="/contato/index" class="dropdown-item"><span>Não remover</span></a>
+                        <a href="/usuario/config" class="dropdown-item"><i class="icon-cog5"></i> <span>Configurações da Conta</span> </a>
+                        <a href="/login/logout" class="dropdown-item"><i class="icon-switch2"></i> <span>Logout</span></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- /navbar content -->
+
+    </div>
+
+    <div class="jumbotron">
+        <div id="accordion">
+
+            <!-- Eduardo -->
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Eduardo Ehmke Hausmann
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        uma breve descriçaõ do jovem dudu
+                    </div>
+                </div>
+            </div>
+            <!-- /Eduardo -->
+            <!-- Felipe -->
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                            Felipe Franco Weber
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        uma breve descriçaõ do jovem lipe
+                    </div>
+                </div>
+            </div>
+            <!-- /Felipe -->
+            <!-- Henrique -->
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                            Henrique Linhares Montibeller
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        uma breve descriçaõ do jovem ique
+                    </div>
+                </div>
+            </div>
+            <!-- /Henrique -->
+            <!-- Illan -->
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                            Illan Vinícius Dickmann
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-parent="#accordion">
+                    <div class="card-body">
+                        uma breve descriçaõ do jovem illanzoka
+                    </div>
+                </div>
+            </div>
+            <!-- /Illan -->
+            <!-- Nathan -->
+            <div class="card">
+                <div class="card-header" id="headingFive">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                            Nathan Guilherme Martinez Theiss
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseFive" class="collapse show" aria-labelledby="headingFive" data-parent="#accordion">
+                    <div class="card-body">
+                        uma breve descriçaõ do jovem abacaxi
+                    </div>
+                </div>
+            </div>
+            <!-- /Nathan -->
+            <!-- Pablo -->
+            <div class="card">
+                <div class="card-header" id="headingSix">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                            Pablo Gonçalves Luz Vieira
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseSix" class="collapse show" aria-labelledby="headingSix" data-parent="#accordion">
+                    <div class="card-body">
+                        uma breve descriçaõ do jovem pablo
+                    </div>
+                </div>
+            </div>
+            <!-- /Pablo -->
+
+        </div>
+    </div>
+</body>
