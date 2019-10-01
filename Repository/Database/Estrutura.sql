@@ -8130,6 +8130,7 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (385, 'Montero', 1),
 (385, 'Pailon', 1),
 (385, 'Portachuelo', 1),
+
 (385, 'Puerto Pailas', 1),
 (385, 'Puerto Quijarro', 1),
 (385, 'Puerto Suarez', 1),
