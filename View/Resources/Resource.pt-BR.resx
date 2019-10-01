@@ -550,9 +550,6 @@
     <value>Fechar</value>
     <comment>checked</comment>
   </data>
-  <data name="ListadeProdutos" xml:space="preserve">
-    <value>Lista De Produtos</value>
-  </data>
   <data name="ListadeVendas" xml:space="preserve">
     <value>Lista de Vendas</value>
   </data>
@@ -581,11 +578,17 @@ isso nunca acaba,e a cada realização surge mais motivação para não desistir
   <data name="NomeUsuario" xml:space="preserve">
     <value>Apelido :</value>
   </data>
+  <data name="ListadeProdutos" xml:space="preserve">
+    <value>Lista de Produtos</value>
+  </data>
   <data name="País" xml:space="preserve">
     <value>País</value>
   </data>
   <data name="FazerLogin" xml:space="preserve">
     <value>Login</value>
+  </data>
+  <data name="AdicioneProdutos" xml:space="preserve">
+    <value>Adicione os Produtos a compra</value>
   </data>
   <data name="Equipe" xml:space="preserve">
     <value>Equipe</value>

@@ -1,5 +1,4 @@
-﻿
-using Model;
+﻿using Model;
 using Repository.Interface;
 using System;
 using System.Collections.Generic;

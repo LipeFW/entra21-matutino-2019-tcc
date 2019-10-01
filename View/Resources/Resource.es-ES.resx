@@ -594,7 +594,7 @@ transportista o acciones en general, y al mismo tiempo registrar una venta y tod
     <value>Cerrar</value>
     <comment>checked</comment>
   </data>
-  <data name="ListaDeProdutos" xml:space="preserve">
+  <data name="ListadeProdutos" xml:space="preserve">
     <value>Lista de Productos</value>
     <comment>checked</comment>
   </data>
@@ -656,5 +656,8 @@ Nunca termina, y cada logro surge más motivación para no rendirse y siempre se
   </data>
   <data name="NomeUsuario" xml:space="preserve">
     <value>apellido</value>
+  </data>
+  <data name="AdicioneProdutos" xml:space="preserve">
+    <value>Agregar productos a la compra</value>
   </data>
 </root>

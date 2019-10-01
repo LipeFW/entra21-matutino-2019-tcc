@@ -7,28 +7,31 @@
 }
 
 <legend>
-<span class="h3">Contato</span>
+<span style="font-weight:bold" class="h3">Contato</span>
 </legend>
 <div class="modal-body">
     <div class="form-group">
-        <label for="campo-nome" id="contato-campo-nome">Nome</label>
-        <input class="form-control" type="text" name="campo-nome" id="contato-campo-nome" />
+        <label style="font-weight:bold" for="campo-nome" id="contato-campo-nome">Nome</label>
+        <input class="form-control border-dark" type="text" name="campo-nome" id="contato-campo-nome" />
     </div>
     <div class="form-group">
-        <label for="campo-sobrenome" id="contato-campo-sobrenome">Sobrenome</label>
-        <input class="form-control" type="text" name="campo-sobrenome" id="contato-campo-sobrenome" />
+        <label style="font-weight:bold" for="campo-sobrenome" id="contato-campo-sobrenome">Sobrenome</label>
+        <input class="form-control border-dark" type="text" name="campo-sobrenome" id="contato-campo-sobrenome" />
     </div>
     <div class="form-group">
-        <label for="campo-numero" id="contato-campo-numero">Telefone</label>
-        <input class="form-control" type="text" name="campo-numero" id="contato-campo-numero" />
+        <label style="font-weight:bold" for="campo-numero" id="contato-campo-numero">Telefone</label>
+        <input class="form-control border-dark" type="text" name="campo-numero" id="contato-campo-numero" />
     </div>
     <div class="form-group">
-        <label for="campo-titulo" id="contato-campo-titulo">Titulo</label>
-        <input class="form-control" type="text" name="campo-titulo" id="contato-campo-titulo" />
+        <label style="font-weight:bold" for="campo-titulo" id="contato-campo-titulo">Titulo</label>
+        <input class="form-control border-dark" type="text" name="campo-titulo" id="contato-campo-titulo" />
     </div>
     <div class="form-group">
-        <label for="campo-mensagem" id="contato-campo-mensagem">Mensagem</label>
-        <textarea class="form-control" type="text" name="campo-mensagem" id="contato-campo-mensagem"></textarea>
+        <label style="font-weight:bold" for="campo-mensagem" id="contato-campo-mensagem">Mensagem</label>
+        <textarea class="form-control border-dark" type="text" name="campo-mensagem" id="contato-campo-mensagem"></textarea>
+    </div>
+    <div class="form-group">
+        <button id="contato-botao-enviar" class="btn btn-primary float-right" type="submit"><i class="fas fa-file-import"></i>  @View.Resources.Resource.Enviar</button>
     </div>
 </div>
 <legend></legend>

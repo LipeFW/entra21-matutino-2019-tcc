@@ -31,5 +31,6 @@ namespace Repository
         public DbSet<InventarioProduto> InventariosProdutos { get; set; }
         public DbSet<Venda> Vendas  { get; set; }
         public DbSet<Vendedor> Vendedores { get; set; }
+        public DbSet<Contato> Contatos { get; set; }
     }
 }
