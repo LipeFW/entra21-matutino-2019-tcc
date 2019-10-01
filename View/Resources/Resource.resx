@@ -581,4 +581,7 @@
   <data name="Preenchacorretamente" xml:space="preserve">
     <value>string</value>
   </data>
+  <data name="FazerLogin" xml:space="preserve">
+    <value>string</value>
+  </data>
 </root>

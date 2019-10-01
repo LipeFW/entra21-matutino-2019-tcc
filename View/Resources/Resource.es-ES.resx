@@ -651,4 +651,7 @@ Nunca termina, y cada logro surge más motivación para no rendirse y siempre se
     <value>¡Rellene el campo correctamente!</value>
     <comment>checked</comment>
   </data>
+  <data name="FazerLogin" xml:space="preserve">
+    <value>Login</value>
+  </data>
 </root>

@@ -606,4 +606,8 @@ It never ends, and every achievement arises more motivation to not give up and a
     <value>Fill in the field correctly!</value>
     <comment>checked</comment>
   </data>
+  <data name="FazerLogin" xml:space="preserve">
+    <value>Login</value>
+    <comment>checked</comment>
+  </data>
 </root>
