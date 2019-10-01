@@ -11645,7 +11645,7 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (495, 'Repatriacion', 1),
 (495, 'San Joaquin', 1),
 (495, 'San Jose De Los Arroyos', 1),
-(495, 'Yhu', 1),
+(495, 'Yhu', 1);
 /*<--/Caaguazu-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Caazapa-->*/
@@ -11657,10 +11657,29 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (496, 'San Juan Nepomuceno', 1),
 (496, 'Yataity', 1),
 (496, 'Yegros', 1),
-(496, 'Yuty', 1),
+(496, 'Yuty', 1);
 /*<--/Caazapa-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Central-->*/
+(497, 'Aregua', 1),
+(497, 'Asuncion', 1),
+(497, 'Capiata', 1),
+(497, 'Fernando De La Mora', 1),
+(497, 'Guarambare', 1),
+(497, 'Ita', 1),
+(497, 'Itaugua', 1),
+(497, 'Lambare', 1),
+(497, 'Limpio', 1),
+(497, 'Luque', 1),
+(497, 'Mariano Roque Alonso', 1),
+(497, 'Nemby', 1),
+(497, 'Nueva Italia', 1),
+(497, 'San Antonio', 1),
+(497, 'San Lorenzo', 1),
+(497, 'Villa Elisa', 1),
+(497, 'Villeta', 1),
+(497, 'Ypacarai', 1),
+(497, 'Ypane', 1),
 /*<--/Central-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Concepcion-->*/
