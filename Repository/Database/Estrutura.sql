@@ -1,4 +1,4 @@
-﻿DROP TABLE IF EXISTS notas_fiscais, rotas, vendas, clientes,vendedores, rotas,inventarios_produtos, produtos,inventarios, veiculos, modelos, categorias, marcas, usuarios, cidades, estados, paises;
+﻿DROP TABLE IF EXISTS contatos, vendas, clientes, vendedores, rotas, inventarios_produtos, produtos, inventarios, veiculos, modelos, categorias, marcas, usuarios, cidades, estados, paises;
 
 CREATE TABLE paises(
 id INT PRIMARY KEY IDENTITY(1,1),
@@ -7464,7 +7464,7 @@ INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--/Cidades de Saint George-->*/
 INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Cidades de Saint John-->*/
-
+(97, 'Não possui cidades', 1);
 /*<--/Cidades de Saint John-->*/
 INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Cidades de Saint Mary-->*/
@@ -7492,10 +7492,11 @@ INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--/Cidades de Bimini-->*/
 INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Cidades de Cat Island-->*/
-
+(103, 'Não possui cidades',1);
 /*<--/Cidades de Cat Island-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Cidades de Exuma-->*/
-
+(104, 'Não possui idades',1);
 /*<--/Cidades de Exuma-->*/
 INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--/Cidades de Inagua-->*/
@@ -7511,7 +7512,7 @@ INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--/Cidades de Mayaguana-->*/
 INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Cidades de Ragged Island-->*/
-
+(108, 'Não possui cidades',1);
 /*<--/Cidades de Ragged Island-->*/
 INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Cidades de Harbour Island-->*/
@@ -7534,9 +7535,6 @@ INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Cidades de Fresh Creek-->*/
 (113, 'Andros Town',1);
 /*<--/Cidades de Fresh Creek-->*/
-/*<--Cidades de Governor''s Harbour-->*/
-
-/*<--/Cidades de Governor''s Harbour-->*/
 INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Cidades de Governor's Harbour-->*/
 (114, 'Não possui cidade', 1);
@@ -7551,7 +7549,7 @@ INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--/Cidades de High Rock-->*/
 INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Cidades de Kemps Bay-->*/
-
+(117, 'Não possui cidades', 1);
 /*<--/Cidades de Kemps Bay-->*/
 INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Cidades de Marsh Harbour-->*/
@@ -7567,7 +7565,7 @@ INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--/Cidades de Rock Sound-->*/
 INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Cidades de Sandy Point-->*/
-
+(121, 'Não possui cidade' ,1);
 /*<--/Cidades de Sandy Point-->*/
 INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Cidades de Salvador and Rum Cay-->*/
@@ -11604,68 +11602,67 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Upper Takutu-Upper Essequibo-->*/
 /*<--/Guyana-->*/
 /*<--Paraguay-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+--INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Alto Parana-->*/
 /*<--/Alto Parana-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+--INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Amambay-->*/
 /*<--/Amambay-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+--INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Boqueron-->*/
 /*<--/Boqueron-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+--INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Caaguazu-->*/
 /*<--/Caaguazu-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+--INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Caazapa-->*/
 /*<--/Caazapa-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+--INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Central-->*/
 /*<--/Central-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+--INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Concepcion-->*/
 /*<--/Concepcion-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+--INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Concepcion-->*/
 /*<--/Concepcion-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+--INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Cordillera-->*/
 /*<--/Cordillera-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+--INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Guaira-->*/
 /*<--/Guaira-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+--INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Itapua-->*/
 /*<--/Itapua-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+--INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Misiones-->*/
 /*<--/Misiones-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+--INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Neembucu-->*/
 /*<--/Neembucu-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+--INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Paraguari-->*/
 /*<--/Paraguari-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+--INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Presidente Hayes-->*/
 /*<--/Presidente Hayes-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+--INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--San Pedro-->*/
 /*<--/San Pedro-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+--INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Canindeyu-->*/
 /*<--/Canindeyu-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+--INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Chaco-->*/
 /*<--/Chaco-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+--INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Nueva Asuncion-->*/
 /*<--/Nueva Asuncion-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
+--INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Alto Paraguay-->*/
 /*<--/Alto Paraguay-->*/
 /*<--/Paraguay-->*/
-
 /*<--/Peru-->*/
 /*<--Venezuela-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
@@ -11900,6 +11897,17 @@ VALUES	(1,'Cargo', 1),
 		(4,'FH16', 1),
 		(5,'G420', 1);
 
+			   
+CREATE TABLE contatos(
+id INT PRIMARY KEY IDENTITY(1,1),
+nome VARCHAR(100),
+sobrenome VARCHAR(100),
+telefone VARCHAR(15),
+email VARCHAR(100),
+titulo_mensagem VARCHAR(100),
+mensagem TEXT
+);
+
  CREATE TABLE veiculos(
 id INT PRIMARY KEY IDENTITY(1,1),
 id_marca INT,
@@ -12015,12 +12023,3 @@ registro_ativo BIT
 INSERT INTO rotas(nome,id_vendedor, registro_ativo)
 VALUES ('Gaspar', 1, 1),
 	   ('Blumenau',1,1);
-
-CREATE TABLE contatos(
-id INT PRIMARY KEY IDENTITY(1,1),
-nome VARCHAR(100),
-sobrenome VARCHAR(100),
-telefone VARCHAR(15),
-titulo_mensagem VARCHAR(100),
-mensagem TEXT
-);

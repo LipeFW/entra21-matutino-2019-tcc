@@ -2601,6 +2601,7 @@
     <Content Include="Content\theme\global_assets\scss\_bootstrap\_variables.scss" />
     <Content Include="Content\theme\global_assets\scss\_config.scss" />
     <None Include="packages.config" />
+    <Content Include="Scripts\Contatos\contato.js" />
     <Content Include="Scripts\esm\popper-utils.js" />
     <Content Include="Scripts\esm\popper-utils.min.js" />
     <Content Include="Scripts\esm\popper.js" />

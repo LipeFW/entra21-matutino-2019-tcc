@@ -21,4 +21,5 @@ $(document).ready(function () {
     $("#config-campo-rg").mask("9.999.999");
     $("#config-campo-cpf").mask("999.999.999-99");
     $("#config-campo-cnh").mask("999999999999");
+    $("#contato-campo-telefone").mask("(99) 99999-9999");
 });
