@@ -581,4 +581,10 @@ isso nunca acaba,e a cada realização surge mais motivação para não desistir
   <data name="NomeUsuario" xml:space="preserve">
     <value>Apelido :</value>
   </data>
+  <data name="País" xml:space="preserve">
+    <value>País</value>
+  </data>
+  <data name="FazerLogin" xml:space="preserve">
+    <value>Login</value>
+  </data>
 </root>

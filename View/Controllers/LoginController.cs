@@ -31,7 +31,7 @@ namespace View.Controllers
         public ActionResult Logout()
         {
             Session["Usuario"] = null;
-            return RedirectToAction("Index");
+            return RedirectToAction("Index","Home");
         }
 
         [HttpPost, Route("login")]
