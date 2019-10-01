@@ -11625,6 +11625,9 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Alto Parana-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Amambay-->*/
+(493, 'Bella Vista', 1),
+(493, 'Capitan Bado', 1),
+(493, 'Pedro Juan Caballero', 1),
 /*<--/Amambay-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Boqueron-->*/
