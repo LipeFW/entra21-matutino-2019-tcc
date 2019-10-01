@@ -11679,10 +11679,15 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (497, 'Villa Elisa', 1),
 (497, 'Villeta', 1),
 (497, 'Ypacarai', 1),
-(497, 'Ypane', 1),
+(497, 'Ypane', 1);
 /*<--/Central-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Concepcion-->*/
+(498, 'Belen', 1),
+(498, 'Concepcion', 1),
+(498, 'Horqueta', 1),
+(498, 'San Carlos', 1),
+(498, 'San Lazaro', 1);
 /*<--/Concepcion-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Concepcion-->*/
