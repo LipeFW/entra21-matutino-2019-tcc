@@ -11635,6 +11635,17 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Boqueron-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Caaguazu-->*/
+(495, 'Caaguazu', 1),
+(495, 'Carayao', 1),
+(495, 'Coronel Oviedo', 1),
+(495, 'Doctor Cecilio Baez', 1),
+(495, 'Doctor Juan Manuel Frutos', 1),
+(495, 'Mbutuy', 1),
+(495, 'Nueva Londres', 1),
+(495, 'Repatriacion', 1),
+(495, 'San Joaquin', 1),
+(495, 'San Jose De Los Arroyos', 1),
+(495, 'Yhu', 1),
 /*<--/Caaguazu-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Caazapa-->*/
