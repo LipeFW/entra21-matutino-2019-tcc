@@ -72,6 +72,7 @@
     <Compile Include="Interface\ICategoriaRepository.cs" />
     <Compile Include="Interface\ICidadeRepository.cs" />
     <Compile Include="Interface\IClienteRepository.cs" />
+    <Compile Include="Interface\IContatoRepository.cs" />
     <Compile Include="Interface\IEstadoRepository.cs" />
     <Compile Include="Interface\IMarcaRepository.cs" />
     <Compile Include="Interface\IModeloRepository.cs" />
@@ -86,6 +87,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\CategoriaRepository.cs" />
     <Compile Include="Repositories\CidadeRepository.cs" />
+    <Compile Include="Repositories\ContatoRepository.cs" />
     <Compile Include="Repositories\EstadoRepository.cs" />
     <Compile Include="Repositories\InventarioRepository.cs" />
     <Compile Include="Repositories\MarcaRepository.cs" />
