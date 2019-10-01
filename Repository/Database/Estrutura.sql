@@ -1,4 +1,4 @@
-﻿DROP TABLE IF EXISTS contatos, vendas, clientes, vendedores, rotas, inventarios_produtos, produtos, inventarios, veiculos, modelos, categorias, marcas, usuarios, cidades, estados, paises;
+﻿DROP TABLE IF EXISTS rotas, vendas, clientes, vendedores, inventarios_produtos, produtos, inventarios, veiculos, modelos, categorias, marcas, usuarios, cidades, estados, paises;
 
 CREATE TABLE paises(
 id INT PRIMARY KEY IDENTITY(1,1),
