@@ -119,11 +119,15 @@
     <Content Include="Content\css\outros.css" />
     <Content Include="Content\css\select2.css" />
     <Content Include="Content\css\select2.min.css" />
+    <Content Include="Content\image\101226_blumenau_0026.jpg" />
+    <Content Include="Content\image\82935108.jpg" />
     <Content Include="Content\image\fundinho.jpg" />
     <Content Include="Content\image\fundinho3.png" />
     <Content Include="Content\image\fundinho4.png" />
     <Content Include="Content\image\fundinho_1.jpg" />
     <Content Include="Content\image\fundinho_2.jpg" />
+    <Content Include="Content\image\header-quem-somos.png" />
+    <Content Include="Content\image\passeios-em-blumenau-abr18.jpg" />
     <Content Include="Content\js\admin.js" />
     <Content Include="Content\js\lang.js" />
     <Content Include="Content\js\login.js" />

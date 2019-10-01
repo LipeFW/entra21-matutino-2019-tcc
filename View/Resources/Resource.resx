@@ -323,7 +323,7 @@
   <data name="para" xml:space="preserve">
     <value>string</value>
   </data>
-  <data name="Pais" xml:space="preserve">
+  <data name="País" xml:space="preserve">
     <value>string</value>
   </data>
   <data name="Placa" xml:space="preserve">
@@ -579,6 +579,9 @@
     <value>string</value>
   </data>
   <data name="Preenchacorretamente" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="FazerLogin" xml:space="preserve">
     <value>string</value>
   </data>
   <data name="NomeUsuario" xml:space="preserve">
