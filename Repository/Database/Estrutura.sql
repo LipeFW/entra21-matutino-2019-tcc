@@ -11811,6 +11811,20 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Presidente Hayes-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--San Pedro-->*/
+(506, 'Antequera', 1),
+(506, 'Capiibary', 1),
+(506, 'Chore', 1),
+(506, 'General Elizardo Aquino', 1),
+(506, 'Itacurubi Del Rosario', 1),
+(506, 'Lima', 1),
+(506, 'Nueva Germania', 1),
+(506, 'San Estanislao', 1),
+(506, 'San Pedro De Ycuamandiyu', 1),
+(506, 'Tacuati', 1),
+(506, 'Tavai', 1),
+(506, 'Union', 1),
+(506, 'Veinticinco De Diciembre', 1),
+(506, 'Yataity Del Norte', 1),
 /*<--/San Pedro-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Canindeyu-->*/
