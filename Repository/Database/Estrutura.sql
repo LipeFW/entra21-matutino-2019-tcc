@@ -11690,10 +11690,26 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (498, 'San Lazaro', 1);
 /*<--/Concepcion-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
-/*<--/Concepcion-->*/
-/*<--/Concepcion-->*/
-INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Cordillera-->*/
+(499, 'Altos', 1),
+(499, 'Arroyos Y Esteros', 1),
+(499, 'Atyra', 1),
+(499, 'Caacupe', 1),
+(499, 'Caraguatay', 1),
+(499, 'Emboscada', 1),
+(499, 'Eusebio Ayala', 1),
+(499, 'Isla Pucu', 1),
+(499, 'Itacurubi De La Cordillera', 1),
+(499, 'Juan De Mena', 1),
+(499, 'Loma Grande', 1),
+(499, 'Nueva Colombia', 1),
+(499, 'Piribebuy', 1),
+(499, 'Primero De Marzo', 1),
+(499, 'San Bernardino', 1),
+(499, 'San Jose Obrero', 1),
+(499, 'Santa Elena', 1),
+(499, 'Tobati', 1),
+(499, 'Valenzuela', 1),
 /*<--/Cordillera-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Guaira-->*/
