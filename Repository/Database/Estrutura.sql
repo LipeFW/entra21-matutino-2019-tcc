@@ -11836,9 +11836,11 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Canindeyu-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Chaco-->*/
+(508, '', 1);
 /*<--/Chaco-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Nueva Asuncion-->*/
+(509, '', 1);
 /*<--/Nueva Asuncion-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Alto Paraguay-->*/
