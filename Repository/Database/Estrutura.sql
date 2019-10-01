@@ -11613,6 +11613,15 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Paraguay-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Alto Parana-->*/
+(492, 'Doctor Juan Leon Mallorquin', 1),
+(492, 'Itaquyry', 1),
+(492, 'Los Cedrales', 1),
+(492, 'Nacunday', 1),
+(492, 'Naranjal', 1),
+(492, 'Presidente Franco', 1),
+(492, 'San Alberto', 1),
+(492, 'San Cristobal', 1),
+(492, 'Santa Rita', 1);
 /*<--/Alto Parana-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Amambay-->*/
