@@ -268,3 +268,6 @@ View/App_Data/Database_log.ldf
 *.ldf
 *.mdf
 *.ldf
+*.mdf
+*.ldf
+*.ldf

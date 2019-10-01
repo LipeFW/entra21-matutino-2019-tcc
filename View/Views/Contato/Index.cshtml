@@ -2,21 +2,33 @@
 @{
     ViewBag.Title = "Contato";
 
+    @*nome, sobrenome, numero, titulo, mensagem, e-mail*@
+
 }
 
-<h3>Contato</h3>
-
-<body>
+<legend>
+<span class="h3">Contato</span>
+</legend>
+<div class="modal-body">
     <div class="form-group">
-        <div class="form-control">
-            <label for="campo-nome" id="contato-campo-nome">Nome</label>
-            <input type="text" name="campo-nome" id="contato-campo-nome" />
-        </div>
-        <div class="form-control">
-            <label for="campo-sobrenome" id="contato-campo-sobrenome">Sobrenome</label>
-            <input type="text" name="campo-sobrenome" id="contato-campo-sobrenome" />
-        </div>
+        <label for="campo-nome" id="contato-campo-nome">Nome</label>
+        <input class="form-control" type="text" name="campo-nome" id="contato-campo-nome" />
     </div>
-</body>
-
-
+    <div class="form-group">
+        <label for="campo-sobrenome" id="contato-campo-sobrenome">Sobrenome</label>
+        <input class="form-control" type="text" name="campo-sobrenome" id="contato-campo-sobrenome" />
+    </div>
+    <div class="form-group">
+        <label for="campo-numero" id="contato-campo-numero">Telefone</label>
+        <input class="form-control" type="text" name="campo-numero" id="contato-campo-numero" />
+    </div>
+    <div class="form-group">
+        <label for="campo-titulo" id="contato-campo-titulo">Titulo</label>
+        <input class="form-control" type="text" name="campo-titulo" id="contato-campo-titulo" />
+    </div>
+    <div class="form-group">
+        <label for="campo-mensagem" id="contato-campo-mensagem">Mensagem</label>
+        <textarea class="form-control" type="text" name="campo-mensagem" id="contato-campo-mensagem"></textarea>
+    </div>
+</div>
+<legend></legend>

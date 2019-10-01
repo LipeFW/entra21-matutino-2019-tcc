@@ -2008,6 +2008,7 @@
     <Content Include="Scripts\bootbox.locales.js" />
     <Content Include="Scripts\bootbox.locales.min.js" />
     <Content Include="Scripts\bootbox.min.js" />
+    <Content Include="Scripts\Calculos.js" />
     <Content Include="Scripts\Categoria\categoria.js" />
     <Content Include="Scripts\Cliente\cliente.js" />
     <Content Include="Content\login\font\DreamMMA.ttf" />
