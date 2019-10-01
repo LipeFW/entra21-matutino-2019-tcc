@@ -373,7 +373,7 @@
     <value>Address</value>
     <comment>checked</comment>
   </data>
-  <data name="País" xml:space="preserve">
+  <data name="Pais" xml:space="preserve">
     <value>Country</value>
     <comment>checked</comment>
   </data>
@@ -605,5 +605,8 @@ It never ends, and every achievement arises more motivation to not give up and a
   <data name="Preenchacorretamente" xml:space="preserve">
     <value>Fill in the field correctly!</value>
     <comment>checked</comment>
+  </data>
+  <data name="NomeUsuario" xml:space="preserve">
+    <value>Nickname</value>
   </data>
 </root>
