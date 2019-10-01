@@ -41,131 +41,138 @@
     <script type="text/javascript" src="~/Scripts/Mascaras/jquery.mask.js"></script>
     <script type="text/javascript" src="~/Scripts/Mascaras/jquery.mask.min.js"></script>
 }
-    <body class="sidebar-xs">
-        <div class="navbar navbar-expand-md navbar-dark">
+<body class="sidebar-xs">
+    <div class="navbar navbar-expand-md navbar-light">
 
-            <!-- Header with logos -->
-            <!-- /header with logos -->
-            <!-- Mobile controls -->
-            <div class="d-flex flex-1 d-md-none">
-                <div class="navbar-brand mr-auto">
-                    <a href="index.html" class="d-inline-block">
-                        <h2 class="titulonav text-center">mcss</h2>
+        <!-- Header with logos -->
+        <!-- /header with logos -->
+        <!-- Mobile controls -->
+        <div class="d-flex flex-1 d-md-none bg-light text-dark">
+            <div class="navbar-brand mr-auto">
+                <a href="/home" class="d-inline-block">
+                    <h2 class="titulonav text-center text-dark">mcss</h2>
+                </a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
+                <i class="icon-paragraph-justify3"></i>
+            </button>
+
+        </div>
+        <!-- /mobile controls -->
+        <!-- Navbar content -->
+        <div class="bg-light collapse navbar-collapse primary" id="navbar-mobile">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="/home" class="navbar-nav-link d-flex align-items-center ">
+
+                        <h2 class="titulonav text-center text-dark mb-0 mt-0">mcss</h2>
                     </a>
-                </div>
+                </li>
+                <li class="nav-item dropdown dropdown-user">
+                    <a href="/equipe" class="navbar-nav-link d-flex align-items-center mt-1 ">
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
-                    <i class="icon-paragraph-justify3"></i>
-                </button>
+                        <span class="text-dark">@View.Resources.Resource.Equipe</span>
+                    </a>
+                </li>
+            </ul>
 
-            </div>
-            <!-- /mobile controls -->
-            <!-- Navbar content -->
-            <div class="bg-light collapse navbar-collapse primary" id="navbar-mobile">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="navbar-nav-link sidebar-control sidebar-main-toggle d-none d-md-block">
-                            <h2 class="titulonav text-center text-dark mb-0 mt-0">mcss</h2>
+            <span class="badge badge-pill ml-md-3 mr-md-auto"> </span>
+
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a href="#" class="text-dark navbar-nav-link dropdown-toggle" data-toggle="dropdown">
+
+                        @if (Session["Language"] == null || Session["Language"].ToString() == "pt-BR")
+                        {
+                            <img id="imgLANG" src="~/Content/theme/global_assets/images/lang/br.png" class="img-flag mr-2" alt="">
+                            <span id="langAtual">Português</span>
+                        }
+                        else if (Session["Language"] == null || Session["Language"].ToString() == "en-US")
+                        {
+                            <img id="imgLANG" src="~/Content/theme/global_assets/images/lang/gb.png" class="img-flag mr-2" alt="">
+                            <span id="langAtual">English</span>
+                        }
+                        else if (Session["Language"] == null || Session["Language"].ToString() == "es-ES")
+                        {
+                            <img id="imgLANG" src="~/Content/theme/global_assets/images/lang/es.png" class="img-flag mr-2" alt="">
+                            <span id="langAtual">Español</span>
+                        }
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a id="btnPT" href="/Home/Change?lang=pt-BR" class="dropdown-item portuguese"><img src="/Content/theme/global_assets/images/lang/br.png" class="img-flag" alt=""><span id="ptLang">Português</span></a>
+                        <a id="btnEN" href="/Home/Change?lang=en-US" class="dropdown-item english"><img src="/Content/theme/global_assets/images/lang/gb.png" class="img-flag" alt=""><span id="enLang">English</span> </a>
+                        <a id="btnES" href="/Home/Change?lang=es-ES" class="dropdown-item spanish"><img src="/Content/theme/global_assets/images/lang/es.png" class="img-flag" alt=""><span id="eslang">Español</span> </a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown dropdown-user">
+                    <a href="/login" class="navbar-nav-link d-flex align-items-center ">
+
+                        <span class="text-dark">@View.Resources.Resource.FazerLogin</span>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a href="/usuario/perfil" class="dropdown-item">
+                            <i class="icon-user-plus"></i>Meu Perfil
                         </a>
-                    </li>
-                </ul>
+                        <div class="/dropdown-divider"></div>
+                        <a href="/contato/index" class="dropdown-item"><span>Não remover</span></a>
+                        <a href="/usuario/config" class="dropdown-item"><i class="icon-cog5"></i> <span>Configurações da Conta</span> </a>
+                        <a href="/login/logout" class="dropdown-item"><i class="icon-switch2"></i> <span>Logout</span></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- /navbar content -->
 
-                <span class="badge badge-pill ml-md-3 mr-md-auto"> </span>
+    </div>
 
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a href="#" class="text-dark navbar-nav-link dropdown-toggle" data-toggle="dropdown">
-
-                            @if (Session["Language"] == null || Session["Language"].ToString() == "pt-BR")
-                            {
-                                <img id="imgLANG" src="~/Content/theme/global_assets/images/lang/br.png" class="img-flag mr-2" alt="">
-                                <span id="langAtual">Português</span>
-                            }
-                            else if (Session["Language"] == null || Session["Language"].ToString() == "en-US")
-                            {
-                                <img id="imgLANG" src="~/Content/theme/global_assets/images/lang/gb.png" class="img-flag mr-2" alt="">
-                                <span id="langAtual">English</span>
-                            }
-                            else if (Session["Language"] == null || Session["Language"].ToString() == "es-ES")
-                            {
-                                <img id="imgLANG" src="~/Content/theme/global_assets/images/lang/es.png" class="img-flag mr-2" alt="">
-                                <span id="langAtual">Español</span>
-                            }
-                        </a>
-
-                        <div class="dropdown-menu dropdown-menu-right">
-                            <a id="btnPT" href="/Home/Change?lang=pt-BR" class="dropdown-item portuguese"><img src="/Content/theme/global_assets/images/lang/br.png" class="img-flag" alt=""><span id="ptLang">Português</span></a>
-                            <a id="btnEN" href="/Home/Change?lang=en-US" class="dropdown-item english"><img src="/Content/theme/global_assets/images/lang/gb.png" class="img-flag" alt=""><span id="enLang">English</span> </a>
-                            <a id="btnES" href="/Home/Change?lang=es-ES" class="dropdown-item spanish"><img src="/Content/theme/global_assets/images/lang/es.png" class="img-flag" alt=""><span id="eslang">Español</span> </a>
-                        </div>
-                    </li>
-
-                    <li class="nav-item dropdown dropdown-user">
-                        <a href="/login" class="navbar-nav-link d-flex align-items-center ">
-
-                            <span class="text-dark">@View.Resources.Resource.FazerLogin</span>
-                        </a>
-
-                        <div class="dropdown-menu dropdown-menu-right">
-                            <a href="/usuario/perfil" class="dropdown-item">
-                                <i class="icon-user-plus"></i>Meu Perfil
-                            </a>
-                            <div class="/dropdown-divider"></div>
-                            <a href="/contato/index" class="dropdown-item"><span>Não remover</span></a>
-                            <a href="/usuario/config" class="dropdown-item"><i class="icon-cog5"></i> <span>Configurações da Conta</span> </a>
-                            <a href="/login/logout" class="dropdown-item"><i class="icon-switch2"></i> <span>Logout</span></a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <!-- /navbar content -->
-
+    <div>
+        <div class="jumbotron text-center" style="background-image: url(/Content/image/82935108.jpg); background-repeat:no-repeat; background-position:center; background-size:cover;">
+            <h1 id="bemvindoText" class="display-4">
+                <span class="text-light">
+                    <p>
+                        @View.Resources.Resource.BemVindo
+                    </p>
+                </span>
+            </h1>
+            <br>
+            <font size="3">
+                <p class="lead">
+                    <span class="text-light" id="cabecalhoResumo">
+                        @View.Resources.Resource.NossoSoftware
+                    </span>
+                </p>
+            </font>
+            <hr class="my-3">
+            <br>
+            <font size="4">
+                <p @*class="lead" *@>
+                    <span class="text-light" id="resumoText">
+                        @View.Resources.Resource.MCSS
+                    </span>
+            </font>
+        </div>
+        <div class="jumbotron text-center">
+            <h1 id="VisaoText" class="text-center display-4">
+                <span>
+                    <p>
+                        @View.Resources.Resource.Visao
+                    </p>
+                </span>
+            </h1>
+            <br>
+            <font size="3">
+                <p class="lead">
+                    <span id="cabecalhoResumo">
+                        @View.Resources.Resource.Nosbuscamos
+                    </span>
+                </p>
+            </font>
         </div>
 
-        <div>
-            <div class="jumbotron text-center" style="background-image: url(/Content/image/82935108.jpg); background-repeat:no-repeat; background-position:center; background-size:cover;">
-                <h1 id="bemvindoText" class="display-4">
-                    <span class="text-light">
-                        <p>
-                            @View.Resources.Resource.BemVindo
-                        </p>
-                    </span>
-                </h1>
-                <br>
-                <font size="3">
-                    <p class="lead">
-                        <span class="text-light" id="cabecalhoResumo">
-                            @View.Resources.Resource.NossoSoftware
-                        </span>
-                    </p>
-                </font>
-                <hr class="my-3">
-                <br>
-                <font size="4">
-                    <p @*class="lead" *@>
-                        <span class="text-light" id="resumoText">
-                            @View.Resources.Resource.MCSS
-                        </span>
-                </font>
-            </div>
-            <div class="jumbotron text-center">
-                <h1 id="VisaoText" class="text-center display-4">
-                    <span>
-                        <p>
-                            @View.Resources.Resource.Visao
-                        </p>
-                    </span>
-                </h1>
-                <br>
-                <font size="3">
-                    <p class="lead">
-                        <span id="cabecalhoResumo">
-                            @View.Resources.Resource.Nosbuscamos
-                        </span>
-                    </p>
-                </font>
-            </div>
+    </div>
 
-        </div>
-
-    </body>
+</body>
