@@ -11758,6 +11758,15 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--/Itapua-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Misiones-->*/
+(502, 'Ayolas', 1),
+(502, 'San Juan Bautista', 1),
+(502, 'San Miguel', 1),
+(502, 'San Patricio', 1),
+(502, 'Santa Maria', 1),
+(502, 'Santa Rosa', 1),
+(502, 'Santiago', 1),
+(502, 'Villa Florida', 1),
+(502, 'Yabebyry', 1);
 /*<--/Misiones-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Neembucu-->*/
