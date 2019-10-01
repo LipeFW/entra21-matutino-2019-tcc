@@ -7475,7 +7475,7 @@ INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--/Cidades de Saint George-->*/
 INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Cidades de Saint John-->*/
-
+(97,'Valor nulo',1),
 /*<--/Cidades de Saint John-->*/
 /*<--Cidades de Saint Mary-->*/
 (98, 'Old Road', 1);
@@ -7502,10 +7502,10 @@ INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--/Cidades de Bimini-->*/
 INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Cidades de Cat Island-->*/
-
+(103,'Valor nulo',1),
 /*<--/Cidades de Cat Island-->*/
 /*<--Cidades de Exuma-->*/
-
+(104,'Valor nulo',1),
 /*<--/Cidades de Exuma-->*/
 /*<--/Cidades de Inagua-->*/
 (105, 'Matthew Town',1);
@@ -7518,9 +7518,9 @@ INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Cidades de Mayaguana-->*/
 (107, 'Pirates Well',1);
 /*<--/Cidades de Mayaguana-->*/
---INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Cidades de Ragged Island-->*/
-
+(108,'Valor nulo',1);
 /*<--/Cidades de Ragged Island-->*/
 INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Cidades de Harbour Island-->*/
@@ -7543,8 +7543,9 @@ INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Cidades de Fresh Creek-->*/
 (113,'Andros Town',1);
 /*<--/Cidades de Fresh Creek-->*/
-/*<--Cidades de Governor''s Harbour-->*/
-
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
+/*<--Cidades de Governor's Harbour-->*/
+(114,'Valor nulo',1);
 /*<--/Cidades de Governor''s Harbour-->*/
 INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Cidades de Green Turtle Cay-->*/
@@ -7556,8 +7557,9 @@ INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--/Cidades de High Rock-->*/
 INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Cidades de Kemps Bay-->*/
-
+(117,'Valor nulo',1);
 /*<--/Cidades de Kemps Bay-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Cidades de Marsh Harbour-->*/
 (118,'Marsh Harbour',1);
 /*<--/Cidades de Marsh Harbour-->*/
@@ -7571,8 +7573,9 @@ INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--/Cidades de Rock Sound-->*/
 INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Cidades de Sandy Point-->*/
-
+(121,'Valor nulo',1);
 /*<--/Cidades de Sandy Point-->*/
+INSERT INTO cidades(id_estado,nome,registro_ativo) VALUES
 /*<--Cidades de Salvador and Rum Cay-->*/
 (122,'Cockburn Town',1);
 /*<--/Cidades de Salvador and Rum Cay-->*/
@@ -8207,6 +8210,7 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (385, 'Montero', 1),
 (385, 'Pailon', 1),
 (385, 'Portachuelo', 1),
+
 (385, 'Puerto Pailas', 1),
 (385, 'Puerto Quijarro', 1),
 (385, 'Puerto Suarez', 1),

@@ -582,4 +582,7 @@ isso nunca acaba,e a cada realização surge mais motivação para não desistir
     <value>Preencha corretamente o campo!</value>
     <comment>checked</comment>
   </data>
+  <data name="NomeUsuario" xml:space="preserve">
+    <value>Apelido :</value>
+  </data>
 </root>
