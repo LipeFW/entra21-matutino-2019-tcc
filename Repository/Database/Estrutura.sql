@@ -11783,10 +11783,24 @@ INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 (503, 'Tacuaras', 1),
 (503, 'Villa Franca', 1),
 (503, 'Villa Oliva', 1),
-(503, 'Villalbin', 1),
+(503, 'Villalbin', 1);
 /*<--/Neembucu-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Paraguari-->*/
+(504, 'Acahay', 1),
+(504, 'Caapucu', 1),
+(504, 'Carapegua', 1),
+(504, 'Escobar', 1),
+(504, 'La Colmena', 1),
+(504, 'Mbuyapey', 1),
+(504, 'Paraguari', 1),
+(504, 'Pirayu', 1),
+(504, 'Quiindy', 1),
+(504, 'Quyquyho', 1),
+(504, 'Sapucai', 1),
+(504, 'Yaguaron', 1),
+(504, 'Ybycui', 1),
+(504, 'Ybytimi', 1);
 /*<--/Paraguari-->*/
 INSERT INTO cidades(id_estado, nome, registro_ativo) VALUES
 /*<--Presidente Hayes-->*/
