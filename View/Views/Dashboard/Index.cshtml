@@ -1,4 +1,71 @@
 ﻿@{
     ViewBag.Title = "Dashboard";
+    <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+    <script type="text/javascript">
+        jQuery(window).load(function ($) {
+            atualizaRelogio();
+        });
+    </script>
+
+        var usuario = (Model.Usuario)Session["Usuario"];
 }
-<img src="https://docs.microsoft.com/pt-br/power-bi/media/service-dashboards/power-bi-dashboard2.png" width="100%" height="500px">
+
+<div style="width:100%;">
+    <div class="jumbotron text-center">
+        <h1 id="bemvindoText" class="display-4">
+            <span class="text-dark">
+                <p>
+                    @View.Resources.Resource.BemVindo, @usuario.NomeCompleto!
+                </p>
+            </span>
+        </h1>
+        <br>
+        <font size="3">
+            <p class="lead">
+                <h1 class="text-dark">
+                    
+                </h1>
+            </p>
+        </font>
+        <hr class="my-3">
+        <br>
+        <font size="4">
+            <p class="lead">
+                <h1 class="text-dark">
+                    Dia  <output id="data" style="font-family: 'arial black', 'avant garde'; font-size: 24px;"></output> <br />
+                    Hora  <output id="hora" style="font-family: 'arial black', 'avant garde'; font-size: 24px;"></output>
+                </h1>
+</font>
+    </div>
+ 
+
+</div>
+
+
+<script>
+    function atualizaRelogio() {
+        var momentoAtual = new Date();
+
+        var vhora = momentoAtual.getHours();
+        var vminuto = momentoAtual.getMinutes();
+        var vsegundo = momentoAtual.getSeconds();
+
+        var vdia = momentoAtual.getDate();
+        var vmes = momentoAtual.getMonth() + 1;
+        var vano = momentoAtual.getFullYear();
+
+        if (vdia < 10) { vdia = "0" + vdia; }
+        if (vmes < 10) { vmes = "0" + vmes; }
+        if (vhora < 10) { vhora = "0" + vhora; }
+        if (vminuto < 10) { vminuto = "0" + vminuto; }
+        if (vsegundo < 10) { vsegundo = "0" + vsegundo; }
+
+        dataFormat = vdia + " / " + vmes + " / " + vano;
+        horaFormat = vhora + " : " + vminuto + " : " + vsegundo;
+
+        document.getElementById("data").innerHTML = dataFormat;
+        document.getElementById("hora").innerHTML = horaFormat;
+
+        setTimeout("atualizaRelogio()", 1000);
+    }
+</script>	

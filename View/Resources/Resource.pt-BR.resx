@@ -576,7 +576,7 @@ isso nunca acaba,e a cada realização surge mais motivação para não desistir
     <comment>checked</comment>
   </data>
   <data name="NomeUsuario" xml:space="preserve">
-    <value>Apelido :</value>
+    <value>Usuário</value>
   </data>
   <data name="ListadeProdutos" xml:space="preserve">
     <value>Lista de Produtos</value>
@@ -595,5 +595,8 @@ isso nunca acaba,e a cada realização surge mais motivação para não desistir
   </data>
   <data name="Contato" xml:space="preserve">
     <value>Contato</value>
+  </data>
+  <data name="Sobre" xml:space="preserve">
+    <value>Sobre o Projeto</value>
   </data>
 </root>

@@ -122,39 +122,39 @@
     <comment>checked</comment>
   </data>
   <data name="Anodefabricacao" xml:space="preserve">
-    <value>Fabrication year</value>
+    <value>Year of fabrication</value>
     <comment>checked</comment>
   </data>
   <data name="AnoFabricacao" xml:space="preserve">
-    <value>Fabrication year</value>
+    <value>Year of fabrication</value>
     <comment>checked</comment>
   </data>
   <data name="CadastrodeCategoria" xml:space="preserve">
-    <value>Category Registration</value>
+    <value>Register a category</value>
     <comment>checked</comment>
   </data>
   <data name="CadastrodeCliente" xml:space="preserve">
-    <value>Costumer Registration</value>
+    <value>Register a costumer</value>
     <comment>checked</comment>
   </data>
   <data name="CadastrodeProduto" xml:space="preserve">
-    <value>Product Registration</value>
+    <value>Register a product</value>
     <comment>checked</comment>
   </data>
   <data name="CadastrodeRotas" xml:space="preserve">
-    <value>Routes Registration</value>
+    <value>Register a route</value>
     <comment>checked</comment>
   </data>
   <data name="CadastrodeUsuario" xml:space="preserve">
-    <value>User Registration</value>
+    <value>Register a user</value>
     <comment>checked</comment>
   </data>
   <data name="CadastrodeVeiculo" xml:space="preserve">
-    <value>Vehicle Registration</value>
+    <value>Register a vehicle</value>
     <comment>checked</comment>
   </data>
   <data name="CadastrodeVendedor" xml:space="preserve">
-    <value>Saleman Registration</value>
+    <value>Register a seller</value>
     <comment>checked</comment>
   </data>
   <data name="Cancelar" xml:space="preserve">
@@ -430,7 +430,7 @@
     <comment>checked</comment>
   </data>
   <data name="Configuracoesdaconta" xml:space="preserve">
-    <value>Account Configurations</value>
+    <value>Account Config</value>
     <comment>checked</comment>
   </data>
   <data name="Inicio" xml:space="preserve">
@@ -466,11 +466,11 @@
     <comment>checked</comment>
   </data>
   <data name="CadastrodeMarca" xml:space="preserve">
-    <value>Brand Registration</value>
+    <value>Register a brand</value>
     <comment>checked</comment>
   </data>
   <data name="CadastroVenda" xml:space="preserve">
-    <value>Sales Registration</value>
+    <value>Register a sale</value>
     <comment>checked</comment>
   </data>
   <data name="Frota" xml:space="preserve">
@@ -514,7 +514,7 @@
     <comment>checked</comment>
   </data>
   <data name="Configuracaoconta" xml:space="preserve">
-    <value>Account Configuration</value>
+    <value>Account Config</value>
     <comment>checked</comment>
   </data>
   <data name="Desconto" xml:space="preserve">
@@ -538,7 +538,7 @@
     <comment>checked</comment>
   </data>
   <data name="Alterarfoto" xml:space="preserve">
-    <value>Change Photos</value>
+    <value>Change Photo</value>
     <comment>checked</comment>
   </data>
   <data name="Enviar" xml:space="preserve">
@@ -578,7 +578,7 @@
     <comment>checked</comment>
   </data>
   <data name="CadastrodeModelo" xml:space="preserve">
-    <value>Model Registration</value>
+    <value>Register a model</value>
     <comment>checked</comment>
   </data>
   <data name="Editar" xml:space="preserve">
@@ -618,5 +618,8 @@ It never ends, and every achievement arises more motivation to not give up and a
   </data>
   <data name="Contato" xml:space="preserve">
     <value>Contact</value>
+  </data>
+  <data name="Sobre" xml:space="preserve">
+    <value>About the Project</value>
   </data>
 </root>

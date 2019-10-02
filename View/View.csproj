@@ -2001,6 +2001,12 @@
     <Content Include="Content\theme\global_assets\js\polyfills\fetch.min.js" />
     <Content Include="Content\theme\global_assets\js\polyfills\promise.min.js" />
     <Content Include="Content\theme\global_assets\swf\datatables\flashExport.swf" />
+    <Content Include="Content\uploads\eduardo.jpg" />
+    <Content Include="Content\uploads\felipe.jpg" />
+    <Content Include="Content\uploads\henrique.jpg" />
+    <Content Include="Content\uploads\illan.jpg" />
+    <Content Include="Content\uploads\nathan.jpg" />
+    <Content Include="Content\uploads\pablo.jpg" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootbox.all.js" />
     <Content Include="Scripts\bootbox.all.min.js" />
@@ -2807,7 +2813,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\fonts\" />
-    <Folder Include="Content\uploads\" />
     <Folder Include="Models\" />
     <Folder Include="Scripts\Login\" />
     <Folder Include="Views\Base\" />
