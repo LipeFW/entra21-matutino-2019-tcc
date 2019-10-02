@@ -666,4 +666,7 @@ Nunca termina, y cada logro surge más motivación para no rendirse y siempre se
   <data name="Sobre" xml:space="preserve">
     <value>Sobre el Proyecto</value>
   </data>
+  <data name="Equipe" xml:space="preserve">
+    <value>Equipo</value>
+  </data>
 </root>

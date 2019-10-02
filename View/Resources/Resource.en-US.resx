@@ -622,4 +622,7 @@ It never ends, and every achievement arises more motivation to not give up and a
   <data name="Sobre" xml:space="preserve">
     <value>About the Project</value>
   </data>
+  <data name="Equipe" xml:space="preserve">
+    <value>Team</value>
+  </data>
 </root>
