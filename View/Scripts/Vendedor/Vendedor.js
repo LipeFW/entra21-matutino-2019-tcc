@@ -23,7 +23,7 @@
         $veiculo = $('#vendedor-campo-veiculo').val();
 
         if (($nome.trim() == "")) {
-            alert("Preencha corretamente os campos!");
+            bootbox.alert("Preencha corretamente os campos!");
             return null;
         }
         if ($idAlterar == -1) {
@@ -49,10 +49,10 @@
                 limparCampos();
                 $idAlterar = -1;
                 $tabelaVendedor.ajax.reload();
-                alert("Vendedor editado com sucesso!");
+                bootbox.alert("Vendedor editado com sucesso!");
             },
             error: function (err) {
-                alert("Não foi possivel editar o vendedor!");
+                bootbox.alert("Não foi possivel editar o vendedor!");
                 limparCampos();
                 $idAlterar = -1;
             }
@@ -72,10 +72,10 @@
                 $('#modal-vendedor').modal('hide');
                 limparCampos();
                 $tabelaVendedor.ajax.reload();
-                alert("Vendedor cadastrado com sucesso!");
+                bootbox.alert("Vendedor cadastrado com sucesso!");
             },
             error: function (err) {
-                alert("Não foi possivel cadastrar o vendedor!");
+                bootbox.alert("Não foi possivel cadastrar o vendedor!");
             }
         });
     }
@@ -125,7 +125,7 @@
                 $('#modal-vendedor').modal('show');
             },
             error: function (err) {
-                alert("Não foi possivel carregar o vendedor!");
+                bootbox.alert("Não foi possivel carregar o vendedor!");
             }
         });
     });
