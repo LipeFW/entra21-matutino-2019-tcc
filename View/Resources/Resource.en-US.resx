@@ -616,4 +616,7 @@ It never ends, and every achievement arises more motivation to not give up and a
   <data name="AdicioneProdutos" xml:space="preserve">
     <value>Add Products to Purchase</value>
   </data>
+  <data name="Contato" xml:space="preserve">
+    <value>Contact</value>
+  </data>
 </root>

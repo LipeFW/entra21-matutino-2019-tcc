@@ -599,4 +599,7 @@
   <data name="Pais" xml:space="preserve">
     <value>string</value>
   </data>
+  <data name="Contato" xml:space="preserve">
+    <value>string</value>
+  </data>
 </root>

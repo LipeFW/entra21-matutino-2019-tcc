@@ -593,4 +593,7 @@ isso nunca acaba,e a cada realização surge mais motivação para não desistir
   <data name="Equipe" xml:space="preserve">
     <value>Equipe</value>
   </data>
+  <data name="Contato" xml:space="preserve">
+    <value>Contato</value>
+  </data>
 </root>

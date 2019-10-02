@@ -387,6 +387,15 @@ namespace View.Resources {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a string.
         /// </summary>
+        public static string Contato {
+            get {
+                return ResourceManager.GetString("Contato", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
         public static string CPF {
             get {
                 return ResourceManager.GetString("CPF", resourceCulture);
