@@ -374,6 +374,12 @@
       innerDialog.addClass('modal-dialog-centered');
     }
 
+    if(options.timeOut){
+        window.setTimeout(function(){
+           dialog.modal('hide');
+        }, options.timeOut);
+    }
+    
     // Bootstrap event listeners; these handle extra
     // setup & teardown required after the underlying
     // modal has performed certain actions.
