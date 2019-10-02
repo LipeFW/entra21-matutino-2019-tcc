@@ -6,8 +6,8 @@
         serverSide: true,
         columns: [
             { 'data': 'Id' },
-            { 'data': 'Venda.Cliente.Nome' },
-            { 'data': 'Venda.Vendedor.Nome' },
+            { 'data': 'Cliente.Nome' },
+            { 'data': 'Vendedor.Nome' },
             { 'data': 'Total' },
             {
                 render: function (data, type, row) {

@@ -100,7 +100,7 @@
 
     });
 
-    $('.table').on('click', '.botao-abrir', function () {
+    $('#inventario-tabela').on('click', '.botao-abrir', function () {
         $idInventario = $(this).data("id");
         $('#modal-inventario').modal('show');
     });
@@ -137,7 +137,7 @@
         });
     });
 
-    $('.table').on('click', '.botao-editar', function () {
+    $('#inventario-tabela').on('click', '.botao-editar', function () {
         $idAlterar = $(this).data('id');
 
         $.ajax({

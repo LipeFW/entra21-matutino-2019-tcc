@@ -27,23 +27,23 @@
                             <option value="@modelo.Id">@modelo.Nome</option>
                         }
                     </select>
-                    <div class="form-group">
-                        <label for="veiculo-campo-anofabricacao">@View.Resources.Resource.AnoFabricacao</label>
-                        <input class="form-control" name="campo-anofabricacao" id="veiculo-campo-anofabricacao" type="number" min="1945" max="2025" required="required">
-                    </div>
-                    <div class="form-group">
-                        <label for="veiculo-campo-numerocaminhao">@View.Resources.Resource.Numerodocaminhao</label>
-                        <input class="form-control" name="campo-numerocaminhao" id="veiculo-campo-numerocaminhao" type="text" required="required" />
-                    </div>
-                    <div class="form-group">
-                        <label for="veiculo-campo-placa">@View.Resources.Resource.Placa</label>
-                        <input class="form-control" name="campo-placa" id="veiculo-campo-placa" type="text" required="required" />
-                    </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="rubberBand animated btn btn-danger" data-dismiss="modal"><i class="fas fa-times"></i> @View.Resources.Resource.Cancelar</button>
-                    <button id="veiculo-botao-salvar" type="button" class="rubberBand animated btn btn-success"><i class="fa fa-check"></i>  @View.Resources.Resource.Salvar</button>
+                <div class="form-group">
+                    <label for="veiculo-campo-anofabricacao">@View.Resources.Resource.AnoFabricacao</label>
+                    <input class="form-control" name="campo-anofabricacao" id="veiculo-campo-anofabricacao" type="number" min="1945" max="2025" required="required">
                 </div>
+                <div class="form-group">
+                    <label for="veiculo-campo-numerocaminhao">@View.Resources.Resource.Numerodocaminhao</label>
+                    <input class="form-control" name="campo-numerocaminhao" id="veiculo-campo-numerocaminhao" type="text" required="required" />
+                </div>
+                <div class="form-group">
+                    <label for="veiculo-campo-placa">@View.Resources.Resource.Placa</label>
+                    <input class="form-control" name="campo-placa" id="veiculo-campo-placa" type="text" required="required" />
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="rubberBand animated btn btn-danger" data-dismiss="modal"><i class="fas fa-times"></i> @View.Resources.Resource.Cancelar</button>
+                <button id="veiculo-botao-salvar" type="button" class="rubberBand animated btn btn-success"><i class="fa fa-check"></i>  @View.Resources.Resource.Salvar</button>
             </div>
         </div>
     </div>
