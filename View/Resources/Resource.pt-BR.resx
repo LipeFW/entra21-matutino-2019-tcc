@@ -354,7 +354,7 @@
     <comment>checked</comment>
   </data>
   <data name="desenvolvido" xml:space="preserve">
-    <value>desenvolvido</value>
+    <value>Desenvolvido</value>
     <comment>checked</comment>
   </data>
   <data name="e" xml:space="preserve">
@@ -366,15 +366,15 @@
     <comment>checked</comment>
   </data>
   <data name="entrada" xml:space="preserve">
-    <value>entrada</value>
+    <value>Entrada</value>
     <comment>checked</comment>
   </data>
   <data name="estoque" xml:space="preserve">
-    <value>estoque</value>
+    <value>Estoque</value>
     <comment>checked</comment>
   </data>
   <data name="facilitando" xml:space="preserve">
-    <value>facilitando</value>
+    <value>Facilitando</value>
     <comment>checked</comment>
   </data>
   <data name="foi" xml:space="preserve">
@@ -382,11 +382,11 @@
     <comment>checked</comment>
   </data>
   <data name="geral" xml:space="preserve">
-    <value>geral</value>
+    <value>Geral</value>
     <comment>checked</comment>
   </data>
   <data name="mercadorias" xml:space="preserve">
-    <value>mercadorias</value>
+    <value>Mercadorias</value>
   </data>
   <data name="NossoSoftware" xml:space="preserve">
     <value>Nosso software foi desenvolvido para atuar facilitando o trabalho de entrada e saída de mercadorias de uma transportadora ou estoque em geral .</value>
@@ -402,13 +402,13 @@
     <value>para</value>
   </data>
   <data name="saida" xml:space="preserve">
-    <value>saída</value>
+    <value>Saída</value>
   </data>
   <data name="software" xml:space="preserve">
-    <value>software</value>
+    <value>Software</value>
   </data>
   <data name="trabalho" xml:space="preserve">
-    <value>trabalho</value>
+    <value>Trabalho</value>
   </data>
   <data name="transportadora" xml:space="preserve">
     <value>Transportadora</value>
@@ -572,7 +572,7 @@ isso nunca acaba,e a cada realização surge mais motivação para não desistir
     <value>Código</value>
   </data>
   <data name="Preenchacorretamente" xml:space="preserve">
-    <value>Preencha corretamente o campo!</value>
+    <value>Preencha Corretamente o Campo!</value>
     <comment>checked</comment>
   </data>
   <data name="NomeUsuario" xml:space="preserve">
@@ -588,7 +588,7 @@ isso nunca acaba,e a cada realização surge mais motivação para não desistir
     <value>Login</value>
   </data>
   <data name="AdicioneProdutos" xml:space="preserve">
-    <value>Adicione os Produtos a compra</value>
+    <value>Adicione os Produtos a Compra</value>
   </data>
   <data name="Equipe" xml:space="preserve">
     <value>Equipe</value>

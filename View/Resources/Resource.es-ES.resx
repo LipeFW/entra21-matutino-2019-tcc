@@ -386,7 +386,7 @@
     <comment>checked</comment>
   </data>
   <data name="atuar" xml:space="preserve">
-    <value>actuar</value>
+    <value>Actuar</value>
     <comment>checked</comment>
   </data>
   <data name="de" xml:space="preserve">
@@ -394,7 +394,7 @@
     <comment>checked</comment>
   </data>
   <data name="desenvolvido" xml:space="preserve">
-    <value>desarrollado</value>
+    <value>Desarrollado</value>
     <comment>checked</comment>
   </data>
   <data name="e" xml:space="preserve">
@@ -406,11 +406,11 @@
     <comment>checked</comment>
   </data>
   <data name="entrada" xml:space="preserve">
-    <value>entrada</value>
+    <value>Entrada</value>
     <comment>checked</comment>
   </data>
   <data name="estoque" xml:space="preserve">
-    <value>stock</value>
+    <value>Stock</value>
     <comment>checked</comment>
   </data>
   <data name="facilitando" xml:space="preserve">
@@ -422,11 +422,11 @@
     <comment>checked</comment>
   </data>
   <data name="geral" xml:space="preserve">
-    <value>general</value>
+    <value>General</value>
     <comment>checked</comment>
   </data>
   <data name="mercadorias" xml:space="preserve">
-    <value>mercancias</value>
+    <value>Mercancias</value>
     <comment>checked</comment>
   </data>
   <data name="NossoSoftware" xml:space="preserve">
@@ -447,19 +447,19 @@ transportista o acciones en general, y al mismo tiempo registrar una venta y tod
     <comment>checked</comment>
   </data>
   <data name="saida" xml:space="preserve">
-    <value>salir</value>
+    <value>Salir</value>
     <comment>checked</comment>
   </data>
   <data name="software" xml:space="preserve">
-    <value>software</value>
+    <value>Software</value>
     <comment>checked</comment>
   </data>
   <data name="trabalho" xml:space="preserve">
-    <value>trabajar</value>
+    <value>Trabajar</value>
     <comment>checked</comment>
   </data>
   <data name="transportadora" xml:space="preserve">
-    <value>transportista</value>
+    <value>Transportista</value>
     <comment>checked</comment>
   </data>
   <data name="uma" xml:space="preserve">
@@ -471,7 +471,7 @@ transportista o acciones en general, y al mismo tiempo registrar una venta y tod
     <comment>checked</comment>
   </data>
   <data name="Configuracoesdaconta" xml:space="preserve">
-    <value>Configuraciones de cuenta</value>
+    <value>Configuraciones de Cuenta</value>
     <comment>checked</comment>
   </data>
   <data name="Inicio" xml:space="preserve">
@@ -551,7 +551,7 @@ transportista o acciones en general, y al mismo tiempo registrar una venta y tod
     <comment>checked</comment>
   </data>
   <data name="Configuracaoconta" xml:space="preserve">
-    <value>Configuración de la cuenta</value>
+    <value>Configuración de la Cuenta</value>
     <comment>checked</comment>
   </data>
   <data name="Desconto" xml:space="preserve">
@@ -655,10 +655,10 @@ Nunca termina, y cada logro surge más motivación para no rendirse y siempre se
     <value>Login</value>
   </data>
   <data name="NomeUsuario" xml:space="preserve">
-    <value>apellido</value>
+    <value>Apellido</value>
   </data>
   <data name="AdicioneProdutos" xml:space="preserve">
-    <value>Agregar productos a la compra</value>
+    <value>Agregar Productos a la Compra</value>
   </data>
   <data name="Contato" xml:space="preserve">
     <value>Contacto</value>
