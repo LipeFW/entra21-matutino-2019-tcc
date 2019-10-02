@@ -52,7 +52,7 @@
                     $tabelaVeiculo.ajax.reload();
                 },
                 error: function (err) {
-                    bootbox.alert('Não foi possivel editar a venda!');
+                    bootbox.alert('Não foi possivel editar o veículo!');
                 }
             });
         }
@@ -72,10 +72,10 @@
                     $('#modal-veiculo').modal('hide');
                     limparCampos();
                     $tabelaVeiculo.ajax.reload();
-                    bootbox.alert('Veiculo cadastrado com sucesso!');
+                    bootbox.alert('Veículo cadastrado com sucesso!');
                 },
                 error: function (err) {
-                    bootbox.alert('Não foi possivel cadastrar a venda!');
+                    bootbox.alert('Não foi possivel cadastrar o veículo!');
                 }
             });
         }
@@ -85,7 +85,7 @@
         $idApagar = $(this).data('id');
 
         bootbox.confirm({
-            message: "Deseja realmente remover a venda?",
+            message: "Deseja realmente remover a veículo?",
             buttons: {
                 confirm: {
                     label: '<i class="fa fa-check"></i> Sim',
@@ -103,10 +103,10 @@
                         method: 'get',
                         success: function (data) {
                             $tabelaVeiculo.ajax.reload();
-                            bootbox.alert("Venda removida com sucesso!");
+                            bootbox.alert("Veículo removido com sucesso!");
                         },
                         error: function (err) {
-                            bootbox.alert('Não foi possivel remover a venda!');
+                            bootbox.alert('Não foi possivel remover o veículo!');
                         }
                     });
                 }
@@ -129,7 +129,7 @@
                 $("#modal-veiculo").modal("show");
             },
             error: function (err) {
-                bootbox.alert('Não foi possivel carregar a venda!');
+                bootbox.alert('Não foi possivel carregar a veículo!');
             }
         });
     });
