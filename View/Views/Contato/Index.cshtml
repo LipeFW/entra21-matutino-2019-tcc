@@ -1,47 +1,177 @@
-﻿
-@{
-    ViewBag.Title = "Contato";
+﻿@{
+    Layout = null;
+    <title>MCSS - Contato</title>
 
-    @*nome, sobrenome, numero, titulo, mensagem, e-mail*@
+    <link href="~/Content/theme/global_assets/images/logo_icon_dark.png" rel="shortcut icon" />
+    <link href="~/Content/login/css/login.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/css/Animate.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/css/tabela/util.css" />
+    <link href="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" type="text/javascript" />
 
+    <!-- Global stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+    <link href="~/Content/theme/global_assets/css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/theme/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/theme/global_assets/css/icons/fontawesome/styles.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/theme/assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/theme/assets/css/layout.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/theme/assets/css/components.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/theme/assets/css/colors.min.css" rel="stylesheet" type="text/css">
+    <!-- <link href="~/Content/css/select2.min.css" rel="stylesheet" type="text/css"> -->
+    <link href="~/Content/css/replaces.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <!-- /global stylesheets -->
+    <!-- Core JS files -->
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script src="~/Content/theme/global_assets/js/main/bootstrap.bundle.min.js"></script>
+    <script src="~/Content/theme/global_assets/js/plugins/loaders/blockui.min.js"></script>
+    <!-- /core JS files -->
+    <!-- Theme JS files -->
+    <script src="~/Content/theme/global_assets/js/plugins/visualization/d3/d3.min.js"></script>
+    <script src="~/Content/theme/global_assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
+    <script src="~/Content/theme/global_assets/js/plugins/forms/styling/switchery.min.js"></script>
+    <script src="~/Content/theme/global_assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+    <script src="~/Content/theme/global_assets/js/plugins/ui/moment/moment.min.js"></script>
+    <script src="~/Content/theme/global_assets/js/plugins/pickers/daterangepicker.js"></script>
+    <script src="~/Scripts/bootbox.min.js"></script>
+    <script src="~/Content/theme/assets/js/app.js"></script>
+    <script src="~/Content/js/lang.js"></script>
+    <script src="~/Content/theme/global_assets/js/demo_pages/dashboard.js"></script>
+    <script src="~/Scripts/jquery.mask.js"></script>
+    <script type="text/javascript" src="~/Scripts/Mascaras/jquery.mask.js"></script>
+    <script type="text/javascript" src="~/Scripts/Mascaras/jquery.mask.min.js"></script>
 }
-<body id="contato-index">
-    <legend>
-        <span class="h2">@View.Resources.Resource.Contato</span>
-    </legend>
-    <div class="modal-body">
-        <div class="form-group">
-            <label style="font-weight:bold" for="campo-nome">Nome</label>
-            <input class="form-control border-dark" type="text" name="campo-nome" id="contato-campo-nome" />
+<body class="sidebar-xs">
+    <div class="navbar navbar-expand-md navbar-light">
+
+        <!-- Header with logos -->
+        <!-- /header with logos -->
+        <!-- Mobile controls -->
+        <div class="d-flex flex-1 d-md-none bg-light text-dark">
+            <div class="navbar-brand mr-auto">
+                <a href="/home" class="d-inline-block">
+                    <h2 class="titulonav text-center text-dark">mcss</h2>
+                </a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
+                <i class="icon-paragraph-justify3"></i>
+            </button>
+
         </div>
-        <div class="form-group">
-            <label style="font-weight:bold" for="campo-sobrenome">Sobrenome</label>
-            <input class="form-control border-dark" type="text" name="campo-sobrenome" id="contato-campo-sobrenome" />
+        <!-- /mobile controls -->
+        <!-- Navbar content -->
+        <div class="bg-light collapse navbar-collapse primary" id="navbar-mobile">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="/home" class="navbar-nav-link d-flex align-items-center ">
+
+                        <h2 class="titulonav text-center text-dark mb-0 mt-0">mcss</h2>
+                    </a>
+                </li>
+                <li class="nav-item dropdown dropdown-user">
+                    <a style="font-size:15px" href="/equipe" class="navbar-nav-link d-flex align-items-center mt-1 ">
+
+                        <span class="text-dark">@View.Resources.Resource.Equipe</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown dropdown-user">
+                    <a style="font-size:15px" href="/contato" class="navbar-nav-link d-flex align-items-center mt-1 ">
+
+                        <span class="text-dark">@View.Resources.Resource.Contato</span>
+                    </a>
+                </li>
+
+            </ul>
+
+            <span class="badge badge-pill ml-md-3 mr-md-auto"> </span>
+
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a href="#" class="text-dark navbar-nav-link dropdown-toggle" data-toggle="dropdown">
+
+                        @if (Session["Language"] == null || Session["Language"].ToString() == "pt-BR")
+                        {
+                            <img id="imgLANG" src="~/Content/theme/global_assets/images/lang/br.png" class="img-flag mr-2" alt="">
+                            <span id="langAtual">Português</span>
+                        }
+                        else if (Session["Language"] == null || Session["Language"].ToString() == "en-US")
+                        {
+                            <img id="imgLANG" src="~/Content/theme/global_assets/images/lang/gb.png" class="img-flag mr-2" alt="">
+                            <span id="langAtual">English</span>
+                        }
+                        else if (Session["Language"] == null || Session["Language"].ToString() == "es-ES")
+                        {
+                            <img id="imgLANG" src="~/Content/theme/global_assets/images/lang/es.png" class="img-flag mr-2" alt="">
+                            <span id="langAtual">Español</span>
+                        }
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a id="btnPT" href="/Home/Change?lang=pt-BR" class="dropdown-item portuguese"><img src="/Content/theme/global_assets/images/lang/br.png" class="img-flag" alt=""><span id="ptLang">Português</span></a>
+                        <a id="btnEN" href="/Home/Change?lang=en-US" class="dropdown-item english"><img src="/Content/theme/global_assets/images/lang/gb.png" class="img-flag" alt=""><span id="enLang">English</span> </a>
+                        <a id="btnES" href="/Home/Change?lang=es-ES" class="dropdown-item spanish"><img src="/Content/theme/global_assets/images/lang/es.png" class="img-flag" alt=""><span id="eslang">Español</span> </a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown dropdown-user">
+                    <a href="/login" class="navbar-nav-link d-flex align-items-center ">
+
+                        <span class="text-dark">@View.Resources.Resource.FazerLogin</span>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a href="/usuario/perfil" class="dropdown-item">
+                            <i class="icon-user-plus"></i>Meu Perfil
+                        </a>
+                        <div class="/dropdown-divider"></div>
+                        <a href="/contato/index" class="dropdown-item"><span>Não remover</span></a>
+                        <a href="/usuario/config" class="dropdown-item"><i class="icon-cog5"></i> <span>Configurações da Conta</span> </a>
+                        <a href="/login/logout" class="dropdown-item"><i class="icon-switch2"></i> <span>Logout</span></a>
+                    </div>
+                </li>
+            </ul>
         </div>
-        <div class="form-group">
-            <label style="font-weight:bold" for="campo-numero">Telefone</label>
-            <input class="form-control border-dark" type="text" name="campo-telefone" id="contato-campo-telefone" />
-        </div>
-        <div class="form-group">
-            <label style="font-weight:bold" for="campo-email">Seu E-mail</label>
-            <input class="form-control border-dark" type="text" name="campo-email" id="contato-campo-email" />
-        </div>
-        <div class="form-group">
-            <label style="font-weight:bold" for="campo-titulo">Título</label>
-            <input class="form-control border-dark" type="text" name="campo-titulo" id="contato-campo-titulo" />
-        </div>
-        <div class="form-group">
-            <label style="font-weight:bold" for="campo-mensagem">Mensagem</label>
-            <textarea class="form-control border-dark" type="text" name="campo-mensagem" id="contato-campo-mensagem"></textarea>
-        </div>
-        <div class="form-group">
-            <button id="contato-botao-enviar" class="btn btn-primary float-right" type="submit"><i class="fas fa-file-import"></i>  @View.Resources.Resource.Enviar</button>
-        </div>
+        <!-- /navbar content -->
+
     </div>
-    <legend></legend>
-</body>
+    <div id="contato-index">
+        <legend>
+            <span class="h2">@View.Resources.Resource.Contato</span>
+        </legend>
+        <div class="modal-body">
+            <div class="form-group">
+                <label style="font-weight:bold" for="campo-nome">Nome</label>
+                <input class="form-control border-dark" type="text" name="campo-nome" id="contato-campo-nome" />
+            </div>
+            <div class="form-group">
+                <label style="font-weight:bold" for="campo-sobrenome">Sobrenome</label>
+                <input class="form-control border-dark" type="text" name="campo-sobrenome" id="contato-campo-sobrenome" />
+            </div>
+            <div class="form-group">
+                <label style="font-weight:bold" for="campo-numero">Telefone</label>
+                <input class="form-control border-dark" type="text" name="campo-telefone" id="contato-campo-telefone" />
+            </div>
+            <div class="form-group">
+                <label style="font-weight:bold" for="campo-email">Seu E-mail</label>
+                <input class="form-control border-dark" type="text" name="campo-email" id="contato-campo-email" />
+            </div>
+            <div class="form-group">
+                <label style="font-weight:bold" for="campo-titulo">Título</label>
+                <input class="form-control border-dark" type="text" name="campo-titulo" id="contato-campo-titulo" />
+            </div>
+            <div class="form-group">
+                <label style="font-weight:bold" for="campo-mensagem">Mensagem</label>
+                <textarea class="form-control border-dark" type="text" name="campo-mensagem" id="contato-campo-mensagem"></textarea>
+            </div>
+            <div class="form-group">
+                <button id="contato-botao-enviar" class="btn btn-primary float-right" type="submit"><i class="fas fa-file-import"></i>  @View.Resources.Resource.Enviar</button>
+            </div>
+        </div>
+        <legend></legend>
+    </div>
 
-@section js{
-    <script src="~/Scripts/Contato/contato.js"></script>
-    <script type="text/javascript" src="~/Scripts/Mascaras/Mask.js"></script>
-}
+    @section js{
+        <script src="~/Scripts/Contato/contato.js"></script>
+        <script type="text/javascript" src="~/Scripts/Mascaras/Mask.js"></script>
+    }
