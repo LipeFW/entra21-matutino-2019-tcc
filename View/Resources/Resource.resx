@@ -596,4 +596,7 @@
   <data name="Equipe" xml:space="preserve">
     <value>string</value>
   </data>
+  <data name="Pais" xml:space="preserve">
+    <value>string</value>
+  </data>
 </root>
