@@ -42,7 +42,7 @@ namespace Model
         public int RG { get; set; }
 
         [Column("logradouro")]
-        public int logradouro { get; set; }
+        public int Logradouro { get; set; }
 
         [Column("numero_casa")]
         public int NumeroCasa { get; set; }

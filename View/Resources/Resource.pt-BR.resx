@@ -611,4 +611,7 @@ isso nunca acaba,e a cada realização surge mais motivação para não desistir
   <data name="Titulo" xml:space="preserve">
     <value>Título</value>
   </data>
+  <data name="NumeroCasa" xml:space="preserve">
+    <value>Número</value>
+  </data>
 </root>
