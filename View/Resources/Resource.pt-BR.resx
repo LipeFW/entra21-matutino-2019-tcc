@@ -632,4 +632,7 @@ isso nunca acaba,e a cada realização surge mais motivação para não desistir
   <data name="Sempree" xml:space="preserve">
     <value>Sempre é muito importante o apoio de toda a equipe,para que todos possam crescer.</value>
   </data>
+  <data name="AdicionarProdutos" xml:space="preserve">
+    <value>Adicionar Produtos</value>
+  </data>
 </root>

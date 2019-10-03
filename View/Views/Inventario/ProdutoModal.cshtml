@@ -1,0 +1,41 @@
+﻿<div class="modal bounceInDown animated" tabindex="-1" role="dialog" id="modal-inserir-produto">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">@View.Resources.Resource.CadastrodeVeiculo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="inventario-campo-categoria">@View.Resources.Resource.Categoria</label>
+                    <select class="form-control" id="produto-campo-categoria" name="campo-categoria">
+                        <option disabled="disabled" selected="selected">@View.Resources.Resource.Selecioneumacategoria</option>
+                        @foreach (Model.Categoria categoria in ViewBag.Categorias)
+                        {
+                            <option value="@categoria.Id">@categoria.Nome</option>
+                        }
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="inventario-campo-produto">@View.Resources.Resource.Produto</label>
+                    <select class="form-control" id="produto-campo-produto" name="campo-produto">
+                        <option disabled="disabled" selected="selected">@View.Resources.Resource.SelecioneumProduto</option>
+                        @foreach (Model.Produto produto in ViewBag.Produtos)
+                        {
+                            <option value="@produto.Id">@produto.Nome</option>
+                        }
+                    </select>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="rubberBand animated btn btn-danger" data-dismiss="modal"><i class="fas fa-times"></i> @View.Resources.Resource.Cancelar</button>
+                <button id="inventario-botao-salvar" type="button" class="rubberBand animated btn btn-success"><i class="fa fa-check"></i>  @View.Resources.Resource.Salvar</button>
+            </div>
+        </div>
+    </div>
+</div>
+@section js{
+    <script src="~/Scripts/Mascaras/Mask.js"></script>
+}

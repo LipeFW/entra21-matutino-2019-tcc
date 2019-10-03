@@ -638,4 +638,7 @@
   <data name="Sempree" xml:space="preserve">
     <value>string</value>
   </data>
+  <data name="AdicionarProdutos" xml:space="preserve">
+    <value>string</value>
+  </data>
 </root>

@@ -72,6 +72,15 @@ namespace View.Resources {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a string.
         /// </summary>
+        public static string AdicionarProdutos {
+            get {
+                return ResourceManager.GetString("AdicionarProdutos", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
         public static string AdicioneProdutos {
             get {
                 return ResourceManager.GetString("AdicioneProdutos", resourceCulture);
