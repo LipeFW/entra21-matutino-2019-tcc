@@ -11861,7 +11861,7 @@ id_cidade INT,
 FOREIGN KEY (id_pais) REFERENCES paises(id),
 FOREIGN KEY (id_estado) REFERENCES estados(id),
 FOREIGN KEY (id_cidade) REFERENCES cidades(id),
-registro_ativo BIT 
+registro_ativo BIT
 );
 
 INSERT INTO usuarios(nome, nome_completo, sobrenome, url_imagem, admin, senha, telefone, cpf, rg, id_pais, id_estado, id_cidade, cep, logradouro ,numero_casa, registro_ativo)
