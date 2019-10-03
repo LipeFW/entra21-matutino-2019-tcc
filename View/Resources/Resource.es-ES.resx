@@ -706,4 +706,31 @@ Nunca termina, y cada logro surge más motivación para no rendirse y siempre se
   <data name="Entrar" xml:space="preserve">
     <value>Entrar</value>
   </data>
+  <data name="EditarCategoria" xml:space="preserve">
+    <value>Edición de Categoría</value>
+  </data>
+  <data name="EditarCliente" xml:space="preserve">
+    <value>Edición del Cliente</value>
+  </data>
+  <data name="EditarMarca" xml:space="preserve">
+    <value>Edición de Marca</value>
+  </data>
+  <data name="EditarModelo" xml:space="preserve">
+    <value>Edición de Modelo</value>
+  </data>
+  <data name="EditarProduto" xml:space="preserve">
+    <value>Edición de Producto</value>
+  </data>
+  <data name="EditarRota" xml:space="preserve">
+    <value>Edición de Ruta</value>
+  </data>
+  <data name="EditarUsuario" xml:space="preserve">
+    <value>Edición de Usuario</value>
+  </data>
+  <data name="EditarVeiculo" xml:space="preserve">
+    <value>Edición del Vehículo</value>
+  </data>
+  <data name="EditarVendedor" xml:space="preserve">
+    <value>Edición del Vendedor</value>
+  </data>
 </root>
