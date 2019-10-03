@@ -477,6 +477,87 @@ namespace View.Resources {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a string.
         /// </summary>
+        public static string EditarCategoria {
+            get {
+                return ResourceManager.GetString("EditarCategoria", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
+        public static string EditarCliente {
+            get {
+                return ResourceManager.GetString("EditarCliente", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
+        public static string EditarMarca {
+            get {
+                return ResourceManager.GetString("EditarMarca", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
+        public static string EditarModelo {
+            get {
+                return ResourceManager.GetString("EditarModelo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
+        public static string EditarProduto {
+            get {
+                return ResourceManager.GetString("EditarProduto", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
+        public static string EditarRota {
+            get {
+                return ResourceManager.GetString("EditarRota", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
+        public static string EditarUsuario {
+            get {
+                return ResourceManager.GetString("EditarUsuario", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
+        public static string EditarVeiculo {
+            get {
+                return ResourceManager.GetString("EditarVeiculo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
+        public static string EditarVendedor {
+            get {
+                return ResourceManager.GetString("EditarVendedor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
         public static string em {
             get {
                 return ResourceManager.GetString("em", resourceCulture);
@@ -498,6 +579,15 @@ namespace View.Resources {
         public static string entrada {
             get {
                 return ResourceManager.GetString("entrada", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
+        public static string Entrar {
+            get {
+                return ResourceManager.GetString("Entrar", resourceCulture);
             }
         }
         

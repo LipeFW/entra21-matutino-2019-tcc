@@ -2809,15 +2809,7 @@
     <Content Include="Views\Contato\Index.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Equipe\Index.cshtml" />
-    <Content Include="Views\Categoria\CategoriaModalEditar.cshtml" />
-    <Content Include="Views\Marca\MarcaModalEdicao.cshtml" />
-    <Content Include="Views\Modelo\ModeloModalEdicao.cshtml" />
-    <Content Include="Views\Produto\ProdutoModalEdicao.cshtml" />
-    <Content Include="Views\Rota\RotaModalEdicao.cshtml" />
-    <Content Include="Views\Usuario\UsuarioModalEdicao.cshtml" />
-    <Content Include="Views\Veiculo\VeiculoModalEdicao.cshtml" />
-    <Content Include="Views\Venda\VendaModalEdicao.cshtml" />
-    <Content Include="Views\Vendedor\VendedorModalEdicao.cshtml" />
+    <Content Include="Views\Cliente\EdicaoModalCliente.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
