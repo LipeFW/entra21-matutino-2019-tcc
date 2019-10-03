@@ -22,6 +22,17 @@
         $categoria = $("#produto-campo-categoria").val();
         $valor = $("#produto-campo-valor").val();
 
+        if (($nome == "") || ($categoria == null) || ($valor == null)) {
+            bootbox.dialog({
+                message: "Preencha corretamente os campos!"
+
+            });
+            window.setTimeout(function () {
+                bootbox.hideAll();
+            }, 1500);
+            return null;
+        }
+
         if ($idAlterar == -1) {
             inserir($nome, $categoria, $valor);
         } else {
@@ -40,12 +51,24 @@
                 },
                 success: function (data) {
                     $("#modal-produto").modal("hide");
-                    $idAlterar = -1;
                     $tabelaProduto.ajax.reload();
+                    bootbox.dialog({
+                        message: "Produto alterado com sucesso!"
+
+                    });
+                    window.setTimeout(function () {
+                        bootbox.hideAll();
+                    }, 1500);
 
                 },
                 error: function (err) {
-                    bootbox.alert("Não foi possivel editar o produto!");
+                    bootbox.dialog({
+                        message: "Não foi possível alterar o produto!"
+
+                    });
+                    window.setTimeout(function () {
+                        bootbox.hideAll();
+                    }, 1500);
                     $idAlterar = -1;
 
                 }
@@ -64,10 +87,22 @@
                 success: function (data) {
                     $("#modal-produto").modal('hide');
                     $tabelaProduto.ajax.reload();
-                    bootbox.alert("Produto cadastrado com sucesso!");
+                    bootbox.dialog({
+                        message: "Produto cadastrado com sucesso!"
+
+                    });
+                    window.setTimeout(function () {
+                        bootbox.hideAll();
+                    }, 1500);
                 },
                 error: function (err) {
-                    bootbox.alert('Não foi possivel cadastrar o produto!');
+                    bootbox.dialog({
+                        message: "Não foi possível cadastrar o usuário!"
+
+                    });
+                    window.setTimeout(function () {
+                        bootbox.hideAll();
+                    }, 1500);
                 }
             });
         }
@@ -76,7 +111,8 @@
     $("#produto-tabela").on("click", ".botao-apagar", function () {
         $idApagar = $(this).data("id");
         bootbox.confirm({
-            message: "Deseja realmente apagar o registro?",
+            title: "Aviso",
+            message: "Deseja realmente remover o produto?",
             buttons: {
                 confirm: {
                     label: '<i class="fa fa-check"></i> Sim',
@@ -94,11 +130,23 @@
                         method: "get",
                         success: function (data) {
                             $tabelaProduto.ajax.reload();
-                            bootbox.alert("Produto removido com sucesso");
+                            bootbox.dialog({
+                                message: "Produto removido com sucesso!"
+
+                            });
+                            window.setTimeout(function () {
+                                bootbox.hideAll();
+                            }, 1500);
 
                         },
                         error: function (err) {
-                            bootbox.alert('Não foi possível remover o produto!');
+                            bootbox.dialog({
+                                message: "Não foi possivel remover o produto!"
+
+                            });
+                            window.setTimeout(function () {
+                                bootbox.hideAll();
+                            }, 1500);
                         }
                     });
             }
@@ -118,17 +166,21 @@
                 $("#modal-produto").modal("show");
             },
             error: function (err) {
-                bootbox.alert('Não foi possivel carregar o produto!');
+                bootbox.dialog({
+                    message: "Não foi possível carregar o produto!"
+
+                });
+                window.setTimeout(function () {
+                    bootbox.hideAll();
+                }, 1500);
             }
         })
     });
 
-    //function limparCampos() {
-    //    $("#produto-campo-nome").val("");
-    //    $("#produto-campo-categoria").val("");
-    //    $("#produto-campo-codigo").val("");
-    //    $("#produto-campo-quantidade").val("");
-    //    $("#produto-campo-valor").val("");
-    //    $idAlterar = -1;
-    //}
+    function limparCampos() {
+        $nome = $("#produto-campo-nome").val("");
+        $categoria = $("#produto-campo-categoria").val("");
+        $valor = $("#produto-campo-valor").val("");
+        $idAlterar = -1;
+    }
 });

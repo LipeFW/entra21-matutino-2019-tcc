@@ -57,6 +57,13 @@
                     limparCampos();
                     $idAlterar = -1;
                     $tabelaUsuario.ajax.reload();
+                    bootbox.dialog({
+                        message: "Usuário alterado com sucesso!"
+
+                    });
+                    window.setTimeout(function () {
+                        bootbox.hideAll();
+                    }, 1500);
                 },
                 error: function (err) {
                     bootbox.alert("Não foi possível editar o usuário.");
@@ -80,10 +87,22 @@
                     $("#modal-usuario").modal('hide');
                     limparCampos();
                     $tabelaUsuario.ajax.reload();
-                    bootbox.alert("Usuário cadastrado com sucesso!");
+                    bootbox.dialog({
+                        message: "Usuário cadastrado com sucesso!"
+
+                    });
+                    window.setTimeout(function () {
+                        bootbox.hideAll();
+                    }, 1500);
                 },
                 error: function (err) {
-                    bootbox.alert("Não foi possível cadastrar o usuário!")
+                    bootbox.dialog({
+                        message: "Não foi possível cadastrar o usuário!"
+
+                    });
+                    window.setTimeout(function () {
+                        bootbox.hideAll();
+                    }, 1500);
                 }
             });
         }
@@ -112,14 +131,23 @@
                         method: "get",
                         success: function (data) {
                             $tabelaUsuario.ajax.reload();
-                            bootbox.alert({
-                                title: "Aviso",
-                                message:"Usuário removido com sucesso",
-                            })
+                            bootbox.dialog({
+                                message: "Usuário removido com sucesso!"
+
+                            });
+                            window.setTimeout(function () {
+                                bootbox.hideAll();
+                            }, 1500);
 
                         },
                         error: function (err) {
-                            bootbox.alert('Não foi possível remover o usuário');
+                            bootbox.dialog({
+                                message: "Não foi possível remover o usuário!"
+
+                            });
+                            window.setTimeout(function () {
+                                bootbox.hideAll();
+                            }, 1500);
                         }
                     });
             }
@@ -141,13 +169,20 @@
 
             },
             error: function (err) {
-                bootbox.alert("Não foi possível carregar o usuário!");
+                bootbox.dialog({
+                    message: "Não foi possível carregar o usuário!"
+
+                });
+                window.setTimeout(function () {
+                    bootbox.hideAll();
+                }, 1500);
             }
         });
     });
 
     function limparCampos() {
         $nome = $("#usuario-campo-nome").val("");
+        $nomeCompleto = $("#usuario-campo-nomecompleto").val("");
         $senha = $("#usuario-campo-senha").val("");
         $idAlterar = -1;
     }

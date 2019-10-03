@@ -27,7 +27,13 @@
         $vendedor = $('#cliente-campo-vendedor').val();
 
         if (($nome.trim() == "") || ($telefone.trim == "") || ($cnpj == "") || ($cep == "")) {
-            bootbox.alert("Preencha corretamente os campos!");
+            bootbox.dialog({
+                message: "Preencha corretamente os campos!"
+
+            });
+            window.setTimeout(function () {
+                bootbox.hideAll();
+            }, 1500);
             return null;
         }
 
@@ -55,11 +61,23 @@
             success: function (data) {
                 $('#modal-cliente').modal('hide');
                 limparCampos();
-                $idAlterar = -1;
+                bootbox.dialog({
+                    message: "Cliente alterado com sucesso!"
+
+                });
+                window.setTimeout(function () {
+                    bootbox.hideAll();
+                }, 1500);
                 $tabelaCliente.ajax.reload();
             },
             error: function (err) {
-                bootbox.alert('Não foi possível editar o cliente!');
+                bootbox.dialog({
+                    message: "Não foi possível alterar o cliente!"
+
+                });
+                window.setTimeout(function () {
+                    bootbox.hideAll();
+                }, 1500);
                 limparCampos();
                 $idAlterar = -1;
             }
@@ -80,11 +98,23 @@
             success: function (data) {
                 $('#modal-cliente').modal('hide');
                 limparCampos();
-                bootbox.alert('Cliente cadastrado com sucesso!');
+                bootbox.dialog({
+                    message: "Cliente cadastrado com sucesso!"
+
+                });
+                window.setTimeout(function () {
+                    bootbox.hideAll();
+                }, 1500);
                 $tabelaCliente.ajax.reload();
             },
             error: function (err) {
-                bootbox.alert('Não foi possível cadastrar o cliente!');
+                bootbox.dialog({
+                    message: "Não foi possível cadastrar o cliente!"
+
+                });
+                window.setTimeout(function () {
+                    bootbox.hideAll();
+                }, 1500);
             }
         });
     }
@@ -92,6 +122,7 @@
     $("#cliente-tabela").on("click", ".botao-apagar", function () {
         $idApagar = $(this).data("id");
         bootbox.confirm({
+            title: "Aviso",
             message: "Deseja realmente remover o cliente?",
             buttons: {
                 confirm: {
@@ -110,11 +141,23 @@
                         method: "get",
                         success: function (data) {
                             $tabelaCliente.ajax.reload();
-                            bootbox.alert("Cliente removido com sucesso!");
+                            bootbox.dialog({
+                                message: "Cliente removido com sucesso!"
+
+                            });
+                            window.setTimeout(function () {
+                                bootbox.hideAll();
+                            }, 1500);
 
                         },
                         error: function (err) {
-                            bootbox.alert('Não foi possível remover o cliente!');
+                            bootbox.dialog({
+                                message: "Não foi possível remover o cliente!"
+
+                            });
+                            window.setTimeout(function () {
+                                bootbox.hideAll();
+                            }, 1500);
                         }
                     });
             }
@@ -136,7 +179,13 @@
                 $('#modal-cliente').modal('show');
             },
             error: function (err) {
-                bootbox.alert('Não foi possível carregar o cliente!');
+                bootbox.dialog({
+                    message: "Não foi possível carregar o cliente!"
+
+                });
+                window.setTimeout(function () {
+                    bootbox.hideAll();
+                }, 1500);
             }
         });
     });
