@@ -11858,20 +11858,23 @@ numero_casa INT,
 id_pais INT,
 id_estado INT,
 id_cidade INT,
-FOREIGN KEY (id_pais) REFERENCES paises(id),
-FOREIGN KEY (id_estado) REFERENCES estados(id),
-FOREIGN KEY (id_cidade) REFERENCES cidades(id),
+FOREIGN KEY (id_pais) REFERENCES paises(id)
+on delete no action,
+FOREIGN KEY (id_estado) REFERENCES estados(id)
+on delete no action,
+FOREIGN KEY (id_cidade) REFERENCES cidades(id)
+on delete no action,
 registro_ativo BIT
 );
 
-INSERT INTO usuarios(nome,nome_completo,url_imagem, admin, senha,  registro_ativo)
-VALUES  ( 'lipefw'  , 'Felipe'   , 'felipe.jpg'  , 1 , '123'      , 1),
-	      ( 'illan'   , 'Illan'    , 'illan.jpg'      , 1 , '123'     , 1),
-	     ( 'eduardo'  , 'Eduardo'  , 'eduardo.jpg'    , 1 , '123' , 1),
-	     ( 'henrique' , 'Henrique' , 'henrique.jpg'   , 1 , '123'  , 1),
-	     ( 'pablo'    , 'Pablo'    , 'pablo.jpg'            , 1 , '123'          , 1),
-	     ( 'nathan'   , 'Nathan'   , 'nathan.jpg'     , 1 , '123'          , 1),
-	     ( 'usuario'   , 'Usuário'   , 'default'     , 0 , '123'          , 1);
+INSERT INTO usuarios(nome,nome_completo,url_imagem, admin, senha,  registro_ativo, numero_casa, id_pais, id_estado, id_cidade)
+VALUES  ( 'lipefw'  , 'Felipe'   , 'felipe.jpg'  , 1 , '123'      , 1, 1, 1, 1, 1),
+	      ( 'illan'   , 'Illan'    , 'illan.jpg'      , 1 , '123'     , 1, 1, 1, 1, 1),
+	     ( 'eduardo'  , 'Eduardo'  , 'eduardo.jpg'    , 1 , '123' , 1, 1, 1, 1, 1),
+	     ( 'henrique' , 'Henrique' , 'henrique.jpg'   , 1 , '123'  , 1, 1, 1, 1, 1),
+	     ( 'pablo'    , 'Pablo'    , 'pablo.jpg'            , 1 , '123'          , 1, 1, 1, 1, 1),
+	     ( 'nathan'   , 'Nathan'   , 'nathan.jpg'     , 1 , '123'          , 1, 1, 1, 1, 1),
+	     ( 'usuario'   , 'Usuário'   , 'default'     , 0 , '123'          , 1, 1, 1, 1, 1);
 
 CREATE TABLE categorias( 
 id INT PRIMARY KEY IDENTITY(1,1),
