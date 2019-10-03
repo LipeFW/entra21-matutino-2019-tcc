@@ -1,6 +1,6 @@
 ﻿DROP TABLE IF EXISTS rotas, vendas, inventarios_produtos, produtos, clientes, vendedores, inventarios, veiculos, contatos, modelos, marcas, categorias, usuarios, cidades, estados, paises;
 
-CREATE TABLE paises(
+CREATE TABLE paises( 
 id INT PRIMARY KEY IDENTITY(1,1),
 nome VARCHAR(100),
 registro_ativo BIT
