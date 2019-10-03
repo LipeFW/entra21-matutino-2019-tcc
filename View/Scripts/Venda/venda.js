@@ -1,5 +1,5 @@
-﻿//$(function () {
-//    $idAlterar = -1;
+﻿$(function () {
+    $idAlterar = -1;
 
     $tabelaVenda = $('#vendas-tabela').DataTable({
         ajax: 'http://localhost:51242/Venda/obtertodos',
@@ -75,37 +75,37 @@
         });
     }
 
-$("#venda-tabela").on("click", ".botao-apagar", function () {
-    $idApagar = $(this).data("id");
-    bootbox.confirm({
-        message: "Deseja realmente apagar o registro?",
-        buttons: {
-            confirm: {
-                label: 'Sim',
-                className: 'btn-success'
+    $("#venda-tabela").on("click", ".botao-apagar", function () {
+        $idApagar = $(this).data("id");
+        bootbox.confirm({
+            message: "Deseja realmente apagar o registro?",
+            buttons: {
+                confirm: {
+                    label: 'Sim',
+                    className: 'btn-success'
+                },
+                cancel: {
+                    label: 'Não',
+                    className: 'btn-danger'
+                }
             },
-            cancel: {
-                label: 'Não',
-                className: 'btn-danger'
-            }
-        },
-        callback: function (result) {
-            if (result)
-                $.ajax({
-                    url: "http://localhost:51242/Venda/Apagar?id=" + $idApagar,
-                    method: "get",
-                    success: function (data) {
-                        $tabelaVenda.ajax.reload();
-                        bootbox.alert("Registro apagado com sucesso");
+            callback: function (result) {
+                if (result)
+                    $.ajax({
+                        url: "http://localhost:51242/Venda/Apagar?id=" + $idApagar,
+                        method: "get",
+                        success: function (data) {
+                            $tabelaVenda.ajax.reload();
+                            bootbox.alert("Registro apagado com sucesso");
 
-                    },
-                    error: function (err) {
-                        bootbox.alert('Não foi possível apagar');
-                    }
-                });
-        }
+                        },
+                        error: function (err) {
+                            bootbox.alert('Não foi possível apagar');
+                        }
+                    });
+            }
+        });
     });
-});
 
     $('.table').on('click', '.botao-editar', function () {
         $idAlterar = $(this).data('id');
@@ -128,4 +128,4 @@ $("#venda-tabela").on("click", ".botao-apagar", function () {
             }
         })
     });
-//})
+});
