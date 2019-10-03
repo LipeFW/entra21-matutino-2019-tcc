@@ -12011,6 +12011,8 @@ VALUES	(1, 1, 1),
 		(2, 2, 1),
 		(3, 1, 1);
 
+
+
 CREATE TABLE vendas(
 id INT PRIMARY KEY IDENTITY(1,1),
 quantidade INT,
@@ -12024,6 +12026,20 @@ registro_ativo BIT);
 
 INSERT INTO vendas(quantidade, id_cliente,id_vendedor, registro_ativo, total, desconto, descricao)
 VALUES (1, 1, 1, 1, 100, 10, 'teste');
+
+CREATE TABLE vendas_produtos(
+	id INT PRIMARY KEY IDENTITY(1,1),
+	id_produto INT,
+	id_venda INT,
+	FOREIGN KEY (id_produto) REFERENCES produtos(id),
+	FOREIGN KEY (id_venda) REFERENCES vendas(id),
+	registro_ativo BIT
+);
+
+INSERT INTO vendas_produtos(id_produto, id_venda, registro_ativo)
+VALUES	(1, 1, 1),
+		(2, 1, 1),
+		(3, 1, 1);
 
 CREATE TABLE rotas(
 id INT PRIMARY KEY IDENTITY(1,1),

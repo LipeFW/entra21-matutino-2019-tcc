@@ -658,4 +658,34 @@ It never ends, and every achievement arises more motivation to not give up and a
   <data name="Sempree" xml:space="preserve">
     <value>It is always very important to support the entire team, so that everyone can grow.</value>
   </data>
+  <data name="Entrar" xml:space="preserve">
+    <value>Enter</value>
+  </data>
+  <data name="EditarCategoria" xml:space="preserve">
+    <value>Category Editing</value>
+  </data>
+  <data name="EditarCliente" xml:space="preserve">
+    <value>Client Edition</value>
+  </data>
+  <data name="EditarMarca" xml:space="preserve">
+    <value>Brand Edition</value>
+  </data>
+  <data name="EditarModelo" xml:space="preserve">
+    <value>Model Editing</value>
+  </data>
+  <data name="EditarProduto" xml:space="preserve">
+    <value>Product Edition</value>
+  </data>
+  <data name="EditarRota" xml:space="preserve">
+    <value>Route Editing</value>
+  </data>
+  <data name="EditarUsuario" xml:space="preserve">
+    <value>User Edition</value>
+  </data>
+  <data name="EditarVeiculo" xml:space="preserve">
+    <value>Vehicle Edition</value>
+  </data>
+  <data name="EditarVendedor" xml:space="preserve">
+    <value>Salesman Edition</value>
+  </data>
 </root>

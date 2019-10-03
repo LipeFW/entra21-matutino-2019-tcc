@@ -51,6 +51,14 @@ namespace Repository.Repositories
                 .ToList();
         }
 
+        public List<InventarioProduto> ObterTodosPeloIdVenda(int idVenda)
+        {
+            return context.InventariosProdutos
+                .Include("Produto.Categoria")
+                .Where(x => x.RegistroAtivo && x.IdInventario == idVenda)
+                .ToList();
+        }
+
         public List<Produto> ObterTodos()
         {
             return context.Produtos.Where(x => x.RegistroAtivo).Include("Categoria").ToList();

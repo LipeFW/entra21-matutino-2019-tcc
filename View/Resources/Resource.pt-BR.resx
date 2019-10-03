@@ -485,7 +485,7 @@
   </data>
   <data name="Vendas" xml:space="preserve">
     <value>Vendas</value>
-    <comment>checkedchecked</comment>
+    <comment>checked</comment>
   </data>
   <data name="Vendedores" xml:space="preserve">
     <value>Vendedores</value>
@@ -632,7 +632,31 @@ isso nunca acaba,e a cada realização surge mais motivação para não desistir
   <data name="Sempree" xml:space="preserve">
     <value>Sempre é muito importante o apoio de toda a equipe,para que todos possam crescer.</value>
   </data>
-  <data name="AdicionarProdutos" xml:space="preserve">
-    <value>Adicionar Produtos</value>
+  <data name="EditarCategoria" xml:space="preserve">
+    <value>Edição de Categoria</value>
+  </data>
+  <data name="EditarCliente" xml:space="preserve">
+    <value>Edição de Cliente</value>
+  </data>
+  <data name="EditarMarca" xml:space="preserve">
+    <value>Edição de Marca</value>
+  </data>
+  <data name="EditarModelo" xml:space="preserve">
+    <value>Edição de Modelo</value>
+  </data>
+  <data name="EditarProduto" xml:space="preserve">
+    <value>Edição de Produto</value>
+  </data>
+  <data name="EditarRota" xml:space="preserve">
+    <value>Edição de Rota</value>
+  </data>
+  <data name="EditarUsuario" xml:space="preserve">
+    <value>Edição de Usuário</value>
+  </data>
+  <data name="EditarVeiculo" xml:space="preserve">
+    <value>Edição de Veiculo</value>
+  </data>
+  <data name="EditarVendedor" xml:space="preserve">
+    <value>Edição de Vendedor</value>
   </data>
 </root>

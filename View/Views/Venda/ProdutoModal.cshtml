@@ -1,30 +1,35 @@
-﻿<div class="modal" tabindex="-1" role="dialog" id="venda-produto-modal">
+﻿<div class="modal bounceInDown animated" tabindex="-1" role="dialog" id="modal-inventario">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">@View.Resources.Resource.CadastrodeProduto</h5>
+                <h5 class="modal-title">@View.Resources.Resource.CadastrodeInventario</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">@View.Resources.Resource.NovoProduto</span>
+                    <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                <div class="form-group">
-                    <label for="modal-produto-nome">@View.Resources.Resource.Nome</label>
-                    <input id="modal-produto-nome" class="form-control" />
-                </div>
-                <div class="form-group">
-                    <label for="modal-produto-quantidade">@View.Resources.Resource.Quantidade</label>
-                    <input type="number" id="modal-produto-quantidade" class="form-control" />
-                </div>
-                <div>
-                    <label for="modal-produto-valor">@View.Resources.Resource.Valor</label>
-                    <input id="modal-produto-valor" class="form-control" />
-                </div>
+                <table class="table table-striped table-bordered table-hover" id="modal-inventario-tabela">
+                    <thead>
+                        <tr>
+                            <th>@View.Resources.Resource.Nome</th>
+                            <th>@View.Resources.Resource.Valor</th>
+                            <th>@View.Resources.Resource.Acao</th>
+                        </tr>
+                    </thead>
+                </table>
+
+
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-outline-danger" data-dismiss="modal"><i class="fas fa-times"></i> @View.Resources.Resource.Fechar</button>
-                <button type="button" class="btn btn-success" id="modal-produto-salvar"><i class="fa fa-check"></i> @View.Resources.Resource.Salvar</button>
+                <button type="button" class="rubberBand animated btn btn-danger" data-dismiss="modal"><i class="fas fa-times"></i> @View.Resources.Resource.Cancelar</button>
+                <button id="inventario-botao-salvar" type="button" class="rubberBand animated btn btn-success"><i class="fa fa-check"></i>  @View.Resources.Resource.Salvar</button>
             </div>
         </div>
     </div>
 </div>
+@section js{
+
+    <script src="~/Scripts/Mascaras/Mask.js"></script>
+}
+
+
