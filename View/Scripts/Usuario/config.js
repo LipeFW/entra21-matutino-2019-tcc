@@ -49,28 +49,10 @@
             bootbox.alert("O campo senha não pode ser vazio!");
             return null;
         }
-        else if ($senha == $senhaConfirm) {
-            AlterarSenha();
-        } else {
+        else if ($senha != $senhaConfirm) {
             bootbox.alert("As senhas não coincidem!");
             return null;
         }
     });
 
-    function AlterarSenha($senha) {
-        $.ajax({
-            url: "http://localhost:51242/Usuario/updatepass",
-            method: "post",
-            data: {
-                id: $idUsuario,
-                senha: $senha,
-            },
-            success: function (data) {
-                bootbox.alert("Senha alterada com sucesso!");
-            },
-            error: function (err) {
-                bootbox.alert("Não foi possível alterar a senha!");
-            }
-        });
-    }
 });

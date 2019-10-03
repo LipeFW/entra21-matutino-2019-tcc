@@ -23,7 +23,13 @@
         $veiculo = $('#vendedor-campo-veiculo').val();
 
         if (($nome.trim() == "")) {
-            bootbox.alert("Preencha corretamente os campos!");
+            bootbox.dialog({
+                message: "Preencha corretamente os campos!"
+
+            });
+            window.setTimeout(function () {
+                bootbox.hideAll();
+            }, 1500);
             return null;
         }
         if ($idAlterar == -1) {

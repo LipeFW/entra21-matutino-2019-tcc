@@ -30,13 +30,6 @@ namespace Repository.Repositories
             usuarioOriginal.Sobrenome = usuario.Sobrenome;
             usuarioOriginal.Nome = usuario.Nome;
             usuarioOriginal.Senha = usuario.Senha;
-            usuarioOriginal.Telefone = usuario.Telefone;
-            usuarioOriginal.CPF = usuario.CPF;
-            usuarioOriginal.RG = usuario.RG;
-            usuarioOriginal.CEP = usuario.CEP;
-            usuarioOriginal.Pais = usuario.Pais;
-            usuarioOriginal.Estado = usuario.Estado;
-            usuarioOriginal.Cidade = usuario.Cidade;
             int quantidadeAfetada = context.SaveChanges();
 
             return quantidadeAfetada == 1;
@@ -50,6 +43,7 @@ namespace Repository.Repositories
                 return false;
 
             usuarioOriginal.Senha = usuario.Senha;
+
             int quantidadeAfetada = context.SaveChanges();
 
             return quantidadeAfetada == 1;

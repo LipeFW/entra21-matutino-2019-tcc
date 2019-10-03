@@ -1,6 +1,6 @@
 ﻿DROP TABLE IF EXISTS rotas, vendas, inventarios_produtos, produtos, clientes, vendedores, inventarios, veiculos, contatos, modelos, marcas, categorias, usuarios, cidades, estados, paises;
 
-CREATE TABLE paises(
+CREATE TABLE paises( 
 id INT PRIMARY KEY IDENTITY(1,1),
 nome VARCHAR(100),
 registro_ativo BIT
@@ -11861,7 +11861,7 @@ id_cidade INT,
 FOREIGN KEY (id_pais) REFERENCES paises(id),
 FOREIGN KEY (id_estado) REFERENCES estados(id),
 FOREIGN KEY (id_cidade) REFERENCES cidades(id),
-registro_ativo BIT 
+registro_ativo BIT
 );
 
 INSERT INTO usuarios(nome, nome_completo, sobrenome, url_imagem, admin, senha, telefone, cpf, rg, id_pais, id_estado, id_cidade, cep, logradouro ,numero_casa, registro_ativo)
@@ -11869,7 +11869,7 @@ VALUES   ( 'lipefw'   , 'Felipe'   , 'Weber'      ,'felipe.jpg'   , 1 , 'anaumse
 	     ( 'illan'    , 'Illan'    , 'Dickmann'   ,'illan.jpg'    , 1 , 'illanzoka'     ,'(47) 98483-1535' ,'060.065.250-54', '14.537.793-3', 26, 408, 8236,'89010-345', 'Rua Bonifácio da Cunha',52,1),
 	     ( 'eduardo'  , 'Eduardo'  , 'Hausmann'   ,'eduardo.jpg'  , 1 , 'RetardoMental' ,'(47) 96345-4634' ,'753.576.280-84', '34.213.818-2', 26, 408, 8236,'89052-273', 'Rua Oscar Rolow',834, 1),
 	     ( 'henrique' , 'Henrique' , 'Montibeller','henrique.jpg' , 1 , 'pimbinha6000'  ,'(47) 96721-5135' ,'221.362.240-00', '24.650.600-3', 26, 408, 8236,'89060-315', 'Rua Ella Hofmann',285, 1),
-	     ( 'pablo'    , 'Pablo'    , 'awduawgda'  ,'pablo.jpg'    , 1 , '1234'          ,'(47) 97524-7642' ,'513.342.770-01', '21.229.201-8', 26, 408, 8236,'89056-107', 'Rua Zilmar Rubens França',123, 1),
+	     ( 'pablo'    , 'Pablo'    , 'Luz'        ,'pabloluz.jpg' , 1 , '1234'          ,'(47) 99641-8624' ,'513.342.770-01', '21.229.201-8', 26, 408, 8236,'89056-107', 'Rua Zilmar Rubens França',123, 1),
 	     ( 'nathan'   , 'Nathan'   , 'Theiss'     ,'nathan.jpg'   , 1 , '1203'          ,'(47) 96236-7542' ,'486.754.660-72', '38.053.801-5', 26, 408, 8236,'89057-260', 'Rua Emma Schuhart',72, 1),
 	     ( 'usuario'  , 'Usuário'  , 'Cleiton'    ,'default'      , 0 , 'senha'         ,'(47) 92345-7234' ,'554.092.050-30', '24.925.367-7', 26, 408, 8236,'89035-340', 'Rua Promotor Ribeiro de Carvalho',213, 1);
 

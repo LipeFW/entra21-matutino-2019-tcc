@@ -1,32 +1,42 @@
 ﻿@{
     ViewBag.Title = "Dashboard";
     <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
-    <script type="text/javascript">
-        jQuery(window).load(function ($) {
-            atualizaRelogio();
-        });
-    </script>
 
-        var usuario = (Model.Usuario)Session["Usuario"];
+    var usuario = (Model.Usuario)Session["Usuario"];
 }
 
-    <div style="width:100%;">
-        <div class="jumbotron text-center mb-0">
-            <h1 id="bemvindoText" class="display-4">
-                <span class="text-dark">
-                    <p>
-                        @View.Resources.Resource.BemVindo, @usuario.NomeCompleto!
-                    </p>
-                </span>
-            </h1>
-            <br>
-            <font size="3">
-                <p class="lead">
-                    <h1 class="text-dark"></h1>
+@if (@usuario.Admin == 1)
+{
+    <script type="text/javascript">
+            bootbox.dialog({
+                className: "h5",
+                size: "big",
+                message: "@usuario.NomeCompleto logou como administrador!"
+
+            });
+            window.setTimeout(function () {
+                bootbox.hideAll();
+            }, 2000);
+    </script>
+}
+
+<div style="width:100%;">
+    <div class="jumbotron text-center mb-0">
+        <h1 id="bemvindoText" class="display-4">
+            <span class="text-dark">
+                <p>
+                    @View.Resources.Resource.BemVindo, @usuario.NomeCompleto!
                 </p>
-            </font>
-<legend></legend>
-            @*<br>
+            </span>
+        </h1>
+        <br>
+        <font size="3">
+            <p class="lead">
+                <h1 class="text-dark"></h1>
+            </p>
+        </font>
+        <legend></legend>
+        @*<br>
             <font size="4">
                 <p class="lead">
                     <h1 class="text-dark">
@@ -37,59 +47,31 @@
         </div>
         <div class="card-deck mt-0">
             <div class="card">
-                <img src="http://www.moma.org/media/W1siZiIsIjI0OTE5NCJdLFsicCIsImNvbnZlcnQiLCItcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ.jpg?sha=3eef7f17276197a1" class="card-img-top" alt="...">
+                <img src="~/Content/uploads/Entregador.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <h5 class="card-title">@View.Resources.Resource.Confianca</h5>
+                    <p class="card-text">@View.Resources.Resource.Clientesse</p>
+                    <p class="card-text"><small class="text-muted"></small></p>
                 </div>
             </div>
             <div class="card">
-                <img src="..." class="card-img-top" alt="...">
+                <img src="~/Content/uploads/rotas.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <h5 class="card-title">@View.Resources.Resource.Rapidez</h5>
+                    <p class="card-text">@View.Resources.Resource.Entregaro</p>
+                    <p class="card-text"><small class="text-muted"></small></p>
                 </div>
             </div>
             <div class="card">
-                <img src="..." class="card-img-top" alt="...">
+                <img src="~/Content/uploads/equipe.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <h5 class="card-title">@View.Resources.Resource.Equipeunida</h5>
+                    <p class="card-text">@View.Resources.Resource.Sempree</p>
+                    <p class="card-text"><small class="text-muted"></small></p>
                 </div>
             </div>
         </div>
 
 
-    </div>
+</div>
 
-
-<script>
-    function atualizaRelogio() {
-        var momentoAtual = new Date();
-
-        var vhora = momentoAtual.getHours();
-        var vminuto = momentoAtual.getMinutes();
-        var vsegundo = momentoAtual.getSeconds();
-
-        var vdia = momentoAtual.getDate();
-        var vmes = momentoAtual.getMonth() + 1;
-        var vano = momentoAtual.getFullYear();
-
-        if (vdia < 10) { vdia = "0" + vdia; }
-        if (vmes < 10) { vmes = "0" + vmes; }
-        if (vhora < 10) { vhora = "0" + vhora; }
-        if (vminuto < 10) { vminuto = "0" + vminuto; }
-        if (vsegundo < 10) { vsegundo = "0" + vsegundo; }
-
-        dataFormat = vdia + " / " + vmes + " / " + vano;
-        horaFormat = vhora + " : " + vminuto + " : " + vsegundo;
-
-        document.getElementById("data").innerHTML = dataFormat;
-        document.getElementById("hora").innerHTML = horaFormat;
-
-        setTimeout("atualizaRelogio()", 1000);
-    }
-</script>	
