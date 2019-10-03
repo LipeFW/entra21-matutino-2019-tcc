@@ -17,8 +17,8 @@ namespace Model
         [Column("nome")]
         public string Nome { get; set; }
 
-        [Column("nome_1")]
-        public string Nome1 { get; set; }
+        [Column("nome_completo")]
+        public string NomeCompleto { get; set; }
 
         [Column("sobrenome")]
         public string Sobrenome { get; set; }
@@ -33,16 +33,19 @@ namespace Model
         public int Admin { get; set; }
 
         [Column("telefone")]
-        public int Telefone { get; set; }
+        public string Telefone { get; set; }
 
         [Column("cpf")]
-        public int CPF { get; set; }
+        public string CPF { get; set; }
 
         [Column("rg")]
-        public int RG { get; set; }
+        public string RG { get; set; }
+
+        [Column("cep")]
+        public string CEP { get; set; }
 
         [Column("logradouro")]
-        public int Logradouro { get; set; }
+        public string Logradouro { get; set; }
 
         [Column("numero_casa")]
         public int NumeroCasa { get; set; }
@@ -57,13 +60,13 @@ namespace Model
         public int IdEstado { get; set; }
 
         [ForeignKey("IdEstado")]
-        public Pais Estado { get; set; }
+        public Estado Estado { get; set; }
 
         [Column("id_cidade")]
         public int IdCidade { get; set; }
 
         [ForeignKey("IdCidade")]
-        public Pais Cidade { get; set; }
+        public Cidade Cidade { get; set; }
 
         [Column("registro_ativo")]
         public bool RegistroAtivo { get; set; }
