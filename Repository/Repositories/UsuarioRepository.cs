@@ -27,13 +27,12 @@ namespace Repository.Repositories
                 return false;
 
             usuarioOriginal.NomeCompleto = usuario.NomeCompleto;
+            usuarioOriginal.Sobrenome = usuario.Sobrenome;
             usuarioOriginal.Nome = usuario.Nome;
             usuarioOriginal.Senha = usuario.Senha;
             int quantidadeAfetada = context.SaveChanges();
 
             return quantidadeAfetada == 1;
-
-
         }
 
         public bool AlterarSenha(Usuario usuario)

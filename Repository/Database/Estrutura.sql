@@ -1,6 +1,6 @@
 ﻿DROP TABLE IF EXISTS rotas, vendas, inventarios_produtos, produtos, clientes, vendedores, inventarios, veiculos, contatos, modelos, marcas, categorias, usuarios, cidades, estados, paises;
 
-CREATE TABLE paises(
+CREATE TABLE paises( 
 id INT PRIMARY KEY IDENTITY(1,1),
 nome VARCHAR(100),
 registro_ativo BIT
@@ -11846,8 +11846,21 @@ id INT PRIMARY KEY IDENTITY(1,1),
 nome VARCHAR(100),
 url_imagem VARCHAR(100),
 nome_completo VARCHAR(100),
+sobrenome VARCHAR(100),
 senha VARCHAR(100),
 admin INT,
+telefone VARCHAR(15),
+cpf VARCHAR (14),
+rg VARCHAR(12),
+cep  VARCHAR(9),
+logradouro VARCHAR(100),
+numero_casa INT,
+id_pais INT,
+id_estado INT,
+id_cidade INT,
+FOREIGN KEY (id_pais) REFERENCES paises(id),
+FOREIGN KEY (id_estado) REFERENCES estados(id),
+FOREIGN KEY (id_cidade) REFERENCES cidades(id),
 registro_ativo BIT
 );
 

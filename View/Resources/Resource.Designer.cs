@@ -19,7 +19,7 @@ namespace View.Resources {
     // através de uma ferramenta como ResGen ou Visual Studio.
     // Para adicionar ou remover um associado, edite o arquivo .ResX e execute ResGen novamente
     // com a opção /str, ou recrie o projeto do VS.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class Resource {
@@ -315,6 +315,15 @@ namespace View.Resources {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a string.
         /// </summary>
+        public static string Clientesse {
+            get {
+                return ResourceManager.GetString("Clientesse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
         public static string CNH {
             get {
                 return ResourceManager.GetString("CNH", resourceCulture);
@@ -354,6 +363,15 @@ namespace View.Resources {
         public static string CodigodeBarra {
             get {
                 return ResourceManager.GetString("CodigodeBarra", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
+        public static string Confianca {
+            get {
+                return ResourceManager.GetString("Confianca", resourceCulture);
             }
         }
         
@@ -486,6 +504,15 @@ namespace View.Resources {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a string.
         /// </summary>
+        public static string Entregaro {
+            get {
+                return ResourceManager.GetString("Entregaro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
         public static string Enviar {
             get {
                 return ResourceManager.GetString("Enviar", resourceCulture);
@@ -498,6 +525,15 @@ namespace View.Resources {
         public static string Equipe {
             get {
                 return ResourceManager.GetString("Equipe", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
+        public static string Equipeunida {
+            get {
+                return ResourceManager.GetString("Equipeunida", resourceCulture);
             }
         }
         
@@ -687,6 +723,15 @@ namespace View.Resources {
         public static string MCSS {
             get {
                 return ResourceManager.GetString("MCSS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
+        public static string Mensagem {
+            get {
+                return ResourceManager.GetString("Mensagem", resourceCulture);
             }
         }
         
@@ -891,6 +936,15 @@ namespace View.Resources {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a string.
         /// </summary>
+        public static string NumeroCasa {
+            get {
+                return ResourceManager.GetString("NumeroCasa", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
         public static string Numerodocaminhao {
             get {
                 return ResourceManager.GetString("Numerodocaminhao", resourceCulture);
@@ -1011,6 +1065,15 @@ namespace View.Resources {
         public static string QuantidadeProdutos {
             get {
                 return ResourceManager.GetString("QuantidadeProdutos", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
+        public static string Rapidez {
+            get {
+                return ResourceManager.GetString("Rapidez", resourceCulture);
             }
         }
         
@@ -1177,6 +1240,15 @@ namespace View.Resources {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a String.
+        /// </summary>
+        public static string Sempree {
+            get {
+                return ResourceManager.GetString("Sempree", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a string.
         /// </summary>
         public static string Senha {
@@ -1188,9 +1260,27 @@ namespace View.Resources {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a string.
         /// </summary>
+        public static string SeuEmail {
+            get {
+                return ResourceManager.GetString("SeuEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
         public static string Sobre {
             get {
                 return ResourceManager.GetString("Sobre", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
+        public static string Sobrenome {
+            get {
+                return ResourceManager.GetString("Sobrenome", resourceCulture);
             }
         }
         
@@ -1227,6 +1317,15 @@ namespace View.Resources {
         public static string Temas {
             get {
                 return ResourceManager.GetString("Temas", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
+        public static string Titulo {
+            get {
+                return ResourceManager.GetString("Titulo", resourceCulture);
             }
         }
         

@@ -9,8 +9,12 @@
             </div>
             <div class="modal-body back">
                 <div class="form-group">
-                    <label style="font-weight:bold" for="usuario-campo-nomecompleto">@View.Resources.Resource.Nome <span class="text-danger">*</span></label>
+                    <label style="font-weight:bold" for="usuario-campo-nome1">@View.Resources.Resource.Nome <span class="text-danger">*</span></label>
                     <input id="usuario-campo-nomecompleto" class="form-control border-dark" />
+                </div>
+                <div class="form-group">
+                    <label style="font-weight:bold" for="usuario-campo-sobrenome">@View.Resources.Resource.Sobrenome <span class="text-danger">*</span></label>
+                    <input id="usuario-campo-sobrenome" class="form-control border-dark" />
                 </div>
                 <div class="form-group">
                     <label style="font-weight:bold" for="usuario-campo-nome">@View.Resources.Resource.NomeUsuario <span class="text-danger">*</span></label>
@@ -19,6 +23,52 @@
                 <div class="form-group">
                     <label style="font-weight:bold" for="usuario-campo-senha">@View.Resources.Resource.Senha <span class="text-danger">*</span></label>
                     <input type="password" id="usuario-campo-senha" class="form-control border-dark" />
+                </div>
+                <div class="form-group">
+                    <label style="font-weight:bold" for="usuario-campo-telefone">@View.Resources.Resource.Telefone <span class="text-danger">*</span></label>
+                    <input id="usuario-campo-telefone" class="form-control border-dark" />
+                </div>
+                <div class="form-group">
+                    <label style="font-weight:bold" for="usuario-campo-cpf">@View.Resources.Resource.CPF <span class="text-danger">*</span></label>
+                    <input id="usuario-campo-cpf" class="form-control border-dark" />
+                </div>
+                <div class="form-group">
+                    <label style="font-weight:bold" for="usuario-campo-rg">@View.Resources.Resource.RG <span class="text-danger">*</span></label>
+                    <input id="usuario-campo-rg" class="form-control border-dark" />
+                </div>
+                <div class="form-group">
+                    <label style="font-weight:bold" for="usuario-campo-cep">@View.Resources.Resource.CEP <span class="text-danger">*</span></label>
+                    <input id="usuario-campo-cep" class="form-control border-dark" />
+                </div>
+                <div class="form-group">
+                    <label style="font-weight:bold" for="config-campo-pais">@View.Resources.Resource.Pais <span class="text-danger">*</span></label>
+                    <br />
+                    <select class="form-control border-dark" style="width: 100%; " id="config-campo-pais">
+                        <option disabled="disabled" selected="selected"> @View.Resources.Resource.Selecioneumpaís</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label style="font-weight:bold" for="config-campo-estado">@View.Resources.Resource.Estado <span class="text-danger">*</span></label>
+                    <br>
+                    <select class="form-control border-dark" style="width: 100% " id="config-campo-estado">
+                        <option disabled="disabled" selected="selected"> @View.Resources.Resource.Selecioneumestado</option>
+
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label style="font-weight:bold" for="config-campo-cidade">@View.Resources.Resource.Cidade <span class="text-danger">*</span></label>
+                    <br>
+                    <select class="form-control border-dark" style="width: 100% " id="config-campo-cidade">
+                        <option disabled="disabled" selected="selected"> @View.Resources.Resource.Selecioneumacidade</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label style="font-weight:bold" for="usuario-campo-logradouro">@View.Resources.Resource.Logradouro <span class="text-danger">*</span></label>
+                    <input id="usuario-campo-logradouro" class="form-control border-dark" />
+                </div>
+                <div class="form-group">
+                    <label style="font-weight:bold" for="usuario-campo-numerocasa">@View.Resources.Resource.NumeroCasa <span class="text-danger">*</span></label>
+                    <input id="usuario-campo-numerocasa" class="form-control border-dark" />
                 </div>
                 <div class="form-group">
                     <input id="usuario-campo-imagem" type="hidden" name="UrlImagem" value="default" />

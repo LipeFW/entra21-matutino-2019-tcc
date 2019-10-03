@@ -111,10 +111,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\Database.mdf" />
-    <Content Include="App_Data\Database_log.ldf">
-      <DependentUpon>Database.mdf</DependentUpon>
-    </Content>
     <Content Include="Content\css\Animate.css" />
     <Content Include="Content\css\outros.css" />
     <Content Include="Content\css\select2.css" />
@@ -2002,11 +1998,15 @@
     <Content Include="Content\theme\global_assets\js\polyfills\promise.min.js" />
     <Content Include="Content\theme\global_assets\swf\datatables\flashExport.swf" />
     <Content Include="Content\uploads\eduardo.jpg" />
+    <Content Include="Content\uploads\Entregador.jpg" />
+    <Content Include="Content\uploads\equipe.jpg" />
     <Content Include="Content\uploads\felipe.jpg" />
     <Content Include="Content\uploads\henrique.jpg" />
     <Content Include="Content\uploads\illan.jpg" />
+    <Content Include="Content\uploads\IMG_20190917_112600423.jpg" />
     <Content Include="Content\uploads\nathan.jpg" />
-    <Content Include="Content\uploads\pablo.jpg" />
+    <Content Include="Content\uploads\Pabloluz.jpg" />
+    <Content Include="Content\uploads\rotas.jpg" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootbox.all.js" />
     <Content Include="Scripts\bootbox.all.min.js" />
@@ -2812,6 +2812,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Data\" />
     <Folder Include="Content\fonts\" />
     <Folder Include="Models\" />
     <Folder Include="Scripts\Login\" />
