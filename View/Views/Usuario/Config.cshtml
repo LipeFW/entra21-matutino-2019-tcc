@@ -98,17 +98,20 @@
     <legend>
         <span class="h3">@View.Resources.Resource.AlterarSenha</span>
     </legend>
-    <div class="form-group">
-        <label style="font-weight:bold" for="config-campo-senha">@View.Resources.Resource.Senha</label>
-        <input type="password" id="config-campo-senha" class="form-control border-dark" />
-    </div>
-    <div class="form-group">
-        <label style="font-weight:bold" for="config-campo-senha2">@View.Resources.Resource.ConfirmarSenha</label>
-        <input type="password" id="config-campo-senha2" class="form-control border-dark" />
-    </div>
-    <div>
-        <button id="alterarSenha" class="btn btn-primary float-right"><i class="fas fa-lock"></i> @View.Resources.Resource.AlterarSenha</button>
-    </div>
+    <form method="post" action="updatepass">
+        <input type="hidden" name="id" value="@usuario.Id" />
+        <div class="form-group">
+            <label style="font-weight:bold" for="config-campo-senha">@View.Resources.Resource.Senha</label>
+            <input type="password" id="config-campo-senha" name="senha" class="form-control border-dark" />
+        </div>
+        <div class="form-group">
+            <label style="font-weight:bold" for="config-campo-senha2">@View.Resources.Resource.ConfirmarSenha</label>
+            <input type="password" id="config-campo-senha2" class="form-control border-dark" />
+        </div>
+        <div>
+            <button id="alterarSenha" type="submit" class="btn btn-primary float-right"><i class="fas fa-lock"></i> @View.Resources.Resource.AlterarSenha</button>
+        </div>
+    </form>
 </div>
 @section js {
     <script type="text/javascript" src="~/Scripts/Usuario/select2config.js"></script>

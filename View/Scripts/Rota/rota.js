@@ -20,6 +20,17 @@
         $nome = $('#rota-campo-nome').val();
         $idVendedor = $('#rota-campo-vendedor').val();
 
+        if (($nome == "") ||($idVendedor == null)) {
+            bootbox.dialog({
+                message: "Preencha corretamente os campos!"
+
+            });
+            window.setTimeout(function () {
+                bootbox.hideAll();
+            }, 1500);
+            return null;
+        }
+
         if ($idAlterar == -1) {
             inserir($nome, $idVendedor);
         } else {
@@ -39,11 +50,23 @@
             success: function (data) {
                 $("#modal-rota").modal("hide");
                 limparCampos();
-                $idAlterar = -1;
                 $tabelaRota.ajax.reload();
+                bootbox.dialog({
+                    message: "Rota alterada com sucesso!"
+
+                });
+                window.setTimeout(function () {
+                    bootbox.hideAll();
+                }, 1500);
             },
             error: function (err) {
-                bootbox.alert('Não foi possivel editar a rota!');
+                bootbox.dialog({
+                    message: "Não foi possível aterar a rota!"
+
+                });
+                window.setTimeout(function () {
+                    bootbox.hideAll();
+                }, 1500);
             }
         });
     }
@@ -59,11 +82,23 @@
             success: function (data) {
                 $("#modal-rota").modal('hide');
                 limparCampos();
-                bootbox.alert('Rota cadastrada com sucesso!');
                 $tabelaRota.ajax.reload();
+                bootbox.dialog({
+                    message: "Rota cadastrada com sucesso!"
+
+                });
+                window.setTimeout(function () {
+                    bootbox.hideAll();
+                }, 1500);
             },
             error: function (err) {
-                bootbox.alert('Não foi possivel cadastrar a rota!');
+                bootbox.dialog({
+                    message: "Não foi possível cadastrar a rota!"
+
+                });
+                window.setTimeout(function () {
+                    bootbox.hideAll();
+                }, 1500);
             }
         });
     }
@@ -71,6 +106,7 @@
     $("#rota-tabela").on("click", ".botao-apagar", function () {
         $idApagar = $(this).data("id");
         bootbox.confirm({
+            title: "Aviso?",
             message: "Deseja realmente remover a rota?",
             buttons: {
                 confirm: {
@@ -89,11 +125,23 @@
                         method: "get",
                         success: function (data) {
                             $tabelaRota.ajax.reload();
-                            bootbox.alert("Rota removida com sucesso!");
+                            bootbox.dialog({
+                                message: "Rota removida com sucesso!"
+
+                            });
+                            window.setTimeout(function () {
+                                bootbox.hideAll();
+                            }, 1500);
 
                         },
                         error: function (err) {
-                            bootbox.alert('Não foi possíel remover a rota!');
+                            bootbox.dialog({
+                                message: "Não foi possível remover a rota!"
+
+                            });
+                            window.setTimeout(function () {
+                                bootbox.hideAll();
+                            }, 1500);
                         }
                     });
             }
@@ -112,14 +160,20 @@
                 $('#modal-rota').modal('show');
             },
             error: function (err) {
-                bootbox.alert('Não foi possivel carregar a rota!')
+                bootbox.dialog({
+                    message: "Não foi possível carregar a rota!"
+
+                });
+                window.setTimeout(function () {
+                    bootbox.hideAll();
+                }, 1500);
             }
         });
     });
 
     function limparCampos() {
-        $('#rota-campo-nome').val("");
-        $('#rota-campo-vendedor').val("");
+        $nome = $('#rota-campo-nome').val("");
+        $idVendedor = $('#rota-campo-vendedor').val("");
         $idAlterar = -1;
     }
 });

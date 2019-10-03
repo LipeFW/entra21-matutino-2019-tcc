@@ -425,7 +425,7 @@
     <comment>checked</comment>
   </data>
   <data name="Inicio" xml:space="preserve">
-    <value>Home</value>
+    <value>Principal</value>
   </data>
   <data name="Menu" xml:space="preserve">
     <value>Início</value>
@@ -613,5 +613,23 @@ isso nunca acaba,e a cada realização surge mais motivação para não desistir
   </data>
   <data name="NumeroCasa" xml:space="preserve">
     <value>Número</value>
+  </data>
+  <data name="Clientesse" xml:space="preserve">
+    <value>Clientes se tornando amigos,também é a prova de um trabalho de qualidade</value>
+  </data>
+  <data name="Confianca" xml:space="preserve">
+    <value>Confiança e Qualidade</value>
+  </data>
+  <data name="Entregaro" xml:space="preserve">
+    <value>Entregar o produto em tempo previsto sempre garante retornos positivos.</value>
+  </data>
+  <data name="Equipeunida" xml:space="preserve">
+    <value>Equipe Unida</value>
+  </data>
+  <data name="Rapidez" xml:space="preserve">
+    <value>Rapidez</value>
+  </data>
+  <data name="Sempree" xml:space="preserve">
+    <value>Sempre é muito importante o apoio de toda a equipe,para que todos possam crescer.</value>
   </data>
 </root>

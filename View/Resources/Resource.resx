@@ -620,4 +620,22 @@
   <data name="NumeroCasa" xml:space="preserve">
     <value>string</value>
   </data>
+  <data name="Clientesse" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Confianca" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Entregaro" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Equipeunida" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Rapidez" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Sempree" xml:space="preserve">
+    <value>string</value>
+  </data>
 </root>
