@@ -669,4 +669,16 @@ Nunca termina, y cada logro surge más motivación para no rendirse y siempre se
   <data name="Equipe" xml:space="preserve">
     <value>Equipo</value>
   </data>
+  <data name="Mensagem" xml:space="preserve">
+    <value>Mensaje</value>
+  </data>
+  <data name="SeuEmail" xml:space="preserve">
+    <value>Su E-mail</value>
+  </data>
+  <data name="Sobrenome" xml:space="preserve">
+    <value>Apellido</value>
+  </data>
+  <data name="Titulo" xml:space="preserve">
+    <value>Titulo</value>
+  </data>
 </root>

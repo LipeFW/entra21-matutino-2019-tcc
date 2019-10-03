@@ -599,4 +599,16 @@ isso nunca acaba,e a cada realização surge mais motivação para não desistir
   <data name="Sobre" xml:space="preserve">
     <value>Sobre o Projeto</value>
   </data>
+  <data name="Mensagem" xml:space="preserve">
+    <value>Mensagem</value>
+  </data>
+  <data name="SeuEmail" xml:space="preserve">
+    <value>Seu E-mail</value>
+  </data>
+  <data name="Sobrenome" xml:space="preserve">
+    <value>Sobrenome</value>
+  </data>
+  <data name="Titulo" xml:space="preserve">
+    <value>Título</value>
+  </data>
 </root>

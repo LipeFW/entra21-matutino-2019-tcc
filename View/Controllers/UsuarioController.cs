@@ -94,6 +94,14 @@ namespace View.Controllers
             return Json(resultado);
         }
 
+        [HttpPost, Route("updatepass")]
+        public JsonResult UpdatePass(Usuario usuario)
+        {
+            var alterou = repository.Alterar(usuario);
+            var resultado = new { status = alterou };
+            return Json(resultado);
+        }
+
         [HttpGet, Route("obterpeloid")]
         public JsonResult ObterPeloId(int id)
         {
