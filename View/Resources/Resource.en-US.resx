@@ -637,4 +637,22 @@ It never ends, and every achievement arises more motivation to not give up and a
   <data name="Titulo" xml:space="preserve">
     <value>Title</value>
   </data>
+  <data name="Clientesse" xml:space="preserve">
+    <value>Clients becoming friends, is also evidence of quality work.</value>
+  </data>
+  <data name="Confianca" xml:space="preserve">
+    <value>Trust and Quality</value>
+  </data>
+  <data name="Entregaro" xml:space="preserve">
+    <value>Delivering the product in the expected time always guarantees positive returns.</value>
+  </data>
+  <data name="Equipeunida" xml:space="preserve">
+    <value>United Team</value>
+  </data>
+  <data name="Rapidez" xml:space="preserve">
+    <value>Quickly</value>
+  </data>
+  <data name="Sempree" xml:space="preserve">
+    <value>It is always very important to support the entire team, so that everyone can grow.</value>
+  </data>
 </root>
