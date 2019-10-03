@@ -605,4 +605,16 @@
   <data name="Sobre" xml:space="preserve">
     <value>string</value>
   </data>
+  <data name="Mensagem" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="SeuEmail" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Sobrenome" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Titulo" xml:space="preserve">
+    <value>string</value>
+  </data>
 </root>
