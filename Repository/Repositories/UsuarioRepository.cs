@@ -36,6 +36,21 @@ namespace Repository.Repositories
 
         }
 
+        public bool AlterarSenha(Usuario usuario)
+        {
+            var usuarioOriginal = context.Usuarios.Where(x => x.Id == usuario.Id).FirstOrDefault();
+
+            if (usuarioOriginal == null)
+                return false;
+
+            usuarioOriginal.Senha = usuario.Senha;
+            int quantidadeAfetada = context.SaveChanges();
+
+            return quantidadeAfetada == 1;
+
+
+        }
+
         public bool Apagar(int id)
         {
             var usuario = context.Usuarios.FirstOrDefault(x => x.Id == id);
