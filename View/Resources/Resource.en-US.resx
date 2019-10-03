@@ -625,4 +625,16 @@ It never ends, and every achievement arises more motivation to not give up and a
   <data name="Equipe" xml:space="preserve">
     <value>Team</value>
   </data>
+  <data name="Mensagem" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="SeuEmail" xml:space="preserve">
+    <value>your E-mail</value>
+  </data>
+  <data name="Sobrenome" xml:space="preserve">
+    <value>Surname</value>
+  </data>
+  <data name="Titulo" xml:space="preserve">
+    <value>Title</value>
+  </data>
 </root>
