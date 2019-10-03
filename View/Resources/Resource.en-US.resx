@@ -282,19 +282,19 @@
     <comment>checked</comment>
   </data>
   <data name="Selecioneumamarca" xml:space="preserve">
-    <value>Select an brand</value>
+    <value>Select an Brand</value>
     <comment>checked</comment>
   </data>
   <data name="Selecioneumusuario" xml:space="preserve">
-    <value>Select an user</value>
+    <value>Select an User</value>
     <comment>checked</comment>
   </data>
   <data name="SelecioneumVeiculo" xml:space="preserve">
-    <value>Select a vehicle</value>
+    <value>Select a Vehicle</value>
     <comment>checked</comment>
   </data>
   <data name="SelecioneumVendedor" xml:space="preserve">
-    <value>Select a saleman</value>
+    <value>Select a Saleman</value>
     <comment>checked</comment>
   </data>
   <data name="Senha" xml:space="preserve">
@@ -302,7 +302,7 @@
     <comment>checked</comment>
   </data>
   <data name="Telefone" xml:space="preserve">
-    <value>Phone number</value>
+    <value>Phone Number</value>
     <comment>checked</comment>
   </data>
   <data name="Usuario" xml:space="preserve">
@@ -378,15 +378,15 @@
     <comment>checked</comment>
   </data>
   <data name="Selecioneumacidade" xml:space="preserve">
-    <value>Select an city</value>
+    <value>Select an City</value>
     <comment>checked</comment>
   </data>
   <data name="Selecioneumestado" xml:space="preserve">
-    <value>Select a state</value>
+    <value>Select a State</value>
     <comment>checked</comment>
   </data>
   <data name="Selecioneumpaís" xml:space="preserve">
-    <value>Select a country</value>
+    <value>Select a Country</value>
     <comment>checked</comment>
   </data>
   <data name="entrada" xml:space="preserve">
@@ -410,7 +410,7 @@
     <comment>checked</comment>
   </data>
   <data name="software" xml:space="preserve">
-    <value>software</value>
+    <value>Software</value>
     <comment>checked</comment>
   </data>
   <data name="trabalho" xml:space="preserve">
@@ -418,7 +418,7 @@
     <comment>checked</comment>
   </data>
   <data name="transportadora" xml:space="preserve">
-    <value>shipping company</value>
+    <value>Shipping Company</value>
     <comment>checked</comment>
   </data>
   <data name="uma" xml:space="preserve">
@@ -506,11 +506,11 @@
     <comment>checked</comment>
   </data>
   <data name="SelecioneumCliente" xml:space="preserve">
-    <value>Select a mlient</value>
+    <value>Select a Client</value>
     <comment>checked</comment>
   </data>
   <data name="SelecioneumProduto" xml:space="preserve">
-    <value>Select a product</value>
+    <value>Select a Product</value>
     <comment>checked</comment>
   </data>
   <data name="Configuracaoconta" xml:space="preserve">
@@ -590,7 +590,7 @@
     <comment>checked</comment>
   </data>
   <data name="SelecioneumModelo" xml:space="preserve">
-    <value>Select a model</value>
+    <value>Select a Model</value>
     <comment>checked</comment>
   </data>
   <data name="Nosbuscamos" xml:space="preserve">
