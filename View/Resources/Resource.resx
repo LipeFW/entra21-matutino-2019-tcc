@@ -638,4 +638,40 @@
   <data name="Sempree" xml:space="preserve">
     <value>string</value>
   </data>
+  <data name="EditarCategoria" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
+  <data name="EditarCliente" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
+  <data name="EditarMarca" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
+  <data name="EditarModelo" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
+  <data name="EditarProduto" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
+  <data name="EditarRota" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
+  <data name="EditarUsuario" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
+  <data name="EditarVeiculo" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
+  <data name="EditarVendedor" xml:space="preserve">
+    <value>string</value>
+    <comment>pt-BR_en-US_es-ES</comment>
+  </data>
 </root>
