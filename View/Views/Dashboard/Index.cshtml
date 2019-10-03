@@ -2,26 +2,41 @@
     ViewBag.Title = "Dashboard";
     <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
 
-        var usuario = (Model.Usuario)Session["Usuario"];
+    var usuario = (Model.Usuario)Session["Usuario"];
 }
 
-    <div style="width:100%;">
-        <div class="jumbotron text-center mb-0">
-            <h1 id="bemvindoText" class="display-4">
-                <span class="text-dark">
-                    <p>
-                        @View.Resources.Resource.BemVindo, @usuario.NomeCompleto!
-                    </p>
-                </span>
-            </h1>
-            <br>
-            <font size="3">
-                <p class="lead">
-                    <h1 class="text-dark"></h1>
+@if (@usuario.Admin == 1)
+{
+    <script type="text/javascript">
+            bootbox.dialog({
+                className: "h5",
+                size: "big",
+                message: "@usuario.NomeCompleto logou como administrador!"
+
+            });
+            window.setTimeout(function () {
+                bootbox.hideAll();
+            }, 2000);
+    </script>
+}
+
+<div style="width:100%;">
+    <div class="jumbotron text-center mb-0">
+        <h1 id="bemvindoText" class="display-4">
+            <span class="text-dark">
+                <p>
+                    @View.Resources.Resource.BemVindo, @usuario.NomeCompleto!
                 </p>
-            </font>
-<legend></legend>
-            @*<br>
+            </span>
+        </h1>
+        <br>
+        <font size="3">
+            <p class="lead">
+                <h1 class="text-dark"></h1>
+            </p>
+        </font>
+        <legend></legend>
+        @*<br>
             <font size="4">
                 <p class="lead">
                     <h1 class="text-dark">
@@ -58,5 +73,5 @@
         </div>
 
 
-    </div>
+</div>
 

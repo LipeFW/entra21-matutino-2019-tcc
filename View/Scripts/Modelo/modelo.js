@@ -19,10 +19,16 @@
     $("#modelo-botao-salvar").on("click", function () {
         $nome = $("#modelo-campo-nome").val();
         $marca = $("#modelo-campo-marca").val();
-        //if (($nome.trim() == "") || ($marca == -1)) {
-        //    bootbox.alert("Preencha corretamente os campos!");
-        //    return null;
-        //}
+        if (($nome.trim() == "") || ($marca == null)) {
+            bootbox.dialog({
+                message: "Preencha corretamente os campos!"
+
+            });
+            window.setTimeout(function () {
+                bootbox.hideAll();
+            }, 1500);
+            return null;
+        }
 
         if ($idAlterar == -1) {
             inserir($nome, $marca);
@@ -41,11 +47,23 @@
                 },
                 success: function (data) {
                     $("#modal-modelo").modal("hide");
-                    $idAlterar = -1;
                     $tabelaModelo.ajax.reload();
+                    bootbox.dialog({
+                        message: "Modelo alterado com sucesso!!"
+
+                    });
+                    window.setTimeout(function () {
+                        bootbox.hideAll();
+                    }, 1500);
                 },
                 error: function (err) {
-                    bootbox.alert("Não foi possivel editar o modelo!");
+                    bootbox.dialog({
+                        message: "Não foi possível alterar o modelo!"
+
+                    });
+                    window.setTimeout(function () {
+                        bootbox.hideAll();
+                    }, 1500);
                 }
             });
         }
@@ -61,10 +79,22 @@
                 success: function (data) {
                     $("#modal-modelo").modal('hide');
                     $tabelaModelo.ajax.reload();
-                    bootbox.alert("Modelo cadastrado com sucesso!");
+                    bootbox.dialog({
+                        message: "Modelo cadastrado com sucesso!"
+
+                    });
+                    window.setTimeout(function () {
+                        bootbox.hideAll();
+                    }, 1500);
                 },
                 error: function (err) {
-                    bootbox.alert('Não foi possível cadastrar o modelo!');
+                    bootbox.dialog({
+                        message: "Não foi possível cadastrar o modelo!"
+
+                    });
+                    window.setTimeout(function () {
+                        bootbox.hideAll();
+                    }, 1500);
                 }
             });
         }
@@ -73,6 +103,7 @@
     $("#modelo-tabela").on("click", ".botao-apagar", function () {
         $idApagar = $(this).data("id");
         bootbox.confirm({
+            title: "Aviso",
             message: "Deseja realmente remover o modelo?",
             buttons: {
                 confirm: {
@@ -91,11 +122,23 @@
                         method: "get",
                         success: function (data) {
                             $tabelaModelo.ajax.reload();
-                            bootbox.alert("Modelo removido com sucesso!");
+                            bootbox.dialog({
+                                message: "Modelo removido com sucesso!"
+
+                            });
+                            window.setTimeout(function () {
+                                bootbox.hideAll();
+                            }, 1500);
 
                         },
                         error: function (err) {
-                            bootbox.alert('Não foi possível remover o modelo!');
+                            bootbox.dialog({
+                                message: "Não foi possível remover o modelo!"
+
+                            });
+                            window.setTimeout(function () {
+                                bootbox.hideAll();
+                            }, 1500);
                         }
                     });
             }
@@ -114,14 +157,20 @@
                 $("#modal-modelo").modal("show");
             },
             error: function (err) {
-                bootbox.alert('Não foi possivel carregar o modelo!');
+                bootbox.dialog({
+                    message: "Não foi possível carregar o modelo!"
+
+                });
+                window.setTimeout(function () {
+                    bootbox.hideAll();
+                }, 1500);
             }
         })
     });
 
-    //function limparCampos() {
-    //    $("#modelo-campo-nome").val("");
-    //    $("#modelo-campo-marca").val("");
-    //    $idAlterar = -1;
-    //}
+    function limparCampos() {
+        $("#modelo-campo-nome").val("");
+        $("#modelo-campo-marca").val("");
+        $idAlterar = -1;
+    }
 });
