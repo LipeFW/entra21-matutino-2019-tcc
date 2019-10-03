@@ -106,6 +106,7 @@
     <Compile Include="Usuario.cs" />
     <Compile Include="Veiculo.cs" />
     <Compile Include="Venda.cs" />
+    <Compile Include="VendaProduto.cs" />
     <Compile Include="Vendedor.cs" />
   </ItemGroup>
   <ItemGroup>

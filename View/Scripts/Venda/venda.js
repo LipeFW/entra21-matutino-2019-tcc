@@ -1,92 +1,120 @@
 ﻿$(function () {
     $idAlterar = -1;
 
-    $tabelaVenda = $('#vendas-tabela').DataTable({
-        ajax: 'http://localhost:51242/Venda/obtertodos',
+    $tabelaVenda = $('#venda-tabela').DataTable({
+        ajax: "http://localhost:51242/Venda/obtertodos",
         serverSide: true,
         columns: [
-            { 'data': 'Id' },
-            { 'data': 'Cliente.Nome' },
-            { 'data': 'Vendedor.Nome' },
-            { 'data': 'Total' },
+            { "data": "Id" },
+            { "data": "Vendedor" },
+            { "data": "Cliente" },
             {
                 render: function (data, type, row) {
-                    return '<button class="btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button><button class="btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>'
+                    return '<button class="fadeIn animated btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button>\<button class="fadeIn animated btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>'
                 }
             }
         ]
     });
 
-    $('#venda-botao-salvar').on('click', function () {
-        $vendedor = $('#venda-campo-vendedor').val();
-        $cliente = $('#venda-campo-cliente').val();
-        $total = $('#venda-campo-total').val();
-        $desconto = $('#venda-campo-desconto').val();
+    $("#venda-botao-salvar").on("click", function () {
+        $vendedor = $("#venda-campo-vendedor").val();
+        $cliente = $("#venda-campo-cliente").val();
+
+        if (($vendedor == null) || ($cliente == null)) {
+            bootbox.dialog({
+                message: "Preencha corretamente os campos!"
+
+            });
+            window.setTimeout(function () {
+                bootbox.hideAll();
+            }, 1500);
+            return null;
+        }
 
         if ($idAlterar == -1) {
-            inserir($vendedor, $cliente, $total, $desconto);
+            inserir($vendedor, $cliente);
+
         } else {
-            alterar($vendedor, $cliente, $total, $desconto);
+            alterar($vendedor, $cliente);
         }
-    });
 
-    function alterar($vendedor, $cliente, $total, $desconto) {
-        $.ajax({
-            url: 'http://localhost:51242/Venda/update',
-            method: 'post',
-            data: {
-                id: $idAlterar,
+        function alterar($vendedor, $cliente) {
+            $.ajax({
+                url: "http://localhost:51242/Venda/update",
+                method: "post",
+                data: {
+                    id: $idAlterar,
+                    idVendedor: $vendedor,
+                    idCliente: $cliente,
+                },
+                success: function (data) {
+                    $("#modal-venda").modal("hide");
+                    limparCampos();
+                    $idAlterar = -1;
+                    $tabelaVenda.ajax.reload();
+                    bootbox.dialog({
+                        message: "Venda alterada com sucesso!"
+
+                    });
+                    window.setTimeout(function () {
+                        bootbox.hideAll();
+                    }, 1500);
+                },
+                error: function (err) {
+                    bootbox.alert("Não foi possível editar a venda.");
+                    limparCampos();
+                    $idAlterar = -1;
+                }
+            });
+        }
+
+        function inserir($vendedor, $cliente) {
+            $.ajax({
+                url: "http://localhost:51242/Venda/Inserir",
+                method: "post",
+                data: {
                 idVendedor: $vendedor,
-                idCliente: $cliente,
-                total: $total,
-                desconto: $desconto
-            },
-            success: function (data) {
-                $("#modal-venda").modal("hide");
-                $idAlterar = -1;
-                $tabelaVenda.ajax.reload();
-                alert("Registro alterado com sucesso");
+                idCliente: $cliente
+                },
+                success: function (data) {
+                    $("#modal-venda").modal('hide');
+                    limparCampos();
+                    $tabelaVenda.ajax.reload();
+                    bootbox.dialog({
+                        message: "Venda cadastrada com sucesso!"
 
-            },
-            error: function (err) {
-                alert("Não foi possivel alterar");
-            }
-        })
-    }
+                    });
+                    window.setTimeout(function () {
+                        bootbox.hideAll();
+                    }, 1500);
+                },
+                error: function (err) {
+                    bootbox.dialog({
+                        message: "Não foi possível cadastrar a venda!"
 
-    function inserir($vendedor, $cliente, $total, $desconto) {
-        $.ajax({
-            url: 'http://localhost:51242/Venda/inserir',
-            method: 'post',
-            data: {
-                idVendedor: $vendedor,
-                idCliente: $cliente,
-                total: $total,
-                desconto: $desconto
-            },
-            success: function (data) {
-                $("#modal-venda").modal("hide");
-                $tabelaVenda.ajax.reload();
-                alert('Registro inserido com sucesso');
-            },
-            error: function (err) {
-                alert("Não foi possivel inserir");
-            }
-        });
-    }
+                    });
+                    window.setTimeout(function () {
+                        bootbox.hideAll();
+                    }, 1500);
+                }
+            });
+        }
+    })
 
     $("#venda-tabela").on("click", ".botao-apagar", function () {
         $idApagar = $(this).data("id");
         bootbox.confirm({
-            message: "Deseja realmente apagar o registro?",
+            title: 'Aviso',
+            message: "Deseja realmente remover a venda?",
+            backdrop: true,
             buttons: {
                 confirm: {
-                    label: 'Sim',
-                    className: 'btn-success'
+                    label: '<i class="fa fa-check"></i> Sim',
+                    className: 'rubberBand animated btn-success',
                 },
                 cancel: {
-                    label: 'Não',
-                    className: 'btn-danger'
+                    label: '<i class="fa fa-times"></i> Não',
+                    className: 'rubberBand animated btn-danger'
                 }
             },
             callback: function (result) {
@@ -96,36 +124,56 @@
                         method: "get",
                         success: function (data) {
                             $tabelaVenda.ajax.reload();
-                            bootbox.alert("Registro apagado com sucesso");
+                            bootbox.dialog({
+                                message: "Venda removida com sucesso!"
+
+                            });
+                            window.setTimeout(function () {
+                                bootbox.hideAll();
+                            }, 1500);
 
                         },
                         error: function (err) {
-                            bootbox.alert('Não foi possível apagar');
+                            bootbox.dialog({
+                                message: "Não foi possível remover o venda!"
+
+                            });
+                            window.setTimeout(function () {
+                                bootbox.hideAll();
+                            }, 1500);
                         }
                     });
             }
         });
     });
 
-    $('.table').on('click', '.botao-editar', function () {
-        $idAlterar = $(this).data('id');
+    $("#venda-tabela").on("click", ".botao-editar", function () {
+        $idAlterar = $(this).data("id");
 
         $.ajax({
-            url: 'http://localhost:51242/Venda/obterpeloid?id=' + $idAlterar,
-            method: 'get',
-
+            url: "http://localhost:51242/Venda/obterpeloid?id=" + $idAlterar,
+            method: "get",
             success: function (data) {
-                $('#venda-campo-vendedor').val(data.Vendedor);
-                $('#venda-campo-cliente').val(data.Cliente);
-                $('#venda-campo-total').val(data.Total);
-                $('#venda-campo-desconto').val(data.Desconto);
-
-                $('#modal-venda').modal('show');
+                $vendedor = $("#venda-campo-vendedor").val(data.IdVendedor);
+                $cliente = $("#venda-campo-cliente").val(data.IdCliente);
+                $("#modal-venda").modal("show");
 
             },
             error: function (err) {
-                alert("Não foi possivel editar");
+                bootbox.dialog({
+                    message: "Não foi possível carregar a venda!"
+
+                });
+                window.setTimeout(function () {
+                    bootbox.hideAll();
+                }, 1500);
             }
-        })
+        });
     });
+
+    function limparCampos() {
+        $vendedor = $("#venda-campo-vendedor").val("");
+        $cliente = $("#venda-campo-cliente").val("");
+        $idAlterar = -1;
+    }
 });
