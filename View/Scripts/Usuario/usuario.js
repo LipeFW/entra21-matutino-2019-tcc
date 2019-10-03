@@ -7,13 +7,14 @@
         columns: [
             { "data": "Id" },
             { "data": "Nome" },
-            { "data": "Nome1" },
+            { "data": "NomeCompleto" },
             { "data": "Sobrenome" },
             { "data": "Senha" },
             { "data": "Admin" },
             { "data": "Telefone" },
             { "data": "CPF" },
             { "data": "RG" },
+            { "data": "CEP" },
             { "data": "Logradouro" },
             { "data": "NumeroCasa" },
             { "data": "Pais.Nome" },
@@ -29,7 +30,7 @@
 
     $("#usuario-botao-salvar").on("click", function () {
         $nome = $("#usuario-campo-nome").val();
-        $nome1 = $("#usuario-campo-nome1").val();
+        $nomeCompleto = $("#usuario-campo-nomecompleto").val();
         $sobrenome = $("#usuario-campo-sobrenome").val();
         $senha = $("#usuario-campo-senha").val();
         $telefone = $("#usuario-campo-telefone").val();
