@@ -24,7 +24,13 @@
         $imagem = $("#usuario-campo-imagem").val();
 
         if (($nome.trim() == "") || ($senha == "") || ($nomeCompleto == "")) {
-            bootbox.alert("Preencha corretamente os campos!");
+            bootbox.dialog({
+                message: "Preencha corretamente os campos!"
+            
+        });
+            window.setTimeout(function () {
+                bootbox.hideAll();
+            }, 1500);
             return null;
         }
 

@@ -1,4 +1,6 @@
 ﻿$(function () {
+    $idUsuario = $('#idAlterar').val();
+
     $("#colorBlue").on("click", function () {
         $("#sidebar").addClass("bg-primary");
         $("#sidebar").removeClass("bg-danger");
@@ -40,22 +42,35 @@
         $("#sidebartop").removeClass("bg-warning");
     });
     $('#alterarSenha').on('click', function () {
-        var senha = $('#config-campo-senha').val();
-        var senhaConfirm = $('#config-campo-senha2').val();
+        $senha = $('#config-campo-senha').val();
+        $senhaConfirm = $('#config-campo-senha2').val();
 
-        if ((senha.trim() == "") || (senhaConfirm.trim() == "")) {
+        if (($senha.trim() == "") || ($senhaConfirm.trim() == "")) {
             bootbox.alert("O campo senha não pode ser vazio!");
+            return null;
         }
-        else if (senha == senhaConfirm) {
+        else if ($senha == $senhaConfirm) {
             AlterarSenha();
-
-            bootbox.alert("Senha alterada com sucesso!");
         } else {
             bootbox.alert("As senhas não coincidem!");
+            return null;
         }
     });
 
-    function AlterarSenha() {
-        
+    function AlterarSenha($senha) {
+        $.ajax({
+            url: "http://localhost:51242/Usuario/updatepass",
+            method: "post",
+            data: {
+                id: $idUsuario,
+                senha: $senha,
+            },
+            success: function (data) {
+                bootbox.alert("Senha alterada com sucesso!");
+            },
+            error: function (err) {
+                bootbox.alert("Não foi possível alterar a senha!");
+            }
+        });
     }
 });
