@@ -99,7 +99,7 @@ namespace View.Controllers
         {
             var alterou = repository.Alterar(usuario);
             var resultado = new { status = alterou };
-            return Json(resultado);
+            return Json(resultado, JsonRequestBehavior.AllowGet);
         }
 
         [HttpGet, Route("obterpeloid")]

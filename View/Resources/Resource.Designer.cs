@@ -900,6 +900,15 @@ namespace View.Resources {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a string.
         /// </summary>
+        public static string NumeroCasa {
+            get {
+                return ResourceManager.GetString("NumeroCasa", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
         public static string Numerodocaminhao {
             get {
                 return ResourceManager.GetString("Numerodocaminhao", resourceCulture);

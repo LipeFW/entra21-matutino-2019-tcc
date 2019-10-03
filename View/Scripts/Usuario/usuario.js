@@ -6,9 +6,19 @@
         serverSide: true,
         columns: [
             { "data": "Id" },
-            { "data": "NomeCompleto" },
             { "data": "Nome" },
+            { "data": "Nome1" },
+            { "data": "Sobrenome" },
             { "data": "Senha" },
+            { "data": "Admin" },
+            { "data": "Telefone" },
+            { "data": "CPF" },
+            { "data": "RG" },
+            { "data": "Logradouro" },
+            { "data": "NumeroCasa" },
+            { "data": "Pais.Nome" },
+            { "data": "Estado.Nome" },
+            { "data": "Cidade.Nome" },
             {
                 render: function (data, type, row) {
                     return '<button class="fadeIn animated btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button>\<button class="fadeIn animated btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>'
@@ -19,8 +29,15 @@
 
     $("#usuario-botao-salvar").on("click", function () {
         $nome = $("#usuario-campo-nome").val();
-        $nomeCompleto = $("#usuario-campo-nomecompleto").val();
+        $nome1 = $("#usuario-campo-nome1").val();
+        $sobrenome = $("#usuario-campo-sobrenome").val();
         $senha = $("#usuario-campo-senha").val();
+        $telefone = $("#usuario-campo-telefone").val();
+        $cpf = $("#usuario-campo-cpf").val();
+        $rg = $("#usuario-campo-rg").val();
+        $cep = $("#usuario-campo-cep").val();
+        $logradouro = $("#usuario-campo-logradouro").val();
+        $numeroCasa = $("#usuario-campo-numerocasa").val();
         $imagem = $("#usuario-campo-imagem").val();
 
         if (($nome.trim() == "") || ($senha == "") || ($nomeCompleto == "")) {
