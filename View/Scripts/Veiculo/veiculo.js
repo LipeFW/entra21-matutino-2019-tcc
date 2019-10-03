@@ -85,6 +85,7 @@
         $idApagar = $(this).data('id');
 
         bootbox.confirm({
+            title: "Aviso",
             message: "Deseja realmente remover a veículo?",
             buttons: {
                 confirm: {

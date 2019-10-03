@@ -44,6 +44,7 @@ namespace Repository.Repositories
                 return false;
 
             usuarioOriginal.Senha = usuario.Senha;
+
             int quantidadeAfetada = context.SaveChanges();
 
             return quantidadeAfetada == 1;

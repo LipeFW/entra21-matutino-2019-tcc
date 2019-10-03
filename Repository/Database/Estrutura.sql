@@ -11852,13 +11852,13 @@ registro_ativo BIT
 );
 
 INSERT INTO usuarios(nome,nome_completo,url_imagem, admin, senha,  registro_ativo)
-VALUES  ( 'lipefw'  , 'Felipe'   , 'felipe.jpg'  , 1 , 'anaumsei'      , 1),
-	      ( 'illan'   , 'Illan'    , 'illan.jpg'      , 1 , 'illanzoka'     , 1),
-	     ( 'eduardo'  , 'Eduardo'  , 'eduardo.jpg'    , 1 , 'RetardoMental' , 1),
-	     ( 'henrique' , 'Henrique' , 'henrique.jpg'   , 1 , 'pimbinha6000'  , 1),
-	     ( 'pablo'    , 'Pablo'    , 'pablo.jpg'            , 1 , '1234'          , 1),
-	     ( 'nathan'   , 'Nathan'   , 'nathan.jpg'     , 1 , '1203'          , 1),
-	     ( 'usuario'   , 'Usuário'   , 'default'     , 0 , 'senha'          , 1);
+VALUES  ( 'lipefw'  , 'Felipe'   , 'felipe.jpg'  , 1 , '123'      , 1),
+	      ( 'illan'   , 'Illan'    , 'illan.jpg'      , 1 , '123'     , 1),
+	     ( 'eduardo'  , 'Eduardo'  , 'eduardo.jpg'    , 1 , '123' , 1),
+	     ( 'henrique' , 'Henrique' , 'henrique.jpg'   , 1 , '123'  , 1),
+	     ( 'pablo'    , 'Pablo'    , 'pablo.jpg'            , 1 , '123'          , 1),
+	     ( 'nathan'   , 'Nathan'   , 'nathan.jpg'     , 1 , '123'          , 1),
+	     ( 'usuario'   , 'Usuário'   , 'default'     , 0 , '123'          , 1);
 
 CREATE TABLE categorias( 
 id INT PRIMARY KEY IDENTITY(1,1),
