@@ -11845,7 +11845,7 @@ CREATE TABLE usuarios(
 id INT PRIMARY KEY IDENTITY(1,1),
 nome VARCHAR(100),
 url_imagem VARCHAR(100),
-nome_1 VARCHAR(100),
+nome_completo VARCHAR(100),
 sobrenome VARCHAR(100),
 senha VARCHAR(100),
 admin INT,
@@ -11861,17 +11861,17 @@ id_cidade INT,
 FOREIGN KEY (id_pais) REFERENCES paises(id),
 FOREIGN KEY (id_estado) REFERENCES estados(id),
 FOREIGN KEY (id_cidade) REFERENCES cidades(id),
-registro_ativo BIT
+registro_ativo BIT 
 );
 
-INSERT INTO usuarios(nome, nome_1, sobrenome, url_imagem, admin, senha, telefone, cpf, rg, id_pais, id_estado, id_cidade, cep, logradouro, registro_ativo)
-VALUES   ( 'lipefw'   , 'Felipe'   , 'felipe.jpg'   , 1 , 'anaumsei'      ,'(47) 98196-8153' ,'655.856.830-63', '48.444.250-8', 26, 408,'89012-496', 'Rua Professor Luiz Schwartz', 1),
-	     ( 'illan'    , 'Illan'    , 'illan.jpg'    , 1 , 'illanzoka'     ,'(47) 98483-1535' ,'060.065.250-54', '14.537.793-3', 26, 408,'89010-345', 'Rua Bonifácio da Cunha',1),
-	     ( 'eduardo'  , 'Eduardo'  , 'eduardo.jpg'  , 1 , 'RetardoMental' ,'(47) 96345-4634' ,'753.576.280-84', '34.213.818-2', 26, 408,'89052-273', 'Rua Oscar Rolow', 1),
-	     ( 'henrique' , 'Henrique' , 'henrique.jpg' , 1 , 'pimbinha6000'  ,'(47) 96721-5135' ,'221.362.240-00', '24.650.600-3', 26, 408,'89060-315', 'Rua Ella Hofmann', 1),
-	     ( 'pablo'    , 'Pablo'    , 'pablo.jpg'    , 1 , '1234'          ,'(47) 97524-7642' ,'513.342.770-01', '21.229.201-8', 26, 408,'89056-107', 'Rua Zilmar Rubens França', 1),
-	     ( 'nathan'   , 'Nathan'   , 'nathan.jpg'   , 1 , '1203'          ,'(47) 96236-7542' ,'486.754.660-72', '38.053.801-5', 26, 408,'89057-260', 'Rua Emma Schuhart', 1),
-	     ( 'usuario'  , 'Usuário'  , 'default'      , 0 , 'senha'         ,'(47) 92345-7234' ,'554.092.050-30', '24.925.367-7', 26, 408,'89035-340', 'Rua Promotor Ribeiro de Carvalho', 1);
+INSERT INTO usuarios(nome, nome_completo, sobrenome, url_imagem, admin, senha, telefone, cpf, rg, id_pais, id_estado, id_cidade, cep, logradouro, registro_ativo)
+VALUES   ( 'lipefw'   , 'Felipe'   , 'Weber'      ,'felipe.jpg'   , 1 , 'anaumsei'      ,'(47) 98196-8153' ,'655.856.830-63', '48.444.250-8', 26, 408, 8236,'89012-496', 'Rua Professor Luiz Schwartz', 1),
+	     ( 'illan'    , 'Illan'    , 'Dickmann'   ,'illan.jpg'    , 1 , 'illanzoka'     ,'(47) 98483-1535' ,'060.065.250-54', '14.537.793-3', 26, 408, 8236,'89010-345', 'Rua Bonifácio da Cunha',1),
+	     ( 'eduardo'  , 'Eduardo'  , 'Hausmann'   ,'eduardo.jpg'  , 1 , 'RetardoMental' ,'(47) 96345-4634' ,'753.576.280-84', '34.213.818-2', 26, 408, 8236,'89052-273', 'Rua Oscar Rolow', 1),
+	     ( 'henrique' , 'Henrique' , 'Montibeller','henrique.jpg' , 1 , 'pimbinha6000'  ,'(47) 96721-5135' ,'221.362.240-00', '24.650.600-3', 26, 408, 8236,'89060-315', 'Rua Ella Hofmann', 1),
+	     ( 'pablo'    , 'Pablo'    , 'awduawgda'  ,'pablo.jpg'    , 1 , '1234'          ,'(47) 97524-7642' ,'513.342.770-01', '21.229.201-8', 26, 408, 8236,'89056-107', 'Rua Zilmar Rubens França', 1),
+	     ( 'nathan'   , 'Nathan'   , 'Theiss'     ,'nathan.jpg'   , 1 , '1203'          ,'(47) 96236-7542' ,'486.754.660-72', '38.053.801-5', 26, 408, 8236,'89057-260', 'Rua Emma Schuhart', 1),
+	     ( 'usuario'  , 'Usuário'  , 'Cleiton'    ,'default'      , 0 , 'senha'         ,'(47) 92345-7234' ,'554.092.050-30', '24.925.367-7', 26, 408, 8236,'89035-340', 'Rua Promotor Ribeiro de Carvalho', 1);
 
 CREATE TABLE categorias( 
 id INT PRIMARY KEY IDENTITY(1,1),
