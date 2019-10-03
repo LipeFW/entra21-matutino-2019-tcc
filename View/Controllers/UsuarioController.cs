@@ -95,11 +95,16 @@ namespace View.Controllers
         }
 
         [HttpPost, Route("updatepass")]
-        public JsonResult UpdatePass(Usuario usuario)
+        public ActionResult UpdatePass(Usuario usuario)
         {
-            var alterou = repository.Alterar(usuario);
-            var resultado = new { status = alterou };
-            return Json(resultado, JsonRequestBehavior.AllowGet);
+            var alterou = repository.AlterarSenha(usuario);
+
+            if (usuario.Senha == null)
+            {
+                return null;
+            }
+
+            return RedirectToAction("Config");
         }
 
         [HttpGet, Route("obterpeloid")]

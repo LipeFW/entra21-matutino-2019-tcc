@@ -19,7 +19,13 @@
         $nome = $('#marca-campo-nome').val();
 
         if ($nome.trim() == "") {
-            bootbox.alert('Preencha corretamente o campo!');
+            bootbox.dialog({
+                message: "Preencha corretamente os campos!"
+
+            });
+            window.setTimeout(function () {
+                bootbox.hideAll();
+            }, 1500);
             return null;
         }
 
@@ -45,9 +51,14 @@
                 $tabelaMarca.ajax.reload();
             },
             error: function (err) {
-                bootbox.alert('Não foi possível editar a marca!');
+                bootbox.dialog({
+                    message: "Não foi possível alterar a marca!"
+
+                });
+                window.setTimeout(function () {
+                    bootbox.hideAll();
+                }, 1500);
                 limparCampos();
-                $idAlterar = -1;
 
             }
         });
@@ -64,10 +75,22 @@
                 $('#modal-marca').modal('hide');
                 limparCampos();
                 $tabelaMarca.ajax.reload();
-                bootbox.alert('Marca cadastrada com sucesso!');
+                bootbox.dialog({
+                    message: "Marca cadastrada com sucesso!"
+
+                });
+                window.setTimeout(function () {
+                    bootbox.hideAll();
+                }, 1500);
             },
             error: function (err) {
-                bootbox.alert('Não foi possível cadastrar a marca!');
+                bootbox.dialog({
+                    message: "Não foi possível cadastrar a marca!"
+
+                });
+                window.setTimeout(function () {
+                    bootbox.hideAll();
+                }, 1500);
             }
         });
     }
@@ -75,6 +98,7 @@
     $("#marca-tabela").on("click", ".botao-apagar", function () {
         $idApagar = $(this).data("id");
         bootbox.confirm({
+            title: 'Aviso',
             message: 'Deseja realmente remover a marca?',
             buttons: {
                 confirm: {
@@ -93,11 +117,23 @@
                         method: "get",
                         success: function (data) {
                             $tabelaMarca.ajax.reload();
-                            bootbox.alert('Marca removida com sucesso!');
+                            bootbox.dialog({
+                                message: "Marca removida com sucesso!"
+
+                            });
+                            window.setTimeout(function () {
+                                bootbox.hideAll();
+                            }, 1500);
 
                         },
                         error: function (err) {
-                            bootbox.alert('Não foi possível remover a marca!');
+                            bootbox.dialog({
+                                message: "Não foi possível remover a marca!"
+
+                            });
+                            window.setTimeout(function () {
+                                bootbox.hideAll();
+                            }, 1500);
                         }
                     });
             }
@@ -116,7 +152,13 @@ $('#marca-tabela').on('click', '.botao-editar', function () {
                 $('#modal-marca').modal('show');
             },
             error: function (err) {
-                alert('Não foi possível carregar a marca!');
+                bootbox.dialog({
+                    message: "Não foi possível carregar a marca!"
+
+                });
+                window.setTimeout(function () {
+                    bootbox.hideAll();
+                }, 1500);;
             }
         });
     });

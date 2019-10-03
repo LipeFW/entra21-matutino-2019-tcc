@@ -8,18 +8,7 @@
             { "data": "Id" },
             { "data": "Nome" },
             { "data": "NomeCompleto" },
-            { "data": "Sobrenome" },
             { "data": "Senha" },
-            { "data": "Admin" },
-            { "data": "Telefone" },
-            { "data": "CPF" },
-            { "data": "RG" },
-            { "data": "CEP" },
-            { "data": "Logradouro" },
-            { "data": "NumeroCasa" },
-            { "data": "Pais.Nome" },
-            { "data": "Estado.Nome" },
-            { "data": "Cidade.Nome" },
             {
                 render: function (data, type, row) {
                     return '<button class="fadeIn animated btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button>\<button class="fadeIn animated btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>'
@@ -33,12 +22,6 @@
         $nomeCompleto = $("#usuario-campo-nomecompleto").val();
         $sobrenome = $("#usuario-campo-sobrenome").val();
         $senha = $("#usuario-campo-senha").val();
-        $telefone = $("#usuario-campo-telefone").val();
-        $cpf = $("#usuario-campo-cpf").val();
-        $rg = $("#usuario-campo-rg").val();
-        $cep = $("#usuario-campo-cep").val();
-        $logradouro = $("#usuario-campo-logradouro").val();
-        $numeroCasa = $("#usuario-campo-numerocasa").val();
         $imagem = $("#usuario-campo-imagem").val();
 
         if (($nome.trim() == "") || ($senha == "") || ($nomeCompleto == "")) {
@@ -75,6 +58,13 @@
                     limparCampos();
                     $idAlterar = -1;
                     $tabelaUsuario.ajax.reload();
+                    bootbox.dialog({
+                        message: "Usuário alterado com sucesso!"
+
+                    });
+                    window.setTimeout(function () {
+                        bootbox.hideAll();
+                    }, 1500);
                 },
                 error: function (err) {
                     bootbox.alert("Não foi possível editar o usuário.");
@@ -98,10 +88,22 @@
                     $("#modal-usuario").modal('hide');
                     limparCampos();
                     $tabelaUsuario.ajax.reload();
-                    bootbox.alert("Usuário cadastrado com sucesso!");
+                    bootbox.dialog({
+                        message: "Usuário cadastrado com sucesso!"
+
+                    });
+                    window.setTimeout(function () {
+                        bootbox.hideAll();
+                    }, 1500);
                 },
                 error: function (err) {
-                    bootbox.alert("Não foi possível cadastrar o usuário!")
+                    bootbox.dialog({
+                        message: "Não foi possível cadastrar o usuário!"
+
+                    });
+                    window.setTimeout(function () {
+                        bootbox.hideAll();
+                    }, 1500);
                 }
             });
         }
@@ -130,14 +132,23 @@
                         method: "get",
                         success: function (data) {
                             $tabelaUsuario.ajax.reload();
-                            bootbox.alert({
-                                title: "Aviso",
-                                message:"Usuário removido com sucesso",
-                            })
+                            bootbox.dialog({
+                                message: "Usuário removido com sucesso!"
+
+                            });
+                            window.setTimeout(function () {
+                                bootbox.hideAll();
+                            }, 1500);
 
                         },
                         error: function (err) {
-                            bootbox.alert('Não foi possível remover o usuário');
+                            bootbox.dialog({
+                                message: "Não foi possível remover o usuário!"
+
+                            });
+                            window.setTimeout(function () {
+                                bootbox.hideAll();
+                            }, 1500);
                         }
                     });
             }
@@ -159,13 +170,20 @@
 
             },
             error: function (err) {
-                bootbox.alert("Não foi possível carregar o usuário!");
+                bootbox.dialog({
+                    message: "Não foi possível carregar o usuário!"
+
+                });
+                window.setTimeout(function () {
+                    bootbox.hideAll();
+                }, 1500);
             }
         });
     });
 
     function limparCampos() {
         $nome = $("#usuario-campo-nome").val("");
+        $nomeCompleto = $("#usuario-campo-nomecompleto").val("");
         $senha = $("#usuario-campo-senha").val("");
         $idAlterar = -1;
     }

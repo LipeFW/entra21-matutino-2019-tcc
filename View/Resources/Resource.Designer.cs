@@ -1240,7 +1240,7 @@ namespace View.Resources {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a String.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
         /// </summary>
         public static string Sempree {
             get {

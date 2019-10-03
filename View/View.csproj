@@ -2698,7 +2698,8 @@
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
     <Content Include="Scripts\Usuario\config.js" />
-    <Content Include="Scripts\Usuario\perfil.js" />
+    <Content Include="Scripts\Usuario\select2config.js" />
+    <Content Include="Scripts\Usuario\select2usuario.js" />
     <Content Include="Scripts\Usuario\usuario.js" />
     <Content Include="Scripts\Veiculo\veiculo.js" />
     <Content Include="Scripts\Venda\venda-cadastro.js" />

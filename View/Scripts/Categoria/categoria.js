@@ -20,7 +20,13 @@
         $nome = $('#categoria-campo-nome').val();
 
         if ($nome.trim() == "") {
-            bootbox.alert("Preencha corretamente o campo!");
+            bootbox.dialog({
+                message: "Preencha corretamente os campos!"
+
+            });
+            window.setTimeout(function () {
+                bootbox.hideAll();
+            }, 1500);
             return null;
         }
 
@@ -43,11 +49,23 @@
             success: function (data) {
                 $('#modal-categoria').modal('hide');
                 limparCampos();
-                $idAlterar = -1;
+                bootbox.dialog({
+                    message: "Categoria alterada com sucesso!"
+
+                });
+                window.setTimeout(function () {
+                    bootbox.hideAll();
+                }, 1500);
                 $tabelaCategoria.ajax.reload();
             },
             error: function (err) {
-                bootbox.alert('Não foi possível editar a categoria.');
+                bootbox.dialog({
+                    message: "Não foi possível alterar a categoria!"
+
+                });
+                window.setTimeout(function () {
+                    bootbox.hideAll();
+                }, 1500);
                 $idAlterar = -1;
             }
         });
@@ -64,10 +82,22 @@
                 $('#modal-categoria').modal('hide');
                 limparCampos();
                 $tabelaCategoria.ajax.reload();
-                bootbox.alert("Categoria cadastrada com sucesso!")
+                bootbox.dialog({
+                    message: "Categoria cadastrada com sucesso!"
+
+                });
+                window.setTimeout(function () {
+                    bootbox.hideAll();
+                }, 1500);
             },
             error: function (err) {
-                bootbox.alert('Não foi possível cadastrar a categoria.');
+                bootbox.dialog({
+                    message: "Não foi possível cadastrar a categoria!"
+
+                });
+                window.setTimeout(function () {
+                    bootbox.hideAll();
+                }, 1500);
             }
         });
     }
@@ -95,11 +125,23 @@
                         method: "get",
                         success: function (data) {
                             $tabelaCategoria.ajax.reload();
-                            bootbox.alert('Categoria removida com sucesso!');
+                            bootbox.dialog({
+                                message: "Categoria removida com sucesso!"
+
+                            });
+                            window.setTimeout(function () {
+                                bootbox.hideAll();
+                            }, 1500);
 
                         },
                         error: function (err) {
-                            bootbox.alert('Não foi possível remover a categoria!');
+                            bootbox.dialog({
+                                message: "Não foi possível remover a categoria!"
+
+                            });
+                            window.setTimeout(function () {
+                                bootbox.hideAll();
+                            }, 1500);
                         }
                     });
             }
@@ -116,7 +158,13 @@
                 $('#modal-categoria').modal('show');
             },
             error: function (err) {
-                bootbox.alert('Não foi possível carregar a categoria.');
+                bootbox.dialog({
+                    message: "Não foi possível carregar a categoria!"
+
+                });
+                window.setTimeout(function () {
+                    bootbox.hideAll();
+                }, 1500);
             }
         })
     });
