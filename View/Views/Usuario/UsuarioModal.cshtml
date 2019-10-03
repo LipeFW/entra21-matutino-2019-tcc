@@ -41,6 +41,28 @@
                     <input id="usuario-campo-cep" class="form-control border-dark" />
                 </div>
                 <div class="form-group">
+                    <label style="font-weight:bold" for="config-campo-pais">@View.Resources.Resource.Pais <span class="text-danger">*</span></label>
+                    <br />
+                    <select class="form-control border-dark" style="width: 100%; " id="config-campo-pais">
+                        <option disabled="disabled" selected="selected"> @View.Resources.Resource.Selecioneumpaís</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label style="font-weight:bold" for="config-campo-estado">@View.Resources.Resource.Estado <span class="text-danger">*</span></label>
+                    <br>
+                    <select class="form-control border-dark" style="width: 100% " id="config-campo-estado">
+                        <option disabled="disabled" selected="selected"> @View.Resources.Resource.Selecioneumestado</option>
+
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label style="font-weight:bold" for="config-campo-cidade">@View.Resources.Resource.Cidade <span class="text-danger">*</span></label>
+                    <br>
+                    <select class="form-control border-dark" style="width: 100% " id="config-campo-cidade">
+                        <option disabled="disabled" selected="selected"> @View.Resources.Resource.Selecioneumacidade</option>
+                    </select>
+                </div>
+                <div class="form-group">
                     <label style="font-weight:bold" for="usuario-campo-logradouro">@View.Resources.Resource.Logradouro <span class="text-danger">*</span></label>
                     <input id="usuario-campo-logradouro" class="form-control border-dark" />
                 </div>
