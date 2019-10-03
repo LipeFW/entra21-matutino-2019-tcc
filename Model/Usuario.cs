@@ -60,13 +60,13 @@ namespace Model
         public int IdEstado { get; set; }
 
         [ForeignKey("IdEstado")]
-        public Estado Estado { get; set; }
+        public Pais Estado { get; set; }
 
         [Column("id_cidade")]
         public int IdCidade { get; set; }
 
         [ForeignKey("IdCidade")]
-        public Cidade Cidade { get; set; }
+        public Pais Cidade { get; set; }
 
         [Column("registro_ativo")]
         public bool RegistroAtivo { get; set; }

@@ -111,6 +111,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Database.mdf" />
+    <Content Include="App_Data\Database_log.ldf">
+      <DependentUpon>Database.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\css\Animate.css" />
     <Content Include="Content\css\outros.css" />
     <Content Include="Content\css\select2.css" />
@@ -2694,7 +2698,8 @@
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
     <Content Include="Scripts\Usuario\config.js" />
-    <Content Include="Scripts\Usuario\perfil.js" />
+    <Content Include="Scripts\Usuario\select2config.js" />
+    <Content Include="Scripts\Usuario\select2usuario.js" />
     <Content Include="Scripts\Usuario\usuario.js" />
     <Content Include="Scripts\Veiculo\veiculo.js" />
     <Content Include="Scripts\Venda\venda-cadastro.js" />
@@ -2812,7 +2817,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Content\fonts\" />
     <Folder Include="Models\" />
     <Folder Include="Scripts\Login\" />
