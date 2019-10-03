@@ -681,22 +681,8 @@ Nunca termina, y cada logro surge más motivación para no rendirse y siempre se
   <data name="Titulo" xml:space="preserve">
     <value>Titulo</value>
   </data>
-  <data name="Clientesse" xml:space="preserve">
-    <value>Los clientes que se hacen amigos, también es una prueba de trabajo de calidad.</value>
-  </data>
-  <data name="Confianca" xml:space="preserve">
-    <value>Fiabilidad y calidad</value>
-  </data>
-  <data name="Entregaro" xml:space="preserve">
-    <value>La entrega del producto en el tiempo esperado siempre garantiza rendimientos positivos.</value>
-  </data>
-  <data name="Equipeunida" xml:space="preserve">
-    <value>Equipo de la Unión</value>
-  </data>
-  <data name="Rapidez" xml:space="preserve">
-    <value>Rápidamente</value>
-  </data>
-  <data name="Sempree" xml:space="preserve">
-    <value>Siempre es muy importante apoyar a todo el equipo, para que todos puedan crecer.</value>
+  <data name="NumeroCasa" xml:space="preserve">
+    <value>Numero</value>
+    <comment>checked</comment>
   </data>
 </root>
