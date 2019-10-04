@@ -35,7 +35,8 @@
 
                 $("#config-campo-cidade").val($localidade);
                 $("#config-campo-logradouro").val($logradouro);
-                $("#config-campo-estado").val($unidadeFederativa);
+                $('#config-campo-estado').val($unidadeFederativa).trigger('change');
+                //$("#config-campo-estado").val($unidadeFederativa);
                 $("#config-campo-numero").val("");
                 $("#config-campo-numero").focus();
 

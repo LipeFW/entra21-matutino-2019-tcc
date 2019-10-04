@@ -2020,6 +2020,7 @@
     <Content Include="Scripts\bootbox.min.js" />
     <Content Include="Scripts\Categoria\categoria-editar.js" />
     <Content Include="Scripts\Categoria\categoria.js" />
+    <Content Include="Scripts\Cidade\cidade.js" />
     <Content Include="Scripts\Cliente\cliente-editar.js" />
     <Content Include="Scripts\Cliente\cliente.js" />
     <Content Include="Content\login\font\DreamMMA.ttf" />
@@ -2836,7 +2837,6 @@
   <ItemGroup>
     <Folder Include="Content\fonts\" />
     <Folder Include="Models\" />
-    <Folder Include="Scripts\Cidade\" />
     <Folder Include="Scripts\Login\" />
     <Folder Include="Views\Base\" />
     <Folder Include="Views\Filtro\" />
