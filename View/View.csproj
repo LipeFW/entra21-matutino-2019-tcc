@@ -2701,6 +2701,7 @@
     <Content Include="Scripts\Usuario\select2config.js" />
     <Content Include="Scripts\Usuario\select2usuario.js" />
     <Content Include="Scripts\Usuario\usuario.js" />
+    <Content Include="Scripts\Usuario\viacep.js" />
     <Content Include="Scripts\Veiculo\veiculo.js" />
     <Content Include="Scripts\Venda\venda.js" />
     <Content Include="Scripts\Vendedor\vendedor.js" />
