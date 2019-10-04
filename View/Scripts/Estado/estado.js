@@ -7,7 +7,7 @@
         columns: [
             { 'data': 'Id' },
             { 'data': 'Pais.Nome' },
-            { 'data': 'Nome' }
+            { 'data': 'Nome' },
             {
                 render: function (data, type, row) {
                     return '<button class="fadeIn animated btn btn-primary botao-editar" data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i>  Editar</button>\<button class="fadeIn animated btn btn-danger botao-apagar ml-1" data-id="' + row.Id + '"><i class="fas fa-trash-alt"></i>  Apagar</button>'
@@ -21,7 +21,7 @@
         $pais = $('#estado-campo-pais').val();
         $nome = $('#estado-campo-nome').val();
 
-        if (($pais == null || ($nome.trim() == "")) {
+        if (($pais == null) || ($nome.trim() == "")) {
             bootbox.dialog({
                 message: "Preencha corretamente os campos!"
 
