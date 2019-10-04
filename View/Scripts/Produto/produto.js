@@ -52,6 +52,7 @@
                 success: function (data) {
                     $("#modal-produto").modal("hide");
                     $tabelaProduto.ajax.reload();
+                    limparCampos();
                     bootbox.dialog({
                         message: "Produto alterado com sucesso!"
 
@@ -82,7 +83,7 @@
                 data: {
                     nome: $nome,
                     idCategoria: $categoria,
-                    valorUnitario: $valor
+                    valor: $valor
                 },
                 success: function (data) {
                     $("#modal-produto").modal('hide');

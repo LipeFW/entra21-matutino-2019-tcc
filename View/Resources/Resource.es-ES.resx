@@ -752,4 +752,12 @@ Nunca termina, y cada logro surge más motivación para no rendirse y siempre se
   <data name="SelecioneumPais" xml:space="preserve">
     <value>Seleccione un pais</value>
   </data>
+  <data name="Funcionario" xml:space="preserve">
+    <value>Empleado</value>
+    <comment>checked</comment>
+  </data>
+  <data name="AdicionarProdutos" xml:space="preserve">
+    <value>Agregar Productos</value>
+    <comment>checked</comment>
+  </data>
 </root>

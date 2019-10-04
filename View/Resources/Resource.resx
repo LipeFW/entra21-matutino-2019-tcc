@@ -701,4 +701,7 @@
   <data name="NovoPais" xml:space="preserve">
     <value>string</value>
   </data>
+  <data name="Funcionario" xml:space="preserve">
+    <value>string</value>
+  </data>
 </root>

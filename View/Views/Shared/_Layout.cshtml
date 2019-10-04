@@ -222,10 +222,10 @@
                         <li class="nav-item nav-item-submenu">
                             <a href="#" id="itemUsuario" class="nav-link">
                                 <i class="fas fa-user"></i>
-                                <span id="usuarioText">@View.Resources.Resource.Usuario</span>
+                                <span id="usuarioText">@View.Resources.Resource.Funcionario</span>
                             </a>
-                            <ul class="nav nav-group-sub" data-submenu-title="@View.Resources.Resource.Usuario">
-                                <li class="nav-item"><a href="/usuario/index" class="nav-link ">@View.Resources.Resource.Lista</a></li>
+                            <ul class="nav nav-group-sub" data-submenu-title="@View.Resources.Resource.Funcionario">
+                                <li class="nav-item"><a href="/usuario/index" class="nav-link "><i class="fas fa-bars"></i>@View.Resources.Resource.Lista</a></li>
                             </ul>
                         </li>
                         <!-- /Usuário -->
@@ -236,7 +236,7 @@
                                 <span id="categoriaText">@View.Resources.Resource.Categoria</span>
                             </a>
                             <ul class="nav nav-group-sub" data-submenu-title="@View.Resources.Resource.Categoria">
-                                <li class="nav-item"><a href="/categoria/index" class="nav-link ">@View.Resources.Resource.Lista</a></li>
+                                <li class="nav-item"><a href="/categoria/index" class="nav-link "><i class="fas fa-bars"></i>@View.Resources.Resource.Lista</a></li>
                             </ul>
                         </li>
                         <!-- /Categoria -->
@@ -247,7 +247,7 @@
                                 <span>@View.Resources.Resource.Cliente</span>
                             </a>
                             <ul class="nav nav-group-sub" data-submenu-title="@View.Resources.Resource.Cliente">
-                                <li class="nav-item"><a href="/cliente/index" class="nav-link ">@View.Resources.Resource.Lista</a></li>
+                                <li class="nav-item"><a href="/cliente/index" class="nav-link "><i class="fas fa-bars"></i>@View.Resources.Resource.Lista</a></li>
                             </ul>
                         </li>
                         <!-- /Cliente -->
@@ -258,9 +258,9 @@
                                 <span id="veiculoText">@View.Resources.Resource.Frota</span>
                             </a>
                             <ul class="nav nav-group-sub" data-submenu-title="@View.Resources.Resource.Frota">
-                                <li class="nav-item"><a href="/Marca/index" class="nav-link">@View.Resources.Resource.Marcas</a></li>
-                                <li class="nav-item"><a href="/Modelo/index" class="nav-link">@View.Resources.Resource.Modelos</a></li>
-                                <li class="nav-item"><a href="/Veiculo/index" class="nav-link">@View.Resources.Resource.Veiculos</a></li>
+                                <li class="nav-item"><a href="/Marca/index" class="nav-link"><i class="fas fa-bars"></i>@View.Resources.Resource.Marcas</a></li>
+                                <li class="nav-item"><a href="/Modelo/index" class="nav-link"><i class="fas fa-bars"></i>@View.Resources.Resource.Modelos</a></li>
+                                <li class="nav-item"><a href="/Veiculo/index" class="nav-link"><i class="fas fa-bars"></i>@View.Resources.Resource.Veiculos</a></li>
                             </ul>
                         </li>
                         <!-- /Veículo -->
@@ -271,7 +271,7 @@
                                 <span id="veiculoText">@View.Resources.Resource.Inventario</span>
                             </a>
                             <ul class="nav nav-group-sub" data-submenu-title="@View.Resources.Resource.Inventario">
-                                <li class="nav-item"><a href="/inventario/index" class="nav-link">@View.Resources.Resource.Lista</a></li>
+                                <li class="nav-item"><a href="/inventario/index" class="nav-link"><i class="fas fa-bars"></i>@View.Resources.Resource.Lista</a></li>
                             </ul>
                         </li>
                         <!-- /Inventário -->
@@ -282,7 +282,7 @@
                                 <span>@View.Resources.Resource.Rota</span>
                             </a>
                             <ul class="nav nav-group-sub" data-submenu-title="@View.Resources.Resource.Rota">
-                                <li class="nav-item"><a href="/rota/index" class="nav-link">@View.Resources.Resource.Lista</a></li>
+                                <li class="nav-item"><a href="/rota/index" class="nav-link"><i class="fas fa-bars"></i>@View.Resources.Resource.Lista</a></li>
                             </ul>
                         </li>
                         <!-- /Rota-->
@@ -293,7 +293,7 @@
                                 <span id="produtoText">@View.Resources.Resource.Produto</span>
                             </a>
                             <ul class="nav nav-group-sub" data-submenu-title="@View.Resources.Resource.Produto">
-                                <li class="nav-item"><a href="/produto/index" class="nav-link">@View.Resources.Resource.Lista</a></li>
+                                <li class="nav-item"><a href="/produto/index" class="nav-link"><i class="fas fa-bars"></i>@View.Resources.Resource.Lista</a></li>
                             </ul>
                         </li>
                         <!-- /Produto-->
@@ -304,20 +304,20 @@
                                 <span>@View.Resources.Resource.Vendedor</span>
                             </a>
                             <ul class="nav nav-group-sub" data-submenu-title="@View.Resources.Resource.Vendedor">
-                                <li class="nav-item"><a href="/vendedor/index" class="nav-link">@View.Resources.Resource.Lista</a></li>
+                                <li class="nav-item"><a href="/vendedor/index" class="nav-link"><i class="fas fa-bars"></i>@View.Resources.Resource.Lista</a></li>
                             </ul>
                         </li>
                         <!-- /Vendedor-->
                         <!-- Localização-->
                         <li class="nav-item nav-item-submenu">
-                            <a href="#" class="nav-link">
+                            <a href="#" class="nav-link invisible">
                                 <i class="fas fa-map-marked-alt"></i>
                                 <span>@View.Resources.Resource.Localizacao</span>
                             </a>
                             <ul class="nav nav-group-sub" data-submenu-title="@View.Resources.Resource.Localizacao">
-                                <li class="nav-item"><a href="/pais/index" class="nav-link">@View.Resources.Resource.Pais</a></li>
-                                <li class="nav-item"><a href="/estado/index" class="nav-link">@View.Resources.Resource.Estado</a></li>
-                                <li class="nav-item"><a href="/cidade/index" class="nav-link">@View.Resources.Resource.Cidade</a></li>
+                                <li class="nav-item"><a href="/pais/index" class="nav-link"><i class="fas fa-bars"></i>@View.Resources.Resource.Pais</a></li>
+                                <li class="nav-item"><a href="/estado/index" class="nav-link"><i class="fas fa-bars"></i>@View.Resources.Resource.Estado</a></li>
+                                <li class="nav-item"><a href="/cidade/index" class="nav-link"><i class="fas fa-bars"></i>@View.Resources.Resource.Cidade</a></li>
                                 @*<li class="nav-item"><a href="/notafiscal/index" class="nav-link">@View.Resources.Resource.NotaFiscal</a></li>*@
                             </ul>
                         </li>
