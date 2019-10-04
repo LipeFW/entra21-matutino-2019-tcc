@@ -214,11 +214,8 @@
     <Content Include="Content\theme\global_assets\images\logo_light.png" />
     <Content Include="Content\theme\global_assets\images\pie-chart.png" />
     <Content Include="Content\theme\global_assets\images\placeholders\cover.jpg" />
-    <Content Include="Content\theme\global_assets\images\placeholders\download.jpg" />
-    <Content Include="Content\theme\global_assets\images\placeholders\ellen.png" />
     <Content Include="Content\theme\global_assets\images\placeholders\placeholder.jpg" />
     <Content Include="Content\theme\global_assets\images\placeholders\user.png" />
-    <Content Include="Content\theme\global_assets\images\placeholders\índice.png" />
     <Content Include="Content\theme\global_assets\images\pnotify\danger.png" />
     <Content Include="Content\theme\global_assets\images\pnotify\default.png" />
     <Content Include="Content\theme\global_assets\images\pnotify\info.png" />
@@ -2032,8 +2029,6 @@
     <Content Include="Scripts\bootbox.min.js" />
     <Content Include="Scripts\Categoria\categoria-editar.js" />
     <Content Include="Scripts\Categoria\categoria.js" />
-    <Content Include="Scripts\Cidade\cidade.js" />
-    <Content Include="Scripts\Cliente\cliente-editar.js" />
     <Content Include="Scripts\Cliente\cliente.js" />
     <Content Include="Content\login\font\DreamMMA.ttf" />
     <Content Include="Content\theme\global_assets\css\icons\fontawesome\fonts\fa-brands-400.eot" />
@@ -2634,6 +2629,8 @@
     <Content Include="Scripts\esm\popper.js.map" />
     <Content Include="Scripts\esm\popper-utils.min.js.map" />
     <Content Include="Scripts\esm\popper-utils.js.map" />
+    <None Include="Properties\PublishProfiles\mcss-system - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\mcss-system - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\Estado\estado.js" />
     <Content Include="Scripts\i18n\af.js" />
@@ -2705,7 +2702,6 @@
     <Content Include="Scripts\Mascaras\jquery.mask.min.js" />
     <Content Include="Scripts\Mascaras\Mask.js" />
     <Content Include="Scripts\Modelo\modelo.js" />
-    <Content Include="Scripts\País\pais.js" />
     <Content Include="Scripts\Produto\produto.js" />
     <Content Include="Scripts\Rota\rota.js" />
     <Content Include="Scripts\select2.js" />
@@ -2795,13 +2791,6 @@
     <Content Include="Scripts\umd\popper.js.map" />
     <Content Include="Scripts\umd\popper-utils.min.js.map" />
     <Content Include="Scripts\umd\popper-utils.js.map" />
-    <Content Include="Views\Cliente\Cadastro.cshtml" />
-    <Content Include="Views\Categoria\Cadastro.cshtml" />
-    <Content Include="Views\Produto\Cadastro.cshtml" />
-    <Content Include="Views\Rota\Cadastro.cshtml" />
-    <Content Include="Views\Usuario\Cadastro.cshtml" />
-    <Content Include="Views\Veiculo\Cadastro.cshtml" />
-    <Content Include="Views\Vendedor\Cadastro.cshtml" />
     <Content Include="Views\Usuario\Config.cshtml" />
     <Content Include="Views\Usuario\Perfil.cshtml" />
     <Content Include="Views\Usuario\UsuarioModal.cshtml" />
@@ -2850,7 +2839,10 @@
     <Folder Include="App_Data\" />
     <Folder Include="Content\fonts\" />
     <Folder Include="Models\" />
+    <Folder Include="Scripts\Cidade\" />
+    <Folder Include="Scripts\Estado\" />
     <Folder Include="Scripts\Login\" />
+    <Folder Include="Scripts\País\" />
     <Folder Include="Views\Base\" />
     <Folder Include="Views\Filtro\" />
     <Folder Include="Views\NotaFiscal\" />
