@@ -9,8 +9,8 @@
             </div>
             <div class="modal-body">
                 <div class="form-group">
-                    <label for="veiculo-campo-marca">@View.Resources.Resource.Marca</label>
-                    <select class="form-control" id="veiculo-campo-marca" name="campo-marca">
+                    <label for="veiculo-campo-marca-editar">@View.Resources.Resource.Marca</label>
+                    <select class="form-control" id="veiculo-campo-marca-editar" name="campo-marca">
                         <option disabled="disabled" selected="selected">@View.Resources.Resource.Selecioneumamarca</option>
                         @foreach (Model.Marca marca in ViewBag.Marcas)
                         {
@@ -19,8 +19,8 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="veiculo-campo-modelo">@View.Resources.Resource.Modelo</label>
-                    <select class="form-control" id="veiculo-campo-modelo" name="campo-marca">
+                    <label for="veiculo-campo-modelo-editar">@View.Resources.Resource.Modelo</label>
+                    <select class="form-control" id="veiculo-campo-modelo-editar" name="campo-marca">
                         <option disabled="disabled" selected="selected">@View.Resources.Resource.SelecioneumModelo</option>
                         @foreach (Model.Modelo modelo in ViewBag.Modelos)
                         {
@@ -29,21 +29,21 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="veiculo-campo-anofabricacao">@View.Resources.Resource.AnoFabricacao</label>
-                    <input class="form-control" name="campo-anofabricacao" id="veiculo-campo-anofabricacao" type="number" min="1945" max="2025" required="required">
+                    <label for="veiculo-campo-anofabricacao-editar">@View.Resources.Resource.AnoFabricacao</label>
+                    <input class="form-control" name="campo-anofabricacao" id="veiculo-campo-anofabricacao-editar" type="number" min="1945" max="2025" required="required">
                 </div>
                 <div class="form-group">
-                    <label for="veiculo-campo-numerocaminhao">@View.Resources.Resource.Numerodocaminhao</label>
-                    <input class="form-control" name="campo-numerocaminhao" id="veiculo-campo-numerocaminhao" type="text" required="required" />
+                    <label for="veiculo-campo-numerocaminhao-editar">@View.Resources.Resource.Numerodocaminhao</label>
+                    <input class="form-control" name="campo-numerocaminhao" id="veiculo-campo-numerocaminhao-editar" type="text" required="required" />
                 </div>
                 <div class="form-group">
-                    <label for="veiculo-campo-placa">@View.Resources.Resource.Placa</label>
-                    <input class="form-control" name="campo-placa" id="veiculo-campo-placa" type="text" required="required" />
+                    <label for="veiculo-campo-placa-editar">@View.Resources.Resource.Placa</label>
+                    <input class="form-control" name="campo-placa" id="veiculo-campo-placa-editar" type="text" required="required" />
                 </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="rubberBand animated btn btn-danger" data-dismiss="modal"><i class="fas fa-times"></i> @View.Resources.Resource.Cancelar</button>
-                <button id="veiculo-botao-salvar" type="button" class="rubberBand animated btn btn-success"><i class="fa fa-check"></i>  @View.Resources.Resource.Salvar</button>
+                <button id="veiculo-botao-editar" type="button" class="rubberBand animated btn btn-success"><i class="fa fa-check"></i>  @View.Resources.Resource.Salvar</button>
             </div>
         </div>
     </div>
