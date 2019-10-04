@@ -336,10 +336,10 @@
   <data name="Pais" xml:space="preserve">
     <value>País</value>
   </data>
-  <data name="Selecioneumacidade" xml:space="preserve">
+  <data name="SelecioneumaCidade" xml:space="preserve">
     <value>Selecione uma Cidade</value>
   </data>
-  <data name="Selecioneumestado" xml:space="preserve">
+  <data name="SelecioneumEstado" xml:space="preserve">
     <value>Selecione um Estado</value>
   </data>
   <data name="Selecioneumpaís" xml:space="preserve">
@@ -676,6 +676,10 @@ isso nunca acaba,e a cada realização surge mais motivação para não desistir
   </data>
   <data name="NovoPais" xml:space="preserve">
     <value>Novo País</value>
+    <comment>checked</comment>
+  </data>
+  <data name="SelecioneumPais" xml:space="preserve">
+    <value>Selecione um País</value>
     <comment>checked</comment>
   </data>
 </root>

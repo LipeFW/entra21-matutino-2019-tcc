@@ -1,8 +1,8 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "País";
 }
 <link rel="stylesheet" type="text/css" href="~/Content/css/tabela/util.css" />
+
 <div class="table responsive">
     <h2 class="text-center">@View.Resources.Resource.Pais</h2>
     <button data-toggle="modal" data-target="#modal-pais"
@@ -20,4 +20,8 @@
         </thead>
     </table>
 </div>
-
+@RenderPage("PaisModal.cshtml")
+@section js{
+    <script src="~/Scripts/País/pais.js"></script>
+    <script type="text/javascript" src="~/Scripts/Mascaras/Mask.js"></script>
+}
