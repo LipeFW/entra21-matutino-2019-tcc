@@ -33,43 +33,43 @@
         if ($idAlterar == -1) {
             inserir($nome.trim());
 
-        } else {
-            alterar($nome.trim());
-        }
+        } //else {
+        //    alterar($nome.trim());
+        //}
     });
 
-    function alterar($nome) {
-        $.ajax({
-            url: 'http://localhost:51242/Categoria/editar',
-            method: 'post',
-            data: {
-                id: $idAlterar,
-                nome: $nome
-            },
-            success: function (data) {
-                $('#modal-categoria').modal('hide');
-                limparCampos();
-                bootbox.dialog({
-                    message: "Categoria alterada com sucesso!"
+    ////function alterar($nome) {
+    //    $.ajax({
+    //        url: 'http://localhost:51242/Categoria/editar',
+    //        method: 'post',
+    //        data: {
+    //            id: $idAlterar,
+    //            nome: $nome
+    //        },
+    //        success: function (data) {
+    //            $('#modal-categoria').modal('hide');
+    //            limparCampos();
+    //            bootbox.dialog({
+    //                message: "Categoria alterada com sucesso!"
 
-                });
-                window.setTimeout(function () {
-                    bootbox.hideAll();
-                }, 1500);
-                $tabelaCategoria.ajax.reload();
-            },
-            error: function (err) {
-                bootbox.dialog({
-                    message: "Não foi possível alterar a categoria!"
+    //            });
+    //            window.setTimeout(function () {
+    //                bootbox.hideAll();
+    //            }, 1500);
+    //            $tabelaCategoria.ajax.reload();
+    //        },
+    //        error: function (err) {
+    //            bootbox.dialog({
+    //                message: "Não foi possível alterar a categoria!"
 
-                });
-                window.setTimeout(function () {
-                    bootbox.hideAll();
-                }, 1500);
-                $idAlterar = -1;
-            }
-        });
-    }
+    //            });
+    //            window.setTimeout(function () {
+    //                bootbox.hideAll();
+    //            }, 1500);
+    //            $idAlterar = -1;
+    //        }
+    //    });
+    //}
 
     function inserir($nome) {
         $.ajax({
@@ -154,8 +154,8 @@
             url: 'http://localhost:51242/Categoria/obterpeloid?id=' + $idAlterar,
             method: 'get',
             success: function (data) {
-                $('#categoria-campo-nome').val(data.Nome);
-                $('#modal-categoria').modal('show');
+                $('#categoria-campo-nome-editar').val(data.Nome);
+                $('#modal-categoria-editar').modal('show');
             },
             error: function (err) {
                 bootbox.dialog({
