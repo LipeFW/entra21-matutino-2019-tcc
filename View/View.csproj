@@ -2787,7 +2787,6 @@
     <Content Include="Views\Categoria\Cadastro.cshtml" />
     <Content Include="Views\Produto\Cadastro.cshtml" />
     <Content Include="Views\Rota\Cadastro.cshtml" />
-    <Content Include="Views\Usuario\Cadastro.cshtml" />
     <Content Include="Views\Veiculo\Cadastro.cshtml" />
     <Content Include="Views\Vendedor\Cadastro.cshtml" />
     <Content Include="Views\Usuario\Config.cshtml" />

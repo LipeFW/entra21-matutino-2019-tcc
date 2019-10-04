@@ -682,4 +682,11 @@ isso nunca acaba,e a cada realização surge mais motivação para não desistir
     <value>Selecione um País</value>
     <comment>checked</comment>
   </data>
+  <data name="Funcionario" xml:space="preserve">
+    <value>Funcionário</value>
+    <comment>checked</comment>
+  </data>
+  <data name="AdicionarProdutos" xml:space="preserve">
+    <value>Adicionar Produtos</value>
+  </data>
 </root>
