@@ -10,9 +10,7 @@
             {
                 render: function (data, type, row) {
                     return '<button class="fadeIn animated btn btn-success botao-abrir" \
-                                data-id="' + row.Id + '"><i class="fas fa-arrow-right"></i> Abrir</button>\
-                            <button class="fadeIn animated btn btn-primary botao-editar ml-1" \
-                                data-id="' + row.Id + '"><i class="fas fa-pencil-alt"></i> Editar</button>'
+                                data-id="' + row.Id + '"><i class="fas fa-arrow-right"></i> Abrir</button>'
                 }
             }
         ]

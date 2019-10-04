@@ -50,23 +50,11 @@ namespace Model
         [Column("numero_casa")]
         public int NumeroCasa { get; set; }
 
-        [Column("id_pais")]
-        public int IdPais { get; set; }
+        [Column("estado")]
+        public string Estado { get; set; }
 
-        [ForeignKey("IdPais")]
-        public Pais Pais { get; set; }
-
-        [Column("id_estado")]
-        public int IdEstado { get; set; }
-
-        [ForeignKey("IdEstado")]
-        public Pais Estado { get; set; }
-
-        [Column("id_cidade")]
-        public int IdCidade { get; set; }
-
-        [ForeignKey("IdCidade")]
-        public Pais Cidade { get; set; }
+        [Column("cidade")]
+        public string Cidade { get; set; }
 
         [Column("registro_ativo")]
         public bool RegistroAtivo { get; set; }
