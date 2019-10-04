@@ -66,6 +66,8 @@ namespace View.Controllers
 
         public ActionResult Index()
         {
+            List<Pais> paises = repositoryPais.ObterTodos("");
+            ViewBag.Paises = paises;
             return View();
         }
 
