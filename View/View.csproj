@@ -2621,6 +2621,7 @@
     <Content Include="Scripts\esm\popper-utils.min.js.map" />
     <Content Include="Scripts\esm\popper-utils.js.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\Estado\estado.js" />
     <Content Include="Scripts\i18n\af.js" />
     <Content Include="Scripts\i18n\ar.js" />
     <Content Include="Scripts\i18n\az.js" />
@@ -2690,6 +2691,7 @@
     <Content Include="Scripts\Mascaras\jquery.mask.min.js" />
     <Content Include="Scripts\Mascaras\Mask.js" />
     <Content Include="Scripts\Modelo\modelo.js" />
+    <Content Include="Scripts\País\pais.js" />
     <Content Include="Scripts\Produto\produto.js" />
     <Content Include="Scripts\Rota\rota.js" />
     <Content Include="Scripts\select2.js" />
@@ -2702,6 +2704,7 @@
     <Content Include="Scripts\Usuario\select2config.js" />
     <Content Include="Scripts\Usuario\select2usuario.js" />
     <Content Include="Scripts\Usuario\usuario.js" />
+    <Content Include="Scripts\Usuario\viacep.js" />
     <Content Include="Scripts\Veiculo\veiculo.js" />
     <Content Include="Scripts\Venda\venda.js" />
     <Content Include="Scripts\Vendedor\vendedor.js" />
@@ -2832,6 +2835,7 @@
   <ItemGroup>
     <Folder Include="Content\fonts\" />
     <Folder Include="Models\" />
+    <Folder Include="Scripts\Cidade\" />
     <Folder Include="Scripts\Login\" />
     <Folder Include="Views\Base\" />
     <Folder Include="Views\Filtro\" />

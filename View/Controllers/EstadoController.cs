@@ -12,9 +12,11 @@ namespace View.Controllers
     public class EstadoController : Controller
     {
         private EstadoRepository repository;
+        private PaisRepository repositoryPais;
         public EstadoController()
         {
             repository = new EstadoRepository();
+            repositoryPais = new PaisRepository();
         }
 
         [HttpGet, Route("obtertodosselect2peloiddopais")]
@@ -64,6 +66,8 @@ namespace View.Controllers
 
         public ActionResult Index()
         {
+            List<Pais> paises = repositoryPais.ObterTodos();
+            ViewBag.Paises = paises;
             return View();
         }
 
