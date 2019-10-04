@@ -2015,6 +2015,7 @@
     <Content Include="Scripts\bootbox.locales.js" />
     <Content Include="Scripts\bootbox.locales.min.js" />
     <Content Include="Scripts\bootbox.min.js" />
+    <Content Include="Scripts\Categoria\categoria-editar.js" />
     <Content Include="Scripts\Categoria\categoria.js" />
     <Content Include="Scripts\Cliente\cliente.js" />
     <Content Include="Content\login\font\DreamMMA.ttf" />
@@ -2619,6 +2620,7 @@
     <None Include="Properties\PublishProfiles\mcss-system - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\mcss-system - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\Estado\estado.js" />
     <Content Include="Scripts\i18n\af.js" />
     <Content Include="Scripts\i18n\ar.js" />
     <Content Include="Scripts\i18n\az.js" />

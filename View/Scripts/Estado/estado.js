@@ -1,11 +1,12 @@
 ﻿$(function () {
     $idAlterar = -1;
 
-    $tabelaCategoria = $('#categoria-tabela').DataTable({
-        ajax: 'http://localhost:51242/Categoria/obtertodos',
+    $tabelaEstado = $('#estado-tabela').DataTable({
+        ajax: 'http://localhost:51242/estado/obtertodos',
         serverSide: true,
         columns: [
             { 'data': 'Id' },
+            { 'data': 'Pais.Nome' },
             { 'data': 'Nome' },
             {
                 render: function (data, type, row) {
@@ -16,10 +17,11 @@
         ]
     });
 
-    $('#categoria-botao-salvar').on('click', function () {
-        $nome = $('#categoria-campo-nome').val();
+    $('#estado-botao-salvar').on('click', function () {
+        $pais = $('#estado-campo-pais').val();
+        $nome = $('#estado-campo-nome').val();
 
-        if ($nome.trim() == "") {
+        if (($pais == null) || ($nome.trim() == "")) {
             bootbox.dialog({
                 message: "Preencha corretamente os campos!"
 
@@ -31,59 +33,61 @@
         }
 
         if ($idAlterar == -1) {
-            inserir($nome.trim());
+            inserir($pais, $nome.trim());
 
-        } //else {
-        //    alterar($nome.trim());
-        //}
+        } else {
+            alterar($pais, $nome.trim());
+        }
     });
 
-    ////function alterar($nome) {
-    //    $.ajax({
-    //        url: 'http://localhost:51242/Categoria/editar',
-    //        method: 'post',
-    //        data: {
-    //            id: $idAlterar,
-    //            nome: $nome
-    //        },
-    //        success: function (data) {
-    //            $('#modal-categoria').modal('hide');
-    //            limparCampos();
-    //            bootbox.dialog({
-    //                message: "Categoria alterada com sucesso!"
-
-    //            });
-    //            window.setTimeout(function () {
-    //                bootbox.hideAll();
-    //            }, 1500);
-    //            $tabelaCategoria.ajax.reload();
-    //        },
-    //        error: function (err) {
-    //            bootbox.dialog({
-    //                message: "Não foi possível alterar a categoria!"
-
-    //            });
-    //            window.setTimeout(function () {
-    //                bootbox.hideAll();
-    //            }, 1500);
-    //            $idAlterar = -1;
-    //        }
-    //    });
-    //}
-
-    function inserir($nome) {
+    function alterar($nome) {
         $.ajax({
-            url: 'http://localhost:51242/Categoria/inserir',
+            url: 'http://localhost:51242/estado/editar',
             method: 'post',
             data: {
+                id: $idAlterar,
+                idPais: $pais,
                 nome: $nome
             },
             success: function (data) {
-                $('#modal-categoria').modal('hide');
+                $('#modal-estado').modal('hide');
                 limparCampos();
-                $tabelaCategoria.ajax.reload();
                 bootbox.dialog({
-                    message: "Categoria cadastrada com sucesso!"
+                    message: "Estado alterado com sucesso!"
+
+                });
+                window.setTimeout(function () {
+                    bootbox.hideAll();
+                }, 1500);
+                $tabelaEstado.ajax.reload();
+            },
+            error: function (err) {
+                bootbox.dialog({
+                    message: "Não foi possível alterar o estado!"
+
+                });
+                window.setTimeout(function () {
+                    bootbox.hideAll();
+                }, 1500);
+                $idAlterar = -1;
+            }
+        });
+    }
+
+    function inserir($nome) {
+        $.ajax({
+            url: 'http://localhost:51242/estado/inserir',
+            method: 'post',
+            data: {
+                idPais: $pais,
+                nome: $nome
+            },
+            success: function (data) {
+                $('#modal-estado').modal('hide');
+                limparCampos();
+                $tabelaEstado.ajax.reload();
+                bootbox.dialog({
+                    message: "Estado cadastrado com sucesso!"
 
                 });
                 window.setTimeout(function () {
@@ -92,7 +96,7 @@
             },
             error: function (err) {
                 bootbox.dialog({
-                    message: "Não foi possível cadastrar a categoria!"
+                    message: "Não foi possível cadastrar o estado!"
 
                 });
                 window.setTimeout(function () {
@@ -102,11 +106,11 @@
         });
     }
 
-    $("#categoria-tabela").on("click", ".botao-apagar", function () {
+    $("#estado-tabela").on("click", ".botao-apagar", function () {
         $idApagar = $(this).data("id");
         bootbox.confirm({
             title: 'Aviso',
-            message: "Deseja realmente remover a categoria?",
+            message: "Deseja realmente remover o estado?",
             className: 'bounceInDown animated',
             buttons: {
                 confirm: {
@@ -121,12 +125,12 @@
             callback: function (result) {
                 if (result)
                     $.ajax({
-                        url: "http://localhost:51242/Categoria/Apagar?id=" + $idApagar,
+                        url: "http://localhost:51242/estado/Apagar?id=" + $idApagar,
                         method: "get",
                         success: function (data) {
-                            $tabelaCategoria.ajax.reload();
+                            $tabelaEstado.ajax.reload();
                             bootbox.dialog({
-                                message: "Categoria removida com sucesso!"
+                                message: "Estado removido com sucesso!"
 
                             });
                             window.setTimeout(function () {
@@ -136,7 +140,7 @@
                         },
                         error: function (err) {
                             bootbox.dialog({
-                                message: "Não foi possível remover a categoria!"
+                                message: "Não foi possível remover o estado!"
 
                             });
                             window.setTimeout(function () {
@@ -151,15 +155,16 @@
     $('.table').on('click', '.botao-editar', function () {
         $idAlterar = $(this).data('id')
         $.ajax({
-            url: 'http://localhost:51242/Categoria/obterpeloid?id=' + $idAlterar,
+            url: 'http://localhost:51242/estado/obterpeloid?id=' + $idAlterar,
             method: 'get',
             success: function (data) {
-                $('#categoria-campo-nome-editar').val(data.Nome);
-                $('#modal-categoria-editar').modal('show');
+                $('#estado-campo-pais').val(data.Pais.Nome);
+                $('#estado-campo-nome').val(data.Nome);
+                $('#modal-estado').modal('show');
             },
             error: function (err) {
                 bootbox.dialog({
-                    message: "Não foi possível carregar a categoria!"
+                    message: "Não foi possível carregar o estado!"
 
                 });
                 window.setTimeout(function () {
@@ -170,7 +175,7 @@
     });
 
     function limparCampos() {
-        $('#categoria-campo-nome').val("");
+        $('#pais-campo-nome').val("");
         $idAlterar = -1;
     }
 });

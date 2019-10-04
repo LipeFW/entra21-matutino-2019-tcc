@@ -1,8 +1,8 @@
 ﻿$(function () {
     $idAlterar = -1;
 
-    $tabelaCategoria = $('#categoria-tabela').DataTable({
-        ajax: 'http://localhost:51242/Categoria/obtertodos',
+    $tabelaPais = $('#pais-tabela').DataTable({
+        ajax: 'http://localhost:51242/pais/obtertodos',
         serverSide: true,
         columns: [
             { 'data': 'Id' },
@@ -16,8 +16,8 @@
         ]
     });
 
-    $('#categoria-botao-salvar').on('click', function () {
-        $nome = $('#categoria-campo-nome').val();
+    $('#pais-botao-salvar').on('click', function () {
+        $nome = $('#pais-campo-nome').val();
 
         if ($nome.trim() == "") {
             bootbox.dialog({
@@ -33,57 +33,57 @@
         if ($idAlterar == -1) {
             inserir($nome.trim());
 
-        } //else {
-        //    alterar($nome.trim());
-        //}
+        } else {
+            alterar($nome.trim());
+        }
     });
 
-    ////function alterar($nome) {
-    //    $.ajax({
-    //        url: 'http://localhost:51242/Categoria/editar',
-    //        method: 'post',
-    //        data: {
-    //            id: $idAlterar,
-    //            nome: $nome
-    //        },
-    //        success: function (data) {
-    //            $('#modal-categoria').modal('hide');
-    //            limparCampos();
-    //            bootbox.dialog({
-    //                message: "Categoria alterada com sucesso!"
+    function alterar($nome) {
+        $.ajax({
+            url: 'http://localhost:51242/pais/editar',
+            method: 'post',
+            data: {
+                id: $idAlterar,
+                nome: $nome
+            },
+            success: function (data) {
+                $('#modal-pais').modal('hide');
+                limparCampos();
+                bootbox.dialog({
+                    message: "País alterado com sucesso!"
 
-    //            });
-    //            window.setTimeout(function () {
-    //                bootbox.hideAll();
-    //            }, 1500);
-    //            $tabelaCategoria.ajax.reload();
-    //        },
-    //        error: function (err) {
-    //            bootbox.dialog({
-    //                message: "Não foi possível alterar a categoria!"
+                });
+                window.setTimeout(function () {
+                    bootbox.hideAll();
+                }, 1500);
+                $tabelaPais.ajax.reload();
+            },
+            error: function (err) {
+                bootbox.dialog({
+                    message: "Não foi possível alterar o país!"
 
-    //            });
-    //            window.setTimeout(function () {
-    //                bootbox.hideAll();
-    //            }, 1500);
-    //            $idAlterar = -1;
-    //        }
-    //    });
-    //}
+                });
+                window.setTimeout(function () {
+                    bootbox.hideAll();
+                }, 1500);
+                $idAlterar = -1;
+            }
+        });
+    }
 
     function inserir($nome) {
         $.ajax({
-            url: 'http://localhost:51242/Categoria/inserir',
+            url: 'http://localhost:51242/pais/inserir',
             method: 'post',
             data: {
                 nome: $nome
             },
             success: function (data) {
-                $('#modal-categoria').modal('hide');
+                $('#modal-pais').modal('hide');
                 limparCampos();
-                $tabelaCategoria.ajax.reload();
+                $tabelaPais.ajax.reload();
                 bootbox.dialog({
-                    message: "Categoria cadastrada com sucesso!"
+                    message: "País cadastrado com sucesso!"
 
                 });
                 window.setTimeout(function () {
@@ -92,7 +92,7 @@
             },
             error: function (err) {
                 bootbox.dialog({
-                    message: "Não foi possível cadastrar a categoria!"
+                    message: "Não foi possível cadastrar o país!"
 
                 });
                 window.setTimeout(function () {
@@ -102,11 +102,11 @@
         });
     }
 
-    $("#categoria-tabela").on("click", ".botao-apagar", function () {
+    $("#pais-tabela").on("click", ".botao-apagar", function () {
         $idApagar = $(this).data("id");
         bootbox.confirm({
             title: 'Aviso',
-            message: "Deseja realmente remover a categoria?",
+            message: "Deseja realmente remover o país?",
             className: 'bounceInDown animated',
             buttons: {
                 confirm: {
@@ -121,12 +121,12 @@
             callback: function (result) {
                 if (result)
                     $.ajax({
-                        url: "http://localhost:51242/Categoria/Apagar?id=" + $idApagar,
+                        url: "http://localhost:51242/pais/Apagar?id=" + $idApagar,
                         method: "get",
                         success: function (data) {
-                            $tabelaCategoria.ajax.reload();
+                            $tabelaPais.ajax.reload();
                             bootbox.dialog({
-                                message: "Categoria removida com sucesso!"
+                                message: "País removido com sucesso!"
 
                             });
                             window.setTimeout(function () {
@@ -136,7 +136,7 @@
                         },
                         error: function (err) {
                             bootbox.dialog({
-                                message: "Não foi possível remover a categoria!"
+                                message: "Não foi possível remover o país!"
 
                             });
                             window.setTimeout(function () {
@@ -151,15 +151,15 @@
     $('.table').on('click', '.botao-editar', function () {
         $idAlterar = $(this).data('id')
         $.ajax({
-            url: 'http://localhost:51242/Categoria/obterpeloid?id=' + $idAlterar,
+            url: 'http://localhost:51242/pais/obterpeloid?id=' + $idAlterar,
             method: 'get',
             success: function (data) {
-                $('#categoria-campo-nome-editar').val(data.Nome);
-                $('#modal-categoria-editar').modal('show');
+                $('#pais-campo-nome').val(data.Nome);
+                $('#modal-pais').modal('show');
             },
             error: function (err) {
                 bootbox.dialog({
-                    message: "Não foi possível carregar a categoria!"
+                    message: "Não foi possível carregar o país!"
 
                 });
                 window.setTimeout(function () {
@@ -170,7 +170,7 @@
     });
 
     function limparCampos() {
-        $('#categoria-campo-nome').val("");
+        $('#pais-campo-nome').val("");
         $idAlterar = -1;
     }
 });

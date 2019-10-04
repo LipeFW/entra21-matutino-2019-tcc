@@ -7,7 +7,7 @@
         columns: [
             { "data": "Id" },
             { "data": "Nome" },
-            { "data": "NomeCompleto" },
+            { "data": "NomeESobrenome" },
             { "data": "Senha" },
             {
                 render: function (data, type, row) {

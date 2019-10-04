@@ -17,7 +17,6 @@
         $("#itemRota").removeClass("disabled");
         $("#itemVendedor").removeClass("disabled");
         $("#itemVeiculo").removeClass("disabled");
-        $("#navbar-mobile").addClass("primary");
     }
 
 });
