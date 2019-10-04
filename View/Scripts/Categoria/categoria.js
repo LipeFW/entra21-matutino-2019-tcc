@@ -2,7 +2,7 @@
     $idAlterar = -1;
 
     $tabelaCategoria = $('#categoria-tabela').DataTable({
-        ajax: 'http://localhost:51242/Categoria/obtertodos',
+        ajax: '/Categoria/obtertodos',
         serverSide: true,
         columns: [
             { 'data': 'Id' },
@@ -40,7 +40,7 @@
 
     ////function alterar($nome) {
     //    $.ajax({
-    //        url: 'http://localhost:51242/Categoria/editar',
+    //        url: '/Categoria/editar',
     //        method: 'post',
     //        data: {
     //            id: $idAlterar,
@@ -73,7 +73,7 @@
 
     function inserir($nome) {
         $.ajax({
-            url: 'http://localhost:51242/Categoria/inserir',
+            url: '/Categoria/inserir',
             method: 'post',
             data: {
                 nome: $nome
@@ -121,7 +121,7 @@
             callback: function (result) {
                 if (result)
                     $.ajax({
-                        url: "http://localhost:51242/Categoria/Apagar?id=" + $idApagar,
+                        url: "/Categoria/Apagar?id=" + $idApagar,
                         method: "get",
                         success: function (data) {
                             $tabelaCategoria.ajax.reload();
@@ -151,7 +151,7 @@
     $('.table').on('click', '.botao-editar', function () {
         $idAlterar = $(this).data('id')
         $.ajax({
-            url: 'http://localhost:51242/Categoria/obterpeloid?id=' + $idAlterar,
+            url: '/Categoria/obterpeloid?id=' + $idAlterar,
             method: 'get',
             success: function (data) {
                 $('#categoria-campo-nome-editar').val(data.Nome);

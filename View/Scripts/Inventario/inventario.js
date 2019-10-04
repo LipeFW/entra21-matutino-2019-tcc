@@ -3,7 +3,7 @@
     $idInventario = 0;
     $tabelaProduto = null;
     $tabelaInventario = $('#inventario-tabela').DataTable({
-        ajax: 'http://localhost:51242/veiculo/obtertodos',
+        ajax: '/veiculo/obtertodos',
         serverSide: true,
         columns: [
             { 'data': 'NumeroCaminhao' },
@@ -36,7 +36,7 @@
 
     function alterar($numero_caminhao) {
         $.ajax({
-            url: 'http://localhost:51242/inventario/update',
+            url: '/inventario/update',
             method: 'post',
             data: {
                 id: $idAlterar,
@@ -56,7 +56,7 @@
 
     function inserir($numero_caminhao) {
         $.ajax({
-            url: 'http://localhost:51242/inventario/inserir',
+            url: '/inventario/inserir',
             method: 'post',
             data: {
                 numeroCaminhao: $numero_caminhao
@@ -77,7 +77,7 @@
 
             $tabelaProduto = $('#modal-inventario-tabela').DataTable({
                 ajax: {
-                    url: 'http://localhost:51242/produto/ObterTodosPeloIdInventario',
+                    url: '/produto/ObterTodosPeloIdInventario',
                     data: function (d) {
                         d.idInventario = $idInventario
                     },
@@ -122,7 +122,7 @@
             callback: function (result) {
                 if (result)
                     $.ajax({
-                        url: "http://localhost:51242/Marca/Apagar?id=" + $idApagar,
+                        url: "/Marca/Apagar?id=" + $idApagar,
                         method: "get",
                         success: function (data) {
                             $tabelaMarca.ajax.reload();
@@ -141,7 +141,7 @@
         $idAlterar = $(this).data('id');
 
         $.ajax({
-            url: "http://localhost:51242/inventario/obterpeloid?id=" + $idAlterar,
+            url: "/inventario/obterpeloid?id=" + $idAlterar,
             method: 'get',
             success: function (data) {
                 $('#inventario-campo-numerocaminhao').val(data.NumeroCaminhao);

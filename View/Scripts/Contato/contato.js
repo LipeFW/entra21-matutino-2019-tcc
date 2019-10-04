@@ -22,7 +22,7 @@
 
     function inserir($nome, $sobrenome, $telefone, $email, $titulo, $mensagem) {
         $.ajax({
-            url: 'http://localhost:51242/Contato/inserir',
+            url: '/Contato/inserir',
             method: 'post',
             data: {
                 nome: $nome,

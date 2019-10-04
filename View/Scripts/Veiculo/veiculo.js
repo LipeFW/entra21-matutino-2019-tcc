@@ -2,7 +2,7 @@
     $idAlterar = -1;
 
     $tabelaVeiculo = $('#veiculo-tabela').DataTable({
-        ajax: 'http://localhost:51242/veiculo/obtertodos',
+        ajax: '/veiculo/obtertodos',
         serverSide: true,
         columns: [
             { 'data': 'Id' },
@@ -35,7 +35,7 @@
 
         function alterar($marca, $modelo, $anoFabricacao, $numeroCaminhao, $placa) {
             $.ajax({
-                url: 'http://localhost:51242/veiculo/update',
+                url: '/veiculo/update',
                 method: 'post',
                 data: {
                     id: $idAlterar,
@@ -59,7 +59,7 @@
 
         function inserir($marca, $modelo, $anoFabricacao, $numeroCaminhao, $placa) {
             $.ajax({
-                url: 'http://localhost:51242/veiculo/inserir',
+                url: '/veiculo/inserir',
                 method: 'post',
                 data: {
                     idMarca: $marca,
@@ -100,7 +100,7 @@
             callback: function (result) {
                 if (result) {
                     $.ajax({
-                        url: 'http://localhost:51242/veiculo/apagar?id=' + $idApagar,
+                        url: '/veiculo/apagar?id=' + $idApagar,
                         method: 'get',
                         success: function (data) {
                             $tabelaVeiculo.ajax.reload();
@@ -119,7 +119,7 @@
         $idAlterar = $(this).data("id");
 
         $.ajax({
-            url: "http://localhost:51242/Veiculo/obterpeloid?id=" + $idAlterar,
+            url: "/Veiculo/obterpeloid?id=" + $idAlterar,
             method: "get",
             success: function (data) {
                 $("#veiculo-campo-marca").val(data.Marca.Nome);

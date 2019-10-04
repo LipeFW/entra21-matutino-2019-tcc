@@ -2,7 +2,7 @@
     $idAlterar = -1;
 
     $tabelaVenda = $('#venda-tabela').DataTable({
-        ajax: "http://localhost:51242/Venda/obtertodos",
+        ajax: "/Venda/obtertodos",
         serverSide: true,
         columns: [
             { "data": "Id" },
@@ -40,7 +40,7 @@
 
         function alterar($vendedor, $cliente) {
             $.ajax({
-                url: "http://localhost:51242/Venda/update",
+                url: "/Venda/update",
                 method: "post",
                 data: {
                     id: $idAlterar,
@@ -70,7 +70,7 @@
 
         function inserir($vendedor, $cliente) {
             $.ajax({
-                url: "http://localhost:51242/Venda/Inserir",
+                url: "/Venda/Inserir",
                 method: "post",
                 data: {
                 idVendedor: $vendedor,
@@ -120,7 +120,7 @@
             callback: function (result) {
                 if (result)
                     $.ajax({
-                        url: "http://localhost:51242/Venda/Apagar?id=" + $idApagar,
+                        url: "/Venda/Apagar?id=" + $idApagar,
                         method: "get",
                         success: function (data) {
                             $tabelaVenda.ajax.reload();
@@ -151,7 +151,7 @@
         $idAlterar = $(this).data("id");
 
         $.ajax({
-            url: "http://localhost:51242/Venda/obterpeloid?id=" + $idAlterar,
+            url: "/Venda/obterpeloid?id=" + $idAlterar,
             method: "get",
             success: function (data) {
                 $vendedor = $("#venda-campo-vendedor").val(data.IdVendedor);

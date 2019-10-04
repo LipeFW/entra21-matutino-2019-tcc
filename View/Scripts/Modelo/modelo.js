@@ -2,7 +2,7 @@
     $idAlterar = -1;
 
     $tabelaModelo = $("#modelo-tabela").DataTable({
-        ajax: "http://localhost:51242/modelo/obtertodos",
+        ajax: "/modelo/obtertodos",
         serverSide: true,
         columns: [
             { "data": "Id" },
@@ -38,7 +38,7 @@
 
         function alterar($nome, $marca) {
             $.ajax({
-                url: "http://localhost:51242/modelo/update",
+                url: "/modelo/update",
                 method: 'post',
                 data: {
                     id: $idAlterar,
@@ -70,7 +70,7 @@
 
         function inserir($nome, $marca) {
             $.ajax({
-                url: "http://localhost:51242/modelo/inserir",
+                url: "/modelo/inserir",
                 method: "post",
                 data: {
                     nome: $nome,
@@ -118,7 +118,7 @@
             callback: function (result) {
                 if (result)
                     $.ajax({
-                        url: "http://localhost:51242/modelo/Apagar?id=" + $idApagar,
+                        url: "/modelo/Apagar?id=" + $idApagar,
                         method: "get",
                         success: function (data) {
                             $tabelaModelo.ajax.reload();
@@ -149,7 +149,7 @@
         $idAlterar = $(this).data("id");
 
         $.ajax({
-            url: "http://localhost:51242/modelo/obterpeloid?id=" + $idAlterar,
+            url: "/modelo/obterpeloid?id=" + $idAlterar,
             method: "get",
             success: function (data) {
                 $("#modelo-campo-nome").val(data.Nome);
