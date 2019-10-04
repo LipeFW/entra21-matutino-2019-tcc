@@ -2,7 +2,7 @@
     $idAlterar = -1;
 
     $tabelaPais = $('#pais-tabela').DataTable({
-        ajax: 'http://localhost:51242/pais/obtertodos',
+        ajax: '/pais/obtertodos',
         serverSide: true,
         columns: [
             { 'data': 'Id' },
@@ -40,7 +40,7 @@
 
     function alterar($nome) {
         $.ajax({
-            url: 'http://localhost:51242/pais/editar',
+            url: '/pais/editar',
             method: 'post',
             data: {
                 id: $idAlterar,
@@ -73,7 +73,7 @@
 
     function inserir($nome) {
         $.ajax({
-            url: 'http://localhost:51242/pais/inserir',
+            url: '/pais/inserir',
             method: 'post',
             data: {
                 nome: $nome
@@ -121,7 +121,7 @@
             callback: function (result) {
                 if (result)
                     $.ajax({
-                        url: "http://localhost:51242/pais/Apagar?id=" + $idApagar,
+                        url: "/pais/Apagar?id=" + $idApagar,
                         method: "get",
                         success: function (data) {
                             $tabelaPais.ajax.reload();
@@ -151,7 +151,7 @@
     $('.table').on('click', '.botao-editar', function () {
         $idAlterar = $(this).data('id')
         $.ajax({
-            url: 'http://localhost:51242/pais/obterpeloid?id=' + $idAlterar,
+            url: '/pais/obterpeloid?id=' + $idAlterar,
             method: 'get',
             success: function (data) {
                 $('#pais-campo-nome').val(data.Nome);

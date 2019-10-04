@@ -2,7 +2,7 @@
     $idAlterar = -1;
 
     $tabelaProduto = $("#produto-tabela").DataTable({
-        ajax: "http://localhost:51242/Produto/obtertodos",
+        ajax: "/Produto/obtertodos",
         serverSide: true,
         columns: [
             { "data": "Id" },
@@ -41,7 +41,7 @@
 
         function alterar($nome, $categoria, $valor) {
             $.ajax({
-                url: "http://localhost:51242/Produto/update",
+                url: "/Produto/update",
                 method: 'post',
                 data: {
                     id: $idAlterar,
@@ -52,6 +52,7 @@
                 success: function (data) {
                     $("#modal-produto").modal("hide");
                     $tabelaProduto.ajax.reload();
+                    limparCampos();
                     bootbox.dialog({
                         message: "Produto alterado com sucesso!"
 
@@ -77,12 +78,12 @@
 
         function inserir($nome, $categoria, $valor) {
             $.ajax({
-                url: "http://localhost:51242/Produto/Inserir",
+                url: "/Produto/Inserir",
                 method: "post",
                 data: {
                     nome: $nome,
                     idCategoria: $categoria,
-                    valorUnitario: $valor
+                    valor: $valor
                 },
                 success: function (data) {
                     $("#modal-produto").modal('hide');
@@ -126,7 +127,7 @@
             callback: function (result) {
                 if (result)
                     $.ajax({
-                        url: "http://localhost:51242/Produto/Apagar?id=" + $idApagar,
+                        url: "/Produto/Apagar?id=" + $idApagar,
                         method: "get",
                         success: function (data) {
                             $tabelaProduto.ajax.reload();
@@ -157,7 +158,7 @@
         $idAlterar = $(this).data("id");
 
         $.ajax({
-            url: "http://localhost:51242/Produto/obterpeloid?id=" + $idAlterar,
+            url: "/Produto/obterpeloid?id=" + $idAlterar,
             method: "get",
             success: function (data) {
                 $("#produto-campo-nome").val(data.Nome);

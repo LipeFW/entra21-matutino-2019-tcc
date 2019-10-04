@@ -62,10 +62,26 @@
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.4.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.6.0\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.3\lib\netstandard2.0\System.Memory.dll</HintPath>
+    </Reference>
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.6.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
@@ -111,10 +127,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\Database.mdf" />
-    <Content Include="App_Data\Database_log.ldf">
-      <DependentUpon>Database.mdf</DependentUpon>
-    </Content>
     <Content Include="Content\css\Animate.css" />
     <Content Include="Content\css\outros.css" />
     <Content Include="Content\css\select2.css" />
@@ -202,11 +214,8 @@
     <Content Include="Content\theme\global_assets\images\logo_light.png" />
     <Content Include="Content\theme\global_assets\images\pie-chart.png" />
     <Content Include="Content\theme\global_assets\images\placeholders\cover.jpg" />
-    <Content Include="Content\theme\global_assets\images\placeholders\download.jpg" />
-    <Content Include="Content\theme\global_assets\images\placeholders\ellen.png" />
     <Content Include="Content\theme\global_assets\images\placeholders\placeholder.jpg" />
     <Content Include="Content\theme\global_assets\images\placeholders\user.png" />
-    <Content Include="Content\theme\global_assets\images\placeholders\índice.png" />
     <Content Include="Content\theme\global_assets\images\pnotify\danger.png" />
     <Content Include="Content\theme\global_assets\images\pnotify\default.png" />
     <Content Include="Content\theme\global_assets\images\pnotify\info.png" />
@@ -2020,8 +2029,6 @@
     <Content Include="Scripts\bootbox.min.js" />
     <Content Include="Scripts\Categoria\categoria-editar.js" />
     <Content Include="Scripts\Categoria\categoria.js" />
-    <Content Include="Scripts\Cidade\cidade.js" />
-    <Content Include="Scripts\Cliente\cliente-editar.js" />
     <Content Include="Scripts\Cliente\cliente.js" />
     <Content Include="Content\login\font\DreamMMA.ttf" />
     <Content Include="Content\theme\global_assets\css\icons\fontawesome\fonts\fa-brands-400.eot" />
@@ -2622,6 +2629,8 @@
     <Content Include="Scripts\esm\popper.js.map" />
     <Content Include="Scripts\esm\popper-utils.min.js.map" />
     <Content Include="Scripts\esm\popper-utils.js.map" />
+    <None Include="Properties\PublishProfiles\mcss-system - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\mcss-system - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\Estado\estado.js" />
     <Content Include="Scripts\i18n\af.js" />
@@ -2693,7 +2702,6 @@
     <Content Include="Scripts\Mascaras\jquery.mask.min.js" />
     <Content Include="Scripts\Mascaras\Mask.js" />
     <Content Include="Scripts\Modelo\modelo.js" />
-    <Content Include="Scripts\País\pais.js" />
     <Content Include="Scripts\Produto\produto.js" />
     <Content Include="Scripts\Rota\rota.js" />
     <Content Include="Scripts\select2.js" />
@@ -2783,13 +2791,6 @@
     <Content Include="Scripts\umd\popper.js.map" />
     <Content Include="Scripts\umd\popper-utils.min.js.map" />
     <Content Include="Scripts\umd\popper-utils.js.map" />
-    <Content Include="Views\Cliente\Cadastro.cshtml" />
-    <Content Include="Views\Categoria\Cadastro.cshtml" />
-    <Content Include="Views\Produto\Cadastro.cshtml" />
-    <Content Include="Views\Rota\Cadastro.cshtml" />
-    <Content Include="Views\Usuario\Cadastro.cshtml" />
-    <Content Include="Views\Veiculo\Cadastro.cshtml" />
-    <Content Include="Views\Vendedor\Cadastro.cshtml" />
     <Content Include="Views\Usuario\Config.cshtml" />
     <Content Include="Views\Usuario\Perfil.cshtml" />
     <Content Include="Views\Usuario\UsuarioModal.cshtml" />
@@ -2835,9 +2836,12 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Data\" />
     <Folder Include="Content\fonts\" />
     <Folder Include="Models\" />
+    <Folder Include="Scripts\Cidade\" />
     <Folder Include="Scripts\Login\" />
+    <Folder Include="Scripts\País\" />
     <Folder Include="Views\Base\" />
     <Folder Include="Views\Filtro\" />
     <Folder Include="Views\NotaFiscal\" />

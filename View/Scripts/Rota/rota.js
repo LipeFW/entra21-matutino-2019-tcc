@@ -2,7 +2,7 @@
     $idAlterar = -1;
 
     $tabelaRota = $('#rota-tabela').DataTable({
-        ajax: 'http://localhost:51242/Rota/obtertodos',
+        ajax: '/Rota/obtertodos',
         serverSide: true,
         columns: [
             { 'data': 'Id' },
@@ -40,7 +40,7 @@
 
     function alterar($nome, $idVendedor) {
         $.ajax({
-            url: 'http://localhost:51242/Rota/update',
+            url: '/Rota/update',
             method: 'post',
             data: {
                 id: $idAlterar,
@@ -73,7 +73,7 @@
 
     function inserir($nome, $idVendedor) {
         $.ajax({
-            url: 'http://localhost:51242/Rota/inserir',
+            url: '/Rota/inserir',
             method: 'post',
             data: {
                 nome: $nome,
@@ -121,7 +121,7 @@
             callback: function (result) {
                 if (result)
                     $.ajax({
-                        url: "http://localhost:51242/Rota/Apagar?id=" + $idApagar,
+                        url: "/Rota/Apagar?id=" + $idApagar,
                         method: "get",
                         success: function (data) {
                             $tabelaRota.ajax.reload();
@@ -152,7 +152,7 @@
         $idAlterar = $(this).data('id');
 
         $.ajax({
-            url: 'http://localhost:51242/Rota/obterpeloid?id=' + $idAlterar,
+            url: '/Rota/obterpeloid?id=' + $idAlterar,
             method: 'get',
             success: function (data) {
                 $('#rota-campo-nome').val(data.Nome);

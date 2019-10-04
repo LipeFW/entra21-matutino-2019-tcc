@@ -708,4 +708,11 @@ It never ends, and every achievement arises more motivation to not give up and a
     <value>Select a Country</value>
     <comment>checked</comment>
   </data>
+  <data name="Funcionario" xml:space="preserve">
+    <value>Employee</value>
+    <comment>checked</comment>
+  </data>
+  <data name="AdicionarProdutos" xml:space="preserve">
+    <value>Add Products</value>
+  </data>
 </root>
