@@ -16,9 +16,9 @@
                                 selected="selected">
                             @View.Resources.Resource.SelecioneumPais
                         </option>
-                        @foreach (Model.Cidade cidade in ViewBag.Cidades)
+                        @foreach (Model.Pais pais in ViewBag.Paises)
                         {
-                            <option value="@cidade.Id">@cidade.Nome</option>
+                            <option value="@pais.Id">@pais.Nome</option>
                         }
                     </select>
                 </div>
