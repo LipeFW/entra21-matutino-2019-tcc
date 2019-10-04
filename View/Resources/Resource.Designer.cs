@@ -19,7 +19,7 @@ namespace View.Resources {
     // através de uma ferramenta como ResGen ou Visual Studio.
     // Para adicionar ou remover um associado, edite o arquivo .ResX e execute ResGen novamente
     // com a opção /str, ou recrie o projeto do VS.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class Resource {
@@ -162,9 +162,27 @@ namespace View.Resources {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a string.
         /// </summary>
+        public static string CadastrodeCidade {
+            get {
+                return ResourceManager.GetString("CadastrodeCidade", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
         public static string CadastrodeCliente {
             get {
                 return ResourceManager.GetString("CadastrodeCliente", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
+        public static string CadastrodeEstado {
+            get {
+                return ResourceManager.GetString("CadastrodeEstado", resourceCulture);
             }
         }
         
@@ -201,6 +219,15 @@ namespace View.Resources {
         public static string CadastrodeModelo {
             get {
                 return ResourceManager.GetString("CadastrodeModelo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
+        public static string CadastrodePais {
+            get {
+                return ResourceManager.GetString("CadastrodePais", resourceCulture);
             }
         }
         
@@ -792,6 +819,15 @@ namespace View.Resources {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a string.
         /// </summary>
+        public static string Localizacao {
+            get {
+                return ResourceManager.GetString("Localizacao", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
         public static string Logradouro {
             get {
                 return ResourceManager.GetString("Logradouro", resourceCulture);
@@ -936,6 +972,15 @@ namespace View.Resources {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a string.
         /// </summary>
+        public static string NovaCidade {
+            get {
+                return ResourceManager.GetString("NovaCidade", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
         public static string NovaMarca {
             get {
                 return ResourceManager.GetString("NovaMarca", resourceCulture);
@@ -981,9 +1026,27 @@ namespace View.Resources {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a string.
         /// </summary>
+        public static string NovoEstado {
+            get {
+                return ResourceManager.GetString("NovoEstado", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
         public static string NovoModelo {
             get {
                 return ResourceManager.GetString("NovoModelo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a string.
+        /// </summary>
+        public static string NovoPais {
+            get {
+                return ResourceManager.GetString("NovoPais", resourceCulture);
             }
         }
         
@@ -1251,9 +1314,9 @@ namespace View.Resources {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a string.
         /// </summary>
-        public static string Selecioneumacidade {
+        public static string SelecioneumaCidade {
             get {
-                return ResourceManager.GetString("Selecioneumacidade", resourceCulture);
+                return ResourceManager.GetString("SelecioneumaCidade", resourceCulture);
             }
         }
         
@@ -1278,9 +1341,9 @@ namespace View.Resources {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a string.
         /// </summary>
-        public static string Selecioneumestado {
+        public static string SelecioneumEstado {
             get {
-                return ResourceManager.GetString("Selecioneumestado", resourceCulture);
+                return ResourceManager.GetString("SelecioneumEstado", resourceCulture);
             }
         }
         
@@ -1296,9 +1359,9 @@ namespace View.Resources {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a string.
         /// </summary>
-        public static string Selecioneumpaís {
+        public static string SelecioneumPais {
             get {
-                return ResourceManager.GetString("Selecioneumpaís", resourceCulture);
+                return ResourceManager.GetString("SelecioneumPais", resourceCulture);
             }
         }
         

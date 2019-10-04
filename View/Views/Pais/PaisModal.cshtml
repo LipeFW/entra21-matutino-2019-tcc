@@ -1,0 +1,20 @@
+﻿<div class="modal bounceInDown animated" tabindex="-1" role="dialog" id="modal-pais">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">@View.Resources.Resource.CadastrodePais</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="form-group">
+                    <label for="pais-campo-nome">@View.Resources.Resource.Nome <span class="text-danger">*</span></label>
+                    <input type="text" id="pais-campo-nome" class="form-control" />
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="rubberBand animated btn btn-danger" data-dismiss="modal"><i class="fas fa-times"></i> @View.Resources.Resource.Cancelar</button>
+                <button id="pais-botao-salvar" type="button" class="rubberBand animated btn btn-success"><i class="fa fa-check"></i>  @View.Resources.Resource.Salvar</button>
+            </div>
+        </div>
+    </div>
+</div>

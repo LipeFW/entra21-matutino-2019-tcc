@@ -361,17 +361,17 @@
     <value>string</value>
     <comment>pt-BR_en-US_es-ES</comment>
   </data>
-  <data name="Selecioneumacidade" xml:space="preserve">
+  <data name="SelecioneumaCidade" xml:space="preserve">
     <value>string</value>
   </data>
   <data name="Selecioneumamarca" xml:space="preserve">
     <value>string</value>
     <comment>pt-BR_en-US_es-ES</comment>
   </data>
-  <data name="Selecioneumestado" xml:space="preserve">
+  <data name="SelecioneumEstado" xml:space="preserve">
     <value>string</value>
   </data>
-  <data name="Selecioneumpaís" xml:space="preserve">
+  <data name="SelecioneumPais" xml:space="preserve">
     <value>string</value>
     <comment>pt-BR_en-US_es-ES</comment>
   </data>
@@ -675,6 +675,30 @@
     <comment>pt-BR_en-US_es-ES</comment>
   </data>
   <data name="AdicionarProdutos" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Entrar" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="Localizacao" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="CadastrodeCidade" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="CadastrodeEstado" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="CadastrodePais" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="NovaCidade" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="NovoEstado" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="NovoPais" xml:space="preserve">
     <value>string</value>
   </data>
 </root>

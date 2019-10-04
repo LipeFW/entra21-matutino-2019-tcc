@@ -659,4 +659,23 @@ isso nunca acaba,e a cada realização surge mais motivação para não desistir
   <data name="EditarVendedor" xml:space="preserve">
     <value>Edição de Vendedor</value>
   </data>
+  <data name="Entrar" xml:space="preserve">
+    <value>Entrar</value>
+  </data>
+  <data name="Localizacao" xml:space="preserve">
+    <value>Localização</value>
+    <comment>checked</comment>
+  </data>
+  <data name="NovaCidade" xml:space="preserve">
+    <value>Nova Cidade</value>
+    <comment>checked</comment>
+  </data>
+  <data name="NovoEstado" xml:space="preserve">
+    <value>Novo Estado</value>
+    <comment>checked</comment>
+  </data>
+  <data name="NovoPais" xml:space="preserve">
+    <value>Novo País</value>
+    <comment>checked</comment>
+  </data>
 </root>

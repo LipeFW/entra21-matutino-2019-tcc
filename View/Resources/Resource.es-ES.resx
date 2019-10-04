@@ -733,4 +733,20 @@ Nunca termina, y cada logro surge más motivación para no rendirse y siempre se
   <data name="EditarVendedor" xml:space="preserve">
     <value>Edición del Vendedor</value>
   </data>
+  <data name="Localizacao" xml:space="preserve">
+    <value>Ubicación</value>
+    <comment>checked</comment>
+  </data>
+  <data name="NovaCidade" xml:space="preserve">
+    <value>Nueva Ciudad</value>
+    <comment>checked</comment>
+  </data>
+  <data name="NovoEstado" xml:space="preserve">
+    <value>Nuevo Estado</value>
+    <comment>checked</comment>
+  </data>
+  <data name="NovoPais" xml:space="preserve">
+    <value>Nuevo Pais</value>
+    <comment>checked</comment>
+  </data>
 </root>

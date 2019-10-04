@@ -688,4 +688,20 @@ It never ends, and every achievement arises more motivation to not give up and a
   <data name="EditarVendedor" xml:space="preserve">
     <value>Salesman Edition</value>
   </data>
+  <data name="Localizacao" xml:space="preserve">
+    <value>Localization</value>
+    <comment>checked</comment>
+  </data>
+  <data name="NovaCidade" xml:space="preserve">
+    <value>New City</value>
+    <comment>checked</comment>
+  </data>
+  <data name="NovoEstado" xml:space="preserve">
+    <value>New State</value>
+    <comment>checked</comment>
+  </data>
+  <data name="NovoPais" xml:space="preserve">
+    <value>New Country</value>
+    <comment>checked</comment>
+  </data>
 </root>

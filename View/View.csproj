@@ -2815,6 +2815,12 @@
     <Content Include="Views\Cliente\EdicaoModalCliente.cshtml" />
     <Content Include="Views\Categoria\CategoriaModalEditar.cshtml" />
     <Content Include="Views\Inventario\ProdutoModal.cshtml" />
+    <Content Include="Views\Pais\Index.cshtml" />
+    <Content Include="Views\Estado\Index.cshtml" />
+    <Content Include="Views\Cidade\Index.cshtml" />
+    <Content Include="Views\Cidade\CidadeModal.cshtml" />
+    <Content Include="Views\Pais\PaisModal.cshtml" />
+    <Content Include="Views\Estado\EstadoModal.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
