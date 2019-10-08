@@ -262,15 +262,10 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\Database.mdf" />
-    <Content Include="App_Data\Database_log.ldf">
-      <DependentUpon>Database.mdf</DependentUpon>
-    </Content>
     <Content Include="Content\css\Animate.css" />
     <Content Include="Content\css\outros.css" />
     <Content Include="Content\css\select2.css" />
     <Content Include="Content\css\select2.min.css" />
-    <Content Include="Content\image\101226_blumenau_0026.jpg" />
     <Content Include="Content\image\82935108.jpg" />
     <Content Include="Content\image\fundinho.jpg" />
     <Content Include="Content\image\fundinho3.png" />
@@ -2771,9 +2766,11 @@
     <None Include="Properties\PublishProfiles\mcss-system - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\mcss-system - FTP1.pubxml" />
     <None Include="Properties\PublishProfiles\mcss-system - FTP2.pubxml" />
+    <None Include="Properties\PublishProfiles\mcss-system - FTP3.pubxml" />
     <None Include="Properties\PublishProfiles\mcss-system - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\mcss-system - Web Deploy1.pubxml" />
     <None Include="Properties\PublishProfiles\mcss-system - Web Deploy2.pubxml" />
+    <None Include="Properties\PublishProfiles\mcss-system - Web Deploy3.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\Estado\estado.js" />
     <Content Include="Scripts\i18n\af.js" />
@@ -2981,6 +2978,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Data\" />
     <Folder Include="Content\fonts\" />
     <Folder Include="Models\" />
     <Folder Include="Scripts\Cidade\" />
