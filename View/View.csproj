@@ -2769,7 +2769,11 @@
     <Content Include="Scripts\esm\popper-utils.min.js.map" />
     <Content Include="Scripts\esm\popper-utils.js.map" />
     <None Include="Properties\PublishProfiles\mcss-system - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\mcss-system - FTP1.pubxml" />
+    <None Include="Properties\PublishProfiles\mcss-system - FTP2.pubxml" />
     <None Include="Properties\PublishProfiles\mcss-system - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\mcss-system - Web Deploy1.pubxml" />
+    <None Include="Properties\PublishProfiles\mcss-system - Web Deploy2.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\Estado\estado.js" />
     <Content Include="Scripts\i18n\af.js" />
