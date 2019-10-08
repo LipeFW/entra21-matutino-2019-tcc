@@ -52,23 +52,23 @@
         });
     }
 
-    function inserir($numero_caminhao) {
-        $.ajax({
-            url: '/inventario/inserir',
-            method: 'post',
-            data: {
-                numeroCaminhao: $numero_caminhao
-            },
-            success: function (data) {
-                $('#modal-inventario').modal('hide');
-                limparCampos();
-                $tabelaInventario.ajax.reload();
-            },
-            error: function (err) {
-                bootbox.alert('Não foi possível inserir!');
-            }
-        });
-    }
+    //function inserir($numero_caminhao) {
+    //    $.ajax({
+    //        url: '/inventario/inserir',
+    //        method: 'post',
+    //        data: {
+    //            numeroCaminhao: $numero_caminhao
+    //        },
+    //        success: function (data) {
+    //            $('#modal-inventario').modal('hide');
+    //            limparCampos();
+    //            $tabelaInventario.ajax.reload();
+    //        },
+    //        error: function (err) {
+    //            bootbox.alert('Não foi possível inserir!');
+    //        }
+    //    });
+    //}
 
     $('#modal-inventario').on('show.bs.modal', function (e) {
         if ($tabelaProduto == null) {

@@ -715,4 +715,7 @@ It never ends, and every achievement arises more motivation to not give up and a
   <data name="AdicionarProdutos" xml:space="preserve">
     <value>Add Products</value>
   </data>
+  <data name="Administrador" xml:space="preserve">
+    <value>Administrator</value>
+  </data>
 </root>

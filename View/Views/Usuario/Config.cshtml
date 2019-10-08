@@ -10,53 +10,65 @@
     <legend>
         <span class="h3">@View.Resources.Resource.DadosPessoais</span>
     </legend>
-    <div class="form-group">
-        <label style="font-weight:bold" for="config-campo-nomecompleto">@View.Resources.Resource.Nome <span class="text-danger">*</span></label>
-        <input id="config-campo-nomecompleto" class="form-control border-dark" value="@ViewBag.Usuario.NomeCompleto" />
-    </div>
-    <div class="form-group">
-        <label style="font-weight:bold" for="config-campo-sobrenome">@View.Resources.Resource.Sobrenome <span class="text-danger">*</span></label>
-        <input id="config-campo-sobrenome" class="form-control border-dark" value="@ViewBag.Usuario.Sobrenome" />
-    </div>
-    <div class="form-group">
-        <label style="font-weight:bold" for="config-campo-nome">@View.Resources.Resource.Usuario <span class="text-danger">*</span></label>
-        <input id="config-campo-nome" class="form-control border-dark" value="@ViewBag.Usuario.Nome" readonly />
-    </div>
-    <div class="form-group">
-        <label style="font-weight:bold" for="config-campo-telefone">@View.Resources.Resource.Telefone <span class="text-danger">*</span></label>
-        <input id="config-campo-telefone" class="form-control border-dark" value="@ViewBag.Usuario.Telefone" />
-    </div>
-    <div class="form-group">
-        <label style="font-weight:bold" for="config-campo-cpf">@View.Resources.Resource.CPF <span class="text-danger">*</span></label>
-        <input id="config-campo-cpf" class="form-control border-dark" value="@ViewBag.Usuario.CPF" />
-    </div>
-    <div class="form-group">
-        <label style="font-weight:bold" for="config-campo-rg">@View.Resources.Resource.RG <span class="text-danger">*</span></label>
-        <input id="config-campo-rg" class="form-control border-dark" value="@ViewBag.Usuario.RG" />
-    </div>
-    <div class="form-group">
-        <label style="font-weight:bold" for="config-campo-cep">@View.Resources.Resource.CEP <span class="text-danger">*</span></label>
-        <input id="config-campo-cep" class="form-control border-dark" value="@ViewBag.Usuario.CEP" />
-    </div>
-    <div class="form-group">
-        <label style="font-weight:bold" for="config-campo-estado">@View.Resources.Resource.Estado <span class="text-danger">*</span></label>
-        <input id="config-campo-estado" class="form-control border-dark" value="@ViewBag.Usuario.Estado" />
-    </div>
-    <div class="form-group">
-        <label style="font-weight:bold" for="config-campo-cidade">@View.Resources.Resource.Cidade <span class="text-danger">*</span></label>
-        <input id="config-campo-cidade" class="form-control border-dark" value="@ViewBag.Usuario.Cidade" />
-    </div>
-    <div class="form-group">
-        <label style="font-weight:bold" for="config-campo-logradouro">@View.Resources.Resource.Logradouro <span class="text-danger">*</span></label>
-        <input id="config-campo-logradouro" class="form-control border-dark" value="@ViewBag.Usuario.Logradouro" />
-    </div>
-    <div class="form-group">
-        <label style="font-weight:bold" for="config-campo-logradouro">@View.Resources.Resource.NumeroCasa <span class="text-danger">*</span></label>
-        <input id="config-campo-numero" class="form-control border-dark" value="@ViewBag.Usuario.NumeroCasa" />
-    </div>
-    <div>
-        <button class="btn btn-primary float-right"><i class="fas fa-pencil-alt"></i> @View.Resources.Resource.AlterarDados</button>
-    </div>
+    <form method="post" action="updateinfo">
+
+        <div class="form-group">
+            <label style="font-weight:bold" for="config-campo-nomecompleto">@View.Resources.Resource.Nome <span class="text-danger">*</span></label>
+            <input id="config-campo-nomecompleto" class="form-control border-dark" value="@ViewBag.Usuario.NomeCompleto" />
+        </div>
+        <div class="form-group">
+            <label style="font-weight:bold" for="config-campo-sobrenome">@View.Resources.Resource.Sobrenome <span class="text-danger">*</span></label>
+            <input id="config-campo-sobrenome" class="form-control border-dark" value="@ViewBag.Usuario.Sobrenome" />
+        </div>
+        <div class="form-group">
+            <label style="font-weight:bold" for="config-campo-nome">@View.Resources.Resource.Usuario <span class="text-danger">*</span></label>
+            <input id="config-campo-nome" class="form-control border-dark" value="@ViewBag.Usuario.Nome" readonly />
+        </div>
+        <div class="form-group">
+            <label style="font-weight:bold" for="config-campo-telefone">@View.Resources.Resource.Telefone <span class="text-danger">*</span></label>
+            <input id="config-campo-telefone" class="form-control border-dark" value="@ViewBag.Usuario.Telefone" />
+        </div>
+        <div class="form-group">
+            <label style="font-weight:bold" for="config-campo-cpf">@View.Resources.Resource.CPF <span class="text-danger">*</span></label>
+            <input id="config-campo-cpf" class="form-control border-dark" value="@ViewBag.Usuario.CPF" />
+        </div>
+        <div class="form-group">
+            <label style="font-weight:bold" for="config-campo-rg">@View.Resources.Resource.RG <span class="text-danger">*</span></label>
+            <input id="config-campo-rg" class="form-control border-dark" value="@ViewBag.Usuario.RG" />
+        </div>
+        <div class="form-group">
+            <label style="font-weight:bold" for="config-campo-cep">@View.Resources.Resource.CEP <span class="text-danger">*</span></label>
+            <input id="config-campo-cep" class="form-control border-dark" value="@ViewBag.Usuario.CEP" />
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('input').keypress(function (e) {
+                    var code = null;
+                    code = (e.keyCode ? e.keyCode : e.which);
+                    return (code == 13) ? false : true;
+                });
+            });
+        </script>
+        <div class="form-group">
+            <label style="font-weight:bold" for="config-campo-estado">@View.Resources.Resource.Estado <span class="text-danger">*</span></label>
+            <input readonly id="config-campo-estado" class="form-control border-dark" value="@ViewBag.Usuario.Estado" />
+        </div>
+        <div class="form-group">
+            <label style="font-weight:bold" for="config-campo-cidade">@View.Resources.Resource.Cidade <span class="text-danger">*</span></label>
+            <input readonly id="config-campo-cidade" class="form-control border-dark" value="@ViewBag.Usuario.Cidade" />
+        </div>
+        <div class="form-group">
+            <label style="font-weight:bold" for="config-campo-logradouro">@View.Resources.Resource.Logradouro <span class="text-danger">*</span></label>
+            <input readonly id="config-campo-logradouro" class="form-control border-dark" value="@ViewBag.Usuario.Logradouro" />
+        </div>
+        <div class="form-group">
+            <label style="font-weight:bold" for="config-campo-logradouro">@View.Resources.Resource.NumeroCasa <span class="text-danger">*</span></label>
+            <input id="config-campo-numero" class="form-control border-dark" value="@ViewBag.Usuario.NumeroCasa" />
+        </div>
+        <div>
+            <button type="submit" class="btn btn-primary float-right"><i class="fas fa-pencil-alt"></i> @View.Resources.Resource.AlterarDados</button>
+        </div>
+    </form>
 </div>
 <div class="modal-body">
 

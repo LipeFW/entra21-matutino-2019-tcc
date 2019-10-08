@@ -51,6 +51,29 @@ namespace Repository.Repositories
 
         }
 
+        public bool AlterarInfo(Usuario usuario)
+        {
+            var usuarioOriginal = context.Usuarios.Where(x => x.Id == usuario.Id).FirstOrDefault();
+
+            if (usuarioOriginal == null)
+                return false;
+
+            usuarioOriginal.Nome = usuario.Nome;
+            usuarioOriginal.NomeCompleto = usuario.NomeCompleto;
+            usuarioOriginal.Sobrenome = usuario.Sobrenome;
+            usuarioOriginal.CEP = usuario.CEP;
+            usuarioOriginal.CPF = usuario.CPF;
+            usuarioOriginal.RG = usuario.RG;
+            usuarioOriginal.Telefone = usuario.Telefone;
+            usuarioOriginal.NumeroCasa = usuario.NumeroCasa;
+
+            int quantidadeAfetada = context.SaveChanges();
+
+            return quantidadeAfetada == 1;
+
+
+        }
+
         public bool Apagar(int id)
         {
             var usuario = context.Usuarios.FirstOrDefault(x => x.Id == id);

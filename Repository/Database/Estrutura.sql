@@ -145,7 +145,7 @@ valor DECIMAL(8,2),
 FOREIGN KEY (id_categoria) REFERENCES categorias(id),
 registro_ativo BIT);
 
-INSERT INTO produtos(id_categoria,nome, valor, registro_ativo)
+INSERT INTO produtos(id_categoria,nome, valor,  registro_ativo)
 VALUES 
 (1,'Toddynho', 1, 1),
 (1,'Xbox', 1, 1),
@@ -155,16 +155,17 @@ CREATE TABLE inventarios_produtos(
 	id INT PRIMARY KEY IDENTITY(1,1),
 	id_produto INT,
 	id_inventario INT,
+	quantidade DECIMAL(8,2),
 	FOREIGN KEY (id_produto) REFERENCES produtos(id),
 	FOREIGN KEY (id_inventario) REFERENCES inventarios(id),
 	registro_ativo BIT
 );
 
-INSERT INTO inventarios_produtos(id_produto, id_inventario, registro_ativo)
-VALUES	(1, 1, 1),
-		(2, 1, 1),
-		(2, 2, 1),
-		(3, 1, 1);
+INSERT INTO inventarios_produtos(id_produto, id_inventario,quantidade, registro_ativo)
+VALUES	(1, 1,1, 1),
+		(2, 1,2, 1),
+		(2, 2,3, 1),
+		(3, 1,4, 1);
 
 
 

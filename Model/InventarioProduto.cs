@@ -26,6 +26,9 @@ namespace Model
         [ForeignKey("IdProduto")]
         public Produto Produto { get; set; }
 
+        [Column("quantidade")]
+        public decimal Quantidade { get; set; }
+
         [Column("registro_ativo")]
         public bool RegistroAtivo { get; set; }
 

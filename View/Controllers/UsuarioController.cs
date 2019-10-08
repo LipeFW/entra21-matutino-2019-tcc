@@ -107,6 +107,19 @@ namespace View.Controllers
             return RedirectToAction("Config");
         }
 
+        [HttpPost, Route("updateinfo")]
+        public ActionResult UpdateInfo(Usuario usuario)
+        {
+            var alterou = repository.AlterarInfo(usuario);
+
+            if ((usuario.Nome == null) || (usuario.Sobrenome == null) || (usuario.CEP == null) || (usuario.NomeCompleto == null) || (usuario.NumeroCasa <0) || (usuario.CPF == null) || (usuario.RG == null))
+            {
+                return null;
+            }
+
+            return RedirectToAction("Config");
+        }
+
         [HttpGet, Route("obterpeloid")]
         public JsonResult ObterPeloId(int id)
         {

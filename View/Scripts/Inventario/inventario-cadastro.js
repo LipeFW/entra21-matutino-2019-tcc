@@ -62,7 +62,7 @@
         }
     });
 
-    $('#veiculo-tabela').on('click', '.botao-apagar', function () {
+    $('#modal-inventario-tabela').on('click', '.botao-apagar', function () {
         $idApagar = $(this).data('id');
 
         bootbox.confirm({
@@ -81,14 +81,14 @@
             callback: function (result) {
                 if (result) {
                     $.ajax({
-                        url: '/veiculo/apagar?id=' + $idApagar,
+                        url: '/inventarioproduto/apagar?id=' + $idApagar,
                         method: 'get',
                         success: function (data) {
                             $tabelaVeiculo.ajax.reload();
-                            bootbox.alert("Veículo removido com sucesso!");
+                            bootbox.alert("Produto removido com sucesso!");
                         },
                         error: function (err) {
-                            bootbox.alert('Não foi possivel remover o veículo!');
+                            bootbox.alert('Não foi possivel remover o produto!');
                         }
                     });
                 }

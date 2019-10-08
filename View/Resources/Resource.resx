@@ -704,4 +704,7 @@
   <data name="Funcionario" xml:space="preserve">
     <value>string</value>
   </data>
+  <data name="Administrador" xml:space="preserve">
+    <value>string</value>
+  </data>
 </root>

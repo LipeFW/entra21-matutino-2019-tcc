@@ -689,4 +689,7 @@ isso nunca acaba,e a cada realização surge mais motivação para não desistir
   <data name="AdicionarProdutos" xml:space="preserve">
     <value>Adicionar Produtos</value>
   </data>
+  <data name="Administrador" xml:space="preserve">
+    <value>Administrador</value>
+  </data>
 </root>
