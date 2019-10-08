@@ -707,4 +707,7 @@
   <data name="Administrador" xml:space="preserve">
     <value>string</value>
   </data>
+  <data name="EscolherArquivo" xml:space="preserve">
+    <value>string</value>
+  </data>
 </root>

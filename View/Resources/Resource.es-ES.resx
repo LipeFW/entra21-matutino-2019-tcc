@@ -763,4 +763,8 @@ Nunca termina, y cada logro surge más motivación para no rendirse y siempre se
   <data name="Administrador" xml:space="preserve">
     <value>Administrador</value>
   </data>
+  <data name="EscolherArquivo" xml:space="preserve">
+    <value>Elegir archivo</value>
+    <comment>checked</comment>
+  </data>
 </root>
