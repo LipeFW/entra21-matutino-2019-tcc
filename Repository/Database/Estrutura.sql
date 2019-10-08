@@ -1,4 +1,5 @@
-﻿DROP TABLE IF EXISTS rotas, vendas_produtos, vendas, inventarios_produtos, produtos, clientes, vendedores, inventarios, veiculos, contatos, modelos, marcas, categorias, usuarios;
+﻿
+DROP TABLE IF EXISTS rotas, vendas_produtos, vendas, inventarios_produtos, produtos, clientes, vendedores, inventarios, veiculos, contatos, modelos, marcas, categorias, usuarios;
 
 CREATE TABLE usuarios( 
 id INT PRIMARY KEY IDENTITY(1,1),
