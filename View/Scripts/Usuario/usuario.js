@@ -27,7 +27,7 @@
             bootbox.dialog({
                 message: "Preencha corretamente os campos!"
             
-        });
+            });
             window.setTimeout(function () {
                 bootbox.hideAll();
             }, 1500);
@@ -59,7 +59,6 @@
                     $tabelaUsuario.ajax.reload();
                     bootbox.dialog({
                         message: "Usuário alterado com sucesso!"
-
                     });
                     window.setTimeout(function () {
                         bootbox.hideAll();
@@ -98,7 +97,6 @@
                 error: function (err) {
                     bootbox.dialog({
                         message: "Não foi possível cadastrar o usuário!"
-
                     });
                     window.setTimeout(function () {
                         bootbox.hideAll();

@@ -38,53 +38,52 @@
         }
 
         if ($idAlterar == -1) {
-            inserir($nome, $telefone, $cnpj,  $cep, $vendedor);
+            inserir($nome.trim(), $telefone, $cnpj, $cep, $vendedor);
         }
 
         else {
-            alterar($nome, $telefone, $cnpj,  $cep, $vendedor);
+            alterar($nome.trim(), $telefone, $cnpj, $cep, $vendedor);
+        }
+
+        function alterar($nome, $telefone, $cnpj, $cep, $vendedor) {
+            $.ajax({
+                url: '/cliente/update',
+                method: 'post',
+                data: {
+                    id: $idAlterar,
+                    nome: $nome,
+                    telefone: $telefone,
+                    cnpj: $cnpj,
+                    cep: $cep,
+                    idVendedor: $vendedor
+                },
+                success: function (data) {
+                    $("#modal-cliente").modal("hide");
+                    limparCampos();
+                    $idAlterar = -1;
+                    $tabelaCliente.ajax.reload();
+                    bootbox.dialog({
+                        message: "Cliente alterado com sucesso!"
+                    });
+                    window.setTimeout(function () {
+                        bootbox.hideAll();
+                    }, 1500);
+                },
+                error: function (err) {
+                    limparCampos();
+                    $idAlterar = -1;
+                    bootbox.dialog({
+                        message: "Não foi possível alterar o cliente!"
+                    });
+                    window.setTimeout(function () {
+                        bootbox.hideAll();
+                    }, 1500);
+                }
+            });
         }
     });
 
-    function alterar($nome, $telefone, $cnpj,  $cep, $vendedor) {
-        $.ajax({
-            url: '/cliente/editar',
-            method: 'post',
-            data: {
-                id: $idAlterar,
-                nome: $nome,
-                telefone: $telefone,
-                cnpj: $cnpj,
-                cep: $cep,
-                idVendedor: $vendedor
-            },
-            success: function (data) {
-                $("#modal-usuario").modal("hide");
-                limparCampos();
-                $idAlterar = -1;
-                $tabelaUsuario.ajax.reload();
-                bootbox.dialog({
-                    message: "Cliente alterado com sucesso!"
-
-                });
-                window.setTimeout(function () {
-                    bootbox.hideAll();
-                }, 1500);
-            },
-            error: function (err) {
-                limparCampos();
-                $idAlterar = -1;
-                bootbox.dialog({
-                    message: "Não foi possível alterar o cliente!"
-                });
-                window.setTimeout(function () {
-                    bootbox.hideAll();
-                }, 1500);
-            },
-        })
-    }
-
-    function inserir($nome, $telefone, $cnpj,  $cep, $vendedor) {
+    function inserir($nome, $telefone, $cnpj, $cep, $vendedor) {
         $.ajax({
             url: '/cliente/inserir',
             method: 'post',
@@ -98,6 +97,7 @@
             success: function (data) {
                 $('#modal-cliente').modal('hide');
                 limparCampos();
+                $tabelaCliente.ajax.reload();
                 bootbox.dialog({
                     message: "Cliente cadastrado com sucesso!"
 
@@ -105,12 +105,10 @@
                 window.setTimeout(function () {
                     bootbox.hideAll();
                 }, 1500);
-                $tabelaCliente.ajax.reload();
             },
             error: function (err) {
                 bootbox.dialog({
                     message: "Não foi possível cadastrar o cliente!"
-
                 });
                 window.setTimeout(function () {
                     bootbox.hideAll();
@@ -192,7 +190,7 @@
 
     function limparCampos() {
         $('#cliente-campo-nome').val("");
-        $('#cliente-campo-telefone').val("");   
+        $('#cliente-campo-telefone').val("");
         $('#cliente-campo-cnpj').val("");
         $('#cliente-campo-cep').val("");
         $('#cliente-campo-vendedor').val("");
