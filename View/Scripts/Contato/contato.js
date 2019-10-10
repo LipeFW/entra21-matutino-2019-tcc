@@ -1,12 +1,12 @@
 ﻿$(function () {
 
-    $('#contato-botao-enviar').on('click', function () {
-        $nome = $('#contato-campo-nome').val();
-        $sobrenome = $('#contato-campo-sobrenome').val();
-        $telefone = $('#contato-campo-telefone').val();
-        $email = $('#contato-campo-email').val();
-        $titulo = $('#contato-campo-titulo').val();
-        $mensagem = $('#contato-campo-mensagem').val();
+    $("#contato-botao-enviar").on("click", function () {
+        $nome = $("#contato-campo-nome").val();
+        $sobrenome = $("#contato-campo-sobrenome").val();
+        $telefone = $("#contato-campo-telefone").val();
+        $email = $("#contato-campo-email").val();
+        $titulo = $("#contato-campo-titulo").val();
+        $mensagem = $("#contato-campo-mensagem").val();
 
         if (($nome.trim() == "") || ($sobrenome.trim() == "") || ($telefone.trim() == "") || ($email.trim() == "") || ($titulo.trim() == "") || ($mensagem.trim() == "")) {
             bootbox.alert("Preencha corretamente os campos!");
@@ -22,8 +22,8 @@
 
     function inserir($nome, $sobrenome, $telefone, $email, $titulo, $mensagem) {
         $.ajax({
-            url: '/Contato/inserir',
-            method: 'post',
+            url: "/Contato/Inserir",
+            method: "post",
             data: {
                 nome: $nome,
                 sobrenome: $sobrenome,
@@ -37,18 +37,18 @@
                 limparCampos();
             },
             error: function (err) {
-                bootbox.alert('Não foi possível enviar a mensagem.');
+                bootbox.alert("Não foi possível enviar a mensagem.");
             }
         });
     }
 
     function limparCampos() {
-        $('#contato-campo-nome').val("");
-        $('#contato-campo-sobrenome').val("");
-        $('#contato-campo-telefone').val("");
-        $('#contato-campo-email').val("");
-        $('#contato-campo-titulo').val("");
-        $('#contato-campo-mensagem').val("");
+        $("#contato-campo-nome").val("");
+        $("#contato-campo-sobrenome").val("");
+        $("#contato-campo-telefone").val("");
+        $("#contato-campo-email").val("");
+        $("#contato-campo-titulo").val("");
+        $("#contato-campo-mensagem").val("");
     }
 
 });
