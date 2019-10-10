@@ -64,7 +64,7 @@
                 $idAlterar = -1;
                 $tabelaUsuario.ajax.reload();
                 bootbox.dialog({
-                    message: "Usuário alterado com sucesso!"
+                    message: "Cliente alterado com sucesso!"
 
                 });
                 window.setTimeout(function () {
