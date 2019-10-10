@@ -59,28 +59,28 @@
                 idVendedor: $vendedor
             },
             success: function (data) {
-                $('#modal-cliente').modal('hide');
-                limparCampos();
-                bootbox.dialog({
-                    message: "Cliente alterado com sucesso!"
-
-                });
-                window.setTimeout(function () {
-                    bootbox.hideAll();
-                }, 1500);
-                $tabelaCliente.ajax.reload();
-            },
-            error: function (err) {
-                bootbox.dialog({
-                    message: "Não foi possível alterar o cliente!"
-
-                });
-                window.setTimeout(function () {
-                    bootbox.hideAll();
-                }, 1500);
+                $("#modal-usuario").modal("hide");
                 limparCampos();
                 $idAlterar = -1;
-            }
+                $tabelaUsuario.ajax.reload();
+                bootbox.dialog({
+                    message: "Usuário alterado com sucesso!"
+
+                });
+                window.setTimeout(function () {
+                    bootbox.hideAll();
+                }, 1500);
+            },
+            error: function (err) {
+                limparCampos();
+                $idAlterar = -1;
+                bootbox.dialog({
+                    message: "Não foi possível alterar o cliente!"
+                });
+                window.setTimeout(function () {
+                    bootbox.hideAll();
+                }, 1500);
+            },
         })
     }
 
