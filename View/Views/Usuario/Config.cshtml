@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "Config";
+    ViewBag.Title = "Configurações";
     var usuario = (Model.Usuario)Session["Usuario"];
 }
 
@@ -78,8 +78,19 @@
     <div class="form-group">
         <form action="Upload" method="post" enctype="multipart/form-data">
             <img id="imagemUsuario" src="~/Content/uploads/@usuario.UrlImagem" class="rounded mb-2" height="125" width="125" alt="">
-            <input type="file" name="file" />
-            <button class="btn btn-primary float-right" type="submit"><i class="fas fa-file-import"></i>  @View.Resources.Resource.Enviar</button>
+
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+                </div>
+                <div class="custom-file file-upload-wrapper">
+                    <input type="file" class="custom-file-input" id="inputGroupFile01" name="file"
+                           aria-describedby="inputGroupFileAddon01">
+                    <label class="custom-file-label" for="inputGroupFile01">@View.Resources.Resource.EscolherArquivo</label>
+                </div>
+            </div>
+
+            <button class="btn btn-primary float-right mt-2" type="submit"><i class="fas fa-file-import"></i>  @View.Resources.Resource.Enviar</button>
         </form>
     </div>
 

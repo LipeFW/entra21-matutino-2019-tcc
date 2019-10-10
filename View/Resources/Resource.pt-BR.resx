@@ -560,9 +560,9 @@
     <value>Preço</value>
   </data>
   <data name="Nosbuscamos" xml:space="preserve">
-    <value>Nós buscamos ajudar as pessoas facilitando a vida delas sempre com ideias que vão além de ganhos financeiros ,
-porque o dinheiro pode acabar mas a satisfação e o orgulho de um bom trabalho que realmente ajuda,
-isso nunca acaba,e a cada realização surge mais motivação para não desistir e sempre seguir trabalhando.</value>
+    <value>Nós buscamos ajudar as pessoas facilitando a vida delas, sempre com ideias que vão além de ganhos financeiros,
+porque o dinheiro pode acabar mas a satisfação e o orgulho de um bom trabalho, que realmente ajuda,
+isto nunca acaba, e a cada realização surge mais motivação para não desistir e sempre seguir trabalhando.</value>
   </data>
   <data name="Visao" xml:space="preserve">
     <value>Visão</value>
@@ -591,7 +591,7 @@ isso nunca acaba,e a cada realização surge mais motivação para não desistir
     <value>Adicione os Produtos a Compra</value>
   </data>
   <data name="Equipe" xml:space="preserve">
-    <value>Equipe</value>
+    <value>Desenvolvedores</value>
   </data>
   <data name="Contato" xml:space="preserve">
     <value>Contato</value>
@@ -691,5 +691,8 @@ isso nunca acaba,e a cada realização surge mais motivação para não desistir
   </data>
   <data name="Administrador" xml:space="preserve">
     <value>Administrador</value>
+  </data>
+  <data name="EscolherArquivo" xml:space="preserve">
+    <value>Escolher Arquivo</value>
   </data>
 </root>

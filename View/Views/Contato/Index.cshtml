@@ -135,11 +135,11 @@
         <!-- /navbar content -->
 
     </div>
-    <div id="contato-index">
-        <legend>
-            <span class="h2">@View.Resources.Resource.Contato</span>
-        </legend>
-        <div class="modal-body">
+    <legend class="text-center">
+        <span class="h2 mr-4 ml-4">@View.Resources.Resource.Contato</span>
+    </legend>
+    <div class="mr-5 ml-5" id="contato-index">
+        <div class="modal-body mb-2">
             <div class="form-group">
                 <label style="font-weight:bold" for="campo-nome">@View.Resources.Resource.Nome</label>
                 <input class="form-control border-dark" type="text" name="campo-nome" id="contato-campo-nome" />
@@ -168,8 +168,8 @@
                 <button id="contato-botao-enviar" class="btn btn-primary float-right" type="submit"><i class="fas fa-file-import"></i>  @View.Resources.Resource.Enviar</button>
             </div>
         </div>
-        <legend></legend>
     </div>
+        <legend class="text-center">
 </body>
 @section js{
     <script src="~/Scripts/Contato/contato.js"></script>
